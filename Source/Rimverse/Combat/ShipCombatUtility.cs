@@ -347,6 +347,16 @@ namespace Rimverse
                 }
             }
             if (!origin.InBounds(map)) return;
+            if (CombatExtendedCompat.IsCEProjectile(projectileDef))
+            {
+                CombatExtendedCompat.TryLaunch(projectileDef, launcher, origin, target);
+                return;
+            }
+            if (projectileDef.thingClass == null || !typeof(Projectile).IsAssignableFrom(projectileDef.thingClass))
+            {
+                RimverseLog.ErrorOnce(projectileDef.defName + " is not a projectile and cannot be fired by a ship weapon.", "RimverseShipProj" + projectileDef.defName);
+                return;
+            }
             Projectile proj = (Projectile)GenSpawn.Spawn(projectileDef, origin, map);
             proj.Launch(launcher, origin.ToVector3Shifted(), new LocalTargetInfo(target), new LocalTargetInfo(target), ProjectileHitFlags.All);
         }

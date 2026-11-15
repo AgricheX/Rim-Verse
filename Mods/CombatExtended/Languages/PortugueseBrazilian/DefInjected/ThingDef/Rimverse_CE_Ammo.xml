@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Projéteis de laser -->
+  <Rimverse_CE_Laser_LaserPistol.label>raio de pistola laser</Rimverse_CE_Laser_LaserPistol.label>
+  <Rimverse_CE_Laser_LaserCarbine.label>raio de carabina laser</Rimverse_CE_Laser_LaserCarbine.label>
+  <Rimverse_CE_Laser_LaserSniper.label>raio laser de precisão</Rimverse_CE_Laser_LaserSniper.label>
+  <Rimverse_CE_Laser_PulseLaser.label>raio de laser de pulso</Rimverse_CE_Laser_PulseLaser.label>
+  <Rimverse_CE_Laser_LaserCutter.label>feixe de corte</Rimverse_CE_Laser_LaserCutter.label>
+  <Rimverse_CE_Laser_InternalLaser.label>raio de torreta laser</Rimverse_CE_Laser_InternalLaser.label>
+  <Rimverse_CE_Laser_Precursor.label>feixe precursor</Rimverse_CE_Laser_Precursor.label>
+
+  <!-- Projéteis especiais -->
+  <Rimverse_CE_Bullet_Stunner.label>disparo atordoante</Rimverse_CE_Bullet_Stunner.label>
+  <Rimverse_CE_Bullet_StunTurret.label>disparo da torreta atordoante</Rimverse_CE_Bullet_StunTurret.label>
+  <Rimverse_CE_Bullet_Net.label>rede</Rimverse_CE_Bullet_Net.label>
+  <Rimverse_CE_Bullet_Dart.label>dardo</Rimverse_CE_Bullet_Dart.label>
+  <Rimverse_CE_Bullet_Foam.label>cápsula de espuma</Rimverse_CE_Bullet_Foam.label>
+  <Rimverse_CE_Bullet_PlasmaThrower.label>jato de plasma</Rimverse_CE_Bullet_PlasmaThrower.label>
+
+  <!-- Torretas de veículo sem munição do Combat Extended -->
+  <Rimverse_CE_Bullet_VLaser.label>disparo laser de veículo</Rimverse_CE_Bullet_VLaser.label>
+  <Rimverse_CE_Bullet_VPlasma.label>disparo de plasma de veículo</Rimverse_CE_Bullet_VPlasma.label>
+  <Rimverse_CE_Bullet_VHarpoon.label>arpão</Rimverse_CE_Bullet_VHarpoon.label>
+
+  <!-- Ação de arremesso das cargas (verbo do Combat Extended) -->
+  <Rimverse_Grenade_PulseGrenade.verbs.0.label>arremessar granada de pulso</Rimverse_Grenade_PulseGrenade.verbs.0.label>
+  <Rimverse_Grenade_DecompressionGrenade.verbs.0.label>arremessar granada de descompressão</Rimverse_Grenade_DecompressionGrenade.verbs.0.label>
+  <Rimverse_Grenade_HullCharge.verbs.0.label>posicionar carga de casco</Rimverse_Grenade_HullCharge.verbs.0.label>
+
+</LanguageData>

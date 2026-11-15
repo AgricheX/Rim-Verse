@@ -15,7 +15,7 @@ Rimverse leva a sua colônia para um universo inteiro: naves próprias, sistemas
 Construa o seu próprio império com frotas, guerras, alianças e um conselho galáctico, desperte o Grande Fluxo e descubra civilizações por boatos e primeiro contato.
 
 Requires / Requer: Harmony, Vehicle Framework.
-Optional integration / Integrações opcionais: Royalty, Ideology, Biotech, Anomaly, Odyssey, Combat Extended, Endless Rooms, [NL] Facial Animation, Yayo's Animation, Save Our Ship 2, Vanilla Gravship Expanded 1 &amp; 2, The Force (Standalone + Lightsaber), RimGram.
+Optional integration / Integrações opcionais: Royalty, Ideology, Biotech, Anomaly, Odyssey, Combat Extended, Endless Rooms, Save Our Ship 2, Vanilla Gravship Expanded 1 &amp; 2, The Force (Standalone + Lightsaber), RimGram.
 Rimverse steps aside when another mod already does the same thing. / O Rimverse cede a vez quando outro mod já faz a mesma coisa.</description>
   <modDependencies>
     <li>
@@ -42,8 +42,6 @@ Rimverse steps aside when another mod already does the same thing. / O Rimverse 
     <li>CETeam.CombatExtended</li>
     <li>arsiy.rooms</li>
     <li>agriche.endlessrooms</li>
-    <li>Nals.FacialAnimation</li>
-    <li>com.yayo.yayoAni.continued</li>
     <li>kentington.saveourship2</li>
     <li>vanillaexpanded.gravship</li>
     <li>vanillaexpanded.gravship2</li>

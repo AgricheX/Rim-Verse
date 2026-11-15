@@ -198,8 +198,6 @@ namespace Rimverse
             Check(l, "Rimverse_OdysseyIntegration", ref s.odysseyIntegration, ModCompat.Odyssey);
             Check(l, "Rimverse_CEIntegration", ref s.combatExtendedIntegration, ModCompat.CombatExtended);
             Check(l, "Rimverse_EndlessRoomsEvents", ref s.endlessRoomsEvents, ModCompat.EndlessRooms);
-            Check(l, "Rimverse_FacialAnimationIntegration", ref s.facialAnimationIntegration, ModCompat.FacialAnimation);
-            Check(l, "Rimverse_YayoIntegration", ref s.yayoAnimationIntegration, ModCompat.YayoAnimation);
         }
     }
 }

@@ -49,8 +49,4 @@
   <Rimverse_CEIntegration_Desc>Converts Rimverse weapons, armor and ammo to Combat Extended.</Rimverse_CEIntegration_Desc>
   <Rimverse_EndlessRoomsEvents>Endless Rooms events</Rimverse_EndlessRoomsEvents>
   <Rimverse_EndlessRoomsEvents_Desc>Enables the events, powers and scenario linking the universe to the Endless Rooms backrooms.</Rimverse_EndlessRoomsEvents_Desc>
-  <Rimverse_FacialAnimationIntegration>Facial Animation integration</Rimverse_FacialAnimationIntegration>
-  <Rimverse_FacialAnimationIntegration_Desc>Gives animated faces to Rimverse lineages.</Rimverse_FacialAnimationIntegration_Desc>
-  <Rimverse_YayoIntegration>Yayo's Animation integration</Rimverse_YayoIntegration>
-  <Rimverse_YayoIntegration_Desc>Adjusts Yayo's Animation animations in zero gravity and aboard.</Rimverse_YayoIntegration_Desc>
 </LanguageData>

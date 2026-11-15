@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AmmoSet_Rimverse_LaserPistol.label>carga laser</AmmoSet_Rimverse_LaserPistol.label>
+  <AmmoSet_Rimverse_LaserCarbine.label>carga laser</AmmoSet_Rimverse_LaserCarbine.label>
+  <AmmoSet_Rimverse_LaserSniper.label>carga laser</AmmoSet_Rimverse_LaserSniper.label>
+  <AmmoSet_Rimverse_PulseLaser.label>carga laser</AmmoSet_Rimverse_PulseLaser.label>
+  <AmmoSet_Rimverse_LaserCutter.label>carga laser</AmmoSet_Rimverse_LaserCutter.label>
+  <AmmoSet_Rimverse_InternalLaser.label>carga laser</AmmoSet_Rimverse_InternalLaser.label>
+
+</LanguageData>

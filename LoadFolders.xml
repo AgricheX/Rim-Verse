@@ -11,8 +11,6 @@
     <li IfModActive="CETeam.CombatExtended">Mods/CombatExtended</li>
     <li IfModActive="agriche.endlessrooms">Mods/EndlessRooms</li>
     <li IfModActiveAll="agriche.endlessrooms,Ludeon.RimWorld.Royalty">Mods/EndlessRoomsRoyalty</li>
-    <li IfModActive="Nals.FacialAnimation">Mods/FacialAnimation</li>
-    <li IfModActive="com.yayo.yayoAni.continued">Mods/YayoAnimation</li>
     <li IfModActive="kentington.saveourship2">Mods/SaveOurShip2</li>
     <li IfModActive="vanillaexpanded.gravship">Mods/GravshipExpanded1</li>
     <li IfModActive="vanillaexpanded.gravship2">Mods/GravshipExpanded2</li>
@@ -30,8 +28,6 @@
     <li IfModActive="CETeam.CombatExtended">Mods/CombatExtended</li>
     <li IfModActive="agriche.endlessrooms">Mods/EndlessRooms</li>
     <li IfModActiveAll="agriche.endlessrooms,Ludeon.RimWorld.Royalty">Mods/EndlessRoomsRoyalty</li>
-    <li IfModActive="Nals.FacialAnimation">Mods/FacialAnimation</li>
-    <li IfModActive="com.yayo.yayoAni.continued">Mods/YayoAnimation</li>
     <li IfModActive="kentington.saveourship2">Mods/SaveOurShip2</li>
     <li IfModActive="vanillaexpanded.gravship">Mods/GravshipExpanded1</li>
     <li IfModActive="vanillaexpanded.gravship2">Mods/GravshipExpanded2</li>

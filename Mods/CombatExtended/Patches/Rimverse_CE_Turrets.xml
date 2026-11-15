@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Security turrets. The vanilla steel 'rearm' fuel is replaced by Combat Extended magazines (the stun turret needs no ammunition). -->
+
+	<!-- ========== corridor turret ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Turret_CorridorTurret"]/thingClass</xpath>
+		<value>
+			<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Turret_CorridorTurret"]/statBases</xpath>
+		<value>
+			<AimingAccuracy>0.5</AimingAccuracy>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Rimverse_Turret_CorridorTurret"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+	</Operation>
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Rimverse_TurretGun_CorridorTurret</defName>
+		<statBases>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>0.7</SwayFactor>
+			<Mass>5</Mass>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<recoilAmount>1</recoilAmount>
+			<defaultProjectile>Bullet_9x19mmPara_HP</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>30</range>
+			<burstShotCount>5</burstShotCount>
+			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			<soundCast>GunShotA</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<recoilPattern>Mounted</recoilPattern>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>60</magazineSize>
+			<reloadTime>7.8</reloadTime>
+			<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+			<noSnapshot>true</noSnapshot>
+			<noSingleShot>true</noSingleShot>
+		</FireModes>
+		<weaponTags>
+			<li>CE_Turret</li>
+		</weaponTags>
+	</Operation>
+
+	<!-- ========== internal laser turret ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Turret_InternalLaser"]/thingClass</xpath>
+		<value>
+			<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Turret_InternalLaser"]/statBases</xpath>
+		<value>
+			<AimingAccuracy>0.5</AimingAccuracy>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Rimverse_Turret_InternalLaser"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+	</Operation>
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Rimverse_TurretGun_InternalLaser</defName>
+		<statBases>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>0.7</SwayFactor>
+			<Mass>5</Mass>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Rimverse_CE_Laser_InternalLaser</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>40</range>
+			<soundCast>ChargeLance_Fire</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<recoilPattern>Mounted</recoilPattern>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>40</magazineSize>
+			<reloadTime>7.8</reloadTime>
+			<ammoSet>AmmoSet_Rimverse_InternalLaser</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+			<noSnapshot>true</noSnapshot>
+		</FireModes>
+		<weaponTags>
+			<li>CE_Turret</li>
+		</weaponTags>
+	</Operation>
+
+	<!-- ========== stun turret ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Turret_StunTurret"]/thingClass</xpath>
+		<value>
+			<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Turret_StunTurret"]/statBases</xpath>
+		<value>
+			<AimingAccuracy>0.5</AimingAccuracy>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Rimverse_Turret_StunTurret"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+	</Operation>
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Rimverse_TurretGun_StunTurret</defName>
+		<statBases>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>0.7</SwayFactor>
+			<Mass>5</Mass>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Rimverse_CE_Bullet_StunTurret</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>24</range>
+			<soundCast>GunShotA</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>6</muzzleFlashScale>
+			<recoilPattern>Mounted</recoilPattern>
+		</Properties>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+			<noSnapshot>true</noSnapshot>
+		</FireModes>
+		<weaponTags>
+			<li>CE_Turret</li>
+		</weaponTags>
+	</Operation>
+
+</Patch>

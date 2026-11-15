@@ -89,9 +89,8 @@ Extra content loads automatically when these are active:
 | Biotech | Space genes, xenotypes, mechanoids and an onboard school |
 | Anomaly | Space entities, anomalous sites and events aboard ships |
 | Odyssey | Gravships can be converted, Odyssey orbit layers are joined to the star system, suit compatibility |
-| Combat Extended | Compatibility patches |
+| Combat Extended | Weapons, ammunition, armor, creatures, turrets, ship weapons and vehicle turrets converted to CE; hull breach rules also apply to CE projectiles |
 | Endless Rooms | Integrated events and the A-sync researcher scenario |
-| [NL] Facial Animation, Yayo's Animation | Lineage appearance support |
 | Save Our Ship 2 | Rimverse suits protect in SOS2 space |
 | Vanilla Gravship Expanded 1 & 2 | Their substructures count as hull and grav engines as maneuvering thrusters |
 | The Force (Standalone + Lightsaber) | The Great Flow and the Force are linked: Harmony with the Light, Rupture with the Dark, Resonance Shards work as kyber crystals |

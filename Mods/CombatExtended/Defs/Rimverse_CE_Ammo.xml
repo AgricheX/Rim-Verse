@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ========== Laser weapons: Combat Extended's universal laser charge pack ========== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Rimverse_LaserPistol</defName>
+		<label>laser charge</label>
+		<ammoTypes>
+			<Ammo_LaserChargePack>Rimverse_CE_Laser_LaserPistol</Ammo_LaserChargePack>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
+		<defName>Rimverse_CE_Laser_LaserPistol</defName>
+		<label>laser pistol beam</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CE_Laser</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationSharp>17</armorPenetrationSharp>
+			<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Rimverse_LaserCarbine</defName>
+		<label>laser charge</label>
+		<ammoTypes>
+			<Ammo_LaserChargePack>Rimverse_CE_Laser_LaserCarbine</Ammo_LaserChargePack>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
+		<defName>Rimverse_CE_Laser_LaserCarbine</defName>
+		<label>laser carbine beam</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CE_Laser</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationSharp>18.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Rimverse_LaserSniper</defName>
+		<label>laser charge</label>
+		<ammoTypes>
+			<Ammo_LaserChargePack>Rimverse_CE_Laser_LaserSniper</Ammo_LaserChargePack>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
+		<defName>Rimverse_CE_Laser_LaserSniper</defName>
+		<label>precision laser beam</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CE_Laser</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationSharp>22</armorPenetrationSharp>
+			<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Rimverse_PulseLaser</defName>
+		<label>laser charge</label>
+		<ammoTypes>
+			<Ammo_LaserChargePack>Rimverse_CE_Laser_PulseLaser</Ammo_LaserChargePack>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
+		<defName>Rimverse_CE_Laser_PulseLaser</defName>
+		<label>pulse laser beam</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CE_Laser</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationSharp>15</armorPenetrationSharp>
+			<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Rimverse_LaserCutter</defName>
+		<label>laser charge</label>
+		<ammoTypes>
+			<Ammo_LaserChargePack>Rimverse_CE_Laser_LaserCutter</Ammo_LaserChargePack>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
+		<defName>Rimverse_CE_Laser_LaserCutter</defName>
+		<label>cutting beam</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CE_Laser</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationSharp>24</armorPenetrationSharp>
+			<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Rimverse_InternalLaser</defName>
+		<label>laser charge</label>
+		<ammoTypes>
+			<Ammo_LaserChargePack>Rimverse_CE_Laser_InternalLaser</Ammo_LaserChargePack>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
+		<defName>Rimverse_CE_Laser_InternalLaser</defName>
+		<label>turret laser beam</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CE_Laser</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationSharp>16</armorPenetrationSharp>
+			<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<!-- ========== Weapons without ammunition (utility and relic weapons) ========== -->
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletPurple">
+		<defName>Rimverse_CE_Laser_Precursor</defName>
+		<label>precursor beam</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CE_Laser</damageDef>
+			<damageAmountBase>26</damageAmountBase>
+			<armorPenetrationSharp>32</armorPenetrationSharp>
+			<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBulletCE">
+		<defName>Rimverse_CE_Bullet_Stunner</defName>
+		<label>stunner shot</label>
+		<graphicData>
+			<texPath>Rimverse/Things/Projectile/Stun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>40</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBulletCE">
+		<defName>Rimverse_CE_Bullet_StunTurret</defName>
+		<label>stun turret shot</label>
+		<graphicData>
+			<texPath>Rimverse/Things/Projectile/Stun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBulletCE">
+		<defName>Rimverse_CE_Bullet_Net</defName>
+		<label>net</label>
+		<graphicData>
+			<texPath>Rimverse/Things/Projectile/Net</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>4</damageAmountBase>
+			<armorPenetrationBlunt>2</armorPenetrationBlunt>
+			<speed>25</speed>
+			<secondaryDamage>
+				<li>
+					<def>Stun</def>
+					<amount>12</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBulletCE">
+		<defName>Rimverse_CE_Bullet_Dart</defName>
+		<label>dart</label>
+		<graphicData>
+			<texPath>Rimverse/Things/Projectile/Dart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationSharp>4</armorPenetrationSharp>
+			<armorPenetrationBlunt>1</armorPenetrationBlunt>
+			<speed>120</speed>
+			<secondaryDamage>
+				<li>
+					<def>Rimverse_SedativeDart</def>
+					<amount>10</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseExplosiveBullet">
+		<defName>Rimverse_CE_Bullet_Foam</defName>
+		<label>foam canister</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Rimverse/Things/Projectile/Foam</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Extinguish</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<explosionRadius>1.5</explosionRadius>
+			<speed>25</speed>
+			<postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+			<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<suppressionFactor>0</suppressionFactor>
+			<dangerFactor>0</dangerFactor>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseExplosiveBullet">
+		<defName>Rimverse_CE_Bullet_PlasmaThrower</defName>
+		<label>plasma jet</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Rimverse/Things/Projectile/Plasma</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<explosionRadius>1.4</explosionRadius>
+			<speed>35</speed>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+
+	<!-- ========== Vehicle turrets without Combat Extended ammunition ========== -->
+
+	<ThingDef ParentName="BaseBulletCE">
+		<defName>Rimverse_CE_Bullet_VLaser</defName>
+		<label>vehicle laser bolt</label>
+		<graphicData>
+			<texPath>Rimverse/Things/Projectile/VLaser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CE_Laser</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationSharp>20</armorPenetrationSharp>
+			<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+			<speed>300</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseExplosiveBullet">
+		<defName>Rimverse_CE_Bullet_VPlasma</defName>
+		<label>vehicle plasma bolt</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Rimverse/Things/Projectile/VPlasma</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<explosionRadius>1.9</explosionRadius>
+			<speed>80</speed>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<secondaryDamage>
+				<li>
+					<def>Flame_Secondary</def>
+					<amount>20</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBulletCE">
+		<defName>Rimverse_CE_Bullet_VHarpoon</defName>
+		<label>harpoon</label>
+		<graphicData>
+			<texPath>Rimverse/Things/Projectile/VHarpoon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Stab</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<armorPenetrationBlunt>40</armorPenetrationBlunt>
+			<speed>45</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- ========== Thrown charges ========== -->
+
+</Defs>

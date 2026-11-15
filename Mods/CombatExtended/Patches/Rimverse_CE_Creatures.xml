@@ -1,0 +1,2110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Creatures. Animals built on vanilla bases (big cats, wolves, birds, insects) also inherit Combat Extended's patches of those bases. -->
+
+	<!-- ========== crew echo ========== -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Entity_CrewEcho"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_CrewEcho"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>mandibles</label>
+								<capacities>
+									<li>Bite</li>
+								</capacities>
+								<power>6</power>
+								<cooldownTime>2</cooldownTime>
+								<armorPenetrationSharp>0.15</armorPenetrationSharp>
+								<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>4</power>
+								<cooldownTime>2</cooldownTime>
+								<chanceFactor>0.1</chanceFactor>
+								<armorPenetrationBlunt>0.84</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+							</li>
+						</tools>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_CrewEcho"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_CrewEcho"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_CrewEcho"]/statBases</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Rimverse_Entity_CrewEcho"]</xpath>
+						<value>
+							<statBases />
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_CrewEcho"]/statBases</xpath>
+					<value>
+						<MeleeDodgeChance>0.2</MeleeDodgeChance>
+						<MeleeCritChance>0.078</MeleeCritChance>
+						<MeleeParryChance>0.071</MeleeParryChance>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- ========== hull passenger ========== -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Entity_HullPassenger"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_HullPassenger"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>head claw</label>
+								<capacities>
+									<li>Cut</li>
+								</capacities>
+								<power>14</power>
+								<cooldownTime>2.4</cooldownTime>
+								<armorPenetrationSharp>0.4</armorPenetrationSharp>
+								<armorPenetrationBlunt>1.33</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>7</power>
+								<cooldownTime>2</cooldownTime>
+								<chanceFactor>0.2</chanceFactor>
+								<armorPenetrationBlunt>1.66</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+							</li>
+						</tools>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_HullPassenger"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_HullPassenger"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_HullPassenger"]/statBases</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Rimverse_Entity_HullPassenger"]</xpath>
+						<value>
+							<statBases />
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_HullPassenger"]/statBases</xpath>
+					<value>
+						<MeleeDodgeChance>0.2</MeleeDodgeChance>
+						<MeleeCritChance>0.086</MeleeCritChance>
+						<MeleeParryChance>0.077</MeleeParryChance>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- ========== shadow swarm ========== -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Entity_ShadowSwarm"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_ShadowSwarm"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>mandibles</label>
+								<capacities>
+									<li>Bite</li>
+								</capacities>
+								<power>5</power>
+								<cooldownTime>2</cooldownTime>
+								<armorPenetrationSharp>0.09</armorPenetrationSharp>
+								<armorPenetrationBlunt>0.32</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>3</power>
+								<cooldownTime>2</cooldownTime>
+								<chanceFactor>0.1</chanceFactor>
+								<armorPenetrationBlunt>0.47</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+							</li>
+						</tools>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_ShadowSwarm"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_ShadowSwarm"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_ShadowSwarm"]/statBases</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Rimverse_Entity_ShadowSwarm"]</xpath>
+						<value>
+							<statBases />
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_ShadowSwarm"]/statBases</xpath>
+					<value>
+						<MeleeDodgeChance>0.28</MeleeDodgeChance>
+						<MeleeCritChance>0.066</MeleeCritChance>
+						<MeleeParryChance>0.062</MeleeParryChance>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- ========== the sleeper in the wreck ========== -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Entity_Sleeper"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_Sleeper"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>head claw</label>
+								<capacities>
+									<li>Cut</li>
+								</capacities>
+								<power>30</power>
+								<cooldownTime>2.4</cooldownTime>
+								<armorPenetrationSharp>1.56</armorPenetrationSharp>
+								<armorPenetrationBlunt>5.2</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>16</power>
+								<cooldownTime>2</cooldownTime>
+								<chanceFactor>0.2</chanceFactor>
+								<armorPenetrationBlunt>6.93</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+							</li>
+						</tools>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_Sleeper"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_Sleeper"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_Sleeper"]/statBases</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Rimverse_Entity_Sleeper"]</xpath>
+						<value>
+							<statBases />
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_Sleeper"]/statBases</xpath>
+					<value>
+						<MeleeDodgeChance>0.1</MeleeDodgeChance>
+						<MeleeCritChance>0.17</MeleeCritChance>
+						<MeleeParryChance>0.14</MeleeParryChance>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- ========== void hunger ========== -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Entity_VoidHunger"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_VoidHunger"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>head claw</label>
+								<capacities>
+									<li>Cut</li>
+								</capacities>
+								<power>16</power>
+								<cooldownTime>2.4</cooldownTime>
+								<armorPenetrationSharp>0.5</armorPenetrationSharp>
+								<armorPenetrationBlunt>1.68</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>8</power>
+								<cooldownTime>2</cooldownTime>
+								<chanceFactor>0.2</chanceFactor>
+								<armorPenetrationBlunt>2.1</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+							</li>
+						</tools>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_VoidHunger"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_VoidHunger"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_VoidHunger"]/statBases</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Rimverse_Entity_VoidHunger"]</xpath>
+						<value>
+							<statBases />
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Rimverse_Entity_VoidHunger"]/statBases</xpath>
+					<value>
+						<MeleeDodgeChance>0.2</MeleeDodgeChance>
+						<MeleeCritChance>0.094</MeleeCritChance>
+						<MeleeParryChance>0.083</MeleeParryChance>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- ========== asteroid worm ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_AsteroidWorm"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>head claw</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>12</power>
+					<cooldownTime>2.6</cooldownTime>
+					<armorPenetrationSharp>0.53</armorPenetrationSharp>
+					<armorPenetrationBlunt>1.78</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_AsteroidWorm"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.27</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_AsteroidWorm"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>2.25</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_AsteroidWorm"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_AsteroidWorm"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_AsteroidWorm"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeCritChance>0.138</MeleeCritChance>
+			<MeleeParryChance>0.116</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== dunewalker ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Dunewalker"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Dunewalker"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>21</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>1.26</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.2</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>21</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>1.26</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.2</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>22</power>
+					<cooldownTime>2.6</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationSharp>1.32</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.4</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>15</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>7.5</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Dunewalker"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Dunewalker"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Dunewalker"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeCritChance>0.21</MeleeCritChance>
+			<MeleeParryChance>0.17</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== duskwing ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Duskwing"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>claws</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationSharp>0.08</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.27</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>beak</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>0.1</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.33</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>4</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>0.55</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Duskwing"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Duskwing"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Duskwing"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.28</MeleeDodgeChance>
+			<MeleeCritChance>0.062</MeleeCritChance>
+			<MeleeParryChance>0.059</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== hivemite ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Hivemite"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>mandibles</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>0.08</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.27</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>4</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.1</chanceFactor>
+					<armorPenetrationBlunt>0.55</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Hivemite"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Hivemite"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>2.25</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Hivemite"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Hivemite"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Hivemite"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.28</MeleeDodgeChance>
+			<MeleeCritChance>0.062</MeleeCritChance>
+			<MeleeParryChance>0.059</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== hold rat ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_HoldRat"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_HoldRat"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>3.6</power>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationSharp>0.05</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.18</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>3.6</power>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationSharp>0.05</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.18</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationSharp>0.09</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.3</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>2</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>0.25</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_HoldRat"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_HoldRat"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_HoldRat"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.28</MeleeDodgeChance>
+			<MeleeCritChance>0.058</MeleeCritChance>
+			<MeleeParryChance>0.056</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== lopehorn ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Lopehorn"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Lopehorn"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left hoof</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+					<power>7.3</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>1.53</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right hoof</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+					<power>7.3</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>1.53</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationSharp>0.2</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.67</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>1.46</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Lopehorn"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Lopehorn"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Lopehorn"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+			<MeleeCritChance>0.078</MeleeCritChance>
+			<MeleeParryChance>0.071</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== messenger bird ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_MessengerBird"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>claws</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationSharp>0.09</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.32</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>beak</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>0.11</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.38</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>4</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>0.63</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_MessengerBird"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_MessengerBird"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_MessengerBird"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.28</MeleeDodgeChance>
+			<MeleeCritChance>0.066</MeleeCritChance>
+			<MeleeParryChance>0.062</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== mossback ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Mossback"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Mossback"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left hoof</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+					<power>7.3</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>1.35</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right hoof</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+					<power>7.3</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>1.35</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationSharp>0.18</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.59</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>1.3</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Mossback"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Mossback"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Mossback"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.28</MeleeDodgeChance>
+			<MeleeCritChance>0.072</MeleeCritChance>
+			<MeleeParryChance>0.067</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== nebula jelly ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_NebulaJelly"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_NebulaJelly"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left hoof</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+					<power>7.3</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>2</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right hoof</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+					<power>7.3</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>2</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationSharp>0.26</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.88</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>1.92</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_NebulaJelly"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_NebulaJelly"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_NebulaJelly"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+			<MeleeCritChance>0.098</MeleeCritChance>
+			<MeleeParryChance>0.086</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== plated crawler ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Plated"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>QuadrupedLow</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Plated"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>beak</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>2.6</cooldownTime>
+					<armorPenetrationSharp>0.26</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.88</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>3</power>
+					<cooldownTime>2.6</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>0.82</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Plated"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Plated"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>4.38</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Plated"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Plated"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Plated"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+			<MeleeCritChance>0.098</MeleeCritChance>
+			<MeleeParryChance>0.086</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== precursor guardian ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_PrecursorBeast"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_PrecursorBeast"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>21</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>1.09</armorPenetrationSharp>
+					<armorPenetrationBlunt>3.64</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>21</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>1.09</armorPenetrationSharp>
+					<armorPenetrationBlunt>3.64</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>22</power>
+					<cooldownTime>2.6</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationSharp>1.14</armorPenetrationSharp>
+					<armorPenetrationBlunt>3.81</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>15</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>6.5</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_PrecursorBeast"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_PrecursorBeast"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_PrecursorBeast"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeCritChance>0.17</MeleeCritChance>
+			<MeleeParryChance>0.14</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== shellback ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Shellback"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>QuadrupedLow</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Shellback"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>beak</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>2.6</cooldownTime>
+					<armorPenetrationSharp>0.34</armorPenetrationSharp>
+					<armorPenetrationBlunt>1.13</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>3</power>
+					<cooldownTime>2.6</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>1.06</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Shellback"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Shellback"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>4.38</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Shellback"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Shellback"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Shellback"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeCritChance>0.13</MeleeCritChance>
+			<MeleeParryChance>0.11</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== ship cat ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_ShipCat"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_ShipCat"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationSharp>0.1</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.34</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationSharp>0.1</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.34</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationSharp>0.12</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.4</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>3</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>0.42</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_ShipCat"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_ShipCat"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_ShipCat"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.28</MeleeDodgeChance>
+			<MeleeCritChance>0.063</MeleeCritChance>
+			<MeleeParryChance>0.06</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== silkling ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Silkling"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>mandibles</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>0.07</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.25</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>4</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.1</chanceFactor>
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Silkling"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Silkling"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>2.25</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Silkling"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Silkling"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Silkling"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.28</MeleeDodgeChance>
+			<MeleeCritChance>0.06</MeleeCritChance>
+			<MeleeParryChance>0.058</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== skyfin ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Skyfin"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>claws</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationSharp>0.09</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.32</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>beak</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>0.11</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.38</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>4</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>0.63</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Skyfin"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Skyfin"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Skyfin"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.28</MeleeDodgeChance>
+			<MeleeCritChance>0.066</MeleeCritChance>
+			<MeleeParryChance>0.062</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== solar lizard ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_SolarLizard"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_SolarLizard"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>0.17</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.57</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>0.17</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.57</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>10</power>
+					<cooldownTime>2.6</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationSharp>0.21</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.71</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>0.88</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_SolarLizard"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_SolarLizard"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_SolarLizard"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.28</MeleeDodgeChance>
+			<MeleeCritChance>0.07</MeleeCritChance>
+			<MeleeParryChance>0.065</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== star thrumbo ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_StarThrumbo"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_StarThrumbo"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>horn</label>
+					<capacities>
+						<li>Scratch</li>
+						<li>Stab</li>
+					</capacities>
+					<power>23</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>1.38</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.6</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>28</power>
+					<cooldownTime>2.6</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationSharp>1.68</armorPenetrationSharp>
+					<armorPenetrationBlunt>5.6</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>left foot</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>19</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>9.5</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right foot</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>19</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>9.5</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>17</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>8.5</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_StarThrumbo"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_StarThrumbo"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>5</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_StarThrumbo"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_StarThrumbo"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_StarThrumbo"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeCritChance>0.21</MeleeCritChance>
+			<MeleeParryChance>0.17</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== titanhide ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Titanhide"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Titanhide"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>21</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>1.18</armorPenetrationSharp>
+					<armorPenetrationBlunt>3.93</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>21</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>1.18</armorPenetrationSharp>
+					<armorPenetrationBlunt>3.93</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>22</power>
+					<cooldownTime>2.6</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationSharp>1.23</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.12</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>15</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>7.02</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Titanhide"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Titanhide"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_Titanhide"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeCritChance>0.19</MeleeCritChance>
+			<MeleeParryChance>0.155</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== trail hound ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_TrailHound"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_TrailHound"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>9.7</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>0.26</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.87</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>9.7</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>0.26</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.87</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>14.2</power>
+					<cooldownTime>2.6</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationSharp>0.38</armorPenetrationSharp>
+					<armorPenetrationBlunt>1.27</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>1.34</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_TrailHound"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_TrailHound"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_TrailHound"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+			<MeleeCritChance>0.082</MeleeCritChance>
+			<MeleeParryChance>0.074</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== void swarmer ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_VoidSwarm"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>mandibles</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>0.07</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.25</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>4</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.1</chanceFactor>
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_VoidSwarm"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_VoidSwarm"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>2.25</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_VoidSwarm"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_VoidSwarm"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_VoidSwarm"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.28</MeleeDodgeChance>
+			<MeleeCritChance>0.06</MeleeCritChance>
+			<MeleeParryChance>0.058</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== void whale ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_VoidWhale"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_VoidWhale"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>21</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>1.26</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.2</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right claw</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>21</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationSharp>1.26</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.2</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>22</power>
+					<cooldownTime>2.6</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationSharp>1.32</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.4</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>15</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>7.5</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_VoidWhale"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_VoidWhale"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_VoidWhale"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeCritChance>0.21</MeleeCritChance>
+			<MeleeParryChance>0.17</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== war beast ========== -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_WarBeast"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_WarBeast"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>tusk</label>
+					<capacities>
+						<li>Scratch</li>
+						<li>Stab</li>
+					</capacities>
+					<power>25</power>
+					<cooldownTime>2.6</cooldownTime>
+					<armorPenetrationSharp>1.34</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.47</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>left foot</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>16.9</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>7.56</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right foot</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>16.9</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>7.56</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>14</power>
+					<cooldownTime>2</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>6.26</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_WarBeast"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rimverse_Fauna_WarBeast"]</xpath>
+			<value>
+				<statBases />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Fauna_WarBeast"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeCritChance>0.178</MeleeCritChance>
+			<MeleeParryChance>0.146</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<!-- ========== boarder ========== -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rimverse_Mech_Boarder"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Rimverse_Mech_Boarder"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>left blade</label>
+								<capacities>
+									<li>Cut</li>
+									<li>Stab</li>
+								</capacities>
+								<power>18</power>
+								<cooldownTime>2</cooldownTime>
+								<armorPenetrationSharp>0.54</armorPenetrationSharp>
+								<armorPenetrationBlunt>1.8</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>right blade</label>
+								<capacities>
+									<li>Cut</li>
+									<li>Stab</li>
+								</capacities>
+								<power>18</power>
+								<cooldownTime>2</cooldownTime>
+								<armorPenetrationSharp>0.54</armorPenetrationSharp>
+								<armorPenetrationBlunt>1.8</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+							</li>
+						</tools>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- ========== armed Rimverse mechanoids carry spare magazines (Biotech) ========== -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PawnKindDef[defName="Rimverse_Mech_CorridorSentry"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[defName="Rimverse_Mech_CorridorSentry"]</xpath>
+					<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+								<min>4</min>
+								<max>8</max>
+							</primaryMagazineCount>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PawnKindDef[defName="Rimverse_Mech_MechFighter"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[defName="Rimverse_Mech_MechFighter"]</xpath>
+					<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+								<min>4</min>
+								<max>8</max>
+							</primaryMagazineCount>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

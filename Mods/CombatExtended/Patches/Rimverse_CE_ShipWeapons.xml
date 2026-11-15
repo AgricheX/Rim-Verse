@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Ship weapon projectiles become Combat Extended projectiles, so they use CE's armor model against pawns. -->
+
+	<!-- ========== autocannon shell ========== -->
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Autocannon"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>BaseBulletCE</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Autocannon"]</xpath>
+		<value>
+			<thingClass>CombatExtended.BulletCE</thingClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Autocannon"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageDef>Bullet</damageDef>
+				<damageAmountBase>45</damageAmountBase>
+				<armorPenetrationSharp>55</armorPenetrationSharp>
+				<armorPenetrationBlunt>180</armorPenetrationBlunt>
+				<speed>180</speed>
+			</projectile>
+		</value>
+	</Operation>
+
+	<!-- ========== hull cannon shell ========== -->
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_HullCannon"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>BaseExplosiveBullet</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_HullCannon"]/thingClass</xpath>
+		<value>
+			<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_HullCannon"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageDef>Bomb</damageDef>
+				<damageAmountBase>90</damageAmountBase>
+				<explosionRadius>1.5</explosionRadius>
+				<speed>100</speed>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</projectile>
+		</value>
+	</Operation>
+
+	<!-- ========== laser lance bolt ========== -->
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_LaserLance"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>BaseBulletCE</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_LaserLance"]</xpath>
+		<value>
+			<thingClass>CombatExtended.BulletCE</thingClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_LaserLance"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageDef>CE_Laser</damageDef>
+				<damageAmountBase>150</damageAmountBase>
+				<armorPenetrationSharp>120</armorPenetrationSharp>
+				<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+				<speed>300</speed>
+			</projectile>
+		</value>
+	</Operation>
+
+	<!-- ========== plasma bolt ========== -->
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Plasma"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>BaseExplosiveBullet</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Plasma"]/thingClass</xpath>
+		<value>
+			<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Plasma"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageDef>Bomb</damageDef>
+				<damageAmountBase>200</damageAmountBase>
+				<explosionRadius>2.4</explosionRadius>
+				<speed>80</speed>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<secondaryDamage>
+					<li>
+						<def>Flame_Secondary</def>
+						<amount>40</amount>
+					</li>
+				</secondaryDamage>
+			</projectile>
+		</value>
+	</Operation>
+
+	<!-- ========== railgun slug ========== -->
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Railgun"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>BaseBulletCE</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Railgun"]</xpath>
+		<value>
+			<thingClass>CombatExtended.BulletCE</thingClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Railgun"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageDef>Bullet</damageDef>
+				<damageAmountBase>300</damageAmountBase>
+				<armorPenetrationSharp>400</armorPenetrationSharp>
+				<armorPenetrationBlunt>1500</armorPenetrationBlunt>
+				<speed>400</speed>
+			</projectile>
+		</value>
+	</Operation>
+
+	<!-- ========== ship missile ========== -->
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Missile"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>BaseExplosiveBullet</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Missile"]/thingClass</xpath>
+		<value>
+			<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Missile"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageDef>Bomb</damageDef>
+				<damageAmountBase>100</damageAmountBase>
+				<explosionRadius>2</explosionRadius>
+				<speed>45</speed>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</projectile>
+		</value>
+	</Operation>
+
+	<!-- ========== ion bolt ========== -->
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Ion"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>BaseExplosiveBullet</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Ion"]/thingClass</xpath>
+		<value>
+			<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Rimverse_Proj_Ion"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageDef>EMP</damageDef>
+				<damageAmountBase>150</damageAmountBase>
+				<explosionRadius>1.9</explosionRadius>
+				<speed>120</speed>
+			</projectile>
+		</value>
+	</Operation>
+
+</Patch>

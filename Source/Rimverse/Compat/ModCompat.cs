@@ -10,8 +10,6 @@ namespace Rimverse
         public const string VehicleFrameworkId = "SmashPhil.VehicleFramework";
         public const string CombatExtendedId = "CETeam.CombatExtended";
         public const string EndlessRoomsId = "agriche.endlessrooms";
-        public const string FacialAnimationId = "Nals.FacialAnimation";
-        public const string YayoAnimationId = "com.yayo.yayoAni.continued";
         public const string SaveOurShip2Id = "kentington.saveourship2";
         public const string GravshipExpanded1Id = "vanillaexpanded.gravship";
         public const string GravshipExpanded2Id = "vanillaexpanded.gravship2";
@@ -24,8 +22,6 @@ namespace Rimverse
         public static readonly bool VehicleFramework;
         public static readonly bool CombatExtended;
         public static readonly bool EndlessRooms;
-        public static readonly bool FacialAnimation;
-        public static readonly bool YayoAnimation;
         public static readonly bool SaveOurShip2;
         public static readonly bool GravshipExpanded1;
         public static readonly bool GravshipExpanded2;
@@ -42,8 +38,6 @@ namespace Rimverse
             VehicleFramework = IsActive(VehicleFrameworkId);
             CombatExtended = IsActive(CombatExtendedId);
             EndlessRooms = IsActive(EndlessRoomsId);
-            FacialAnimation = IsActive(FacialAnimationId);
-            YayoAnimation = IsActive(YayoAnimationId);
             SaveOurShip2 = IsActive(SaveOurShip2Id);
             GravshipExpanded1 = IsActive(GravshipExpanded1Id);
             GravshipExpanded2 = IsActive(GravshipExpanded2Id);
@@ -91,8 +85,6 @@ namespace Rimverse
             if (Odyssey) parts.Add("Odyssey");
             if (CombatExtended) parts.Add("Combat Extended");
             if (EndlessRooms) parts.Add("Endless Rooms");
-            if (FacialAnimation) parts.Add("Facial Animation");
-            if (YayoAnimation) parts.Add("Yayo's Animation");
             if (SaveOurShip2) parts.Add("Save Our Ship 2");
             if (GravshipExpanded1) parts.Add("Vanilla Gravship Expanded 1");
             if (GravshipExpanded2) parts.Add("Vanilla Gravship Expanded 2");

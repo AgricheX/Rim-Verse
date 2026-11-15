@@ -38,8 +38,6 @@ namespace Rimverse
         public bool odysseyIntegration = true;
         public bool combatExtendedIntegration = true;
         public bool endlessRoomsEvents = true;
-        public bool facialAnimationIntegration = true;
-        public bool yayoAnimationIntegration = true;
 
         public bool IsQolEnabled(QolFeatureDef def)
         {
@@ -91,8 +89,6 @@ namespace Rimverse
             odysseyIntegration = true;
             combatExtendedIntegration = true;
             endlessRoomsEvents = true;
-            facialAnimationIntegration = true;
-            yayoAnimationIntegration = true;
         }
 
         public override void ExposeData()
@@ -125,8 +121,6 @@ namespace Rimverse
             Scribe_Values.Look(ref odysseyIntegration, "odysseyIntegration", true);
             Scribe_Values.Look(ref combatExtendedIntegration, "combatExtendedIntegration", true);
             Scribe_Values.Look(ref endlessRoomsEvents, "endlessRoomsEvents", true);
-            Scribe_Values.Look(ref facialAnimationIntegration, "facialAnimationIntegration", true);
-            Scribe_Values.Look(ref yayoAnimationIntegration, "yayoAnimationIntegration", true);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 if (disabledQol == null) disabledQol = new HashSet<string>();
