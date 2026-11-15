@@ -1525,7 +1525,7 @@
         <basePowerConsumption>600</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_MaintenanceDrones">
+      <li Class="Rimverse.CompProperties_MaintenanceDrones">
         <compClass>Rimverse.CompMaintenanceDrones</compClass>
         <repairPerInterval>200</repairPerInterval>
         <radius>45</radius>
@@ -4137,7 +4137,7 @@
     </statBases>
     <costList>
       <Steel>30</Steel>
-      <Rimverse_Regolith>20</Rimverse_Regolith>
+      <Rimverse_Biomass>20</Rimverse_Biomass>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_ShipFurniture</li>
@@ -4470,7 +4470,7 @@
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
-      <li Class="CompProperties_MaintenanceDrones">
+      <li Class="Rimverse.CompProperties_MaintenanceDrones">
         <compClass>Rimverse.CompMaintenanceDrones</compClass>
         <repairPerInterval>60</repairPerInterval>
         <radius>30</radius>
@@ -4646,7 +4646,7 @@
         <basePowerConsumption>300</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_MaintenanceDrones">
+      <li Class="Rimverse.CompProperties_MaintenanceDrones">
         <compClass>Rimverse.CompMaintenanceDrones</compClass>
         <repairPerInterval>40</repairPerInterval>
         <radius>20</radius>
