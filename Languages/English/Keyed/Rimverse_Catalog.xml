@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_MsgWeaponBreach>A shot punched through the hull!</Rimverse_MsgWeaponBreach>
+  <Rimverse_DroneBay_Clean>Cleaning drones: {0} cells. Cleaned: {1}.</Rimverse_DroneBay_Clean>
+  <Rimverse_DroneBay_Haul>Cargo drones: {0} cells. Hauled: {1}.</Rimverse_DroneBay_Haul>
+  <Rimverse_DroneBay_Mine>Mining drones: {0} cells. Mined: {1}.</Rimverse_DroneBay_Mine>
+  <Rimverse_HeatDump>Dump heat</Rimverse_HeatDump>
+  <Rimverse_HeatDumpDesc>Boil {1} ice to remove {0} UC of heat from the ship at once.</Rimverse_HeatDumpDesc>
+  <Rimverse_HeatDumpNoFuel>Not enough ice.</Rimverse_HeatDumpNoFuel>
+  <Rimverse_CombatVent>Vent room</Rimverse_CombatVent>
+  <Rimverse_CombatVentDesc>Vent the air out of this room for one hour. Anyone without a suit will suffocate.</Rimverse_CombatVentDesc>
+  <Rimverse_CombatVentMsg>The room is being vented.</Rimverse_CombatVentMsg>
+  <Rimverse_Lockdown>Lockdown</Rimverse_Lockdown>
+  <Rimverse_LockdownDesc>Lock every door on the map for colonists, prisoners and guests.</Rimverse_LockdownDesc>
+  <Rimverse_SecurityInspect>Hostiles on the map: {0}</Rimverse_SecurityInspect>
+  <Rimverse_RadiationLeaking>Leaking radiation!</Rimverse_RadiationLeaking>
+  <Rimverse_MegaResearch>Research: +{0} per day</Rimverse_MegaResearch>
+  <Rimverse_MegaSilver>Income: {0} silver per day</Rimverse_MegaSilver>
+  <Rimverse_MegaProduce>Produces {0} {1} per day</Rimverse_MegaProduce>
+  <Rimverse_MegaTraders>Attracts a trader about every {0} days</Rimverse_MegaTraders>
+</LanguageData>

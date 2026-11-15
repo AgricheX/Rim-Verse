@@ -65,7 +65,7 @@
     <label>air bubble</label>
     <description>Wrap the target in a psychic membrane that holds air and pressure, protecting them from vacuum for a few hours.</description>
     <level>2</level>
-    <iconPath>UI/Abilities/BulletShield</iconPath>
+    <iconPath>Rimverse/UI/Ability/AirBubble</iconPath>
     <hostile>false</hostile>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <statBases>
@@ -100,7 +100,7 @@
     <label>sense signatures</label>
     <description>Reach out through the psychic field and feel the minds and machines of nearby stars. Reveals the current system in detail and nearby systems at range, farther with higher psychic sensitivity. Only works aboard a ship or on a world of the Rimverse map.</description>
     <level>3</level>
-    <iconPath>UI/Abilities/Farskip</iconPath>
+    <iconPath>Rimverse/UI/Ability/SenseSignatures</iconPath>
     <targetRequired>False</targetRequired>
     <hostile>false</hostile>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
@@ -130,7 +130,7 @@
     <label>calm crew</label>
     <description>Send a soft psychic wave through the decks. Colonists nearby feel calmer for a day, and some break out of non-violent mental breaks.</description>
     <level>4</level>
-    <iconPath>UI/Abilities/WordOfSerenity</iconPath>
+    <iconPath>Rimverse/UI/Ability/CalmCrew</iconPath>
     <targetRequired>False</targetRequired>
     <hostile>false</hostile>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
@@ -295,7 +295,7 @@
     <label>vacuum push</label>
     <description>A psychic shove that throws the target several cells away and stuns them for a moment. Works best in the tight corridors of a ship.</description>
     <level>1</level>
-    <iconPath>UI/Abilities/Stun</iconPath>
+    <iconPath>Rimverse/UI/Ability/VacuumPush</iconPath>
     <hostile>true</hostile>
     <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
     <statBases>
@@ -320,7 +320,7 @@
     <label>seal breach</label>
     <description>Fold matter from the hull itself into the gaps around the target cell, sealing breaches in the ship with new hull walls.</description>
     <level>3</level>
-    <iconPath>UI/Abilities/Wallraise</iconPath>
+    <iconPath>Rimverse/UI/Ability/SealBreach</iconPath>
     <hostile>false</hostile>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <statBases>
@@ -345,7 +345,7 @@
     <label>short skip</label>
     <description>Skip yourself to a nearby cell, through walls and bulkheads, without line of sight.</description>
     <level>2</level>
-    <iconPath>UI/Abilities/Skip</iconPath>
+    <iconPath>Rimverse/UI/Ability/ShortSkip</iconPath>
     <hostile>false</hostile>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <statBases>
@@ -370,7 +370,7 @@
     <label>blind sensors</label>
     <description>Flood the area with psychic static. Hostile creatures nearby lose half their sight, and enemy ships in battle find it harder to target your ship for a while.</description>
     <level>4</level>
-    <iconPath>UI/Abilities/BlindingPulse</iconPath>
+    <iconPath>Rimverse/UI/Ability/BlindSensors</iconPath>
     <targetRequired>False</targetRequired>
     <hostile>true</hostile>
     <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
@@ -396,7 +396,7 @@
     <label>hull shield</label>
     <description>Pour psychic energy into the ship shield generators, recharging every shield of your ship at once.</description>
     <level>5</level>
-    <iconPath>UI/Abilities/BulletShield</iconPath>
+    <iconPath>Rimverse/UI/Ability/HullShield</iconPath>
     <targetRequired>False</targetRequired>
     <cooldownTicksRange>120000</cooldownTicksRange>
     <hostile>false</hostile>
@@ -440,7 +440,7 @@
     </costList>
     <graphicData>
       <drawSize>(2.4,2.4)</drawSize>
-      <texPath>Things/Building/Furniture/Throne</texPath>
+      <texPath>Rimverse/Things/Building/Misc/CommandThrone</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
     </graphicData>
     <researchPrerequisites>
@@ -453,7 +453,7 @@
     <label>noble cabin bed</label>
     <description>A compact but lavish bed built into the wall of a ship cabin. Very comfortable and beautiful, so a small cabin can still meet the demands of a noble.</description>
     <graphicData>
-      <texPath>Things/Building/Furniture/Bed/Bed</texPath>
+      <texPath>Rimverse/Things/Building/Misc/NobleBunk</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(2,2)</drawSize>
@@ -484,7 +484,7 @@
     <label>stellar meditation window</label>
     <description>A reinforced viewport framed by a meditation bench. Psycasters with a natural focus can meditate looking at the stars, and it works much better in space.</description>
     <graphicData>
-      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <texPath>Rimverse/Things/Building/Misc/StarWindow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <color>(0.4,0.55,0.9)</color>
     </graphicData>

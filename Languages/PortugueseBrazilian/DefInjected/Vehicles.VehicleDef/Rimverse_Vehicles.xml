@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_V_ColonistBike.label>moto de colono</Rimverse_V_ColonistBike.label>
+  <Rimverse_V_ColonistBike.description>Uma moto leve para um piloto e um passageiro. Rápida e barata, mas quase sem blindagem.</Rimverse_V_ColonistBike.description>
+  <Rimverse_V_CargoQuad.label>quadriciclo de carga</Rimverse_V_CargoQuad.label>
+  <Rimverse_V_CargoQuad.description>Um quadriciclo de quatro rodas com uma caçamba pequena.</Rimverse_V_CargoQuad.description>
+  <Rimverse_V_ExplorerRover.label>rover de exploração</Rimverse_V_ExplorerRover.label>
+  <Rimverse_V_ExplorerRover.description>Um rover selado de seis rodas. A cabine guarda 24 horas de ar para a tripulação em mundos sem ar.</Rimverse_V_ExplorerRover.description>
+  <Rimverse_V_CargoTruck.label>caminhão de carga</Rimverse_V_CargoTruck.label>
+  <Rimverse_V_CargoTruck.description>Um caminhão de longa distância com uma caçamba grande.</Rimverse_V_CargoTruck.description>
+  <Rimverse_V_FarmTractor.label>trator agrícola e minerador</Rimverse_V_FarmTractor.label>
+  <Rimverse_V_FarmTractor.description>Um trator lento e resistente. Acelera a colheita e a mineração na fronteira.</Rimverse_V_FarmTractor.description>
+  <Rimverse_V_TroopCarrier.label>blindado de tropas</Rimverse_V_TroopCarrier.label>
+  <Rimverse_V_TroopCarrier.description>Um blindado para oito soldados, com uma metralhadora no teto.</Rimverse_V_TroopCarrier.description>
+  <Rimverse_V_LightTank.label>tanque leve</Rimverse_V_LightTank.label>
+  <Rimverse_V_LightTank.description>Um tanque leve de esteiras com canhão leve e metralhadora coaxial.</Rimverse_V_LightTank.description>
+  <Rimverse_V_Hovercraft.label>hovercraft</Rimverse_V_Hovercraft.label>
+  <Rimverse_V_Hovercraft.description>Um hovercraft erguido por ventiladores que atravessa água e lama como se fosse estrada. Leva uma carabina laser montada.</Rimverse_V_Hovercraft.description>
+  <Rimverse_V_PlasmaTank.label>tanque pesado de plasma</Rimverse_V_PlasmaTank.label>
+  <Rimverse_V_PlasmaTank.description>Um tanque lento e enorme que leva um canhão de plasma.</Rimverse_V_PlasmaTank.description>
+  <Rimverse_V_CombatWalker.label>andador de combate</Rimverse_V_CombatWalker.label>
+  <Rimverse_V_CombatWalker.description>Um andador de duas pernas que passa por cima de escombros, armado com duas armas pesadas.</Rimverse_V_CombatWalker.description>
+  <Rimverse_V_Amphibian.label>anfíbio de mundo oceânico</Rimverse_V_Amphibian.label>
+  <Rimverse_V_Amphibian.description>Um anfíbio com casco de barco para mundos oceânicos. Mais rápido na água que em terra.</Rimverse_V_Amphibian.description>
+  <Rimverse_V_GravWalker.label>andador de gravidade alta</Rimverse_V_GravWalker.label>
+  <Rimverse_V_GravWalker.description>Um andador ultratecnológico com placas de gravidade. Ignora gravidade pesada e leva uma arma pesada.</Rimverse_V_GravWalker.description>
+  <Rimverse_V_VtolSkimmer.label>aerodeslizador VTOL</Rimverse_V_VtolSkimmer.label>
+  <Rimverse_V_VtolSkimmer.description>Um VTOL de rotores inclináveis que leva seis passageiros pelo mapa-múndi três vezes mais rápido que uma caravana.</Rimverse_V_VtolSkimmer.description>
+  <Rimverse_V_AtmoFighter.label>caça atmosférico</Rimverse_V_AtmoFighter.label>
+  <Rimverse_V_AtmoFighter.description>Um caça de um lugar que faz passadas de tiro sobre o mapa.</Rimverse_V_AtmoFighter.description>
+  <Rimverse_V_TroopTransport.label>transporte de tropas</Rimverse_V_TroopTransport.label>
+  <Rimverse_V_TroopTransport.description>Um transporte pesado que pousa doze soldados no mapa como as cápsulas de transporte.</Rimverse_V_TroopTransport.description>
+  <Rimverse_V_CloudAirship.label>dirigível de nuvens</Rimverse_V_CloudAirship.label>
+  <Rimverse_V_CloudAirship.description>Um dirigível de gás leve. O único veículo que funciona nas nuvens altas dos gigantes gasosos.</Rimverse_V_CloudAirship.description>
+  <Rimverse_V_AtmoBomber.label>bombardeiro atmosférico</Rimverse_V_AtmoBomber.label>
+  <Rimverse_V_AtmoBomber.description>Um bombardeiro ultratecnológico. Impreciso, mas as passadas de bombardeio batem muito forte.</Rimverse_V_AtmoBomber.description>
+  <Rimverse_V_LandingShuttle.label>lançadeira de pouso</Rimverse_V_LandingShuttle.label>
+  <Rimverse_V_LandingShuttle.description>Leva seis pawns e carga entre a superfície e a órbita.</Rimverse_V_LandingShuttle.description>
+  <Rimverse_V_CargoShuttle.label>lançadeira de carga</Rimverse_V_CargoShuttle.label>
+  <Rimverse_V_CargoShuttle.description>Uma lançadeira quadrada e sem armas que leva quatro toneladas de carga para a órbita.</Rimverse_V_CargoShuttle.description>
+  <Rimverse_V_AssaultShuttle.label>lançadeira de assalto</Rimverse_V_AssaultShuttle.label>
+  <Rimverse_V_AssaultShuttle.description>Uma lançadeira blindada para abordagem, com canhão automático no nariz e lugar para dez soldados.</Rimverse_V_AssaultShuttle.description>
+  <Rimverse_V_EscapePod.label>cápsula de fuga</Rimverse_V_EscapePod.label>
+  <Rimverse_V_EscapePod.description>Uma cápsula de ida para quatro. Pousa no corpo mais próximo quando a nave se perde.</Rimverse_V_EscapePod.description>
+  <Rimverse_V_SpaceFighter.label>caça espacial</Rimverse_V_SpaceFighter.label>
+  <Rimverse_V_SpaceFighter.description>Uma pequena nave de combate lançada do hangar, com laser de ponto e mísseis.</Rimverse_V_SpaceFighter.description>
+  <Rimverse_V_SpaceBomber.label>bombardeiro espacial</Rimverse_V_SpaceBomber.label>
+  <Rimverse_V_SpaceBomber.description>Um bombardeiro de dois lugares que leva um torpedo pesado.</Rimverse_V_SpaceBomber.description>
+  <Rimverse_V_Tug.label>rebocador</Rimverse_V_Tug.label>
+  <Rimverse_V_Tug.description>Um rebocador atarracado com arpão. Arrasta estações e destroços.</Rimverse_V_Tug.description>
+  <Rimverse_V_AsteroidMiner.label>minerador de asteroide</Rimverse_V_AsteroidMiner.label>
+  <Rimverse_V_AsteroidMiner.description>Um minerador que se prende a um asteroide e o corta com um laser.</Rimverse_V_AsteroidMiner.description>
+  <Rimverse_V_Scout.label>batedor</Rimverse_V_Scout.label>
+  <Rimverse_V_Scout.description>Um batedor rápido com sensor de longo alcance. Explora o sistema estelar sozinho.</Rimverse_V_Scout.description>
+</LanguageData>

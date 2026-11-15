@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_V_ColonistBike_Blueprint.label>moto de colono</Rimverse_V_ColonistBike_Blueprint.label>
+  <Rimverse_V_ColonistBike_Blueprint.description>Uma moto leve para um piloto e um passageiro. Rápida e barata, mas quase sem blindagem.</Rimverse_V_ColonistBike_Blueprint.description>
+  <Rimverse_V_CargoQuad_Blueprint.label>quadriciclo de carga</Rimverse_V_CargoQuad_Blueprint.label>
+  <Rimverse_V_CargoQuad_Blueprint.description>Um quadriciclo de quatro rodas com uma caçamba pequena.</Rimverse_V_CargoQuad_Blueprint.description>
+  <Rimverse_V_ExplorerRover_Blueprint.label>rover de exploração</Rimverse_V_ExplorerRover_Blueprint.label>
+  <Rimverse_V_ExplorerRover_Blueprint.description>Um rover selado de seis rodas. A cabine guarda 24 horas de ar para a tripulação em mundos sem ar.</Rimverse_V_ExplorerRover_Blueprint.description>
+  <Rimverse_V_CargoTruck_Blueprint.label>caminhão de carga</Rimverse_V_CargoTruck_Blueprint.label>
+  <Rimverse_V_CargoTruck_Blueprint.description>Um caminhão de longa distância com uma caçamba grande.</Rimverse_V_CargoTruck_Blueprint.description>
+  <Rimverse_V_FarmTractor_Blueprint.label>trator agrícola e minerador</Rimverse_V_FarmTractor_Blueprint.label>
+  <Rimverse_V_FarmTractor_Blueprint.description>Um trator lento e resistente. Acelera a colheita e a mineração na fronteira.</Rimverse_V_FarmTractor_Blueprint.description>
+  <Rimverse_V_TroopCarrier_Blueprint.label>blindado de tropas</Rimverse_V_TroopCarrier_Blueprint.label>
+  <Rimverse_V_TroopCarrier_Blueprint.description>Um blindado para oito soldados, com uma metralhadora no teto.</Rimverse_V_TroopCarrier_Blueprint.description>
+  <Rimverse_V_LightTank_Blueprint.label>tanque leve</Rimverse_V_LightTank_Blueprint.label>
+  <Rimverse_V_LightTank_Blueprint.description>Um tanque leve de esteiras com canhão leve e metralhadora coaxial.</Rimverse_V_LightTank_Blueprint.description>
+  <Rimverse_V_Hovercraft_Blueprint.label>hovercraft</Rimverse_V_Hovercraft_Blueprint.label>
+  <Rimverse_V_Hovercraft_Blueprint.description>Um hovercraft erguido por ventiladores que atravessa água e lama como se fosse estrada. Leva uma carabina laser montada.</Rimverse_V_Hovercraft_Blueprint.description>
+  <Rimverse_V_PlasmaTank_Blueprint.label>tanque pesado de plasma</Rimverse_V_PlasmaTank_Blueprint.label>
+  <Rimverse_V_PlasmaTank_Blueprint.description>Um tanque lento e enorme que leva um canhão de plasma.</Rimverse_V_PlasmaTank_Blueprint.description>
+  <Rimverse_V_CombatWalker_Blueprint.label>andador de combate</Rimverse_V_CombatWalker_Blueprint.label>
+  <Rimverse_V_CombatWalker_Blueprint.description>Um andador de duas pernas que passa por cima de escombros, armado com duas armas pesadas.</Rimverse_V_CombatWalker_Blueprint.description>
+  <Rimverse_V_Amphibian_Blueprint.label>anfíbio de mundo oceânico</Rimverse_V_Amphibian_Blueprint.label>
+  <Rimverse_V_Amphibian_Blueprint.description>Um anfíbio com casco de barco para mundos oceânicos. Mais rápido na água que em terra.</Rimverse_V_Amphibian_Blueprint.description>
+  <Rimverse_V_GravWalker_Blueprint.label>andador de gravidade alta</Rimverse_V_GravWalker_Blueprint.label>
+  <Rimverse_V_GravWalker_Blueprint.description>Um andador ultratecnológico com placas de gravidade. Ignora gravidade pesada e leva uma arma pesada.</Rimverse_V_GravWalker_Blueprint.description>
+  <Rimverse_V_VtolSkimmer_Blueprint.label>aerodeslizador VTOL</Rimverse_V_VtolSkimmer_Blueprint.label>
+  <Rimverse_V_VtolSkimmer_Blueprint.description>Um VTOL de rotores inclináveis que leva seis passageiros pelo mapa-múndi três vezes mais rápido que uma caravana.</Rimverse_V_VtolSkimmer_Blueprint.description>
+  <Rimverse_V_AtmoFighter_Blueprint.label>caça atmosférico</Rimverse_V_AtmoFighter_Blueprint.label>
+  <Rimverse_V_AtmoFighter_Blueprint.description>Um caça de um lugar que faz passadas de tiro sobre o mapa.</Rimverse_V_AtmoFighter_Blueprint.description>
+  <Rimverse_V_TroopTransport_Blueprint.label>transporte de tropas</Rimverse_V_TroopTransport_Blueprint.label>
+  <Rimverse_V_TroopTransport_Blueprint.description>Um transporte pesado que pousa doze soldados no mapa como as cápsulas de transporte.</Rimverse_V_TroopTransport_Blueprint.description>
+  <Rimverse_V_CloudAirship_Blueprint.label>dirigível de nuvens</Rimverse_V_CloudAirship_Blueprint.label>
+  <Rimverse_V_CloudAirship_Blueprint.description>Um dirigível de gás leve. O único veículo que funciona nas nuvens altas dos gigantes gasosos.</Rimverse_V_CloudAirship_Blueprint.description>
+  <Rimverse_V_AtmoBomber_Blueprint.label>bombardeiro atmosférico</Rimverse_V_AtmoBomber_Blueprint.label>
+  <Rimverse_V_AtmoBomber_Blueprint.description>Um bombardeiro ultratecnológico. Impreciso, mas as passadas de bombardeio batem muito forte.</Rimverse_V_AtmoBomber_Blueprint.description>
+  <Rimverse_V_LandingShuttle_Blueprint.label>lançadeira de pouso</Rimverse_V_LandingShuttle_Blueprint.label>
+  <Rimverse_V_LandingShuttle_Blueprint.description>Leva seis pawns e carga entre a superfície e a órbita.</Rimverse_V_LandingShuttle_Blueprint.description>
+  <Rimverse_V_CargoShuttle_Blueprint.label>lançadeira de carga</Rimverse_V_CargoShuttle_Blueprint.label>
+  <Rimverse_V_CargoShuttle_Blueprint.description>Uma lançadeira quadrada e sem armas que leva quatro toneladas de carga para a órbita.</Rimverse_V_CargoShuttle_Blueprint.description>
+  <Rimverse_V_AssaultShuttle_Blueprint.label>lançadeira de assalto</Rimverse_V_AssaultShuttle_Blueprint.label>
+  <Rimverse_V_AssaultShuttle_Blueprint.description>Uma lançadeira blindada para abordagem, com canhão automático no nariz e lugar para dez soldados.</Rimverse_V_AssaultShuttle_Blueprint.description>
+  <Rimverse_V_EscapePod_Blueprint.label>cápsula de fuga</Rimverse_V_EscapePod_Blueprint.label>
+  <Rimverse_V_EscapePod_Blueprint.description>Uma cápsula de ida para quatro. Pousa no corpo mais próximo quando a nave se perde.</Rimverse_V_EscapePod_Blueprint.description>
+  <Rimverse_V_SpaceFighter_Blueprint.label>caça espacial</Rimverse_V_SpaceFighter_Blueprint.label>
+  <Rimverse_V_SpaceFighter_Blueprint.description>Uma pequena nave de combate lançada do hangar, com laser de ponto e mísseis.</Rimverse_V_SpaceFighter_Blueprint.description>
+  <Rimverse_V_SpaceBomber_Blueprint.label>bombardeiro espacial</Rimverse_V_SpaceBomber_Blueprint.label>
+  <Rimverse_V_SpaceBomber_Blueprint.description>Um bombardeiro de dois lugares que leva um torpedo pesado.</Rimverse_V_SpaceBomber_Blueprint.description>
+  <Rimverse_V_Tug_Blueprint.label>rebocador</Rimverse_V_Tug_Blueprint.label>
+  <Rimverse_V_Tug_Blueprint.description>Um rebocador atarracado com arpão. Arrasta estações e destroços.</Rimverse_V_Tug_Blueprint.description>
+  <Rimverse_V_AsteroidMiner_Blueprint.label>minerador de asteroide</Rimverse_V_AsteroidMiner_Blueprint.label>
+  <Rimverse_V_AsteroidMiner_Blueprint.description>Um minerador que se prende a um asteroide e o corta com um laser.</Rimverse_V_AsteroidMiner_Blueprint.description>
+  <Rimverse_V_Scout_Blueprint.label>batedor</Rimverse_V_Scout_Blueprint.label>
+  <Rimverse_V_Scout_Blueprint.description>Um batedor rápido com sensor de longo alcance. Explora o sistema estelar sozinho.</Rimverse_V_Scout_Blueprint.description>
+</LanguageData>

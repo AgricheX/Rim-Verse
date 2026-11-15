@@ -6,7 +6,7 @@
     <label>orbital credit</label>
     <description>A light, encrypted chip worth 10 silver. Stations, orbital traders and star civilizations use it instead of heavy silver.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Silver</texPath>
+      <texPath>Rimverse/Things/Item/Resource/OrbitalCredit</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
       <color>(0.55, 0.85, 1)</color>
     </graphicData>
@@ -32,7 +32,7 @@
     <label>stellar mark</label>
     <description>A sealed chip worth 100 silver, used for trade between stars.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Gold</texPath>
+      <texPath>Rimverse/Things/Item/Resource/StellarMark</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
       <color>(0.75, 0.6, 1)</color>
     </graphicData>

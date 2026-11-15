@@ -115,42 +115,39 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Alpaca/Alpaca</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Lopehorn/Lopehorn</texPath>
           <drawSize>1.09</drawSize>
-          <color>(140,170,200)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Lopehorn/Dessicated_Lopehorn</texPath>
           <drawSize>1.09</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Alpaca/Alpaca</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Lopehorn/Lopehorn</texPath>
           <drawSize>1.59</drawSize>
-          <color>(140,170,200)</color>
           <shadowData>
             <volume>(0.3, 0.3, 0.3)</volume>
             <offset>(0,0,-0.3)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Lopehorn/Dessicated_Lopehorn</texPath>
           <drawSize>1.59</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Alpaca/Alpaca</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Lopehorn/Lopehorn</texPath>
           <drawSize>1.84</drawSize>
-          <color>(140,170,200)</color>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.2)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Lopehorn/Dessicated_Lopehorn</texPath>
           <drawSize>1.84</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -278,42 +275,39 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Alpaca/Alpaca</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Mossback/Mossback</texPath>
           <drawSize>0.96</drawSize>
-          <color>(110,150,90)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Mossback/Dessicated_Mossback</texPath>
           <drawSize>0.96</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Alpaca/Alpaca</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Mossback/Mossback</texPath>
           <drawSize>1.41</drawSize>
-          <color>(110,150,90)</color>
           <shadowData>
             <volume>(0.3, 0.3, 0.3)</volume>
             <offset>(0,0,-0.3)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Mossback/Dessicated_Mossback</texPath>
           <drawSize>1.41</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Alpaca/Alpaca</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Mossback/Mossback</texPath>
           <drawSize>1.63</drawSize>
-          <color>(110,150,90)</color>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.2)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Mossback/Dessicated_Mossback</texPath>
           <drawSize>1.63</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -442,46 +436,43 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megasloth/Megasloth</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Titanhide/Titanhide</texPath>
           <drawSize>1.68</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
             <offset>(0,0,-0.2)</offset>
           </shadowData>
-          <color>(120,100,140)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megasloth/Dessicated_Megasloth</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Titanhide/Dessicated_Titanhide</texPath>
           <drawSize>1.68</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megasloth/Megasloth</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Titanhide/Titanhide</texPath>
           <drawSize>2.43</drawSize>
           <shadowData>
             <volume>(0.6, 0.45, 0.45)</volume>
             <offset>(0,0,-0.25)</offset>
           </shadowData>
-          <color>(120,100,140)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megasloth/Dessicated_Megasloth</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Titanhide/Dessicated_Titanhide</texPath>
           <drawSize>2.43</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megasloth/Megasloth</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Titanhide/Titanhide</texPath>
           <drawSize>3.55</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
             <offset>(0,0,-0.3)</offset>
           </shadowData>
-          <color>(120,100,140)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megasloth/Dessicated_Megasloth</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Titanhide/Dessicated_Titanhide</texPath>
           <drawSize>3.55</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -610,46 +601,43 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megasloth/Megasloth</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Dunewalker/Dunewalker</texPath>
           <drawSize>1.84</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
             <offset>(0,0,-0.2)</offset>
           </shadowData>
-          <color>(190,160,110)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megasloth/Dessicated_Megasloth</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Dunewalker/Dessicated_Dunewalker</texPath>
           <drawSize>1.84</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megasloth/Megasloth</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Dunewalker/Dunewalker</texPath>
           <drawSize>2.66</drawSize>
           <shadowData>
             <volume>(0.6, 0.45, 0.45)</volume>
             <offset>(0,0,-0.25)</offset>
           </shadowData>
-          <color>(190,160,110)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megasloth/Dessicated_Megasloth</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Dunewalker/Dessicated_Dunewalker</texPath>
           <drawSize>2.66</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megasloth/Megasloth</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Dunewalker/Dunewalker</texPath>
           <drawSize>3.89</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
             <offset>(0,0,-0.3)</offset>
           </shadowData>
-          <color>(190,160,110)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megasloth/Dessicated_Megasloth</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Dunewalker/Dessicated_Dunewalker</texPath>
           <drawSize>3.89</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -690,42 +678,39 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Shadecat/Shadecat</texPath>
           <drawSize>1.3</drawSize>
-          <color>(70,70,95)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Shadecat/Dessicated_Shadecat</texPath>
           <drawSize>1.3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Shadecat/Shadecat</texPath>
           <drawSize>1.66</drawSize>
-          <color>(70,70,95)</color>
           <shadowData>
             <volume>(0.3, 0.3, 0.3)</volume>
             <offset>(0,0,-0.3)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Shadecat/Dessicated_Shadecat</texPath>
           <drawSize>1.66</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Shadecat/Shadecat</texPath>
           <drawSize>2.58</drawSize>
-          <color>(70,70,95)</color>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.1)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Shadecat/Dessicated_Shadecat</texPath>
           <drawSize>2.58</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -766,42 +751,39 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Ridgeclaw/Ridgeclaw</texPath>
           <drawSize>1.52</drawSize>
-          <color>(150,80,60)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Ridgeclaw/Dessicated_Ridgeclaw</texPath>
           <drawSize>1.52</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Ridgeclaw/Ridgeclaw</texPath>
           <drawSize>1.93</drawSize>
-          <color>(150,80,60)</color>
           <shadowData>
             <volume>(0.3, 0.3, 0.3)</volume>
             <offset>(0,0,-0.3)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Ridgeclaw/Dessicated_Ridgeclaw</texPath>
           <drawSize>1.93</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Ridgeclaw/Ridgeclaw</texPath>
           <drawSize>3.0</drawSize>
-          <color>(150,80,60)</color>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.1)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Ridgeclaw/Dessicated_Ridgeclaw</texPath>
           <drawSize>3.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -838,42 +820,39 @@
         <label>howlback pup</label>
         <labelPlural>howlback pups</labelPlural>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wolf_Timber/Wolf_Timber</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Howlback/Howlback</texPath>
           <drawSize>1.0</drawSize>
-          <color>(160,160,175)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Howlback/Dessicated_Howlback</texPath>
           <drawSize>1.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wolf_Timber/Wolf_Timber</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Howlback/Howlback</texPath>
           <drawSize>1.42</drawSize>
           <shadowData>
             <volume>(0.25, 0.3, 0.25)</volume>
             <offset>(0,0,-0.15)</offset>
           </shadowData>
-          <color>(160,160,175)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Howlback/Dessicated_Howlback</texPath>
           <drawSize>1.42</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wolf_Timber/Wolf_Timber</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Howlback/Howlback</texPath>
           <drawSize>1.85</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>
             <offset>(0,0,-0.15)</offset>
           </shadowData>
-          <color>(160,160,175)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Howlback/Dessicated_Howlback</texPath>
           <drawSize>1.85</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -910,42 +889,39 @@
         <label>glassfang pup</label>
         <labelPlural>glassfang pups</labelPlural>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wolf_Timber/Wolf_Timber</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Glassfang/Glassfang</texPath>
           <drawSize>0.81</drawSize>
-          <color>(120,190,190)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Glassfang/Dessicated_Glassfang</texPath>
           <drawSize>0.81</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wolf_Timber/Wolf_Timber</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Glassfang/Glassfang</texPath>
           <drawSize>1.16</drawSize>
           <shadowData>
             <volume>(0.25, 0.3, 0.25)</volume>
             <offset>(0,0,-0.15)</offset>
           </shadowData>
-          <color>(120,190,190)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Glassfang/Dessicated_Glassfang</texPath>
           <drawSize>1.16</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wolf_Timber/Wolf_Timber</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Glassfang/Glassfang</texPath>
           <drawSize>1.51</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>
             <offset>(0,0,-0.15)</offset>
           </shadowData>
-          <color>(120,190,190)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Glassfang/Dessicated_Glassfang</texPath>
           <drawSize>1.51</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -1071,42 +1047,39 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/TurkeyHen</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Skyfin/Skyfin</texPath>
           <drawSize>0.82</drawSize>
-          <color>(90,140,200)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/Dessicated_TurkeyHen</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Skyfin/Dessicated_Skyfin</texPath>
           <drawSize>0.82</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/TurkeyHen</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Skyfin/Skyfin</texPath>
           <drawSize>0.98</drawSize>
           <shadowData>
             <volume>(0.3, 0.3, 0.3)</volume>
             <offset>(0,0,-0.3)</offset>
           </shadowData>
-          <color>(90,140,200)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/Dessicated_TurkeyHen</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Skyfin/Dessicated_Skyfin</texPath>
           <drawSize>0.98</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/TurkeyTom</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Skyfin/Skyfin</texPath>
           <drawSize>1.14</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.2)</offset>
           </shadowData>
-          <color>(90,140,200)</color>
         </bodyGraphicData>
         <femaleGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/TurkeyHen</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Skyfin/Skyfin</texPath>
           <drawSize>1.4</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
@@ -1114,11 +1087,11 @@
           </shadowData>
         </femaleGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/Dessicated_TurkeyTom</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Skyfin/Dessicated_Skyfin</texPath>
           <drawSize>1.14</drawSize>
         </dessicatedBodyGraphicData>
         <femaleDessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/Dessicated_TurkeyHen</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Skyfin/Dessicated_Skyfin</texPath>
           <drawSize>1.4</drawSize>
         </femaleDessicatedBodyGraphicData>
       </li>
@@ -1244,42 +1217,39 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/TurkeyHen</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Duskwing/Duskwing</texPath>
           <drawSize>0.71</drawSize>
-          <color>(110,80,130)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/Dessicated_TurkeyHen</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Duskwing/Dessicated_Duskwing</texPath>
           <drawSize>0.71</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/TurkeyHen</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Duskwing/Duskwing</texPath>
           <drawSize>0.85</drawSize>
           <shadowData>
             <volume>(0.3, 0.3, 0.3)</volume>
             <offset>(0,0,-0.3)</offset>
           </shadowData>
-          <color>(110,80,130)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/Dessicated_TurkeyHen</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Duskwing/Dessicated_Duskwing</texPath>
           <drawSize>0.85</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/TurkeyTom</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Duskwing/Duskwing</texPath>
           <drawSize>0.99</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.2)</offset>
           </shadowData>
-          <color>(110,80,130)</color>
         </bodyGraphicData>
         <femaleGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/TurkeyHen</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Duskwing/Duskwing</texPath>
           <drawSize>1.4</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
@@ -1287,11 +1257,11 @@
           </shadowData>
         </femaleGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/Dessicated_TurkeyTom</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Duskwing/Dessicated_Duskwing</texPath>
           <drawSize>0.99</drawSize>
         </dessicatedBodyGraphicData>
         <femaleDessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Turkey/Dessicated_TurkeyHen</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Duskwing/Dessicated_Duskwing</texPath>
           <drawSize>1.4</drawSize>
         </femaleDessicatedBodyGraphicData>
       </li>
@@ -1397,38 +1367,35 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Tortoise</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Shellback/Shellback</texPath>
           <drawSize>1.8</drawSize>
-          <color>(110,110,100)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Dessicated_Tortoise</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Shellback/Dessicated_Shellback</texPath>
           <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Tortoise</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Shellback/Shellback</texPath>
           <drawSize>2.4</drawSize>
-          <color>(110,110,100)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Dessicated_Tortoise</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Shellback/Dessicated_Shellback</texPath>
           <drawSize>2.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Tortoise</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Shellback/Shellback</texPath>
           <drawSize>3.0</drawSize>
           <shadowData>
             <volume>(0.45, 0.45, 0.45)</volume>
             <offset>(0,0,0)</offset>
           </shadowData>
-          <color>(110,110,100)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Dessicated_Tortoise</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Shellback/Dessicated_Shellback</texPath>
           <drawSize>3.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -1534,38 +1501,35 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Tortoise</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Plated/Plated</texPath>
           <drawSize>1.39</drawSize>
-          <color>(150,120,80)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Dessicated_Tortoise</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Plated/Dessicated_Plated</texPath>
           <drawSize>1.39</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Tortoise</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Plated/Plated</texPath>
           <drawSize>1.86</drawSize>
-          <color>(150,120,80)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Dessicated_Tortoise</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Plated/Dessicated_Plated</texPath>
           <drawSize>1.86</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Tortoise</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Plated/Plated</texPath>
           <drawSize>2.32</drawSize>
           <shadowData>
             <volume>(0.45, 0.45, 0.45)</volume>
             <offset>(0,0,0)</offset>
           </shadowData>
-          <color>(150,120,80)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Dessicated_Tortoise</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Plated/Dessicated_Plated</texPath>
           <drawSize>2.32</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -1661,38 +1625,35 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Megascarab</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Hivemite/Hivemite</texPath>
           <drawSize>1.22</drawSize>
-          <color>(170,140,60)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Dessicated_Megascarab</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Hivemite/Dessicated_Hivemite</texPath>
           <drawSize>1.22</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Megascarab</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Hivemite/Hivemite</texPath>
           <drawSize>1.53</drawSize>
-          <color>(170,140,60)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Dessicated_Megascarab</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Hivemite/Dessicated_Hivemite</texPath>
           <drawSize>1.53</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Megascarab</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Hivemite/Hivemite</texPath>
           <drawSize>1.84</drawSize>
-          <color>(170,140,60)</color>
           <shadowData>
             <volume>(0.2, 0.3, 0.2)</volume>
             <offset>(0,0,0)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Dessicated_Megascarab</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Hivemite/Dessicated_Hivemite</texPath>
           <drawSize>1.84</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -1788,38 +1749,35 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Megascarab</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Silkling/Silkling</texPath>
           <drawSize>1.12</drawSize>
-          <color>(200,200,210)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Dessicated_Megascarab</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Silkling/Dessicated_Silkling</texPath>
           <drawSize>1.12</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Megascarab</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Silkling/Silkling</texPath>
           <drawSize>1.4</drawSize>
-          <color>(200,200,210)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Dessicated_Megascarab</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Silkling/Dessicated_Silkling</texPath>
           <drawSize>1.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Megascarab</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Silkling/Silkling</texPath>
           <drawSize>1.68</drawSize>
-          <color>(200,200,210)</color>
           <shadowData>
             <volume>(0.2, 0.3, 0.2)</volume>
             <offset>(0,0,0)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Dessicated_Megascarab</texPath>
+          <texPath>Rimverse/Things/Pawn/Animal/Silkling/Dessicated_Silkling</texPath>
           <drawSize>1.68</drawSize>
         </dessicatedBodyGraphicData>
       </li>

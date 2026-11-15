@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_VoidBorn.degreeDatas.0.label>nascido para o vácuo</Rimverse_VoidBorn.degreeDatas.0.label>
+  <Rimverse_VoidBorn.degreeDatas.0.description>{PAWN_nameDef} nasceu entre as estrelas. Nunca enjoa no espaço e a febre de cabine não {PAWN_objective} afeta.</Rimverse_VoidBorn.degreeDatas.0.description>
+  <Rimverse_Grounded.degreeDatas.0.label>pés no chão</Rimverse_Grounded.degreeDatas.0.label>
+  <Rimverse_Grounded.degreeDatas.0.description>{PAWN_nameDef} odeia o espaço. Fica mais feliz com terra debaixo dos pés.</Rimverse_Grounded.degreeDatas.0.description>
+  <Rimverse_NaturalPilot.degreeDatas.0.label>piloto nato</Rimverse_NaturalPilot.degreeDatas.0.label>
+  <Rimverse_NaturalPilot.degreeDatas.0.description>{PAWN_nameDef} pilota como quem respira.</Rimverse_NaturalPilot.degreeDatas.0.description>
+  <Rimverse_Navigator.degreeDatas.0.label>navegador</Rimverse_Navigator.degreeDatas.0.label>
+  <Rimverse_Navigator.degreeDatas.0.description>{PAWN_nameDef} lê dados de sensores e mapas estelares num relance.</Rimverse_Navigator.degreeDatas.0.description>
+  <Rimverse_Claustrophobic.degreeDatas.0.label>claustrofóbico</Rimverse_Claustrophobic.degreeDatas.0.label>
+  <Rimverse_Claustrophobic.degreeDatas.0.description>{PAWN_nameDef} detesta cômodos pequenos.</Rimverse_Claustrophobic.degreeDatas.0.description>
+  <Rimverse_SpaceLoner.degreeDatas.0.label>lobo solitário do espaço</Rimverse_SpaceLoner.degreeDatas.0.label>
+  <Rimverse_SpaceLoner.degreeDatas.0.description>{PAWN_nameDef} não se importa com isolamento longo.</Rimverse_SpaceLoner.degreeDatas.0.description>
+  <Rimverse_Curious.degreeDatas.0.label>curioso</Rimverse_Curious.degreeDatas.0.label>
+  <Rimverse_Curious.degreeDatas.0.description>{PAWN_nameDef} se anima ao explorar o desconhecido.</Rimverse_Curious.degreeDatas.0.description>
+  <Rimverse_ShipMechanic.degreeDatas.0.label>mecânico de nave</Rimverse_ShipMechanic.degreeDatas.0.label>
+  <Rimverse_ShipMechanic.degreeDatas.0.description>{PAWN_nameDef} cresceu consertando motores.</Rimverse_ShipMechanic.degreeDatas.0.description>
+  <Rimverse_ColdUnderPressure.degreeDatas.0.label>frio sob pressão</Rimverse_ColdUnderPressure.degreeDatas.0.label>
+  <Rimverse_ColdUnderPressure.degreeDatas.0.description>{PAWN_nameDef} mantém a calma em brechas e abordagens.</Rimverse_ColdUnderPressure.degreeDatas.0.description>
+  <Rimverse_Smuggler.degreeDatas.0.label>contrabandista</Rimverse_Smuggler.degreeDatas.0.label>
+  <Rimverse_Smuggler.degreeDatas.0.description>{PAWN_nameDef} conhece todos os mercados negros do setor.</Rimverse_Smuggler.degreeDatas.0.description>
+  <Rimverse_Diplomat.degreeDatas.0.label>diplomata</Rimverse_Diplomat.degreeDatas.0.label>
+  <Rimverse_Diplomat.degreeDatas.0.description>{PAWN_nameDef} fala a língua de muitas civilizações.</Rimverse_Diplomat.degreeDatas.0.description>
+  <Rimverse_VoidSuperstitious.degreeDatas.0.label>supersticioso do vazio</Rimverse_VoidSuperstitious.degreeDatas.0.label>
+  <Rimverse_VoidSuperstitious.degreeDatas.0.description>{PAWN_nameDef} acredita que o vazio está observando.</Rimverse_VoidSuperstitious.degreeDatas.0.description>
+</LanguageData>

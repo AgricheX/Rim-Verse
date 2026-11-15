@@ -28,6 +28,7 @@ namespace Rimverse
         public bool tractor;
         public bool missile;
         public float jamming;
+        public bool boardingTorpedo;
 
         public CompProperties_ShipWeapon()
         {

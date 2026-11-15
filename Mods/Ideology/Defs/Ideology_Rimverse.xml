@@ -4,7 +4,7 @@
   <IssueDef>
     <defName>Rimverse_SpaceLife</defName>
     <label>life in space</label>
-    <iconPath>UI/Issues/Lighting</iconPath>
+    <iconPath>Rimverse/UI/Issue/SpaceLife</iconPath>
   </IssueDef>
 
   <PreceptDef>
@@ -127,7 +127,7 @@
     <defName>Rimverse_VoidBorn</defName>
     <label>void-born</label>
     <description>People who were born between stars. Gravity wells are prisons, and the ship is the only true home.</description>
-    <iconPath>UI/Memes/Transhumanist</iconPath>
+    <iconPath>Rimverse/UI/Meme/VoidBorn</iconPath>
     <groupDef>Misc</groupDef>
     <impact>2</impact>
     <requireOne>
@@ -155,7 +155,7 @@
     <defName>Rimverse_Cosmism</defName>
     <label>cosmism</label>
     <description>Humanity's destiny is to spread through the cosmos, defeat death and wake the sleeping worlds.</description>
-    <iconPath>UI/Memes/HighLife</iconPath>
+    <iconPath>Rimverse/UI/Meme/Cosmism</iconPath>
     <groupDef>Misc</groupDef>
     <impact>2</impact>
     <requireOne>
@@ -184,7 +184,7 @@
     <defName>Rimverse_EternalTravelers</defName>
     <label>eternal travelers</label>
     <description>To stop is to die. The journey from star to star is the meaning of life, and no world is worth settling forever.</description>
-    <iconPath>UI/Memes/Rancher</iconPath>
+    <iconPath>Rimverse/UI/Meme/EternalTravelers</iconPath>
     <groupDef>Misc</groupDef>
     <impact>2</impact>
     <requireOne>
@@ -213,7 +213,7 @@
     <defName>Rimverse_GateCult</defName>
     <label>gate cult</label>
     <description>The ancient gates are holy relics left by those who came before. Opening them is prayer, and passing through them is pilgrimage.</description>
-    <iconPath>UI/Structures/Archist</iconPath>
+    <iconPath>Rimverse/UI/Meme/GateCult</iconPath>
     <groupDef>Misc</groupDef>
     <impact>1</impact>
     <requireOne>

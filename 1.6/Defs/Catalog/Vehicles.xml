@@ -1,0 +1,5450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_GroundVehicles</defName>
+    <label>ground vehicles</label>
+    <description>Bikes, quads, rovers, trucks and tractors for planet surfaces.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </prerequisites>
+    <researchViewX>8</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ArmoredVehicles</defName>
+    <label>armored vehicles</label>
+    <description>Troop carriers and light tanks with mounted weapons.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_GroundVehicles</li>
+      <li>Rimverse_KineticWeapons</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_SpacerVehicles</defName>
+    <label>spacer vehicles</label>
+    <description>Hovercraft, amphibians, combat walkers and plasma tanks powered by power cells.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_ArmoredVehicles</li>
+    </prerequisites>
+    <researchViewX>10</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_Aircraft</defName>
+    <label>atmospheric aircraft</label>
+    <description>VTOLs, fighters, troop transports, cloud airships and bombers.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_GroundVehicles</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_Shuttles</defName>
+    <label>shuttles</label>
+    <description>Landing, cargo and assault shuttles and escape pods that fly between surface and orbit.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_Aircraft</li>
+      <li>Rimverse_ShipBasics</li>
+    </prerequisites>
+    <researchViewX>10</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_SmallCraft</defName>
+    <label>small spacecraft</label>
+    <description>Space fighters, bombers, tugs, asteroid miners and scouts launched from the ship.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_Shuttles</li>
+    </prerequisites>
+    <researchViewX>11</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_VMG</defName>
+    <label>machine gun bullet</label>
+    <graphicData>
+      <texPath>Rimverse/Things/Projectile/VMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_VCannonLight</defName>
+    <label>light cannon shell</label>
+    <graphicData>
+      <texPath>Rimverse/Things/Projectile/VCannonLight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>45</damageAmountBase>
+      <speed>60</speed><explosionRadius>1.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_VCannonHeavy</defName>
+    <label>heavy cannon shell</label>
+    <graphicData>
+      <texPath>Rimverse/Things/Projectile/VCannonHeavy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>70</damageAmountBase>
+      <speed>55</speed><explosionRadius>1.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_VLaser</defName>
+    <label>laser bolt</label>
+    <graphicData>
+      <texPath>Rimverse/Things/Projectile/VLaser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>Burn</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <speed>140</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_VPlasma</defName>
+    <label>plasma bolt</label>
+    <graphicData>
+      <texPath>Rimverse/Things/Projectile/VPlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>55</damageAmountBase>
+      <speed>50</speed><explosionRadius>1.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_VMissile</defName>
+    <label>rocket</label>
+    <graphicData>
+      <texPath>Rimverse/Things/Projectile/VMissile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>60</damageAmountBase>
+      <speed>40</speed><explosionRadius>1.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_VHarpoon</defName>
+    <label>harpoon</label>
+    <graphicData>
+      <texPath>Rimverse/Things/Projectile/VHarpoon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>Stab</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+    <defName>Rimverse_VT_MG</defName>
+    <label>mounted machine gun</label>
+    <description>mounted machine gun</description>
+    <turretType>Rotatable</turretType>
+    <shotSound>Shot_Minigun</shotSound>
+    <projectile>Rimverse_VMG</projectile>
+    <reloadTimer>4</reloadTimer>
+    <warmUpTimer>1.5</warmUpTimer>
+    <rotationSpeed>2.5</rotationSpeed>
+    <maxRange>30</maxRange>
+    <projectileOffset>1</projectileOffset>
+    <genericAmmo>true</genericAmmo>
+    <magazineCapacity>20</magazineCapacity>
+    <ammunition>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </ammunition>
+    <fireModes>
+      <li>
+        <shotsPerBurst>3~5</shotsPerBurst>
+        <ticksBetweenShots>4</ticksBetweenShots>
+        <ticksBetweenBursts>8~28</ticksBetweenBursts>
+        <spreadRadius>1.2</spreadRadius>
+        <label>mounted machine gun</label>
+        <texPath>Rimverse/UI/Gizmos/FireMode</texPath>
+      </li>
+    </fireModes>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Turret/MG</texPath>
+      <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(2.0,2.0)</drawSize>
+    </graphicData>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+    <defName>Rimverse_VT_LightCannon</defName>
+    <label>light cannon</label>
+    <description>light cannon</description>
+    <turretType>Rotatable</turretType>
+    <shotSound>Shot_Autocannon</shotSound>
+    <projectile>Rimverse_VCannonLight</projectile>
+    <reloadTimer>4</reloadTimer>
+    <warmUpTimer>3.0</warmUpTimer>
+    <rotationSpeed>2.5</rotationSpeed>
+    <maxRange>26</maxRange>
+    <projectileOffset>1</projectileOffset>
+    <genericAmmo>true</genericAmmo>
+    <magazineCapacity>4</magazineCapacity>
+    <ammunition>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </ammunition>
+    <fireModes>
+      <li>
+        <shotsPerBurst>1~1</shotsPerBurst>
+        <ticksBetweenShots>4</ticksBetweenShots>
+        <ticksBetweenBursts>240~260</ticksBetweenBursts>
+        <spreadRadius>0.6</spreadRadius>
+        <label>light cannon</label>
+        <texPath>Rimverse/UI/Gizmos/FireMode</texPath>
+      </li>
+    </fireModes>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Turret/LightCannon</texPath>
+      <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(2.8,2.8)</drawSize>
+    </graphicData>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+    <defName>Rimverse_VT_HeavyCannon</defName>
+    <label>heavy cannon</label>
+    <description>heavy cannon</description>
+    <turretType>Rotatable</turretType>
+    <shotSound>Shot_Autocannon</shotSound>
+    <projectile>Rimverse_VCannonHeavy</projectile>
+    <reloadTimer>4</reloadTimer>
+    <warmUpTimer>3.5</warmUpTimer>
+    <rotationSpeed>2.5</rotationSpeed>
+    <maxRange>32</maxRange>
+    <projectileOffset>1</projectileOffset>
+    <genericAmmo>true</genericAmmo>
+    <magazineCapacity>4</magazineCapacity>
+    <ammunition>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </ammunition>
+    <fireModes>
+      <li>
+        <shotsPerBurst>1~1</shotsPerBurst>
+        <ticksBetweenShots>4</ticksBetweenShots>
+        <ticksBetweenBursts>300~320</ticksBetweenBursts>
+        <spreadRadius>0.6</spreadRadius>
+        <label>heavy cannon</label>
+        <texPath>Rimverse/UI/Gizmos/FireMode</texPath>
+      </li>
+    </fireModes>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Turret/HeavyCannon</texPath>
+      <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3.6,3.6)</drawSize>
+    </graphicData>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+    <defName>Rimverse_VT_Laser</defName>
+    <label>mounted laser carbine</label>
+    <description>mounted laser carbine</description>
+    <turretType>Rotatable</turretType>
+    <shotSound>Shot_ChargeRifle</shotSound>
+    <projectile>Rimverse_VLaser</projectile>
+    <reloadTimer>4</reloadTimer>
+    <warmUpTimer>1.6</warmUpTimer>
+    <rotationSpeed>2.5</rotationSpeed>
+    <maxRange>28</maxRange>
+    <projectileOffset>1</projectileOffset>
+    <fireModes>
+      <li>
+        <shotsPerBurst>2~3</shotsPerBurst>
+        <ticksBetweenShots>4</ticksBetweenShots>
+        <ticksBetweenBursts>10~30</ticksBetweenBursts>
+        <spreadRadius>1.2</spreadRadius>
+        <label>mounted laser carbine</label>
+        <texPath>Rimverse/UI/Gizmos/FireMode</texPath>
+      </li>
+    </fireModes>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Turret/Laser</texPath>
+      <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(2.0,2.0)</drawSize>
+    </graphicData>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+    <defName>Rimverse_VT_Plasma</defName>
+    <label>plasma cannon</label>
+    <description>plasma cannon</description>
+    <turretType>Rotatable</turretType>
+    <shotSound>Shot_ChargeRifle</shotSound>
+    <projectile>Rimverse_VPlasma</projectile>
+    <reloadTimer>4</reloadTimer>
+    <warmUpTimer>4.0</warmUpTimer>
+    <rotationSpeed>2.5</rotationSpeed>
+    <maxRange>30</maxRange>
+    <projectileOffset>1</projectileOffset>
+    <fireModes>
+      <li>
+        <shotsPerBurst>1~1</shotsPerBurst>
+        <ticksBetweenShots>4</ticksBetweenShots>
+        <ticksBetweenBursts>260~280</ticksBetweenBursts>
+        <spreadRadius>0.6</spreadRadius>
+        <label>plasma cannon</label>
+        <texPath>Rimverse/UI/Gizmos/FireMode</texPath>
+      </li>
+    </fireModes>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Turret/Plasma</texPath>
+      <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3.6,3.6)</drawSize>
+    </graphicData>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+    <defName>Rimverse_VT_HeavyPair</defName>
+    <label>twin heavy guns</label>
+    <description>twin heavy guns</description>
+    <turretType>Rotatable</turretType>
+    <shotSound>Shot_Minigun</shotSound>
+    <projectile>Rimverse_VMG</projectile>
+    <reloadTimer>4</reloadTimer>
+    <warmUpTimer>2.0</warmUpTimer>
+    <rotationSpeed>2.5</rotationSpeed>
+    <maxRange>32</maxRange>
+    <projectileOffset>1</projectileOffset>
+    <genericAmmo>true</genericAmmo>
+    <magazineCapacity>32</magazineCapacity>
+    <ammunition>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </ammunition>
+    <fireModes>
+      <li>
+        <shotsPerBurst>6~8</shotsPerBurst>
+        <ticksBetweenShots>4</ticksBetweenShots>
+        <ticksBetweenBursts>6~26</ticksBetweenBursts>
+        <spreadRadius>1.2</spreadRadius>
+        <label>twin heavy guns</label>
+        <texPath>Rimverse/UI/Gizmos/FireMode</texPath>
+      </li>
+    </fireModes>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Turret/HeavyPair</texPath>
+      <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(2.6,2.6)</drawSize>
+    </graphicData>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+    <defName>Rimverse_VT_Rocket</defName>
+    <label>rocket pod</label>
+    <description>rocket pod</description>
+    <turretType>Rotatable</turretType>
+    <shotSound>Shot_Minigun</shotSound>
+    <projectile>Rimverse_VMissile</projectile>
+    <reloadTimer>4</reloadTimer>
+    <warmUpTimer>2.5</warmUpTimer>
+    <rotationSpeed>2.5</rotationSpeed>
+    <maxRange>36</maxRange>
+    <projectileOffset>1</projectileOffset>
+    <genericAmmo>true</genericAmmo>
+    <magazineCapacity>16</magazineCapacity>
+    <ammunition>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </ammunition>
+    <fireModes>
+      <li>
+        <shotsPerBurst>2~4</shotsPerBurst>
+        <ticksBetweenShots>4</ticksBetweenShots>
+        <ticksBetweenBursts>20~40</ticksBetweenBursts>
+        <spreadRadius>1.2</spreadRadius>
+        <label>rocket pod</label>
+        <texPath>Rimverse/UI/Gizmos/FireMode</texPath>
+      </li>
+    </fireModes>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Turret/Rocket</texPath>
+      <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(2.4,2.4)</drawSize>
+    </graphicData>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+    <defName>Rimverse_VT_Autocannon</defName>
+    <label>autocannon</label>
+    <description>autocannon</description>
+    <turretType>Rotatable</turretType>
+    <shotSound>Shot_Minigun</shotSound>
+    <projectile>Rimverse_VCannonLight</projectile>
+    <reloadTimer>4</reloadTimer>
+    <warmUpTimer>2.0</warmUpTimer>
+    <rotationSpeed>2.5</rotationSpeed>
+    <maxRange>30</maxRange>
+    <projectileOffset>1</projectileOffset>
+    <genericAmmo>true</genericAmmo>
+    <magazineCapacity>16</magazineCapacity>
+    <ammunition>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </ammunition>
+    <fireModes>
+      <li>
+        <shotsPerBurst>3~4</shotsPerBurst>
+        <ticksBetweenShots>4</ticksBetweenShots>
+        <ticksBetweenBursts>18~38</ticksBetweenBursts>
+        <spreadRadius>1.2</spreadRadius>
+        <label>autocannon</label>
+        <texPath>Rimverse/UI/Gizmos/FireMode</texPath>
+      </li>
+    </fireModes>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Turret/Autocannon</texPath>
+      <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(2.6,2.6)</drawSize>
+    </graphicData>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+    <defName>Rimverse_VT_PointLaser</defName>
+    <label>point laser</label>
+    <description>point laser</description>
+    <turretType>Rotatable</turretType>
+    <shotSound>Shot_ChargeRifle</shotSound>
+    <projectile>Rimverse_VLaser</projectile>
+    <reloadTimer>4</reloadTimer>
+    <warmUpTimer>1.4</warmUpTimer>
+    <rotationSpeed>2.5</rotationSpeed>
+    <maxRange>24</maxRange>
+    <projectileOffset>1</projectileOffset>
+    <fireModes>
+      <li>
+        <shotsPerBurst>3~3</shotsPerBurst>
+        <ticksBetweenShots>4</ticksBetweenShots>
+        <ticksBetweenBursts>8~28</ticksBetweenBursts>
+        <spreadRadius>1.2</spreadRadius>
+        <label>point laser</label>
+        <texPath>Rimverse/UI/Gizmos/FireMode</texPath>
+      </li>
+    </fireModes>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Turret/PointLaser</texPath>
+      <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(1.8,1.8)</drawSize>
+    </graphicData>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+    <defName>Rimverse_VT_Torpedo</defName>
+    <label>torpedo launcher</label>
+    <description>torpedo launcher</description>
+    <turretType>Rotatable</turretType>
+    <shotSound>Shot_Autocannon</shotSound>
+    <projectile>Rimverse_VMissile</projectile>
+    <reloadTimer>4</reloadTimer>
+    <warmUpTimer>5.0</warmUpTimer>
+    <rotationSpeed>2.5</rotationSpeed>
+    <maxRange>40</maxRange>
+    <projectileOffset>1</projectileOffset>
+    <genericAmmo>true</genericAmmo>
+    <magazineCapacity>4</magazineCapacity>
+    <ammunition>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </ammunition>
+    <fireModes>
+      <li>
+        <shotsPerBurst>1~1</shotsPerBurst>
+        <ticksBetweenShots>4</ticksBetweenShots>
+        <ticksBetweenBursts>400~420</ticksBetweenBursts>
+        <spreadRadius>0.6</spreadRadius>
+        <label>torpedo launcher</label>
+        <texPath>Rimverse/UI/Gizmos/FireMode</texPath>
+      </li>
+    </fireModes>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Turret/Torpedo</texPath>
+      <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(2.4,2.4)</drawSize>
+    </graphicData>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+    <defName>Rimverse_VT_Harpoon</defName>
+    <label>harpoon</label>
+    <description>harpoon</description>
+    <turretType>Rotatable</turretType>
+    <shotSound>Shot_Autocannon</shotSound>
+    <projectile>Rimverse_VHarpoon</projectile>
+    <reloadTimer>4</reloadTimer>
+    <warmUpTimer>3.0</warmUpTimer>
+    <rotationSpeed>2.5</rotationSpeed>
+    <maxRange>20</maxRange>
+    <projectileOffset>1</projectileOffset>
+    <genericAmmo>true</genericAmmo>
+    <magazineCapacity>4</magazineCapacity>
+    <ammunition>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </ammunition>
+    <fireModes>
+      <li>
+        <shotsPerBurst>1~1</shotsPerBurst>
+        <ticksBetweenShots>4</ticksBetweenShots>
+        <ticksBetweenBursts>200~220</ticksBetweenBursts>
+        <spreadRadius>0.6</spreadRadius>
+        <label>harpoon</label>
+        <texPath>Rimverse/UI/Gizmos/FireMode</texPath>
+      </li>
+    </fireModes>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Turret/Harpoon</texPath>
+      <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(2.0,2.0)</drawSize>
+    </graphicData>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+    <defName>Rimverse_VT_MiningLaser</defName>
+    <label>mining laser</label>
+    <description>mining laser</description>
+    <turretType>Rotatable</turretType>
+    <shotSound>Shot_ChargeRifle</shotSound>
+    <projectile>Rimverse_VLaser</projectile>
+    <reloadTimer>4</reloadTimer>
+    <warmUpTimer>1.2</warmUpTimer>
+    <rotationSpeed>2.5</rotationSpeed>
+    <maxRange>10</maxRange>
+    <projectileOffset>1</projectileOffset>
+    <fireModes>
+      <li>
+        <shotsPerBurst>4~6</shotsPerBurst>
+        <ticksBetweenShots>4</ticksBetweenShots>
+        <ticksBetweenBursts>6~26</ticksBetweenBursts>
+        <spreadRadius>1.2</spreadRadius>
+        <label>mining laser</label>
+        <texPath>Rimverse/UI/Gizmos/FireMode</texPath>
+      </li>
+    </fireModes>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Turret/MiningLaser</texPath>
+      <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(1.8,1.8)</drawSize>
+    </graphicData>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_ColonistBike</defName>
+    <label>colonist bike</label>
+    <description>A light electric-start bike for one rider and one passenger. Fast and cheap, but almost no armor.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/ColonistBike/ColonistBike</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(1.6,2.4)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.25</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_ColonistBike_Blueprint</buildDef>
+    <size>(1,2)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Land</vehicleType>
+    <statBases>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>350</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>76</Mass>
+      <CargoCapacity>40</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed>9</MoveSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>1.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>2.5</worldSpeedMultiplier>
+      <customTerrainCosts DisallowTerrainWithTag="Water"/>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>driver</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>true</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>1</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>60</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>21</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Wheel0</key>
+        <label>wheels front</label>
+        <health>9</health>
+        <depth>External</depth>
+        <tags>
+          <li>Wheel</li>
+        </tags>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Wheel1</key>
+        <label>wheels back</label>
+        <health>9</health>
+        <depth>External</depth>
+        <tags>
+          <li>Wheel</li>
+        </tags>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>12</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>8</fuelConsumptionRate>
+        <fuelCapacity>30</fuelCapacity>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_ColonistBike_Blueprint</defName>
+    <label>colonist bike</label>
+    <description>A light electric-start bike for one rider and one passenger. Fast and cheap, but almost no armor.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/ColonistBike/ColonistBike</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.6,2.4)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>1400</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_GroundVehicles</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_ColonistBike</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_CargoQuad</defName>
+    <label>cargo quad</label>
+    <description>A four-wheeled cargo quad with a small trailer bed.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/CargoQuad/CargoQuad</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(2.4,2.6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_CargoQuad_Blueprint</buildDef>
+    <size>(2,2)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Land</vehicleType>
+    <statBases>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>520</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>138</Mass>
+      <CargoCapacity>300</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed>7</MoveSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>1.3</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>2.5</worldSpeedMultiplier>
+      <customTerrainCosts DisallowTerrainWithTag="Water"/>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>driver</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>1</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>90</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>32</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Wheel0</key>
+        <label>wheels front</label>
+        <health>14</health>
+        <depth>External</depth>
+        <tags>
+          <li>Wheel</li>
+        </tags>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Wheel1</key>
+        <label>wheels back</label>
+        <health>14</health>
+        <depth>External</depth>
+        <tags>
+          <li>Wheel</li>
+        </tags>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>18</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>10</fuelConsumptionRate>
+        <fuelCapacity>40</fuelCapacity>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_CargoQuad_Blueprint</defName>
+    <label>cargo quad</label>
+    <description>A four-wheeled cargo quad with a small trailer bed.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/CargoQuad/CargoQuad</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.4,2.6)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToBuild>2080</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_GroundVehicles</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_CargoQuad</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_ExplorerRover</defName>
+    <label>exploration rover</label>
+    <description>A sealed six-wheeled rover. Its cabin keeps 24 hours of air for the crew on airless worlds.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/ExplorerRover/ExplorerRover</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3,3.6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_ExplorerRover_Blueprint</buildDef>
+    <size>(2,3)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Land</vehicleType>
+    <statBases>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>1100</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>205</Mass>
+      <CargoCapacity>250</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed>7</MoveSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>2.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>2.5</worldSpeedMultiplier>
+      <customTerrainCosts DisallowTerrainWithTag="Water"/>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>driver</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>3</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>150</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>54</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Wheel0</key>
+        <label>wheels front</label>
+        <health>24</health>
+        <depth>External</depth>
+        <tags>
+          <li>Wheel</li>
+        </tags>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Wheel1</key>
+        <label>wheels back</label>
+        <health>24</health>
+        <depth>External</depth>
+        <tags>
+          <li>Wheel</li>
+        </tags>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>30</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>14</fuelConsumptionRate>
+        <fuelCapacity>60</fuelCapacity>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_ExplorerRover_Blueprint</defName>
+    <label>exploration rover</label>
+    <description>A sealed six-wheeled rover. Its cabin keeps 24 hours of air for the crew on airless worlds.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/ExplorerRover/ExplorerRover</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3.6)</drawSize>
+    </graphicData>
+    <size>(2,3)</size>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>4400</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_GroundVehicles</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Plasteel>20</Plasteel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_ExplorerRover</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_CargoTruck</defName>
+    <label>cargo truck</label>
+    <description>A long-haul truck with a big cargo bed.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/CargoTruck/CargoTruck</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3.6,6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_CargoTruck_Blueprint</buildDef>
+    <size>(3,5)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Land</vehicleType>
+    <statBases>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>1300</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>390</Mass>
+      <CargoCapacity>1500</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed>6</MoveSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>5.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>2.5</worldSpeedMultiplier>
+      <customTerrainCosts DisallowTerrainWithTag="Water"/>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>driver</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>2</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>200</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>72</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Wheel0</key>
+        <label>wheels front</label>
+        <health>32</health>
+        <depth>External</depth>
+        <tags>
+          <li>Wheel</li>
+        </tags>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Wheel1</key>
+        <label>wheels back</label>
+        <health>32</health>
+        <depth>External</depth>
+        <tags>
+          <li>Wheel</li>
+        </tags>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>40</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>20</fuelConsumptionRate>
+        <fuelCapacity>100</fuelCapacity>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_CargoTruck_Blueprint</defName>
+    <label>cargo truck</label>
+    <description>A long-haul truck with a big cargo bed.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/CargoTruck/CargoTruck</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.6,6)</drawSize>
+    </graphicData>
+    <size>(3,5)</size>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>5200</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_GroundVehicles</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_CargoTruck</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_FarmTractor</defName>
+    <label>farm and mining tractor</label>
+    <description>A slow, tough tractor. It speeds up harvesting and mining on the frontier.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/FarmTractor/FarmTractor</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3.4,3.4)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_FarmTractor_Blueprint</buildDef>
+    <size>(3,3)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Land</vehicleType>
+    <statBases>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>1000</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>330</Mass>
+      <CargoCapacity>600</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed>4</MoveSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>3.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>2.5</worldSpeedMultiplier>
+      <customTerrainCosts DisallowTerrainWithTag="Water"/>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>driver</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>225</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>81</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Track0</key>
+        <label>track left</label>
+        <health>54</health>
+        <depth>External</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Track1</key>
+        <label>track right</label>
+        <health>54</health>
+        <depth>External</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>45</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>16</fuelConsumptionRate>
+        <fuelCapacity>80</fuelCapacity>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_FarmTractor_Blueprint</defName>
+    <label>farm and mining tractor</label>
+    <description>A slow, tough tractor. It speeds up harvesting and mining on the frontier.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/FarmTractor/FarmTractor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.4,3.4)</drawSize>
+    </graphicData>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_GroundVehicles</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>260</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_FarmTractor</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_TroopCarrier</defName>
+    <label>armored troop carrier</label>
+    <description>An armored carrier for eight soldiers, with a roof machine gun.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/TroopCarrier/TroopCarrier</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3.6,6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_TroopCarrier_Blueprint</buildDef>
+    <size>(3,5)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Land</vehicleType>
+    <statBases>
+      <ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>2600</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>580</Mass>
+      <CargoCapacity>400</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed>6</MoveSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>5.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>2.5</worldSpeedMultiplier>
+      <customTerrainCosts DisallowTerrainWithTag="Water"/>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>driver</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>8</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>450</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>162</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Wheel0</key>
+        <label>wheels front</label>
+        <health>72</health>
+        <depth>External</depth>
+        <tags>
+          <li>Wheel</li>
+        </tags>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Wheel1</key>
+        <label>wheels back</label>
+        <health>72</health>
+        <depth>External</depth>
+        <tags>
+          <li>Wheel</li>
+        </tags>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>90</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>90</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>24</fuelConsumptionRate>
+        <fuelCapacity>120</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_MG</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>mounted machine gun</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_TroopCarrier_Blueprint</defName>
+    <label>armored troop carrier</label>
+    <description>An armored carrier for eight soldiers, with a roof machine gun.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/TroopCarrier/TroopCarrier</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.6,6)</drawSize>
+    </graphicData>
+    <size>(3,5)</size>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+      <WorkToBuild>10400</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_ArmoredVehicles</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>450</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_TroopCarrier</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_LightTank</defName>
+    <label>light tank</label>
+    <description>A tracked light tank with a light cannon and a coaxial machine gun.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/LightTank/LightTank</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3.8,6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_LightTank_Blueprint</buildDef>
+    <size>(3,5)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Land</vehicleType>
+    <statBases>
+      <ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>4200</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>860</Mass>
+      <CargoCapacity>200</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed>5</MoveSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>5.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>2.5</worldSpeedMultiplier>
+      <customTerrainCosts DisallowTerrainWithTag="Water"/>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>driver</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>2</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>700</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>252</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Track0</key>
+        <label>track left</label>
+        <health>168</health>
+        <depth>External</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Track1</key>
+        <label>track right</label>
+        <health>168</health>
+        <depth>External</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>140</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>140</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>28</fuelConsumptionRate>
+        <fuelCapacity>150</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_LightCannon</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>light cannon</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_LightTank_Blueprint</defName>
+    <label>light tank</label>
+    <description>A tracked light tank with a light cannon and a coaxial machine gun.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/LightTank/LightTank</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.8,6)</drawSize>
+    </graphicData>
+    <size>(3,5)</size>
+    <statBases>
+      <MaxHitPoints>1400</MaxHitPoints>
+      <WorkToBuild>16800</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_ArmoredVehicles</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>600</Steel>
+      <Plasteel>80</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_LightTank</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_Hovercraft</defName>
+    <label>hovercraft</label>
+    <description>A fan-lifted hovercraft that crosses water and mud as easily as roads. Carries a mounted laser carbine.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Hovercraft/Hovercraft</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3.6,4.8)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_Hovercraft_Blueprint</buildDef>
+    <size>(3,4)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Spacer</techLevel>
+    <vehicleType>Universal</vehicleType>
+    <statBases>
+      <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>3500</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>350</Mass>
+      <CargoCapacity>500</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed>10</MoveSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>4.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>2.5</worldSpeedMultiplier>
+      <customTerrainCosts AllowTerrainWithTag="Water" PathCost="1"/>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>driver</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>4</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>250</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>90</health>
+        <depth>Internal</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Fans</key>
+        <label>lift fans</label>
+        <health>60</health>
+        <depth>External</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>50</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>50</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Rimverse_PowerCell</fuelType>
+        <fuelConsumptionRate>4</fuelConsumptionRate>
+        <fuelCapacity>20</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_Laser</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>mounted laser carbine</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_Hovercraft_Blueprint</defName>
+    <label>hovercraft</label>
+    <description>A fan-lifted hovercraft that crosses water and mud as easily as roads. Carries a mounted laser carbine.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Hovercraft/Hovercraft</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.6,4.8)</drawSize>
+    </graphicData>
+    <size>(3,4)</size>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>14000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_SpacerVehicles</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>120</Plasteel>
+      <Steel>150</Steel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_Hovercraft</thingToSpawn>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_PlasmaTank</defName>
+    <label>heavy plasma tank</label>
+    <description>A slow, massive tank carrying a plasma cannon.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/PlasmaTank/PlasmaTank</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(4.6,7)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_PlasmaTank_Blueprint</buildDef>
+    <size>(4,6)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Spacer</techLevel>
+    <vehicleType>Land</vehicleType>
+    <statBases>
+      <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>8400</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>1530</Mass>
+      <CargoCapacity>300</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed>4</MoveSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>8.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>2.5</worldSpeedMultiplier>
+      <customTerrainCosts DisallowTerrainWithTag="Water"/>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>driver</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>2</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>1250</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>450</health>
+        <depth>Internal</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Track0</key>
+        <label>track left</label>
+        <health>300</health>
+        <depth>External</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Track1</key>
+        <label>track right</label>
+        <health>300</health>
+        <depth>External</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>250</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>250</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Rimverse_PowerCell</fuelType>
+        <fuelConsumptionRate>5</fuelConsumptionRate>
+        <fuelCapacity>30</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_Plasma</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>plasma cannon</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_PlasmaTank_Blueprint</defName>
+    <label>heavy plasma tank</label>
+    <description>A slow, massive tank carrying a plasma cannon.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/PlasmaTank/PlasmaTank</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4.6,7)</drawSize>
+    </graphicData>
+    <size>(4,6)</size>
+    <statBases>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <WorkToBuild>33600</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_SpacerVehicles</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>300</Plasteel>
+      <Steel>500</Steel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_PlasmaTank</thingToSpawn>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_CombatWalker</defName>
+    <label>combat walker</label>
+    <description>A two-legged walker that climbs over rubble, armed with two heavy guns.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/CombatWalker/CombatWalker</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3.4,3.4)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_CombatWalker_Blueprint</buildDef>
+    <size>(2,2)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Spacer</techLevel>
+    <vehicleType>Land</vehicleType>
+    <statBases>
+      <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>9800</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>975</Mass>
+      <CargoCapacity>150</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed>5</MoveSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>1.3</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>2.5</worldSpeedMultiplier>
+      <customTerrainCosts DisallowTerrainWithTag="Water"/>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>driver</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>800</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>288</health>
+        <depth>Internal</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Leg0</key>
+        <label>leg left</label>
+        <health>192</health>
+        <depth>External</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Leg1</key>
+        <label>leg right</label>
+        <health>192</health>
+        <depth>External</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>160</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>160</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Rimverse_PowerCell</fuelType>
+        <fuelConsumptionRate>5</fuelConsumptionRate>
+        <fuelCapacity>25</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_HeavyPair</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>twin heavy guns</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_CombatWalker_Blueprint</defName>
+    <label>combat walker</label>
+    <description>A two-legged walker that climbs over rubble, armed with two heavy guns.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/CombatWalker/CombatWalker</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.4,3.4)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>1600</MaxHitPoints>
+      <WorkToBuild>39200</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_SpacerVehicles</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>220</Plasteel>
+      <Steel>300</Steel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_CombatWalker</thingToSpawn>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_Amphibian</defName>
+    <label>ocean world amphibian</label>
+    <description>A boat-hulled amphibian for ocean worlds. Faster on water than on land.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Amphibian/Amphibian</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3.6,6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_Amphibian_Blueprint</buildDef>
+    <size>(3,5)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Spacer</techLevel>
+    <vehicleType>Universal</vehicleType>
+    <statBases>
+      <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>2800</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>440</Mass>
+      <CargoCapacity>800</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed>7</MoveSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>5.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>2.5</worldSpeedMultiplier>
+      <customTerrainCosts AllowTerrainWithTag="Water" PathCost="1"/>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>driver</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>6</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>300</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>108</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Fans</key>
+        <label>lift fans</label>
+        <health>72</health>
+        <depth>External</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>60</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>14</fuelConsumptionRate>
+        <fuelCapacity>100</fuelCapacity>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_Amphibian_Blueprint</defName>
+    <label>ocean world amphibian</label>
+    <description>A boat-hulled amphibian for ocean worlds. Faster on water than on land.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Amphibian/Amphibian</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.6,6)</drawSize>
+    </graphicData>
+    <size>(3,5)</size>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToBuild>11200</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_SpacerVehicles</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>350</Steel>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_Amphibian</thingToSpawn>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_GravWalker</defName>
+    <label>high-gravity walker</label>
+    <description>An ultra-tech walker with gravity plating. It ignores heavy gravity and carries one heavy weapon.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/GravWalker/GravWalker</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_GravWalker_Blueprint</buildDef>
+    <size>(3,3)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Ultra</techLevel>
+    <vehicleType>Land</vehicleType>
+    <statBases>
+      <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.96</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>14000</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>1240</Mass>
+      <CargoCapacity>400</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed>5</MoveSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>3.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>2.5</worldSpeedMultiplier>
+      <customTerrainCosts DisallowTerrainWithTag="Water"/>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>driver</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>2</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>1000</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.96</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>360</health>
+        <depth>Internal</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Leg0</key>
+        <label>leg left</label>
+        <health>240</health>
+        <depth>External</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Leg1</key>
+        <label>leg right</label>
+        <health>240</health>
+        <depth>External</depth>
+        <categories>
+          <li>MoveSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>200</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>200</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Rimverse_PowerCell</fuelType>
+        <fuelConsumptionRate>4</fuelConsumptionRate>
+        <fuelCapacity>30</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_Rocket</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>rocket pod</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_GravWalker_Blueprint</defName>
+    <label>high-gravity walker</label>
+    <description>An ultra-tech walker with gravity plating. It ignores heavy gravity and carries one heavy weapon.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/GravWalker/GravWalker</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <WorkToBuild>56000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_SpacerVehicles</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>300</Plasteel>
+      <ComponentSpacer>6</ComponentSpacer>
+      <Uranium>40</Uranium>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_GravWalker</thingToSpawn>
+    <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_VtolSkimmer</defName>
+    <label>VTOL skimmer</label>
+    <description>A tilt-rotor VTOL that carries six passengers across the world map three times faster than a caravan.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/VtolSkimmer/VtolSkimmer</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(4.6,6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_VtolSkimmer_Blueprint</buildDef>
+    <size>(3,5)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Spacer</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>5200</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>350</Mass>
+      <CargoCapacity>500</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>14</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>5.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>6</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>250</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>90</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>70</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>50</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>30</fuelConsumptionRate>
+        <fuelCapacity>200</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>false</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_VtolSkimmer_Blueprint</defName>
+    <label>VTOL skimmer</label>
+    <description>A tilt-rotor VTOL that carries six passengers across the world map three times faster than a caravan.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/VtolSkimmer/VtolSkimmer</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4.6,6)</drawSize>
+    </graphicData>
+    <size>(3,5)</size>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>20800</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_Aircraft</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>150</Plasteel>
+      <Steel>200</Steel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_VtolSkimmer</thingToSpawn>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_AtmoFighter</defName>
+    <label>atmospheric fighter</label>
+    <description>A single-seat fighter that makes strafing runs over a map.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/AtmoFighter/AtmoFighter</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(4.6,5)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_AtmoFighter_Blueprint</buildDef>
+    <size>(3,4)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Spacer</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>6400</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>275</Mass>
+      <CargoCapacity>50</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>14</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>4.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>225</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>81</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>63</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>45</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>45</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>35</fuelConsumptionRate>
+        <fuelCapacity>160</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_Autocannon</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>autocannon</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>false</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_AtmoFighter_Blueprint</defName>
+    <label>atmospheric fighter</label>
+    <description>A single-seat fighter that makes strafing runs over a map.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/AtmoFighter/AtmoFighter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4.6,5)</drawSize>
+    </graphicData>
+    <size>(3,4)</size>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <WorkToBuild>25600</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_Aircraft</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>160</Plasteel>
+      <Steel>150</Steel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_AtmoFighter</thingToSpawn>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_TroopTransport</defName>
+    <label>troop transport</label>
+    <description>A heavy transport that lands twelve soldiers on a map like drop pods.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/TroopTransport/TroopTransport</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(5,7)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_TroopTransport_Blueprint</buildDef>
+    <size>(4,6)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Spacer</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>7000</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>540</Mass>
+      <CargoCapacity>600</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>14</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>8.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>2</slots>
+          <slotsToOperate>2</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>12</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>400</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>144</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>112</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>80</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>40</fuelConsumptionRate>
+        <fuelCapacity>300</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>false</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_TroopTransport_Blueprint</defName>
+    <label>troop transport</label>
+    <description>A heavy transport that lands twelve soldiers on a map like drop pods.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/TroopTransport/TroopTransport</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,7)</drawSize>
+    </graphicData>
+    <size>(4,6)</size>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <WorkToBuild>28000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_Aircraft</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>250</Plasteel>
+      <Steel>350</Steel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_TroopTransport</thingToSpawn>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_CloudAirship</defName>
+    <label>cloud airship</label>
+    <description>A lifting-gas airship. The only vehicle that works in the high clouds of gas giants.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/CloudAirship/CloudAirship</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(5,8)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_CloudAirship_Blueprint</buildDef>
+    <size>(4,7)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>3800</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>420</Mass>
+      <CargoCapacity>1200</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>6</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>9.3</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>2</slots>
+          <slotsToOperate>2</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>10</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>250</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>90</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>70</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>50</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>12</fuelConsumptionRate>
+        <fuelCapacity>250</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>false</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_CloudAirship_Blueprint</defName>
+    <label>cloud airship</label>
+    <description>A lifting-gas airship. The only vehicle that works in the high clouds of gas giants.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/CloudAirship/CloudAirship</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,8)</drawSize>
+    </graphicData>
+    <size>(4,7)</size>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>15200</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_Aircraft</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>300</Steel>
+      <Cloth>200</Cloth>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_CloudAirship</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_AtmoBomber</defName>
+    <label>atmospheric bomber</label>
+    <description>An ultra-tech bomber. Inaccurate, but its bombing runs hit very hard.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/AtmoBomber/AtmoBomber</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(5.4,7)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_AtmoBomber_Blueprint</buildDef>
+    <size>(4,6)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Ultra</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.96</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>12000</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>570</Mass>
+      <CargoCapacity>300</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>14</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>8.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>2</slots>
+          <slotsToOperate>2</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>450</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.96</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>162</health>
+        <depth>Internal</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>126</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>90</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>90</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Rimverse_PowerCell</fuelType>
+        <fuelConsumptionRate>8</fuelConsumptionRate>
+        <fuelCapacity>60</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_Rocket</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>rocket pod</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>false</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_AtmoBomber_Blueprint</defName>
+    <label>atmospheric bomber</label>
+    <description>An ultra-tech bomber. Inaccurate, but its bombing runs hit very hard.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/AtmoBomber/AtmoBomber</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5.4,7)</drawSize>
+    </graphicData>
+    <size>(4,6)</size>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+      <WorkToBuild>48000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_Aircraft</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>320</Plasteel>
+      <ComponentSpacer>6</ComponentSpacer>
+      <Uranium>30</Uranium>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_AtmoBomber</thingToSpawn>
+    <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_LandingShuttle</defName>
+    <label>landing shuttle</label>
+    <description>Carries six pawns and cargo between the surface and orbit.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/LandingShuttle/LandingShuttle</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(4,6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_LandingShuttle_Blueprint</buildDef>
+    <size>(3,5)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>4800</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>340</Mass>
+      <CargoCapacity>1000</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>12</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>5.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>6</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>200</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>72</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>56</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>40</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>30</fuelConsumptionRate>
+        <fuelCapacity>300</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>true</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_LandingShuttle_Blueprint</defName>
+    <label>landing shuttle</label>
+    <description>Carries six pawns and cargo between the surface and orbit.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/LandingShuttle/LandingShuttle</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,6)</drawSize>
+    </graphicData>
+    <size>(3,5)</size>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>19200</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_Shuttles</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>350</Steel>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_LandingShuttle</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_CargoShuttle</defName>
+    <label>cargo shuttle</label>
+    <description>A boxy shuttle with no weapons that lifts four tonnes of cargo to orbit.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/CargoShuttle/CargoShuttle</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(5,7)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_CargoShuttle_Blueprint</buildDef>
+    <size>(4,6)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>5600</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>700</Mass>
+      <CargoCapacity>4000</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>12</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>8.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>2</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>250</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>90</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>70</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>50</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>36</fuelConsumptionRate>
+        <fuelCapacity>400</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>true</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_CargoShuttle_Blueprint</defName>
+    <label>cargo shuttle</label>
+    <description>A boxy shuttle with no weapons that lifts four tonnes of cargo to orbit.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/CargoShuttle/CargoShuttle</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,7)</drawSize>
+    </graphicData>
+    <size>(4,6)</size>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>22400</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_Shuttles</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>450</Steel>
+      <Plasteel>80</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_CargoShuttle</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_AssaultShuttle</defName>
+    <label>assault shuttle</label>
+    <description>An armored shuttle for boarding, with a nose autocannon and room for ten troops.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/AssaultShuttle/AssaultShuttle</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(5,7)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_AssaultShuttle_Blueprint</buildDef>
+    <size>(4,6)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Spacer</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>10500</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>600</Mass>
+      <CargoCapacity>600</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>12</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>8.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>2</slots>
+          <slotsToOperate>2</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>10</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>450</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>162</health>
+        <depth>Internal</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>126</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>90</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>90</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Rimverse_PowerCell</fuelType>
+        <fuelConsumptionRate>6</fuelConsumptionRate>
+        <fuelCapacity>60</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_Autocannon</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>autocannon</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>true</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_AssaultShuttle_Blueprint</defName>
+    <label>assault shuttle</label>
+    <description>An armored shuttle for boarding, with a nose autocannon and room for ten troops.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/AssaultShuttle/AssaultShuttle</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,7)</drawSize>
+    </graphicData>
+    <size>(4,6)</size>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+      <WorkToBuild>42000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_Shuttles</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>300</Plasteel>
+      <Steel>300</Steel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_AssaultShuttle</thingToSpawn>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_EscapePod</defName>
+    <label>escape pod</label>
+    <description>A one-way pod for four. It lands on the nearest body when the ship is lost.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/EscapePod/EscapePod</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(2.4,2.4)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_EscapePod_Blueprint</buildDef>
+    <size>(2,2)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>600</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>94</Mass>
+      <CargoCapacity>40</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>4</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>1.3</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>4</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>75</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>27</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>21</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>15</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>10</fuelConsumptionRate>
+        <fuelCapacity>40</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
+        <spaceFlight>true</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_EscapePod_Blueprint</defName>
+    <label>escape pod</label>
+    <description>A one-way pod for four. It lands on the nearest body when the ship is lost.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/EscapePod/EscapePod</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.4,2.4)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2400</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_Shuttles</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_EscapePod</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_SpaceFighter</defName>
+    <label>space fighter</label>
+    <description>A small combat craft launched from the hangar, with a point laser and missiles.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/SpaceFighter/SpaceFighter</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3,3.6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_SpaceFighter_Blueprint</buildDef>
+    <size>(2,3)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Spacer</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>6000</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>184</Mass>
+      <CargoCapacity>40</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>20</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>2.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>150</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>54</health>
+        <depth>Internal</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>42</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>30</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>30</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Rimverse_PowerCell</fuelType>
+        <fuelConsumptionRate>6</fuelConsumptionRate>
+        <fuelCapacity>40</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_PointLaser</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>point laser</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>true</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_SpaceFighter_Blueprint</defName>
+    <label>space fighter</label>
+    <description>A small combat craft launched from the hangar, with a point laser and missiles.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/SpaceFighter/SpaceFighter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3.6)</drawSize>
+    </graphicData>
+    <size>(2,3)</size>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>24000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_SmallCraft</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>160</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_SpaceFighter</thingToSpawn>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_SpaceBomber</defName>
+    <label>space bomber</label>
+    <description>A two-seat bomber that carries one heavy torpedo.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/SpaceBomber/SpaceBomber</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(4,4.6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_SpaceBomber_Blueprint</buildDef>
+    <size>(3,4)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Spacer</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>12000</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>368</Mass>
+      <CargoCapacity>80</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>20</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>4.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>2</slots>
+          <slotsToOperate>2</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>300</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>108</health>
+        <depth>Internal</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>84</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>60</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>60</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Rimverse_PowerCell</fuelType>
+        <fuelConsumptionRate>6</fuelConsumptionRate>
+        <fuelCapacity>60</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_Torpedo</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>torpedo launcher</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>true</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_SpaceBomber_Blueprint</defName>
+    <label>space bomber</label>
+    <description>A two-seat bomber that carries one heavy torpedo.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/SpaceBomber/SpaceBomber</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4.6)</drawSize>
+    </graphicData>
+    <size>(3,4)</size>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToBuild>48000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_SmallCraft</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>260</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_SpaceBomber</thingToSpawn>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_Tug</defName>
+    <label>space tug</label>
+    <description>A stubby tug with a harpoon. It drags stations and wrecks.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Tug/Tug</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3.6,3.6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_Tug_Blueprint</buildDef>
+    <size>(3,3)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>3000</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>320</Mass>
+      <CargoCapacity>200</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>8</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>3.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>250</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>90</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>70</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>50</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>50</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>30</fuelConsumptionRate>
+        <fuelCapacity>200</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_Harpoon</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>harpoon</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>true</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_Tug_Blueprint</defName>
+    <label>space tug</label>
+    <description>A stubby tug with a harpoon. It drags stations and wrecks.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Tug/Tug</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.6,3.6)</drawSize>
+    </graphicData>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_SmallCraft</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>300</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_Tug</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_AsteroidMiner</defName>
+    <label>asteroid miner</label>
+    <description>A miner that clamps to an asteroid and cuts it apart with a laser.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/AsteroidMiner/AsteroidMiner</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3.6,3.6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_AsteroidMiner_Blueprint</buildDef>
+    <size>(3,3)</size>
+    <vehicleCategory>Combat</vehicleCategory>
+    <techLevel>Industrial</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>4200</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>330</Mass>
+      <CargoCapacity>600</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>8</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>3.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>gunner</key>
+          <label>gunner</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <handlingTypes>Turret</handlingTypes>
+          <turretIds>
+            <li>main</li>
+          </turretIds>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>1</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>225</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>81</health>
+        <depth>Internal</depth>
+        <reactors>
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.2</chance>
+            <maxHealth>0.25</maxHealth>
+            <radius>2.5</radius>
+            <damageDef>Flame</damageDef>
+          </li>
+        </reactors>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>63</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>45</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+      <li>
+        <key>TurretRing</key>
+        <label>turret mount</label>
+        <health>45</health>
+        <depth>External</depth>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Chemfuel</fuelType><leakDef>Filth_Fuel</leakDef>
+        <fuelConsumptionRate>28</fuelConsumptionRate>
+        <fuelCapacity>180</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleTurrets">
+        <turrets>
+          <li>
+            <turretDef>Rimverse_VT_MiningLaser</turretDef>
+            <renderProperties>
+              <north>(0, 0)</north>
+              <south>(0, 0)</south>
+              <east>(0, 0)</east>
+            </renderProperties>
+            <drawLayer>3</drawLayer>
+            <gizmoLabel>mining laser</gizmoLabel>
+            <key>main</key>
+          </li>
+        </turrets>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>true</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_AsteroidMiner_Blueprint</defName>
+    <label>asteroid miner</label>
+    <description>A miner that clamps to an asteroid and cuts it apart with a laser.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/AsteroidMiner/AsteroidMiner</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.6,3.6)</drawSize>
+    </graphicData>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <WorkToBuild>16800</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_SmallCraft</li>
+    </researchPrerequisites>
+    <costList>
+      <Steel>280</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_AsteroidMiner</thingToSpawn>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+  <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+    <defName>Rimverse_V_Scout</defName>
+    <label>scout craft</label>
+    <description>A fast scout with a long-range sensor. It explores the star system on its own.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Scout/Scout</texPath>
+      <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+      <shaderType>CutoutComplexPattern</shaderType>
+      <drawSize>(3,3.6)</drawSize>
+      <color>(110,118,128)</color>
+      <colorTwo>(200,48,42)</colorTwo>
+      <colorThree>(225,225,225)</colorThree>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <nameable>true</nameable>
+    <buildDef>Rimverse_V_Scout_Blueprint</buildDef>
+    <size>(2,3)</size>
+    <vehicleCategory>Transport</vehicleCategory>
+    <techLevel>Spacer</techLevel>
+    <vehicleType>Air</vehicleType><canCaravan LockSetting="True">false</canCaravan>
+    <statBases>
+      <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <MarketValue>5400</MarketValue>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <vehicleStats>
+      <Mass>156</Mass>
+      <CargoCapacity>60</CargoCapacity>
+      <RepairRate>1</RepairRate>
+      <MoveSpeed LockSetting="True">0</MoveSpeed>
+      <FlightSpeed>20</FlightSpeed>
+    </vehicleStats>
+    <race>
+      <baseBodySize>2.0</baseBodySize>
+    </race>
+    <properties>
+      <diagonalRotation>false</diagonalRotation>
+      <worldSpeedMultiplier>1</worldSpeedMultiplier>
+      <roles>
+        <li>
+          <key>pilot</key>
+          <label>pilot</label>
+          <slots>1</slots>
+          <slotsToOperate>1</slotsToOperate>
+          <exposed>false</exposed>
+          <handlingTypes>Movement</handlingTypes>
+        </li>
+        <li>
+          <key>passenger</key>
+          <label>passenger</label>
+          <slots>1</slots>
+        </li>
+      </roles>
+    </properties>
+    <components>
+      <li>
+        <key>Hull</key>
+        <label>hull</label>
+        <health>125</health>
+        <depth>Internal</depth>
+        <armor>
+          <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+        </armor>
+        <categories>
+          <li>BodyIntegrity</li>
+        </categories>
+      </li>
+      <li>
+        <key>Engine</key>
+        <label>engine</label>
+        <health>45</health>
+        <depth>Internal</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Thrusters</key>
+        <label>thrusters</label>
+        <health>35</health>
+        <depth>External</depth>
+        <categories>
+          <li>FlightSpeed</li>
+        </categories>
+      </li>
+      <li>
+        <key>Cargo</key>
+        <label>cargo hold</label>
+        <health>25</health>
+        <depth>External</depth>
+        <categories>
+          <li>CargoCapacity</li>
+        </categories>
+      </li>
+    </components>
+    <comps>
+      <li Class="Vehicles.CompProperties_FueledTravel">
+        <fuelType>Rimverse_PowerCell</fuelType>
+        <fuelConsumptionRate>5</fuelConsumptionRate>
+        <fuelCapacity>40</fuelCapacity>
+      </li>
+      <li Class="Vehicles.CompProperties_VehicleLauncher">
+        <fuelConsumptionWorldMultiplier>4</fuelConsumptionWorldMultiplier>
+        <spaceFlight>true</spaceFlight>
+        <launchProtocol Class="Vehicles.VTOLTakeoff">
+          <launchProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 12)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 120)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1, 10)</li>
+              </points>
+            </zPositionCurve>
+          </launchProperties>
+          <landingProperties Class="Vehicles.VerticalProtocolProperties">
+            <maxTicks>360</maxTicks>
+            <maxTicksVertical>240</maxTicksVertical>
+            <zPositionVerticalCurve>
+              <points>
+                <li>(0, 12)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionVerticalCurve>
+            <xPositionCurve>
+              <points>
+                <li>(0, -120)</li>
+                <li>(1, 0)</li>
+              </points>
+            </xPositionCurve>
+            <zPositionCurve>
+              <points>
+                <li>(0, 10)</li>
+                <li>(1, 0)</li>
+              </points>
+            </zPositionCurve>
+          </landingProperties>
+        </launchProtocol>
+      </li>
+    </comps>
+  </Vehicles.VehicleDef>
+
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+    <defName>Rimverse_V_Scout_Blueprint</defName>
+    <label>scout craft</label>
+    <description>A fast scout with a long-range sensor. It explores the star system on its own.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Vehicle/Scout/Scout</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3.6)</drawSize>
+    </graphicData>
+    <size>(2,3)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>21600</WorkToBuild>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Rimverse_SmallCraft</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>140</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <thingToSpawn>Rimverse_V_Scout</thingToSpawn>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+</Defs>

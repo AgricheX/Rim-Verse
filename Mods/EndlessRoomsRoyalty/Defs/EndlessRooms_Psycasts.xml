@@ -6,7 +6,7 @@
     <label>banish</label>
     <description>Tear a hole under the target and drop them into the backrooms. They land on a random level, far from here.</description>
     <level>5</level>
-    <iconPath>UI/Abilities/SkipChaos</iconPath>
+    <iconPath>Rimverse/UI/Ability/BanishToRooms</iconPath>
     <hostile>true</hostile>
     <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
     <statBases>
@@ -32,7 +32,7 @@
     <label>recall</label>
     <description>Reach down into the backrooms and pull one lost colonist back to your side.</description>
     <level>5</level>
-    <iconPath>UI/Abilities/Beckon</iconPath>
+    <iconPath>Rimverse/UI/Ability/RecallFromRooms</iconPath>
     <targetRequired>False</targetRequired>
     <hostile>false</hostile>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>

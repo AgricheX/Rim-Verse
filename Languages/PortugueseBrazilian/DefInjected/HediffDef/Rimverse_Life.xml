@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Decompression.label>lesão de descompressão</Rimverse_Decompression.label>
+  <Rimverse_Decompression.description>Dano de exposição súbita ao vácuo: capilares estourados e pulmões forçados.</Rimverse_Decompression.description>
+  <Rimverse_VacuumFrostbite.label>congelamento do vácuo</Rimverse_VacuumFrostbite.label>
+  <Rimverse_VacuumFrostbite.description>Queimaduras de frio na pele que tocou o vazio.</Rimverse_VacuumFrostbite.description>
+  <Rimverse_MuscleAtrophy.label>atrofia muscular</Rimverse_MuscleAtrophy.label>
+  <Rimverse_MuscleAtrophy.description>Meses sem gravidade enfraqueceram os músculos desta pessoa.</Rimverse_MuscleAtrophy.description>
+  <Rimverse_RadiationSickness.label>doença de radiação</Rimverse_RadiationSickness.label>
+  <Rimverse_RadiationSickness.description>Dano às células causado por radiação. Piora sem tratamento.</Rimverse_RadiationSickness.description>
+  <Rimverse_CryoSyndrome.label>síndrome do criossono</Rimverse_CryoSyndrome.label>
+  <Rimverse_CryoSyndrome.description>Fraqueza depois de acordar de um criossono longo.</Rimverse_CryoSyndrome.description>
+  <Rimverse_SkyLonging.label>saudade do céu</Rimverse_SkyLonging.label>
+  <Rimverse_SkyLonging.description>Anos sem pisar num planeta desgastaram esta pessoa.</Rimverse_SkyLonging.description>
+  <Rimverse_AirPoisoning.label>intoxicação de ar</Rimverse_AirPoisoning.label>
+  <Rimverse_AirPoisoning.description>Tosse e dor de cabeça por causa de ar mal reciclado.</Rimverse_AirPoisoning.description>
+  <Rimverse_AlienPlague.label>praga alienígena</Rimverse_AlienPlague.label>
+  <Rimverse_AlienPlague.description>Uma doença pega num mundo recém-visitado. Repouso e remédio criam imunidade.</Rimverse_AlienPlague.description>
+  <Rimverse_Parasite.label>infestação de parasita</Rimverse_Parasite.label>
+  <Rimverse_Parasite.description>Parasitas alienígenas de uma nave abandonada. Só cirurgia tira.</Rimverse_Parasite.description>
+  <Rimverse_AntiRadHigh.label>dose antirradiação</Rimverse_AntiRadHigh.label>
+  <Rimverse_AntiRadHigh.description>Compostos antirradiação estão limpando células danificadas.</Rimverse_AntiRadHigh.description>
+  <Rimverse_BoneStabilized.label>ossos estabilizados</Rimverse_BoneStabilized.label>
+  <Rimverse_BoneStabilized.description>Um estabilizador ósseo está freando a perda óssea.</Rimverse_BoneStabilized.description>
+  <Rimverse_Vaccinated.label>vacina de contato</Rimverse_Vaccinated.label>
+  <Rimverse_Vaccinated.description>Protegido contra pragas de mundos escaneados.</Rimverse_Vaccinated.description>
+  <Rimverse_VigilHigh.label>sob vigília</Rimverse_VigilHigh.label>
+  <Rimverse_VigilHigh.description>Sem precisar dormir durante um turno longo.</Rimverse_VigilHigh.description>
+  <Rimverse_CabinCalmHigh.label>calma de cabine</Rimverse_CabinCalmHigh.label>
+  <Rimverse_CabinCalmHigh.description>Calmo e lento.</Rimverse_CabinCalmHigh.description>
+  <Rimverse_PilotFocusHigh.label>foco de piloto</Rimverse_PilotFocusHigh.label>
+  <Rimverse_PilotFocusHigh.description>Olhos atentos e mãos firmes.</Rimverse_PilotFocusHigh.description>
+  <Rimverse_StardustHigh.label>sob efeito de pó estelar</Rimverse_StardustHigh.label>
+  <Rimverse_StardustHigh.description>Alucinações bonitas de estrelas à deriva.</Rimverse_StardustHigh.description>
+  <Rimverse_GravSerumHigh.label>soro de gravidade</Rimverse_GravSerumHigh.label>
+  <Rimverse_GravSerumHigh.description>O coração trabalha mais para aguentar a gravidade alta.</Rimverse_GravSerumHigh.description>
+  <Rimverse_ColdBloodHigh.label>sangue frio</Rimverse_ColdBloodHigh.label>
+  <Rimverse_ColdBloodHigh.description>Sem medo e sem dor. Um pouco agressivo demais.</Rimverse_ColdBloodHigh.description>
+  <Rimverse_NebulaNectarHigh.label>néctar de nebulosa</Rimverse_NebulaNectarHigh.label>
+  <Rimverse_NebulaNectarHigh.description>Um brilho suave e luxuoso.</Rimverse_NebulaNectarHigh.description>
+  <Rimverse_HibernaHigh.label>sono de hiberna</Rimverse_HibernaHigh.label>
+  <Rimverse_HibernaHigh.description>Sono profundo com metabolismo lento.</Rimverse_HibernaHigh.description>
+  <Rimverse_AlienExtractHigh.label>extrato alienígena</Rimverse_AlienExtractHigh.label>
+  <Rimverse_AlienExtractHigh.description>O efeito da seiva alienígena local.</Rimverse_AlienExtractHigh.description>
+  <Rimverse_VigilAddiction.label>vício em vigília</Rimverse_VigilAddiction.label>
+  <Rimverse_VigilAddiction.description>Um vício químico em vigília.</Rimverse_VigilAddiction.description>
+  <Rimverse_VigilAddiction.stages.1.label>abstinência</Rimverse_VigilAddiction.stages.1.label>
+  <Rimverse_PilotFocusAddiction.label>vício em foco de piloto</Rimverse_PilotFocusAddiction.label>
+  <Rimverse_PilotFocusAddiction.description>Um vício químico em foco de piloto.</Rimverse_PilotFocusAddiction.description>
+  <Rimverse_PilotFocusAddiction.stages.1.label>abstinência</Rimverse_PilotFocusAddiction.stages.1.label>
+  <Rimverse_StardustAddiction.label>vício em pó estelar</Rimverse_StardustAddiction.label>
+  <Rimverse_StardustAddiction.description>Um vício químico em pó estelar.</Rimverse_StardustAddiction.description>
+  <Rimverse_StardustAddiction.stages.1.label>abstinência</Rimverse_StardustAddiction.stages.1.label>
+  <Rimverse_ColdBloodAddiction.label>vício em sangue frio</Rimverse_ColdBloodAddiction.label>
+  <Rimverse_ColdBloodAddiction.description>Um vício químico em sangue frio.</Rimverse_ColdBloodAddiction.description>
+  <Rimverse_ColdBloodAddiction.stages.1.label>abstinência</Rimverse_ColdBloodAddiction.stages.1.label>
+  <Rimverse_NebulaNectarAddiction.label>vício em néctar de nebulosa</Rimverse_NebulaNectarAddiction.label>
+  <Rimverse_NebulaNectarAddiction.description>Um vício químico em néctar de nebulosa.</Rimverse_NebulaNectarAddiction.description>
+  <Rimverse_NebulaNectarAddiction.stages.1.label>abstinência</Rimverse_NebulaNectarAddiction.stages.1.label>
+  <Rimverse_VacuumLung.label>pulmão de vácuo</Rimverse_VacuumLung.label>
+  <Rimverse_VacuumLung.description>Um pulmão com reserva de oxigênio que dá minutos extras sem ar.</Rimverse_VacuumLung.description>
+  <Rimverse_VacuumLung.labelNoun>pulmão de vácuo</Rimverse_VacuumLung.labelNoun>
+  <Rimverse_SealedSkin.label>pele selada</Rimverse_SealedSkin.label>
+  <Rimverse_SealedSkin.description>Uma malha sob a pele que resiste à descompressão.</Rimverse_SealedSkin.description>
+  <Rimverse_SealedSkin.labelNoun>pele selada</Rimverse_SealedSkin.labelNoun>
+  <Rimverse_ReinforcedBones.label>ossos reforçados</Rimverse_ReinforcedBones.label>
+  <Rimverse_ReinforcedBones.description>Ossos reforçados, imunes à perda óssea, que aguentam gravidade alta.</Rimverse_ReinforcedBones.description>
+  <Rimverse_ReinforcedBones.labelNoun>ossos reforçados</Rimverse_ReinforcedBones.labelNoun>
+  <Rimverse_BalanceEar.label>ouvido de equilíbrio</Rimverse_BalanceEar.label>
+  <Rimverse_BalanceEar.description>Um ouvido interno que ignora enjoo de gravidade zero e de dobra.</Rimverse_BalanceEar.description>
+  <Rimverse_BalanceEar.labelNoun>ouvido de equilíbrio</Rimverse_BalanceEar.labelNoun>
+  <Rimverse_SensorEye.label>olho de sensor</Rimverse_SensorEye.label>
+  <Rimverse_SensorEye.description>Um olho que vê calor e assinaturas. Melhora a mira.</Rimverse_SensorEye.description>
+  <Rimverse_SensorEye.labelNoun>olho de sensor</Rimverse_SensorEye.labelNoun>
+  <Rimverse_PilotInterface.label>interface de pilotagem</Rimverse_PilotInterface.label>
+  <Rimverse_PilotInterface.description>Uma ligação neural entre o piloto e a nave.</Rimverse_PilotInterface.description>
+  <Rimverse_PilotInterface.labelNoun>interface de pilotagem</Rimverse_PilotInterface.labelNoun>
+  <Rimverse_WeaponsInterface.label>interface de armas</Rimverse_WeaponsInterface.label>
+  <Rimverse_WeaponsInterface.description>Uma ligação neural com as armas da nave.</Rimverse_WeaponsInterface.description>
+  <Rimverse_WeaponsInterface.labelNoun>interface de armas</Rimverse_WeaponsInterface.labelNoun>
+  <Rimverse_EngineerHand.label>mão de engenheiro</Rimverse_EngineerHand.label>
+  <Rimverse_EngineerHand.description>Uma mão com ferramentas embutidas.</Rimverse_EngineerHand.description>
+  <Rimverse_EngineerHand.labelNoun>mão de engenheiro</Rimverse_EngineerHand.labelNoun>
+  <Rimverse_MagneticFeet.label>pés magnéticos</Rimverse_MagneticFeet.label>
+  <Rimverse_MagneticFeet.description>Pés com botas magnéticas embutidas.</Rimverse_MagneticFeet.description>
+  <Rimverse_MagneticFeet.labelNoun>pés magnéticos</Rimverse_MagneticFeet.labelNoun>
+  <Rimverse_BloodFilter.label>filtro de sangue</Rimverse_BloodFilter.label>
+  <Rimverse_BloodFilter.description>Filtra toxinas e agentes de praga.</Rimverse_BloodFilter.description>
+  <Rimverse_BloodFilter.labelNoun>filtro de sangue</Rimverse_BloodFilter.labelNoun>
+  <Rimverse_SleepRegulator.label>regulador de sono</Rimverse_SleepRegulator.label>
+  <Rimverse_SleepRegulator.description>Menos sono, para turnos longos.</Rimverse_SleepRegulator.description>
+  <Rimverse_SleepRegulator.labelNoun>regulador de sono</Rimverse_SleepRegulator.labelNoun>
+  <Rimverse_CryoImplant.label>implante de criossono</Rimverse_CryoImplant.label>
+  <Rimverse_CryoImplant.description>Acorda do criossono sem a síndrome.</Rimverse_CryoImplant.description>
+  <Rimverse_CryoImplant.labelNoun>implante de criossono</Rimverse_CryoImplant.labelNoun>
+  <Rimverse_PrecursorCore.label>núcleo precursor</Rimverse_PrecursorCore.label>
+  <Rimverse_PrecursorCore.description>Um implante raro recuperado de ruínas. Quem o fez sumiu há muito tempo.</Rimverse_PrecursorCore.description>
+  <Rimverse_PrecursorCore.labelNoun>núcleo precursor</Rimverse_PrecursorCore.labelNoun>
+</LanguageData>

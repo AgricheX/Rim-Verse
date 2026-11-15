@@ -289,6 +289,13 @@ namespace Rimverse
             Launch(map, p.projectile, w.parent, shooter, aim);
         }
 
+        public static CompShipWeapon BoardingTorpedo(RimverseShip ship, CombatBand band)
+        {
+            if (ship == null || band != CombatBand.Near) return null;
+            foreach (CompShipWeapon w in Weapons(ship)) if (w.Props.boardingTorpedo && w.Ready) return w;
+            return null;
+        }
+
         public static IntVec3 RandomCell(RimverseShip ship)
         {
             if (ship == null || ship.cells.Count == 0) return IntVec3.Invalid;
@@ -361,12 +368,18 @@ namespace Rimverse
             RimverseShip player = ships.ShipById(e.playerShipId);
             RimverseShip enemy = ships.ShipById(e.enemyShipId);
             if (player == null || enemy == null) return;
-            if (e.band != CombatBand.Boarding)
+            CompShipWeapon torpedo = e.band == CombatBand.Boarding ? null : BoardingTorpedo(player, e.band);
+            if (e.band != CombatBand.Boarding && torpedo == null)
             {
                 Messages.Message("Rimverse_MsgBoardNeedsBand".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
             List<Pawn> team = map.mapPawns.FreeColonistsSpawned.Where(p => p.Drafted && player.cells.Contains(p.Position)).ToList();
+            if (torpedo != null)
+            {
+                team = team.Take(4).ToList();
+                if (team.Count > 0) torpedo.ConsumeShot();
+            }
             if (team.Count == 0)
             {
                 Messages.Message("Rimverse_MsgBoardNeedsDrafted".Translate(), MessageTypeDefOf.RejectInput, false);
@@ -476,10 +489,10 @@ namespace Rimverse
             {
                 defaultLabel = "Rimverse_CmdSendBoarders".Translate(),
                 defaultDesc = "Rimverse_CmdSendBoardersDesc".Translate(),
-                icon = RimverseTex.Launch,
+                icon = RimverseTex.Board,
                 action = () => PlayerBoard(comp, e)
             };
-            if (e.band != CombatBand.Boarding) board.Disable("Rimverse_MsgBoardNeedsBand".Translate());
+            if (e.band != CombatBand.Boarding && BoardingTorpedo(comp.map.GetComponent<MapComponent_RimverseShips>()?.ShipById(e.playerShipId), e.band) == null) board.Disable("Rimverse_MsgBoardNeedsBand".Translate());
             yield return board;
         }
 

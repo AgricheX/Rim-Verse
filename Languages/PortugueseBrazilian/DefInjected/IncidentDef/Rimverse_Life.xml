@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Disease_AlienPlague.label>praga alienígena</Rimverse_Disease_AlienPlague.label>
+  <Rimverse_Disease_AlienPlague.letterLabel>Praga alienígena</Rimverse_Disease_AlienPlague.letterLabel>
+  <Rimverse_Disease_AlienPlague.letterText>Algo deste mundo deixou {VICTIMS_count} colonos doentes:\n\n{VICTIMS_list}</Rimverse_Disease_AlienPlague.letterText>
+</LanguageData>

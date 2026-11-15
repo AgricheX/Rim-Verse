@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_SpaceBotany.label>botânica espacial</Rimverse_SpaceBotany.label>
+  <Rimverse_SpaceBotany.description>Cultivares criados para tanques, hidroponia e solo alienígena.</Rimverse_SpaceBotany.description>
+  <Rimverse_ShipCuisine.label>culinária de bordo</Rimverse_ShipCuisine.label>
+  <Rimverse_ShipCuisine.description>Refeições de verdade, proteína cultivada e bebidas da tripulação para viagens longas.</Rimverse_ShipCuisine.description>
+  <Rimverse_SpacePharma.label>farmacologia espacial</Rimverse_SpacePharma.label>
+  <Rimverse_SpacePharma.description>Drogas para turnos, gravidade e o vazio.</Rimverse_SpacePharma.description>
+  <Rimverse_SpaceMedicine.label>medicina espacial</Rimverse_SpaceMedicine.label>
+  <Rimverse_SpaceMedicine.description>Medicina para ferimentos de vácuo, radiação e pragas alienígenas.</Rimverse_SpaceMedicine.description>
+  <Rimverse_SpaceBionics.label>biônica espacial</Rimverse_SpaceBionics.label>
+  <Rimverse_SpaceBionics.description>Implantes feitos para a vida no vazio.</Rimverse_SpaceBionics.description>
+  <Rimverse_Metallurgy.label>metalurgia naval</Rimverse_Metallurgy.label>
+  <Rimverse_Metallurgy.description>Ligas de casco, cerâmicas e vidro forjados com minério de asteroide.</Rimverse_Metallurgy.description>
+  <Rimverse_ExoticMaterials.label>materiais exóticos</Rimverse_ExoticMaterials.label>
+  <Rimverse_ExoticMaterials.description>Isótopos, matéria exótica e núcleos de dobra.</Rimverse_ExoticMaterials.description>
+</LanguageData>

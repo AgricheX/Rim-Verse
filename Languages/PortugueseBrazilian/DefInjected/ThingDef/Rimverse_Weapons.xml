@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Bullet_BoardPistol.label>pistola de bordo</Rimverse_Bullet_BoardPistol.label>
+  <Rimverse_Gun_BoardPistol.label>pistola de bordo</Rimverse_Gun_BoardPistol.label>
+  <Rimverse_Gun_BoardPistol.description>Uma arma pessoal cinética simples.</Rimverse_Gun_BoardPistol.description>
+  <Rimverse_Bullet_CompactSMG.label>submetralhadora compacta</Rimverse_Bullet_CompactSMG.label>
+  <Rimverse_Gun_CompactSMG.label>submetralhadora compacta</Rimverse_Gun_CompactSMG.label>
+  <Rimverse_Gun_CompactSMG.description>Uma submetralhadora curta para corredores.</Rimverse_Gun_CompactSMG.description>
+  <Rimverse_Bullet_CrewCarbine.label>carabina de tripulação</Rimverse_Bullet_CrewCarbine.label>
+  <Rimverse_Gun_CrewCarbine.label>carabina de tripulação</Rimverse_Gun_CrewCarbine.label>
+  <Rimverse_Gun_CrewCarbine.description>A carabina de uso geral das tripulações de nave.</Rimverse_Gun_CrewCarbine.description>
+  <Rimverse_Bullet_BoardingShotgun.label>escopeta de abordagem</Rimverse_Bullet_BoardingShotgun.label>
+  <Rimverse_Gun_BoardingShotgun.label>escopeta de abordagem</Rimverse_Gun_BoardingShotgun.label>
+  <Rimverse_Gun_BoardingShotgun.description>Uma escopeta curta com cartuchos de baixa velocidade.</Rimverse_Gun_BoardingShotgun.description>
+  <Rimverse_Bullet_PrecisionRifle.label>fuzil de precisão</Rimverse_Bullet_PrecisionRifle.label>
+  <Rimverse_Gun_PrecisionRifle.label>fuzil de precisão</Rimverse_Gun_PrecisionRifle.label>
+  <Rimverse_Gun_PrecisionRifle.description>Um fuzil longo para tiros em planeta. As balas atravessam placas de casco.</Rimverse_Gun_PrecisionRifle.description>
+  <Rimverse_Bullet_SupportMG.label>metralhadora de apoio</Rimverse_Bullet_SupportMG.label>
+  <Rimverse_Gun_SupportMG.label>metralhadora de apoio</Rimverse_Gun_SupportMG.label>
+  <Rimverse_Gun_SupportMG.description>Uma metralhadora de cinta para supressão. Perigosa para o casco.</Rimverse_Gun_SupportMG.description>
+  <Rimverse_Bullet_FrangPistol.label>pistola de munição frágil</Rimverse_Bullet_FrangPistol.label>
+  <Rimverse_Gun_FrangPistol.label>pistola de munição frágil</Rimverse_Gun_FrangPistol.label>
+  <Rimverse_Gun_FrangPistol.description>Atira balas que se desfazem em superfícies duras. Nunca fura o casco.</Rimverse_Gun_FrangPistol.description>
+  <Rimverse_Bullet_FrangCarbine.label>carabina de munição frágil</Rimverse_Bullet_FrangCarbine.label>
+  <Rimverse_Gun_FrangCarbine.label>carabina de munição frágil</Rimverse_Gun_FrangCarbine.label>
+  <Rimverse_Gun_FrangCarbine.description>Uma carabina com munição frágil para defesa interna.</Rimverse_Gun_FrangCarbine.description>
+  <Rimverse_Bullet_Stunner.label>atordoador</Rimverse_Bullet_Stunner.label>
+  <Rimverse_Gun_Stunner.label>atordoador</Rimverse_Gun_Stunner.label>
+  <Rimverse_Gun_Stunner.description>Atordoa os alvos para que sejam capturados vivos.</Rimverse_Gun_Stunner.description>
+  <Rimverse_Bullet_NetLauncher.label>lança-rede</Rimverse_Bullet_NetLauncher.label>
+  <Rimverse_Gun_NetLauncher.label>lança-rede</Rimverse_Gun_NetLauncher.label>
+  <Rimverse_Gun_NetLauncher.description>Enrola o alvo numa rede grudenta que deixa ele lento.</Rimverse_Gun_NetLauncher.description>
+  <Rimverse_Bullet_FoamLauncher.label>lança-espuma</Rimverse_Bullet_FoamLauncher.label>
+  <Rimverse_Gun_FoamLauncher.label>lança-espuma</Rimverse_Gun_FoamLauncher.label>
+  <Rimverse_Gun_FoamLauncher.description>Atira espuma que endurece, bloqueia um corredor, apaga fogo e sela brechas.</Rimverse_Gun_FoamLauncher.description>
+  <Rimverse_Bullet_LaserPistol.label>pistola laser</Rimverse_Bullet_LaserPistol.label>
+  <Rimverse_Gun_LaserPistol.label>pistola laser</Rimverse_Gun_LaserPistol.label>
+  <Rimverse_Gun_LaserPistol.description>Uma arma pessoal de energia sem recuo.</Rimverse_Gun_LaserPistol.description>
+  <Rimverse_Bullet_LaserCarbine.label>carabina laser</Rimverse_Bullet_LaserCarbine.label>
+  <Rimverse_Gun_LaserCarbine.label>carabina laser</Rimverse_Gun_LaserCarbine.label>
+  <Rimverse_Gun_LaserCarbine.description>Uma carabina laser de uso geral que brilha em gravidade zero.</Rimverse_Gun_LaserCarbine.description>
+  <Rimverse_Bullet_LaserSniper.label>fuzil laser de precisão</Rimverse_Bullet_LaserSniper.label>
+  <Rimverse_Gun_LaserSniper.label>fuzil laser de precisão</Rimverse_Gun_LaserSniper.label>
+  <Rimverse_Gun_LaserSniper.description>Um fuzil laser de longo alcance.</Rimverse_Gun_LaserSniper.description>
+  <Rimverse_Bullet_PulseLaser.label>laser de pulso</Rimverse_Bullet_PulseLaser.label>
+  <Rimverse_Gun_PulseLaser.label>laser de pulso</Rimverse_Gun_PulseLaser.label>
+  <Rimverse_Gun_PulseLaser.description>Um laser de cadência alta que esquenta rápido.</Rimverse_Gun_PulseLaser.description>
+  <Rimverse_Bullet_LaserCutter.label>cortador laser</Rimverse_Bullet_LaserCutter.label>
+  <Rimverse_Gun_LaserCutter.label>cortador laser</Rimverse_Gun_LaserCutter.label>
+  <Rimverse_Gun_LaserCutter.description>Uma ferramenta de corte que também serve de arma. Corta paredes de casco de propósito.</Rimverse_Gun_LaserCutter.description>
+  <Rimverse_Bullet_PlasmaPistol.label>pistola de plasma</Rimverse_Bullet_PlasmaPistol.label>
+  <Rimverse_Gun_PlasmaPistol.label>pistola de plasma</Rimverse_Gun_PlasmaPistol.label>
+  <Rimverse_Gun_PlasmaPistol.description>Curto alcance, dano muito alto.</Rimverse_Gun_PlasmaPistol.description>
+  <Rimverse_Bullet_PlasmaThrower.label>lança-plasma</Rimverse_Bullet_PlasmaThrower.label>
+  <Rimverse_Gun_PlasmaThrower.label>lança-plasma</Rimverse_Gun_PlasmaThrower.label>
+  <Rimverse_Gun_PlasmaThrower.description>Lança plasma ardente sobre uma área.</Rimverse_Gun_PlasmaThrower.description>
+  <Rimverse_Bullet_PlasmaRifle.label>fuzil de plasma</Rimverse_Bullet_PlasmaRifle.label>
+  <Rimverse_Gun_PlasmaRifle.label>fuzil de plasma</Rimverse_Gun_PlasmaRifle.label>
+  <Rimverse_Gun_PlasmaRifle.description>Um fuzil de plasma de elite de uso geral.</Rimverse_Gun_PlasmaRifle.description>
+  <Rimverse_Bullet_PortablePlasmaCannon.label>canhão de plasma portátil</Rimverse_Bullet_PortablePlasmaCannon.label>
+  <Rimverse_Gun_PortablePlasmaCannon.label>canhão de plasma portátil</Rimverse_Gun_PortablePlasmaCannon.label>
+  <Rimverse_Gun_PortablePlasmaCannon.description>Uma arma pesada levada por exoesqueletos e soldados fortes.</Rimverse_Gun_PortablePlasmaCannon.description>
+  <Rimverse_Bullet_NeedlePistol.label>pistola de agulha</Rimverse_Bullet_NeedlePistol.label>
+  <Rimverse_Gun_NeedlePistol.label>pistola de agulha</Rimverse_Gun_NeedlePistol.label>
+  <Rimverse_Gun_NeedlePistol.description>Uma pistola de ferrovia silenciosa que fura armadura.</Rimverse_Gun_NeedlePistol.description>
+  <Rimverse_Bullet_RailRifle.label>fuzil de ferrovia</Rimverse_Bullet_RailRifle.label>
+  <Rimverse_Gun_RailRifle.label>fuzil de ferrovia</Rimverse_Gun_RailRifle.label>
+  <Rimverse_Gun_RailRifle.description>Atira projéteis que atravessam paredes finas.</Rimverse_Gun_RailRifle.description>
+  <Rimverse_Bullet_DartThrower.label>lança-dardos</Rimverse_Bullet_DartThrower.label>
+  <Rimverse_Gun_DartThrower.label>lança-dardos</Rimverse_Gun_DartThrower.label>
+  <Rimverse_Gun_DartThrower.description>Atira dardos com veneno ou sedativo.</Rimverse_Gun_DartThrower.description>
+  <Rimverse_Bullet_HeavyRailRifle.label>fuzil de ferrovia pesado</Rimverse_Bullet_HeavyRailRifle.label>
+  <Rimverse_Gun_HeavyRailRifle.label>fuzil de ferrovia pesado</Rimverse_Gun_HeavyRailRifle.label>
+  <Rimverse_Gun_HeavyRailRifle.description>Um fuzil de ferrovia antiblindagem.</Rimverse_Gun_HeavyRailRifle.description>
+  <Rimverse_Bullet_ShipGrenadeLauncher.label>lança-granadas de bordo</Rimverse_Bullet_ShipGrenadeLauncher.label>
+  <Rimverse_Gun_ShipGrenadeLauncher.label>lança-granadas de bordo</Rimverse_Gun_ShipGrenadeLauncher.label>
+  <Rimverse_Gun_ShipGrenadeLauncher.description>Dispara granadas de baixa potência.</Rimverse_Gun_ShipGrenadeLauncher.description>
+  <Rimverse_Bullet_LightMissileLauncher.label>lança-mísseis leve</Rimverse_Bullet_LightMissileLauncher.label>
+  <Rimverse_Gun_LightMissileLauncher.label>lança-mísseis leve</Rimverse_Gun_LightMissileLauncher.label>
+  <Rimverse_Gun_LightMissileLauncher.description>Um lançador de ombro contra lançadeiras e veículos.</Rimverse_Gun_LightMissileLauncher.description>
+  <Rimverse_Grenade_PulseGrenade.label>granadas de pulso</Rimverse_Grenade_PulseGrenade.label>
+  <Rimverse_Grenade_PulseGrenade.description>Desligam eletrônicos e escudos. Nunca furam o casco.</Rimverse_Grenade_PulseGrenade.description>
+  <Rimverse_ProjGrenade_PulseGrenade.label>granadas de pulso</Rimverse_ProjGrenade_PulseGrenade.label>
+  <Rimverse_Grenade_DecompressionGrenade.label>granadas de descompressão</Rimverse_Grenade_DecompressionGrenade.label>
+  <Rimverse_Grenade_DecompressionGrenade.description>Feitas para abrir uma brecha de propósito.</Rimverse_Grenade_DecompressionGrenade.description>
+  <Rimverse_ProjGrenade_DecompressionGrenade.label>granadas de descompressão</Rimverse_ProjGrenade_DecompressionGrenade.label>
+  <Rimverse_Grenade_HullCharge.label>carga de casco</Rimverse_Grenade_HullCharge.label>
+  <Rimverse_Grenade_HullCharge.description>Uma carga moldada que abre uma entrada durante uma abordagem.</Rimverse_Grenade_HullCharge.description>
+  <Rimverse_ProjGrenade_HullCharge.label>carga de casco</Rimverse_ProjGrenade_HullCharge.label>
+  <Rimverse_Melee_ShipKnife.label>faca de bordo</Rimverse_Melee_ShipKnife.label>
+  <Rimverse_Melee_ShipKnife.description>Uma faca utilitária básica.</Rimverse_Melee_ShipKnife.description>
+  <Rimverse_Melee_EmergencyAxe.label>machado de emergência</Rimverse_Melee_EmergencyAxe.label>
+  <Rimverse_Melee_EmergencyAxe.description>Também abre portas travadas.</Rimverse_Melee_EmergencyAxe.description>
+  <Rimverse_Melee_ShockBaton.label>bastão de choque</Rimverse_Melee_ShockBaton.label>
+  <Rimverse_Melee_ShockBaton.description>Atordoa ao acertar.</Rimverse_Melee_ShockBaton.description>
+  <Rimverse_Melee_VibroKnife.label>faca de vibração</Rimverse_Melee_VibroKnife.label>
+  <Rimverse_Melee_VibroKnife.description>Uma lâmina vibratória que fura armadura.</Rimverse_Melee_VibroKnife.description>
+  <Rimverse_Melee_MonoBlade.label>lâmina monomolecular</Rimverse_Melee_MonoBlade.label>
+  <Rimverse_Melee_MonoBlade.description>A melhor lâmina que existe.</Rimverse_Melee_MonoBlade.description>
+  <Rimverse_Melee_MagFist.label>punho magnético</Rimverse_Melee_MagFist.label>
+  <Rimverse_Melee_MagFist.description>Empurra o alvo para longe em gravidade zero.</Rimverse_Melee_MagFist.description>
+  <Rimverse_Weapon_Precursor.label>arma de ruína precursora</Rimverse_Weapon_Precursor.label>
+  <Rimverse_Weapon_Precursor.description>Uma arma de uma civilização precursora extinta, achada só em ruínas. Dispara um feixe instável cuja força muda a cada tiro.</Rimverse_Weapon_Precursor.description>
+  <Rimverse_Bullet_Precursor.label>feixe precursor</Rimverse_Bullet_Precursor.label>
+</LanguageData>

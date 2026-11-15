@@ -79,7 +79,7 @@
     <description>A cheap steel crate bolted to the deck. Holds 4 stacks.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/CargoCrate</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.5,0.42)</color>
@@ -149,7 +149,7 @@
     <description>A big container for bulk goods. Holds 6 stacks per cell.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/HoldContainer</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.5,0.55)</color>
@@ -218,7 +218,7 @@
     <description>A sealed locker for medicine and drugs. It stays sealed even when the room loses air. Holds 5 stacks per cell.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/SealedLocker</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.85,0.85,0.9)</color>
@@ -288,7 +288,7 @@
     <description>A powered shelf that keeps food from spoiling. It adds a little heat to the ship. Holds 3 stacks per cell.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/ColdShelf</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.6,0.8,0.95)</color>
@@ -362,7 +362,7 @@
     <description>A sealed container that can sit outside the hull in vacuum without anything inside going bad. Holds 4 stacks.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/VacuumContainer</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.35,0.38,0.45)</color>
@@ -432,7 +432,7 @@
     <description>A heavy safe for silver, credit chips and valuables. Holds 8 stacks and is very hard to break.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/Vault</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.8,0.7,0.35)</color>
@@ -508,7 +508,7 @@
     <description>A decorative rack that holds and shows 2 weapons.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/WeaponRack</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.5,0.4,0.3)</color>
@@ -575,7 +575,7 @@
     <description>A locked cabinet for 6 weapons.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/WeaponLocker</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.4,0.42,0.45)</color>
@@ -642,7 +642,7 @@
     <description>Holds 12 weapons. When enemies are on the map, unarmed colonists nearby take a weapon on their own and drop it back when the danger is over.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/DefenseArmory</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.3,0.3)</color>
@@ -711,7 +711,7 @@
     <description>A lit case that shows off a single weapon or relic. Very beautiful.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/RelicDisplay</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.9,0.85,0.6)</color>
@@ -781,7 +781,7 @@
     <thingClass>Rimverse.Building_RimverseHydroponics</thingClass>
     <noRightClickDraftAttack>true</noRightClickDraftAttack>
     <graphicData>
-      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <texPath>Rimverse/Things/Building/Ship/HydroSemi</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,4)</drawSize>
       <color>(0.75,0.9,0.85)</color>
@@ -835,7 +835,7 @@
     <thingClass>Rimverse.Building_RimverseHydroponics</thingClass>
     <noRightClickDraftAttack>true</noRightClickDraftAttack>
     <graphicData>
-      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <texPath>Rimverse/Things/Building/Ship/HydroAuto</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,4)</drawSize>
       <color>(0.75,0.9,0.85)</color>
@@ -891,7 +891,7 @@
     <thingClass>Rimverse.Building_RimverseHydroponics</thingClass>
     <noRightClickDraftAttack>true</noRightClickDraftAttack>
     <graphicData>
-      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <texPath>Rimverse/Things/Building/Ship/ClosedGarden</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,4)</drawSize>
       <color>(0.75,0.9,0.85)</color>
@@ -952,7 +952,7 @@
     <label>automatic medical pod</label>
     <description>A sealed medical bed with surgical arms. It tends the wounds and illnesses of whoever lies in it every hour, without a doctor or medicine.</description>
     <graphicData>
-      <texPath>Things/Building/Furniture/Bed/HospitalBed</texPath>
+      <texPath>Rimverse/Things/Building/Ship/AutoMedPod</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(2,2)</drawSize>
@@ -1007,7 +1007,7 @@
     <label>trade drop spot</label>
     <description>Orbital traders drop the goods you buy here.</description>
     <graphicData>
-      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <texPath>Rimverse/Things/Building/Ship/TradeDropSpot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <color>(0.4,0.8,0.5)</color>
     </graphicData>
@@ -1030,8 +1030,8 @@
     <label>maintenance drone bay</label>
     <description>A rack of small repair drones. They fly out every hour and fix damaged hull, walls and modules of the ship they are on, without anyone lifting a tool.</description>
     <graphicData>
-      <texPath>Things/Building/Misc/ToolCabinet</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/MaintenanceBay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.65,0.75,0.85)</color>
     </graphicData>
@@ -1072,7 +1072,7 @@
     <label>automatic galley</label>
     <description>A sealed kitchen unit. Every half hour it takes raw food from the storage around it and cooks a simple meal by itself. Put shelves or the hydroponics output next to it.</description>
     <graphicData>
-      <texPath>Things/Building/Production/TableStoveElectric</texPath>
+      <texPath>Rimverse/Things/Building/Ship/AutoGalley</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3.5,1.5)</drawSize>
       <color>(0.75,0.8,0.9)</color>

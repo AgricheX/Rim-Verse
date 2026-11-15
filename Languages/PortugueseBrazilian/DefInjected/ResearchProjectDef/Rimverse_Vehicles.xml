@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_GroundVehicles.label>veículos terrestres</Rimverse_GroundVehicles.label>
+  <Rimverse_GroundVehicles.description>Motos, quadriciclos, rovers, caminhões e tratores para a superfície dos planetas.</Rimverse_GroundVehicles.description>
+  <Rimverse_ArmoredVehicles.label>veículos blindados</Rimverse_ArmoredVehicles.label>
+  <Rimverse_ArmoredVehicles.description>Blindados de tropas e tanques leves com armas montadas.</Rimverse_ArmoredVehicles.description>
+  <Rimverse_SpacerVehicles.label>veículos spacer</Rimverse_SpacerVehicles.label>
+  <Rimverse_SpacerVehicles.description>Hovercrafts, anfíbios, andadores de combate e tanques de plasma movidos a células de energia.</Rimverse_SpacerVehicles.description>
+  <Rimverse_Aircraft.label>aeronaves atmosféricas</Rimverse_Aircraft.label>
+  <Rimverse_Aircraft.description>VTOLs, caças, transportes de tropas, dirigíveis de nuvens e bombardeiros.</Rimverse_Aircraft.description>
+  <Rimverse_Shuttles.label>lançadeiras</Rimverse_Shuttles.label>
+  <Rimverse_Shuttles.description>Lançadeiras de pouso, de carga e de assalto e cápsulas de fuga que voam entre a superfície e a órbita.</Rimverse_Shuttles.description>
+  <Rimverse_SmallCraft.label>naves pequenas</Rimverse_SmallCraft.label>
+  <Rimverse_SmallCraft.description>Caças e bombardeiros espaciais, rebocadores, mineradores de asteroide e batedores lançados da nave.</Rimverse_SmallCraft.description>
+</LanguageData>
