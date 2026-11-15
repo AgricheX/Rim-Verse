@@ -137,6 +137,7 @@ namespace Rimverse
             if (!comp.encounters.Contains(e)) return;
             FireAll(map, e, player, enemy);
             FireAll(map, e, enemy, player);
+            HangarUtility.FighterSorties(map, e, player, enemy);
             if (e.band == CombatBand.Boarding && e.enemyOrder == CombatOrder.Board && tick - e.lastBoardTick >= BoardIntervalSeconds * 60f)
             {
                 e.lastBoardTick = tick;
@@ -210,7 +211,7 @@ namespace Rimverse
                 }
             }
             else e.bandProgress = Mathf.Max(0f, e.bandProgress - 0.05f);
-            if (e.playerOrder == CombatOrder.Flee && e.band == CombatBand.Far && !Tractoring(enemy, e.band) && (ps >= es || WarpReady(player))) e.playerFlee += 1f;
+            if (e.playerOrder == CombatOrder.Flee && e.band == CombatBand.Far && !Tractoring(enemy, e.band) && (ps >= es || WarpReady(player) || player.Signature < 0.5f)) e.playerFlee += 1f / Mathf.Clamp(player.Signature, 0.5f, 1f);
             else e.playerFlee = Mathf.Max(0f, e.playerFlee - 1f);
             if (e.enemyOrder == CombatOrder.Flee && e.band == CombatBand.Far && !Tractoring(player, e.band) && (es >= ps || WarpReady(enemy))) e.enemyFlee += 1f;
             else e.enemyFlee = Mathf.Max(0f, e.enemyFlee - 1f);
@@ -234,6 +235,7 @@ namespace Rimverse
             float gunner = GunnerFactor(shooter);
             float dodge = Dodge(target);
             float jam = Jamming(target);
+            float sig = Mathf.Lerp(0.55f, 1f, Mathf.Clamp01(target.Signature));
             foreach (CompShipWeapon w in Weapons(shooter).ToList())
             {
                 CompProperties_ShipWeapon p = w.Props;
@@ -241,7 +243,7 @@ namespace Rimverse
                 if (p.interceptChance > 0f && p.damage <= 0f) continue;
                 if (!w.Ready) continue;
                 if (e.band == CombatBand.Boarding && p.band == CombatBand.Far) continue;
-                float acc = Accuracy(p.band, e.band) * (1f - dodge) * gunner * (1f - jam);
+                float acc = Accuracy(p.band, e.band) * (1f - dodge) * gunner * (1f - jam) * sig;
                 for (int i = 0; i < p.burst; i++) FireShot(map, w, shooter, target, Mathf.Clamp01(acc));
                 shooter.state.heat += p.heatPerShot * p.burst;
                 w.ConsumeShot();
@@ -253,6 +255,11 @@ namespace Rimverse
             CompProperties_ShipWeapon p = w.Props;
             IntVec3 aim = RandomCell(target);
             if (!aim.IsValid) return;
+            if (p.missile && Rand.Chance(HangarUtility.FighterIntercept(target)))
+            {
+                Launch(map, p.projectile, w.parent, shooter, Midpoint(shooter, target, map));
+                return;
+            }
             if (p.missile)
             {
                 foreach (CompShipWeapon pd in Weapons(target))
@@ -515,6 +522,11 @@ namespace Rimverse
             if (!Rand.Chance(chance)) return;
             Faction pirates = PirateFaction(gc);
             if (pirates == null) return;
+            if (!Rand.Chance(Mathf.Lerp(0.3f, 1f, Mathf.Clamp01(ship.Signature))))
+            {
+                Messages.Message("Rimverse_MsgSignatureHid".Translate(ship.Label), ship.bridge, MessageTypeDefOf.PositiveEvent, false);
+                return;
+            }
             float points = StorytellerUtility.DefaultThreatPointsNow(map);
             StartEncounter(map, ship, pirates, points / 8f, TechLevel.Spacer, -2);
         }

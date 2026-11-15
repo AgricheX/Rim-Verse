@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Stat_AIPilot>Nível da IA no leme</Rimverse_Stat_AIPilot>
+  <Rimverse_Stat_AIPilot_Desc>A IA de bordo pilota a nave neste nível quando nenhum colono está no leme, e serve de copiloto nos outros casos.</Rimverse_Stat_AIPilot_Desc>
+  <Rimverse_Stat_Signature>Assinatura</Rimverse_Stat_Signature>
+  <Rimverse_Stat_Signature_Desc>Multiplica a assinatura da nave enquanto funciona. Uma assinatura baixa deixa a nave mais difícil de achar, de acertar e mais rápida para fugir.</Rimverse_Stat_Signature_Desc>
+  <Rimverse_AIHelm>IA de bordo</Rimverse_AIHelm>
+  <Rimverse_ShipSignature>Assinatura: {0}</Rimverse_ShipSignature>
+  <Rimverse_MsgSignatureHid>Uma nave hostil passou por perto, mas a {0} ficou escondida.</Rimverse_MsgSignatureHid>
+  <Rimverse_CraftFly>Voar para...</Rimverse_CraftFly>
+  <Rimverse_CraftFlyDesc>Voa com todos a bordo para outro dos seus mapas neste sistema estelar. Gasta {0} de combustível. No espaço o veículo precisa estar parado num hangar ou baia de lançadeira.</Rimverse_CraftFlyDesc>
+  <Rimverse_CraftNoCrew>Não há ninguém a bordo.</Rimverse_CraftNoCrew>
+  <Rimverse_CraftNoFuel>Combustível insuficiente.</Rimverse_CraftNoFuel>
+  <Rimverse_CraftNotInHangar>Estacione num hangar ou baia de lançadeira primeiro.</Rimverse_CraftNotInHangar>
+  <Rimverse_CraftNoDestination>Nenhum outro mapa seu neste sistema estelar.</Rimverse_CraftNoDestination>
+  <Rimverse_CraftNoLanding>Nenhum lugar livre para pousar lá.</Rimverse_CraftNoLanding>
+  <Rimverse_CraftArrived>{0} pousou em {1}.</Rimverse_CraftArrived>
+  <Rimverse_CraftReady>Tripulado e pronto para sair no combate de naves.</Rimverse_CraftReady>
+  <Rimverse_HangarInspect>Veículos estacionados: {0} / {1}. Naves de combate tripuladas: {2}.</Rimverse_HangarInspect>
+  <Rimverse_DockInspect>Cargueiros acoplam mais ou menos a cada {0} dias enquanto estiver no espaço.</Rimverse_DockInspect>
+  <Rimverse_PanelNoShip>Sem ligação com uma nave.</Rimverse_PanelNoShip>
+  <Rimverse_PanelInspect>{0}: casco {1}, ar {2}, calor {3}, combustível {4}, tripulação {5}</Rimverse_PanelInspect>
+  <Rimverse_DroneWorkshopInspect>Baias de drones num raio de {0} células: +{1} de trabalho.</Rimverse_DroneWorkshopInspect>
+  <Rimverse_StationLinked>Colônias apoiadas neste sistema: {0}</Rimverse_StationLinked>
+  <Rimverse_LinkIncome>Renda das colônias: +{0}</Rimverse_LinkIncome>
+  <Rimverse_LinkStability>Estabilidade das colônias: +{0}</Rimverse_LinkStability>
+  <Rimverse_LinkDefense>Defesa das colônias: +{0}</Rimverse_LinkDefense>
+  <Rimverse_LinkCapacity>Limite de população das colônias: +{0}</Rimverse_LinkCapacity>
+  <Rimverse_LinkGoods>Estoque das colônias a cada etapa: +{0} de aço, +{1} de combustível, +{2} componentes</Rimverse_LinkGoods>
+  <Rimverse_LinkLimit>Limite de colônias: +{0}</Rimverse_LinkLimit>
+  <Rimverse_LinkOpinion>Opinião do dono do sistema a cada etapa: {0}</Rimverse_LinkOpinion>
+  <Rimverse_StudyNoProject>Nenhum projeto de pesquisa selecionado. O estudo foi perdido.</Rimverse_StudyNoProject>
+  <Rimverse_StudyDone>O estudo somou {0} de pesquisa a {1}.</Rimverse_StudyDone>
+</LanguageData>

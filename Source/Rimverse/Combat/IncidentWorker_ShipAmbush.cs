@@ -31,6 +31,11 @@ namespace Rimverse
             Faction f = parms.faction != null && parms.faction.HostileTo(Faction.OfPlayer) ? parms.faction : ShipCombatUtility.PirateFaction(GameComponent_Civilizations.Instance);
             if (f == null) return false;
             float points = parms.points > 0f ? parms.points : StorytellerUtility.DefaultThreatPointsNow(map);
+            if (!Rand.Chance(UnityEngine.Mathf.Lerp(0.3f, 1f, UnityEngine.Mathf.Clamp01(ship.Signature))))
+            {
+                Messages.Message("Rimverse_MsgSignatureHid".Translate(ship.Label), ship.bridge, MessageTypeDefOf.PositiveEvent, false);
+                return true;
+            }
             TechLevel tech = f.def.techLevel < TechLevel.Industrial ? TechLevel.Industrial : f.def.techLevel;
             return ShipCombatUtility.StartEncounter(map, ship, f, points / 8f, tech, -2);
         }

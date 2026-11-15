@@ -73,15 +73,16 @@ namespace Rimverse
             int crew = ShipCrewUtility.Crew(ship).Count(SpaceMapUtility.Breathes);
             if (crew > 0 && ship.airCapacity < crew * AirHoursPerCrew) problems.Add("Rimverse_ProblemAir".Translate(ship.airCapacity.ToString("0"), (crew * AirHoursPerCrew).ToString("0")));
             ShipCrewUtility.PilotAndCopilot(ship, out Pawn pilot, out _);
-            if (pilot == null) problems.Add("Rimverse_ProblemNoPilot".Translate());
+            if (!ShipCrewUtility.HasHelm(ship, pilot)) problems.Add("Rimverse_ProblemNoPilot".Translate());
             return problems;
         }
 
         public static float LaunchQuality(RimverseShip ship, Pawn pilot, Pawn copilot)
         {
             float q = 0.3f;
-            if (pilot != null) q += 0.025f * ShipCrewUtility.PilotLevel(pilot);
+            q += 0.025f * ShipCrewUtility.HelmLevel(ship, pilot);
             if (copilot != null) q += 0.0125f * ShipCrewUtility.PilotLevel(copilot);
+            else if (pilot != null && ship.aiPilotLevel > 0f) q += 0.0125f * ship.aiPilotLevel;
             if (ship.mass > 0f) q += 0.1f * (Mathf.Min(ship.thrust / ship.mass, 3f) - 1f);
             return Mathf.Clamp(q, 0.05f, 0.98f);
         }

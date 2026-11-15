@@ -46,6 +46,17 @@
         <totalPriceRange>1200~3000</totalPriceRange>
       </li>
       <li Class="StockGenerator_BuyTradeTag"><tag>Rimverse_SpaceGoods</tag></li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Rimverse_SpaceAnimal</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <totalPriceRange>200~800</totalPriceRange>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Rimverse_WarpDriveHeavy"]/costList</xpath>
+    <value>
+      <Rimverse_WarpCore>1</Rimverse_WarpCore>
     </value>
   </Operation>
 </Patch>

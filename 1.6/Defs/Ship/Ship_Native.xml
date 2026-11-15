@@ -1069,7 +1069,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_AutoGalley</defName>
     <label>automatic galley</label>
-    <description>A sealed kitchen unit. Every half hour it takes raw food from the storage around it and cooks a simple meal by itself. Put shelves or the hydroponics output next to it.</description>
+    <description>A sealed kitchen unit. Every half hour it takes raw food from the storage around it and cooks a ship meal by itself. Put shelves or the hydroponics output next to it.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Ship/AutoGalley</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -1106,7 +1106,7 @@
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="Rimverse.CompProperties_AutoGalley">
-        <meal>MealSimple</meal>
+        <meal>Rimverse_ShipMeal</meal>
       </li>
     </comps>
   </ThingDef>

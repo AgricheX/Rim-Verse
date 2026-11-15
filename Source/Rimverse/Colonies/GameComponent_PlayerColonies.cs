@@ -40,18 +40,20 @@ namespace Rimverse
             float hazard = c.Hazard;
             Pawn admin = c.Administrator;
             int social = admin?.skills.GetSkill(SkillDefOf.Social).Level ?? 0;
-            float target = 50f + social;
+            StationBonus sb = StationLinkUtility.For(c.systemKey);
+            float target = 50f + social + sb.stability;
             if (colonies.Count > limit) target -= 2f * (colonies.Count - limit);
             if (hazard > 1.5f) target -= 10f;
-            float food = (hazard <= 1.3f ? 10f : 0f) + industriesReady(c, ColonyIndustry.Agriculture) * 20f;
+            float food = (hazard <= 1.3f ? 10f : 0f) + industriesReady(c, ColonyIndustry.Agriculture) * 20f + sb.food;
             bool starving = c.population > food && food < c.population * 0.8f;
             if (starving) target -= 10f;
             c.stability = Mathf.Clamp(Mathf.Lerp(c.stability, target, 0.3f), 0f, 100f);
             float growth = starving ? -0.05f : 0.05f;
-            c.population = Mathf.Clamp(c.population * (1f + growth) + (starving ? 0f : 1f), 1f, Mathf.Max(c.Capacity, c.settlers.Count));
+            c.population = Mathf.Clamp(c.population * (1f + growth) + (starving ? 0f : 1f), 1f, Mathf.Max(c.Capacity + sb.capacity, c.settlers.Count));
             float upkeep = c.industries.Where(b => b.Ready).Sum(b => ColonyUtility.Upkeep(b.type)) * hazard;
             float income = c.population * 10f * (c.stability / 50f) * (1f + social * 0.01f);
             if (c.Has(ColonyIndustry.TradePort)) income *= 1.2f;
+            income *= 1f + sb.income;
             c.lastIncome = income - upkeep;
             treasury = Mathf.Max(0, treasury + Mathf.RoundToInt(c.lastIncome));
             BodyData b = c.Body;
@@ -61,10 +63,13 @@ namespace Rimverse
             c.AddStock("Chemfuel", (industriesReady(c, ColonyIndustry.GasHarvest) * 60 + industriesReady(c, ColonyIndustry.Refinery) * 40) * prodFactor);
             c.AddStock("Rimverse_WarpMatter", industriesReady(c, ColonyIndustry.Refinery) * 10 * prodFactor);
             c.AddStock("ComponentIndustrial", industriesReady(c, ColonyIndustry.Factory) * 10 * prodFactor);
+            c.AddStock("Steel", sb.steel * prodFactor);
+            c.AddStock("Chemfuel", sb.chemfuel * prodFactor);
+            c.AddStock("ComponentIndustrial", sb.components * prodFactor);
             c.AddStock("ComponentSpacer", industriesReady(c, ColonyIndustry.Factory) * 2 * prodFactor);
             Civilization owner = GameComponent_Civilizations.Instance?.generated == true ? GameComponent_Civilizations.Instance.OwnerOf(c.SystemId) : null;
-            c.attention += c.population * 0.5f + c.Wealth / 10000f + (owner != null ? 30f : 0f);
-            if (owner != null && !owner.dead) GameComponent_Civilizations.Instance.ChangePlayerOpinion(owner, -2f);
+            c.attention += (c.population * 0.5f + c.Wealth / 10000f + (owner != null ? 30f : 0f)) * sb.attention;
+            if (owner != null && !owner.dead) GameComponent_Civilizations.Instance.ChangePlayerOpinion(owner, -2f + sb.opinion);
             if (!c.warned && c.attention >= ColonyUtility.WarnAttention)
             {
                 c.warned = true;
@@ -89,7 +94,7 @@ namespace Rimverse
                 RimverseShip ship = ColonyUtility.PlayerShipOn(map);
                 if (ship != null && SpaceMapUtility.IsOrbit(map) && RimverseMod.Settings.shipCombatEnabled && ShipCombatUtility.StartEncounter(map, ship, pirates, c.Wealth / 1000f + 20f, TechLevel.Spacer, -2)) return;
             }
-            float defense = 10f + industriesReady(c, ColonyIndustry.MilitaryBase) * 50f + (admin?.skills.GetSkill(SkillDefOf.Shooting).Level ?? 0) + c.population * 0.2f;
+            float defense = 10f + StationLinkUtility.For(c.systemKey).defense + industriesReady(c, ColonyIndustry.MilitaryBase) * 50f + (admin?.skills.GetSkill(SkillDefOf.Shooting).Level ?? 0) + c.population * 0.2f;
             float threat = 20f + c.Wealth / 1000f;
             bool held = Rand.Chance(defense / (defense + threat));
             if (held)

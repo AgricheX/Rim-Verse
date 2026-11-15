@@ -139,6 +139,7 @@
       <recipeUsers>
         <li>FabricationBench</li>
         <li>Rimverse_PartFabricator</li>
+        <li>Rimverse_NavalEngineeringBench</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -611,7 +612,7 @@
       <researchPrerequisite>Rimverse_Metallurgy</researchPrerequisite>
       <productCount>1</productCount>
       <recipeUsers>
-        <li>FabricationBench</li>
+        <li>Rimverse_NavalEngineeringBench</li>
         <li>Rimverse_PartFabricator</li>
       </recipeUsers>
     </recipeMaker>
@@ -656,7 +657,7 @@
       <researchPrerequisite>Rimverse_ExoticMaterials</researchPrerequisite>
       <productCount>1</productCount>
       <recipeUsers>
-        <li>FabricationBench</li>
+        <li>Rimverse_NavalEngineeringBench</li>
         <li>Rimverse_PartFabricator</li>
       </recipeUsers>
     </recipeMaker>
@@ -817,8 +818,8 @@
       <researchPrerequisite>Rimverse_ShipMissiles</researchPrerequisite>
       <productCount>1</productCount>
       <recipeUsers>
-        <li>FabricationBench</li>
-        <li>Rimverse_PartFabricator</li>
+        <li>Rimverse_AmmoBench</li>
+        <li>Rimverse_ShipWeaponWorkshop</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -860,8 +861,8 @@
       <researchPrerequisite>Rimverse_ShipMissiles</researchPrerequisite>
       <productCount>1</productCount>
       <recipeUsers>
-        <li>FabricationBench</li>
-        <li>Rimverse_PartFabricator</li>
+        <li>Rimverse_AmmoBench</li>
+        <li>Rimverse_ShipWeaponWorkshop</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -903,8 +904,8 @@
       <researchPrerequisite>Rimverse_Boarding</researchPrerequisite>
       <productCount>1</productCount>
       <recipeUsers>
-        <li>FabricationBench</li>
-        <li>Rimverse_PartFabricator</li>
+        <li>Rimverse_AmmoBench</li>
+        <li>Rimverse_ShipWeaponWorkshop</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -945,8 +946,8 @@
       <researchPrerequisite>Rimverse_KineticWeapons</researchPrerequisite>
       <productCount>1</productCount>
       <recipeUsers>
-        <li>FabricationBench</li>
-        <li>Rimverse_PartFabricator</li>
+        <li>Rimverse_AmmoBench</li>
+        <li>Rimverse_ShipWeaponWorkshop</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -987,8 +988,8 @@
       <researchPrerequisite>Rimverse_Railguns</researchPrerequisite>
       <productCount>1</productCount>
       <recipeUsers>
-        <li>FabricationBench</li>
-        <li>Rimverse_PartFabricator</li>
+        <li>Rimverse_AmmoBench</li>
+        <li>Rimverse_ShipWeaponWorkshop</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -1029,8 +1030,8 @@
       <researchPrerequisite>Rimverse_Railguns</researchPrerequisite>
       <productCount>1</productCount>
       <recipeUsers>
-        <li>FabricationBench</li>
-        <li>Rimverse_PartFabricator</li>
+        <li>Rimverse_AmmoBench</li>
+        <li>Rimverse_ShipWeaponWorkshop</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -1072,7 +1073,7 @@
       <researchPrerequisite>Rimverse_AdvancedSensors</researchPrerequisite>
       <productCount>1</productCount>
       <recipeUsers>
-        <li>FabricationBench</li>
+        <li>Rimverse_NavalEngineeringBench</li>
         <li>Rimverse_PartFabricator</li>
       </recipeUsers>
     </recipeMaker>
@@ -2758,6 +2759,7 @@
       <researchPrerequisite>Rimverse_SpaceMedicine</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -2793,6 +2795,7 @@
       <researchPrerequisite>Rimverse_SpaceMedicine</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -3172,6 +3175,7 @@
       <researchPrerequisite>Rimverse_SpaceMedicine</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
@@ -3222,6 +3226,7 @@
       <researchPrerequisite>Rimverse_SpaceMedicine</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
@@ -3264,6 +3269,7 @@
       <researchPrerequisite>Rimverse_SpaceMedicine</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
@@ -3311,6 +3317,7 @@
       <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
@@ -3408,6 +3415,7 @@
       <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
@@ -3454,6 +3462,7 @@
       <researchPrerequisite>Rimverse_SpaceMedicine</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
@@ -3496,6 +3505,7 @@
       <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
@@ -3588,6 +3598,7 @@
       <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
@@ -3685,6 +3696,7 @@
       <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
@@ -3727,6 +3739,7 @@
       <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
@@ -3819,6 +3832,7 @@
       <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
@@ -3914,6 +3928,7 @@
       <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
@@ -3958,6 +3973,7 @@
       <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>Rimverse_AnalysisLab</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>

@@ -56,9 +56,11 @@ namespace Rimverse
 
         private IEnumerable<IntVec3> Cells(Map map) => GenRadial.RadialCellsAround(parent.Position, Props.radius, true).Where(c => c.InBounds(map));
 
+        private int Budget => Mathf.Max(1, Mathf.RoundToInt(Props.perInterval * DroneWorkshopUtility.Factor(parent)));
+
         private void Clean(Map map)
         {
-            int left = Props.perInterval;
+            int left = Budget;
             foreach (IntVec3 c in Cells(map))
             {
                 List<Thing> things = c.GetThingList(map);
@@ -77,7 +79,7 @@ namespace Rimverse
 
         private void Haul(Map map)
         {
-            int left = Props.perInterval;
+            int left = Budget;
             foreach (IntVec3 c in Cells(map).ToList())
             {
                 List<Thing> things = c.GetThingList(map);
@@ -105,7 +107,7 @@ namespace Rimverse
                 if (map.designationManager.DesignationAt(c, DesignationDefOf.Mine) == null) continue;
                 Building b = c.GetEdifice(map);
                 if (b == null || !b.def.mineable) continue;
-                b.TakeDamage(new DamageInfo(DamageDefOf.Mining, 40 * Props.perInterval));
+                b.TakeDamage(new DamageInfo(DamageDefOf.Mining, 40 * Budget));
                 if (b.Destroyed) done++;
                 return;
             }

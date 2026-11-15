@@ -242,6 +242,8 @@ namespace Rimverse
                 ship.warpCapacity += p.warpCapacity;
                 ship.cargoTons += p.cargoTons;
                 if (eff <= 0f) continue;
+                if (p.aiPilotLevel > ship.aiPilotLevel && part.Operating) ship.aiPilotLevel = p.aiPilotLevel;
+                if (p.signatureFactor < 1f && part.Operating) ship.signature *= p.signatureFactor;
                 if (p.role == ShipPartRole.Thruster) ship.thrust += p.thrust * eff;
                 if (p.role == ShipPartRole.WarpDrive && part.Operating)
                 {

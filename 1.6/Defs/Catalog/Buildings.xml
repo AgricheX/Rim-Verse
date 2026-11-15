@@ -248,6 +248,7 @@
       <Plasteel>80</Plasteel>
       <ComponentSpacer>3</ComponentSpacer>
       <AIPersonaCore>1</AIPersonaCore>
+      <Rimverse_NavalComponent>2</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_NavalCommand</li>
@@ -260,6 +261,7 @@
         <dodgeBonus>0.05</dodgeBonus>
         <heatPerSecond>0.3</heatPerSecond>
         <essential>true</essential>
+        <aiPilotLevel>10</aiPilotLevel>
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -288,6 +290,7 @@
       <Steel>300</Steel>
       <Plasteel>80</Plasteel>
       <ComponentIndustrial>8</ComponentIndustrial>
+      <Rimverse_NavalComponent>4</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_FissionPower</li>
@@ -340,6 +343,7 @@
     <costList>
       <Plasteel>200</Plasteel>
       <ComponentSpacer>3</ComponentSpacer>
+      <Rimverse_NavalComponent>6</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_FusionPower</li>
@@ -391,6 +395,7 @@
     <costList>
       <Plasteel>300</Plasteel>
       <ComponentSpacer>10</ComponentSpacer>
+      <Rimverse_NavalComponent>10</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_ExoticPower</li>
@@ -480,6 +485,7 @@
     <costList>
       <Plasteel>80</Plasteel>
       <ComponentIndustrial>4</ComponentIndustrial>
+      <Rimverse_NavalComponent>2</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_IonPropulsion</li>
@@ -519,6 +525,7 @@
     <costList>
       <Plasteel>200</Plasteel>
       <ComponentSpacer>2</ComponentSpacer>
+      <Rimverse_NavalComponent>4</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_FusionPower</li>
@@ -904,6 +911,7 @@
     <costList>
       <Plasteel>60</Plasteel>
       <ComponentIndustrial>3</ComponentIndustrial>
+      <Rimverse_NavalComponent>2</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_SignatureDetection</li>
@@ -973,6 +981,7 @@
     <costList>
       <Plasteel>100</Plasteel>
       <ComponentSpacer>1</ComponentSpacer>
+      <Rimverse_NavalComponent>3</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_Cloaking</li>
@@ -1035,7 +1044,7 @@
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_Hangar</defName>
     <label>hangar</label>
-    <description>A pressurized hangar for two shuttles or four fighters.</description>
+    <description>A pressurized hangar for two shuttles or four fighters. Vehicles parked on or next to it are refuelled and repaired slowly, crewed fighters and bombers parked here join ship combat, and shuttles parked here can fly to your other maps in this star system.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Ship/Hangar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1048,6 +1057,7 @@
     </statBases>
     <costList>
       <Steel>400</Steel>
+      <Rimverse_NavalComponent>4</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_ShipOperations</li>
@@ -1065,13 +1075,17 @@
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
+      <li Class="Rimverse.CompProperties_Hangar">
+        <slots>4</slots>
+        <radius>4.5</radius>
+      </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_ShuttleBay</defName>
     <label>shuttle bay</label>
-    <description>A bay for one shuttle.</description>
+    <description>A bay for one shuttle. Vehicles parked on or next to it are refuelled and repaired slowly, crewed fighters and bombers parked here join ship combat, and shuttles parked here can fly to your other maps in this star system.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Ship/ShuttleBay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1084,6 +1098,7 @@
     </statBases>
     <costList>
       <Steel>200</Steel>
+      <Rimverse_NavalComponent>2</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_ShipOperations</li>
@@ -1101,6 +1116,55 @@
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
+      <li Class="Rimverse.CompProperties_Hangar">
+        <slots>1</slots>
+        <radius>3.5</radius>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_IceHarvester</defName>
+    <label>ice harvester</label>
+    <description>Grapples and drills ice from comets, rings and icy moons near the ship. Produces 20 ice per day.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Building/Ship/IceHarvester</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>140</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Rimverse_NavalComponent>2</Rimverse_NavalComponent>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_IceProcessing</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Other</role>
+        <mass>4</mass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>350</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Rimverse_Ice</thingToSpawn>
+        <spawnCount>20</spawnCount>
+        <spawnIntervalRange>60000~60000</spawnIntervalRange>
+        <requiresPower>true</requiresPower>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
     </comps>
   </ThingDef>
 
@@ -1195,7 +1259,7 @@
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_DockingPort</defName>
     <label>docking port</label>
-    <description>A port that lets other ships dock. Raises the hull cell limit.</description>
+    <description>A port where passing freighters dock to trade, about every ten days while powered (talk to them from a comms console). Raises the hull cell limit.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Ship/DockingPort</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1226,6 +1290,9 @@
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
+      <li Class="Rimverse.CompProperties_DockingPort">
+        <traderMtbDays>10</traderMtbDays>
+      </li>
     </comps>
   </ThingDef>
 
@@ -1317,7 +1384,7 @@
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_OrbitalOutpost</defName>
     <label>orbital outpost core</label>
-    <description>The core of a first station off-world. Controls up to 600 cells.</description>
+    <description>The core of a first station off-world. Controls up to 600 cells. Supports your colonies in the same star system.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Station/OrbitalOutpost</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1351,13 +1418,17 @@
         <basePowerConsumption>600</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_StationLink">
+        <colonyLimit>1</colonyLimit>
+        <colonyStability>3</colonyStability>
+      </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_MiningStation</defName>
     <label>mining station core</label>
-    <description>A station core anchored to an asteroid. Produces ore every day.</description>
+    <description>A station core anchored to an asteroid. Produces ore every day. Supports your colonies in the same star system.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Station/MiningStation</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1395,13 +1466,17 @@
         <producedThing>Rimverse_RareMetal</producedThing>
         <producedPerDay>6</producedPerDay>
       </li>
+      <li Class="Rimverse.CompProperties_StationLink">
+        <colonySteel>60</colonySteel>
+        <colonyStability>2</colonyStability>
+      </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_GasStation</defName>
     <label>gas station core</label>
-    <description>A station core floating in a gas giant. Produces light gas every day.</description>
+    <description>A station core floating in a gas giant. Produces light gas every day. Supports your colonies in the same star system.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Station/GasStation</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1439,13 +1514,17 @@
         <producedThing>Rimverse_LightGas</producedThing>
         <producedPerDay>10</producedPerDay>
       </li>
+      <li Class="Rimverse.CompProperties_StationLink">
+        <colonyChemfuel>60</colonyChemfuel>
+        <colonyStability>2</colonyStability>
+      </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_TradeStation</defName>
     <label>trade station core</label>
-    <description>A station core with beacons that attract freighters and merchants.</description>
+    <description>A station core with beacons that attract freighters and merchants. Supports your colonies in the same star system.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Station/TradeStation</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1484,13 +1563,17 @@
         <traderMtbDays>8</traderMtbDays>
         <silverPerDay>40</silverPerDay>
       </li>
+      <li Class="Rimverse.CompProperties_StationLink">
+        <colonyIncomeFactor>0.25</colonyIncomeFactor>
+        <civOpinion>3</civOpinion>
+      </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_ShipyardStation</defName>
     <label>shipyard station core</label>
-    <description>A station core that builds and repairs large ships.</description>
+    <description>A station core that builds and repairs large ships. Supports your colonies in the same star system.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Station/ShipyardStation</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1505,6 +1588,7 @@
       <Steel>800</Steel>
       <Plasteel>200</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
+      <Rimverse_NavalComponent>10</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_Stations</li>
@@ -1530,13 +1614,17 @@
         <repairPerInterval>200</repairPerInterval>
         <radius>45</radius>
       </li>
+      <li Class="Rimverse.CompProperties_StationLink">
+        <colonyComponents>6</colonyComponents>
+        <colonyDefense>30</colonyDefense>
+      </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_FortressStation</defName>
     <label>fortress core</label>
-    <description>A heavily armored station core for system defense.</description>
+    <description>A heavily armored station core for system defense. Supports your colonies in the same star system.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Station/FortressStation</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1550,6 +1638,7 @@
     <costList>
       <Plasteel>400</Plasteel>
       <ComponentSpacer>6</ComponentSpacer>
+      <Rimverse_NavalComponent>8</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_Stations</li>
@@ -1571,13 +1660,17 @@
         <basePowerConsumption>600</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_StationLink">
+        <colonyDefense>120</colonyDefense>
+        <attentionFactor>0.6</attentionFactor>
+      </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_ResearchStation</defName>
     <label>research station core</label>
-    <description>A station core packed with labs. Generates research.</description>
+    <description>A station core packed with labs. Generates research. Supports your colonies in the same star system.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Station/ResearchStation</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1615,13 +1708,17 @@
       <li Class="Rimverse.CompProperties_Megastructure">
         <researchPerDay>400</researchPerDay>
       </li>
+      <li Class="Rimverse.CompProperties_StationLink">
+        <colonyStability>5</colonyStability>
+        <civOpinion>1</civOpinion>
+      </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_OrbitalRing</defName>
     <label>orbital ring segment</label>
-    <description>A segment of a ring around the planet. Vast room to build and a constant trade flow.</description>
+    <description>A segment of a ring around the planet. Vast room to build and a constant trade flow. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Rimverse/Things/Building/Mega/OrbitalRing</texPath>
@@ -1663,13 +1760,19 @@
         <silverPerDay>300</silverPerDay>
         <traderMtbDays>6</traderMtbDays>
       </li>
+      <li Class="Rimverse.CompProperties_StationLink">
+        <colonyIncomeFactor>0.5</colonyIncomeFactor>
+        <colonyCapacity>150</colonyCapacity>
+        <civOpinion>4</civOpinion>
+        <colonyLimit>1</colonyLimit>
+      </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_StellarCollector</defName>
     <label>stellar collector</label>
-    <description>A swarm of collectors around the star, beamed down as nearly limitless power.</description>
+    <description>A swarm of collectors around the star, beamed down as nearly limitless power. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Rimverse/Things/Building/Mega/StellarCollector</texPath>
@@ -1708,13 +1811,17 @@
         <basePowerConsumption>-100000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
+      <li Class="Rimverse.CompProperties_StationLink">
+        <colonyComponents>10</colonyComponents>
+        <colonyStability>5</colonyStability>
+      </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_GiantHabitat</defName>
     <label>giant habitat core</label>
-    <description>The heart of a habitat for millions. Produces food and silver from its population.</description>
+    <description>The heart of a habitat for millions. Produces food and silver from its population. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Rimverse/Things/Building/Mega/GiantHabitat</texPath>
@@ -1757,13 +1864,18 @@
         <producedThing>Rimverse_ShipMeal</producedThing>
         <producedPerDay>20</producedPerDay>
       </li>
+      <li Class="Rimverse.CompProperties_StationLink">
+        <colonyCapacity>400</colonyCapacity>
+        <colonyFood>60</colonyFood>
+        <colonyStability>8</colonyStability>
+      </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_DeepObservatory</defName>
     <label>deep observatory</label>
-    <description>An observatory that charts a whole sector. A torrent of research.</description>
+    <description>An observatory that charts a whole sector. A torrent of research. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Rimverse/Things/Building/Mega/DeepObservatory</texPath>
@@ -1804,13 +1916,17 @@
       <li Class="Rimverse.CompProperties_Megastructure">
         <researchPerDay>2000</researchPerDay>
       </li>
+      <li Class="Rimverse.CompProperties_StationLink">
+        <colonyStability>4</colonyStability>
+        <civOpinion>2</civOpinion>
+      </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_WormholeStabilizer</defName>
     <label>wormhole stabilizer</label>
-    <description>Anchors an unstable wormhole in place and draws exotic matter from its throat.</description>
+    <description>Anchors an unstable wormhole in place and draws exotic matter from its throat. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Rimverse/Things/Building/Mega/WormholeStabilizer</texPath>
@@ -1851,6 +1967,10 @@
       <li Class="Rimverse.CompProperties_Megastructure">
         <producedThing>Rimverse_ExoticMatter</producedThing>
         <producedPerDay>1</producedPerDay>
+      </li>
+      <li Class="Rimverse.CompProperties_StationLink">
+        <colonyIncomeFactor>0.2</colonyIncomeFactor>
+        <attentionFactor>1.3</attentionFactor>
       </li>
     </comps>
   </ThingDef>
@@ -1931,6 +2051,7 @@
     <costList>
       <Plasteel>120</Plasteel>
       <ComponentSpacer>1</ComponentSpacer>
+      <Rimverse_NavalComponent>2</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_ShipLasers</li>
@@ -1976,6 +2097,7 @@
     <costList>
       <Plasteel>200</Plasteel>
       <ComponentSpacer>2</ComponentSpacer>
+      <Rimverse_NavalComponent>3</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_ShipPlasma</li>
@@ -2021,6 +2143,7 @@
     <costList>
       <Plasteel>600</Plasteel>
       <ComponentSpacer>8</ComponentSpacer>
+      <Rimverse_NavalComponent>8</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_CapitalShips</li>
@@ -2079,6 +2202,7 @@
     <costList>
       <Steel>300</Steel>
       <ComponentIndustrial>6</ComponentIndustrial>
+      <Rimverse_NavalComponent>3</Rimverse_NavalComponent>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_ShipMissiles</li>
@@ -2383,6 +2507,65 @@
         <heatPerShot>0</heatPerShot>
         <ammoPerShot>0</ammoPerShot>
         <tractor>true</tractor>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_RailBattery</defName>
+    <label>rail battery</label>
+    <description>Twin rails that fire dense plasteel slugs. 3 × 70 piercing damage at long range. Uses rail slugs.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Building/ShipWeapon/RailBattery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,3)</size>
+    <statBases>
+      <MaxHitPoints>420</MaxHitPoints>
+      <WorkToBuild>7600</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>140</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Rimverse_NavalComponent>2</Rimverse_NavalComponent>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_Railguns</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Weapon</role>
+        <mass>9.0</mass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>800</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_ShipWeapon">
+        <band>Far</band>
+        <projectile>Rimverse_Proj_Railgun</projectile>
+        <burst>3</burst>
+        <damage>70</damage>
+        <cooldownSeconds>12</cooldownSeconds>
+        <heatPerShot>6</heatPerShot>
+        <ammoPerShot>1</ammoPerShot>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0</fuelConsumptionRate>
+        <fuelCapacity>12</fuelCapacity>
+        <fuelLabel>rail slugs</fuelLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Rimverse_RailSlug</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <initialFuelPercent>0</initialFuelPercent>
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
@@ -4240,7 +4423,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_StatusPanel</defName>
     <label>status panel</label>
-    <description>A wall display with the ship's vital signs.</description>
+    <description>A wall display with the ship's vital signs: hull, air, heat, fuel and crew.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Furniture/StatusPanel</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -4267,6 +4450,7 @@
       <li>Rimverse_ShipFurniture</li>
     </researchPrerequisites>
     <comps>
+      <li Class="Rimverse.CompProperties_StatusPanel"/>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>30</basePowerConsumption>
@@ -4355,7 +4539,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_ShipPlanter</defName>
     <label>ship pot</label>
-    <description>A small sealed pot for a plant.</description>
+    <description>A small sealed pot for one decorative or hydroponic plant.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Furniture/ShipPlanter</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -4380,6 +4564,15 @@
     <researchPrerequisites>
       <li>Rimverse_ShipFurniture</li>
     </researchPrerequisites>
+    <thingClass>Building_PlantGrower</thingClass>
+    <building>
+      <defaultPlantToGrow>Rimverse_Plant_LightFlower</defaultPlantToGrow>
+      <sowTag>Decorative</sowTag>
+    </building>
+    <fertility>1</fertility>
+    <inspectorTabs>
+      <li>ITab_Inventory</li>
+    </inspectorTabs>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -4437,7 +4630,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_RepairDroneBay</defName>
     <label>repair drone bay</label>
-    <description>Launches drones that repair hull and modules within 30 cells.</description>
+    <description>An upgrade of the maintenance drone bay. Its drones repair hull, modules and parked vehicles within 30 cells.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Furniture/RepairDroneBay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -4472,8 +4665,9 @@
       <li Class="CompProperties_Breakdownable"/>
       <li Class="Rimverse.CompProperties_MaintenanceDrones">
         <compClass>Rimverse.CompMaintenanceDrones</compClass>
-        <repairPerInterval>60</repairPerInterval>
+        <repairPerInterval>120</repairPerInterval>
         <radius>30</radius>
+        <repairVehicles>true</repairVehicles>
       </li>
     </comps>
   </ThingDef>
@@ -4614,7 +4808,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_DroneWorkshop</defName>
     <label>drone workshop</label>
-    <description>Maintains the ship's drones. Speeds every drone bay in range.</description>
+    <description>Maintains the ship's drones. Every drone bay within 30 cells works 50% harder.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Furniture/DroneWorkshop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -4650,6 +4844,10 @@
         <compClass>Rimverse.CompMaintenanceDrones</compClass>
         <repairPerInterval>40</repairPerInterval>
         <radius>20</radius>
+      </li>
+      <li Class="Rimverse.CompProperties_DroneWorkshop">
+        <radius>30</radius>
+        <factor>1.5</factor>
       </li>
     </comps>
   </ThingDef>
