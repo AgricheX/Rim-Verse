@@ -2,6 +2,8 @@
 
 ![Rimverse](About/Preview.png)
 
+**[Download Rimverse](https://github.com/AgricheX/Rim-Verse/releases/latest/download/Rimverse.zip)**
+
 Rimverse takes your colony into an entire universe: your own ships, star systems, galaxies, living civilizations, real fleets, space combat, human lineages and fully self-sufficient survival in space.
 
 It uses its own ship system (it does not depend on the Odyssey gravship) and runs on the base game, with optional integration for every DLC and several popular mods.
@@ -78,8 +80,8 @@ Extra content loads automatically when these are active:
 ## Installation
 
 1. Subscribe to Harmony and Vehicle Framework.
-2. Download this repository (Code > Download ZIP) or a release.
-3. Extract it into `RimWorld/Mods/` so the folder contains `About/About.xml`.
+2. Download **Rimverse.zip** with the link above.
+3. Extract it into `RimWorld/Mods/` so the folder `Rimverse` contains `About/About.xml`.
 4. Enable it in the mod list, below Harmony and Vehicle Framework.
 5. Start a new game with one of the Rimverse scenarios, or a normal start.
 
@@ -99,4 +101,4 @@ dotnet build Source/Rimverse/Rimverse.csproj -c Release -p:RefsPath=<path to ref
 
 ## Author
 
-Made by **Agriche**.
+Made by me, **Agriche**.
