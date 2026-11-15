@@ -1,0 +1,1621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ColonistBike"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ColonistBike"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ColonistBike"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>180</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ColonistBike"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ColonistBike"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ColonistBike"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>63</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ColonistBike"]/components/li[key="Wheel0"]/health</xpath>
+		<value>
+			<health>27</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ColonistBike"]/components/li[key="Wheel1"]/health</xpath>
+		<value>
+			<health>27</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ColonistBike"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>36</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoQuad"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoQuad"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoQuad"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>270</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoQuad"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoQuad"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoQuad"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>96</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoQuad"]/components/li[key="Wheel0"]/health</xpath>
+		<value>
+			<health>42</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoQuad"]/components/li[key="Wheel1"]/health</xpath>
+		<value>
+			<health>42</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoQuad"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>54</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ExplorerRover"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ExplorerRover"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ExplorerRover"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>450</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ExplorerRover"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ExplorerRover"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ExplorerRover"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>162</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ExplorerRover"]/components/li[key="Wheel0"]/health</xpath>
+		<value>
+			<health>72</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ExplorerRover"]/components/li[key="Wheel1"]/health</xpath>
+		<value>
+			<health>72</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_ExplorerRover"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>90</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoTruck"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoTruck"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoTruck"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>600</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoTruck"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoTruck"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoTruck"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>216</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoTruck"]/components/li[key="Wheel0"]/health</xpath>
+		<value>
+			<health>96</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoTruck"]/components/li[key="Wheel1"]/health</xpath>
+		<value>
+			<health>96</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoTruck"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>120</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_FarmTractor"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_FarmTractor"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_FarmTractor"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>675</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_FarmTractor"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_FarmTractor"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_FarmTractor"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>243</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_FarmTractor"]/components/li[key="Track0"]/health</xpath>
+		<value>
+			<health>162</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_FarmTractor"]/components/li[key="Track1"]/health</xpath>
+		<value>
+			<health>162</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_FarmTractor"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>135</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopCarrier"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>12</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopCarrier"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>14.4</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopCarrier"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>1350</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopCarrier"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>12</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopCarrier"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>14.4</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopCarrier"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>486</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopCarrier"]/components/li[key="Wheel0"]/health</xpath>
+		<value>
+			<health>216</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopCarrier"]/components/li[key="Wheel1"]/health</xpath>
+		<value>
+			<health>216</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopCarrier"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>270</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopCarrier"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>270</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LightTank"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>12</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LightTank"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>14.4</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LightTank"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>2100</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LightTank"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>12</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LightTank"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>14.4</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LightTank"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>756</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LightTank"]/components/li[key="Track0"]/health</xpath>
+		<value>
+			<health>504</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LightTank"]/components/li[key="Track1"]/health</xpath>
+		<value>
+			<health>504</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LightTank"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>420</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LightTank"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>420</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Hovercraft"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Hovercraft"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Hovercraft"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>750</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Hovercraft"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Hovercraft"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Hovercraft"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>270</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Hovercraft"]/components/li[key="Fans"]/health</xpath>
+		<value>
+			<health>180</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Hovercraft"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>150</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Hovercraft"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>150</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_PlasmaTank"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>21.6</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_PlasmaTank"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>25.8</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_PlasmaTank"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>3750</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_PlasmaTank"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>21.6</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_PlasmaTank"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>25.8</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_PlasmaTank"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>1350</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_PlasmaTank"]/components/li[key="Track0"]/health</xpath>
+		<value>
+			<health>900</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_PlasmaTank"]/components/li[key="Track1"]/health</xpath>
+		<value>
+			<health>900</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_PlasmaTank"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>750</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_PlasmaTank"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>750</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CombatWalker"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>21.6</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CombatWalker"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>25.8</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CombatWalker"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>2400</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CombatWalker"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>21.6</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CombatWalker"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>25.8</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CombatWalker"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>864</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CombatWalker"]/components/li[key="Leg0"]/health</xpath>
+		<value>
+			<health>576</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CombatWalker"]/components/li[key="Leg1"]/health</xpath>
+		<value>
+			<health>576</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CombatWalker"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>480</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CombatWalker"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>480</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Amphibian"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Amphibian"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Amphibian"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>900</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Amphibian"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Amphibian"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Amphibian"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>324</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Amphibian"]/components/li[key="Fans"]/health</xpath>
+		<value>
+			<health>216</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Amphibian"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>180</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_GravWalker"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>28.8</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_GravWalker"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>34.8</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_GravWalker"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>3000</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_GravWalker"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>28.8</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_GravWalker"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>34.8</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_GravWalker"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>1080</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_GravWalker"]/components/li[key="Leg0"]/health</xpath>
+		<value>
+			<health>720</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_GravWalker"]/components/li[key="Leg1"]/health</xpath>
+		<value>
+			<health>720</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_GravWalker"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>600</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_GravWalker"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>600</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_VtolSkimmer"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_VtolSkimmer"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_VtolSkimmer"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>750</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_VtolSkimmer"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_VtolSkimmer"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_VtolSkimmer"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>270</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_VtolSkimmer"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>210</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_VtolSkimmer"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>150</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoFighter"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoFighter"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoFighter"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>675</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoFighter"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoFighter"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoFighter"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>243</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoFighter"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>189</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoFighter"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>135</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoFighter"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>135</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopTransport"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopTransport"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopTransport"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>1200</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopTransport"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopTransport"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopTransport"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>432</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopTransport"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>336</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_TroopTransport"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>240</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CloudAirship"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CloudAirship"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CloudAirship"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>750</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CloudAirship"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CloudAirship"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CloudAirship"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>270</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CloudAirship"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>210</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CloudAirship"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>150</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoBomber"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>28.8</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoBomber"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>34.8</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoBomber"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>1350</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoBomber"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>28.8</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoBomber"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>34.8</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoBomber"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>486</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoBomber"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>378</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoBomber"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>270</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AtmoBomber"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>270</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LandingShuttle"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LandingShuttle"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LandingShuttle"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>600</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LandingShuttle"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LandingShuttle"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LandingShuttle"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>216</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LandingShuttle"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>168</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_LandingShuttle"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>120</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoShuttle"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoShuttle"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoShuttle"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>750</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoShuttle"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoShuttle"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoShuttle"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>270</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoShuttle"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>210</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_CargoShuttle"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>150</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AssaultShuttle"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>21.6</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AssaultShuttle"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>25.8</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AssaultShuttle"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>1350</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AssaultShuttle"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>21.6</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AssaultShuttle"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>25.8</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AssaultShuttle"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>486</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AssaultShuttle"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>378</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AssaultShuttle"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>270</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AssaultShuttle"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>270</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_EscapePod"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_EscapePod"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_EscapePod"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>225</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_EscapePod"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_EscapePod"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_EscapePod"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>81</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_EscapePod"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>63</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_EscapePod"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>45</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceFighter"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceFighter"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceFighter"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>450</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceFighter"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceFighter"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceFighter"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>162</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceFighter"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>126</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceFighter"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>90</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceFighter"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>90</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceBomber"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceBomber"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceBomber"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>900</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceBomber"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceBomber"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceBomber"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>324</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceBomber"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>252</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceBomber"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>180</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_SpaceBomber"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>180</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Tug"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Tug"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Tug"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>750</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Tug"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Tug"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Tug"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>270</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Tug"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>210</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Tug"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>150</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Tug"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>150</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AsteroidMiner"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AsteroidMiner"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AsteroidMiner"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>675</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AsteroidMiner"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AsteroidMiner"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>9</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AsteroidMiner"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>243</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AsteroidMiner"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>189</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AsteroidMiner"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>135</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_AsteroidMiner"]/components/li[key="TurretRing"]/health</xpath>
+		<value>
+			<health>135</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Scout"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Scout"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Scout"]/components/li[key="Hull"]/health</xpath>
+		<value>
+			<health>375</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Scout"]/components/li[key="Hull"]/armor/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>13.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Scout"]/components/li[key="Hull"]/armor/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>16.2</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Scout"]/components/li[key="Engine"]/health</xpath>
+		<value>
+			<health>135</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Scout"]/components/li[key="Thrusters"]/health</xpath>
+		<value>
+			<health>105</health>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Rimverse_V_Scout"]/components/li[key="Cargo"]/health</xpath>
+		<value>
+			<health>75</health>
+		</value>
+	</Operation>
+
+</Patch>
