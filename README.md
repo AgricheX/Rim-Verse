@@ -8,7 +8,7 @@ Rimverse takes your colony into an entire universe: your own ships, star systems
 
 It uses its own ship system (it does not depend on the Odyssey gravship) and runs on the base game, with optional integration for every DLC and several popular mods.
 
-> **Status:** early version (0.1.1). The content is complete in code but has not been fully tested in game yet. Bug reports with the game log are very welcome.
+> **Status:** early version (0.0.1). The content is complete in code but has not been fully tested in game yet. Bug reports with the game log are very welcome.
 
 ## Features
 
@@ -72,11 +72,11 @@ A set of optional quality of life features, each one switched off automatically 
 
 ## Requirements
 
-- RimWorld **1.6** (1.7 listed as supported)
+- RimWorld **1.6** or **1.7**
 - [Harmony](https://steamcommunity.com/workshop/filedetails/?id=2009463077)
 - [Vehicle Framework](https://steamcommunity.com/workshop/filedetails/?id=3014915404)
 
-No DLC is required.
+No DLC is required. The Force and RimGram integrations need The Force Standalone + Lightsaber and RimGram, loaded before Rimverse.
 
 ## Optional integrations
 
