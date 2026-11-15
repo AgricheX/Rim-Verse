@@ -326,7 +326,7 @@
     </stuffProps>
     <costList>
       <Steel>2</Steel>
-      <Rimverse_Regolith>4</Rimverse_Regolith>
+      <ChunkGranite>1</ChunkGranite>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -368,7 +368,7 @@
       <li>Rimverse_SpaceGoods</li>
     </tradeTags>
     <costList>
-      <Rimverse_Regolith>5</Rimverse_Regolith>
+      <ChunkSandstone>1</ChunkSandstone>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

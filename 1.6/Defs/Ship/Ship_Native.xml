@@ -1022,7 +1022,6 @@
       <isEdifice>false</isEdifice>
     </building>
     <designationCategory>Misc</designationCategory>
-    <placingDraggableDimensions>0</placingDraggableDimensions>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
