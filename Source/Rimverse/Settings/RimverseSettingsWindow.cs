@@ -189,7 +189,7 @@ namespace Rimverse
 
         private static void DrawCompat(Listing_Standard l, RimverseSettings s)
         {
-            l.Label(ModCompat.Summary());
+            l.Label(ModCompat.Summary(true));
             l.GapLine();
             Check(l, "Rimverse_OdysseyIntegration", ref s.odysseyIntegration, ModCompat.Odyssey);
             Check(l, "Rimverse_CEIntegration", ref s.combatExtendedIntegration, ModCompat.CombatExtended);

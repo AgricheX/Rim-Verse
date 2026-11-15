@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_UnitLy>{0} al</Rimverse_UnitLy>
+  <Rimverse_PopBillions>{0} bi</Rimverse_PopBillions>
+  <Rimverse_PopMillions>{0} mi</Rimverse_PopMillions>
+  <Rimverse_PopThousands>{0} mil</Rimverse_PopThousands>
+  <Rimverse_ActiveIntegrations>Integrações ativas: {0}.</Rimverse_ActiveIntegrations>
+  <Rimverse_ActiveIntegrationsNone>Integrações ativas: nenhuma.</Rimverse_ActiveIntegrationsNone>
+</LanguageData>

@@ -59,7 +59,7 @@ namespace Rimverse
                 GUI.color = Color.gray;
                 Text.Font = GameFont.Tiny;
                 double d = gc.DistanceToPlayer(c, out _);
-                Widgets.Label(new Rect(row.x + 16f, row.y + 26f, row.width - 20f, 22f), ("Rimverse_Stage_" + c.stage).Translate() + " · " + ("Rimverse_Diplo_" + c.playerState).Translate() + " · " + d.ToString("0") + " ly");
+                Widgets.Label(new Rect(row.x + 16f, row.y + 26f, row.width - 20f, 22f), ("Rimverse_Stage_" + c.stage).Translate() + " · " + ("Rimverse_Diplo_" + c.playerState).Translate() + " · " + "Rimverse_UnitLy".Translate(d.ToString("0")));
                 Text.Font = GameFont.Small;
                 GUI.color = Color.white;
                 if (Widgets.ButtonInvisible(row)) selectedId = c.id;
@@ -150,9 +150,9 @@ namespace Rimverse
 
         private static string PopText(float points)
         {
-            if (points >= 1000f) return (points / 1000f).ToString("0.#") + " bi";
-            if (points >= 1f) return points.ToString("0.#") + " mi";
-            return (points * 1000f).ToString("0") + " mil";
+            if (points >= 1000f) return "Rimverse_PopBillions".Translate((points / 1000f).ToString("0.#"));
+            if (points >= 1f) return "Rimverse_PopMillions".Translate(points.ToString("0.#"));
+            return "Rimverse_PopThousands".Translate((points * 1000f).ToString("0"));
         }
 
         private static void PolicyLine(Listing_Standard l, string groupKey, PolicyDef p)

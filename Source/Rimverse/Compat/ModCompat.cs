@@ -81,7 +81,7 @@ namespace Rimverse
             return false;
         }
 
-        public static string Summary()
+        public static string Summary(bool translated = false)
         {
             List<string> parts = new List<string>();
             if (Royalty) parts.Add("Royalty");
@@ -96,6 +96,7 @@ namespace Rimverse
             if (SaveOurShip2) parts.Add("Save Our Ship 2");
             if (GravshipExpanded1) parts.Add("Vanilla Gravship Expanded 1");
             if (GravshipExpanded2) parts.Add("Vanilla Gravship Expanded 2");
+            if (translated) return parts.Count == 0 ? "Rimverse_ActiveIntegrationsNone".Translate().ToString() : "Rimverse_ActiveIntegrations".Translate(string.Join(", ", parts)).ToString();
             return parts.Count == 0 ? "Active integrations: none." : "Active integrations: " + string.Join(", ", parts) + ".";
         }
     }

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_VoidBorn.generalRules.rulesStrings>
+    <li>memeCreed-&gt;vazio</li>
+    <li>memeCreed-&gt;casco</li>
+    <li>memeCreed-&gt;convés</li>
+    <li>memeAdjective-&gt;estelar</li>
+    <li>memeAdjective-&gt;oco</li>
+    <li>memeAdjective-&gt;silencioso</li>
+    <li>memeHyphenPrefix-&gt;vazio</li>
+    <li>memeConcept-&gt;vazio</li>
+    <li>memeLeaderNoun-&gt;capitão</li>
+    <li>memeMoralist-&gt;navegador</li>
+  </Rimverse_VoidBorn.generalRules.rulesStrings>
+  <Rimverse_Cosmism.generalRules.rulesStrings>
+    <li>memeCreed-&gt;cosmos</li>
+    <li>memeCreed-&gt;órbita</li>
+    <li>memeCreed-&gt;horizonte</li>
+    <li>memeAdjective-&gt;cósmico</li>
+    <li>memeAdjective-&gt;estelar</li>
+    <li>memeAdjective-&gt;infinito</li>
+    <li>memeHyphenPrefix-&gt;astro</li>
+    <li>memeConcept-&gt;cosmos</li>
+    <li>memeLeaderNoun-&gt;capitão</li>
+    <li>memeMoralist-&gt;navegador</li>
+  </Rimverse_Cosmism.generalRules.rulesStrings>
+  <Rimverse_EternalTravelers.generalRules.rulesStrings>
+    <li>memeCreed-&gt;viagem</li>
+    <li>memeCreed-&gt;rastro</li>
+    <li>memeCreed-&gt;deriva</li>
+    <li>memeAdjective-&gt;errante</li>
+    <li>memeAdjective-&gt;inquieto</li>
+    <li>memeAdjective-&gt;distante</li>
+    <li>memeHyphenPrefix-&gt;deriva</li>
+    <li>memeConcept-&gt;viagem</li>
+    <li>memeLeaderNoun-&gt;capitão</li>
+    <li>memeMoralist-&gt;navegador</li>
+  </Rimverse_EternalTravelers.generalRules.rulesStrings>
+  <Rimverse_GateCult.generalRules.rulesStrings>
+    <li>memeCreed-&gt;portão</li>
+    <li>memeCreed-&gt;arco</li>
+    <li>memeCreed-&gt;limiar</li>
+    <li>memeAdjective-&gt;antigo</li>
+    <li>memeAdjective-&gt;aberto</li>
+    <li>memeAdjective-&gt;eterno</li>
+    <li>memeHyphenPrefix-&gt;portal</li>
+    <li>memeConcept-&gt;portão</li>
+    <li>memeLeaderNoun-&gt;capitão</li>
+    <li>memeMoralist-&gt;navegador</li>
+  </Rimverse_GateCult.generalRules.rulesStrings>
+  <Rimverse_StellarAscension.generalRules.rulesStrings>
+    <li>memeCreed-&gt;estrela</li>
+    <li>memeAdjective-&gt;ascendente</li>
+    <li>memeConcept-&gt;ascensão estelar</li>
+    <li>memeLeaderNoun-&gt;capitão</li>
+    <li>memeMoralist-&gt;navegador</li>
+  </Rimverse_StellarAscension.generalRules.rulesStrings>
+  <Rimverse_HomeworldGuardians.generalRules.rulesStrings>
+    <li>memeCreed-&gt;mundo natal</li>
+    <li>memeAdjective-&gt;vigilante</li>
+    <li>memeConcept-&gt;guardiões do mundo natal</li>
+    <li>memeLeaderNoun-&gt;capitão</li>
+    <li>memeMoralist-&gt;navegador</li>
+  </Rimverse_HomeworldGuardians.generalRules.rulesStrings>
+  <Rimverse_VoidFaith.generalRules.rulesStrings>
+    <li>memeCreed-&gt;vazio</li>
+    <li>memeAdjective-&gt;fiel</li>
+    <li>memeConcept-&gt;fé do vazio</li>
+    <li>memeLeaderNoun-&gt;capitão</li>
+    <li>memeMoralist-&gt;navegador</li>
+  </Rimverse_VoidFaith.generalRules.rulesStrings>
+  <Rimverse_Frontier.generalRules.rulesStrings>
+    <li>memeCreed-&gt;fronteira</li>
+    <li>memeAdjective-&gt;pioneiro</li>
+    <li>memeConcept-&gt;fronteira</li>
+    <li>memeLeaderNoun-&gt;capitão</li>
+    <li>memeMoralist-&gt;navegador</li>
+  </Rimverse_Frontier.generalRules.rulesStrings>
+</LanguageData>

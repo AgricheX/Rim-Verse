@@ -57,7 +57,7 @@ namespace Rimverse
             if (extraCells > 0) yield return new StatDrawEntry(cat, "Rimverse_Stat_ExtraCells".Translate(), "+" + extraCells, "Rimverse_Stat_ExtraCells_Desc".Translate(), 4890);
             if (cargoTons > 0f) yield return new StatDrawEntry(cat, "Rimverse_Stat_Cargo".Translate(), "+" + cargoTons.ToString("0") + " t", "Rimverse_Stat_Cargo_Desc".Translate(), 4880);
             if (sensorSensitivity > 0f) yield return new StatDrawEntry(cat, "Rimverse_Stat_Sensor".Translate(), sensorSensitivity.ToString("0"), "Rimverse_Stat_Sensor_Desc".Translate(), 4865);
-            if (warpRangeLy > 0) yield return new StatDrawEntry(cat, "Rimverse_Stat_WarpRange".Translate(), warpRangeLy + " ly", "Rimverse_Stat_WarpRange_Desc".Translate(), 4860);
+            if (warpRangeLy > 0) yield return new StatDrawEntry(cat, "Rimverse_Stat_WarpRange".Translate(), "Rimverse_UnitLy".Translate(warpRangeLy), "Rimverse_Stat_WarpRange_Desc".Translate(), 4860);
             if (warpMaxMass > 0f) yield return new StatDrawEntry(cat, "Rimverse_Stat_WarpMaxMass".Translate(), warpMaxMass.ToString("0") + " t", "Rimverse_Stat_WarpMaxMass_Desc".Translate(), 4855);
             if (warpCooldownHours > 0) yield return new StatDrawEntry(cat, "Rimverse_Stat_WarpCooldown".Translate(), warpCooldownHours + " h", "Rimverse_Stat_WarpCooldown_Desc".Translate(), 4850);
             if (warpCapacity > 0f) yield return new StatDrawEntry(cat, "Rimverse_Stat_WarpCapacity".Translate(), warpCapacity.ToString("0"), "Rimverse_Stat_WarpCapacity_Desc".Translate(), 4845);

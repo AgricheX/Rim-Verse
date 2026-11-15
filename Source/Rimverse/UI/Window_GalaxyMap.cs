@@ -107,7 +107,7 @@ namespace Rimverse
                     x -= 58f;
                     Rect b = new Rect(x, rect.y, 54f, 28f);
                     if (i == radiusIndex) Widgets.DrawHighlight(b);
-                    if (Widgets.ButtonText(b, Radii[i] + " ly")) radiusIndex = i;
+                    if (Widgets.ButtonText(b, "Rimverse_UnitLy".Translate(Radii[i]))) radiusIndex = i;
                 }
             }
             x -= 130f;

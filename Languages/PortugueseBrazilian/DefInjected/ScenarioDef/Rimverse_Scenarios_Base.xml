@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <Rimverse_Scen_Shipwreck.label>Naufrágio</Rimverse_Scen_Shipwreck.label>
+  <Rimverse_Scen_Shipwreck.scenario.name>Naufrágio</Rimverse_Scen_Shipwreck.scenario.name>
   <Rimverse_Scen_Shipwreck.description>A sua nave colonial se partiu em órbita alta. Três de vocês chegaram às cápsulas de fuga e caíram neste rimworld, ao lado do que sobrou da nave. A ponte, um motor e o suporte de vida estão jogados na terra. Conserte tudo, construa um casco em volta e volte para as estrelas.</Rimverse_Scen_Shipwreck.description>
+  <Rimverse_Scen_Shipwreck.scenario.description>A sua nave colonial se partiu em órbita alta. Três de vocês chegaram às cápsulas de fuga e caíram neste rimworld, ao lado do que sobrou da nave. A ponte, um motor e o suporte de vida estão jogados na terra. Conserte tudo, construa um casco em volta e volte para as estrelas.</Rimverse_Scen_Shipwreck.scenario.description>
   <Rimverse_Scen_Shipwreck.scenario.summary>Três sobreviventes ao lado dos destroços da nave. Saia do planeta.</Rimverse_Scen_Shipwreck.scenario.summary>
   <Rimverse_Scen_Drifting.label>Nave à deriva</Rimverse_Scen_Drifting.label>
+  <Rimverse_Scen_Drifting.scenario.name>Nave à deriva</Rimverse_Scen_Drifting.scenario.name>
   <Rimverse_Scen_Drifting.description>Uma nave pequena flutua na borda do sistema, quase sem combustível e com o ar viciado. Não há motor de dobra e nenhum planeta por perto. Os cinco vão ter que manter a nave viva, achar combustível e chegar a algum lugar seguro.</Rimverse_Scen_Drifting.description>
+  <Rimverse_Scen_Drifting.scenario.description>Uma nave pequena flutua na borda do sistema, quase sem combustível e com o ar viciado. Não há motor de dobra e nenhum planeta por perto. Os cinco vão ter que manter a nave viva, achar combustível e chegar a algum lugar seguro.</Rimverse_Scen_Drifting.scenario.description>
   <Rimverse_Scen_Drifting.scenario.summary>Cinco tripulantes numa nave pequena com pouco ar e combustível. Difícil.</Rimverse_Scen_Drifting.scenario.summary>
   <Rimverse_Scen_MiningStation.label>Estação de mineração</Rimverse_Scen_MiningStation.label>
+  <Rimverse_Scen_MiningStation.scenario.name>Estação de mineração</Rimverse_Scen_MiningStation.scenario.name>
   <Rimverse_Scen_MiningStation.description>Uma corporação contratou vocês para cuidar de uma pequena estação de mineração no cinturão de asteroides. A estação tem painéis solares, suporte de vida e um porão, mas nenhum motor de verdade. Minere, negocie e cresça, e um dia compre a sua liberdade.</Rimverse_Scen_MiningStation.description>
+  <Rimverse_Scen_MiningStation.scenario.description>Uma corporação contratou vocês para cuidar de uma pequena estação de mineração no cinturão de asteroides. A estação tem painéis solares, suporte de vida e um porão, mas nenhum motor de verdade. Minere, negocie e cresça, e um dia compre a sua liberdade.</Rimverse_Scen_MiningStation.scenario.description>
   <Rimverse_Scen_MiningStation.scenario.summary>Quatro mineiros numa estação no cinturão de asteroides, com contrato de uma corporação.</Rimverse_Scen_MiningStation.scenario.summary>
   <Rimverse_Scen_ImperialRefugees.label>Refugiados imperiais</Rimverse_Scen_ImperialRefugees.label>
+  <Rimverse_Scen_ImperialRefugees.scenario.name>Refugiados imperiais</Rimverse_Scen_ImperialRefugees.scenario.name>
   <Rimverse_Scen_ImperialRefugees.description>Vocês fugiram da queda de um mundo imperial num transporte velho, levando um nome nobre perdido e o que deu para pegar. O Império quer vocês de volta, a nave está danificada e o combustível está no fim. Achem aliados, façam um novo lar e decidam o que fazer com o título.</Rimverse_Scen_ImperialRefugees.description>
+  <Rimverse_Scen_ImperialRefugees.scenario.description>Vocês fugiram da queda de um mundo imperial num transporte velho, levando um nome nobre perdido e o que deu para pegar. O Império quer vocês de volta, a nave está danificada e o combustível está no fim. Achem aliados, façam um novo lar e decidam o que fazer com o título.</Rimverse_Scen_ImperialRefugees.scenario.description>
   <Rimverse_Scen_ImperialRefugees.scenario.summary>Seis refugiados numa nave danificada, caçados pelo Império. Difícil.</Rimverse_Scen_ImperialRefugees.scenario.summary>
   <Rimverse_Scen_GlitterColony.label>Colônia glitterworld</Rimverse_Scen_GlitterColony.label>
+  <Rimverse_Scen_GlitterColony.scenario.name>Colônia glitterworld</Rimverse_Scen_GlitterColony.scenario.name>
   <Rimverse_Scen_GlitterColony.description>A sua colônia pequena foi fundada com o apoio de uma federação glitterworld rica. Vocês começam com boas ferramentas, pesquisa avançada e um vizinho amigo entre as estrelas. O desafio é crescer de uma colônia protegida até virar uma potência própria.</Rimverse_Scen_GlitterColony.description>
+  <Rimverse_Scen_GlitterColony.scenario.description>A sua colônia pequena foi fundada com o apoio de uma federação glitterworld rica. Vocês começam com boas ferramentas, pesquisa avançada e um vizinho amigo entre as estrelas. O desafio é crescer de uma colônia protegida até virar uma potência própria.</Rimverse_Scen_GlitterColony.scenario.description>
   <Rimverse_Scen_GlitterColony.scenario.summary>Três colonos com suprimentos ricos, dentro de uma civilização avançada. Fácil.</Rimverse_Scen_GlitterColony.scenario.summary>
   <Rimverse_Scen_StarTribe.label>Tribo das estrelas</Rimverse_Scen_StarTribe.label>
+  <Rimverse_Scen_StarTribe.scenario.name>Tribo das estrelas</Rimverse_Scen_StarTribe.scenario.name>
   <Rimverse_Scen_StarTribe.description>A sua tribo vive num mundo isolado e nunca saiu dele. À noite vocês veem luzes cruzando o céu: naves de povos que vocês nunca conheceram. O caminho inteiro está pela frente, das ferramentas de pedra até as estrelas.</Rimverse_Scen_StarTribe.description>
+  <Rimverse_Scen_StarTribe.scenario.description>A sua tribo vive num mundo isolado e nunca saiu dele. À noite vocês veem luzes cruzando o céu: naves de povos que vocês nunca conheceram. O caminho inteiro está pela frente, das ferramentas de pedra até as estrelas.</Rimverse_Scen_StarTribe.scenario.description>
   <Rimverse_Scen_StarTribe.scenario.summary>Cinco tribais que veem naves no céu. Muito longo.</Rimverse_Scen_StarTribe.scenario.summary>
   <Rimverse_Scen_CryoAwakening.label>Despertar no criossono</Rimverse_Scen_CryoAwakening.label>
+  <Rimverse_Scen_CryoAwakening.scenario.name>Despertar no criossono</Rimverse_Scen_CryoAwakening.scenario.name>
   <Rimverse_Scen_CryoAwakening.description>A sua nave de dormentes devia acordar vocês em poucas décadas. Algo deu errado, e os sarcófagos abriram depois de quase um século em órbita. As civilizações que vocês conheciam mudaram, algumas sumiram e outras novas mandam nas estrelas próximas.</Rimverse_Scen_CryoAwakening.description>
+  <Rimverse_Scen_CryoAwakening.scenario.description>A sua nave de dormentes devia acordar vocês em poucas décadas. Algo deu errado, e os sarcófagos abriram depois de quase um século em órbita. As civilizações que vocês conheciam mudaram, algumas sumiram e outras novas mandam nas estrelas próximas.</Rimverse_Scen_CryoAwakening.scenario.description>
   <Rimverse_Scen_CryoAwakening.scenario.summary>Quatro dormentes acordam depois de décadas. A galáxia mudou.</Rimverse_Scen_CryoAwakening.scenario.summary>
   <Rimverse_Scen_RichExplorer.label>Explorador rico</Rimverse_Scen_RichExplorer.label>
+  <Rimverse_Scen_RichExplorer.scenario.name>Explorador rico</Rimverse_Scen_RichExplorer.scenario.name>
   <Rimverse_Scen_RichExplorer.description>Vocês são exploradores ricos a bordo de uma nave grande e autossuficiente. A hidroponia planta e colhe sozinha, uma cozinha automática cozinha, drones de manutenção consertam o casco e uma cápsula médica trata as feridas. Um motor de dobra e sensores avançados levam vocês a qualquer lugar. Só falta descobrir o universo.</Rimverse_Scen_RichExplorer.description>
+  <Rimverse_Scen_RichExplorer.scenario.description>Vocês são exploradores ricos a bordo de uma nave grande e autossuficiente. A hidroponia planta e colhe sozinha, uma cozinha automática cozinha, drones de manutenção consertam o casco e uma cápsula médica trata as feridas. Um motor de dobra e sensores avançados levam vocês a qualquer lugar. Só falta descobrir o universo.</Rimverse_Scen_RichExplorer.scenario.description>
   <Rimverse_Scen_RichExplorer.scenario.summary>Dois exploradores ricos numa nave totalmente automatizada. Muito fácil.</Rimverse_Scen_RichExplorer.scenario.summary>
 </LanguageData>

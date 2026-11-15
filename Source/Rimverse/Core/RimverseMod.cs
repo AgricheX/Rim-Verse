@@ -17,7 +17,7 @@ namespace Rimverse
             Settings = GetSettings<RimverseSettings>();
             Harmony = new Harmony(PackageId);
             Harmony.PatchAll(typeof(RimverseMod).Assembly);
-            RimverseLog.Message("Rimverse " + content.ModMetaData.ModVersion + " carregado.");
+            RimverseLog.Message("Rimverse " + content.ModMetaData.ModVersion + " loaded.");
         }
 
         public override string SettingsCategory() => "Rimverse";

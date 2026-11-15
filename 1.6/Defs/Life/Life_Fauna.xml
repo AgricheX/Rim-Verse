@@ -819,7 +819,7 @@
     <label>howlback</label>
     <description>An alien pack hunter that coordinates attacks with eerie, rising howls.</description>
     <race>
-      <meatLabel>wolf meat</meatLabel>
+      <meatLabel>howlback meat</meatLabel>
       <baseBodySize>0.9</baseBodySize>
     </race>
     <statBases>
@@ -891,7 +891,7 @@
     <label>glassfang</label>
     <description>A small pack predator with translucent, razor-sharp teeth.</description>
     <race>
-      <meatLabel>wolf meat</meatLabel>
+      <meatLabel>glassfang meat</meatLabel>
       <baseBodySize>0.6</baseBodySize>
     </race>
     <statBases>

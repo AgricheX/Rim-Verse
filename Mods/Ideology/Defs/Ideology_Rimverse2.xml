@@ -568,7 +568,7 @@
     <generalRules>
       <rulesStrings>
         <li>memeCreed->stellar</li>
-        <li>memeAdjective->ascension</li>
+        <li>memeAdjective->ascendant</li>
         <li>memeConcept->stellar ascension</li>
         <li>memeLeaderNoun->captain</li>
         <li>memeMoralist->navigator</li>
@@ -591,7 +591,7 @@
     <generalRules>
       <rulesStrings>
         <li>memeCreed->homeworld</li>
-        <li>memeAdjective->guardians</li>
+        <li>memeAdjective->vigilant</li>
         <li>memeConcept->homeworld guardians</li>
         <li>memeLeaderNoun->captain</li>
         <li>memeMoralist->navigator</li>
@@ -616,7 +616,7 @@
     <generalRules>
       <rulesStrings>
         <li>memeCreed->void</li>
-        <li>memeAdjective->faith</li>
+        <li>memeAdjective->faithful</li>
         <li>memeConcept->void faith</li>
         <li>memeLeaderNoun->captain</li>
         <li>memeMoralist->navigator</li>
@@ -1098,6 +1098,116 @@
   </ThingStyleDef>
 
   <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_CargoCrate</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_HoldContainer</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_SealedLocker</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_ColdShelf</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_VacuumContainer</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_Vault</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_WeaponRack</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_WeaponLocker</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_DefenseArmory</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_RelicDisplay</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_ClosedGarden</defName>
+    <graphicData>
+      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,4)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
     <defName>Rimverse_StyleImperial_Autocannon</defName>
     <graphicData>
       <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
@@ -1289,6 +1399,50 @@
       <li>
         <thingDef>Rimverse_CargoBay</thingDef>
         <styleDef>Rimverse_StyleImperial_CargoBay</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_CargoCrate</thingDef>
+        <styleDef>Rimverse_StyleImperial_CargoCrate</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_HoldContainer</thingDef>
+        <styleDef>Rimverse_StyleImperial_HoldContainer</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_SealedLocker</thingDef>
+        <styleDef>Rimverse_StyleImperial_SealedLocker</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ColdShelf</thingDef>
+        <styleDef>Rimverse_StyleImperial_ColdShelf</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_VacuumContainer</thingDef>
+        <styleDef>Rimverse_StyleImperial_VacuumContainer</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Vault</thingDef>
+        <styleDef>Rimverse_StyleImperial_Vault</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WeaponRack</thingDef>
+        <styleDef>Rimverse_StyleImperial_WeaponRack</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WeaponLocker</thingDef>
+        <styleDef>Rimverse_StyleImperial_WeaponLocker</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_DefenseArmory</thingDef>
+        <styleDef>Rimverse_StyleImperial_DefenseArmory</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_RelicDisplay</thingDef>
+        <styleDef>Rimverse_StyleImperial_RelicDisplay</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ClosedGarden</thingDef>
+        <styleDef>Rimverse_StyleImperial_ClosedGarden</styleDef>
       </li>
       <li>
         <thingDef>Rimverse_Autocannon</thingDef>
@@ -1554,6 +1708,116 @@
   </ThingStyleDef>
 
   <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_CargoCrate</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_HoldContainer</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_SealedLocker</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_ColdShelf</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_VacuumContainer</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_Vault</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_WeaponRack</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_WeaponLocker</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_DefenseArmory</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_RelicDisplay</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_ClosedGarden</defName>
+    <graphicData>
+      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,4)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_Autocannon</defName>
     <graphicData>
       <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
@@ -1745,6 +2009,50 @@
       <li>
         <thingDef>Rimverse_CargoBay</thingDef>
         <styleDef>Rimverse_StyleIndustrial_CargoBay</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_CargoCrate</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_CargoCrate</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_HoldContainer</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_HoldContainer</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_SealedLocker</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_SealedLocker</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ColdShelf</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_ColdShelf</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_VacuumContainer</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_VacuumContainer</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Vault</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_Vault</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WeaponRack</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_WeaponRack</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WeaponLocker</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_WeaponLocker</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_DefenseArmory</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_DefenseArmory</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_RelicDisplay</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_RelicDisplay</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ClosedGarden</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_ClosedGarden</styleDef>
       </li>
       <li>
         <thingDef>Rimverse_Autocannon</thingDef>
@@ -2010,6 +2318,116 @@
   </ThingStyleDef>
 
   <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_CargoCrate</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_HoldContainer</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_SealedLocker</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_ColdShelf</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_VacuumContainer</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_Vault</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_WeaponRack</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_WeaponLocker</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_DefenseArmory</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_RelicDisplay</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_ClosedGarden</defName>
+    <graphicData>
+      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,4)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_Autocannon</defName>
     <graphicData>
       <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
@@ -2201,6 +2619,50 @@
       <li>
         <thingDef>Rimverse_CargoBay</thingDef>
         <styleDef>Rimverse_StyleOrganic_CargoBay</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_CargoCrate</thingDef>
+        <styleDef>Rimverse_StyleOrganic_CargoCrate</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_HoldContainer</thingDef>
+        <styleDef>Rimverse_StyleOrganic_HoldContainer</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_SealedLocker</thingDef>
+        <styleDef>Rimverse_StyleOrganic_SealedLocker</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ColdShelf</thingDef>
+        <styleDef>Rimverse_StyleOrganic_ColdShelf</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_VacuumContainer</thingDef>
+        <styleDef>Rimverse_StyleOrganic_VacuumContainer</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Vault</thingDef>
+        <styleDef>Rimverse_StyleOrganic_Vault</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WeaponRack</thingDef>
+        <styleDef>Rimverse_StyleOrganic_WeaponRack</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WeaponLocker</thingDef>
+        <styleDef>Rimverse_StyleOrganic_WeaponLocker</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_DefenseArmory</thingDef>
+        <styleDef>Rimverse_StyleOrganic_DefenseArmory</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_RelicDisplay</thingDef>
+        <styleDef>Rimverse_StyleOrganic_RelicDisplay</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ClosedGarden</thingDef>
+        <styleDef>Rimverse_StyleOrganic_ClosedGarden</styleDef>
       </li>
       <li>
         <thingDef>Rimverse_Autocannon</thingDef>
@@ -2466,6 +2928,116 @@
   </ThingStyleDef>
 
   <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_CargoCrate</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_HoldContainer</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_SealedLocker</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_ColdShelf</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_VacuumContainer</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_Vault</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_WeaponRack</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_WeaponLocker</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_DefenseArmory</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_RelicDisplay</defName>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_ClosedGarden</defName>
+    <graphicData>
+      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,4)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_Autocannon</defName>
     <graphicData>
       <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
@@ -2657,6 +3229,50 @@
       <li>
         <thingDef>Rimverse_CargoBay</thingDef>
         <styleDef>Rimverse_StylePrecursor_CargoBay</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_CargoCrate</thingDef>
+        <styleDef>Rimverse_StylePrecursor_CargoCrate</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_HoldContainer</thingDef>
+        <styleDef>Rimverse_StylePrecursor_HoldContainer</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_SealedLocker</thingDef>
+        <styleDef>Rimverse_StylePrecursor_SealedLocker</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ColdShelf</thingDef>
+        <styleDef>Rimverse_StylePrecursor_ColdShelf</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_VacuumContainer</thingDef>
+        <styleDef>Rimverse_StylePrecursor_VacuumContainer</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Vault</thingDef>
+        <styleDef>Rimverse_StylePrecursor_Vault</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WeaponRack</thingDef>
+        <styleDef>Rimverse_StylePrecursor_WeaponRack</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WeaponLocker</thingDef>
+        <styleDef>Rimverse_StylePrecursor_WeaponLocker</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_DefenseArmory</thingDef>
+        <styleDef>Rimverse_StylePrecursor_DefenseArmory</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_RelicDisplay</thingDef>
+        <styleDef>Rimverse_StylePrecursor_RelicDisplay</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ClosedGarden</thingDef>
+        <styleDef>Rimverse_StylePrecursor_ClosedGarden</styleDef>
       </li>
       <li>
         <thingDef>Rimverse_Autocannon</thingDef>
