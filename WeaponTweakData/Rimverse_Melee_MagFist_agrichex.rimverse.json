@@ -1,0 +1,14 @@
+{
+  "TextureModID": "agrichex.rimverse",
+  "ItemDefName": "Rimverse_Melee_MagFist",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.10938,
+  "OffY": -0.00391,
+  "ScaleX": 1.0,
+  "ScaleY": 1.0,
+  "HandsMode": 2,
+  "BladeStart": 0.15625,
+  "BladeEnd": 0.44531,
+  "MeleeWeaponType": 8
+}

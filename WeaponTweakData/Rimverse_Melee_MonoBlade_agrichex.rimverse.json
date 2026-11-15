@@ -1,0 +1,19 @@
+{
+  "TextureModID": "agrichex.rimverse",
+  "ItemDefName": "Rimverse_Melee_MonoBlade",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.43945,
+  "OffY": -0.00488,
+  "ScaleX": 1.25,
+  "ScaleY": 1.25,
+  "BladeStart": 0.26367,
+  "BladeEnd": 1.01562,
+  "MeleeWeaponType": 6,
+  "TrailTint": {
+    "r": 0.6,
+    "g": 0.9,
+    "b": 1.0,
+    "a": 0.9
+  }
+}

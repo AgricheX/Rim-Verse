@@ -337,14 +337,8 @@
     <minTier>0</minTier>
     <maxCount>2</maxCount>
     <output>
-      <li>
-        <thingDef>Steel</thingDef>
-        <count>60</count>
-      </li>
-      <li>
-        <thingDef>Plasteel</thingDef>
-        <count>10</count>
-      </li>
+      <Steel>60</Steel>
+      <Plasteel>10</Plasteel>
     </output>
     <order>8</order>
   </Rimverse.ColonyFacilityDef>
@@ -359,14 +353,8 @@
     <minTier>2</minTier>
     <maxCount>1</maxCount>
     <output>
-      <li>
-        <thingDef>ComponentIndustrial</thingDef>
-        <count>8</count>
-      </li>
-      <li>
-        <thingDef>ComponentSpacer</thingDef>
-        <count>1</count>
-      </li>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </output>
     <order>9</order>
   </Rimverse.ColonyFacilityDef>
@@ -385,10 +373,7 @@
       <stability>5</stability>
     </effects>
     <output>
-      <li>
-        <thingDef>MedicineIndustrial</thingDef>
-        <count>6</count>
-      </li>
+      <MedicineIndustrial>6</MedicineIndustrial>
     </output>
     <order>10</order>
   </Rimverse.ColonyFacilityDef>
@@ -439,10 +424,7 @@
       <food>35</food>
     </effects>
     <output>
-      <li>
-        <thingDef>RawRice</thingDef>
-        <count>80</count>
-      </li>
+      <RawRice>80</RawRice>
     </output>
     <order>13</order>
   </Rimverse.ColonyFacilityDef>
@@ -458,10 +440,7 @@
     <maxCount>2</maxCount>
     <surfaceOnly>true</surfaceOnly>
     <output>
-      <li>
-        <thingDef>WoodLog</thingDef>
-        <count>150</count>
-      </li>
+      <WoodLog>150</WoodLog>
     </output>
     <order>14</order>
   </Rimverse.ColonyFacilityDef>
@@ -477,14 +456,8 @@
     <maxCount>2</maxCount>
     <surfaceOnly>true</surfaceOnly>
     <output>
-      <li>
-        <thingDef>Steel</thingDef>
-        <count>80</count>
-      </li>
-      <li>
-        <thingDef>Silver</thingDef>
-        <count>50</count>
-      </li>
+      <Steel>80</Steel>
+      <Silver>50</Silver>
     </output>
     <order>15</order>
   </Rimverse.ColonyFacilityDef>
@@ -500,10 +473,7 @@
     <maxCount>2</maxCount>
     <spaceOnly>true</spaceOnly>
     <output>
-      <li>
-        <thingDef>Chemfuel</thingDef>
-        <count>80</count>
-      </li>
+      <Chemfuel>80</Chemfuel>
     </output>
     <order>16</order>
   </Rimverse.ColonyFacilityDef>
@@ -519,10 +489,7 @@
     <maxCount>1</maxCount>
     <spaceOnly>true</spaceOnly>
     <output>
-      <li>
-        <thingDef>Rimverse_WarpMatter</thingDef>
-        <count>15</count>
-      </li>
+      <Rimverse_WarpMatter>15</Rimverse_WarpMatter>
     </output>
     <research>Rimverse_WarpTheory</research>
     <order>17</order>
@@ -770,14 +737,8 @@
     <chapters>1</chapters>
     <rewardSilver>1500</rewardSilver>
     <rewardItems>
-      <li>
-        <thingDef>Steel</thingDef>
-        <count>200</count>
-      </li>
-      <li>
-        <thingDef>ComponentIndustrial</thingDef>
-        <count>10</count>
-      </li>
+      <Steel>200</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
     </rewardItems>
     <dangerChance>0.1</dangerChance>
   </Rimverse.SpaceAnomalyDef>
@@ -803,10 +764,7 @@
     <needsColony>true</needsColony>
     <rewardResearch>4000</rewardResearch>
     <rewardItems>
-      <li>
-        <thingDef>Rimverse_PrecursorFragment</thingDef>
-        <count>6</count>
-      </li>
+      <Rimverse_PrecursorFragment>6</Rimverse_PrecursorFragment>
     </rewardItems>
     <dangerChance>0.25</dangerChance>
   </Rimverse.SpaceAnomalyDef>
@@ -821,10 +779,7 @@
     <rewardResearch>2000</rewardResearch>
     <rewardInfluence>5</rewardInfluence>
     <rewardItems>
-      <li>
-        <thingDef>Rimverse_ResonanceShard</thingDef>
-        <count>1</count>
-      </li>
+      <Rimverse_ResonanceShard>1</Rimverse_ResonanceShard>
     </rewardItems>
     <dangerChance>0.15</dangerChance>
   </Rimverse.SpaceAnomalyDef>
@@ -848,10 +803,7 @@
     <chapters>2</chapters>
     <rewardResearch>2500</rewardResearch>
     <rewardItems>
-      <li>
-        <thingDef>Rimverse_ExoticMatter</thingDef>
-        <count>1</count>
-      </li>
+      <Rimverse_ExoticMatter>1</Rimverse_ExoticMatter>
     </rewardItems>
     <dangerChance>0.1</dangerChance>
   </Rimverse.SpaceAnomalyDef>
@@ -865,18 +817,9 @@
     <chapters>2</chapters>
     <needsColony>true</needsColony>
     <rewardItems>
-      <li>
-        <thingDef>Steel</thingDef>
-        <count>400</count>
-      </li>
-      <li>
-        <thingDef>Plasteel</thingDef>
-        <count>80</count>
-      </li>
-      <li>
-        <thingDef>Gold</thingDef>
-        <count>30</count>
-      </li>
+      <Steel>400</Steel>
+      <Plasteel>80</Plasteel>
+      <Gold>30</Gold>
     </rewardItems>
     <dangerChance>0.15</dangerChance>
   </Rimverse.SpaceAnomalyDef>
@@ -890,10 +833,7 @@
     <chapters>2</chapters>
     <rewardResearch>1500</rewardResearch>
     <rewardItems>
-      <li>
-        <thingDef>ComponentSpacer</thingDef>
-        <count>6</count>
-      </li>
+      <ComponentSpacer>6</ComponentSpacer>
     </rewardItems>
     <dangerChance>0.5</dangerChance>
   </Rimverse.SpaceAnomalyDef>
@@ -907,10 +847,7 @@
     <chapters>1</chapters>
     <rewardSilver>3000</rewardSilver>
     <rewardItems>
-      <li>
-        <thingDef>ComponentSpacer</thingDef>
-        <count>4</count>
-      </li>
+      <ComponentSpacer>4</ComponentSpacer>
     </rewardItems>
     <dangerChance>0.1</dangerChance>
   </Rimverse.SpaceAnomalyDef>
@@ -925,10 +862,7 @@
     <rewardResearch>500</rewardResearch>
     <rewardInfluence>5</rewardInfluence>
     <rewardItems>
-      <li>
-        <thingDef>MedicineIndustrial</thingDef>
-        <count>10</count>
-      </li>
+      <MedicineIndustrial>10</MedicineIndustrial>
     </rewardItems>
   </Rimverse.SpaceAnomalyDef>
 
@@ -963,10 +897,7 @@
     <chapters>2</chapters>
     <rewardResearch>1200</rewardResearch>
     <rewardItems>
-      <li>
-        <thingDef>Rimverse_AlienExtractRaw</thingDef>
-        <count>40</count>
-      </li>
+      <Rimverse_AlienExtractRaw>40</Rimverse_AlienExtractRaw>
     </rewardItems>
     <dangerChance>0.1</dangerChance>
   </Rimverse.SpaceAnomalyDef>
@@ -981,10 +912,7 @@
     <rewardResearch>3000</rewardResearch>
     <rewardInfluence>20</rewardInfluence>
     <rewardItems>
-      <li>
-        <thingDef>Rimverse_ResonanceShard</thingDef>
-        <count>1</count>
-      </li>
+      <Rimverse_ResonanceShard>1</Rimverse_ResonanceShard>
     </rewardItems>
     <dangerChance>0.2</dangerChance>
   </Rimverse.SpaceAnomalyDef>
@@ -1033,14 +961,8 @@
     <researchDays>5</researchDays>
     <chapters>1</chapters>
     <rewardItems>
-      <li>
-        <thingDef>Steel</thingDef>
-        <count>600</count>
-      </li>
-      <li>
-        <thingDef>Uranium</thingDef>
-        <count>60</count>
-      </li>
+      <Steel>600</Steel>
+      <Uranium>60</Uranium>
     </rewardItems>
     <dangerChance>0.05</dangerChance>
   </Rimverse.SpaceAnomalyDef>
@@ -1054,10 +976,7 @@
     <chapters>2</chapters>
     <rewardResearch>1000</rewardResearch>
     <rewardItems>
-      <li>
-        <thingDef>Rimverse_WarpMatter</thingDef>
-        <count>60</count>
-      </li>
+      <Rimverse_WarpMatter>60</Rimverse_WarpMatter>
     </rewardItems>
     <dangerChance>0.2</dangerChance>
   </Rimverse.SpaceAnomalyDef>
@@ -1072,14 +991,8 @@
     <rewardResearch>8000</rewardResearch>
     <rewardInfluence>10</rewardInfluence>
     <rewardItems>
-      <li>
-        <thingDef>Rimverse_PrecursorFragment</thingDef>
-        <count>3</count>
-      </li>
-      <li>
-        <thingDef>Rimverse_ResonanceShard</thingDef>
-        <count>2</count>
-      </li>
+      <Rimverse_PrecursorFragment>3</Rimverse_PrecursorFragment>
+      <Rimverse_ResonanceShard>2</Rimverse_ResonanceShard>
     </rewardItems>
     <dangerChance>0.3</dangerChance>
   </Rimverse.SpaceAnomalyDef>
