@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Qol_Hud.label>painel da nave e da colônia</Rimverse_Qol_Hud.label>
+  <Rimverse_Qol_Hud.description>Um painel pequeno no canto superior esquerdo com ar, casco, calor e combustível da nave, dias de comida, energia guardada, a temperatura sob o mouse e a data completa.</Rimverse_Qol_Hud.description>
+  <Rimverse_Qol_PawnTable.label>tabela de pawns personalizável</Rimverse_Qol_PawnTable.label>
+  <Rimverse_Qol_PawnTable.description>Uma aba principal com uma tabela de colonos em que você escolhe as colunas (necessidades, habilidades, velocidade) e ordena por qualquer uma.</Rimverse_Qol_PawnTable.description>
+  <Rimverse_Qol_PowerTab.label>aba de energia</Rimverse_Qol_PowerTab.label>
+  <Rimverse_Qol_PowerTab.description>Uma aba principal com cada rede elétrica, produção, consumo, saldo e energia guardada.</Rimverse_Qol_PowerTab.description>
+  <Rimverse_Qol_GearTab.label>aba de equipamento</Rimverse_Qol_GearTab.label>
+  <Rimverse_Qol_GearTab.description>Uma aba Equipamento nas pessoas com armadura, isolamento, proteção de vácuo, massa carregada, alcance da arma, estado das roupas e inventário.</Rimverse_Qol_GearTab.description>
+  <Rimverse_Qol_BillCopy.label>copiar e colar contas</Rimverse_Qol_BillCopy.label>
+  <Rimverse_Qol_BillCopy.description>Copia todas as contas de uma bancada e cola em outra do mesmo tipo.</Rimverse_Qol_BillCopy.description>
+  <Rimverse_Qol_ItemInspect.label>valor e massa nos itens</Rimverse_Qol_ItemInspect.label>
+  <Rimverse_Qol_ItemInspect.description>Mostra o valor e a massa total de uma pilha quando você a seleciona.</Rimverse_Qol_ItemInspect.description>
+  <Rimverse_Qol_QualityColors.label>cores por qualidade</Rimverse_Qol_QualityColors.label>
+  <Rimverse_Qol_QualityColors.description>As palavras de qualidade dos itens ganham cor, do vermelho para péssimo ao dourado para lendário.</Rimverse_Qol_QualityColors.description>
+  <Rimverse_Qol_TraitColors.label>cores nos traços</Rimverse_Qol_TraitColors.label>
+  <Rimverse_Qol_TraitColors.description>Traços bons aparecem em verde e traços ruins em vermelho no cartão do personagem.</Rimverse_Qol_TraitColors.description>
+  <Rimverse_Qol_DamageNumbers.label>números de dano</Rimverse_Qol_DamageNumbers.label>
+  <Rimverse_Qol_DamageNumbers.description>Mostra números flutuantes quando as pessoas levam dano.</Rimverse_Qol_DamageNumbers.description>
+  <Rimverse_Qol_MaterialCount.label>materiais no menu de construção</Rimverse_Qol_MaterialCount.label>
+  <Rimverse_Qol_MaterialCount.description>O menu de construção mostra quanto de cada material você tem no mapa.</Rimverse_Qol_MaterialCount.description>
+  <Rimverse_Qol_DeepDrillAlert.label>aviso de broca vazia</Rimverse_Qol_DeepDrillAlert.label>
+  <Rimverse_Qol_DeepDrillAlert.description>Avisa quando uma broca profunda não tem mais nada para cavar.</Rimverse_Qol_DeepDrillAlert.description>
+  <Rimverse_Qol_RangeRing.label>anel de alcance</Rimverse_Qol_RangeRing.label>
+  <Rimverse_Qol_RangeRing.description>Desenha o alcance da arma das pessoas convocadas selecionadas.</Rimverse_Qol_RangeRing.description>
+  <Rimverse_Qol_Minimap.label>minimapa</Rimverse_Qol_Minimap.label>
+  <Rimverse_Qol_Minimap.description>Um mapa pequeno e arrastável do mapa atual. Clique nele para mover a câmera. Liga e desliga com Ctrl+M.</Rimverse_Qol_Minimap.description>
+  <Rimverse_Qol_KillerInfo.label>quem feriu quem</Rimverse_Qol_KillerInfo.label>
+  <Rimverse_Qol_KillerInfo.description>Cadáveres dizem quem os matou e como, e você recebe uma mensagem quando um colono perde uma parte do corpo e quem foi.</Rimverse_Qol_KillerInfo.description>
+  <Rimverse_Qol_Search.label>busca</Rimverse_Qol_Search.label>
+  <Rimverse_Qol_Search.description>Ctrl+F abre uma busca de itens, pessoas e construções no mapa e dos corpos do sistema natal. Clique num resultado para ir até ele.</Rimverse_Qol_Search.description>
+  <Rimverse_Qol_PowerAlerts.label>aviso de energia baixa</Rimverse_Qol_PowerAlerts.label>
+  <Rimverse_Qol_PowerAlerts.description>Avisa quando uma rede está perdendo energia e as baterias estão abaixo de 15%.</Rimverse_Qol_PowerAlerts.description>
+  <Rimverse_Qol_AutoPause.label>pausar em ameaças</Rimverse_Qol_AutoPause.label>
+  <Rimverse_Qol_AutoPause.description>Pausa o jogo quando chega uma carta de ameaça.</Rimverse_Qol_AutoPause.description>
+  <Rimverse_Qol_WorkProfiles.label>copiar configurações de trabalho</Rimverse_Qol_WorkProfiles.label>
+  <Rimverse_Qol_WorkProfiles.description>Copia as prioridades de trabalho, o horário e a área permitida de um colono e cola em outro.</Rimverse_Qol_WorkProfiles.description>
+  <Rimverse_Qol_WorkModes.label>modos de trabalho rápidos</Rimverse_Qol_WorkModes.label>
+  <Rimverse_Qol_WorkModes.description>Troca os colonos selecionados para modo emergência, reparo ou carregamento num clique, e restaura as prioridades antigas depois.</Rimverse_Qol_WorkModes.description>
+  <Rimverse_Qol_HaulArea.label>carregar área</Rimverse_Qol_HaulArea.label>
+  <Rimverse_Qol_HaulArea.description>Uma ordem que marca para carregar todos os itens soltos numa área arrastada.</Rimverse_Qol_HaulArea.description>
+  <Rimverse_Qol_Blueprints.label>copiar e colar construções</Rimverse_Qol_Blueprints.label>
+  <Rimverse_Qol_Blueprints.description>Copia as construções de uma área e cola em outro lugar como plantas.</Rimverse_Qol_Blueprints.description>
+  <Rimverse_Qol_SelectBedOwner.label>selecionar dono da cama</Rimverse_Qol_SelectBedOwner.label>
+  <Rimverse_Qol_SelectBedOwner.description>Um botão nas camas que seleciona os donos.</Rimverse_Qol_SelectBedOwner.description>
+  <Rimverse_Qol_ToggleHarvest.label>ligar e desligar colheita</Rimverse_Qol_ToggleHarvest.label>
+  <Rimverse_Qol_ToggleHarvest.description>Pausa e retoma a colheita em zonas de cultivo e hidroponia.</Rimverse_Qol_ToggleHarvest.description>
+  <Rimverse_Qol_FlickStorage.label>ligar e desligar estoques</Rimverse_Qol_FlickStorage.label>
+  <Rimverse_Qol_FlickStorage.description>Estoques e prédios de armazenamento podem ser desligados e ligados sem perder as configurações.</Rimverse_Qol_FlickStorage.description>
+  <Rimverse_Qol_SmartMedicine.label>remédio certo</Rimverse_Qol_SmartMedicine.label>
+  <Rimverse_Qol_SmartMedicine.description>Feridas leves são tratadas com remédio mais barato quando há por perto, guardando o bom para os casos graves.</Rimverse_Qol_SmartMedicine.description>
+  <Rimverse_Qol_SearchDestroy.label>procurar e destruir</Rimverse_Qol_SearchDestroy.label>
+  <Rimverse_Qol_SearchDestroy.description>Um botão nos colonos convocados que faz eles caçarem sozinhos o inimigo mais próximo.</Rimverse_Qol_SearchDestroy.description>
+  <Rimverse_Qol_DefensivePositions.label>posições defensivas</Rimverse_Qol_DefensivePositions.label>
+  <Rimverse_Qol_DefensivePositions.description>Salva um ponto para um colono convocado e manda ele de volta com um clique.</Rimverse_Qol_DefensivePositions.description>
+  <Rimverse_Qol_PickupWeapon.label>pegar a arma de volta</Rimverse_Qol_PickupWeapon.label>
+  <Rimverse_Qol_PickupWeapon.description>Colonos que derrubaram a arma ao cair pegam ela de volta quando levantam.</Rimverse_Qol_PickupWeapon.description>
+  <Rimverse_Qol_NeverFlee.label>inimigos permanentes não fogem</Rimverse_Qol_NeverFlee.label>
+  <Rimverse_Qol_NeverFlee.description>Invasores de facções que são inimigas permanentes lutam até o fim em vez de fugir.</Rimverse_Qol_NeverFlee.description>
+  <Rimverse_Qol_TradeDropSpot.label>ponto de entrega do comércio</Rimverse_Qol_TradeDropSpot.label>
+  <Rimverse_Qol_TradeDropSpot.description>Construa um ponto onde os comerciantes orbitais entregam as mercadorias.</Rimverse_Qol_TradeDropSpot.description>
+</LanguageData>

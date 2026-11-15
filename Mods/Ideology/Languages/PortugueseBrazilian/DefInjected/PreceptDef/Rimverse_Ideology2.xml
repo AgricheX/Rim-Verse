@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Exploration_Duty.label>dever</Rimverse_Exploration_Duty.label>
+  <Rimverse_Exploration_Duty.description>Explorar o desconhecido é um dever sagrado. Os fiéis ficam felizes enquanto sistemas novos são mapeados e inquietos quando a exploração para.</Rimverse_Exploration_Duty.description>
+  <Rimverse_Contact_Welcomed.label>bem-vindo</Rimverse_Contact_Welcomed.label>
+  <Rimverse_Contact_Welcomed.description>Conhecer outras civilizações é bom. Os fiéis ficam felizes quando muitos povos são conhecidos.</Rimverse_Contact_Welcomed.description>
+  <Rimverse_Contact_Isolationist.label>isolacionista</Rimverse_Contact_Isolationist.label>
+  <Rimverse_Contact_Isolationist.description>Estrangeiros são um perigo. Os fiéis não gostam de acordos comerciais e alianças com outras civilizações.</Rimverse_Contact_Isolationist.description>
+  <Rimverse_GateUse_Sacred.label>sagrados</Rimverse_GateUse_Sacred.label>
+  <Rimverse_GateUse_Sacred.description>Os portais antigos são sagrados. Atravessar um é uma peregrinação.</Rimverse_GateUse_Sacred.description>
+  <Rimverse_GateUse_Feared.label>temidos</Rimverse_GateUse_Feared.label>
+  <Rimverse_GateUse_Feared.description>Os portais antigos são obras amaldiçoadas dos mortos. Os fiéis odeiam usá-los.</Rimverse_GateUse_Feared.description>
+  <Rimverse_Cryo_Sacred.label>sagrado</Rimverse_Cryo_Sacred.label>
+  <Rimverse_Cryo_Sacred.description>O criossono é o jeito sagrado como os nossos ancestrais cruzaram o vazio.</Rimverse_Cryo_Sacred.description>
+  <Rimverse_Cryo_Forbidden.label>proibido</Rimverse_Cryo_Forbidden.label>
+  <Rimverse_Cryo_Forbidden.description>Congelar uma pessoa viva é uma abominação.</Rimverse_Cryo_Forbidden.description>
+  <Rimverse_Salvage_Honorable.label>honrado</Rimverse_Salvage_Honorable.label>
+  <Rimverse_Salvage_Honorable.description>Um naufrágio pertence a quem venceu a batalha.</Rimverse_Salvage_Honorable.description>
+  <Rimverse_Salvage_Disrespectful.label>desrespeitoso</Rimverse_Salvage_Disrespectful.label>
+  <Rimverse_Salvage_Disrespectful.description>Naves destruídas são túmulos do vazio e não devem ser desmontadas.</Rimverse_Salvage_Disrespectful.description>
+  <Rimverse_Lineage_Celebrated.label>celebrada</Rimverse_Lineage_Celebrated.label>
+  <Rimverse_Lineage_Celebrated.description>As marcas que outros mundos deixam num povo são motivo de orgulho.</Rimverse_Lineage_Celebrated.description>
+  <Rimverse_Lineage_Shunned.label>rejeitada</Rimverse_Lineage_Shunned.label>
+  <Rimverse_Lineage_Shunned.description>Humanos deviam continuar como eram na Terra. Linhagens alteradas não são bem-vindas.</Rimverse_Lineage_Shunned.description>
+  <Rimverse_Piracy_Honorable.label>honrada</Rimverse_Piracy_Honorable.label>
+  <Rimverse_Piracy_Honorable.description>Tomar naves por abordagem é a forma mais alta de coragem.</Rimverse_Piracy_Honorable.description>
+  <Rimverse_Piracy_Abhorrent.label>abominável</Rimverse_Piracy_Abhorrent.label>
+  <Rimverse_Piracy_Abhorrent.description>Capturar naves de outras tripulações é roubo e vergonha.</Rimverse_Piracy_Abhorrent.description>
+  <Rimverse_ShipName_Required.label>obrigatório</Rimverse_ShipName_Required.label>
+  <Rimverse_ShipName_Required.description>Toda nave precisa ter um nome. Nave sem nome dá azar.</Rimverse_ShipName_Required.description>
+  <Rimverse_Viewport_Needed.label>necessárias</Rimverse_Viewport_Needed.label>
+  <Rimverse_Viewport_Needed.description>As pessoas precisam ver o céu. Uma nave precisa ter escotilhas.</Rimverse_Viewport_Needed.description>
+  <Rimverse_ShipBaptism.label>batismo de nave</Rimverse_ShipBaptism.label>
+  <Rimverse_ShipBaptism.description>Uma reunião para abençoar uma nave nova ou renomeada. O líder fala, a tripulação brinda ao casco e todos comemoram.</Rimverse_ShipBaptism.description>
+  <Rimverse_FirstJump.label>primeiro salto</Rimverse_FirstJump.label>
+  <Rimverse_FirstJump.description>Uma celebração feita antes ou depois de um salto longo, para manter o ânimo da tripulação na escuridão entre as estrelas.</Rimverse_FirstJump.description>
+  <Rimverse_SpaceFuneral.label>funeral no vazio</Rimverse_SpaceFuneral.label>
+  <Rimverse_SpaceFuneral.description>Uma despedida para os mortos entregues ao vazio. A tripulação se reúne, lembra deles e divide uma refeição.</Rimverse_SpaceFuneral.description>
+  <Rimverse_StarVigil.label>vigília das estrelas</Rimverse_StarVigil.label>
+  <Rimverse_StarVigil.description>Uma noite tranquila olhando as estrelas juntos, contando histórias dos mundos deixados para trás.</Rimverse_StarVigil.description>
+  <Rimverse_ArrivalFeast.label>festa de chegada</Rimverse_ArrivalFeast.label>
+  <Rimverse_ArrivalFeast.description>Uma festa para comemorar a chegada a um mundo novo ou a um porto muito esperado.</Rimverse_ArrivalFeast.description>
+  <Rimverse_CrewOath.label>juramento da tripulação</Rimverse_CrewOath.label>
+  <Rimverse_CrewOath.description>A tripulação renova o juramento à nave e uns aos outros.</Rimverse_CrewOath.description>
+  <Rimverse_Role_Captain.label>capitão</Rimverse_Role_Captain.label>
+  <Rimverse_Role_Captain.description>O capitão da nave comanda com autoridade. Negocia melhor e é mais difícil de abalar.</Rimverse_Role_Captain.description>
+  <Rimverse_Role_Navigator.label>navegador</Rimverse_Role_Navigator.label>
+  <Rimverse_Role_Navigator.description>Lê as estrelas e calcula os saltos. Aprende mais rápido e mira melhor.</Rimverse_Role_Navigator.description>
+  <Rimverse_Role_ShipGuardian.label>guardião da nave</Rimverse_Role_ShipGuardian.label>
+  <Rimverse_Role_ShipGuardian.description>Mantém o casco inteiro. Constrói e conserta muito mais rápido.</Rimverse_Role_ShipGuardian.description>
+  <Rimverse_Role_Herald.label>arauto</Rimverse_Role_Herald.label>
+  <Rimverse_Role_Herald.description>Fala pela tripulação com outras civilizações. Um grande negociador e comerciante.</Rimverse_Role_Herald.description>
+</LanguageData>

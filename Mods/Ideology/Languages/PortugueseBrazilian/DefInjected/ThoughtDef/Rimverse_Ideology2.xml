@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Exploration_Stagnant.stages.0.label>nenhuma estrela nova</Rimverse_Exploration_Stagnant.stages.0.label>
+  <Rimverse_Exploration_Stagnant.stages.0.description>Mais de quinze dias sem mapear um sistema novo. Era para sermos exploradores.</Rimverse_Exploration_Stagnant.stages.0.description>
+  <Rimverse_Exploration_Recent.stages.0.label>estrelas novas mapeadas</Rimverse_Exploration_Recent.stages.0.label>
+  <Rimverse_Exploration_Recent.stages.0.description>Mapeamos sistemas novos há pouco tempo. Esse é o nosso propósito.</Rimverse_Exploration_Recent.stages.0.description>
+  <Rimverse_Contact_Many.stages.0.label>muitos povos conhecidos</Rimverse_Contact_Many.stages.0.label>
+  <Rimverse_Contact_Many.stages.0.description>Conhecemos muitos povos entre as estrelas. A galáxia parece menos solitária.</Rimverse_Contact_Many.stages.0.description>
+  <Rimverse_Contact_Ties.stages.0.label>laços estrangeiros</Rimverse_Contact_Ties.stages.0.label>
+  <Rimverse_Contact_Ties.stages.0.description>Fizemos pactos com estrangeiros. Eles vão nos corromper.</Rimverse_Contact_Ties.stages.0.description>
+  <Rimverse_GateUse_Pilgrimage.stages.0.label>peregrinação pelo portal</Rimverse_GateUse_Pilgrimage.stages.0.label>
+  <Rimverse_GateUse_Pilgrimage.stages.0.description>Atravessamos um portal antigo. Foi como entrar numa catedral.</Rimverse_GateUse_Pilgrimage.stages.0.description>
+  <Rimverse_GateUse_Dread.stages.0.label>atravessou um portal</Rimverse_GateUse_Dread.stages.0.label>
+  <Rimverse_GateUse_Dread.stages.0.description>Passamos por uma daquelas coisas antigas. Nada feito pelos mortos merece confiança.</Rimverse_GateUse_Dread.stages.0.description>
+  <Rimverse_Cryo_Sacred.stages.0.label>dormentes a bordo</Rimverse_Cryo_Sacred.stages.0.label>
+  <Rimverse_Cryo_Sacred.stages.0.description>A nave leva cápsulas de criossono para a longa escuridão. Foi assim que os nossos ancestrais cruzaram as estrelas.</Rimverse_Cryo_Sacred.stages.0.description>
+  <Rimverse_Cryo_Forbidden.stages.0.label>almas congeladas</Rimverse_Cryo_Forbidden.stages.0.label>
+  <Rimverse_Cryo_Forbidden.stages.0.description>Tem alguém congelado numa cápsula aqui. Uma alma no gelo é uma alma roubada do tempo.</Rimverse_Cryo_Forbidden.stages.0.description>
+  <Rimverse_Salvage_Spoils.stages.0.label>espólios do vazio</Rimverse_Salvage_Spoils.stages.0.label>
+  <Rimverse_Salvage_Spoils.stages.0.description>Vencemos no espaço e o naufrágio é nosso para desmontar. Justo é justo.</Rimverse_Salvage_Spoils.stages.0.description>
+  <Rimverse_Salvage_Desecration.stages.0.label>naufrágio profanado</Rimverse_Salvage_Desecration.stages.0.label>
+  <Rimverse_Salvage_Desecration.stages.0.description>Uma nave destruída é um túmulo. Desmontá-la é profanação.</Rimverse_Salvage_Desecration.stages.0.description>
+  <Rimverse_Lineage_Proud.stages.0.label>linhagem orgulhosa</Rimverse_Lineage_Proud.stages.0.label>
+  <Rimverse_Lineage_Proud.stages.0.description>Meu povo foi moldado por outro mundo. Eu carrego isso no corpo.</Rimverse_Lineage_Proud.stages.0.description>
+  <Rimverse_Lineage_Impure.stages.0.label>sangue impuro por perto</Rimverse_Lineage_Impure.stages.0.label>
+  <Rimverse_Lineage_Impure.stages.0.description>Tem gente de linhagens estranhas entre nós. Humanos deviam continuar humanos.</Rimverse_Lineage_Impure.stages.0.description>
+  <Rimverse_Piracy_Prize.stages.0.label>nave capturada</Rimverse_Piracy_Prize.stages.0.label>
+  <Rimverse_Piracy_Prize.stages.0.description>Tomamos uma nave inteira. Um bom prêmio para saqueadores corajosos.</Rimverse_Piracy_Prize.stages.0.description>
+  <Rimverse_Piracy_Shame.stages.0.label>nave roubada</Rimverse_Piracy_Shame.stages.0.label>
+  <Rimverse_Piracy_Shame.stages.0.description>Tomamos a nave de outra tripulação. Não somos melhores que piratas.</Rimverse_Piracy_Shame.stages.0.description>
+  <Rimverse_ShipName_Unnamed.stages.0.label>nave sem nome</Rimverse_ShipName_Unnamed.stages.0.label>
+  <Rimverse_ShipName_Unnamed.stages.0.description>A nossa nave não tem nome. Uma nave sem nome não tem alma.</Rimverse_ShipName_Unnamed.stages.0.description>
+  <Rimverse_ShipName_Named.stages.0.label>nave batizada</Rimverse_ShipName_Named.stages.0.label>
+  <Rimverse_ShipName_Named.stages.0.description>A nossa nave tem um nome de verdade. Ela é uma de nós.</Rimverse_ShipName_Named.stages.0.description>
+  <Rimverse_Viewport_None.stages.0.label>sem janela para as estrelas</Rimverse_Viewport_None.stages.0.label>
+  <Rimverse_Viewport_None.stages.0.description>Não tem nenhuma escotilha nesta nave. Viver sem ver o céu é insuportável.</Rimverse_Viewport_None.stages.0.description>
+  <Rimverse_Viewport_Some.stages.0.label>janela para as estrelas</Rimverse_Viewport_Some.stages.0.label>
+  <Rimverse_Viewport_Some.stages.0.description>A nave tem uma escotilha. Olhar as estrelas me mantém são.</Rimverse_Viewport_Some.stages.0.description>
+</LanguageData>

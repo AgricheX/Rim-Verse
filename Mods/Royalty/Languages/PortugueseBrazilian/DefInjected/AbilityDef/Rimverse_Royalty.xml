@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_AirBubble.label>bolha de ar</Rimverse_AirBubble.label>
+  <Rimverse_AirBubble.description>Envolve o alvo numa membrana psíquica que segura ar e pressão, protegendo do vácuo por algumas horas.</Rimverse_AirBubble.description>
+  <Rimverse_SenseSignatures.label>sentir assinaturas</Rimverse_SenseSignatures.label>
+  <Rimverse_SenseSignatures.description>Estende a mente pelo campo psíquico e sente as mentes e máquinas das estrelas próximas. Revela o sistema atual em detalhe e os sistemas próximos em faixa, mais longe com sensibilidade psíquica maior. Só funciona numa nave ou num mundo do mapa do Rimverse.</Rimverse_SenseSignatures.description>
+  <Rimverse_CalmCrew.label>acalmar tripulação</Rimverse_CalmCrew.label>
+  <Rimverse_CalmCrew.description>Manda uma onda psíquica suave pelos conveses. Os colonos por perto ficam mais calmos por um dia, e alguns saem de colapsos mentais não violentos.</Rimverse_CalmCrew.description>
+  <Rimverse_VacuumPush.label>empurrão de vácuo</Rimverse_VacuumPush.label>
+  <Rimverse_VacuumPush.description>Um empurrão psíquico que joga o alvo várias células para longe e o atordoa por um instante. Funciona melhor nos corredores apertados de uma nave.</Rimverse_VacuumPush.description>
+  <Rimverse_SealBreach.label>selar brecha</Rimverse_SealBreach.label>
+  <Rimverse_SealBreach.description>Dobra matéria do próprio casco nas falhas em volta da célula alvo, selando brechas da nave com paredes de casco novas.</Rimverse_SealBreach.description>
+  <Rimverse_ShortSkip.label>salto curto</Rimverse_ShortSkip.label>
+  <Rimverse_ShortSkip.description>Salta para uma célula próxima, atravessando paredes e anteparas, sem precisar de linha de visão.</Rimverse_ShortSkip.description>
+  <Rimverse_BlindSensors.label>cegar sensores</Rimverse_BlindSensors.label>
+  <Rimverse_BlindSensors.description>Enche a área de estática psíquica. Criaturas hostis por perto perdem metade da visão, e naves inimigas em combate têm mais dificuldade de mirar na sua nave por um tempo.</Rimverse_BlindSensors.description>
+  <Rimverse_HullShield.label>escudo de casco</Rimverse_HullShield.label>
+  <Rimverse_HullShield.description>Despeja energia psíquica nos geradores de escudo da nave e recarrega todos os escudos dela de uma vez.</Rimverse_HullShield.description>
+</LanguageData>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CmdVoidJump>Salto pelo vazio</Rimverse_CmdVoidJump>
+  <Rimverse_CmdVoidJumpDesc>Rasga o vazio e salta para uma estrela aleatória a até {1} anos-luz. Gasta {0} de bioferrita do mapa, não precisa de motor de dobra e leva 6 horas. Algo pode voltar junto.</Rimverse_CmdVoidJumpDesc>
+  <Rimverse_VoidJumpNoFerrite>Precisa de {0} de bioferrita no mapa.</Rimverse_VoidJumpNoFerrite>
+  <Rimverse_MsgVoidJump>{0} rasgou o vazio. A viagem vai levar algumas horas.</Rimverse_MsgVoidJump>
+  <Rimverse_LetterVoidStowawayLabel>Algo voltou do vazio</Rimverse_LetterVoidStowawayLabel>
+  <Rimverse_LetterVoidStowaway>O salto pelo vazio trouxe passageiros. Fomes do vazio estão dentro da nave, drenando o ar.</Rimverse_LetterVoidStowaway>
+  <Rimverse_LetterGhostShipLabel>Nave fantasma</Rimverse_LetterGhostShipLabel>
+  <Rimverse_LetterGhostShip>Os sensores acharam uma nave à deriva perto daqui. Não responde a chamados e não tem sinal de vida, mas os porões parecem cheios. Algo dorme lá dentro.</Rimverse_LetterGhostShip>
+  <Rimverse_LetterSilentStationLabel>Estação silenciosa</Rimverse_LetterSilentStationLabel>
+  <Rimverse_LetterSilentStation>Uma estação abandonada apareceu nos sensores. A tripulação está morta, mas há movimento lá dentro, e um dos vultos tem o rosto de alguém da sua tripulação.</Rimverse_LetterSilentStation>
+  <Rimverse_LetterMonolithMoonLabel>Monolito na lua</Rimverse_LetterMonolithMoonLabel>
+  <Rimverse_LetterMonolithMoon>Há um pilar negro nesta lua. Ninguém o construiu. Sombras dormem em volta dele. Estudá-lo pode render conhecimento sombrio.</Rimverse_LetterMonolithMoon>
+  <Rimverse_LetterBlackHoleEdgeLabel>Borda do buraco negro</Rimverse_LetterBlackHoleEdgeLabel>
+  <Rimverse_LetterBlackHoleEdge>Perto do horizonte do buraco negro, o espaço se dobra. Fragmentos do vazio flutuam lá fora, e algo com fome de ar veio buscá-los.</Rimverse_LetterBlackHoleEdge>
+  <Rimverse_CmdPurge>Expurgar</Rimverse_CmdPurge>
+  <Rimverse_CmdPurgeDesc>Expulsa o ar do cômodo de uma vez. Hostis no cômodo levam dano e ficam atordoados. Quem estiver sem proteção começa a sufocar.</Rimverse_CmdPurgeDesc>
+  <Rimverse_PurgeCooldown>Recarregando: {0} h</Rimverse_PurgeCooldown>
+  <Rimverse_MsgPurged>O expurgo atingiu {0} hostis.</Rimverse_MsgPurged>
+  <Rimverse_MsgVoidSensor>O sensor do vazio detectou {0} entidades no mapa.</Rimverse_MsgVoidSensor>
+  <Rimverse_CmdVoidPulse>Pulso do vazio</Rimverse_CmdVoidPulse>
+  <Rimverse_CmdVoidPulseDesc>Acorda todas as entidades que dormem no mapa, para que você lute na hora que escolher.</Rimverse_CmdVoidPulseDesc>
+  <Rimverse_VoidPulseNone>Nenhuma entidade dormindo detectada.</Rimverse_VoidPulseNone>
+  <Rimverse_MsgVoidPulse>{0} entidades acordaram.</Rimverse_MsgVoidPulse>
+  <Rimverse_VoidSensorInspect>Entidades acordadas: {0}. Dormindo: {1}.</Rimverse_VoidSensorInspect>
+  <Rimverse_Lesson_General>Geral</Rimverse_Lesson_General>
+  <Rimverse_Lesson_Piloting>Pilotagem</Rimverse_Lesson_Piloting>
+  <Rimverse_Lesson_Engineering>Engenharia</Rimverse_Lesson_Engineering>
+  <Rimverse_Lesson_Medicine>Medicina</Rimverse_Lesson_Medicine>
+  <Rimverse_LessonDesc>Troca a matéria das aulas. Pilotagem treina tiro e intelecto, engenharia treina construção e artesanato, medicina treina medicina e intelecto.</Rimverse_LessonDesc>
+  <Rimverse_LessonInspect>Matéria das aulas: {0}</Rimverse_LessonInspect>
+  <Rimverse_WasteHandled>Pacotes de resíduos processados: {0}</Rimverse_WasteHandled>
+  <Rimverse_WasteNeedsSpace>Só funciona no espaço ou em órbita.</Rimverse_WasteNeedsSpace>
+  <Rimverse_CmdEnterSystem>Entrar no sistema estelar</Rimverse_CmdEnterSystem>
+  <Rimverse_CmdEnterSystemDesc>Leva a nave deste local orbital do Odyssey para a órbita do mundo natal no mapa do Rimverse, de onde ela pode viajar pelo sistema e pelas estrelas.</Rimverse_CmdEnterSystemDesc>
+  <Rimverse_MsgEnteredSystem>{0} entrou no sistema estelar.</Rimverse_MsgEnteredSystem>
+  <Rimverse_CmdDockOdyssey>Atracar em local orbital</Rimverse_CmdDockOdyssey>
+  <Rimverse_CmdDockOdysseyDesc>Leva a nave para um local orbital do Odyssey que você já tem aberto, como um retransmissor ou asteroide.</Rimverse_CmdDockOdysseyDesc>
+  <Rimverse_NoOdysseyMaps>Nenhum local orbital do Odyssey aberto.</Rimverse_NoOdysseyMaps>
+  <Rimverse_NoDockSpace>Não há espaço livre para atracar a nave.</Rimverse_NoDockSpace>
+  <Rimverse_MsgDocked>{0} atracou.</Rimverse_MsgDocked>
+  <Rimverse_LetterOrbitTraderLabel>Comerciante em órbita</Rimverse_LetterOrbitTraderLabel>
+  <Rimverse_LetterOrbitTrader>Uma nave mercante de {0} chegou à órbita. Use o console de comunicação para negociar.</Rimverse_LetterOrbitTrader>
+  <Rimverse_LetterOrbitPatrolLabel>Patrulha em órbita</Rimverse_LetterOrbitPatrolLabel>
+  <Rimverse_LetterOrbitPatrol>Uma patrulha de {0} passou, escaneou a sua posição e seguiu em paz. A opinião deles sobre você melhorou um pouco.</Rimverse_LetterOrbitPatrol>
+  <Rimverse_LetterOrbitPatrolHostileLabel>Patrulha inimiga</Rimverse_LetterOrbitPatrolHostileLabel>
+  <Rimverse_LetterOrbitPatrolHostile>Uma patrulha de {0}, em guerra com você, achou a sua posição e mandou tropas.</Rimverse_LetterOrbitPatrolHostile>
+  <Rimverse_LetterOrbitFleetLabel>Frota avistada</Rimverse_LetterOrbitFleetLabel>
+  <Rimverse_LetterOrbitFleet>Os sensores avistaram uma frota de {0} vindo na sua direção. Eles chegam em cerca de dois dias.</Rimverse_LetterOrbitFleet>
+  <Rimverse_LetterOrbitDerelictLabel>Destroços à deriva</Rimverse_LetterOrbitDerelictLabel>
+  <Rimverse_LetterOrbitDerelict>Destroços de uma nave passaram perto e alguns ficaram presos aqui. Há material para recuperar.</Rimverse_LetterOrbitDerelict>
+  <Rimverse_AddColumn>Somar coluna</Rimverse_AddColumn>
+  <Rimverse_RemoveColumn>Tirar coluna</Rimverse_RemoveColumn>
+  <Rimverse_SortBy>Ordenar por esta</Rimverse_SortBy>
+  <Rimverse_Col_Mood>Humor</Rimverse_Col_Mood>
+  <Rimverse_Col_Health>Saúde</Rimverse_Col_Health>
+  <Rimverse_Col_Rest>Descanso</Rimverse_Col_Rest>
+  <Rimverse_Col_Food>Comida</Rimverse_Col_Food>
+  <Rimverse_Col_Joy>Recreação</Rimverse_Col_Joy>
+  <Rimverse_Col_MoveSpeed>Velocidade</Rimverse_Col_MoveSpeed>
+  <Rimverse_Col_WorkSpeed>Ritmo de trabalho</Rimverse_Col_WorkSpeed>
+  <Rimverse_AlertDrillEmpty>Broca profunda vazia</Rimverse_AlertDrillEmpty>
+  <Rimverse_AlertDrillEmptyDesc>Estas brocas profundas não têm mais nada para cavar. Mude elas de lugar.</Rimverse_AlertDrillEmptyDesc>
+  <Rimverse_AlertLowPower>Energia acabando</Rimverse_AlertLowPower>
+  <Rimverse_AlertLowPowerDesc>Uma rede está gastando mais do que produz e as baterias estão abaixo de 15%.</Rimverse_AlertLowPowerDesc>
+  <Rimverse_ArsenalAlert>Alerta de abordagem: {0} colonos armados por este arsenal.</Rimverse_ArsenalAlert>
+  <Rimverse_ArsenalReady>Pronto. Arma a tripulação quando houver inimigos.</Rimverse_ArsenalReady>
+  <Rimverse_CmdCopyBills>Copiar contas</Rimverse_CmdCopyBills>
+  <Rimverse_CmdCopyBillsDesc>Copia todas as contas desta bancada.</Rimverse_CmdCopyBillsDesc>
+  <Rimverse_CmdPasteBills>Colar contas</Rimverse_CmdPasteBills>
+  <Rimverse_CmdPasteBillsDesc>Cola as contas copiadas que esta bancada sabe fazer.</Rimverse_CmdPasteBillsDesc>
+  <Rimverse_CmdCopyWork>Copiar trabalho</Rimverse_CmdCopyWork>
+  <Rimverse_CmdCopyWorkDesc>Copia prioridades, horário e área permitida.</Rimverse_CmdCopyWorkDesc>
+  <Rimverse_CmdPasteWork>Colar trabalho</Rimverse_CmdPasteWork>
+  <Rimverse_CmdPasteWorkDesc>Cola prioridades, horário e área copiados.</Rimverse_CmdPasteWorkDesc>
+  <Rimverse_NothingCopied>Nada copiado ainda.</Rimverse_NothingCopied>
+  <Rimverse_CmdWorkMode>Modo de trabalho</Rimverse_CmdWorkMode>
+  <Rimverse_CmdWorkModeDesc>Troca o modo de trabalho dos colonos selecionados.</Rimverse_CmdWorkModeDesc>
+  <Rimverse_WorkMode_Emergency>Emergência (só fogo, médico e paciente)</Rimverse_WorkMode_Emergency>
+  <Rimverse_WorkMode_Repair>Reparo (emergência, construção e carregar)</Rimverse_WorkMode_Repair>
+  <Rimverse_WorkMode_Haul>Carregamento (emergência, carregar e limpar)</Rimverse_WorkMode_Haul>
+  <Rimverse_WorkMode_Restore>Restaurar prioridades antigas</Rimverse_WorkMode_Restore>
+  <Rimverse_CmdHunt>Procurar e destruir</Rimverse_CmdHunt>
+  <Rimverse_CmdHuntDesc>O colono caça sozinho o inimigo mais próximo enquanto estiver convocado.</Rimverse_CmdHuntDesc>
+  <Rimverse_CmdSavePos>Salvar posição</Rimverse_CmdSavePos>
+  <Rimverse_CmdSavePosDesc>Guarda este lugar como posição defensiva do colono.</Rimverse_CmdSavePosDesc>
+  <Rimverse_CmdGoPos>Ir para a posição</Rimverse_CmdGoPos>
+  <Rimverse_CmdGoPosDesc>Manda o colono para a posição defensiva salva.</Rimverse_CmdGoPosDesc>
+  <Rimverse_NoSavedPos>Nenhuma posição salva.</Rimverse_NoSavedPos>
+  <Rimverse_CmdHarvestOn>Colheita ligada</Rimverse_CmdHarvestOn>
+  <Rimverse_CmdHarvestOnDesc>Desligue para pausar a colheita aqui sem perder a plantação.</Rimverse_CmdHarvestOnDesc>
+  <Rimverse_CmdStorageOn>Armazenamento ligado</Rimverse_CmdStorageOn>
+  <Rimverse_CmdStorageOnDesc>Desligue para parar de guardar coisas aqui sem perder as configurações.</Rimverse_CmdStorageOnDesc>
+  <Rimverse_CmdSelectOwner>Selecionar dono</Rimverse_CmdSelectOwner>
+  <Rimverse_CmdSelectOwnerDesc>Seleciona quem é dono desta cama.</Rimverse_CmdSelectOwnerDesc>
+  <Rimverse_CmdNeededMode>Modo o que falta</Rimverse_CmdNeededMode>
+  <Rimverse_CmdNeededModeDesc>A baia escolhe sozinha a planta cuja colheita está mais em falta na nave.</Rimverse_CmdNeededModeDesc>
+  <Rimverse_DesHaulArea>Carregar área</Rimverse_DesHaulArea>
+  <Rimverse_DesHaulAreaDesc>Arraste para marcar para carregar todos os itens soltos na área.</Rimverse_DesHaulAreaDesc>
+  <Rimverse_DesCopy>Copiar construções</Rimverse_DesCopy>
+  <Rimverse_DesCopyDesc>Arraste sobre uma área para copiar as construções dela.</Rimverse_DesCopyDesc>
+  <Rimverse_DesPaste>Colar construções</Rimverse_DesPaste>
+  <Rimverse_DesPasteDesc>Clique para colar as construções copiadas como plantas.</Rimverse_DesPasteDesc>
+  <Rimverse_MsgCopied>{0} construções copiadas.</Rimverse_MsgCopied>
+  <Rimverse_MsgPasted>{0} de {1} plantas colocadas.</Rimverse_MsgPasted>
+  <Rimverse_TabGear>Equipamento</Rimverse_TabGear>
+  <Rimverse_GearArmor>Armadura: corte {0}, impacto {1}, calor {2}</Rimverse_GearArmor>
+  <Rimverse_GearInsulation>Conforto: de {0} até {1}</Rimverse_GearInsulation>
+  <Rimverse_GearVacuum>Proteção de vácuo: {0}</Rimverse_GearVacuum>
+  <Rimverse_GearMass>Carga: {0} de {1}</Rimverse_GearMass>
+  <Rimverse_GearRange>(alcance {0})</Rimverse_GearRange>
+  <Rimverse_GearInventory>Inventário:</Rimverse_GearInventory>
+  <Rimverse_HudShip>Ar {0}% · casco {1}% · calor {2}% · combustível {3}</Rimverse_HudShip>
+  <Rimverse_HudColony>Comida para {0} dias · energia {1} Wd ({2} W)</Rimverse_HudColony>
+  <Rimverse_HudTemp>Aqui {0} · lá fora {1}</Rimverse_HudTemp>
+  <Rimverse_HydroAuto>Automática: planta, colhe e guarda.</Rimverse_HydroAuto>
+  <Rimverse_HydroSemi>Semiautomática: planta sozinha.</Rimverse_HydroSemi>
+  <Rimverse_HydroNeeded>(modo o que falta)</Rimverse_HydroNeeded>
+  <Rimverse_HydroNeedsGravity>Parada: precisa de gravidade. Só o jardim de ciclo fechado funciona em gravidade zero.</Rimverse_HydroNeedsGravity>
+  <Rimverse_ItemInspect>Valor {0} · massa {1}</Rimverse_ItemInspect>
+  <Rimverse_KilledBy>Morto por: {0}</Rimverse_KilledBy>
+  <Rimverse_MsgLostPart>{0} perdeu: {1}. Causa: {2}.</Rimverse_MsgLostPart>
+  <Rimverse_MaterialsHave>No mapa: {0}</Rimverse_MaterialsHave>
+  <Rimverse_MedPodInspect>Trata sozinha a cada hora (qualidade {0}).</Rimverse_MedPodInspect>
+  <Rimverse_PowerTabTitle>Redes elétricas ({0})</Rimverse_PowerTabTitle>
+  <Rimverse_PowerNetLine>Rede {0} ({1} peças): gera {2} W, gasta {3} W, saldo {4} W</Rimverse_PowerNetLine>
+  <Rimverse_PowerNetStored>Guardado: {0} de {1} Wd</Rimverse_PowerNetStored>
+  <Rimverse_Show>Mostrar</Rimverse_Show>
+  <Rimverse_SearchBody>{0} (corpo de {1})</Rimverse_SearchBody>
+  <Rimverse_QolCategory_Search>Busca</Rimverse_QolCategory_Search>
+  <Rimverse_QolCategory_Storage>Estoque e carga</Rimverse_QolCategory_Storage>
+  <Rimverse_QolCategory_Combat>Combate</Rimverse_QolCategory_Combat>
+  <Rimverse_QolCategory_Trade>Mundo, viagem e comércio</Rimverse_QolCategory_Trade>
+  <Rimverse_FocusInSpace>No espaço</Rimverse_FocusInSpace>
+  <Rimverse_LetterDefendStellarchLabel>Stellarch sob ataque</Rimverse_LetterDefendStellarchLabel>
+  <Rimverse_LetterDefendStellarch>Uma nave de um Stellarch pede socorro: piratas a cercaram bem perto daqui. A nave pirata virou contra você. Vença a batalha para ganhar o favor do Império.</Rimverse_LetterDefendStellarch>
+  <Rimverse_LetterStellarchSavedLabel>Stellarch salvo</Rimverse_LetterStellarchSavedLabel>
+  <Rimverse_LetterStellarchSaved>O Stellarch agradece a tripulação. {0} recebeu {1} de favor imperial.</Rimverse_LetterStellarchSaved>
+  <Rimverse_LetterEscortNobleLabel>Escoltar um nobre</Rimverse_LetterEscortNobleLabel>
+  <Rimverse_LetterEscortNoble>O Império pediu que {0} viaje na sua nave por 5 dias. Mantenha o nobre vivo e de pé até a lançadeira buscá-lo.</Rimverse_LetterEscortNoble>
+  <Rimverse_LetterNobleDoneLabel>Escolta concluída</Rimverse_LetterNobleDoneLabel>
+  <Rimverse_LetterNobleDone>A lançadeira imperial buscou o nobre. {0} recebeu {1} de favor imperial.</Rimverse_LetterNobleDone>
+  <Rimverse_LetterNobleFailedLabel>Escolta fracassada</Rimverse_LetterNobleFailedLabel>
+  <Rimverse_LetterNobleFailed>{0} caiu sob a sua guarda. O Império não vai esquecer.</Rimverse_LetterNobleFailed>
+  <Rimverse_LetterHuntDesertersLabel>Desertores imperiais</Rimverse_LetterHuntDesertersLabel>
+  <Rimverse_LetterHuntDeserters>{0} desertores imperiais roubaram cápsulas e estão caindo aqui. O Império paga em favor se eles forem detidos.</Rimverse_LetterHuntDeserters>
+  <Rimverse_LetterDesertersDoneLabel>Desertores detidos</Rimverse_LetterDesertersDoneLabel>
+  <Rimverse_LetterDesertersDone>Os desertores foram detidos. {0} recebeu {1} de favor imperial.</Rimverse_LetterDesertersDone>
+  <Rimverse_LetterPromotionLabel>Promoção naval</Rimverse_LetterPromotionLabel>
+  <Rimverse_LetterPromotion>Depois de mais uma vitória no espaço, {0} agora é {1}.</Rimverse_LetterPromotion>
+  <Rimverse_MsgConvoyEscort>Escoltas imperiais vão acompanhar a sua nave por 5 dias.</Rimverse_MsgConvoyEscort>
+  <Rimverse_MsgCrewRescue>A equipe médica imperial tratou {0} ferimentos.</Rimverse_MsgCrewRescue>
+  <Rimverse_MsgHullShield>Os escudos da nave foram recarregados.</Rimverse_MsgHullShield>
+  <Rimverse_MsgSealedBreach>{0} brechas foram seladas.</Rimverse_MsgSealedBreach>
+  <Rimverse_MsgSensorsBlinded>Estática psíquica cegou {0} inimigos e os sensores das naves inimigas.</Rimverse_MsgSensorsBlinded>
+  <Rimverse_MsgShipyardRepair>A equipe do estaleiro imperial consertou {0} construções.</Rimverse_MsgShipyardRepair>
+  <Rimverse_PsyNeedShield>Precisa estar numa nave sua com gerador de escudo.</Rimverse_PsyNeedShield>
+  <Rimverse_NavalRank_1>alferes</Rimverse_NavalRank_1>
+  <Rimverse_NavalRank_2>capitão de fragata</Rimverse_NavalRank_2>
+  <Rimverse_NavalRank_3>comodoro</Rimverse_NavalRank_3>
+  <Rimverse_NavalRank_4>almirante</Rimverse_NavalRank_4>
+  <Rimverse_NavalRank_5>grão-almirante</Rimverse_NavalRank_5>
+  <Rimverse_NavalRank_6>stellarch naval</Rimverse_NavalRank_6>
+  <Rimverse_GameStart_Shipwreck>As cápsulas de fuga batem forte no chão. Em volta estão os pedaços quebrados da sua nave: uma ponte, um motor, células de combustível e o gerador de ar. Nada funciona ainda.
+
+Conserte as peças, pesquise o básico de naves e construa um casco selado em volta delas. Depois lance para a órbita e procure um caminho para as estrelas.</Rimverse_GameStart_Shipwreck>
+  <Rimverse_GameStart_Drifting>Os alarmes acordaram vocês. A nave está à deriva na borda do sistema, os tanques de ar quase vazios e o combustível no vermelho.
+
+Olhe a aba da nave: ar, calor e combustível. Conserte as peças danificadas, plante comida na hidroponia e ache um jeito de chegar a um planeta ou estação antes que o ar acabe.</Rimverse_GameStart_Drifting>
+  <Rimverse_GameStart_MiningStation>O contrato está assinado. A sua estação flutua no cinturão de asteroides, longe do mundo natal.
+
+Use os trajes de mineração para trabalhar os asteroides, venda o minério para os comerciantes da corporação e aumente a estação. Com dinheiro suficiente dá para construir motores e ficar livres.</Rimverse_GameStart_MiningStation>
+  <Rimverse_GameStart_ImperialRefugees>O salto foi difícil e o casco está rachado em vários pontos. Para trás fica um mundo imperial caindo, e o Império não perdoa desertores.
+
+Consertem a nave, mantenham a tripulação calma e procurem civilizações que aceitem vocês. Olhem a aba de civilizações: o Império já sabe quem vocês são.</Rimverse_GameStart_ImperialRefugees>
+  <Rimverse_GameStart_GlitterColony>A lançadeira da federação deixou vocês aqui com caixas de suprimentos e uma promessa de apoio.
+
+Vocês já sabem o básico de naves e sensores. Construam a base, negociem com a federação e, quando estiverem prontos, construam a primeira nave.</Rimverse_GameStart_GlitterColony>
+  <Rimverse_GameStart_StarTribe>Os anciãos dizem que as luzes no céu são espíritos. Os jovens dizem que são barcos que navegam entre as estrelas.
+
+Sobrevivam, cresçam e aprendam. O caminho até o espaço é o mais longo do Rimverse, mas toda civilização lá fora começou como vocês.</Rimverse_GameStart_StarTribe>
+  <Rimverse_GameStart_CryoAwakening>Os sarcófagos se abrem chiando. A cabeça dói, e o relógio da nave diz que se passaram oitenta anos.
+
+O catálogo estelar está velho e as civilizações por perto agora são estranhas. Escaneiem o céu, descubram quem manda nas estrelas e decidam para onde ir.</Rimverse_GameStart_CryoAwakening>
+  <Rimverse_GameStart_RichExplorer>A sua nave está pronta. A hidroponia está crescendo, a cozinha está quente e os drones zumbem na baia.
+
+Abram o mapa da galáxia, escolham uma estrela e saltem. Ruínas, anomalias, civilizações e galáxias inteiras estão esperando. O narrador recomendado para este começo é um tranquilo.</Rimverse_GameStart_RichExplorer>
+  <Rimverse_GameStart_AsyncResearcher>As luzes amarelas zumbem. Vocês estão de novo nas Yellow Rooms, sem saber como chegaram aqui.
+
+Sobrevivam e achem uma saída. Dizem que, desta vez, a porta de volta não leva ao planeta, e sim a uma nave abandonada em órbita.</Rimverse_GameStart_AsyncResearcher>
+  <Rimverse_StartSummary_Surface>Começa na superfície do mundo natal.</Rimverse_StartSummary_Surface>
+  <Rimverse_StartSummary_Orbit>Começa em órbita do mundo natal.</Rimverse_StartSummary_Orbit>
+  <Rimverse_StartSummary_Belt>Começa no cinturão de asteroides do sistema natal.</Rimverse_StartSummary_Belt>
+  <Rimverse_StartSummary_OuterSystem>Começa na borda do sistema natal.</Rimverse_StartSummary_OuterSystem>
+  <Rimverse_StartLayout_Wreck>Destroços da nave por perto.</Rimverse_StartLayout_Wreck>
+  <Rimverse_StartLayout_Drifter>Nave pequena sem dobra, com pouco ar e combustível.</Rimverse_StartLayout_Drifter>
+  <Rimverse_StartLayout_Station>Estação de mineração com painéis solares.</Rimverse_StartLayout_Station>
+  <Rimverse_StartLayout_Refugee>Transporte de refugiados danificado.</Rimverse_StartLayout_Refugee>
+  <Rimverse_StartLayout_Explorer>Nave grande, automática e com motor de dobra.</Rimverse_StartLayout_Explorer>
+  <Rimverse_StartLayout_CryoShip>Nave de dormentes com sarcófagos de criossono.</Rimverse_StartLayout_CryoShip>
+  <Rimverse_StartLayout_Derelict>Nave abandonada esperando em órbita.</Rimverse_StartLayout_Derelict>
+  <Rimverse_ShipName_Drifter>Andorinha Cansada</Rimverse_ShipName_Drifter>
+  <Rimverse_ShipName_Station>Estação Pedra Funda</Rimverse_ShipName_Station>
+  <Rimverse_ShipName_Refugee>Última Coroa</Rimverse_ShipName_Refugee>
+  <Rimverse_ShipName_Cryo>Longo Sono</Rimverse_ShipName_Cryo>
+  <Rimverse_ShipName_Explorer>Horizonte Dourado</Rimverse_ShipName_Explorer>
+  <Rimverse_ShipName_Derelict>Nave sem nome</Rimverse_ShipName_Derelict>
+  <Rimverse_StartLetter_Drifter>À deriva</Rimverse_StartLetter_Drifter>
+  <Rimverse_StartLetterText_Drifter>A nave está na borda do sistema, longe de tudo. O ar e o combustível são poucos. Cuidem deles primeiro.</Rimverse_StartLetterText_Drifter>
+  <Rimverse_StartLetter_Station>Estação no cinturão</Rimverse_StartLetter_Station>
+  <Rimverse_StartLetterText_Station>A estação está no cinturão de asteroides. A corporação já conhece vocês e vai mandar comerciantes.</Rimverse_StartLetterText_Station>
+  <Rimverse_StartLetter_Refugee>Fuga</Rimverse_StartLetter_Refugee>
+  <Rimverse_StartLetterText_Refugee>O transporte chegou à borda do sistema. O casco está rachado e o Império está irritado com vocês.</Rimverse_StartLetterText_Refugee>
+  <Rimverse_StartLetter_Explorer>Pronta para explorar</Rimverse_StartLetter_Explorer>
+  <Rimverse_StartLetterText_Explorer>A nave está em órbita do mundo natal, com tudo funcionando sozinho. O universo é seu.</Rimverse_StartLetterText_Explorer>
+  <Rimverse_StartLetter_CryoShip>Despertar</Rimverse_StartLetter_CryoShip>
+  <Rimverse_StartLetterText_CryoShip>Os sarcófagos abriram depois de oitenta anos. As civilizações por perto mudaram enquanto vocês dormiam.</Rimverse_StartLetterText_CryoShip>
+  <Rimverse_StartLetter_Derelict>Nave abandonada</Rimverse_StartLetter_Derelict>
+  <Rimverse_StartLetterText_Derelict>Uma nave abandonada espera em órbita.</Rimverse_StartLetterText_Derelict>
+  <Rimverse_StartLetter_AsyncExit>A saída</Rimverse_StartLetter_AsyncExit>
+  <Rimverse_StartLetterText_AsyncExit>A porta não levou ao planeta. Vocês estão dentro de uma nave abandonada em órbita, com o casco danificado, pouco ar e quase nenhum combustível. Consertem a nave e procurem uma estação do Instituto A-sync.</Rimverse_StartLetterText_AsyncExit>
+  <Rimverse_DronesInspect>Drones consertam {0} PV por hora (total consertado: {1}).</Rimverse_DronesInspect>
+  <Rimverse_GalleyToggle>Cozinhar sozinha</Rimverse_GalleyToggle>
+  <Rimverse_GalleyToggleDesc>Liga ou desliga a cozinha automática.</Rimverse_GalleyToggleDesc>
+  <Rimverse_GalleyInspect>Usa comida crua num raio de {0} células.</Rimverse_GalleyInspect>
+</LanguageData>

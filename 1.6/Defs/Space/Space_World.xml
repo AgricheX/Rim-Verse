@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <WeatherDef>
+    <defName>Rimverse_SpaceClear</defName>
+    <label>open space</label>
+    <description>There is no weather in space.</description>
+    <repeatable>true</repeatable>
+    <favorability>Good</favorability>
+    <perceivePriority>0</perceivePriority>
+    <skyColorsDay>
+      <sky>(1,1,1)</sky>
+      <shadow>(0.718,0.745,0.757)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsDay>
+    <skyColorsDusk>
+      <sky>(0.74,0.80,0.84)</sky>
+      <shadow>(0.955,0.886,0.914)</shadow>
+      <overlay>(0.8,0.8,0.8)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsDusk>
+    <skyColorsNightEdge>
+      <sky>(0.482,0.603,0.682)</sky>
+      <shadow>(1,1,1)</shadow>
+      <overlay>(0.6,0.6,0.6)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsNightEdge>
+    <skyColorsNightMid>
+      <sky>(0.482,0.603,0.682)</sky>
+      <shadow>(1,1,1)</shadow>
+      <overlay>(0.6,0.6,0.6)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsNightMid>
+  </WeatherDef>
+
+  <BiomeDef>
+    <defName>Rimverse_Orbit</defName>
+    <label>orbit</label>
+    <description>Empty space around a world. There is no air, no ground and no shelter except the one you bring.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0</plantDensity>
+    <noAmbientWind>true</noAmbientWind>
+    <constantOutdoorTemperature>-75</constantOutdoorTemperature>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <maxFishPopulation>0</maxFishPopulation>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>false</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <baseWeatherCommonalities>
+      <Rimverse_SpaceClear>1</Rimverse_SpaceClear>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.SpaceBiomeExtension">
+        <gravity>0</gravity>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <GenStepDef>
+    <defName>Rimverse_SpaceTerrain</defName>
+    <order>100</order>
+    <genStep Class="Rimverse.GenStep_RimverseSpace" />
+  </GenStepDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_OrbitMap</defName>
+    <label>orbit</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <disableMapClippers>true</disableMapClippers>
+    <defaultUnderGridTerrain>Rimverse_Vacuum</defaultUnderGridTerrain>
+    <genSteps>
+      <li>Rimverse_SpaceTerrain</li>
+      <li>ScenParts</li>
+    </genSteps>
+  </MapGeneratorDef>
+
+  <PlanetLayerDef>
+    <defName>Rimverse_OrbitLayer</defName>
+    <label>orbit</label>
+    <viewGizmoTooltip>View ships and stations orbiting the planet.</viewGizmoTooltip>
+    <viewGizmoTexPath>UI/Commands/ViewPlanet</viewGizmoTexPath>
+    <layerType>OrbitLayer</layerType>
+    <elevationString>200km</elevationString>
+    <defaultBiome>Rimverse_Orbit</defaultBiome>
+    <defaultMapWorldObject>Rimverse_ShipInOrbit</defaultMapWorldObject>
+    <alwaysRaycastable>false</alwaysRaycastable>
+    <obstructsExpandingIcons>false</obstructsExpandingIcons>
+    <onlyAllowWhitelistedIncidents>true</onlyAllowWhitelistedIncidents>
+    <onlyAllowWhitelistedGameConditions>true</onlyAllowWhitelistedGameConditions>
+    <onlyAllowWhitelistedArrivals>true</onlyAllowWhitelistedArrivals>
+    <onlyAllowWhitelistedArrivalModes>true</onlyAllowWhitelistedArrivalModes>
+    <canFormCaravans>false</canFormCaravans>
+    <isSpace>true</isSpace>
+    <ignoreNoBuildArea>true</ignoreNoBuildArea>
+    <rangeDistanceFactor>20</rangeDistanceFactor>
+    <raidPointsFactor>0.85</raidPointsFactor>
+    <lineWidthFactor>7.5</lineWidthFactor>
+    <gerundLabel>in</gerundLabel>
+    <worldGenSteps>
+      <li>Tiles</li>
+    </worldGenSteps>
+    <worldDrawLayers>
+      <li>WorldDrawLayer_ClosestTile</li>
+      <li>WorldDrawLayer_SelectedTile</li>
+      <li>WorldDrawLayer_MouseTile</li>
+      <li>WorldDrawLayer_WorldObjects_Expandable</li>
+      <li>WorldDrawLayer_WorldObjects_NonExpandable</li>
+    </worldDrawLayers>
+    <worldTabs>
+      <li>WITab_Planet</li>
+    </worldTabs>
+  </PlanetLayerDef>
+
+  <WorldObjectDef>
+    <defName>Rimverse_ShipInOrbit</defName>
+    <label>ship in orbit</label>
+    <description>A Rimverse ship holding orbit above the planet.</description>
+    <worldObjectClass>Rimverse.ShipOrbitMapParent</worldObjectClass>
+    <texture>World/WorldObjects/Expanding/TravelingShuttle</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/TravelingShuttle</expandingIconTexture>
+    <expandingIconPriority>60</expandingIconPriority>
+    <expandingIconColor>(255,255,255,255)</expandingIconColor>
+    <expandingIconDrawSize>1.35</expandingIconDrawSize>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <canBePlayerHome>true</canBePlayerHome>
+    <treatAsPlayerHome>true</treatAsPlayerHome>
+    <mapGenerator>Rimverse_OrbitMap</mapGenerator>
+    <neverMultiSelect>true</neverMultiSelect>
+    <overrideMapSize>(150,1,150)</overrideMapSize>
+    <IncidentTargetTags>
+      <li>Map_PlayerHome</li>
+    </IncidentTargetTags>
+  </WorldObjectDef>
+
+</Defs>

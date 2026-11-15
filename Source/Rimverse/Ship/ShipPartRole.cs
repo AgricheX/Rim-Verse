@@ -1,0 +1,50 @@
+namespace Rimverse
+{
+    public enum ShipPartRole
+    {
+        None,
+        Bridge,
+        Structure,
+        HullWall,
+        Window,
+        Reactor,
+        Solar,
+        Battery,
+        Capacitor,
+        Thruster,
+        Maneuver,
+        WarpDrive,
+        FuelTank,
+        WarpTank,
+        AirGenerator,
+        AirTank,
+        IceProcessor,
+        WaterRecycler,
+        Gravity,
+        Garden,
+        Radiator,
+        HeatBank,
+        HeatSink,
+        Sensor,
+        ProbeLauncher,
+        SignatureDetector,
+        Shield,
+        Cloak,
+        Cargo,
+        Hangar,
+        Hydroponics,
+        Cryo,
+        Weapon,
+        Other
+    }
+
+    public enum ShipClass
+    {
+        None,
+        Tin,
+        Civil,
+        Military,
+        Capital,
+        Station
+    }
+}

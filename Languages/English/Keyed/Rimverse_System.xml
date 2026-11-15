@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_BeltName>{0} Belt {1}</Rimverse_BeltName>
+  <Rimverse_LetterArrivedLabel>Arrival</Rimverse_LetterArrivedLabel>
+  <Rimverse_LetterArrived>{0} has arrived at {1}.</Rimverse_LetterArrived>
+  <Rimverse_ProblemNotInSpace>The ship must be in orbit.</Rimverse_ProblemNotInSpace>
+  <Rimverse_ProblemAlreadyTraveling>The ship is already traveling.</Rimverse_ProblemAlreadyTraveling>
+  <Rimverse_ProblemAlreadyThere>The ship is already here.</Rimverse_ProblemAlreadyThere>
+  <Rimverse_CannotTravel>Cannot travel:</Rimverse_CannotTravel>
+  <Rimverse_MsgTravelStarted>{0} has set off for {1}. Arrival in {2} days.</Rimverse_MsgTravelStarted>
+  <Rimverse_NoSystem>No known system here.</Rimverse_NoSystem>
+  <Rimverse_SystemMapTitle>{0} system ({1})</Rimverse_SystemMapTitle>
+  <Rimverse_UnknownBody>Unknown body</Rimverse_UnknownBody>
+  <Rimverse_CurrentLocation>Current location: {0}</Rimverse_CurrentLocation>
+  <Rimverse_TravelingTo>Traveling to {0}: {1}, {2} days left</Rimverse_TravelingTo>
+  <Rimverse_SelectBody>Click a body to see its details.</Rimverse_SelectBody>
+  <Rimverse_TravelEstimate>Distance {0} AU, {1} days, {2} fuel.</Rimverse_TravelEstimate>
+  <Rimverse_TravelHere>Travel here</Rimverse_TravelHere>
+  <Rimverse_ScanUnknown>Nothing is known about this body. Use sensors to learn more.</Rimverse_ScanUnknown>
+  <Rimverse_ScanMore>Better sensors or a visit will show more.</Rimverse_ScanMore>
+  <Rimverse_BodyType>Type: {0}</Rimverse_BodyType>
+  <Rimverse_BodySizeWord>Size: {0}</Rimverse_BodySizeWord>
+  <Rimverse_BodySizeRange>Size class: {0} to {1}</Rimverse_BodySizeRange>
+  <Rimverse_BodySizeExact>Size class: {0}</Rimverse_BodySizeExact>
+  <Rimverse_BodyAtmosphere>Atmosphere: {0}</Rimverse_BodyAtmosphere>
+  <Rimverse_BodyGravity>Gravity: {0} g</Rimverse_BodyGravity>
+  <Rimverse_BodyTemperature>Average temperature: {0}</Rimverse_BodyTemperature>
+  <Rimverse_BodyWater>Surface water: {0}</Rimverse_BodyWater>
+  <Rimverse_BodyOrbit>Orbit: {0} AU</Rimverse_BodyOrbit>
+  <Rimverse_BodyRings>Has rings.</Rimverse_BodyRings>
+  <Rimverse_BodyLandable>Landing possible.</Rimverse_BodyLandable>
+  <Rimverse_BodyNotLandable>You cannot land here yet.</Rimverse_BodyNotLandable>
+  <Rimverse_BodyNotLandableNow>You cannot land on {0} yet.</Rimverse_BodyNotLandableNow>
+  <Rimverse_SizeTiny>tiny</Rimverse_SizeTiny>
+  <Rimverse_SizeSmall>small</Rimverse_SizeSmall>
+  <Rimverse_SizeMedium>medium</Rimverse_SizeMedium>
+  <Rimverse_SizeLarge>large</Rimverse_SizeLarge>
+  <Rimverse_SizeHuge>huge</Rimverse_SizeHuge>
+  <Rimverse_CmdSystemMap>System map</Rimverse_CmdSystemMap>
+  <Rimverse_CmdSystemMapDesc>Shows the current star system, what sensors know about each body, and lets you travel within the system.</Rimverse_CmdSystemMapDesc>
+  <Rimverse_SuitAir>Suit air: {0} / {1} h</Rimverse_SuitAir>
+  <Rimverse_Star_RedDwarf>red dwarf</Rimverse_Star_RedDwarf>
+  <Rimverse_Star_Orange>orange star</Rimverse_Star_Orange>
+  <Rimverse_Star_Yellow>yellow star</Rimverse_Star_Yellow>
+  <Rimverse_Star_White>white star</Rimverse_Star_White>
+  <Rimverse_Star_Blue>blue star</Rimverse_Star_Blue>
+  <Rimverse_Star_WhiteDwarf>white dwarf</Rimverse_Star_WhiteDwarf>
+  <Rimverse_Star_Neutron>neutron star</Rimverse_Star_Neutron>
+  <Rimverse_Star_BlackHole>black hole</Rimverse_Star_BlackHole>
+  <Rimverse_BodyType_Asteroid>asteroid</Rimverse_BodyType_Asteroid>
+  <Rimverse_BodyType_DwarfPlanet>dwarf planet</Rimverse_BodyType_DwarfPlanet>
+  <Rimverse_BodyType_SmallMoon>small moon</Rimverse_BodyType_SmallMoon>
+  <Rimverse_BodyType_Rocky>rocky planet</Rimverse_BodyType_Rocky>
+  <Rimverse_BodyType_SuperEarth>super-Earth</Rimverse_BodyType_SuperEarth>
+  <Rimverse_BodyType_Ocean>ocean world</Rimverse_BodyType_Ocean>
+  <Rimverse_BodyType_GasGiant>gas giant</Rimverse_BodyType_GasGiant>
+  <Rimverse_BodyType_Belt>asteroid belt</Rimverse_BodyType_Belt>
+  <Rimverse_Atmosphere_None>none</Rimverse_Atmosphere_None>
+  <Rimverse_Atmosphere_Thin>thin</Rimverse_Atmosphere_Thin>
+  <Rimverse_Atmosphere_Breathable>breathable</Rimverse_Atmosphere_Breathable>
+  <Rimverse_Atmosphere_Toxic>toxic</Rimverse_Atmosphere_Toxic>
+  <Rimverse_Atmosphere_Dense>dense</Rimverse_Atmosphere_Dense>
+</LanguageData>

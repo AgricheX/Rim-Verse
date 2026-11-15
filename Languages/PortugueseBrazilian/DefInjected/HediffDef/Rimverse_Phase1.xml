@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Hypoxia.label>hipóxia</Rimverse_Hypoxia.label>
+  <Rimverse_Hypoxia.description>Falta de oxigênio por ar rarefeito ou ausente. A hipóxia leve deixa o pensamento e o movimento lentos. A grave causa desmaio e depois morte.</Rimverse_Hypoxia.description>
+  <Rimverse_LaunchSickness.label>enjoo de lançamento</Rimverse_LaunchSickness.label>
+  <Rimverse_LaunchSickness.description>Náusea e desorientação depois de um lançamento ou pouso difícil.</Rimverse_LaunchSickness.description>
+  <Rimverse_ZeroGSickness.label>enjoo de gravidade zero</Rimverse_ZeroGSickness.label>
+  <Rimverse_ZeroGSickness.description>Náusea e desorientação nos primeiros dias sem gravidade.</Rimverse_ZeroGSickness.description>
+  <Rimverse_ZeroGAdaptation.label>adaptação à gravidade zero</Rimverse_ZeroGAdaptation.label>
+  <Rimverse_ZeroGAdaptation.description>O corpo já se acostumou com a falta de peso. Some depois de muito tempo sob gravidade.</Rimverse_ZeroGAdaptation.description>
+  <Rimverse_BoneLoss.label>perda óssea</Rimverse_BoneLoss.label>
+  <Rimverse_BoneLoss.description>Ossos e músculos enfraquecem sem gravidade: cerca de 1% a menos de movimento a cada 5 dias, até 30%. Recupera 2% por dia sob gravidade.</Rimverse_BoneLoss.description>
+  <Rimverse_GravityCrush.label>esmagamento por gravidade</Rimverse_GravityCrush.label>
+  <Rimverse_GravityCrush.description>Gravidade bem mais forte do que o corpo está acostumado. Anda mais devagar e cansa mais rápido.</Rimverse_GravityCrush.description>
+  <Rimverse_WarpSickness.label>enjoo de dobra</Rimverse_WarpSickness.label>
+  <Rimverse_WarpSickness.description>Tontura e confusão depois de um salto de dobra. Dura cerca de 6 horas.</Rimverse_WarpSickness.description>
+  <Rimverse_CabinFever.label>febre de cabine</Rimverse_CabinFever.label>
+  <Rimverse_CabinFever.description>Dias demais fechado dentro de um casco ou de um habitat selado, sem céu aberto. Aumenta a chance de um colapso de vagar triste. Passa depois de um tempo do lado de fora.</Rimverse_CabinFever.description>
+  <Rimverse_LowGravityClumsy.label>falta de jeito em gravidade baixa</Rimverse_LowGravityClumsy.label>
+  <Rimverse_LowGravityClumsy.description>Um corpo feito para gravidade forte se move mal quando a gravidade é fraca.</Rimverse_LowGravityClumsy.description>
+  <Rimverse_LowGravityStride.label>passada de gravidade baixa</Rimverse_LowGravityStride.label>
+  <Rimverse_LowGravityStride.description>Um corpo longo e leve que se move com facilidade em gravidade fraca.</Rimverse_LowGravityStride.description>
+  <Rimverse_DryClimate.label>clima seco</Rimverse_DryClimate.label>
+  <Rimverse_DryClimate.description>Um corpo adaptado a mundos úmidos sofre no ar seco.</Rimverse_DryClimate.description>
+  <Rimverse_CombatRationBoost.label>estímulo da ração de combate</Rimverse_CombatRationBoost.label>
+  <Rimverse_CombatRationBoost.description>Estimulantes de uma ração de combate. Dura cerca de 4 horas.</Rimverse_CombatRationBoost.description>
+  <Rimverse_Lineage_Gravitated.label>linhagem gravitada</Rimverse_Lineage_Gravitated.label>
+  <Rimverse_Lineage_Gravitated.description>Descendente de colonos de uma super-Terra de gravidade alta. Baixa e larga, forte, e não sofre com gravidade até 1,6 g, mas desajeitada quando a gravidade é fraca.</Rimverse_Lineage_Gravitated.description>
+  <Rimverse_Lineage_Slender.label>linhagem esguia</Rimverse_Lineage_Slender.label>
+  <Rimverse_Lineage_Slender.description>Descendente de gente criada em luas e estações. Alta e fina, rápida em gravidade baixa, mas com ossos frágeis.</Rimverse_Lineage_Slender.description>
+  <Rimverse_Lineage_Boreal.label>linhagem boreal</Rimverse_Lineage_Boreal.label>
+  <Rimverse_Lineage_Boreal.description>Descendente de colonos de um mundo gelado. Pele pálida e muitos pelos. Aguenta bem o frio e mal o calor.</Rimverse_Lineage_Boreal.description>
+  <Rimverse_Lineage_Solar.label>linhagem solar</Rimverse_Lineage_Solar.label>
+  <Rimverse_Lineage_Solar.description>Descendente de colonos perto de uma estrela quente. Pele escura com um brilho leve. Aguenta bem o calor e a luz forte, e mal o frio.</Rimverse_Lineage_Solar.description>
+  <Rimverse_Lineage_Abyssal.label>linhagem abissal</Rimverse_Lineage_Abyssal.label>
+  <Rimverse_Lineage_Abyssal.description>Descendente de colonos de um mundo oceânico. Guelras e olhos grandes. Segura o fôlego por muito tempo e gosta de ar úmido, mas cansa em clima seco.</Rimverse_Lineage_Abyssal.description>
+  <Rimverse_Lineage_VoidBorn.label>linhagem nascida no vácuo</Rimverse_Lineage_VoidBorn.label>
+  <Rimverse_Lineage_VoidBorn.description>Nascida depois de gerações a bordo de naves. Olhos sensíveis e pele fina. Nunca enjoa em gravidade zero e demora a ter febre de cabine, mas tem medo de céu aberto.</Rimverse_Lineage_VoidBorn.description>
+  <Rimverse_Lineage_Rad.label>linhagem rad</Rimverse_Lineage_Rad.label>
+  <Rimverse_Lineage_Rad.description>Descendente de sobreviventes de um deserto de radiação. Pele grossa e manchada que resiste a radiação e toxinas.</Rimverse_Lineage_Rad.description>
+  <Rimverse_Lineage_Horned.label>linhagem cornuda</Rimverse_Lineage_Horned.label>
+  <Rimverse_Lineage_Horned.description>Descendente de caçadores de um mundo selvagem. Chifres pequenos e cara feroz. Bate mais forte no corpo a corpo.</Rimverse_Lineage_Horned.description>
+  <Rimverse_Hypoxia.stages.0.label>leve</Rimverse_Hypoxia.stages.0.label>
+  <Rimverse_Hypoxia.stages.1.label>moderada</Rimverse_Hypoxia.stages.1.label>
+  <Rimverse_Hypoxia.stages.2.label>grave</Rimverse_Hypoxia.stages.2.label>
+  <Rimverse_Hypoxia.stages.3.label>crítica</Rimverse_Hypoxia.stages.3.label>
+</LanguageData>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CombatHud>Combat: {0} range ({1}) · your order: {2} · enemy: {3}</Rimverse_CombatHud>
+  <Rimverse_CombatHud2>Your ship: hull {0}, shield {1} · Enemy: hull {2}, shield {3}</Rimverse_CombatHud2>
+  <Rimverse_EnemyShipName>{0} {1}</Rimverse_EnemyShipName>
+  <Rimverse_LetterShipCombatLabel>Hostile ship</Rimverse_LetterShipCombatLabel>
+  <Rimverse_LetterShipCombat>A ship of {0}, the {1}, has come out of the dark on an attack course.
+
+Use the orders on the bridge to close in, hold, flee or board. Weapons fire on their own when the enemy is in their range.</Rimverse_LetterShipCombat>
+  <Rimverse_LetterCombatLostLabel>Ship lost</Rimverse_LetterCombatLostLabel>
+  <Rimverse_LetterCombatLost>Your ship's bridge was destroyed or taken. The battle is over.</Rimverse_LetterCombatLost>
+  <Rimverse_LetterCombatWonLabel>Victory in space</Rimverse_LetterCombatWonLabel>
+  <Rimverse_LetterCombatWon>The enemy ship has no one left to command it. Whatever is left of it can be looted.</Rimverse_LetterCombatWon>
+  <Rimverse_LetterSurrenderLabel>Ship surrendered</Rimverse_LetterSurrenderLabel>
+  <Rimverse_LetterSurrender>The {0} has surrendered. The {1} remaining crew are now prisoners, and the ship is yours.</Rimverse_LetterSurrender>
+  <Rimverse_MsgEscaped>{0} has escaped the battle.</Rimverse_MsgEscaped>
+  <Rimverse_MsgEnemyEscaped>{0} has fled the battle.</Rimverse_MsgEnemyEscaped>
+  <Rimverse_MsgBoarded>{0} enemies have boarded the ship!</Rimverse_MsgBoarded>
+  <Rimverse_MsgPlayerBoarded>{0} colonists have boarded the enemy ship.</Rimverse_MsgPlayerBoarded>
+  <Rimverse_MsgBoardNeedsBand>The enemy ship must be in boarding range.</Rimverse_MsgBoardNeedsBand>
+  <Rimverse_MsgBoardNeedsDrafted>Draft the colonists who will board. They must be aboard your ship.</Rimverse_MsgBoardNeedsDrafted>
+  <Rimverse_CmdSendBoarders>Board now</Rimverse_CmdSendBoarders>
+  <Rimverse_CmdSendBoardersDesc>Sends the drafted colonists aboard this ship into the enemy ship. Only works in boarding range.</Rimverse_CmdSendBoardersDesc>
+  <Rimverse_ShieldStatus>Shield: {0} / {1}</Rimverse_ShieldStatus>
+  <Rimverse_WeaponReady>Ready ({0} range)</Rimverse_WeaponReady>
+  <Rimverse_WeaponReloading>Reloading ({0} range): {1} s</Rimverse_WeaponReloading>
+  <Rimverse_Stat_WeaponBand>Ideal range</Rimverse_Stat_WeaponBand>
+  <Rimverse_Stat_WeaponBand_Desc>The range band where this weapon hits best: 80% in its band, 50% one band away, 20% two bands away.</Rimverse_Stat_WeaponBand_Desc>
+  <Rimverse_Stat_WeaponDamage>Damage per shot</Rimverse_Stat_WeaponDamage>
+  <Rimverse_Stat_WeaponDamage_Desc>Damage of each shot and how many shots each burst has.</Rimverse_Stat_WeaponDamage_Desc>
+  <Rimverse_Stat_WeaponCooldown>Cooldown</Rimverse_Stat_WeaponCooldown>
+  <Rimverse_Stat_WeaponCooldown_Desc>Seconds between one burst and the next.</Rimverse_Stat_WeaponCooldown_Desc>
+  <Rimverse_Stat_WeaponHeat>Heat per shot</Rimverse_Stat_WeaponHeat>
+  <Rimverse_Stat_WeaponHeat_Desc>Heat each shot adds to the ship's heat.</Rimverse_Stat_WeaponHeat_Desc>
+  <Rimverse_Stat_WeaponIntercept>Interception</Rimverse_Stat_WeaponIntercept>
+  <Rimverse_Stat_WeaponIntercept_Desc>Chance to shoot down each missile coming at the ship.</Rimverse_Stat_WeaponIntercept_Desc>
+  <Rimverse_Stat_ShieldHP>Shield points</Rimverse_Stat_ShieldHP>
+  <Rimverse_Stat_ShieldHP_Desc>Damage the shield absorbs before it falls.</Rimverse_Stat_ShieldHP_Desc>
+  <Rimverse_Stat_ShieldRegen>Shield recovery</Rimverse_Stat_ShieldRegen>
+  <Rimverse_Stat_ShieldRegen_Desc>Shield points recovered per second while powered.</Rimverse_Stat_ShieldRegen_Desc>
+  <Rimverse_Band_Far>far</Rimverse_Band_Far>
+  <Rimverse_Band_Medium>medium</Rimverse_Band_Medium>
+  <Rimverse_Band_Near>close</Rimverse_Band_Near>
+  <Rimverse_Band_Boarding>boarding</Rimverse_Band_Boarding>
+  <Rimverse_Order_Approach>Close in</Rimverse_Order_Approach>
+  <Rimverse_OrderDesc_Approach>Moves one band at a time until close to the enemy.</Rimverse_OrderDesc_Approach>
+  <Rimverse_Order_Hold>Hold</Rimverse_Order_Hold>
+  <Rimverse_OrderDesc_Hold>Stays in the current band.</Rimverse_OrderDesc_Hold>
+  <Rimverse_Order_Flee>Flee</Rimverse_Order_Flee>
+  <Rimverse_OrderDesc_Flee>Pulls away. In far range the ship escapes after 20 seconds if it is faster than the enemy or has its warp drive ready, and is not held by a tractor beam.</Rimverse_OrderDesc_Flee>
+  <Rimverse_Order_Board>Board</Rimverse_Order_Board>
+  <Rimverse_OrderDesc_Board>Moves to boarding range, where drafted colonists can storm the enemy ship.</Rimverse_OrderDesc_Board>
+  <Rimverse_Order_KeepRange>Keep range</Rimverse_Order_KeepRange>
+  <Rimverse_OrderDesc_KeepRange>Seeks the band where the ship's weapons are strongest.</Rimverse_OrderDesc_KeepRange>
+  <Rimverse_EnemyTier_0>corvette</Rimverse_EnemyTier_0>
+  <Rimverse_EnemyTier_1>frigate</Rimverse_EnemyTier_1>
+  <Rimverse_EnemyTier_2>cruiser</Rimverse_EnemyTier_2>
+  <Rimverse_EnemyTier_3>warship</Rimverse_EnemyTier_3>
+</LanguageData>

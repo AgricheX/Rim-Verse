@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_ShipBasics.label>casco básico</Rimverse_ShipBasics.label>
+  <Rimverse_ShipBasics.description>Chapas de casco básicas, uma ponte pequena, propulsores químicos e os primeiros sistemas para manter uma nave viva em órbita.</Rimverse_ShipBasics.description>
+  <Rimverse_LifeSupport.label>suporte de vida</Rimverse_LifeSupport.label>
+  <Rimverse_LifeSupport.description>Geradores e tanques de ar que mantêm uma nave selada respirável.</Rimverse_LifeSupport.description>
+  <Rimverse_ThermalControl.label>controle térmico</Rimverse_ThermalControl.label>
+  <Rimverse_ThermalControl.description>Bancos térmicos e radiadores melhores para controlar o calor da nave.</Rimverse_ThermalControl.description>
+  <Rimverse_ModularStructure.label>estrutura modular</Rimverse_ModularStructure.label>
+  <Rimverse_ModularStructure.description>Módulos de estrutura que deixam uma ponte controlar um casco maior.</Rimverse_ModularStructure.description>
+  <Rimverse_Armor.label>blindagem de casco</Rimverse_Armor.label>
+  <Rimverse_Armor.description>Paredes de casco blindadas feitas de plasteel.</Rimverse_Armor.description>
+  <Rimverse_NavalCommand.label>comando naval</Rimverse_NavalCommand.label>
+  <Rimverse_NavalCommand.description>Uma ponte de comando que controla naves médias.</Rimverse_NavalCommand.description>
+  <Rimverse_BasicSuits.label>trajes de vácuo básicos</Rimverse_BasicSuits.label>
+  <Rimverse_BasicSuits.description>Trajes de vácuo de emergência e de trabalho e capacetes selados para sair do casco pressurizado.</Rimverse_BasicSuits.description>
+  <Rimverse_SpaceMining.label>mineração espacial</Rimverse_SpaceMining.label>
+  <Rimverse_SpaceMining.description>Trajes de mineração reforçados e técnicas para asteroides e luas sem ar.</Rimverse_SpaceMining.description>
+  <Rimverse_Sensors.label>sensores de longo alcance</Rimverse_Sensors.label>
+  <Rimverse_Sensors.description>Scanners de longo alcance que leem em detalhe os sistemas estelares próximos.</Rimverse_Sensors.description>
+  <Rimverse_AdvancedSensors.label>sensores avançados</Rimverse_AdvancedSensors.label>
+  <Rimverse_AdvancedSensors.description>Scanners avançados com leituras exatas até 50 anos-luz.</Rimverse_AdvancedSensors.description>
+  <Rimverse_WarpTheory.label>teoria da dobra</Rimverse_WarpTheory.label>
+  <Rimverse_WarpTheory.description>A teoria de dobrar o espaço, e como refinar matéria de dobra numa bancada de fabricação.</Rimverse_WarpTheory.description>
+  <Rimverse_SmallWarp.label>motor de dobra pequeno</Rimverse_SmallWarp.label>
+  <Rimverse_SmallWarp.description>Um motor de dobra compacto que leva naves leves a até 6 anos-luz.</Rimverse_SmallWarp.description>
+  <Rimverse_HeavyWarp.label>motor de dobra pesado</Rimverse_HeavyWarp.label>
+  <Rimverse_HeavyWarp.description>Um motor de dobra pesado que leva naves grandes a até 20 anos-luz.</Rimverse_HeavyWarp.description>
+  <Rimverse_CapitalShips.label>naves capitais</Rimverse_CapitalShips.label>
+  <Rimverse_CapitalShips.description>Uma ponte capital capaz de comandar os maiores cascos.</Rimverse_CapitalShips.description>
+  <Rimverse_KineticWeapons.label>armas cinéticas de nave</Rimverse_KineticWeapons.label>
+  <Rimverse_KineticWeapons.description>Canhões automáticos e canhões de casco montados no casco da nave, alimentados com aço.</Rimverse_KineticWeapons.description>
+  <Rimverse_PointDefense.label>defesa de ponto</Rimverse_PointDefense.label>
+  <Rimverse_PointDefense.description>Lasers rápidos que derrubam mísseis que se aproximam.</Rimverse_PointDefense.description>
+  <Rimverse_ShipMissiles.label>mísseis de nave</Rimverse_ShipMissiles.label>
+  <Rimverse_ShipMissiles.description>Lançadores de mísseis e mísseis guiados de nave feitos na mesa de usinagem.</Rimverse_ShipMissiles.description>
+  <Rimverse_Boarding.label>abordagem</Rimverse_Boarding.label>
+  <Rimverse_Boarding.description>Raios tratores que prendem naves inimigas e a doutrina para abordá-las.</Rimverse_Boarding.description>
+  <Rimverse_Shields.label>escudos de nave</Rimverse_Shields.label>
+  <Rimverse_Shields.description>Geradores de escudo que absorvem os tiros antes de chegarem ao casco.</Rimverse_Shields.description>
+  <Rimverse_ShipLasers.label>lasers de nave</Rimverse_ShipLasers.label>
+  <Rimverse_ShipLasers.description>Lanças laser que queimam cascos e causam o dobro de dano em escudos.</Rimverse_ShipLasers.description>
+  <Rimverse_IonWeapons.label>armas de íons</Rimverse_IonWeapons.label>
+  <Rimverse_IonWeapons.description>Canhões de íons que só afetam escudos e energia, para capturar naves inteiras.</Rimverse_IonWeapons.description>
+  <Rimverse_ShipPlasma.label>plasma de nave</Rimverse_ShipPlasma.label>
+  <Rimverse_ShipPlasma.description>Canhões de plasma que atingem uma área do casco inimigo com plasma superaquecido.</Rimverse_ShipPlasma.description>
+  <Rimverse_Railguns.label>canhões de ferrovia</Rimverse_Railguns.label>
+  <Rimverse_Railguns.description>Canhões magnéticos que lançam projéteis de plasteel a longa distância.</Rimverse_Railguns.description>
+  <Rimverse_ArtificialGravity.label>gravidade artificial</Rimverse_ArtificialGravity.label>
+  <Rimverse_ArtificialGravity.description>Placas de grávitons que dão à nave 1 g constante, acabando com o enjoo de gravidade zero e a perda óssea.</Rimverse_ArtificialGravity.description>
+  <Rimverse_ShipGalley.label>cozinha de bordo</Rimverse_ShipGalley.label>
+  <Rimverse_ShipGalley.description>Rações e pastas que duram bem a bordo, inclusive tubos feitos para comer em gravidade zero.</Rimverse_ShipGalley.description>
+  <Rimverse_ColonyAdministration.label>administração de colônias</Rimverse_ColonyAdministration.label>
+  <Rimverse_ColonyAdministration.description>Cartas de fundação, planos de suprimento e registros que permitem fundar e administrar colônias em outros mundos a partir da nave.</Rimverse_ColonyAdministration.description>
+  <Rimverse_GateUse.label>ativação de portais</Rimverse_GateUse.label>
+  <Rimverse_GateUse.description>Como despertar os portais antigos espalhados pela galáxia e apontá-los para os destinos ligados.</Rimverse_GateUse.description>
+  <Rimverse_WormholeStabilization.label>estabilização de buracos de minhoca</Rimverse_WormholeStabilization.label>
+  <Rimverse_WormholeStabilization.description>Projetores de campo que mantêm um buraco de minhoca errante aberto para sempre, virando uma rota fixa.</Rimverse_WormholeStabilization.description>
+  <Rimverse_GateConstruction.label>construção de portais</Rimverse_GateConstruction.label>
+  <Rimverse_GateConstruction.description>A fabricação de componentes de portal e o saber necessário para levar o Grande Portal além dos destinos conhecidos.</Rimverse_GateConstruction.description>
+  <Rimverse_ArchotechAscension.label>ascensão arcotech</Rimverse_ArchotechAscension.label>
+  <Rimverse_ArchotechAscension.description>O passo final: unir mentes a uma inteligência arcotech. Terminar este projeto encerra a história da sua gente, que ascende.</Rimverse_ArchotechAscension.description>
+</LanguageData>

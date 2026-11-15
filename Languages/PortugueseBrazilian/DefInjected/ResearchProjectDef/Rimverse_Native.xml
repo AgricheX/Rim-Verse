@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_AdvancedHydroponics.label>hidroponia avançada</Rimverse_AdvancedHydroponics.label>
+  <Rimverse_AdvancedHydroponics.description>Baias hidropônicas que plantam e cuidam das plantas sozinhas.</Rimverse_AdvancedHydroponics.description>
+  <Rimverse_ShipAutomation.label>automação de bordo</Rimverse_ShipAutomation.label>
+  <Rimverse_ShipAutomation.description>Baias que também colhem e mandam a colheita para o armazém, e cápsulas médicas automáticas.</Rimverse_ShipAutomation.description>
+  <Rimverse_ClosedBiosphere.label>biosfera fechada</Rimverse_ClosedBiosphere.label>
+  <Rimverse_ClosedBiosphere.description>Jardins selados que cultivam comida em gravidade zero e ajudam a fazer ar.</Rimverse_ClosedBiosphere.description>
+  <Rimverse_ShipStorage.label>armazenamento de bordo</Rimverse_ShipStorage.label>
+  <Rimverse_ShipStorage.description>Caixas de carga, armários e cofres compactos que guardam várias pilhas por célula.</Rimverse_ShipStorage.description>
+  <Rimverse_ShipArmory.label>arsenal de bordo</Rimverse_ShipArmory.label>
+  <Rimverse_ShipArmory.description>Suportes, armários de armas e o arsenal de defesa que arma a tripulação em abordagens.</Rimverse_ShipArmory.description>
+</LanguageData>

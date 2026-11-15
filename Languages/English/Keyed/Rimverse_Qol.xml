@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_QolCategory_Alerts>Alerts</Rimverse_QolCategory_Alerts>
+  <Rimverse_QolCategory_Work>Work and priorities</Rimverse_QolCategory_Work>
+  <Rimverse_QolCategory_Interface>Interface and information</Rimverse_QolCategory_Interface>
+  <Rimverse_QolCategory_Performance>Performance</Rimverse_QolCategory_Performance>
+  <Rimverse_QolCategory_Medicine>Medicine</Rimverse_QolCategory_Medicine>
+  <Rimverse_QolCategory_Camera>Camera</Rimverse_QolCategory_Camera>
+  <Rimverse_AlertTraderLeaving>Trader leaving</Rimverse_AlertTraderLeaving>
+  <Rimverse_AlertTraderLeavingDesc>These orbital traders are leaving soon:
+
+{0}</Rimverse_AlertTraderLeavingDesc>
+  <Rimverse_ModSource>Mod</Rimverse_ModSource>
+  <Rimverse_ModSourceDesc>The mod this thing comes from.</Rimverse_ModSourceDesc>
+  <Rimverse_ModSourceOfficial>{0} (official)</Rimverse_ModSourceOfficial>
+  <Rimverse_FpsTps>FPS {0} · TPS {1}</Rimverse_FpsTps>
+  <Rimverse_TabNotes>Notes</Rimverse_TabNotes>
+  <Rimverse_NotesFor>Notes about {0}</Rimverse_NotesFor>
+  <Rimverse_MedicalTitle>Health ({0} need care)</Rimverse_MedicalTitle>
+  <Rimverse_MedName>Name</Rimverse_MedName>
+  <Rimverse_MedHealth>Health</Rimverse_MedHealth>
+  <Rimverse_MedBleeding>Bleeding</Rimverse_MedBleeding>
+  <Rimverse_MedPain>Pain</Rimverse_MedPain>
+  <Rimverse_MedNeedsTend>To treat</Rimverse_MedNeedsTend>
+  <Rimverse_MedWorst>Worst condition</Rimverse_MedWorst>
+</LanguageData>

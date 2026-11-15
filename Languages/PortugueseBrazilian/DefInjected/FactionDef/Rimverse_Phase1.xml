@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_SpaceCiv.label>civilização estelar</Rimverse_SpaceCiv.label>
+  <Rimverse_SpaceCiv.description>Uma civilização espacial da galáxia do Rimverse, com governo, mundos e frotas próprios.</Rimverse_SpaceCiv.description>
+  <Rimverse_SpacePirates.label>saqueadores do vazio</Rimverse_SpacePirates.label>
+  <Rimverse_SpacePirates.description>Piratas que atacam as rotas estelares da galáxia do Rimverse.</Rimverse_SpacePirates.description>
+  <Rimverse_SpaceCiv.pawnSingular>cidadão</Rimverse_SpaceCiv.pawnSingular>
+  <Rimverse_SpaceCiv.pawnsPlural>cidadãos</Rimverse_SpaceCiv.pawnsPlural>
+  <Rimverse_SpaceCiv.leaderTitle>chefe de estado</Rimverse_SpaceCiv.leaderTitle>
+</LanguageData>

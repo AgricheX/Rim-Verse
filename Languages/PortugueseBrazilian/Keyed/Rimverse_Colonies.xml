@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CmdFoundColony>Fundar colônia</Rimverse_CmdFoundColony>
+  <Rimverse_CmdFoundColonyDesc>Deixa colonos neste corpo para fundar uma colônia que roda sozinha e aparece na aba Colônias.</Rimverse_CmdFoundColonyDesc>
+  <Rimverse_ColonyNeedResearch>Precisa da pesquisa {0}.</Rimverse_ColonyNeedResearch>
+  <Rimverse_ColonyNeedOrbit>A nave precisa estar parada na órbita de um corpo.</Rimverse_ColonyNeedOrbit>
+  <Rimverse_ColonyBadBody>Não dá para fundar colônia neste corpo.</Rimverse_ColonyBadBody>
+  <Rimverse_ColonyAlreadyThere>Já existe uma colônia sua neste corpo.</Rimverse_ColonyAlreadyThere>
+  <Rimverse_ColonyNeedScan>O corpo precisa de varredura exata.</Rimverse_ColonyNeedScan>
+  <Rimverse_ColonyNeedSteel>Precisa de {0} de aço no mapa.</Rimverse_ColonyNeedSteel>
+  <Rimverse_ColonyNeedMeals>Precisa de {0} refeições no mapa.</Rimverse_ColonyNeedMeals>
+  <Rimverse_ColonyNeedColonists>Precisa de pelo menos {0} colonos no mapa (um fica).</Rimverse_ColonyNeedColonists>
+  <Rimverse_FoundColonyTitle>Fundar colônia em {0}</Rimverse_FoundColonyTitle>
+  <Rimverse_FoundColonyInfo>Perigo do planeta: {0}. Custo: {1} de aço e {2} refeições. Escolha pelo menos {3} colonos para ficar. O de maior Social vira administrador.</Rimverse_FoundColonyInfo>
+  <Rimverse_SocialLevel>Social {0}</Rimverse_SocialLevel>
+  <Rimverse_FoundColonyConfirm>Fundar com {0} colonos</Rimverse_FoundColonyConfirm>
+  <Rimverse_LetterColonyFoundedLabel>Colônia fundada</Rimverse_LetterColonyFoundedLabel>
+  <Rimverse_LetterColonyFounded>{1} colonos ficaram em {0} para fundar uma colônia. Ela cresce, produz e paga renda sozinha. Veja tudo na aba Colônias.</Rimverse_LetterColonyFounded>
+  <Rimverse_LetterColonyWarnLabel>Colônia chamando atenção</Rimverse_LetterColonyWarnLabel>
+  <Rimverse_LetterColonyWarn>Piratas e rivais estão de olho em {0}. Se a atenção chegar a 600, ela será atacada. Uma base militar e um bom administrador ajudam a resistir.</Rimverse_LetterColonyWarn>
+  <Rimverse_LetterColonyHeldLabel>Ataque repelido</Rimverse_LetterColonyHeldLabel>
+  <Rimverse_LetterColonyHeld>{0} repeliu um ataque.</Rimverse_LetterColonyHeld>
+  <Rimverse_LetterColonyRaidedLabel>Colônia saqueada</Rimverse_LetterColonyRaidedLabel>
+  <Rimverse_LetterColonyRaided>{0} foi saqueada. A população caiu, o estoque foi levado e a indústria perdida foi: {1}.</Rimverse_LetterColonyRaided>
+  <Rimverse_ColoniesTitle>Colônias: {0} de {1} · Tesouro: {2} prata</Rimverse_ColoniesTitle>
+  <Rimverse_ColoniesNone>Você ainda não tem colônias. Leve colonos até a órbita de um corpo escaneado e use Fundar colônia na ponte.</Rimverse_ColoniesNone>
+  <Rimverse_ColoniesSelect>Escolha uma colônia.</Rimverse_ColoniesSelect>
+  <Rimverse_ColonyPopShort>pop. {0}</Rimverse_ColonyPopShort>
+  <Rimverse_ColonyLine1>Sistema {0} · População {1} de {2} · Perigo {3}</Rimverse_ColonyLine1>
+  <Rimverse_ColonyLine2>Estabilidade {0} · Renda no último quadrum {1} · Atenção {2} de {3}</Rimverse_ColonyLine2>
+  <Rimverse_ColonyAdmin>Administrador: {0} · Colonos: {1}</Rimverse_ColonyAdmin>
+  <Rimverse_ColonyNextStep>Próximo quadrum em {0} dias</Rimverse_ColonyNextStep>
+  <Rimverse_ColonyIndustries>Indústrias:</Rimverse_ColonyIndustries>
+  <Rimverse_IndustryReady>funcionando</Rimverse_IndustryReady>
+  <Rimverse_IndustryBuilding>pronta em {0} dias</Rimverse_IndustryBuilding>
+  <Rimverse_BuildIndustry>Construir {0}: {1} prata, {2} dias, manutenção {3}</Rimverse_BuildIndustry>
+  <Rimverse_ColonyStock>Estoque: {0}</Rimverse_ColonyStock>
+  <Rimverse_ColonyNeedPresence>Leve uma nave ou colonos a este sistema para recolher o estoque, depositar ou sacar dinheiro.</Rimverse_ColonyNeedPresence>
+  <Rimverse_ColonyCollect>Recolher o estoque</Rimverse_ColonyCollect>
+  <Rimverse_ColonyDeposit>Depositar todo o dinheiro do mapa ({0})</Rimverse_ColonyDeposit>
+  <Rimverse_ColonyWithdraw>Sacar {0} prata em marcos estelares</Rimverse_ColonyWithdraw>
+  <Rimverse_ColonyRecall>Abandonar e trazer os colonos</Rimverse_ColonyRecall>
+  <Rimverse_ColonyRecallConfirm>Abandonar {0}? Os colonos e o estoque vêm para cá, e as indústrias se perdem.</Rimverse_ColonyRecallConfirm>
+  <Rimverse_Industry_Agriculture>agricultura</Rimverse_Industry_Agriculture>
+  <Rimverse_IndustryDesc_Agriculture>Comida para 20 de população. Sem comida a colônia encolhe.</Rimverse_IndustryDesc_Agriculture>
+  <Rimverse_Industry_Mining>mineração</Rimverse_Industry_Mining>
+  <Rimverse_IndustryDesc_Mining>40 de aço por quadrum × classe do corpo ÷ 20.</Rimverse_IndustryDesc_Mining>
+  <Rimverse_Industry_GasHarvest>coleta de gás</Rimverse_Industry_GasHarvest>
+  <Rimverse_IndustryDesc_GasHarvest>60 de combustível químico por quadrum. Precisa de um gigante gasoso no sistema.</Rimverse_IndustryDesc_GasHarvest>
+  <Rimverse_Industry_Refinery>refinaria</Rimverse_Industry_Refinery>
+  <Rimverse_IndustryDesc_Refinery>40 de combustível químico e 10 de matéria de dobra por quadrum.</Rimverse_IndustryDesc_Refinery>
+  <Rimverse_Industry_TradePort>porto comercial</Rimverse_Industry_TradePort>
+  <Rimverse_IndustryDesc_TradePort>+20% de renda.</Rimverse_IndustryDesc_TradePort>
+  <Rimverse_Industry_Factory>fábrica</Rimverse_Industry_Factory>
+  <Rimverse_IndustryDesc_Factory>10 componentes e 2 componentes avançados por quadrum.</Rimverse_IndustryDesc_Factory>
+  <Rimverse_Industry_MilitaryBase>base militar</Rimverse_Industry_MilitaryBase>
+  <Rimverse_IndustryDesc_MilitaryBase>Defesa contra ataques à colônia.</Rimverse_IndustryDesc_MilitaryBase>
+  <Rimverse_Industry_Shipyard>estaleiro</Rimverse_Industry_Shipyard>
+  <Rimverse_IndustryDesc_Shipyard>Base para construir e consertar naves (as funções do estaleiro chegam numa fase futura).</Rimverse_IndustryDesc_Shipyard>
+</LanguageData>

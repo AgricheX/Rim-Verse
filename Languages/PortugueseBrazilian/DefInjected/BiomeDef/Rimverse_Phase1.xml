@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Orbit.label>órbita</Rimverse_Orbit.label>
+  <Rimverse_Orbit.description>Espaço vazio ao redor de um mundo. Não há ar, chão nem abrigo além do que você traz.</Rimverse_Orbit.description>
+  <Rimverse_Airless.label>mundo sem ar</Rimverse_Airless.label>
+  <Rimverse_Airless.description>Uma superfície morta e sem ar: um asteroide, um planeta-anão ou uma lua pequena.</Rimverse_Airless.description>
+  <Rimverse_HostileWorld.label>mundo hostil</Rimverse_HostileWorld.label>
+  <Rimverse_HostileWorld.description>Uma superfície morta sob uma atmosfera que ninguém consegue respirar: rarefeita demais, tóxica ou densa a ponto de esmagar.</Rimverse_HostileWorld.description>
+</LanguageData>

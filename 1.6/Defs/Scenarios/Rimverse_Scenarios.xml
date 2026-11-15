@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ScenPartDef>
+    <defName>Rimverse_Start</defName>
+    <label>Rimverse start</label>
+    <category>Fixed</category>
+    <scenPartClass>Rimverse.ScenPart_RimverseStart</scenPartClass>
+    <summaryPriority>450</summaryPriority>
+    <maxUses>1</maxUses>
+  </ScenPartDef>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>Rimverse_Scen_Shipwreck</defName>
+    <label>Shipwreck</label>
+    <description>Your colony ship broke apart in high orbit. Three of you reached the escape pods and came down on this rimworld, next to what is left of the ship. The bridge, an engine and the life support are lying in the dirt. Fix them, build a hull around them and get back to the stars.</description>
+    <scenario>
+      <summary>Three survivors next to the wreck of their ship. Leave the planet.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>0.5</chance>
+          <hediff>CryptosleepSickness</hediff>
+          <hideOffMap>true</hideOffMap>
+          <severityRange>1~1</severityRange>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>600</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>40</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>25</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_BoltActionRifle</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_Revolver</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>Plasteel</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_SuitEmergency</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_HelmetVacuum</thingDef>
+        </li>
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <count>1</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>500</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>250</count>
+        </li>
+        <li Class="Rimverse.ScenPart_RimverseStart">
+          <def>Rimverse_Start</def>
+          <location>Surface</location>
+          <layout>Wreck</layout>
+          <research>
+            <li>Rimverse_ShipBasics</li>
+          </research>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>Rimverse_GameStart_Shipwreck</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>Rimverse_Scen_Drifting</defName>
+    <label>Drifting ship</label>
+    <description>A small ship drifts at the edge of the system with almost no fuel and stale air. There is no warp drive and no planet close by. Five of you will have to keep the ship alive, find fuel and reach somewhere safe.</description>
+    <scenario>
+      <summary>Five crew on a small ship with little air and fuel. Hard.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>5</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_ShipRation</thingDef>
+          <count>60</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_SuitEmergency</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_HelmetVacuum</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_Autopistol</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="Rimverse.ScenPart_RimverseStart">
+          <def>Rimverse_Start</def>
+          <location>OuterSystem</location>
+          <layout>Drifter</layout>
+          <research>
+            <li>Rimverse_ShipBasics</li>
+            <li>Rimverse_LifeSupport</li>
+          </research>
+          <fuel>0.15</fuel>
+          <air>0.35</air>
+          <hull>0.7</hull>
+          <shipNameKey>Rimverse_ShipName_Drifter</shipNameKey>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>Rimverse_GameStart_Drifting</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>Rimverse_Scen_MiningStation</defName>
+    <label>Mining station</label>
+    <description>A corporation hired you to run a small mining station in the asteroid belt. The station has solar panels, life support and a cargo bay, but no real engines. Mine, trade and grow, and one day buy your freedom.</description>
+    <scenario>
+      <summary>Four miners on a station in the asteroid belt, with a corporate contract.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>4</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>1500</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_ShipRation</thingDef>
+          <count>60</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>400</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_SuitMining</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_HelmetVacuum</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_BoltActionRifle</thingDef>
+        </li>
+        <li Class="Rimverse.ScenPart_RimverseStart">
+          <def>Rimverse_Start</def>
+          <location>Belt</location>
+          <layout>Station</layout>
+          <research>
+            <li>Rimverse_ShipBasics</li>
+            <li>Rimverse_LifeSupport</li>
+            <li>Rimverse_SpaceMining</li>
+            <li>Rimverse_BasicSuits</li>
+            <li>Rimverse_Sensors</li>
+          </research>
+          <civs>
+            <li>
+              <lore>Urbworld</lore>
+              <opinion>30</opinion>
+            </li>
+          </civs>
+          <fuel>0.6</fuel>
+          <shipNameKey>Rimverse_ShipName_Station</shipNameKey>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>Rimverse_GameStart_MiningStation</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>Rimverse_Scen_ImperialRefugees</defName>
+    <label>Imperial refugees</label>
+    <description>You fled the fall of an imperial world on an old transport, carrying a lost noble name and whatever you could grab. The Empire wants you back, the ship is damaged and the fuel is low. Find allies, make a new home and decide what to do with your title.</description>
+    <scenario>
+      <summary>Six refugees on a damaged ship, hunted by the Empire. Hard.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>6</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>2500</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gold</thingDef>
+          <count>80</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_ShipRation</thingDef>
+          <count>80</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>10</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_Autopistol</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_LongSword</thingDef>
+          <stuff>Plasteel</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_SuitEmergency</thingDef>
+          <count>3</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_HelmetVacuum</thingDef>
+          <count>3</count>
+        </li>
+        <li Class="Rimverse.ScenPart_RimverseStart">
+          <def>Rimverse_Start</def>
+          <location>OuterSystem</location>
+          <layout>Refugee</layout>
+          <research>
+            <li>Rimverse_ShipBasics</li>
+            <li>Rimverse_LifeSupport</li>
+            <li>Rimverse_KineticWeapons</li>
+            <li>Rimverse_Sensors</li>
+          </research>
+          <civs>
+            <li>
+              <lore>Empire</lore>
+              <opinion>-60</opinion>
+            </li>
+          </civs>
+          <fuel>0.3</fuel>
+          <air>0.6</air>
+          <hull>0.6</hull>
+          <shipNameKey>Rimverse_ShipName_Refugee</shipNameKey>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>Rimverse_GameStart_ImperialRefugees</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>Rimverse_Scen_GlitterColony</defName>
+    <label>Glitterworld colony</label>
+    <description>Your small colony was founded with the backing of a rich glitterworld federation. You start with good tools, advanced research and a friendly neighbour among the stars. The challenge is to grow from a protected colony into a power of your own.</description>
+    <scenario>
+      <summary>Three colonists with rich supplies, inside an advanced civilization. Easy.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>4000</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>60</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineUltratech</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentSpacer</thingDef>
+          <count>10</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Plasteel</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_ChargeRifle</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Apparel_ArmorRecon</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Apparel_ArmorHelmetRecon</thingDef>
+        </li>
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <count>1</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>700</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="Rimverse.ScenPart_RimverseStart">
+          <def>Rimverse_Start</def>
+          <location>Surface</location>
+          <layout>None</layout>
+          <research>
+            <li>Rimverse_ShipBasics</li>
+            <li>Rimverse_LifeSupport</li>
+            <li>Rimverse_Sensors</li>
+            <li>Rimverse_AdvancedSensors</li>
+            <li>Rimverse_BasicSuits</li>
+            <li>Rimverse_ModularStructure</li>
+            <li>MicroelectronicsBasics</li>
+            <li>Electricity</li>
+            <li>Batteries</li>
+          </research>
+          <civs>
+            <li>
+              <lore>Glitterworld</lore>
+              <opinion>60</opinion>
+            </li>
+          </civs>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>Rimverse_GameStart_GlitterColony</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>Rimverse_Scen_StarTribe</defName>
+    <label>Tribe of the stars</label>
+    <description>Your tribe lives on an isolated world and has never left it. At night you see lights crossing the sky: ships of peoples you have never met. The whole road lies ahead, from stone tools to the stars.</description>
+    <scenario>
+      <summary>Five tribespeople who see ships in the sky. Very long.</summary>
+      <playerFaction>
+        <factionDef>PlayerTribe</factionDef>
+      </playerFaction>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>5</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>400</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineHerbal</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Club</thingDef>
+          <stuff>WoodLog</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>Jade</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Bow_Short</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pila</thingDef>
+        </li>
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <count>3</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>500</count>
+        </li>
+        <li Class="Rimverse.ScenPart_RimverseStart">
+          <def>Rimverse_Start</def>
+          <location>Surface</location>
+          <layout>None</layout>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>Rimverse_GameStart_StarTribe</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>Rimverse_Scen_CryoAwakening</defName>
+    <label>Cryosleep awakening</label>
+    <description>Your sleeper ship was meant to wake you in a few decades. Something went wrong, and the caskets opened after almost a century in orbit. The civilizations you knew have changed, some are gone and new ones rule the nearby stars.</description>
+    <scenario>
+      <summary>Four sleepers wake up after decades. The galaxy has changed.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>4</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>1.0</chance>
+          <hediff>CryptosleepSickness</hediff>
+          <hideOffMap>true</hideOffMap>
+          <severityRange>1~1</severityRange>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_ShipRation</thingDef>
+          <count>50</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>800</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_SuitEmergency</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_HelmetVacuum</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_BoltActionRifle</thingDef>
+        </li>
+        <li Class="Rimverse.ScenPart_RimverseStart">
+          <def>Rimverse_Start</def>
+          <location>Orbit</location>
+          <layout>CryoShip</layout>
+          <research>
+            <li>Rimverse_ShipBasics</li>
+            <li>Rimverse_LifeSupport</li>
+            <li>Rimverse_Sensors</li>
+          </research>
+          <fuel>0.4</fuel>
+          <air>0.8</air>
+          <hull>0.8</hull>
+          <yearsAsleep>80</yearsAsleep>
+          <shipNameKey>Rimverse_ShipName_Cryo</shipNameKey>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>Rimverse_GameStart_CryoAwakening</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>Rimverse_Scen_RichExplorer</defName>
+    <label>Rich explorer</label>
+    <description>You are wealthy explorers aboard a large self-sufficient ship. Hydroponics plant and harvest on their own, an automatic galley cooks, maintenance drones repair the hull and a medical pod treats wounds. A warp drive and advanced sensors let you go anywhere. Only the universe is left to discover.</description>
+    <scenario>
+      <summary>Two rich explorers on a fully automated ship. Very easy.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>2</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>20000</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_WarpMatter</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_ShipRation</thingDef>
+          <count>100</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealFine</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineUltratech</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentSpacer</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>40</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Plasteel</thingDef>
+          <count>400</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>600</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_SuitWork</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_HelmetVacuum</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_ChargeRifle</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="Rimverse.ScenPart_RimverseStart">
+          <def>Rimverse_Start</def>
+          <location>Orbit</location>
+          <layout>Explorer</layout>
+          <research>
+            <li>Rimverse_ShipBasics</li>
+            <li>Rimverse_LifeSupport</li>
+            <li>Rimverse_ThermalControl</li>
+            <li>Rimverse_ModularStructure</li>
+            <li>Rimverse_Armor</li>
+            <li>Rimverse_BasicSuits</li>
+            <li>Rimverse_Sensors</li>
+            <li>Rimverse_AdvancedSensors</li>
+            <li>Rimverse_WarpTheory</li>
+            <li>Rimverse_SmallWarp</li>
+            <li>Rimverse_Shields</li>
+            <li>Rimverse_AdvancedHydroponics</li>
+            <li>Rimverse_ShipAutomation</li>
+            <li>Rimverse_ClosedBiosphere</li>
+            <li>Rimverse_ShipStorage</li>
+            <li>Rimverse_ShipArmory</li>
+          </research>
+          <civs>
+            <li>
+              <lore>Glitterworld</lore>
+              <opinion>50</opinion>
+            </li>
+            <li>
+              <lore>Neighbor</lore>
+              <opinion>40</opinion>
+            </li>
+            <li>
+              <lore>Urbworld</lore>
+              <opinion>30</opinion>
+            </li>
+          </civs>
+          <shipNameKey>Rimverse_ShipName_Explorer</shipNameKey>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>Rimverse_GameStart_RichExplorer</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

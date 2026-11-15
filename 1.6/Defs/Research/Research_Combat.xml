@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_KineticWeapons</defName>
+    <label>ship kinetic weapons</label>
+    <description>Autocannons and hull cannons mounted on starship hulls, fed with steel.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_PointDefense</defName>
+    <label>point defense</label>
+    <description>Fast point lasers that shoot down incoming missiles.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_KineticWeapons</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ShipMissiles</defName>
+    <label>ship missiles</label>
+    <description>Missile launchers and guided ship missiles built at a machining table.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_KineticWeapons</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>7</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_Boarding</defName>
+    <label>boarding</label>
+    <description>Tractor beams that hold enemy ships in place and doctrine for boarding them.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_KineticWeapons</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>8</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_Shields</defName>
+    <label>ship shields</label>
+    <description>Shield generators that absorb incoming fire before it reaches the hull.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_ThermalControl</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>7</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ShipLasers</defName>
+    <label>ship lasers</label>
+    <description>Laser lances that burn through hulls and deal double damage to shields.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_KineticWeapons</li>
+      <li>Rimverse_ThermalControl</li>
+    </prerequisites>
+    <researchViewX>4</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_IonWeapons</defName>
+    <label>ion weapons</label>
+    <description>Ion cannons that only hit shields and energy, for capturing ships intact.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_Shields</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>9</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ShipPlasma</defName>
+    <label>ship plasma</label>
+    <description>Plasma cannons that hit an area of the enemy hull with superheated plasma.</description>
+    <baseCost>7000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_ShipLasers</li>
+    </prerequisites>
+    <researchViewX>5</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_Railguns</defName>
+    <label>railguns</label>
+    <description>Magnetic railguns that throw plasteel slugs at long range.</description>
+    <baseCost>8000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_KineticWeapons</li>
+      <li>Rimverse_Armor</li>
+    </prerequisites>
+    <researchViewX>4</researchViewX>
+    <researchViewY>7</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

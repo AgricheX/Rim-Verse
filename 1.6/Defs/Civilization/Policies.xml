@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_TribalBand</defName>
+    <label>tribal band</label>
+    <description>A small band led by its most respected members.</description>
+    <group>Government</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>3</maxStage>
+    <succession>Appointed</succession>
+    <profile>Cautious</profile>
+    <growth>5</growth>
+    <production>-5</production>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Chiefdom</defName>
+    <label>chiefdom</label>
+    <description>A chief rules and passes power to a chosen heir.</description>
+    <group>Government</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>5</maxStage>
+    <succession>Hereditary</succession>
+    <profile>Aggressive</profile>
+    <military>5</military>
+    <stability>-2</stability>
+    <favoredBy>
+      <li>Military</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_TribalCouncil</defName>
+    <label>tribal council</label>
+    <description>Elders decide together.</description>
+    <group>Government</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>5</maxStage>
+    <succession>Elective</succession>
+    <elections>true</elections>
+    <profile>Cautious</profile>
+    <stability>5</stability>
+    <military>-3</military>
+    <favoredBy>
+      <li>Clergy</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Military</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Monarchy</defName>
+    <label>monarchy</label>
+    <description>A crowned ruler and a royal line.</description>
+    <group>Government</group>
+    <minTech>Medieval</minTech>
+    <minStage>3</minStage>
+    <maxStage>9</maxStage>
+    <succession>Hereditary</succession>
+    <profile>Aggressive</profile>
+    <stability>5</stability>
+    <culture>3</culture>
+    <favoredBy>
+      <li>Nobility</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Theocracy</defName>
+    <label>theocracy</label>
+    <description>Priests rule in the name of the divine.</description>
+    <group>Government</group>
+    <minTech>Medieval</minTech>
+    <minStage>3</minStage>
+    <maxStage>10</maxStage>
+    <succession>Appointed</succession>
+    <profile>Cautious</profile>
+    <stability>8</stability>
+    <research>-8</research>
+    <favoredBy>
+      <li>Clergy</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Scientists</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Republic</defName>
+    <label>republic</label>
+    <description>Citizens elect magistrates.</description>
+    <group>Government</group>
+    <minTech>Medieval</minTech>
+    <minStage>3</minStage>
+    <maxStage>10</maxStage>
+    <succession>Elective</succession>
+    <elections>true</elections>
+    <profile>Mercantile</profile>
+    <trade>5</trade>
+    <culture>5</culture>
+    <stability>-2</stability>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Nobility</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Democracy</defName>
+    <label>democracy</label>
+    <description>All citizens vote.</description>
+    <group>Government</group>
+    <minTech>Medieval</minTech>
+    <minStage>3</minStage>
+    <maxStage>12</maxStage>
+    <succession>Elective</succession>
+    <elections>true</elections>
+    <profile>Cautious</profile>
+    <culture>8</culture>
+    <growth>3</growth>
+    <military>-5</military>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Military</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_FeudalMonarchy</defName>
+    <label>feudal monarchy</label>
+    <description>Lords hold land in exchange for loyalty to the crown.</description>
+    <group>Government</group>
+    <minTech>Medieval</minTech>
+    <minStage>4</minStage>
+    <maxStage>12</maxStage>
+    <succession>Hereditary</succession>
+    <profile>Aggressive</profile>
+    <military>8</military>
+    <loyalty>-8</loyalty>
+    <favoredBy>
+      <li>Nobility</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_ElectiveMonarchy</defName>
+    <label>elective monarchy</label>
+    <description>The nobles elect the next monarch.</description>
+    <group>Government</group>
+    <minTech>Medieval</minTech>
+    <minStage>4</minStage>
+    <maxStage>10</maxStage>
+    <succession>Elective</succession>
+    <elections>true</elections>
+    <profile>Cautious</profile>
+    <stability>3</stability>
+    <loyalty>3</loyalty>
+    <favoredBy>
+      <li>Nobility</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_AbsoluteMonarchy</defName>
+    <label>absolute monarchy</label>
+    <description>The ruler's word is law.</description>
+    <group>Government</group>
+    <minTech>Medieval</minTech>
+    <minStage>4</minStage>
+    <maxStage>11</maxStage>
+    <succession>Hereditary</succession>
+    <profile>Warmonger</profile>
+    <production>5</production>
+    <military>5</military>
+    <culture>-6</culture>
+    <favoredBy>
+      <li>Military</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Merchants</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_MerchantRepublic</defName>
+    <label>merchant republic</label>
+    <description>Trading houses run the state.</description>
+    <group>Government</group>
+    <minTech>Medieval</minTech>
+    <minStage>4</minStage>
+    <maxStage>11</maxStage>
+    <succession>Elective</succession>
+    <elections>true</elections>
+    <profile>Mercantile</profile>
+    <trade>15</trade>
+    <military>-5</military>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Nobility</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_ConstitutionalMonarchy</defName>
+    <label>constitutional monarchy</label>
+    <description>A monarch reigns but a parliament governs.</description>
+    <group>Government</group>
+    <minTech>Industrial</minTech>
+    <minStage>6</minStage>
+    <maxStage>12</maxStage>
+    <succession>Elective</succession>
+    <elections>true</elections>
+    <profile>Cautious</profile>
+    <stability>6</stability>
+    <culture>4</culture>
+    <favoredBy>
+      <li>Nobility</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_PresidentialRepublic</defName>
+    <label>presidential republic</label>
+    <description>An elected president leads the government.</description>
+    <group>Government</group>
+    <minTech>Industrial</minTech>
+    <minStage>6</minStage>
+    <maxStage>12</maxStage>
+    <succession>Elective</succession>
+    <elections>true</elections>
+    <profile>Cautious</profile>
+    <production>4</production>
+    <trade>4</trade>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_ParliamentaryRepublic</defName>
+    <label>parliamentary republic</label>
+    <description>The parliament chooses who governs.</description>
+    <group>Government</group>
+    <minTech>Industrial</minTech>
+    <minStage>6</minStage>
+    <maxStage>12</maxStage>
+    <succession>Elective</succession>
+    <elections>true</elections>
+    <profile>Mercantile</profile>
+    <culture>6</culture>
+    <stability>-2</stability>
+    <trade>4</trade>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_OnePartyState</defName>
+    <label>one-party state</label>
+    <description>A single party controls everything.</description>
+    <group>Government</group>
+    <minTech>Industrial</minTech>
+    <minStage>6</minStage>
+    <maxStage>12</maxStage>
+    <succession>Appointed</succession>
+    <profile>Expansionist</profile>
+    <production>8</production>
+    <culture>-8</culture>
+    <loyalty>5</loyalty>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Merchants</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_MilitaryJunta</defName>
+    <label>military junta</label>
+    <description>Generals rule by force.</description>
+    <group>Government</group>
+    <minTech>Industrial</minTech>
+    <minStage>5</minStage>
+    <maxStage>12</maxStage>
+    <succession>Appointed</succession>
+    <profile>Warmonger</profile>
+    <military>15</military>
+    <stability>-8</stability>
+    <trade>-5</trade>
+    <favoredBy>
+      <li>Military</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Technocracy</defName>
+    <label>technocracy</label>
+    <description>Experts and scientists hold power.</description>
+    <group>Government</group>
+    <minTech>Industrial</minTech>
+    <minStage>6</minStage>
+    <maxStage>13</maxStage>
+    <succession>Appointed</succession>
+    <profile>Cautious</profile>
+    <research>15</research>
+    <culture>-3</culture>
+    <favoredBy>
+      <li>Scientists</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Clergy</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Corporatocracy</defName>
+    <label>corporatocracy</label>
+    <description>Corporations own the state.</description>
+    <group>Government</group>
+    <minTech>Industrial</minTech>
+    <minStage>6</minStage>
+    <maxStage>13</maxStage>
+    <succession>Appointed</succession>
+    <profile>Mercantile</profile>
+    <trade>12</trade>
+    <production>5</production>
+    <stability>-6</stability>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_PlanetaryFederation</defName>
+    <label>planetary federation</label>
+    <description>Worlds join as equals under one council.</description>
+    <group>Government</group>
+    <minTech>Spacer</minTech>
+    <minStage>8</minStage>
+    <maxStage>13</maxStage>
+    <succession>Elective</succession>
+    <elections>true</elections>
+    <profile>Cautious</profile>
+    <stability>6</stability>
+    <loyalty>8</loyalty>
+    <trade>4</trade>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_AITechnocracy</defName>
+    <label>AI technocracy</label>
+    <description>Artificial minds plan the state.</description>
+    <group>Government</group>
+    <minTech>Spacer</minTech>
+    <minStage>9</minStage>
+    <maxStage>14</maxStage>
+    <succession>Appointed</succession>
+    <profile>Expansionist</profile>
+    <research>20</research>
+    <production>10</production>
+    <culture>-10</culture>
+    <favoredBy>
+      <li>Machines</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Clergy</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_StellarEmpire</defName>
+    <label>stellar empire</label>
+    <description>An emperor rules many stars through noble houses.</description>
+    <group>Government</group>
+    <minTech>Spacer</minTech>
+    <minStage>10</minStage>
+    <maxStage>14</maxStage>
+    <succession>Hereditary</succession>
+    <profile>Expansionist</profile>
+    <military>10</military>
+    <stability>5</stability>
+    <loyalty>-5</loyalty>
+    <favoredBy>
+      <li>Nobility</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_InterstellarRepublic</defName>
+    <label>interstellar republic</label>
+    <description>Star systems elect a common senate.</description>
+    <group>Government</group>
+    <minTech>Spacer</minTech>
+    <minStage>10</minStage>
+    <maxStage>14</maxStage>
+    <succession>Elective</succession>
+    <elections>true</elections>
+    <profile>Mercantile</profile>
+    <trade>10</trade>
+    <culture>6</culture>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Military</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_HiveMind</defName>
+    <label>hive mind</label>
+    <description>One mind in many bodies.</description>
+    <group>Government</group>
+    <minTech>Spacer</minTech>
+    <minStage>9</minStage>
+    <maxStage>14</maxStage>
+    <succession>None</succession>
+    <profile>Expansionist</profile>
+    <production>20</production>
+    <stability>20</stability>
+    <loyalty>20</loyalty>
+    <culture>-14</culture>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_DistributedConsciousness</defName>
+    <label>distributed consciousness</label>
+    <description>Linked minds share every decision.</description>
+    <group>Government</group>
+    <minTech>Ultra</minTech>
+    <minStage>10</minStage>
+    <maxStage>14</maxStage>
+    <succession>None</succession>
+    <profile>Cautious</profile>
+    <research>15</research>
+    <stability>10</stability>
+    <culture>-5</culture>
+    <favoredBy>
+      <li>Scientists</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CosmicTheocracy</defName>
+    <label>cosmic theocracy</label>
+    <description>A church whose faith spans the stars.</description>
+    <group>Government</group>
+    <minTech>Spacer</minTech>
+    <minStage>9</minStage>
+    <maxStage>14</maxStage>
+    <succession>Appointed</succession>
+    <profile>Aggressive</profile>
+    <stability>12</stability>
+    <research>-10</research>
+    <favoredBy>
+      <li>Clergy</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Scientists</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_GalacticCorporation</defName>
+    <label>galactic corporation</label>
+    <description>A company that became a state.</description>
+    <group>Government</group>
+    <minTech>Spacer</minTech>
+    <minStage>10</minStage>
+    <maxStage>14</maxStage>
+    <succession>Appointed</succession>
+    <profile>Mercantile</profile>
+    <trade>20</trade>
+    <production>8</production>
+    <stability>-8</stability>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_WebAssembly</defName>
+    <label>assembly of the web</label>
+    <description>Delegates of the cosmic filaments meet in one assembly.</description>
+    <group>Government</group>
+    <minTech>Ultra</minTech>
+    <minStage>13</minStage>
+    <maxStage>14</maxStage>
+    <succession>Elective</succession>
+    <elections>true</elections>
+    <profile>Cautious</profile>
+    <culture>15</culture>
+    <stability>10</stability>
+    <trade>10</trade>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_OmegaConclave</defName>
+    <label>omega conclave</label>
+    <description>Ancient minds guard the end of time.</description>
+    <group>Government</group>
+    <minTech>Archotech</minTech>
+    <minStage>13</minStage>
+    <maxStage>14</maxStage>
+    <succession>Appointed</succession>
+    <profile>Cautious</profile>
+    <research>25</research>
+    <stability>15</stability>
+    <favoredBy>
+      <li>Machines</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Traditionalism</defName>
+    <label>traditionalism</label>
+    <group>Ideology</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <stability>6</stability>
+    <research>-4</research>
+    <favoredBy>
+      <li>Clergy</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Scientists</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_ReligiousZeal</defName>
+    <label>religious zeal</label>
+    <group>Ideology</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Aggressive</profile>
+    <stability>5</stability>
+    <military>4</military>
+    <research>-6</research>
+    <favoredBy>
+      <li>Clergy</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Scientists</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Legalism</defName>
+    <label>legalism</label>
+    <group>Ideology</group>
+    <minTech>Medieval</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <stability>6</stability>
+    <loyalty>4</loyalty>
+    <culture>-3</culture>
+    <favoredBy>
+      <li>Nobility</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Militarism</defName>
+    <label>militarism</label>
+    <group>Ideology</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Warmonger</profile>
+    <military>12</military>
+    <trade>-5</trade>
+    <favoredBy>
+      <li>Military</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Merchants</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Humanism</defName>
+    <label>humanism</label>
+    <group>Ideology</group>
+    <minTech>Medieval</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <culture>8</culture>
+    <growth>3</growth>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Military</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Liberalism</defName>
+    <label>liberalism</label>
+    <group>Ideology</group>
+    <minTech>Medieval</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Mercantile</profile>
+    <trade>8</trade>
+    <culture>4</culture>
+    <stability>-3</stability>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Nobility</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Conservatism</defName>
+    <label>conservatism</label>
+    <group>Ideology</group>
+    <minTech>Medieval</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <stability>6</stability>
+    <growth>-2</growth>
+    <favoredBy>
+      <li>Nobility</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Nationalism</defName>
+    <label>nationalism</label>
+    <group>Ideology</group>
+    <minTech>Industrial</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Aggressive</profile>
+    <loyalty>8</loyalty>
+    <military>4</military>
+    <favoredBy>
+      <li>Military</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Socialism</defName>
+    <label>socialism</label>
+    <group>Ideology</group>
+    <minTech>Industrial</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <growth>4</growth>
+    <stability>3</stability>
+    <trade>-4</trade>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Merchants</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Communism</defName>
+    <label>communism</label>
+    <group>Ideology</group>
+    <minTech>Industrial</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Expansionist</profile>
+    <production>8</production>
+    <trade>-8</trade>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Merchants</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Anarchism</defName>
+    <label>anarchism</label>
+    <group>Ideology</group>
+    <minTech>Industrial</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <culture>6</culture>
+    <stability>-10</stability>
+    <production>-3</production>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Nobility</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Authoritarianism</defName>
+    <label>authoritarianism</label>
+    <group>Ideology</group>
+    <minTech>Medieval</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Aggressive</profile>
+    <loyalty>6</loyalty>
+    <production>4</production>
+    <culture>-8</culture>
+    <favoredBy>
+      <li>Military</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Environmentalism</defName>
+    <label>environmentalism</label>
+    <group>Ideology</group>
+    <minTech>Industrial</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <growth>4</growth>
+    <production>-5</production>
+    <stability>3</stability>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Merchants</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_TechProgressivism</defName>
+    <label>techno-progressivism</label>
+    <group>Ideology</group>
+    <minTech>Industrial</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Expansionist</profile>
+    <research>12</research>
+    <stability>-3</stability>
+    <favoredBy>
+      <li>Scientists</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Clergy</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Cosmism</defName>
+    <label>cosmism</label>
+    <group>Ideology</group>
+    <minTech>Spacer</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Expansionist</profile>
+    <growth>6</growth>
+    <research>6</research>
+    <favoredBy>
+      <li>Scientists</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Transhumanism</defName>
+    <label>transhumanism</label>
+    <group>Ideology</group>
+    <minTech>Spacer</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Expansionist</profile>
+    <research>10</research>
+    <production>5</production>
+    <culture>-4</culture>
+    <favoredBy>
+      <li>Scientists</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Clergy</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_XenoUnity</defName>
+    <label>xeno-unity</label>
+    <group>Ideology</group>
+    <minTech>Spacer</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Mercantile</profile>
+    <trade>8</trade>
+    <culture>6</culture>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Military</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Emulationism</defName>
+    <label>emulationism</label>
+    <group>Ideology</group>
+    <minTech>Spacer</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <research>8</research>
+    <growth>-4</growth>
+    <favoredBy>
+      <li>Machines</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Clergy</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_VoidFaith</defName>
+    <label>void faith</label>
+    <group>Ideology</group>
+    <minTech>Spacer</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Aggressive</profile>
+    <stability>8</stability>
+    <military>4</military>
+    <research>-4</research>
+    <favoredBy>
+      <li>Clergy</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Scientists</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_GreatFlux</defName>
+    <label>great flux</label>
+    <group>Ideology</group>
+    <minTech>Spacer</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <culture>10</culture>
+    <research>6</research>
+    <favoredBy>
+      <li>Clergy</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Machines</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_HibernationEthic</defName>
+    <label>hibernation ethic</label>
+    <group>Ideology</group>
+    <minTech>Spacer</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <growth>-6</growth>
+    <stability>8</stability>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Reciprocity</defName>
+    <label>reciprocity</label>
+    <group>Economy</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>6</maxStage>
+    <profile>Cautious</profile>
+    <stability>4</stability>
+    <trade>-6</trade>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_PalaceEconomy</defName>
+    <label>palace economy</label>
+    <group>Economy</group>
+    <minTech>Medieval</minTech>
+    <minStage>3</minStage>
+    <maxStage>9</maxStage>
+    <profile>Cautious</profile>
+    <production>4</production>
+    <trade>-4</trade>
+    <favoredBy>
+      <li>Nobility</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Merchants</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Tributary</defName>
+    <label>tributary</label>
+    <group>Economy</group>
+    <minTech>Medieval</minTech>
+    <minStage>3</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <military>5</military>
+    <loyalty>-4</loyalty>
+    <favoredBy>
+      <li>Nobility</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Manorial</defName>
+    <label>manorial</label>
+    <group>Economy</group>
+    <minTech>Medieval</minTech>
+    <minStage>3</minStage>
+    <maxStage>9</maxStage>
+    <profile>Cautious</profile>
+    <production>3</production>
+    <growth>-2</growth>
+    <favoredBy>
+      <li>Nobility</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Guilds</defName>
+    <label>guilds</label>
+    <group>Economy</group>
+    <minTech>Medieval</minTech>
+    <minStage>3</minStage>
+    <maxStage>10</maxStage>
+    <profile>Cautious</profile>
+    <production>5</production>
+    <research>2</research>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Mercantilism</defName>
+    <label>mercantilism</label>
+    <group>Economy</group>
+    <minTech>Medieval</minTech>
+    <minStage>4</minStage>
+    <maxStage>12</maxStage>
+    <profile>Cautious</profile>
+    <trade>8</trade>
+    <military>3</military>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_LaissezFaire</defName>
+    <label>laissez-faire</label>
+    <group>Economy</group>
+    <minTech>Industrial</minTech>
+    <minStage>6</minStage>
+    <maxStage>14</maxStage>
+    <profile>Mercantile</profile>
+    <trade>12</trade>
+    <stability>-6</stability>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Planned</defName>
+    <label>planned economy</label>
+    <group>Economy</group>
+    <minTech>Industrial</minTech>
+    <minStage>6</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <production>10</production>
+    <trade>-8</trade>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Merchants</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Welfare</defName>
+    <label>welfare state</label>
+    <group>Economy</group>
+    <minTech>Industrial</minTech>
+    <minStage>6</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <stability>8</stability>
+    <production>-4</production>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Merchants</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Mixed</defName>
+    <label>mixed economy</label>
+    <group>Economy</group>
+    <minTech>Industrial</minTech>
+    <minStage>6</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <production>4</production>
+    <trade>4</trade>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Corporatist</defName>
+    <label>corporatist</label>
+    <group>Economy</group>
+    <minTech>Industrial</minTech>
+    <minStage>6</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <trade>6</trade>
+    <production>6</production>
+    <stability>-3</stability>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Workers</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Digital</defName>
+    <label>digital economy</label>
+    <group>Economy</group>
+    <minTech>Industrial</minTech>
+    <minStage>7</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <research>6</research>
+    <trade>6</trade>
+    <favoredBy>
+      <li>Scientists</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_PostScarcity</defName>
+    <label>post-scarcity</label>
+    <group>Economy</group>
+    <minTech>Ultra</minTech>
+    <minStage>10</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <stability>15</stability>
+    <growth>5</growth>
+    <trade>-10</trade>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+    <opposedBy>
+      <li>Merchants</li>
+    </opposedBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_GalacticMarket</defName>
+    <label>galactic market</label>
+    <group>Economy</group>
+    <minTech>Spacer</minTech>
+    <minStage>10</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <trade>20</trade>
+    <stability>-4</stability>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_AsteroidEconomy</defName>
+    <label>asteroid economy</label>
+    <group>Economy</group>
+    <minTech>Spacer</minTech>
+    <minStage>9</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <production>12</production>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_StellarEnergy</defName>
+    <label>stellar energy economy</label>
+    <group>Economy</group>
+    <minTech>Ultra</minTech>
+    <minStage>11</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <production>10</production>
+    <research>5</research>
+    <favoredBy>
+      <li>Scientists</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_DarkMatter</defName>
+    <label>dark matter economy</label>
+    <group>Economy</group>
+    <minTech>Ultra</minTech>
+    <minStage>12</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <production>15</production>
+    <research>8</research>
+    <stability>-5</stability>
+    <favoredBy>
+      <li>Scientists</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_FilamentCommons</defName>
+    <label>filament commons</label>
+    <group>Economy</group>
+    <minTech>Archotech</minTech>
+    <minStage>13</minStage>
+    <maxStage>14</maxStage>
+    <profile>Mercantile</profile>
+    <stability>10</stability>
+    <trade>10</trade>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Xenophobia</defName>
+    <label>xenophobia</label>
+    <description>Distrust and hatred of other species and xenotypes.</description>
+    <group>Xeno</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Aggressive</profile>
+    <loyalty>4</loyalty>
+    <trade>-6</trade>
+    <xeno>-1</xeno>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_XenoNeutral</defName>
+    <label>xeno-neutral</label>
+    <description>Others are judged by what they do.</description>
+    <group>Xeno</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_Xenophilia</defName>
+    <label>xenophilia</label>
+    <description>Curiosity and welcome toward other species.</description>
+    <group>Xeno</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Mercantile</profile>
+    <trade>6</trade>
+    <culture>4</culture>
+    <loyalty>-2</loyalty>
+    <xeno>1</xeno>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_LogisticsGates</defName>
+    <label>gate logistics</label>
+    <description>Supply routes favor space gates.</description>
+    <group>Logistics</group>
+    <minTech>Spacer</minTech>
+    <minStage>10</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <trade>4</trade>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_LogisticsWarp</defName>
+    <label>warp logistics</label>
+    <description>Supply routes favor warp jumps.</description>
+    <group>Logistics</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <military>3</military>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_LogisticsHyperlanes</defName>
+    <label>hyperlane logistics</label>
+    <description>Supply routes follow hyperlanes.</description>
+    <group>Logistics</group>
+    <minTech>Spacer</minTech>
+    <minStage>10</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <production>3</production>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_OriginStandard</defName>
+    <label>common homeworld</label>
+    <description>An ordinary world that grew into a power.</description>
+    <group>Origin</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_OriginGlitterworld</defName>
+    <label>glitterworld</label>
+    <description>A rich, advanced world of comfort and medicine.</description>
+    <group>Origin</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <research>8</research>
+    <stability>6</stability>
+    <military>-4</military>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_OriginUrbworld</defName>
+    <label>urbworld</label>
+    <description>An overcrowded city world run by corporations.</description>
+    <group>Origin</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <trade>8</trade>
+    <production>6</production>
+    <stability>-6</stability>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_OriginFallenEmpire</defName>
+    <label>fallen empire refugees</label>
+    <description>Survivors of a great empire that collapsed.</description>
+    <group>Origin</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <military>6</military>
+    <culture>6</culture>
+    <growth>-4</growth>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_OriginVoidborn</defName>
+    <label>voidborn</label>
+    <description>A people born on ships and stations.</description>
+    <group>Origin</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <production>4</production>
+    <growth>-3</growth>
+    <military>3</military>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_OriginToxicWorld</defName>
+    <label>toxic world survivors</label>
+    <description>Survivors of a world ruined by war.</description>
+    <group>Origin</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <stability>-4</stability>
+    <military>6</military>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_OriginMedieval</defName>
+    <label>medieval world</label>
+    <description>A world that kept its old ways.</description>
+    <group>Origin</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <stability>4</stability>
+    <research>-6</research>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_OriginTranscendent</defName>
+    <label>transcendent world</label>
+    <description>A world touched by archotechs.</description>
+    <group>Origin</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <research>20</research>
+    <culture>10</culture>
+    <loreOnly>true</loreOnly>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_OriginMechanoid</defName>
+    <label>mechanoid hive</label>
+    <description>A machine hive with no will but its own.</description>
+    <group>Origin</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <production>15</production>
+    <military>15</military>
+    <culture>-30</culture>
+    <loreOnly>true</loreOnly>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicPirates</defName>
+    <label>pirates</label>
+    <description>Raiding is a way of life.</description>
+    <group>Civic</group>
+    <minTech>Industrial</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Warmonger</profile>
+    <military>10</military>
+    <trade>-10</trade>
+    <stability>-4</stability>
+    <favoredBy>
+      <li>Military</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicMercenaries</defName>
+    <label>mercenaries</label>
+    <description>Their fleets are for hire.</description>
+    <group>Civic</group>
+    <minTech>Industrial</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Mercantile</profile>
+    <military>8</military>
+    <trade>4</trade>
+    <favoredBy>
+      <li>Military</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicGateKeepers</defName>
+    <label>gate keepers</label>
+    <description>They guard and maintain ancient gates.</description>
+    <group>Civic</group>
+    <minTech>Spacer</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <research>5</research>
+    <stability>4</stability>
+    <favoredBy>
+      <li>Scientists</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicBeltMiners</defName>
+    <label>belt miners</label>
+    <description>Asteroid mining is their pride.</description>
+    <group>Civic</group>
+    <minTech>Spacer</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <production>10</production>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicTraders</defName>
+    <label>trade league</label>
+    <description>Merchant houses bind the state together.</description>
+    <group>Civic</group>
+    <minTech>Medieval</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Mercantile</profile>
+    <trade>12</trade>
+    <favoredBy>
+      <li>Merchants</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicScholars</defName>
+    <label>scholars</label>
+    <description>Libraries and academies everywhere.</description>
+    <group>Civic</group>
+    <minTech>Medieval</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <research>10</research>
+    <military>-3</military>
+    <favoredBy>
+      <li>Scientists</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicWarriorCulture</defName>
+    <label>warrior culture</label>
+    <description>Glory comes from battle.</description>
+    <group>Civic</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Warmonger</profile>
+    <military>10</military>
+    <culture>-3</culture>
+    <favoredBy>
+      <li>Military</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicNobleHouses</defName>
+    <label>noble houses</label>
+    <description>Great houses compete for favor.</description>
+    <group>Civic</group>
+    <minTech>Medieval</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Aggressive</profile>
+    <culture>5</culture>
+    <loyalty>-4</loyalty>
+    <military>4</military>
+    <favoredBy>
+      <li>Nobility</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicColonizers</defName>
+    <label>colonizers</label>
+    <description>Every new world is a calling.</description>
+    <group>Civic</group>
+    <minTech>Industrial</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Expansionist</profile>
+    <growth>10</growth>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicShipwrights</defName>
+    <label>shipwrights</label>
+    <description>Their shipyards are famous.</description>
+    <group>Civic</group>
+    <minTech>Spacer</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Expansionist</profile>
+    <military>6</military>
+    <production>6</production>
+    <favoredBy>
+      <li>Workers</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicIsolationist</defName>
+    <label>isolationists</label>
+    <description>They want to be left alone.</description>
+    <group>Civic</group>
+    <minTech>Neolithic</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <stability>8</stability>
+    <trade>-10</trade>
+    <favoredBy>
+      <li>Clergy</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicAIServants</defName>
+    <label>machine servants</label>
+    <description>Machines do most of the work.</description>
+    <group>Civic</group>
+    <minTech>Spacer</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <production>10</production>
+    <stability>-3</stability>
+    <favoredBy>
+      <li>Machines</li>
+    </favoredBy>
+  </Rimverse.PolicyDef>
+
+</Defs>

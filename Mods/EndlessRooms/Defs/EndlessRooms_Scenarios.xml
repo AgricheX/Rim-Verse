@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>Rimverse_Scen_AsyncResearcher</defName>
+    <label>A-sync researcher: among the stars</label>
+    <description>Three researchers of the A-sync Institute wake up lost in the Yellow Rooms, just like the old expedition. This time the way out does not lead home: the first door back to reality opens inside an abandoned ship in orbit of an unknown planet. Repair it and reach an Institute station among the stars.</description>
+    <scenario>
+      <summary>Start in the Yellow Rooms. The way out leads to an abandoned ship in orbit.</summary>
+      <playerFaction>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <parts Inherit="False">
+        <li Class="ScenPart_PlanetLayerFixed">
+          <def>YellowRooms</def>
+          <tag>YellowRooms</tag>
+          <layer>YellowRooms</layer>
+          <settingsDef>YellowRooms</settingsDef>
+          <hide>true</hide>
+          <connections>
+            <Surface>
+              <zoomMode>ZoomOut</zoomMode>
+            </Surface>
+          </connections>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
+          <def>PlanetLayer</def>
+          <tag>Orbit</tag>
+          <layer>Orbit</layer>
+          <settingsDef>Orbit</settingsDef>
+          <hide>true</hide>
+          <connections>
+            <Surface>
+              <zoomMode>ZoomIn</zoomMode>
+            </Surface>
+          </connections>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>Rimverse_GameStart_AsyncResearcher</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="arsiy.Rooms.ScenParts.ScenPart_YellowRoomsForcedMap">
+          <def>YellowRooms_ForcedMap</def>
+          <mapGenerator>YellowRooms</mapGenerator>
+          <layerDef>YellowRooms</layerDef>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>40</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_SuitEmergency</thingDef>
+          <count>3</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Rimverse_HelmetVacuum</thingDef>
+          <count>3</count>
+        </li>
+        <li Class="Rimverse.ScenPart_RimverseStart">
+          <def>Rimverse_Start</def>
+          <location>Orbit</location>
+          <layout>Derelict</layout>
+          <research>
+            <li>Rimverse_ShipBasics</li>
+          </research>
+          <fuel>0.2</fuel>
+          <air>0.4</air>
+          <hull>0.45</hull>
+          <shipNameKey>Rimverse_ShipName_Derelict</shipNameKey>
+          <waitForBackroomsExit>true</waitForBackroomsExit>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

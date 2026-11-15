@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GenStepDef>
+    <defName>Rimverse_SurfaceStart</defName>
+    <order>850</order>
+    <genStep Class="Rimverse.GenStep_SurfaceStart" />
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>Rimverse_AlienFauna</defName>
+    <order>1210</order>
+    <genStep Class="Rimverse.GenStep_AlienFauna" />
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>Rimverse_OceanWorldWater</defName>
+    <order>215</order>
+    <genStep Class="Rimverse.GenStep_OceanWorldWater" />
+  </GenStepDef>
+
+  <BiomeDef>
+    <defName>Rimverse_HostileWorld</defName>
+    <label>hostile world</label>
+    <description>A dead surface under an atmosphere nobody can breathe: too thin, toxic or crushingly dense.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <maxFishPopulation>0</maxFishPopulation>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <baseWeatherCommonalities>
+      <Clear>1</Clear>
+    </baseWeatherCommonalities>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_HostileBodyMap</defName>
+    <label>hostile world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <disableMapClippers>true</disableMapClippers>
+    <genSteps>
+      <li>Rimverse_AirlessBody</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_HostileWorld</biome>
+      <temperature>-20</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_TemperateForest</defName>
+    <label>alien world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>SteamGeysers</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Animals</li>
+      <li>Rimverse_AlienFauna</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>TemperateForest</biome>
+      <temperature>14</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_TemperateSwamp</defName>
+    <label>alien world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>SteamGeysers</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Animals</li>
+      <li>Rimverse_AlienFauna</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>TemperateSwamp</biome>
+      <temperature>16</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_TropicalRainforest</defName>
+    <label>alien world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>SteamGeysers</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Animals</li>
+      <li>Rimverse_AlienFauna</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>TropicalRainforest</biome>
+      <temperature>28</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_TropicalSwamp</defName>
+    <label>alien world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>SteamGeysers</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Animals</li>
+      <li>Rimverse_AlienFauna</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>TropicalSwamp</biome>
+      <temperature>28</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_AridShrubland</defName>
+    <label>alien world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>SteamGeysers</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Animals</li>
+      <li>Rimverse_AlienFauna</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>AridShrubland</biome>
+      <temperature>22</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_Desert</defName>
+    <label>alien world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>SteamGeysers</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Animals</li>
+      <li>Rimverse_AlienFauna</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Desert</biome>
+      <temperature>32</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_ExtremeDesert</defName>
+    <label>alien world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>SteamGeysers</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Animals</li>
+      <li>Rimverse_AlienFauna</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>ExtremeDesert</biome>
+      <temperature>42</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_BorealForest</defName>
+    <label>alien world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>SteamGeysers</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Animals</li>
+      <li>Rimverse_AlienFauna</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>BorealForest</biome>
+      <temperature>0</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_Tundra</defName>
+    <label>alien world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>SteamGeysers</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Animals</li>
+      <li>Rimverse_AlienFauna</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Tundra</biome>
+      <temperature>-12</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_ColdBog</defName>
+    <label>alien world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>SteamGeysers</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Animals</li>
+      <li>Rimverse_AlienFauna</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>ColdBog</biome>
+      <temperature>4</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_IceSheet</defName>
+    <label>alien world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>SteamGeysers</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Animals</li>
+      <li>Rimverse_AlienFauna</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>IceSheet</biome>
+      <temperature>-30</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_SeaIce</defName>
+    <label>alien world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>SteamGeysers</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Animals</li>
+      <li>Rimverse_AlienFauna</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>SeaIce</biome>
+      <temperature>-25</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+</Defs>

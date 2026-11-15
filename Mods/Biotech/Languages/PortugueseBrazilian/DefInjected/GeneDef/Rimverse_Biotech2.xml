@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Gene_SlowBreathing.label>respiração lenta</Rimverse_Gene_SlowBreathing.label>
+  <Rimverse_Gene_SlowBreathing.labelShortAdj>respirador lento</Rimverse_Gene_SlowBreathing.labelShortAdj>
+  <Rimverse_Gene_SlowBreathing.description>Pulmões eficientes e metabolismo lento. Gasta menos ar da nave e resiste à hipóxia.</Rimverse_Gene_SlowBreathing.description>
+  <Rimverse_Gene_RadiationSkin.label>pele de radiação</Rimverse_Gene_RadiationSkin.label>
+  <Rimverse_Gene_RadiationSkin.labelShortAdj>de pele radiotolerante</Rimverse_Gene_RadiationSkin.labelShortAdj>
+  <Rimverse_Gene_RadiationSkin.description>Pele grossa e pigmentada que bloqueia radiação forte e precipitação tóxica.</Rimverse_Gene_RadiationSkin.description>
+  <Rimverse_Gene_PerfectBalance.label>equilíbrio perfeito</Rimverse_Gene_PerfectBalance.label>
+  <Rimverse_Gene_PerfectBalance.labelShortAdj>equilibrado</Rimverse_Gene_PerfectBalance.labelShortAdj>
+  <Rimverse_Gene_PerfectBalance.description>Um ouvido interno que nunca se confunde. Gravidade zero e baixa gravidade não incomodam.</Rimverse_Gene_PerfectBalance.description>
+  <Rimverse_Gene_Hibernation.label>hibernação</Rimverse_Gene_Hibernation.label>
+  <Rimverse_Gene_Hibernation.labelShortAdj>hibernante</Rimverse_Gene_Hibernation.labelShortAdj>
+  <Rimverse_Gene_Hibernation.description>Desaceleram durante viagens longas: mais tolerância a cômodos frios e muito menos febre de cabine, mas dormem mais.</Rimverse_Gene_Hibernation.description>
+</LanguageData>

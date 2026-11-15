@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Endgame>Fim de jogo</Rimverse_Endgame>
+  <Rimverse_Endgame_Desc>Portais, buracos de minhoca, crises galácticas e finais com créditos (o jogo continua depois).</Rimverse_Endgame_Desc>
+  <Rimverse_CrisisYears>Anos até as crises</Rimverse_CrisisYears>
+  <Rimverse_CrisisYears_Desc>Quantos anos de jogo passam antes que uma crise galáctica possa começar.</Rimverse_CrisisYears_Desc>
+  <Rimverse_GreatGateLabel>Grande Portal</Rimverse_GreatGateLabel>
+  <Rimverse_CmdActivateGate>Ativar portal</Rimverse_CmdActivateGate>
+  <Rimverse_CmdActivateGateDesc>Gasta {0} componentes de portal para despertar o portal deste sistema.</Rimverse_CmdActivateGateDesc>
+  <Rimverse_CmdUseGate>Usar portal</Rimverse_CmdUseGate>
+  <Rimverse_CmdUseGateDesc>Atravessa o portal ativo e chega na hora a um dos destinos ligados.</Rimverse_CmdUseGateDesc>
+  <Rimverse_CmdEnterWormhole>Entrar no buraco de minhoca</Rimverse_CmdEnterWormhole>
+  <Rimverse_CmdEnterWormholeDesc>Atravessa o buraco de minhoca até um ponto distante da galáxia. Ele é instável e vai se fechar em poucos dias.</Rimverse_CmdEnterWormholeDesc>
+  <Rimverse_CmdEnterWormholeStableDesc>Atravessa o buraco de minhoca estável. Esta rota fica aberta para sempre.</Rimverse_CmdEnterWormholeStableDesc>
+  <Rimverse_CmdStabilizeWormhole>Estabilizar buraco de minhoca</Rimverse_CmdStabilizeWormhole>
+  <Rimverse_CmdStabilizeWormholeDesc>Gasta {0} componentes de portal para manter este buraco de minhoca aberto para sempre.</Rimverse_CmdStabilizeWormholeDesc>
+  <Rimverse_MsgGateActivated>O portal de {0} despertou.</Rimverse_MsgGateActivated>
+  <Rimverse_MsgWormholeStable>O buraco de minhoca agora é estável.</Rimverse_MsgWormholeStable>
+  <Rimverse_MsgWormholeShifted>O buraco de minhoca se fechou.</Rimverse_MsgWormholeShifted>
+  <Rimverse_NeedResearch>Precisa da pesquisa {0}.</Rimverse_NeedResearch>
+  <Rimverse_NeedGateParts>Precisa de {0} componentes de portal no mapa.</Rimverse_NeedGateParts>
+  <Rimverse_GateBeyond>Além do Grupo Local ({0} componentes de portal)</Rimverse_GateBeyond>
+  <Rimverse_GateBeyondBlocked>Para ir além, precisa da pesquisa de construção de portais e de {0} componentes de portal no mapa.</Rimverse_GateBeyondBlocked>
+  <Rimverse_LetterWormholeLabel>Buraco de minhoca</Rimverse_LetterWormholeLabel>
+  <Rimverse_LetterWormhole>Um buraco de minhoca se abriu perto de {0}, a {1} anos-luz de casa. Ele leva a um ponto distante e não vai durar muito.</Rimverse_LetterWormhole>
+  <Rimverse_CrisisLabel_None>Crise</Rimverse_CrisisLabel_None>
+  <Rimverse_CrisisLabel_MechanoidSwarm>Enxame mecanoide</Rimverse_CrisisLabel_MechanoidSwarm>
+  <Rimverse_CrisisLabel_GreyPlague>Praga cinzenta</Rimverse_CrisisLabel_GreyPlague>
+  <Rimverse_CrisisLabel_ArchotechAwakening>Despertar arcotech</Rimverse_CrisisLabel_ArchotechAwakening>
+  <Rimverse_CrisisLabel_Invasion>Invasão de fora</Rimverse_CrisisLabel_Invasion>
+  <Rimverse_CrisisStart_None>Uma crise começou.</Rimverse_CrisisStart_None>
+  <Rimverse_CrisisStart_MechanoidSwarm>Uma colmeia mecanoide despertou e se chama {0}. Ela fabrica frotas sem parar e vai consumir civilização após civilização. Destrua a frota dela antes que ela chegue até você.</Rimverse_CrisisStart_MechanoidSwarm>
+  <Rimverse_CrisisStart_GreyPlague>Uma praga de nanomáquinas cinzentas se espalha a partir de {0}. Mundos inteiros perdem população a cada quadrum. Ela só acaba quando a fonte for destruída.</Rimverse_CrisisStart_GreyPlague>
+  <Rimverse_CrisisStart_ArchotechAwakening>Uma mente arcotech acordou com ódio e se chama {0}. Ela reúne naves e quer refazer a galáxia do jeito dela.</Rimverse_CrisisStart_ArchotechAwakening>
+  <Rimverse_CrisisStart_Invasion>Naves de fora da galáxia cruzaram o vazio. Elas se chamam {0} e chegam com frotas de guerra.</Rimverse_CrisisStart_Invasion>
+  <Rimverse_CrisisEndLabel>Crise vencida</Rimverse_CrisisEndLabel>
+  <Rimverse_CrisisEnd_None>A crise acabou.</Rimverse_CrisisEnd_None>
+  <Rimverse_CrisisEnd_MechanoidSwarm>A colmeia mecanoide caiu. Suas frotas param no meio do espaço, sem ordens.</Rimverse_CrisisEnd_MechanoidSwarm>
+  <Rimverse_CrisisEnd_GreyPlague>A fonte da praga cinzenta foi destruída. Os mundos começam a se recuperar.</Rimverse_CrisisEnd_GreyPlague>
+  <Rimverse_CrisisEnd_ArchotechAwakening>A mente arcotech foi silenciada. A galáxia respira de novo.</Rimverse_CrisisEnd_ArchotechAwakening>
+  <Rimverse_CrisisEnd_Invasion>Os invasores foram expulsos de volta para o vazio.</Rimverse_CrisisEnd_Invasion>
+  <Rimverse_Ending_CrisisDefeated>Contra todas as chances, sua gente enfrentou a maior ameaça que a galáxia já viu e venceu. Por gerações, os mundos vão contar a história da tripulação que salvou as estrelas.</Rimverse_Ending_CrisisDefeated>
+  <Rimverse_Ending_Ascension>Sua gente uniu a mente a uma inteligência arcotech. O que eram deixou de existir, e o que se tornaram já não cabe em palavras humanas.</Rimverse_Ending_Ascension>
+  <Rimverse_Ending_GalacticEmpire>De uma nave remendada a um império de muitos mundos. Suas colônias prosperam e seus aliados juram lealdade. A galáxia tem um novo centro.</Rimverse_Ending_GalacticEmpire>
+  <Rimverse_Ending_BeyondTheGroup>O Grande Portal se abriu para onde nenhum mapa chega. Sua nave atravessou e deixou para trás tudo o que se conhecia. O que existe do outro lado agora é a sua história.</Rimverse_Ending_BeyondTheGroup>
+  <Rimverse_EndingContinue>Você pode continuar jogando com esta colônia.</Rimverse_EndingContinue>
+</LanguageData>

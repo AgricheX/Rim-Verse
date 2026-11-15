@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GeneCategoryDef>
+    <defName>Rimverse_Lineages</defName>
+    <label>lineages</label>
+    <displayPriorityInXenotype>260</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_Gravitated</defName>
+    <label>gravitated</label>
+    <labelShortAdj>gravitated</labelShortAdj>
+    <description>Descendants of a heavy world. Dense muscle and thick bones let them carry much more and hit harder.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.75,0.6,0.5)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <statFactors>
+      <CarryingCapacity>1.3</CarryingCapacity>
+      <MeleeDamageFactor>1.1</MeleeDamageFactor>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_Slender</defName>
+    <label>slender</label>
+    <labelShortAdj>slender</labelShortAdj>
+    <description>Descendants of a light world. Tall and thin, they are graceful but fragile.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.85,0.85,0.95)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <statFactors>
+      <IncomingDamageFactor>1.1</IncomingDamageFactor>
+    </statFactors>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_Boreal</defName>
+    <label>boreal</label>
+    <labelShortAdj>boreal</labelShortAdj>
+    <description>Descendants of an ice world. Comfortable in deep cold, uneasy in warm rooms.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.75,0.85,1)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>20</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+      <ComfyTemperatureMax>-10</ComfyTemperatureMax>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_Solar</defName>
+    <label>solar</label>
+    <labelShortAdj>solar</labelShortAdj>
+    <description>Descendants of a scorched world. Dark skin, love of heat and some resistance to toxins.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.45,0.3,0.2)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>30</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMax>15</ComfyTemperatureMax>
+      <ComfyTemperatureMin>10</ComfyTemperatureMin>
+      <ToxicResistance>0.1</ToxicResistance>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_Abyssal</defName>
+    <label>abyssal</label>
+    <labelShortAdj>abyssal</labelShortAdj>
+    <description>Descendants of an ocean world. Large lungs make them breathe better.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.55,0.75,0.85)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>40</displayOrderInCategory>
+    <capMods>
+      <li>
+        <capacity>Breathing</capacity>
+        <offset>0.1</offset>
+      </li>
+    </capMods>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_VoidBorn</defName>
+    <label>void-born</label>
+    <labelShortAdj>void-born</labelShortAdj>
+    <description>Descendants of people born on ships and stations. Used to cramped spaces and stale air, they rarely break under confinement.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.9,0.9,0.85)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <statOffsets>
+      <MentalBreakThreshold>-0.04</MentalBreakThreshold>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_Rad</defName>
+    <label>rad-born</label>
+    <labelShortAdj>rad-born</labelShortAdj>
+    <description>Descendants of a world under harsh radiation. Their cells resist toxic damage.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.7,0.8,0.6)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>60</displayOrderInCategory>
+    <statOffsets>
+      <ToxicResistance>0.3</ToxicResistance>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_Horned</defName>
+    <label>horned</label>
+    <labelShortAdj>horned</labelShortAdj>
+    <description>Descendants of hunters from a wild world. Fierce and strong in melee.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.8,0.6,0.55)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>70</displayOrderInCategory>
+    <statFactors>
+      <MeleeDamageFactor>1.15</MeleeDamageFactor>
+    </statFactors>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_DenseBones</defName>
+    <label>dense bones</label>
+    <labelShortAdj>dense-boned</labelShortAdj>
+    <description>Thick, mineral-rich bones that survive impacts and decompression better, at the cost of speed.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.8,0.8,0.8)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>80</displayOrderInCategory>
+    <statFactors>
+      <IncomingDamageFactor>0.9</IncomingDamageFactor>
+    </statFactors>
+    <statOffsets>
+      <MoveSpeed>-0.2</MoveSpeed>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_SignatureSight</defName>
+    <label>signature sight</label>
+    <labelShortAdj>signature-sighted</labelShortAdj>
+    <description>A rewired visual cortex that perceives faint psychic and electromagnetic signatures.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.6,0.7,1)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>90</displayOrderInCategory>
+    <statOffsets>
+      <PsychicSensitivity>0.2</PsychicSensitivity>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <XenotypeDef>
+    <defName>Rimverse_Xeno_VoidAdapted</defName>
+    <label>void-adapted</label>
+    <description>Engineered for ships and stations, the void-adapted live their whole lives between the stars.</description>
+    <descriptionShort>Engineered for ships and stations, the void-adapted live their whole lives between the stars.</descriptionShort>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>Rimverse_Gene_VoidBorn</li>
+      <li>Rimverse_Gene_SignatureSight</li>
+      <li>MinTemp_LargeDecrease</li>
+      <li>AptitudeRemarkable_Construction</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>Rimverse_Xeno_HeavyWorlder</defName>
+    <label>heavy-worlder</label>
+    <description>Short, broad and immensely strong, heavy-worlders were shaped by crushing gravity.</description>
+    <descriptionShort>Short, broad and immensely strong, heavy-worlders were shaped by crushing gravity.</descriptionShort>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>Rimverse_Gene_Gravitated</li>
+      <li>Rimverse_Gene_DenseBones</li>
+      <li>AptitudeRemarkable_Construction</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>Rimverse_Xeno_IceBorn</defName>
+    <label>ice-born</label>
+    <description>The ice-born thrive on frozen worlds where others die of cold.</description>
+    <descriptionShort>The ice-born thrive on frozen worlds where others die of cold.</descriptionShort>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>Rimverse_Gene_Boreal</li>
+      <li>MinTemp_LargeDecrease</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>Rimverse_Xeno_Oceanic</defName>
+    <label>oceanic</label>
+    <description>Oceanics come from endless seas and island cities.</description>
+    <descriptionShort>Oceanics come from endless seas and island cities.</descriptionShort>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>Rimverse_Gene_Abyssal</li>
+      <li>MaxTemp_SmallIncrease</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>Rimverse_Xeno_RadBorn</defName>
+    <label>rad-born</label>
+    <description>The rad-born survived generations under a cruel sun and poisoned air.</description>
+    <descriptionShort>The rad-born survived generations under a cruel sun and poisoned air.</descriptionShort>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>Rimverse_Gene_Rad</li>
+      <li>Rimverse_Gene_Solar</li>
+      <li>MaxTemp_SmallIncrease</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

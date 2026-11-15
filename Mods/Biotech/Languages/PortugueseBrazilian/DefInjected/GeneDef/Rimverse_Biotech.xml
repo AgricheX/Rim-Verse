@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Gene_Gravitated.label>denso</Rimverse_Gene_Gravitated.label>
+  <Rimverse_Gene_Gravitated.labelShortAdj>gravitado</Rimverse_Gene_Gravitated.labelShortAdj>
+  <Rimverse_Gene_Gravitated.description>Descendentes de um mundo pesado. Músculos densos e ossos grossos deixam carregar muito mais e bater mais forte.</Rimverse_Gene_Gravitated.description>
+  <Rimverse_Gene_Slender.label>esguio</Rimverse_Gene_Slender.label>
+  <Rimverse_Gene_Slender.labelShortAdj>esguio</Rimverse_Gene_Slender.labelShortAdj>
+  <Rimverse_Gene_Slender.description>Descendentes de um mundo leve. Altos e magros, são graciosos mas frágeis.</Rimverse_Gene_Slender.description>
+  <Rimverse_Gene_Boreal.label>boreal</Rimverse_Gene_Boreal.label>
+  <Rimverse_Gene_Boreal.labelShortAdj>boreal</Rimverse_Gene_Boreal.labelShortAdj>
+  <Rimverse_Gene_Boreal.description>Descendentes de um mundo de gelo. Confortáveis no frio intenso e incomodados em cômodos quentes.</Rimverse_Gene_Boreal.description>
+  <Rimverse_Gene_Solar.label>solar</Rimverse_Gene_Solar.label>
+  <Rimverse_Gene_Solar.labelShortAdj>solar</Rimverse_Gene_Solar.labelShortAdj>
+  <Rimverse_Gene_Solar.description>Descendentes de um mundo escaldante. Pele escura, gosto pelo calor e alguma resistência a toxinas.</Rimverse_Gene_Solar.description>
+  <Rimverse_Gene_Abyssal.label>abissal</Rimverse_Gene_Abyssal.label>
+  <Rimverse_Gene_Abyssal.labelShortAdj>abissal</Rimverse_Gene_Abyssal.labelShortAdj>
+  <Rimverse_Gene_Abyssal.description>Descendentes de um mundo oceânico. Pulmões grandes fazem respirar melhor.</Rimverse_Gene_Abyssal.description>
+  <Rimverse_Gene_VoidBorn.label>nascido no vácuo</Rimverse_Gene_VoidBorn.label>
+  <Rimverse_Gene_VoidBorn.labelShortAdj>nascido no vácuo</Rimverse_Gene_VoidBorn.labelShortAdj>
+  <Rimverse_Gene_VoidBorn.description>Descendentes de gente nascida em naves e estações. Acostumados a espaços apertados e ar velho, raramente desabam pelo confinamento.</Rimverse_Gene_VoidBorn.description>
+  <Rimverse_Gene_Rad.label>radioativo</Rimverse_Gene_Rad.label>
+  <Rimverse_Gene_Rad.labelShortAdj>radiônico</Rimverse_Gene_Rad.labelShortAdj>
+  <Rimverse_Gene_Rad.description>Descendentes de um mundo sob radiação forte. As células resistem a danos tóxicos.</Rimverse_Gene_Rad.description>
+  <Rimverse_Gene_Horned.label>cornudo</Rimverse_Gene_Horned.label>
+  <Rimverse_Gene_Horned.labelShortAdj>cornudo</Rimverse_Gene_Horned.labelShortAdj>
+  <Rimverse_Gene_Horned.description>Descendentes de caçadores de um mundo selvagem. Ferozes e fortes no corpo a corpo.</Rimverse_Gene_Horned.description>
+  <Rimverse_Gene_DenseBones.label>ossos densos</Rimverse_Gene_DenseBones.label>
+  <Rimverse_Gene_DenseBones.labelShortAdj>de ossos densos</Rimverse_Gene_DenseBones.labelShortAdj>
+  <Rimverse_Gene_DenseBones.description>Ossos grossos e ricos em minerais, que aguentam melhor impactos e descompressão, ao custo de velocidade.</Rimverse_Gene_DenseBones.description>
+  <Rimverse_Gene_SignatureSight.label>visão de assinaturas</Rimverse_Gene_SignatureSight.label>
+  <Rimverse_Gene_SignatureSight.labelShortAdj>de visão de assinaturas</Rimverse_Gene_SignatureSight.labelShortAdj>
+  <Rimverse_Gene_SignatureSight.description>Um córtex visual religado que percebe assinaturas psíquicas e eletromagnéticas fracas.</Rimverse_Gene_SignatureSight.description>
+</LanguageData>

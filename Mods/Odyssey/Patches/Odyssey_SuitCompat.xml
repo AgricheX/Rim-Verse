@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/StatDef[defName="VacuumResistance"]/parts</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/StatDef[defName="VacuumResistance"]/parts</xpath>
+      <value>
+        <li Class="Rimverse.StatPart_RimverseSuit">
+          <suitOnly>0.3</suitOnly>
+          <full>1</full>
+        </li>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/StatDef[defName="VacuumResistance"]</xpath>
+      <value>
+        <parts>
+          <li Class="Rimverse.StatPart_RimverseSuit">
+            <suitOnly>0.3</suitOnly>
+            <full>1</full>
+          </li>
+        </parts>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_LifeAboard>Vida a bordo</Rimverse_LifeAboard>
+  <Rimverse_LifeAboard_Desc>Gravidade zero, perda óssea, esmagamento por gravidade alta, enjoo de dobra e febre de cabine.</Rimverse_LifeAboard_Desc>
+  <Rimverse_Lineages>Linhagens</Rimverse_Lineages>
+  <Rimverse_Lineages_Desc>Pessoas de civilizações de outros mundos nascem com a linhagem do mundo de origem.</Rimverse_Lineages_Desc>
+  <Rimverse_CivLineage>Linhagem principal: {0}</Rimverse_CivLineage>
+  <Rimverse_CivLineageNone>Linhagem principal: humanos comuns</Rimverse_CivLineageNone>
+  <Rimverse_BodyFauna>Fauna: {0} espécies alienígenas</Rimverse_BodyFauna>
+</LanguageData>

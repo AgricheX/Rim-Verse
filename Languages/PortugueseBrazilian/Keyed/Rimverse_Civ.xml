@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CivDensity>Quantidade de civilizações</Rimverse_CivDensity>
+  <Rimverse_CivDensity_Desc>Multiplica quantas civilizações espaciais nascem na galáxia do jogador (até 200). Só vale para jogos novos.</Rimverse_CivDensity_Desc>
+  <Rimverse_CivDisabled>A simulação de civilizações está desligada nas opções do mod.</Rimverse_CivDisabled>
+  <Rimverse_CivTabTitle>Civilizações conhecidas: {0} de {1}</Rimverse_CivTabTitle>
+  <Rimverse_CivNoneKnown>Você ainda não encontrou nenhuma civilização. Escaneie estrelas próximas ou visite outros sistemas.</Rimverse_CivNoneKnown>
+  <Rimverse_CivSelect>Escolha uma civilização na lista.</Rimverse_CivSelect>
+  <Rimverse_CivStageLine>Estágio: {0} · classe {1} · tecnologia {2}</Rimverse_CivStageLine>
+  <Rimverse_CivPopulation>População: {0} em {1} mundos conhecidos</Rimverse_CivPopulation>
+  <Rimverse_CivStability>Estabilidade {0} · cansaço de guerra {1}</Rimverse_CivStability>
+  <Rimverse_CivFleetPower>Poder das frotas: {0}</Rimverse_CivFleetPower>
+  <Rimverse_CivCapital>Capital: {0}, a {1} anos-luz de você</Rimverse_CivCapital>
+  <Rimverse_CivReach>Território até {0} anos-luz da capital</Rimverse_CivReach>
+  <Rimverse_CivGoal>Meta atual: {0}</Rimverse_CivGoal>
+  <Rimverse_CivIdeologySupport>Apoio às ideologias:</Rimverse_CivIdeologySupport>
+  <Rimverse_CivGroups>Humor dos grupos:</Rimverse_CivGroups>
+  <Rimverse_CivPlayerRelation>Relação com você: {0} · opinião {1}</Rimverse_CivPlayerRelation>
+  <Rimverse_CivTariff>Tarifa de comércio: {0}</Rimverse_CivTariff>
+  <Rimverse_CivHail>Chamar para comércio</Rimverse_CivHail>
+  <Rimverse_CivHailBlocked>Comércio indisponível: {0}</Rimverse_CivHailBlocked>
+  <Rimverse_CivWars>Em guerra com: {0}</Rimverse_CivWars>
+  <Rimverse_CivAtWar>Você está em guerra com {0}.</Rimverse_CivAtWar>
+  <Rimverse_CivNoTalk>{0} não conversa com ninguém.</Rimverse_CivNoTalk>
+  <Rimverse_CivNotHere>É preciso estar num sistema de {0}.</Rimverse_CivNotHere>
+  <Rimverse_NoCivHere>Nenhuma civilização controla este sistema.</Rimverse_NoCivHere>
+  <Rimverse_NoNegotiator>Ninguém no mapa atual pode negociar.</Rimverse_NoNegotiator>
+  <Rimverse_ConfirmWar>Declarar guerra a {0}? As frotas deles vão atacar seus sistemas.</Rimverse_ConfirmWar>
+  <Rimverse_MsgWarDeclared>Você declarou guerra a {0}.</Rimverse_MsgWarDeclared>
+  <Rimverse_ProposalAccepted>{0} aceitou: {1}.</Rimverse_ProposalAccepted>
+  <Rimverse_ProposalRefused>{0} recusou. Precisa de opinião {1}, tem {2}.</Rimverse_ProposalRefused>
+  <Rimverse_ProposalCooldown>{0} ainda não quer ouvir outra proposta. Espere {1} dias.</Rimverse_ProposalCooldown>
+  <Rimverse_ProposalNeeds>opinião {0}</Rimverse_ProposalNeeds>
+  <Rimverse_HasElections>Tem eleições.</Rimverse_HasElections>
+  <Rimverse_TerritoryOf>Território de {0}</Rimverse_TerritoryOf>
+  <Rimverse_TerritoryUnknownCiv>Território de uma civilização desconhecida</Rimverse_TerritoryUnknownCiv>
+  <Rimverse_FleetTip>Frota de {0}
+Missão: {1}
+Poder: {2}</Rimverse_FleetTip>
+  <Rimverse_MsgBattle>Batalha entre {0} e {1}. Venceu: {2}.</Rimverse_MsgBattle>
+  <Rimverse_LetterFirstContactLabel>Primeiro contato: {0}</Rimverse_LetterFirstContactLabel>
+  <Rimverse_LetterFirstContact>Seus sensores e sua tripulação encontraram {0}.
+
+Estágio: {1}
+Governo: {2}
+Ideologia: {3}
+Tecnologia: {4}
+
+Veja a aba Civilizações para conversar, negociar ou propor acordos.</Rimverse_LetterFirstContact>
+  <Rimverse_LetterFleetIncomingLabel>Frota hostil a caminho</Rimverse_LetterFleetIncomingLabel>
+  <Rimverse_LetterFleetIncoming>Uma frota de {0} saltou na direção do seu sistema. Chega em cerca de {1} dias.</Rimverse_LetterFleetIncoming>
+  <Rimverse_LetterWarLabel>Guerra entre estrelas</Rimverse_LetterWarLabel>
+  <Rimverse_LetterWar>{0} declarou guerra a {1}.</Rimverse_LetterWar>
+  <Rimverse_LetterPeaceLabel>Trégua</Rimverse_LetterPeaceLabel>
+  <Rimverse_LetterPeace>{0} e {1} assinaram uma trégua.</Rimverse_LetterPeace>
+  <Rimverse_LetterElectionChangeLabel>Eleição</Rimverse_LetterElectionChangeLabel>
+  <Rimverse_LetterElectionChange>Uma eleição em {0} levou {1} ao poder.</Rimverse_LetterElectionChange>
+  <Rimverse_LetterCoupLabel>Golpe</Rimverse_LetterCoupLabel>
+  <Rimverse_LetterCoup>Militares derrubaram o governo de {0}. O novo regime: {1}.</Rimverse_LetterCoup>
+  <Rimverse_LetterReformLabel>Reforma</Rimverse_LetterReformLabel>
+  <Rimverse_LetterReform>{0} fez uma reforma e adotou {1}.</Rimverse_LetterReform>
+  <Rimverse_LetterSuccessionCrisisLabel>Crise de sucessão</Rimverse_LetterSuccessionCrisisLabel>
+  <Rimverse_LetterSuccessionCrisis>O líder de {0} morreu e a disputa pelo poder abalou o estado.</Rimverse_LetterSuccessionCrisis>
+  <Rimverse_LetterStageUpLabel>Uma potência cresce</Rimverse_LetterStageUpLabel>
+  <Rimverse_LetterStageUp>{0} cresceu e virou {1}.</Rimverse_LetterStageUp>
+  <Rimverse_LetterStageDownLabel>Uma potência encolhe</Rimverse_LetterStageDownLabel>
+  <Rimverse_LetterStageDown>{0} perdeu força e voltou a ser {1}.</Rimverse_LetterStageDown>
+  <Rimverse_LetterCivFallenLabel>Uma civilização caiu</Rimverse_LetterCivFallenLabel>
+  <Rimverse_LetterCivFallen>{0} deixou de existir.</Rimverse_LetterCivFallen>
+  <Rimverse_LetterCivilWarLabel>Guerra civil</Rimverse_LetterCivilWarLabel>
+  <Rimverse_LetterCivilWar>{0} entrou em guerra civil. Os rebeldes formaram {1}.</Rimverse_LetterCivilWar>
+  <Rimverse_LetterSecessionLabel>Secessão</Rimverse_LetterSecessionLabel>
+  <Rimverse_LetterSecession>Um mundo de {0} declarou independência e virou {1}.</Rimverse_LetterSecession>
+  <Rimverse_Stage_1>tribo</Rimverse_Stage_1>
+  <Rimverse_Stage_2>aldeia</Rimverse_Stage_2>
+  <Rimverse_Stage_3>cidade</Rimverse_Stage_3>
+  <Rimverse_Stage_4>cidade-estado</Rimverse_Stage_4>
+  <Rimverse_Stage_5>reino</Rimverse_Stage_5>
+  <Rimverse_Stage_6>império planetário</Rimverse_Stage_6>
+  <Rimverse_Stage_7>nação</Rimverse_Stage_7>
+  <Rimverse_Stage_8>união planetária</Rimverse_Stage_8>
+  <Rimverse_Stage_9>civilização de sistema</Rimverse_Stage_9>
+  <Rimverse_Stage_10>potência de distrito</Rimverse_Stage_10>
+  <Rimverse_Stage_11>potência de zona</Rimverse_Stage_11>
+  <Rimverse_Stage_12>império de setor</Rimverse_Stage_12>
+  <Rimverse_Stage_13>civilização galáctica</Rimverse_Stage_13>
+  <Rimverse_Stage_14>civilização de grupo</Rimverse_Stage_14>
+  <Rimverse_Diplo_War>guerra</Rimverse_Diplo_War>
+  <Rimverse_Diplo_Truce>trégua</Rimverse_Diplo_Truce>
+  <Rimverse_Diplo_Peace>paz</Rimverse_Diplo_Peace>
+  <Rimverse_Diplo_TradeAgreement>acordo comercial</Rimverse_Diplo_TradeAgreement>
+  <Rimverse_Diplo_NonAggression>pacto de não agressão</Rimverse_Diplo_NonAggression>
+  <Rimverse_Diplo_Alliance>aliança defensiva</Rimverse_Diplo_Alliance>
+  <Rimverse_Diplo_Vassal>vassalagem</Rimverse_Diplo_Vassal>
+  <Rimverse_Diplo_Federation>federação</Rimverse_Diplo_Federation>
+  <Rimverse_Goal_Expand>expandir</Rimverse_Goal_Expand>
+  <Rimverse_Goal_Arm>armar</Rimverse_Goal_Arm>
+  <Rimverse_Goal_Colonize>colonizar</Rimverse_Goal_Colonize>
+  <Rimverse_Goal_Research>pesquisar</Rimverse_Goal_Research>
+  <Rimverse_Goal_Trade>negociar</Rimverse_Goal_Trade>
+  <Rimverse_Goal_Defend>defender</Rimverse_Goal_Defend>
+  <Rimverse_Group_Military>militares</Rimverse_Group_Military>
+  <Rimverse_Group_Merchants>mercadores</Rimverse_Group_Merchants>
+  <Rimverse_Group_Clergy>clero</Rimverse_Group_Clergy>
+  <Rimverse_Group_Scientists>cientistas</Rimverse_Group_Scientists>
+  <Rimverse_Group_Nobility>nobreza</Rimverse_Group_Nobility>
+  <Rimverse_Group_Workers>trabalhadores</Rimverse_Group_Workers>
+  <Rimverse_Group_Machines>IAs</Rimverse_Group_Machines>
+  <Rimverse_Mission_Patrol>patrulha</Rimverse_Mission_Patrol>
+  <Rimverse_Mission_War>guerra</Rimverse_Mission_War>
+  <Rimverse_Mission_Escort>escolta</Rimverse_Mission_Escort>
+  <Rimverse_Mission_Colonize>colonização</Rimverse_Mission_Colonize>
+  <Rimverse_Mission_Explore>exploração</Rimverse_Mission_Explore>
+  <Rimverse_Mission_Trade>comércio</Rimverse_Mission_Trade>
+  <Rimverse_Mission_Raid>ataque</Rimverse_Mission_Raid>
+  <Rimverse_Proposal_Truce>Propor trégua</Rimverse_Proposal_Truce>
+  <Rimverse_Proposal_Peace>Propor paz</Rimverse_Proposal_Peace>
+  <Rimverse_Proposal_TradeAgreement>Propor acordo comercial</Rimverse_Proposal_TradeAgreement>
+  <Rimverse_Proposal_NonAggression>Propor pacto de não agressão</Rimverse_Proposal_NonAggression>
+  <Rimverse_Proposal_Alliance>Propor aliança defensiva</Rimverse_Proposal_Alliance>
+  <Rimverse_Proposal_DeclareWar>Declarar guerra</Rimverse_Proposal_DeclareWar>
+  <Rimverse_Succession_None>Sem sucessão</Rimverse_Succession_None>
+  <Rimverse_Succession_Appointed>Sucessão por nomeação</Rimverse_Succession_Appointed>
+  <Rimverse_Succession_Hereditary>Sucessão hereditária</Rimverse_Succession_Hereditary>
+  <Rimverse_Succession_Elective>Sucessão eletiva</Rimverse_Succession_Elective>
+  <Rimverse_CivStat_Production>Produção</Rimverse_CivStat_Production>
+  <Rimverse_CivStat_Stability>Estabilidade</Rimverse_CivStat_Stability>
+  <Rimverse_CivStat_Loyalty>Lealdade</Rimverse_CivStat_Loyalty>
+  <Rimverse_CivStat_Culture>Cultura</Rimverse_CivStat_Culture>
+  <Rimverse_CivStat_Military>Militar</Rimverse_CivStat_Military>
+  <Rimverse_CivStat_Research>Pesquisa</Rimverse_CivStat_Research>
+  <Rimverse_CivStat_Trade>Comércio</Rimverse_CivStat_Trade>
+  <Rimverse_CivStat_Growth>Crescimento</Rimverse_CivStat_Growth>
+  <Rimverse_PolicyGroup_Government>Governo</Rimverse_PolicyGroup_Government>
+  <Rimverse_PolicyGroup_Ideology>Ideologia</Rimverse_PolicyGroup_Ideology>
+  <Rimverse_PolicyGroup_Economy>Economia</Rimverse_PolicyGroup_Economy>
+  <Rimverse_PolicyGroup_Xeno>Xeno</Rimverse_PolicyGroup_Xeno>
+  <Rimverse_PolicyGroup_Logistics>Logística</Rimverse_PolicyGroup_Logistics>
+  <Rimverse_PolicyGroup_Origin>Origem</Rimverse_PolicyGroup_Origin>
+  <Rimverse_PolicyGroup_Civic>Civismo</Rimverse_PolicyGroup_Civic>
+  <Rimverse_CivForm_Hive>Colmeia {0}</Rimverse_CivForm_Hive>
+  <Rimverse_CivForm_Pirates>Saqueadores de {0}</Rimverse_CivForm_Pirates>
+  <Rimverse_CivForm_Tribe>Tribo de {0}</Rimverse_CivForm_Tribe>
+  <Rimverse_CivForm_Empire>Império de {0}</Rimverse_CivForm_Empire>
+  <Rimverse_CivForm_Kingdom>Reino de {0}</Rimverse_CivForm_Kingdom>
+  <Rimverse_CivForm_Theocracy>Sagrada Ordem de {0}</Rimverse_CivForm_Theocracy>
+  <Rimverse_CivForm_Corporation>Corporação {0}</Rimverse_CivForm_Corporation>
+  <Rimverse_CivForm_Junta>Junta de {0}</Rimverse_CivForm_Junta>
+  <Rimverse_CivForm_Federation>Federação de {0}</Rimverse_CivForm_Federation>
+  <Rimverse_CivForm_Collective>Coletivo {0}</Rimverse_CivForm_Collective>
+  <Rimverse_CivForm_Union>União de {0}</Rimverse_CivForm_Union>
+  <Rimverse_CivForm_Directorate>Diretório de {0}</Rimverse_CivForm_Directorate>
+  <Rimverse_CivForm_Republic>República de {0}</Rimverse_CivForm_Republic>
+</LanguageData>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CargoCrate.label>caixa de carga</Rimverse_CargoCrate.label>
+  <Rimverse_CargoCrate.description>Uma caixa de aço barata presa ao piso. Guarda 4 pilhas.</Rimverse_CargoCrate.description>
+  <Rimverse_HoldContainer.label>contentor de porão</Rimverse_HoldContainer.label>
+  <Rimverse_HoldContainer.description>Um contentor grande para bens a granel. Guarda 6 pilhas por célula.</Rimverse_HoldContainer.description>
+  <Rimverse_SealedLocker.label>armário selado</Rimverse_SealedLocker.label>
+  <Rimverse_SealedLocker.description>Um armário selado para remédios e drogas. Continua selado mesmo se o cômodo perder o ar. Guarda 5 pilhas por célula.</Rimverse_SealedLocker.description>
+  <Rimverse_ColdShelf.label>prateleira refrigerada</Rimverse_ColdShelf.label>
+  <Rimverse_ColdShelf.description>Uma prateleira com energia que impede a comida de estragar. Soma um pouco de calor à nave. Guarda 3 pilhas por célula.</Rimverse_ColdShelf.description>
+  <Rimverse_VacuumContainer.label>contentor de vácuo</Rimverse_VacuumContainer.label>
+  <Rimverse_VacuumContainer.description>Um contentor selado que pode ficar fora do casco, no vácuo, sem nada estragar. Guarda 4 pilhas.</Rimverse_VacuumContainer.description>
+  <Rimverse_Vault.label>cofre</Rimverse_Vault.label>
+  <Rimverse_Vault.description>Um cofre pesado para prata, chips de crédito e objetos de valor. Guarda 8 pilhas e é muito difícil de quebrar.</Rimverse_Vault.description>
+  <Rimverse_WeaponRack.label>suporte de parede para armas</Rimverse_WeaponRack.label>
+  <Rimverse_WeaponRack.description>Um suporte decorativo que guarda e exibe 2 armas.</Rimverse_WeaponRack.description>
+  <Rimverse_WeaponLocker.label>armário de armas</Rimverse_WeaponLocker.label>
+  <Rimverse_WeaponLocker.description>Um armário trancado para 6 armas.</Rimverse_WeaponLocker.description>
+  <Rimverse_DefenseArmory.label>arsenal de defesa</Rimverse_DefenseArmory.label>
+  <Rimverse_DefenseArmory.description>Guarda 12 armas. Quando há inimigos no mapa, colonos desarmados por perto pegam uma arma sozinhos e largam de volta quando o perigo passa.</Rimverse_DefenseArmory.description>
+  <Rimverse_RelicDisplay.label>expositor de relíquias</Rimverse_RelicDisplay.label>
+  <Rimverse_RelicDisplay.description>Uma vitrine iluminada que exibe uma única arma ou relíquia. Muito bonita.</Rimverse_RelicDisplay.description>
+  <Rimverse_HydroSemi.label>baia hidropônica semiautomática</Rimverse_HydroSemi.label>
+  <Rimverse_HydroSemi.description>Planta e cuida das próprias plantas. Um colono ainda precisa colher.</Rimverse_HydroSemi.description>
+  <Rimverse_HydroAuto.label>baia hidropônica automática</Rimverse_HydroAuto.label>
+  <Rimverse_HydroAuto.description>Planta, colhe e manda a colheita para o armazém mais próximo, tudo sozinha.</Rimverse_HydroAuto.description>
+  <Rimverse_ClosedGarden.label>jardim de ciclo fechado</Rimverse_ClosedGarden.label>
+  <Rimverse_ClosedGarden.description>Um jardim selado que funciona sozinho, cresce em gravidade zero, faz um pouco de ar e alivia a febre de cabine.</Rimverse_ClosedGarden.description>
+  <Rimverse_MaintenanceBay.label>baia de drones de manutenção</Rimverse_MaintenanceBay.label>
+  <Rimverse_MaintenanceBay.description>Um suporte com drones pequenos de reparo. A cada hora eles saem e consertam o casco, as paredes e os módulos danificados da nave onde estão, sem ninguém pegar numa ferramenta.</Rimverse_MaintenanceBay.description>
+  <Rimverse_AutoGalley.label>cozinha automática</Rimverse_AutoGalley.label>
+  <Rimverse_AutoGalley.description>Uma cozinha selada. A cada meia hora ela pega comida crua dos armazéns em volta e cozinha sozinha uma refeição simples. Ponha prateleiras ou a saída da hidroponia do lado dela.</Rimverse_AutoGalley.description>
+  <Rimverse_AutoMedPod.label>cápsula médica automática</Rimverse_AutoMedPod.label>
+  <Rimverse_AutoMedPod.description>Uma cama médica selada com braços cirúrgicos. Trata as feridas e doenças de quem estiver deitado nela a cada hora, sem médico nem remédio.</Rimverse_AutoMedPod.description>
+  <Rimverse_TradeDropSpot.label>ponto de entrega do comércio</Rimverse_TradeDropSpot.label>
+  <Rimverse_TradeDropSpot.description>Os comerciantes orbitais largam aqui as mercadorias que você compra.</Rimverse_TradeDropSpot.description>
+</LanguageData>

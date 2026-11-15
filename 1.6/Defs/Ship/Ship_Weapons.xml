@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_Proj_Autocannon</defName>
+    <label>autocannon shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <speed>110</speed>
+      <armorPenetrationBase>0.6</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_Proj_HullCannon</defName>
+    <label>hull cannon shell</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ShellHighExplosive</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>80</damageAmountBase>
+      <speed>70</speed>
+      <explosionRadius>1.5</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_Proj_LaserLance</defName>
+    <label>laser lance bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/ChargeLanceShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.6</drawSize>
+      <color>(1, 0.4, 0.35)</color>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>150</damageAmountBase>
+      <speed>160</speed>
+      <armorPenetrationBase>1.0</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_Proj_Plasma</defName>
+    <label>plasma bolt</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ChargeLanceShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>2.2</drawSize>
+      <color>(0.6, 0.8, 1)</color>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>200</damageAmountBase>
+      <speed>80</speed>
+      <explosionRadius>2.4</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_Proj_Railgun</defName>
+    <label>railgun slug</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>300</damageAmountBase>
+      <speed>220</speed>
+      <armorPenetrationBase>2.0</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_Proj_Missile</defName>
+    <label>ship missile</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Rocket_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>100</damageAmountBase>
+      <speed>45</speed>
+      <explosionRadius>2.0</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Rimverse_Proj_Ion</defName>
+    <label>ion bolt</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Charge_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.8</drawSize>
+      <color>(0.5, 0.7, 1)</color>
+    </graphicData>
+    <projectile>
+      <damageDef>EMP</damageDef>
+      <damageAmountBase>150</damageAmountBase>
+      <speed>120</speed>
+      <explosionRadius>1.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_Autocannon</defName>
+    <label>ship autocannon</label>
+    <description>Rapid-fire hull gun for close range. Bursts of 5 shells of 15 damage every 4 seconds. Uses 5 steel per burst.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_KineticWeapons</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Weapon</role>
+        <mass>4</mass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_ShipWeapon">
+        <band>Near</band>
+        <projectile>Rimverse_Proj_Autocannon</projectile>
+        <burst>5</burst>
+        <damage>15</damage>
+        <cooldownSeconds>4</cooldownSeconds>
+        <heatPerShot>1</heatPerShot>
+        <ammoPerShot>5</ammoPerShot>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0</fuelConsumptionRate>
+        <fuelCapacity>100</fuelCapacity>
+        <fuelLabel>steel</fuelLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <initialFuelPercent>0</initialFuelPercent>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_HullCannon</defName>
+    <label>hull cannon</label>
+    <description>Heavy cannon for medium range. One explosive shell of 80 damage every 8 seconds. Uses 10 steel per shot.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_KineticWeapons</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Weapon</role>
+        <mass>6</mass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_ShipWeapon">
+        <band>Medium</band>
+        <projectile>Rimverse_Proj_HullCannon</projectile>
+        <burst>1</burst>
+        <damage>80</damage>
+        <cooldownSeconds>8</cooldownSeconds>
+        <heatPerShot>3</heatPerShot>
+        <ammoPerShot>10</ammoPerShot>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0</fuelConsumptionRate>
+        <fuelCapacity>150</fuelCapacity>
+        <fuelLabel>steel</fuelLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <initialFuelPercent>0</initialFuelPercent>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_PointLaser</defName>
+    <label>point defense laser</label>
+    <description>Tracks and burns incoming missiles at close range. Each one has a 50% chance to shoot down a missile.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>30</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_PointDefense</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Weapon</role>
+        <mass>2</mass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_ShipWeapon">
+        <band>Near</band>
+        <interceptChance>0.5</interceptChance>
+        <cooldownSeconds>2</cooldownSeconds>
+        <heatPerShot>2</heatPerShot>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_LaserLance</defName>
+    <label>laser lance</label>
+    <description>Concentrated laser for medium range. 150 damage every 15 seconds, doubled against shields.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>120</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipLasers</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Weapon</role>
+        <mass>6</mass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_ShipWeapon">
+        <band>Medium</band>
+        <projectile>Rimverse_Proj_LaserLance</projectile>
+        <burst>1</burst>
+        <damage>150</damage>
+        <cooldownSeconds>15</cooldownSeconds>
+        <heatPerShot>20</heatPerShot>
+        <shieldMultiplier>2</shieldMultiplier>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_PlasmaCannon</defName>
+    <label>plasma cannon</label>
+    <description>Throws a bolt of plasma that bursts over an area of the enemy hull. 200 damage every 15 seconds.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>9000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>200</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipPlasma</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Weapon</role>
+        <mass>12</mass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>3000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_ShipWeapon">
+        <band>Medium</band>
+        <projectile>Rimverse_Proj_Plasma</projectile>
+        <burst>1</burst>
+        <damage>200</damage>
+        <cooldownSeconds>15</cooldownSeconds>
+        <heatPerShot>30</heatPerShot>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_Railgun</defName>
+    <label>railgun</label>
+    <description>Magnetic gun for long range. A plasteel slug of 300 damage every 20 seconds. Uses 10 plasteel per shot.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,3)</size>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>9000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>250</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_Railguns</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Weapon</role>
+        <mass>14</mass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>4000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_ShipWeapon">
+        <band>Far</band>
+        <projectile>Rimverse_Proj_Railgun</projectile>
+        <burst>1</burst>
+        <damage>300</damage>
+        <cooldownSeconds>20</cooldownSeconds>
+        <heatPerShot>15</heatPerShot>
+        <ammoPerShot>10</ammoPerShot>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0</fuelConsumptionRate>
+        <fuelCapacity>100</fuelCapacity>
+        <fuelLabel>plasteel</fuelLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <initialFuelPercent>0</initialFuelPercent>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_MissileLauncher</defName>
+    <label>missile launcher</label>
+    <description>Launches guided ship missiles at long range. 100 damage every 10 seconds. Missiles can be shot down by point defense. Loads ship missiles.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>180</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipMissiles</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Weapon</role>
+        <mass>5</mass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_ShipWeapon">
+        <band>Far</band>
+        <projectile>Rimverse_Proj_Missile</projectile>
+        <burst>1</burst>
+        <damage>100</damage>
+        <cooldownSeconds>10</cooldownSeconds>
+        <heatPerShot>1</heatPerShot>
+        <ammoPerShot>1</ammoPerShot>
+        <missile>true</missile>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0</fuelConsumptionRate>
+        <fuelCapacity>6</fuelCapacity>
+        <fuelLabel>missiles</fuelLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Rimverse_ShipMissile</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <initialFuelPercent>0</initialFuelPercent>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_IonCannon</defName>
+    <label>ion cannon</label>
+    <description>Ion bolt of 150 damage that only hits shields and energy. Lets you strip a ship's defenses and capture it intact.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>150</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_IonWeapons</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Weapon</role>
+        <mass>6</mass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_ShipWeapon">
+        <band>Medium</band>
+        <projectile>Rimverse_Proj_Ion</projectile>
+        <burst>1</burst>
+        <damage>150</damage>
+        <cooldownSeconds>12</cooldownSeconds>
+        <heatPerShot>15</heatPerShot>
+        <onlyShields>true</onlyShields>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_TractorBeam</defName>
+    <label>tractor beam</label>
+    <description>Graviton beam that holds an enemy ship at close range so it cannot flee or pull away.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>120</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_Boarding</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Weapon</role>
+        <mass>5</mass>
+        <heatPerSecond>1</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_ShipWeapon">
+        <band>Near</band>
+        <tractor>true</tractor>
+        <cooldownSeconds>1</cooldownSeconds>
+        <heatPerShot>0</heatPerShot>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_ShieldGenerator</defName>
+    <label>shield generator</label>
+    <description>Projects an energy shield around the whole ship. 300 shield points that recover 10 per second while powered.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>200</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_Shields</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Shield</role>
+        <mass>10</mass>
+        <heatPerSecond>0.5</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Rimverse.CompProperties_ShipShield">
+        <maxHitPoints>300</maxHitPoints>
+        <regenPerSecond>10</regenPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_ShipMissile</defName>
+    <label>ship missile</label>
+    <description>A guided missile loaded into ship missile launchers.</description>
+    <graphicData>
+      <texPath>Things/Projectile/Rocket_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>70</MarketValue>
+      <Mass>8</Mass>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>Rimverse_MakeShipMissile</defName>
+    <label>make ship missile</label>
+    <description>Assemble a guided ship missile.</description>
+    <jobString>Assembling a ship missile.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1600</workAmount>
+    <workSkill>Crafting</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_ShipMissile>1</Rimverse_ShipMissile>
+    </products>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>Rimverse_ShipMissiles</researchPrerequisite>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <IncidentDef>
+    <defName>Rimverse_ShipAmbush</defName>
+    <label>ship ambush</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+      <li>Map_Misc</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_ShipAmbush</workerClass>
+    <baseChance>1.2</baseChance>
+    <minRefireDays>12</minRefireDays>
+    <letterLabel>ship ambush</letterLabel>
+  </IncidentDef>
+
+</Defs>

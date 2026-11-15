@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Vacuum.label>vácuo</Rimverse_Vacuum.label>
+  <Rimverse_Vacuum.description>Espaço vazio. Nada fica aqui sem casco por baixo.</Rimverse_Vacuum.description>
+  <Rimverse_Regolith.label>regolito</Rimverse_Regolith.label>
+  <Rimverse_Regolith.description>Poeira solta e rocha quebrada cobrindo um mundo sem ar.</Rimverse_Regolith.description>
+  <Rimverse_HullFloor.label>piso de casco</Rimverse_HullFloor.label>
+  <Rimverse_HullFloor.description>Chapas estruturais do convés. Tudo que está sobre piso de casco ligado a uma ponte faz parte daquela nave e viaja com ela.</Rimverse_HullFloor.description>
+  <Rimverse_HullFloorVacuum.label>piso de casco (vácuo)</Rimverse_HullFloorVacuum.label>
+  <Rimverse_HullFloorVacuum.description>Chapas estruturais montadas direto no vácuo, para aumentar uma nave que já está no espaço.</Rimverse_HullFloorVacuum.description>
+</LanguageData>

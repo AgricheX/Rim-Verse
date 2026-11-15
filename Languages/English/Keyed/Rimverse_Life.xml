@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_LifeAboard>Life aboard</Rimverse_LifeAboard>
+  <Rimverse_LifeAboard_Desc>Zero gravity, bone loss, crushing high gravity, warp sickness and cabin fever.</Rimverse_LifeAboard_Desc>
+  <Rimverse_Lineages>Lineages</Rimverse_Lineages>
+  <Rimverse_Lineages_Desc>People from civilizations on other worlds are born with the lineage of their home world.</Rimverse_Lineages_Desc>
+  <Rimverse_CivLineage>Main lineage: {0}</Rimverse_CivLineage>
+  <Rimverse_CivLineageNone>Main lineage: baseline humans</Rimverse_CivLineageNone>
+  <Rimverse_BodyFauna>Fauna: {0} alien species</Rimverse_BodyFauna>
+</LanguageData>

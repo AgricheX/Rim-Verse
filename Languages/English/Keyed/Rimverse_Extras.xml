@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CmdVoidJump>Void jump</Rimverse_CmdVoidJump>
+  <Rimverse_CmdVoidJumpDesc>Tear through the void and jump to a random star within {1} light-years. Burns {0} bioferrite from the map, needs no warp drive and takes 6 hours. Something may come back with you.</Rimverse_CmdVoidJumpDesc>
+  <Rimverse_VoidJumpNoFerrite>Needs {0} bioferrite on the map.</Rimverse_VoidJumpNoFerrite>
+  <Rimverse_MsgVoidJump>{0} tore through the void. The trip will take a few hours.</Rimverse_MsgVoidJump>
+  <Rimverse_LetterVoidStowawayLabel>Something came back from the void</Rimverse_LetterVoidStowawayLabel>
+  <Rimverse_LetterVoidStowaway>The void jump brought passengers. Void hungers are inside the ship, draining the air.</Rimverse_LetterVoidStowaway>
+  <Rimverse_LetterGhostShipLabel>Ghost ship</Rimverse_LetterGhostShipLabel>
+  <Rimverse_LetterGhostShip>Sensors found a ship drifting nearby. It answers no calls and shows no life signs, but the holds look full. Something sleeps inside.</Rimverse_LetterGhostShip>
+  <Rimverse_LetterSilentStationLabel>Silent station</Rimverse_LetterSilentStationLabel>
+  <Rimverse_LetterSilentStation>An abandoned station showed up on the sensors. The crew is dead, but something moves inside, and one of the shapes wears the face of someone in your crew.</Rimverse_LetterSilentStation>
+  <Rimverse_LetterMonolithMoonLabel>Monolith on the moon</Rimverse_LetterMonolithMoonLabel>
+  <Rimverse_LetterMonolithMoon>There is a black pillar on this moon. Nobody built it. Shadows sleep around it. Studying it could bring dark knowledge.</Rimverse_LetterMonolithMoon>
+  <Rimverse_LetterBlackHoleEdgeLabel>Black hole edge</Rimverse_LetterBlackHoleEdgeLabel>
+  <Rimverse_LetterBlackHoleEdge>Near the black hole's horizon, space bends. Void shards float outside, and something hungry for air came for them.</Rimverse_LetterBlackHoleEdge>
+  <Rimverse_CmdPurge>Purge</Rimverse_CmdPurge>
+  <Rimverse_CmdPurgeDesc>Blow the room's air out at once. Hostiles in the room take damage and are stunned. Anyone unprotected starts to suffocate.</Rimverse_CmdPurgeDesc>
+  <Rimverse_PurgeCooldown>Recharging: {0} h</Rimverse_PurgeCooldown>
+  <Rimverse_MsgPurged>The purge hit {0} hostiles.</Rimverse_MsgPurged>
+  <Rimverse_MsgVoidSensor>The void sensor detected {0} entities on the map.</Rimverse_MsgVoidSensor>
+  <Rimverse_CmdVoidPulse>Void pulse</Rimverse_CmdVoidPulse>
+  <Rimverse_CmdVoidPulseDesc>Wake every sleeping entity on the map, so you fight when you choose.</Rimverse_CmdVoidPulseDesc>
+  <Rimverse_VoidPulseNone>No sleeping entities detected.</Rimverse_VoidPulseNone>
+  <Rimverse_MsgVoidPulse>{0} entities woke up.</Rimverse_MsgVoidPulse>
+  <Rimverse_VoidSensorInspect>Entities awake: {0}. Sleeping: {1}.</Rimverse_VoidSensorInspect>
+  <Rimverse_Lesson_General>General</Rimverse_Lesson_General>
+  <Rimverse_Lesson_Piloting>Piloting</Rimverse_Lesson_Piloting>
+  <Rimverse_Lesson_Engineering>Engineering</Rimverse_Lesson_Engineering>
+  <Rimverse_Lesson_Medicine>Medicine</Rimverse_Lesson_Medicine>
+  <Rimverse_LessonDesc>Change the lesson subject. Piloting trains shooting and intellectual, engineering trains construction and crafting, medicine trains medicine and intellectual.</Rimverse_LessonDesc>
+  <Rimverse_LessonInspect>Lesson subject: {0}</Rimverse_LessonInspect>
+  <Rimverse_WasteHandled>Wastepacks handled: {0}</Rimverse_WasteHandled>
+  <Rimverse_WasteNeedsSpace>Only works in space or in orbit.</Rimverse_WasteNeedsSpace>
+  <Rimverse_CmdEnterSystem>Enter the star system</Rimverse_CmdEnterSystem>
+  <Rimverse_CmdEnterSystemDesc>Take the ship from this Odyssey orbital location to the home world's orbit on the Rimverse map, where it can travel the system and the stars.</Rimverse_CmdEnterSystemDesc>
+  <Rimverse_MsgEnteredSystem>{0} entered the star system.</Rimverse_MsgEnteredSystem>
+  <Rimverse_CmdDockOdyssey>Dock at orbital location</Rimverse_CmdDockOdyssey>
+  <Rimverse_CmdDockOdysseyDesc>Take the ship to an Odyssey orbital location you already have open, like a relay or an asteroid.</Rimverse_CmdDockOdysseyDesc>
+  <Rimverse_NoOdysseyMaps>No open Odyssey orbital locations.</Rimverse_NoOdysseyMaps>
+  <Rimverse_NoDockSpace>There is no free space to dock the ship.</Rimverse_NoDockSpace>
+  <Rimverse_MsgDocked>{0} docked.</Rimverse_MsgDocked>
+  <Rimverse_LetterOrbitTraderLabel>Trader in orbit</Rimverse_LetterOrbitTraderLabel>
+  <Rimverse_LetterOrbitTrader>A merchant ship from {0} reached orbit. Use the comms console to trade.</Rimverse_LetterOrbitTrader>
+  <Rimverse_LetterOrbitPatrolLabel>Patrol in orbit</Rimverse_LetterOrbitPatrolLabel>
+  <Rimverse_LetterOrbitPatrol>A patrol from {0} passed, scanned your position and moved on in peace. Their opinion of you improved a little.</Rimverse_LetterOrbitPatrol>
+  <Rimverse_LetterOrbitPatrolHostileLabel>Enemy patrol</Rimverse_LetterOrbitPatrolHostileLabel>
+  <Rimverse_LetterOrbitPatrolHostile>A patrol from {0}, at war with you, found your position and sent troops.</Rimverse_LetterOrbitPatrolHostile>
+  <Rimverse_LetterOrbitFleetLabel>Fleet sighted</Rimverse_LetterOrbitFleetLabel>
+  <Rimverse_LetterOrbitFleet>Sensors spotted a fleet from {0} heading your way. They arrive in about two days.</Rimverse_LetterOrbitFleet>
+  <Rimverse_LetterOrbitDerelictLabel>Derelict drift</Rimverse_LetterOrbitDerelictLabel>
+  <Rimverse_LetterOrbitDerelict>Wreckage from a ship drifted close and some of it got caught here. There is material to salvage.</Rimverse_LetterOrbitDerelict>
+  <Rimverse_AddColumn>Add column</Rimverse_AddColumn>
+  <Rimverse_RemoveColumn>Remove column</Rimverse_RemoveColumn>
+  <Rimverse_SortBy>Sort by this</Rimverse_SortBy>
+  <Rimverse_Col_Mood>Mood</Rimverse_Col_Mood>
+  <Rimverse_Col_Health>Health</Rimverse_Col_Health>
+  <Rimverse_Col_Rest>Rest</Rimverse_Col_Rest>
+  <Rimverse_Col_Food>Food</Rimverse_Col_Food>
+  <Rimverse_Col_Joy>Recreation</Rimverse_Col_Joy>
+  <Rimverse_Col_MoveSpeed>Speed</Rimverse_Col_MoveSpeed>
+  <Rimverse_Col_WorkSpeed>Work speed</Rimverse_Col_WorkSpeed>
+  <Rimverse_AlertDrillEmpty>Deep drill empty</Rimverse_AlertDrillEmpty>
+  <Rimverse_AlertDrillEmptyDesc>These deep drills have nothing left to dig. Move them.</Rimverse_AlertDrillEmptyDesc>
+  <Rimverse_AlertLowPower>Power running out</Rimverse_AlertLowPower>
+  <Rimverse_AlertLowPowerDesc>A power net is using more than it makes and its batteries are below 15%.</Rimverse_AlertLowPowerDesc>
+  <Rimverse_ArsenalAlert>Boarding alert: {0} colonists armed from this armory.</Rimverse_ArsenalAlert>
+  <Rimverse_ArsenalReady>Ready. Arms the crew when enemies show up.</Rimverse_ArsenalReady>
+  <Rimverse_CmdCopyBills>Copy bills</Rimverse_CmdCopyBills>
+  <Rimverse_CmdCopyBillsDesc>Copy all bills of this workbench.</Rimverse_CmdCopyBillsDesc>
+  <Rimverse_CmdPasteBills>Paste bills</Rimverse_CmdPasteBills>
+  <Rimverse_CmdPasteBillsDesc>Paste the copied bills this workbench can do.</Rimverse_CmdPasteBillsDesc>
+  <Rimverse_CmdCopyWork>Copy work</Rimverse_CmdCopyWork>
+  <Rimverse_CmdCopyWorkDesc>Copy priorities, schedule and allowed area.</Rimverse_CmdCopyWorkDesc>
+  <Rimverse_CmdPasteWork>Paste work</Rimverse_CmdPasteWork>
+  <Rimverse_CmdPasteWorkDesc>Paste the copied priorities, schedule and area.</Rimverse_CmdPasteWorkDesc>
+  <Rimverse_NothingCopied>Nothing copied yet.</Rimverse_NothingCopied>
+  <Rimverse_CmdWorkMode>Work mode</Rimverse_CmdWorkMode>
+  <Rimverse_CmdWorkModeDesc>Change the work mode of the selected colonists.</Rimverse_CmdWorkModeDesc>
+  <Rimverse_WorkMode_Emergency>Emergency (only fire, doctor and patient)</Rimverse_WorkMode_Emergency>
+  <Rimverse_WorkMode_Repair>Repair (emergency, construction and hauling)</Rimverse_WorkMode_Repair>
+  <Rimverse_WorkMode_Haul>Hauling (emergency, hauling and cleaning)</Rimverse_WorkMode_Haul>
+  <Rimverse_WorkMode_Restore>Restore old priorities</Rimverse_WorkMode_Restore>
+  <Rimverse_CmdHunt>Search and destroy</Rimverse_CmdHunt>
+  <Rimverse_CmdHuntDesc>The colonist hunts the nearest enemy on their own while drafted.</Rimverse_CmdHuntDesc>
+  <Rimverse_CmdSavePos>Save position</Rimverse_CmdSavePos>
+  <Rimverse_CmdSavePosDesc>Save this spot as the colonist's defensive position.</Rimverse_CmdSavePosDesc>
+  <Rimverse_CmdGoPos>Go to position</Rimverse_CmdGoPos>
+  <Rimverse_CmdGoPosDesc>Send the colonist to the saved defensive position.</Rimverse_CmdGoPosDesc>
+  <Rimverse_NoSavedPos>No saved position.</Rimverse_NoSavedPos>
+  <Rimverse_CmdHarvestOn>Harvest on</Rimverse_CmdHarvestOn>
+  <Rimverse_CmdHarvestOnDesc>Switch off to pause harvesting here without losing the crop.</Rimverse_CmdHarvestOnDesc>
+  <Rimverse_CmdStorageOn>Storage on</Rimverse_CmdStorageOn>
+  <Rimverse_CmdStorageOnDesc>Switch off to stop storing things here without losing the settings.</Rimverse_CmdStorageOnDesc>
+  <Rimverse_CmdSelectOwner>Select owner</Rimverse_CmdSelectOwner>
+  <Rimverse_CmdSelectOwnerDesc>Select who owns this bed.</Rimverse_CmdSelectOwnerDesc>
+  <Rimverse_CmdNeededMode>Needed mode</Rimverse_CmdNeededMode>
+  <Rimverse_CmdNeededModeDesc>The bay picks the plant whose crop the ship is shortest on.</Rimverse_CmdNeededModeDesc>
+  <Rimverse_DesHaulArea>Haul area</Rimverse_DesHaulArea>
+  <Rimverse_DesHaulAreaDesc>Drag to mark every loose item in the area for hauling.</Rimverse_DesHaulAreaDesc>
+  <Rimverse_DesCopy>Copy buildings</Rimverse_DesCopy>
+  <Rimverse_DesCopyDesc>Drag over an area to copy its buildings.</Rimverse_DesCopyDesc>
+  <Rimverse_DesPaste>Paste buildings</Rimverse_DesPaste>
+  <Rimverse_DesPasteDesc>Click to paste the copied buildings as blueprints.</Rimverse_DesPasteDesc>
+  <Rimverse_MsgCopied>{0} buildings copied.</Rimverse_MsgCopied>
+  <Rimverse_MsgPasted>{0} of {1} blueprints placed.</Rimverse_MsgPasted>
+  <Rimverse_TabGear>Gear</Rimverse_TabGear>
+  <Rimverse_GearArmor>Armor: sharp {0}, blunt {1}, heat {2}</Rimverse_GearArmor>
+  <Rimverse_GearInsulation>Comfort: from {0} to {1}</Rimverse_GearInsulation>
+  <Rimverse_GearVacuum>Vacuum protection: {0}</Rimverse_GearVacuum>
+  <Rimverse_GearMass>Carried: {0} of {1}</Rimverse_GearMass>
+  <Rimverse_GearRange>(range {0})</Rimverse_GearRange>
+  <Rimverse_GearInventory>Inventory:</Rimverse_GearInventory>
+  <Rimverse_HudShip>Air {0}% · hull {1}% · heat {2}% · fuel {3}</Rimverse_HudShip>
+  <Rimverse_HudColony>Food for {0} days · power {1} Wd ({2} W)</Rimverse_HudColony>
+  <Rimverse_HudTemp>Here {0} · outside {1}</Rimverse_HudTemp>
+  <Rimverse_HydroAuto>Automatic: plants, harvests and stores.</Rimverse_HydroAuto>
+  <Rimverse_HydroSemi>Semi-automatic: plants on its own.</Rimverse_HydroSemi>
+  <Rimverse_HydroNeeded>(needed mode)</Rimverse_HydroNeeded>
+  <Rimverse_HydroNeedsGravity>Stopped: needs gravity. Only the closed-cycle garden works in zero gravity.</Rimverse_HydroNeedsGravity>
+  <Rimverse_ItemInspect>Value {0} · mass {1}</Rimverse_ItemInspect>
+  <Rimverse_KilledBy>Killed by: {0}</Rimverse_KilledBy>
+  <Rimverse_MsgLostPart>{0} lost: {1}. Cause: {2}.</Rimverse_MsgLostPart>
+  <Rimverse_MaterialsHave>On the map: {0}</Rimverse_MaterialsHave>
+  <Rimverse_MedPodInspect>Tends on its own every hour (quality {0}).</Rimverse_MedPodInspect>
+  <Rimverse_PowerTabTitle>Power nets ({0})</Rimverse_PowerTabTitle>
+  <Rimverse_PowerNetLine>Net {0} ({1} parts): makes {2} W, uses {3} W, balance {4} W</Rimverse_PowerNetLine>
+  <Rimverse_PowerNetStored>Stored: {0} of {1} Wd</Rimverse_PowerNetStored>
+  <Rimverse_Show>Show</Rimverse_Show>
+  <Rimverse_SearchBody>{0} (body of {1})</Rimverse_SearchBody>
+  <Rimverse_QolCategory_Search>Search</Rimverse_QolCategory_Search>
+  <Rimverse_QolCategory_Storage>Storage and cargo</Rimverse_QolCategory_Storage>
+  <Rimverse_QolCategory_Combat>Combat</Rimverse_QolCategory_Combat>
+  <Rimverse_QolCategory_Trade>World, travel and trade</Rimverse_QolCategory_Trade>
+  <Rimverse_FocusInSpace>In space</Rimverse_FocusInSpace>
+  <Rimverse_LetterDefendStellarchLabel>Stellarch under attack</Rimverse_LetterDefendStellarchLabel>
+  <Rimverse_LetterDefendStellarch>A Stellarch's ship calls for help: pirates have surrounded it close by. The pirate ship has turned on you. Win the battle to earn the Empire's favor.</Rimverse_LetterDefendStellarch>
+  <Rimverse_LetterStellarchSavedLabel>Stellarch saved</Rimverse_LetterStellarchSavedLabel>
+  <Rimverse_LetterStellarchSaved>The Stellarch thanks the crew. {0} received {1} imperial favor.</Rimverse_LetterStellarchSaved>
+  <Rimverse_LetterEscortNobleLabel>Escort a noble</Rimverse_LetterEscortNobleLabel>
+  <Rimverse_LetterEscortNoble>The Empire asked that {0} travel aboard your ship for 5 days. Keep the noble alive and on their feet until the shuttle picks them up.</Rimverse_LetterEscortNoble>
+  <Rimverse_LetterNobleDoneLabel>Escort complete</Rimverse_LetterNobleDoneLabel>
+  <Rimverse_LetterNobleDone>The imperial shuttle picked up the noble. {0} received {1} imperial favor.</Rimverse_LetterNobleDone>
+  <Rimverse_LetterNobleFailedLabel>Escort failed</Rimverse_LetterNobleFailedLabel>
+  <Rimverse_LetterNobleFailed>{0} fell under your protection. The Empire will not forget.</Rimverse_LetterNobleFailed>
+  <Rimverse_LetterHuntDesertersLabel>Imperial deserters</Rimverse_LetterHuntDesertersLabel>
+  <Rimverse_LetterHuntDeserters>{0} imperial deserters stole drop pods and are landing here. The Empire pays in favor if they are stopped.</Rimverse_LetterHuntDeserters>
+  <Rimverse_LetterDesertersDoneLabel>Deserters stopped</Rimverse_LetterDesertersDoneLabel>
+  <Rimverse_LetterDesertersDone>The deserters were stopped. {0} received {1} imperial favor.</Rimverse_LetterDesertersDone>
+  <Rimverse_LetterPromotionLabel>Naval promotion</Rimverse_LetterPromotionLabel>
+  <Rimverse_LetterPromotion>After another victory in space, {0} is now {1}.</Rimverse_LetterPromotion>
+  <Rimverse_MsgConvoyEscort>Imperial escorts will fly with your ship for 5 days.</Rimverse_MsgConvoyEscort>
+  <Rimverse_MsgCrewRescue>The imperial medical team tended {0} wounds.</Rimverse_MsgCrewRescue>
+  <Rimverse_MsgHullShield>The ship's shields were recharged.</Rimverse_MsgHullShield>
+  <Rimverse_MsgSealedBreach>{0} breaches were sealed.</Rimverse_MsgSealedBreach>
+  <Rimverse_MsgSensorsBlinded>Psychic static blinded {0} enemies and the sensors of enemy ships.</Rimverse_MsgSensorsBlinded>
+  <Rimverse_MsgShipyardRepair>The imperial shipyard crew repaired {0} buildings.</Rimverse_MsgShipyardRepair>
+  <Rimverse_PsyNeedShield>Must be aboard one of your ships with a shield generator.</Rimverse_PsyNeedShield>
+  <Rimverse_NavalRank_1>ensign</Rimverse_NavalRank_1>
+  <Rimverse_NavalRank_2>frigate captain</Rimverse_NavalRank_2>
+  <Rimverse_NavalRank_3>commodore</Rimverse_NavalRank_3>
+  <Rimverse_NavalRank_4>admiral</Rimverse_NavalRank_4>
+  <Rimverse_NavalRank_5>grand admiral</Rimverse_NavalRank_5>
+  <Rimverse_NavalRank_6>naval stellarch</Rimverse_NavalRank_6>
+  <Rimverse_GameStart_Shipwreck>The escape pods hit the ground hard. Around you lie the broken pieces of your ship: a bridge, an engine, fuel cells and the air generator. None of them work yet.
+
+Repair them, research the ship basics and build a sealed hull around them. Then launch to orbit and look for a way to the stars.</Rimverse_GameStart_Shipwreck>
+  <Rimverse_GameStart_Drifting>The alarms woke you up. The ship is drifting at the edge of the system, the air tanks are almost empty and the fuel gauge is in the red.
+
+Check the ship tab: air, heat and fuel. Fix the damaged parts, grow food in the hydroponics and find a way to reach a planet or a station before the air runs out.</Rimverse_GameStart_Drifting>
+  <Rimverse_GameStart_MiningStation>The contract is signed. Your station floats in the asteroid belt, far from the home world.
+
+Use the mining suits to work the asteroids, sell the ore to the corporate traders and expand the station. With enough money you can build engines and become free.</Rimverse_GameStart_MiningStation>
+  <Rimverse_GameStart_ImperialRefugees>The jump was rough and the hull is cracked in several places. Behind you an imperial world is falling, and the Empire does not forgive deserters.
+
+Repair the ship, keep the crew calm and look for civilizations that might take you in. Check the civilizations tab: the Empire already knows who you are.</Rimverse_GameStart_ImperialRefugees>
+  <Rimverse_GameStart_GlitterColony>The federation shuttle left you here with crates of supplies and a promise of support.
+
+You already know the basics of starships and sensors. Build your base, trade with the federation and, when you are ready, build your first ship.</Rimverse_GameStart_GlitterColony>
+  <Rimverse_GameStart_StarTribe>The elders say the lights in the sky are spirits. The young ones say they are boats that sail between the stars.
+
+Survive, grow and learn. The road to space is the longest one in Rimverse, but every civilization out there started like you.</Rimverse_GameStart_StarTribe>
+  <Rimverse_GameStart_CryoAwakening>The caskets hiss open. Your heads hurt, and the ship clock says eighty years have passed.
+
+The star catalog is out of date and the civilizations nearby are strangers now. Scan the sky, find out who rules the stars and decide where to go.</Rimverse_GameStart_CryoAwakening>
+  <Rimverse_GameStart_RichExplorer>Your ship is ready. The hydroponics are growing, the galley is warm and the drones are humming in their bay.
+
+Open the galaxy map, pick a star and jump. Ruins, anomalies, civilizations and whole galaxies are waiting. The recommended storyteller for this start is a calm one.</Rimverse_GameStart_RichExplorer>
+  <Rimverse_GameStart_AsyncResearcher>The yellow lights hum. You are back in the Yellow Rooms, with no idea how you got here.
+
+Survive and find a way out. They say that this time the door back does not lead to the planet, but to an abandoned ship in orbit.</Rimverse_GameStart_AsyncResearcher>
+  <Rimverse_StartSummary_Surface>Starts on the surface of the home world.</Rimverse_StartSummary_Surface>
+  <Rimverse_StartSummary_Orbit>Starts in orbit of the home world.</Rimverse_StartSummary_Orbit>
+  <Rimverse_StartSummary_Belt>Starts in the asteroid belt of the home system.</Rimverse_StartSummary_Belt>
+  <Rimverse_StartSummary_OuterSystem>Starts at the edge of the home system.</Rimverse_StartSummary_OuterSystem>
+  <Rimverse_StartLayout_Wreck>Ship wreckage nearby.</Rimverse_StartLayout_Wreck>
+  <Rimverse_StartLayout_Drifter>Small ship without warp, low on air and fuel.</Rimverse_StartLayout_Drifter>
+  <Rimverse_StartLayout_Station>Mining station with solar panels.</Rimverse_StartLayout_Station>
+  <Rimverse_StartLayout_Refugee>Damaged refugee transport.</Rimverse_StartLayout_Refugee>
+  <Rimverse_StartLayout_Explorer>Large automated ship with a warp drive.</Rimverse_StartLayout_Explorer>
+  <Rimverse_StartLayout_CryoShip>Sleeper ship with cryptosleep caskets.</Rimverse_StartLayout_CryoShip>
+  <Rimverse_StartLayout_Derelict>Abandoned ship waiting in orbit.</Rimverse_StartLayout_Derelict>
+  <Rimverse_ShipName_Drifter>Weary Swallow</Rimverse_ShipName_Drifter>
+  <Rimverse_ShipName_Station>Deepstone Station</Rimverse_ShipName_Station>
+  <Rimverse_ShipName_Refugee>Last Crown</Rimverse_ShipName_Refugee>
+  <Rimverse_ShipName_Cryo>Long Sleep</Rimverse_ShipName_Cryo>
+  <Rimverse_ShipName_Explorer>Golden Horizon</Rimverse_ShipName_Explorer>
+  <Rimverse_ShipName_Derelict>Nameless ship</Rimverse_ShipName_Derelict>
+  <Rimverse_StartLetter_Drifter>Adrift</Rimverse_StartLetter_Drifter>
+  <Rimverse_StartLetterText_Drifter>The ship is at the edge of the system, far from everything. Air and fuel are low. Take care of them first.</Rimverse_StartLetterText_Drifter>
+  <Rimverse_StartLetter_Station>Belt station</Rimverse_StartLetter_Station>
+  <Rimverse_StartLetterText_Station>The station sits in the asteroid belt. The corporation already knows you and will send traders.</Rimverse_StartLetterText_Station>
+  <Rimverse_StartLetter_Refugee>Escape</Rimverse_StartLetter_Refugee>
+  <Rimverse_StartLetterText_Refugee>The transport reached the edge of the system. The hull is cracked and the Empire is angry with you.</Rimverse_StartLetterText_Refugee>
+  <Rimverse_StartLetter_Explorer>Ready to explore</Rimverse_StartLetter_Explorer>
+  <Rimverse_StartLetterText_Explorer>The ship is in orbit of the home world, with everything running on its own. The universe is yours.</Rimverse_StartLetterText_Explorer>
+  <Rimverse_StartLetter_CryoShip>Awakening</Rimverse_StartLetter_CryoShip>
+  <Rimverse_StartLetterText_CryoShip>The caskets opened after eighty years. The nearby civilizations changed while you slept.</Rimverse_StartLetterText_CryoShip>
+  <Rimverse_StartLetter_Derelict>Abandoned ship</Rimverse_StartLetter_Derelict>
+  <Rimverse_StartLetterText_Derelict>An abandoned ship waits in orbit.</Rimverse_StartLetterText_Derelict>
+  <Rimverse_StartLetter_AsyncExit>The way out</Rimverse_StartLetter_AsyncExit>
+  <Rimverse_StartLetterText_AsyncExit>The door did not lead to the planet. You are inside an abandoned ship in orbit, with a damaged hull, little air and almost no fuel. Repair the ship and look for an A-sync Institute station.</Rimverse_StartLetterText_AsyncExit>
+  <Rimverse_DronesInspect>Drones repair {0} HP per hour (total repaired: {1}).</Rimverse_DronesInspect>
+  <Rimverse_GalleyToggle>Cook on its own</Rimverse_GalleyToggle>
+  <Rimverse_GalleyToggleDesc>Turns the automatic galley on or off.</Rimverse_GalleyToggleDesc>
+  <Rimverse_GalleyInspect>Uses raw food within {0} cells.</Rimverse_GalleyInspect>
+</LanguageData>

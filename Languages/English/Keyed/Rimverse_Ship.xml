@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_DefaultShipName>Ship {0}</Rimverse_DefaultShipName>
+  <Rimverse_TabShip>Ship</Rimverse_TabShip>
+  <Rimverse_Rename>Rename ship</Rimverse_Rename>
+  <Rimverse_PartOfShip>Part of ship: {0}</Rimverse_PartOfShip>
+  <Rimverse_NotPartOfShip>Not connected to any bridge.</Rimverse_NotPartOfShip>
+  <Rimverse_HeatShutdown>Shut down by ship heat.</Rimverse_HeatShutdown>
+  <Rimverse_ShipClass>Class</Rimverse_ShipClass>
+  <Rimverse_ShipCells>Cells: {0} / {1}</Rimverse_ShipCells>
+  <Rimverse_OverLimitShort>(over the limit)</Rimverse_OverLimitShort>
+  <Rimverse_MeterIntegrity>Hull</Rimverse_MeterIntegrity>
+  <Rimverse_MeterAir>Air</Rimverse_MeterAir>
+  <Rimverse_MeterHeat>Heat</Rimverse_MeterHeat>
+  <Rimverse_MeterPower>Power</Rimverse_MeterPower>
+  <Rimverse_NoPowerNet>no power net</Rimverse_NoPowerNet>
+  <Rimverse_ShipMass>Mass</Rimverse_ShipMass>
+  <Rimverse_ShipThrust>Thrust</Rimverse_ShipThrust>
+  <Rimverse_AirFlow>Air: +{0} APH/h made, -{1} APH/h breathed</Rimverse_AirFlow>
+  <Rimverse_HeatFlow>Heat: +{0} UC/s made, -{1} UC/s removed</Rimverse_HeatFlow>
+  <Rimverse_ShipFuel>Fuel: {0} / {1}</Rimverse_ShipFuel>
+  <Rimverse_ShipCrew>People aboard: {0}</Rimverse_ShipCrew>
+  <Rimverse_ShipPilot>Pilot: {0}   Copilot: {1}</Rimverse_ShipPilot>
+  <Rimverse_ShipDodge>Dodge: {0}</Rimverse_ShipDodge>
+  <Rimverse_CmdLaunch>Launch to orbit</Rimverse_CmdLaunch>
+  <Rimverse_CmdLaunchDesc>Takes the whole ship into orbit above this planet. Costs {0} chemfuel. Launch quality depends on the pilot, copilot and thrust.</Rimverse_CmdLaunchDesc>
+  <Rimverse_CmdLand>Land</Rimverse_CmdLand>
+  <Rimverse_CmdLandDesc>Lands the ship on the planet below. Costs {0} chemfuel.</Rimverse_CmdLandDesc>
+  <Rimverse_CannotLaunch>Cannot launch:</Rimverse_CannotLaunch>
+  <Rimverse_CannotLand>Cannot land:</Rimverse_CannotLand>
+  <Rimverse_NoOrbitTile>There is no free space in orbit above.</Rimverse_NoOrbitTile>
+  <Rimverse_NoLandingTile>There is nowhere to land below.</Rimverse_NoLandingTile>
+  <Rimverse_NoLandingSpot>There is no clear area big enough for the ship on the map below.</Rimverse_NoLandingSpot>
+  <Rimverse_ProblemMultipleBridges>There is more than one bridge on the same hull.</Rimverse_ProblemMultipleBridges>
+  <Rimverse_ProblemOverLimit>The hull is over the bridge's limit of {0} cells.</Rimverse_ProblemOverLimit>
+  <Rimverse_ProblemBridgeOffline>The bridge has no power or is switched off.</Rimverse_ProblemBridgeOffline>
+  <Rimverse_ProblemNoThruster>No working thruster.</Rimverse_ProblemNoThruster>
+  <Rimverse_ProblemThrust>Not enough thrust: {0} of {1} needed.</Rimverse_ProblemThrust>
+  <Rimverse_ProblemFuel>Not enough fuel: {0} of {1}.</Rimverse_ProblemFuel>
+  <Rimverse_ProblemAir>Not enough air for the crew: capacity {0} APH of {1} needed.</Rimverse_ProblemAir>
+  <Rimverse_ProblemNoPilot>Nobody aboard can pilot.</Rimverse_ProblemNoPilot>
+  <Rimverse_LetterLaunch_Good>{0} reached orbit without trouble (quality {1}).</Rimverse_LetterLaunch_Good>
+  <Rimverse_LetterLaunch_BadLabel>Rough launch</Rimverse_LetterLaunch_BadLabel>
+  <Rimverse_LetterLaunch_Bad>{0} reached orbit, but the launch was rough (quality {1}).</Rimverse_LetterLaunch_Bad>
+  <Rimverse_LetterLanding_Good>{0} landed without trouble (quality {1}).</Rimverse_LetterLanding_Good>
+  <Rimverse_LetterLanding_BadLabel>Rough landing</Rimverse_LetterLanding_BadLabel>
+  <Rimverse_LetterLanding_Bad>{0} landed, but the landing was rough (quality {1}).</Rimverse_LetterLanding_Bad>
+  <Rimverse_AccidentDamage>Ship parts were damaged.</Rimverse_AccidentDamage>
+  <Rimverse_AccidentThruster>The {0} broke down.</Rimverse_AccidentThruster>
+  <Rimverse_AccidentHeat>The ship overheated.</Rimverse_AccidentHeat>
+  <Rimverse_AccidentSickness>The crew got sick.</Rimverse_AccidentSickness>
+  <Rimverse_MsgHeatShutdown>{0} shut down because of heat on {1}.</Rimverse_MsgHeatShutdown>
+  <Rimverse_MsgHeatFire>Heat is at maximum on {0}: a fire broke out.</Rimverse_MsgHeatFire>
+  <Rimverse_MsgRandomBreach>The hull of {0} is weak and has breached.</Rimverse_MsgRandomBreach>
+  <Rimverse_AlertAirLow>Ship air low</Rimverse_AlertAirLow>
+  <Rimverse_AlertAirLowDesc>Air stock is below 30% on: {0}.
+
+Build air generators and tanks, seal rooms or carry fewer people. Below 20% air in a room, hypoxia starts.</Rimverse_AlertAirLowDesc>
+  <Rimverse_AlertHeatHigh>Ship heat high</Rimverse_AlertHeatHigh>
+  <Rimverse_AlertHeatHighDesc>Heat is above 70% on: {0}.
+
+Above 80% modules shut down one by one. At 100% fires start. Build radiators and heat banks.</Rimverse_AlertHeatHighDesc>
+  <Rimverse_AlertIntegrityLow>Hull damaged</Rimverse_AlertIntegrityLow>
+  <Rimverse_AlertIntegrityLowDesc>Hull integrity is below 60% on: {0}.
+
+Below 50% random breaches appear. Repair and rebuild hull walls.</Rimverse_AlertIntegrityLowDesc>
+  <Rimverse_AlertOverLimit>Ship structure problem</Rimverse_AlertOverLimit>
+  <Rimverse_AlertOverLimitDesc>These ships are over their bridge's cell limit or have more than one bridge: {0}.
+
+Build structure modules or a bigger bridge, or split the hulls.</Rimverse_AlertOverLimitDesc>
+  <Rimverse_Stat_Role>Ship role</Rimverse_Stat_Role>
+  <Rimverse_Stat_Role_Desc>What this part does when it is part of a ship.</Rimverse_Stat_Role_Desc>
+  <Rimverse_Stat_Mass>Ship mass</Rimverse_Stat_Mass>
+  <Rimverse_Stat_Mass_Desc>Mass added to the ship. More mass needs more thrust and fuel.</Rimverse_Stat_Mass_Desc>
+  <Rimverse_Stat_Thrust>Thrust</Rimverse_Stat_Thrust>
+  <Rimverse_Stat_Thrust_Desc>Force for launching and maneuvering. To leave a planet thrust must be at least mass × gravity.</Rimverse_Stat_Thrust_Desc>
+  <Rimverse_Stat_Heat>Heat made</Rimverse_Stat_Heat>
+  <Rimverse_Stat_Heat_Desc>Heat added to the ship meter every second while working.</Rimverse_Stat_Heat_Desc>
+  <Rimverse_Stat_HeatRemoval>Heat removed</Rimverse_Stat_HeatRemoval>
+  <Rimverse_Stat_HeatRemoval_Desc>Heat taken from the ship meter every second.</Rimverse_Stat_HeatRemoval_Desc>
+  <Rimverse_Stat_HeatCapacity>Heat capacity</Rimverse_Stat_HeatCapacity>
+  <Rimverse_Stat_HeatCapacity_Desc>How much heat the ship holds before modules shut down.</Rimverse_Stat_HeatCapacity_Desc>
+  <Rimverse_Stat_AirPerHour>Air made</Rimverse_Stat_AirPerHour>
+  <Rimverse_Stat_AirPerHour_Desc>Air-pawn-hours (APH) made per hour. An awake person breathes 1 APH per hour.</Rimverse_Stat_AirPerHour_Desc>
+  <Rimverse_Stat_AirCapacity>Air storage</Rimverse_Stat_AirCapacity>
+  <Rimverse_Stat_AirCapacity_Desc>APH stored. Every sealed room cell also holds 1 APH.</Rimverse_Stat_AirCapacity_Desc>
+  <Rimverse_Stat_FuelCapacity>Fuel capacity</Rimverse_Stat_FuelCapacity>
+  <Rimverse_Stat_FuelCapacity_Desc>Chemfuel stored for launching, landing and maneuvering.</Rimverse_Stat_FuelCapacity_Desc>
+  <Rimverse_Stat_HullPoints>Hull points</Rimverse_Stat_HullPoints>
+  <Rimverse_Stat_HullPoints_Desc>How much this part adds to hull integrity.</Rimverse_Stat_HullPoints_Desc>
+  <Rimverse_Stat_MaxCells>Maximum ship size</Rimverse_Stat_MaxCells>
+  <Rimverse_Stat_MaxCells_Desc>How many hull cells this bridge controls.</Rimverse_Stat_MaxCells_Desc>
+  <Rimverse_Stat_ExtraCells>Extra cells</Rimverse_Stat_ExtraCells>
+  <Rimverse_Stat_ExtraCells_Desc>Adds to the bridge's cell limit.</Rimverse_Stat_ExtraCells_Desc>
+  <Rimverse_Stat_Cargo>Cargo</Rimverse_Stat_Cargo>
+  <Rimverse_Stat_Cargo_Desc>Tons of cargo the ship can carry.</Rimverse_Stat_Cargo_Desc>
+  <Rimverse_Stat_Dodge>Dodge</Rimverse_Stat_Dodge>
+  <Rimverse_Stat_Dodge_Desc>Dodge bonus in ship combat (up to 4 maneuvering thrusters count).</Rimverse_Stat_Dodge_Desc>
+  <Rimverse_Class_None>none</Rimverse_Class_None>
+  <Rimverse_Class_Tin>tin can</Rimverse_Class_Tin>
+  <Rimverse_Class_Civil>civilian</Rimverse_Class_Civil>
+  <Rimverse_Class_Military>military</Rimverse_Class_Military>
+  <Rimverse_Class_Capital>capital</Rimverse_Class_Capital>
+  <Rimverse_Class_Station>station</Rimverse_Class_Station>
+  <Rimverse_Role_None>none</Rimverse_Role_None>
+  <Rimverse_Role_Bridge>bridge</Rimverse_Role_Bridge>
+  <Rimverse_Role_Structure>structure</Rimverse_Role_Structure>
+  <Rimverse_Role_HullWall>hull wall</Rimverse_Role_HullWall>
+  <Rimverse_Role_Window>window</Rimverse_Role_Window>
+  <Rimverse_Role_Reactor>reactor</Rimverse_Role_Reactor>
+  <Rimverse_Role_Solar>solar panel</Rimverse_Role_Solar>
+  <Rimverse_Role_Battery>battery</Rimverse_Role_Battery>
+  <Rimverse_Role_Capacitor>capacitor</Rimverse_Role_Capacitor>
+  <Rimverse_Role_Thruster>thruster</Rimverse_Role_Thruster>
+  <Rimverse_Role_Maneuver>maneuvering</Rimverse_Role_Maneuver>
+  <Rimverse_Role_WarpDrive>warp drive</Rimverse_Role_WarpDrive>
+  <Rimverse_Role_FuelTank>fuel tank</Rimverse_Role_FuelTank>
+  <Rimverse_Role_WarpTank>warp tank</Rimverse_Role_WarpTank>
+  <Rimverse_Role_AirGenerator>air generator</Rimverse_Role_AirGenerator>
+  <Rimverse_Role_AirTank>air tank</Rimverse_Role_AirTank>
+  <Rimverse_Role_IceProcessor>ice processor</Rimverse_Role_IceProcessor>
+  <Rimverse_Role_WaterRecycler>water recycler</Rimverse_Role_WaterRecycler>
+  <Rimverse_Role_Gravity>gravity</Rimverse_Role_Gravity>
+  <Rimverse_Role_Garden>garden</Rimverse_Role_Garden>
+  <Rimverse_Role_Radiator>radiator</Rimverse_Role_Radiator>
+  <Rimverse_Role_HeatBank>heat bank</Rimverse_Role_HeatBank>
+  <Rimverse_Role_HeatSink>heat sink</Rimverse_Role_HeatSink>
+  <Rimverse_Role_Sensor>sensor</Rimverse_Role_Sensor>
+  <Rimverse_Role_ProbeLauncher>probe launcher</Rimverse_Role_ProbeLauncher>
+  <Rimverse_Role_SignatureDetector>signature detector</Rimverse_Role_SignatureDetector>
+  <Rimverse_Role_Shield>shield</Rimverse_Role_Shield>
+  <Rimverse_Role_Cloak>cloak</Rimverse_Role_Cloak>
+  <Rimverse_Role_Cargo>cargo</Rimverse_Role_Cargo>
+  <Rimverse_Role_Hangar>hangar</Rimverse_Role_Hangar>
+  <Rimverse_Role_Hydroponics>hydroponics</Rimverse_Role_Hydroponics>
+  <Rimverse_Role_Cryo>cryosleep</Rimverse_Role_Cryo>
+  <Rimverse_Role_Weapon>weapon</Rimverse_Role_Weapon>
+  <Rimverse_Role_Other>other</Rimverse_Role_Other>
+  <Rimverse_MustBeOnHull>Must be built on hull floor.</Rimverse_MustBeOnHull>
+</LanguageData>

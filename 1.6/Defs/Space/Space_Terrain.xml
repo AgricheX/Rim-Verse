@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TerrainAffordanceDef>
+    <defName>Rimverse_Hull</defName>
+    <label>ship hull</label>
+    <order>2000</order>
+  </TerrainAffordanceDef>
+
+  <TerrainAffordanceDef>
+    <defName>Rimverse_OpenVacuum</defName>
+    <label>open vacuum</label>
+    <order>2001</order>
+  </TerrainAffordanceDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Rimverse_HullFloors</defName>
+  </DesignatorDropdownGroupDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Rimverse_Vacuum</defName>
+    <label>vacuum</label>
+    <description>Empty space. Nothing can stand here without a hull underneath.</description>
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <fertility>0</fertility>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>300</renderPrecedence>
+    <dontRender>true</dontRender>
+    <passability>Impassable</passability>
+    <layerable>false</layerable>
+    <pathCost>300</pathCost>
+    <avoidWander>true</avoidWander>
+    <holdSnowOrSand>false</holdSnowOrSand>
+    <preventCraters>true</preventCraters>
+    <canBePolluted>false</canBePolluted>
+    <filthAcceptanceMask>
+      <li>None</li>
+    </filthAcceptanceMask>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <affordances Inherit="False">
+      <li>Rimverse_OpenVacuum</li>
+    </affordances>
+    <modExtensions>
+      <li Class="Rimverse.VacuumTerrainExtension" />
+    </modExtensions>
+  </TerrainDef>
+
+  <TerrainDef Name="Rimverse_HullFloorBase" ParentName="FloorBase" Abstract="True">
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <color>(0.30, 0.32, 0.36)</color>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>398</renderPrecedence>
+    <constructEffect>ConstructMetal</constructEffect>
+    <isPaintable>true</isPaintable>
+    <isFoundation>true</isFoundation>
+    <preventCraters>true</preventCraters>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <designatorDropdown>Rimverse_HullFloors</designatorDropdown>
+    <affordances>
+      <li>Rimverse_Hull</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>500</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.1</Cleanliness>
+      <CleaningTimeFactor>0.8</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <uiOrder>100</uiOrder>
+    <modExtensions>
+      <li Class="Rimverse.HullTerrainExtension">
+        <hullPoints>30</hullPoints>
+        <mass>0.5</mass>
+      </li>
+    </modExtensions>
+  </TerrainDef>
+
+  <TerrainDef ParentName="Rimverse_HullFloorBase">
+    <defName>Rimverse_HullFloor</defName>
+    <label>hull floor</label>
+    <description>Structural deck plating. Everything standing on hull floor connected to a bridge is part of that ship and travels with it.</description>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+
+  <TerrainDef ParentName="Rimverse_HullFloorBase">
+    <defName>Rimverse_HullFloorVacuum</defName>
+    <label>hull floor (vacuum)</label>
+    <description>Structural deck plating laid out directly in vacuum, extending a ship that is already in space.</description>
+    <terrainAffordanceNeeded>Rimverse_OpenVacuum</terrainAffordanceNeeded>
+    <statBases>
+      <WorkToBuild>700</WorkToBuild>
+    </statBases>
+  </TerrainDef>
+
+</Defs>

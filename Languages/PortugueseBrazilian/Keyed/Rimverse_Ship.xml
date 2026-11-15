@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_DefaultShipName>Nave {0}</Rimverse_DefaultShipName>
+  <Rimverse_TabShip>Nave</Rimverse_TabShip>
+  <Rimverse_Rename>Renomear nave</Rimverse_Rename>
+  <Rimverse_PartOfShip>Parte da nave: {0}</Rimverse_PartOfShip>
+  <Rimverse_NotPartOfShip>Não está ligado a nenhuma ponte.</Rimverse_NotPartOfShip>
+  <Rimverse_HeatShutdown>Desligado pelo calor da nave.</Rimverse_HeatShutdown>
+  <Rimverse_ShipClass>Classe</Rimverse_ShipClass>
+  <Rimverse_ShipCells>Células: {0} / {1}</Rimverse_ShipCells>
+  <Rimverse_OverLimitShort>(acima do limite)</Rimverse_OverLimitShort>
+  <Rimverse_MeterIntegrity>Casco</Rimverse_MeterIntegrity>
+  <Rimverse_MeterAir>Ar</Rimverse_MeterAir>
+  <Rimverse_MeterHeat>Calor</Rimverse_MeterHeat>
+  <Rimverse_MeterPower>Energia</Rimverse_MeterPower>
+  <Rimverse_NoPowerNet>sem rede elétrica</Rimverse_NoPowerNet>
+  <Rimverse_ShipMass>Massa</Rimverse_ShipMass>
+  <Rimverse_ShipThrust>Empuxo</Rimverse_ShipThrust>
+  <Rimverse_AirFlow>Ar: +{0} APH/h gerado, -{1} APH/h respirado</Rimverse_AirFlow>
+  <Rimverse_HeatFlow>Calor: +{0} UC/s gerado, -{1} UC/s removido</Rimverse_HeatFlow>
+  <Rimverse_ShipFuel>Combustível: {0} / {1}</Rimverse_ShipFuel>
+  <Rimverse_ShipCrew>Pessoas a bordo: {0}</Rimverse_ShipCrew>
+  <Rimverse_ShipPilot>Piloto: {0}   Copiloto: {1}</Rimverse_ShipPilot>
+  <Rimverse_ShipDodge>Esquiva: {0}</Rimverse_ShipDodge>
+  <Rimverse_CmdLaunch>Lançar para a órbita</Rimverse_CmdLaunch>
+  <Rimverse_CmdLaunchDesc>Leva a nave inteira para a órbita deste planeta. Custa {0} de combustível químico. A qualidade do lançamento depende do piloto, do copiloto e do empuxo.</Rimverse_CmdLaunchDesc>
+  <Rimverse_CmdLand>Pousar</Rimverse_CmdLand>
+  <Rimverse_CmdLandDesc>Pousa a nave no planeta abaixo. Custa {0} de combustível químico.</Rimverse_CmdLandDesc>
+  <Rimverse_CannotLaunch>Não é possível lançar:</Rimverse_CannotLaunch>
+  <Rimverse_CannotLand>Não é possível pousar:</Rimverse_CannotLand>
+  <Rimverse_NoOrbitTile>Não há espaço livre na órbita acima.</Rimverse_NoOrbitTile>
+  <Rimverse_NoLandingTile>Não há lugar para pousar abaixo.</Rimverse_NoLandingTile>
+  <Rimverse_NoLandingSpot>Não há uma área livre grande o bastante para a nave no mapa abaixo.</Rimverse_NoLandingSpot>
+  <Rimverse_ProblemMultipleBridges>Há mais de uma ponte no mesmo casco.</Rimverse_ProblemMultipleBridges>
+  <Rimverse_ProblemOverLimit>O casco passa do limite de {0} células da ponte.</Rimverse_ProblemOverLimit>
+  <Rimverse_ProblemBridgeOffline>A ponte está sem energia ou desligada.</Rimverse_ProblemBridgeOffline>
+  <Rimverse_ProblemNoThruster>Nenhum propulsor funcionando.</Rimverse_ProblemNoThruster>
+  <Rimverse_ProblemThrust>Empuxo insuficiente: {0} de {1} necessário.</Rimverse_ProblemThrust>
+  <Rimverse_ProblemFuel>Combustível insuficiente: {0} de {1}.</Rimverse_ProblemFuel>
+  <Rimverse_ProblemAir>Pouco ar para a tripulação: capacidade {0} APH de {1} necessário.</Rimverse_ProblemAir>
+  <Rimverse_ProblemNoPilot>Ninguém a bordo pode pilotar.</Rimverse_ProblemNoPilot>
+  <Rimverse_LetterLaunch_Good>{0} chegou à órbita sem problemas (qualidade {1}).</Rimverse_LetterLaunch_Good>
+  <Rimverse_LetterLaunch_BadLabel>Lançamento difícil</Rimverse_LetterLaunch_BadLabel>
+  <Rimverse_LetterLaunch_Bad>{0} chegou à órbita, mas o lançamento foi difícil (qualidade {1}).</Rimverse_LetterLaunch_Bad>
+  <Rimverse_LetterLanding_Good>{0} pousou sem problemas (qualidade {1}).</Rimverse_LetterLanding_Good>
+  <Rimverse_LetterLanding_BadLabel>Pouso difícil</Rimverse_LetterLanding_BadLabel>
+  <Rimverse_LetterLanding_Bad>{0} pousou, mas o pouso foi difícil (qualidade {1}).</Rimverse_LetterLanding_Bad>
+  <Rimverse_AccidentDamage>Peças da nave foram danificadas.</Rimverse_AccidentDamage>
+  <Rimverse_AccidentThruster>O propulsor {0} quebrou.</Rimverse_AccidentThruster>
+  <Rimverse_AccidentHeat>A nave superaqueceu.</Rimverse_AccidentHeat>
+  <Rimverse_AccidentSickness>A tripulação ficou enjoada.</Rimverse_AccidentSickness>
+  <Rimverse_MsgHeatShutdown>{0} desligou por causa do calor em {1}.</Rimverse_MsgHeatShutdown>
+  <Rimverse_MsgHeatFire>Calor máximo em {0}: começou um incêndio.</Rimverse_MsgHeatFire>
+  <Rimverse_MsgRandomBreach>O casco de {0} está fraco e se rompeu.</Rimverse_MsgRandomBreach>
+  <Rimverse_AlertAirLow>Ar baixo na nave</Rimverse_AlertAirLow>
+  <Rimverse_AlertAirLowDesc>O estoque de ar está abaixo de 30% em: {0}.
+
+Construa geradores e tanques de ar, sele os cômodos ou leve menos gente a bordo. Abaixo de 20% de ar num cômodo começa a hipóxia.</Rimverse_AlertAirLowDesc>
+  <Rimverse_AlertHeatHigh>Calor alto na nave</Rimverse_AlertHeatHigh>
+  <Rimverse_AlertHeatHighDesc>O calor passou de 70% em: {0}.
+
+Acima de 80% os módulos desligam um por vez. Em 100% começam incêndios. Construa radiadores e bancos térmicos.</Rimverse_AlertHeatHighDesc>
+  <Rimverse_AlertIntegrityLow>Casco danificado</Rimverse_AlertIntegrityLow>
+  <Rimverse_AlertIntegrityLowDesc>A integridade do casco está abaixo de 60% em: {0}.
+
+Abaixo de 50% surgem brechas aleatórias. Repare e reconstrua as paredes de casco.</Rimverse_AlertIntegrityLowDesc>
+  <Rimverse_AlertOverLimit>Problema na estrutura da nave</Rimverse_AlertOverLimit>
+  <Rimverse_AlertOverLimitDesc>Estas naves passam do limite de células da ponte ou têm mais de uma ponte: {0}.
+
+Construa módulos de estrutura, uma ponte maior, ou separe os cascos.</Rimverse_AlertOverLimitDesc>
+  <Rimverse_Stat_Role>Função na nave</Rimverse_Stat_Role>
+  <Rimverse_Stat_Role_Desc>O que esta peça faz quando faz parte de uma nave.</Rimverse_Stat_Role_Desc>
+  <Rimverse_Stat_Mass>Massa na nave</Rimverse_Stat_Mass>
+  <Rimverse_Stat_Mass_Desc>Massa somada à nave. Mais massa pede mais empuxo e combustível.</Rimverse_Stat_Mass_Desc>
+  <Rimverse_Stat_Thrust>Empuxo</Rimverse_Stat_Thrust>
+  <Rimverse_Stat_Thrust_Desc>Força para lançar e manobrar. Para sair de um planeta o empuxo precisa ser pelo menos igual à massa × gravidade.</Rimverse_Stat_Thrust_Desc>
+  <Rimverse_Stat_Heat>Calor gerado</Rimverse_Stat_Heat>
+  <Rimverse_Stat_Heat_Desc>Calor somado ao medidor da nave a cada segundo enquanto funciona.</Rimverse_Stat_Heat_Desc>
+  <Rimverse_Stat_HeatRemoval>Calor removido</Rimverse_Stat_HeatRemoval>
+  <Rimverse_Stat_HeatRemoval_Desc>Calor tirado do medidor da nave a cada segundo.</Rimverse_Stat_HeatRemoval_Desc>
+  <Rimverse_Stat_HeatCapacity>Capacidade de calor</Rimverse_Stat_HeatCapacity>
+  <Rimverse_Stat_HeatCapacity_Desc>Quanto calor a nave aguenta antes de desligar módulos.</Rimverse_Stat_HeatCapacity_Desc>
+  <Rimverse_Stat_AirPerHour>Ar produzido</Rimverse_Stat_AirPerHour>
+  <Rimverse_Stat_AirPerHour_Desc>Ar-pawn-hora (APH) produzido por hora. Uma pessoa acordada respira 1 APH por hora.</Rimverse_Stat_AirPerHour_Desc>
+  <Rimverse_Stat_AirCapacity>Reserva de ar</Rimverse_Stat_AirCapacity>
+  <Rimverse_Stat_AirCapacity_Desc>APH guardado. Cada célula de cômodo selado também guarda 1 APH.</Rimverse_Stat_AirCapacity_Desc>
+  <Rimverse_Stat_FuelCapacity>Capacidade de combustível</Rimverse_Stat_FuelCapacity>
+  <Rimverse_Stat_FuelCapacity_Desc>Combustível químico guardado para lançar, pousar e manobrar.</Rimverse_Stat_FuelCapacity_Desc>
+  <Rimverse_Stat_HullPoints>Pontos de casco</Rimverse_Stat_HullPoints>
+  <Rimverse_Stat_HullPoints_Desc>Quanto esta peça soma à integridade do casco.</Rimverse_Stat_HullPoints_Desc>
+  <Rimverse_Stat_MaxCells>Tamanho máximo da nave</Rimverse_Stat_MaxCells>
+  <Rimverse_Stat_MaxCells_Desc>Quantas células de casco esta ponte controla.</Rimverse_Stat_MaxCells_Desc>
+  <Rimverse_Stat_ExtraCells>Células extras</Rimverse_Stat_ExtraCells>
+  <Rimverse_Stat_ExtraCells_Desc>Soma ao limite de células da ponte.</Rimverse_Stat_ExtraCells_Desc>
+  <Rimverse_Stat_Cargo>Carga</Rimverse_Stat_Cargo>
+  <Rimverse_Stat_Cargo_Desc>Toneladas de carga que a nave pode levar.</Rimverse_Stat_Cargo_Desc>
+  <Rimverse_Stat_Dodge>Esquiva</Rimverse_Stat_Dodge>
+  <Rimverse_Stat_Dodge_Desc>Bônus de esquiva no combate entre naves (até 4 propulsores de manobra contam).</Rimverse_Stat_Dodge_Desc>
+  <Rimverse_Class_None>nenhuma</Rimverse_Class_None>
+  <Rimverse_Class_Tin>lata</Rimverse_Class_Tin>
+  <Rimverse_Class_Civil>civil</Rimverse_Class_Civil>
+  <Rimverse_Class_Military>militar</Rimverse_Class_Military>
+  <Rimverse_Class_Capital>capital</Rimverse_Class_Capital>
+  <Rimverse_Class_Station>estação</Rimverse_Class_Station>
+  <Rimverse_Role_None>nenhuma</Rimverse_Role_None>
+  <Rimverse_Role_Bridge>ponte</Rimverse_Role_Bridge>
+  <Rimverse_Role_Structure>estrutura</Rimverse_Role_Structure>
+  <Rimverse_Role_HullWall>parede de casco</Rimverse_Role_HullWall>
+  <Rimverse_Role_Window>janela</Rimverse_Role_Window>
+  <Rimverse_Role_Reactor>reator</Rimverse_Role_Reactor>
+  <Rimverse_Role_Solar>painel solar</Rimverse_Role_Solar>
+  <Rimverse_Role_Battery>bateria</Rimverse_Role_Battery>
+  <Rimverse_Role_Capacitor>capacitor</Rimverse_Role_Capacitor>
+  <Rimverse_Role_Thruster>propulsor</Rimverse_Role_Thruster>
+  <Rimverse_Role_Maneuver>manobra</Rimverse_Role_Maneuver>
+  <Rimverse_Role_WarpDrive>motor de dobra</Rimverse_Role_WarpDrive>
+  <Rimverse_Role_FuelTank>tanque de combustível</Rimverse_Role_FuelTank>
+  <Rimverse_Role_WarpTank>tanque de dobra</Rimverse_Role_WarpTank>
+  <Rimverse_Role_AirGenerator>gerador de ar</Rimverse_Role_AirGenerator>
+  <Rimverse_Role_AirTank>tanque de ar</Rimverse_Role_AirTank>
+  <Rimverse_Role_IceProcessor>processador de gelo</Rimverse_Role_IceProcessor>
+  <Rimverse_Role_WaterRecycler>reciclador de água</Rimverse_Role_WaterRecycler>
+  <Rimverse_Role_Gravity>gravidade</Rimverse_Role_Gravity>
+  <Rimverse_Role_Garden>jardim</Rimverse_Role_Garden>
+  <Rimverse_Role_Radiator>radiador</Rimverse_Role_Radiator>
+  <Rimverse_Role_HeatBank>banco térmico</Rimverse_Role_HeatBank>
+  <Rimverse_Role_HeatSink>dissipador</Rimverse_Role_HeatSink>
+  <Rimverse_Role_Sensor>sensor</Rimverse_Role_Sensor>
+  <Rimverse_Role_ProbeLauncher>lançador de sondas</Rimverse_Role_ProbeLauncher>
+  <Rimverse_Role_SignatureDetector>detector de assinaturas</Rimverse_Role_SignatureDetector>
+  <Rimverse_Role_Shield>escudo</Rimverse_Role_Shield>
+  <Rimverse_Role_Cloak>camuflagem</Rimverse_Role_Cloak>
+  <Rimverse_Role_Cargo>carga</Rimverse_Role_Cargo>
+  <Rimverse_Role_Hangar>hangar</Rimverse_Role_Hangar>
+  <Rimverse_Role_Hydroponics>hidroponia</Rimverse_Role_Hydroponics>
+  <Rimverse_Role_Cryo>criossono</Rimverse_Role_Cryo>
+  <Rimverse_Role_Weapon>arma</Rimverse_Role_Weapon>
+  <Rimverse_Role_Other>outra</Rimverse_Role_Other>
+  <Rimverse_MustBeOnHull>Precisa ser construído sobre piso de casco.</Rimverse_MustBeOnHull>
+</LanguageData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_PsyNeedSpace>Só funciona numa nave ou num mundo do mapa do Rimverse.</Rimverse_PsyNeedSpace>
+  <Rimverse_PsySensed>{0} sentiu {1} sistemas a até {2} anos-luz.</Rimverse_PsySensed>
+  <Rimverse_PsyNoneLost>Nenhum colono está perdido nos backrooms.</Rimverse_PsyNoneLost>
+  <Rimverse_PsyRecalled>{0} foi puxado de volta dos backrooms.</Rimverse_PsyRecalled>
+  <Rimverse_LetterVoiceRadioLabel>Voz no rádio</Rimverse_LetterVoiceRadioLabel>
+  <Rimverse_LetterVoiceRadio>No meio da estática, uma voz chama a tripulação pelo nome. Ninguém sabe de onde vem o sinal, e ele some antes de dar para rastrear. Algo ouviu a nave, e está vindo.</Rimverse_LetterVoiceRadio>
+  <Rimverse_MsgUnlistedCrewmate>Alguém a bordo não está na lista da tripulação.</Rimverse_MsgUnlistedCrewmate>
+  <Rimverse_LetterYellowSignalLabel>Sinal amarelo</Rimverse_LetterYellowSignalLabel>
+  <Rimverse_LetterYellowSignal>Um pedido de socorro chegou com coordenadas que não existem no catálogo. {0} foi verificar o sinal num corredor da nave e não voltou. O piso ali tem cheiro de carpete molhado.</Rimverse_LetterYellowSignal>
+  <Rimverse_LetterRoomsSurvivorLabel>Sobrevivente das salas</Rimverse_LetterRoomsSurvivorLabel>
+  <Rimverse_LetterRoomsSurvivor>{0} apareceu num corredor da nave, magro, assustado e carregando saque. Diz que veio de salas amarelas que não acabam, e quer ficar.</Rimverse_LetterRoomsSurvivor>
+  <Rimverse_MsgOfficeEcho>{0} está ouvindo lâmpadas que não existem.</Rimverse_MsgOfficeEcho>
+</LanguageData>

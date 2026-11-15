@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="VGE_DamagedSubstructure"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/TerrainDef[defName="VGE_DamagedSubstructure"]</xpath>
+      <value>
+        <li Class="Rimverse.HullTerrainExtension">
+          <hullPoints>10</hullPoints>
+          <mass>0.5</mass>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="VGE_MechanoidSubstructure"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/TerrainDef[defName="VGE_MechanoidSubstructure"]</xpath>
+      <value>
+        <li Class="Rimverse.HullTerrainExtension">
+          <hullPoints>25</hullPoints>
+          <mass>0.5</mass>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VGE_GravjumperEngine"]/comps</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VGE_GravjumperEngine"]/comps</xpath>
+      <value>
+        <li Class="Rimverse.CompProperties_ShipPart">
+          <role>Maneuver</role>
+          <mass>3</mass>
+          <thrust>55</thrust>
+          <dodgeBonus>0.12</dodgeBonus>
+          <heatPerSecond>2</heatPerSecond>
+          <heatOnlyWhenThrusting>true</heatOnlyWhenThrusting>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VGE_GravhulkEngine"]/comps</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VGE_GravhulkEngine"]/comps</xpath>
+      <value>
+        <li Class="Rimverse.CompProperties_ShipPart">
+          <role>Maneuver</role>
+          <mass>8</mass>
+          <thrust>70</thrust>
+          <dodgeBonus>0.05</dodgeBonus>
+          <heatPerSecond>4</heatPerSecond>
+          <heatOnlyWhenThrusting>true</heatOnlyWhenThrusting>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VGE_MechanoidGravEngine"]/comps</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VGE_MechanoidGravEngine"]/comps</xpath>
+      <value>
+        <li Class="Rimverse.CompProperties_ShipPart">
+          <role>Maneuver</role>
+          <mass>5</mass>
+          <thrust>50</thrust>
+          <dodgeBonus>0.08</dodgeBonus>
+          <heatPerSecond>2</heatPerSecond>
+          <heatOnlyWhenThrusting>true</heatOnlyWhenThrusting>
+        </li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_AdvancedHydroponics</defName>
+    <label>advanced hydroponics</label>
+    <description>Hydroponics bays that plant and tend crops on their own.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Hydroponics</li>
+      <li>Rimverse_LifeSupport</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>10</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ShipAutomation</defName>
+    <label>shipboard automation</label>
+    <description>Bays that also harvest and send crops to storage, and automatic medical pods.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_AdvancedHydroponics</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>10</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ClosedBiosphere</defName>
+    <label>closed biosphere</label>
+    <description>Sealed gardens that grow food in zero gravity and help make air.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_ShipAutomation</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>10</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ShipStorage</defName>
+    <label>shipboard storage</label>
+    <description>Compact cargo crates, lockers and vaults that hold many stacks per cell.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>11</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ShipArmory</defName>
+    <label>ship armory</label>
+    <description>Weapon racks, lockers and the defense armory that arms the crew during boardings.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_ShipStorage</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>11</researchViewY>
+  </ResearchProjectDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_CargoCrate</defName>
+    <label>cargo crate</label>
+    <description>A cheap steel crate bolted to the deck. Holds 4 stacks.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.5,0.42)</color>
+    </graphicData>
+    <size>(1,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <canOverlapZones>false</canOverlapZones>
+    <surfaceType>Item</surfaceType>
+    <costList>
+      <Steel>30</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>4</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Root</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+            <li>Foods</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Items</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipStorage</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Cargo</role>
+        <mass>1</mass>
+        <cargoTons>2</cargoTons>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_HoldContainer</defName>
+    <label>hold container</label>
+    <description>A big container for bulk goods. Holds 6 stacks per cell.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.5,0.55)</color>
+    </graphicData>
+    <size>(2,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <canOverlapZones>false</canOverlapZones>
+    <surfaceType>Item</surfaceType>
+    <costList>
+      <Steel>120</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>6</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Root</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+            <li>Foods</li>
+            <li>Manufactured</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipStorage</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Cargo</role>
+        <mass>4</mass>
+        <cargoTons>8</cargoTons>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_SealedLocker</defName>
+    <label>sealed locker</label>
+    <description>A sealed locker for medicine and drugs. It stays sealed even when the room loses air. Holds 5 stacks per cell.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.85,0.85,0.9)</color>
+    </graphicData>
+    <size>(1,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <canOverlapZones>false</canOverlapZones>
+    <surfaceType>Item</surfaceType>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>5</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+            <li>Drugs</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+            <li>Drugs</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipStorage</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Cargo</role>
+        <mass>2</mass>
+        <cargoTons>3</cargoTons>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_ColdShelf</defName>
+    <label>refrigerated shelf</label>
+    <description>A powered shelf that keeps food from spoiling. It adds a little heat to the ship. Holds 3 stacks per cell.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.6,0.8,0.95)</color>
+    </graphicData>
+    <size>(1,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <canOverlapZones>false</canOverlapZones>
+    <surfaceType>Item</surfaceType>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>3</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Foods</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+            <li>Foods</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipStorage</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>120</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="Rimverse.CompProperties_ColdStorage" />
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Cargo</role>
+        <mass>2</mass>
+        <cargoTons>2</cargoTons><heatPerSecond>0.5</heatPerSecond>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_VacuumContainer</defName>
+    <label>vacuum container</label>
+    <description>A sealed container that can sit outside the hull in vacuum without anything inside going bad. Holds 4 stacks.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.35,0.38,0.45)</color>
+    </graphicData>
+    <size>(1,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <canOverlapZones>false</canOverlapZones>
+    <surfaceType>Item</surfaceType>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>10</Plasteel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>4</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Root</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+            <li>Manufactured</li>
+            <li>Items</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipStorage</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Cargo</role>
+        <mass>1</mass>
+        <cargoTons>2</cargoTons>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_Vault</defName>
+    <label>vault</label>
+    <description>A heavy safe for silver, credit chips and valuables. Holds 8 stacks and is very hard to break.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.8,0.7,0.35)</color>
+    </graphicData>
+    <size>(1,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <canOverlapZones>false</canOverlapZones>
+    <surfaceType>Item</surfaceType>
+    <costList>
+      <Steel>80</Steel>
+      <Plasteel>20</Plasteel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>8</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <fixedStorageSettings>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>Gold</li>
+            <li>Jade</li>
+            <li>Rimverse_OrbitalCredit</li>
+            <li>Rimverse_StellarMark</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>Gold</li>
+            <li>Jade</li>
+            <li>Rimverse_OrbitalCredit</li>
+            <li>Rimverse_StellarMark</li>
+          </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipStorage</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Cargo</role>
+        <mass>1</mass>
+        <cargoTons>1</cargoTons>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_WeaponRack</defName>
+    <label>wall weapon rack</label>
+    <description>A decorative rack that holds and shows 2 weapons.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.5,0.4,0.3)</color>
+    </graphicData>
+    <size>(1,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <canOverlapZones>false</canOverlapZones>
+    <surfaceType>Item</surfaceType>
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>3</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>2</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipArmory</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Cargo</role>
+        <mass>1</mass>
+        <cargoTons>1</cargoTons>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_WeaponLocker</defName>
+    <label>weapon locker</label>
+    <description>A locked cabinet for 6 weapons.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.4,0.42,0.45)</color>
+    </graphicData>
+    <size>(1,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <canOverlapZones>false</canOverlapZones>
+    <surfaceType>Item</surfaceType>
+    <costList>
+      <Steel>60</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>3</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipArmory</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Cargo</role>
+        <mass>2</mass>
+        <cargoTons>2</cargoTons>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_DefenseArmory</defName>
+    <label>defense armory</label>
+    <description>Holds 12 weapons. When enemies are on the map, unarmed colonists nearby take a weapon on their own and drop it back when the danger is over.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.3,0.3)</color>
+    </graphicData>
+    <size>(2,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <canOverlapZones>false</canOverlapZones>
+    <surfaceType>Item</surfaceType>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>3</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipArmory</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_Arsenal" />
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Cargo</role>
+        <mass>4</mass>
+        <cargoTons>4</cargoTons>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_RelicDisplay</defName>
+    <label>relic display</label>
+    <description>A lit case that shows off a single weapon or relic. Very beautiful.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.9,0.85,0.6)</color>
+    </graphicData>
+    <size>(1,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <canOverlapZones>false</canOverlapZones>
+    <surfaceType>Item</surfaceType>
+    <costList>
+      <Steel>40</Steel>
+      <Gold>10</Gold>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>12</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
+      <maxItemsInCell>1</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Artifacts</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipArmory</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Cargo</role>
+        <mass>1</mass>
+        <cargoTons>1</cargoTons>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_HydroSemi</defName>
+    <label>semi-automatic hydroponics bay</label>
+    <description>Plants and tends its own crops. A colonist still has to harvest.</description>
+    <thingClass>Rimverse.Building_RimverseHydroponics</thingClass>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack>
+    <graphicData>
+      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,4)</drawSize>
+      <color>(0.75,0.9,0.85)</color>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <defaultPlacingRot>East</defaultPlacingRot>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>3200</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <size>(1,4)</size>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <fertility>3</fertility>
+    <building>
+      <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+      <sowTag>Hydroponic</sowTag>
+    </building>
+    <tickerType>Rare</tickerType>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_AdvancedHydroponics</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>120</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <modExtensions>
+      <li Class="Rimverse.AutoHydroExtension">
+        <autoSow>true</autoSow>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_HydroAuto</defName>
+    <label>automatic hydroponics bay</label>
+    <description>Plants, harvests and sends the crop to the nearest storage on its own.</description>
+    <thingClass>Rimverse.Building_RimverseHydroponics</thingClass>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack>
+    <graphicData>
+      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,4)</drawSize>
+      <color>(0.75,0.9,0.85)</color>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <defaultPlacingRot>East</defaultPlacingRot>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>3200</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <size>(1,4)</size>
+    <costList>
+      <Steel>140</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <fertility>3</fertility>
+    <building>
+      <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+      <sowTag>Hydroponic</sowTag>
+    </building>
+    <tickerType>Rare</tickerType>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipAutomation</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>180</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <modExtensions>
+      <li Class="Rimverse.AutoHydroExtension">
+        <autoSow>true</autoSow>
+        <autoHarvest>true</autoHarvest>
+        <deliver>true</deliver>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_ClosedGarden</defName>
+    <label>closed-cycle garden</label>
+    <description>A sealed garden that runs on its own, grows in zero gravity, makes a little air and eases cabin fever.</description>
+    <thingClass>Rimverse.Building_RimverseHydroponics</thingClass>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack>
+    <graphicData>
+      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,4)</drawSize>
+      <color>(0.75,0.9,0.85)</color>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <defaultPlacingRot>East</defaultPlacingRot>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>3200</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <size>(1,4)</size>
+    <costList>
+      <Steel>160</Steel>
+      <Plasteel>30</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <fertility>3</fertility>
+    <building>
+      <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+      <sowTag>Hydroponic</sowTag>
+    </building>
+    <tickerType>Rare</tickerType>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ClosedBiosphere</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Garden</role>
+        <mass>3</mass>
+        <airPerHour>3</airPerHour>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="Rimverse.AutoHydroExtension">
+        <autoSow>true</autoSow>
+        <autoHarvest>true</autoHarvest>
+        <deliver>true</deliver>
+        <sealedPods>true</sealedPods>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>Rimverse_AutoMedPod</defName>
+    <label>automatic medical pod</label>
+    <description>A sealed medical bed with surgical arms. It tends the wounds and illnesses of whoever lies in it every hour, without a doctor or medicine.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/HospitalBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.75,0.85,0.95)</color>
+    </graphicData>
+    <castEdgeShadows>True</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Mass>50</Mass>
+      <Flammability>0.2</Flammability>
+      <BedRestEffectiveness>1.1</BedRestEffectiveness>
+      <Comfort>0.85</Comfort>
+      <ImmunityGainSpeedFactor>1.15</ImmunityGainSpeedFactor>
+      <MedicalTendQualityOffset>0.15</MedicalTendQualityOffset>
+      <SurgerySuccessChanceFactor>1.15</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+    <costList>
+      <Steel>120</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <MedicineIndustrial>10</MedicineIndustrial>
+    </costList>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>14</bed_healPerDay>
+      <bed_defaultMedical>true</bed_defaultMedical>
+      <buildingSizeCategory>Small</buildingSizeCategory>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <tickerType>Normal</tickerType>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipAutomation</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="Rimverse.CompProperties_AutoMedPod" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_TradeDropSpot</defName>
+    <label>trade drop spot</label>
+    <description>Orbital traders drop the goods you buy here.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(0.4,0.8,0.5)</color>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <useHitPoints>false</useHitPoints>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+    </statBases>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <designationCategory>Misc</designationCategory>
+    <placingDraggableDimensions>0</placingDraggableDimensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_MaintenanceBay</defName>
+    <label>maintenance drone bay</label>
+    <description>A rack of small repair drones. They fly out every hour and fix damaged hull, walls and modules of the ship they are on, without anyone lifting a tool.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/ToolCabinet</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.65,0.75,0.85)</color>
+    </graphicData>
+    <size>(2,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <pathCost>42</pathCost>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToBuild>4500</WorkToBuild>
+      <Mass>60</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <Plasteel>30</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipAutomation</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="Rimverse.CompProperties_MaintenanceDrones" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_AutoGalley</defName>
+    <label>automatic galley</label>
+    <description>A sealed kitchen unit. Every half hour it takes raw food from the storage around it and cooks a simple meal by itself. Put shelves or the hydroponics output next to it.</description>
+    <graphicData>
+      <texPath>Things/Building/Production/TableStoveElectric</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <color>(0.75,0.8,0.9)</color>
+    </graphicData>
+    <size>(3,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <pathCost>42</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>160</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Mass>45</Mass>
+      <Flammability>0.4</Flammability>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipAutomation</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>350</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="Rimverse.CompProperties_AutoGalley">
+        <meal>MealSimple</meal>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

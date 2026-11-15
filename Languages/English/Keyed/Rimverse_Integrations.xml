@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_PsyNeedSpace>Only works aboard a ship or on a world of the Rimverse map.</Rimverse_PsyNeedSpace>
+  <Rimverse_PsySensed>{0} sensed {1} systems within {2} light-years.</Rimverse_PsySensed>
+  <Rimverse_PsyNoneLost>No colonist is lost in the backrooms.</Rimverse_PsyNoneLost>
+  <Rimverse_PsyRecalled>{0} was pulled back from the backrooms.</Rimverse_PsyRecalled>
+  <Rimverse_LetterVoiceRadioLabel>Voice on the radio</Rimverse_LetterVoiceRadioLabel>
+  <Rimverse_LetterVoiceRadio>Through the static, a voice calls the crew by name. Nobody knows where the signal comes from, and it fades before it can be traced. Something heard the ship, and it is coming.</Rimverse_LetterVoiceRadio>
+  <Rimverse_MsgUnlistedCrewmate>Someone aboard is not on the crew list.</Rimverse_MsgUnlistedCrewmate>
+  <Rimverse_LetterYellowSignalLabel>Yellow signal</Rimverse_LetterYellowSignalLabel>
+  <Rimverse_LetterYellowSignal>A distress call arrived with coordinates that do not exist in the catalog. {0} went to check the signal in a ship corridor and never came back. The floor there smells of damp carpet.</Rimverse_LetterYellowSignal>
+  <Rimverse_LetterRoomsSurvivorLabel>Survivor of the rooms</Rimverse_LetterRoomsSurvivorLabel>
+  <Rimverse_LetterRoomsSurvivor>{0} appeared in a ship corridor, thin, frightened and carrying loot. They say they came from yellow rooms that never end, and want to stay.</Rimverse_LetterRoomsSurvivor>
+  <Rimverse_MsgOfficeEcho>{0} keeps hearing lights that are not there.</Rimverse_MsgOfficeEcho>
+</LanguageData>

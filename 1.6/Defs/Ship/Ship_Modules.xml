@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef Name="Rimverse_ShipModuleBase" ParentName="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>0.8</fillPercent>
+    <rotatable>false</rotatable>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>Rimverse.PlaceWorker_OnHull</li>
+    </placeWorkers>
+    <tickerType>Normal</tickerType>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <statBases>
+      <Flammability>0</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <constructEffect>ConstructMetal</constructEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_BridgeSmall</defName>
+    <label>small bridge</label>
+    <description>Ship computer and helm. Defines a ship: every hull cell connected to it, up to 400 cells, becomes one ship. Launch, landing and the ship tab are here.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>Rimverse.ITab_RimverseShip</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Bridge</role>
+        <mass>5</mass>
+        <maxCells>400</maxCells>
+        <essential>true</essential>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_BridgeCommand</defName>
+    <label>command bridge</label>
+    <description>A larger bridge able to control up to 1,200 hull cells.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,5)</drawSize>
+    </graphicData>
+    <size>(5,5)</size>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>300</Steel>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_NavalCommand</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>Rimverse.ITab_RimverseShip</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Bridge</role>
+        <mass>15</mass>
+        <maxCells>1200</maxCells>
+        <essential>true</essential>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>800</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_BridgeCapital</defName>
+    <label>capital bridge</label>
+    <description>The bridge of a capital ship, controlling up to 4,000 hull cells.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,7)</drawSize>
+    </graphicData>
+    <size>(7,7)</size>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+      <WorkToBuild>40000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>600</Steel>
+      <Plasteel>200</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_CapitalShips</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>Rimverse.ITab_RimverseShip</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Bridge</role>
+        <mass>40</mass>
+        <maxCells>4000</maxCells>
+        <essential>true</essential>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_StructureModule</defName>
+    <label>structure module</label>
+    <description>Load-bearing trusses and control relays. Adds 300 cells to the size limit of the ship it is part of.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>200</Steel>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ModularStructure</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Structure</role>
+        <mass>8</mass>
+        <extraCells>300</extraCells>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_FuelCell</defName>
+    <label>fuel cell</label>
+    <description>Burns chemfuel to make 1,000 W of steady power. Uses 4 chemfuel per day.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Reactor</role>
+        <mass>4</mass>
+        <heatPerSecond>0.5</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-1000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>4</fuelConsumptionRate>
+        <fuelCapacity>20</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_ShipSolarPanel</defName>
+    <label>ship solar panel</label>
+    <description>Rigid solar array. Gives 800 W in open space near a star.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Solar</role>
+        <mass>2</mass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-800</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_BatteryBank</defName>
+    <label>ship battery bank</label>
+    <description>Stores up to 2,000 Wd of energy.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Battery</role>
+        <mass>6</mass>
+      </li>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>2000</storedEnergyMax>
+        <efficiency>0.6</efficiency>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_ChemThruster</defName>
+    <label>chemical thruster</label>
+    <description>Burns chemfuel from the ship's tanks for 100 thrust. Heats up while firing.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,3)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Thruster</role>
+        <mass>6</mass>
+        <thrust>100</thrust>
+        <heatPerSecond>2</heatPerSecond>
+        <heatOnlyWhenThrusting>true</heatOnlyWhenThrusting>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_ManeuverThruster</defName>
+    <label>maneuvering thruster</label>
+    <description>Small attitude jet. Each one adds 10% dodge, up to four.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Maneuver</role>
+        <mass>1</mass>
+        <dodgeBonus>0.1</dodgeBonus>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_ChemTank</defName>
+    <label>chemical fuel tank</label>
+    <description>Holds up to 300 chemfuel for thrusters, launches and landings.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>FuelTank</role>
+        <mass>3</mass>
+        <fuelCapacity>300</fuelCapacity>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0</fuelConsumptionRate>
+        <fuelCapacity>300</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <initialFuelPercent>0</initialFuelPercent>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_AirGenerator</defName>
+    <label>air generator</label>
+    <description>Splits and scrubs gases to produce 6 air-pawn-hours (APH) per hour for the whole ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_LifeSupport</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>AirGenerator</role>
+        <mass>3</mass>
+        <airPerHour>6</airPerHour>
+        <heatPerSecond>0.2</heatPerSecond>
+        <lifeSupport>true</lifeSupport>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_AirTank</defName>
+    <label>air tank</label>
+    <description>Pressurized reserve holding 500 APH of breathable air.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_LifeSupport</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>AirTank</role>
+        <mass>2</mass>
+        <airCapacity>500</airCapacity>
+        <lifeSupport>true</lifeSupport>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_RadiatorFixed</defName>
+    <label>fixed radiator</label>
+    <description>Panel that sheds 3 heat units (UC) per second into space.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,3)</drawSize>
+    </graphicData>
+    <size>(1,3)</size>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Radiator</role>
+        <mass>2</mass>
+        <heatRemovalPerSecond>3</heatRemovalPerSecond>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_HeatBank</defName>
+    <label>heat bank</label>
+    <description>Thermal mass that raises the ship's heat capacity by 200 UC.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ThermalControl</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>HeatBank</role>
+        <mass>8</mass>
+        <heatCapacity>200</heatCapacity>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_Telescope</defName>
+    <label>telescope</label>
+    <description>Optical and radio telescope. Sensitivity 10,000: it can only see very loud signatures far away.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Sensor</role>
+        <mass>2</mass>
+        <sensorSensitivity>10000</sensorSensitivity>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_ScannerLongRange</defName>
+    <label>long-range scanner</label>
+    <description>Phased sensor array. Sensitivity 1,000: reads star systems within 20 light years as ranges.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_Sensors</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Sensor</role>
+        <mass>4</mass>
+        <sensorSensitivity>1000</sensorSensitivity>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_ScannerAdvanced</defName>
+    <label>advanced scanner</label>
+    <description>Gravitic and spectral scanner. Sensitivity 100: exact readings of star systems within 50 light years.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>120</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_AdvancedSensors</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Sensor</role>
+        <mass>8</mass>
+        <sensorSensitivity>100</sensorSensitivity>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_WarpDriveSmall</defName>
+    <label>small warp drive</label>
+    <description>Folds space to jump the ship up to 6 light years to another star. Moves ships up to 600 t. Needs warp matter in warp tanks, and 12 hours to recharge after a jump.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>9000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>150</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Uranium>40</Uranium>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_SmallWarp</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>WarpDrive</role>
+        <mass>20</mass>
+        <warpRangeLy>6</warpRangeLy>
+        <warpCooldownHours>12</warpCooldownHours>
+        <warpMaxMass>600</warpMaxMass>
+        <heatPerSecond>4</heatPerSecond>
+        <heatOnlyWhenThrusting>true</heatOnlyWhenThrusting>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_WarpDriveHeavy</defName>
+    <label>heavy warp drive</label>
+    <description>A heavy warp drive. Jumps up to 20 light years and moves ships up to 6,000 t. Needs 24 hours to recharge after a jump.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <size>(4,4)</size>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToBuild>20000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>400</Plasteel>
+      <ComponentSpacer>8</ComponentSpacer>
+      <Uranium>120</Uranium>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_HeavyWarp</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>WarpDrive</role>
+        <mass>80</mass>
+        <warpRangeLy>20</warpRangeLy>
+        <warpCooldownHours>24</warpCooldownHours>
+        <warpMaxMass>6000</warpMaxMass>
+        <heatPerSecond>10</heatPerSecond>
+        <heatOnlyWhenThrusting>true</heatOnlyWhenThrusting>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>4000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_WarpTank</defName>
+    <label>warp tank</label>
+    <description>Shielded containment for up to 100 warp matter.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_SmallWarp</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>WarpTank</role>
+        <mass>4</mass>
+        <warpCapacity>100</warpCapacity>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0</fuelConsumptionRate>
+        <fuelCapacity>100</fuelCapacity>
+        <fuelLabel>warp matter</fuelLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Rimverse_WarpMatter</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <initialFuelPercent>0</initialFuelPercent>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_CargoBay</defName>
+    <label>cargo bay</label>
+    <description>Secured storage racks. Adds 20 t of cargo capacity and stores items.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Root</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Items</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <passability>Standable</passability>
+    <fillPercent>0.4</fillPercent>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Cargo</role>
+        <mass>4</mass>
+        <cargoTons>20</cargoTons>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Wall">
+    <defName>Rimverse_HullWall</defName>
+    <label>hull wall</label>
+    <description>Pressure-tight hull wall. Worth 60 hull points.</description>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+    <graphicData>
+      <color>(0.42, 0.45, 0.50)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>300</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>Rimverse.PlaceWorker_OnHull</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>HullWall</role>
+        <mass>1</mass>
+        <hullPoints>60</hullPoints>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Wall">
+    <defName>Rimverse_HullWallArmored</defName>
+    <label>armored hull wall</label>
+    <description>Plasteel-armored hull wall. Worth 180 hull points.</description>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+    <costList>
+      <Plasteel>5</Plasteel>
+    </costList>
+    <graphicData>
+      <color>(0.42, 0.45, 0.50)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>Rimverse.PlaceWorker_OnHull</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Rimverse_Armor</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>HullWall</role>
+        <mass>3</mass>
+        <hullPoints>180</hullPoints>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

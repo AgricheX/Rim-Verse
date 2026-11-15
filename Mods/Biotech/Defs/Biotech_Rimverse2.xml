@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_SlowBreathing</defName>
+    <label>slow breathing</label>
+    <labelShortAdj>slow-breathing</labelShortAdj>
+    <description>Efficient lungs and a slow metabolism. Uses less ship air and resists hypoxia.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.7,0.9,0.9)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>200</displayOrderInCategory>
+    <statFactors>
+      <MoveSpeed>0.97</MoveSpeed>
+    </statFactors>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <modExtensions>
+      <li Class="Rimverse.GeneSpaceExtension">
+        <airFactor>0.6</airFactor>
+        <hypoxiaFactor>0.5</hypoxiaFactor>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_RadiationSkin</defName>
+    <label>radiation skin</label>
+    <labelShortAdj>rad-skinned</labelShortAdj>
+    <description>Thick, pigmented skin that blocks hard radiation and toxic fallout.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.7,0.9,0.9)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>210</displayOrderInCategory>
+    <statOffsets>
+      <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+      <ToxicResistance>0.25</ToxicResistance>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_PerfectBalance</defName>
+    <label>perfect balance</label>
+    <labelShortAdj>balanced</labelShortAdj>
+    <description>An inner ear that never gets confused. Zero gravity and low gravity do not bother them.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.7,0.9,0.9)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>220</displayOrderInCategory>
+    <statOffsets>
+      <MoveSpeed>0.1</MoveSpeed>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <modExtensions>
+      <li Class="Rimverse.GeneSpaceExtension">
+        <zeroGAdapted>true</zeroGAdapted>
+        <noClumsy>true</noClumsy>
+        <crushBonus>0.2</crushBonus>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_Hibernation</defName>
+    <label>hibernation</label>
+    <labelShortAdj>hibernating</labelShortAdj>
+    <description>They slow down during long trips: more tolerance for cold rooms and far less cabin fever, but they sleep more.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconColor>(0.7,0.9,0.9)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>230</displayOrderInCategory>
+    <statFactors>
+      <RestFallRateFactor>1.2</RestFallRateFactor>
+    </statFactors>
+    <statOffsets>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <modExtensions>
+      <li Class="Rimverse.GeneSpaceExtension">
+        <cabinFeverFactor>0.4</cabinFeverFactor>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <ThingDef ParentName="LancerMechanoidWalker">
+    <defName>Rimverse_Mech_HullRepairer</defName>
+    <label>hull repairer</label>
+    <description>A small worker mech built to patch hull walls and fix ship systems.</description>
+    <statBases>
+      <MoveSpeed>4.0</MoveSpeed>
+      <BandwidthCost>1</BandwidthCost>
+    </statBases>
+    <race>
+      <baseHealthScale>0.6</baseHealthScale>
+      <mechWeightClass>Light</mechWeightClass>
+      <mechEnabledWorkTypes>
+        <li>Construction</li>
+      </mechEnabledWorkTypes>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Rimverse_Mech_HullRepairer</defName>
+    <label>hull repairer</label>
+    <race>Rimverse_Mech_HullRepairer</race>
+    <combatPower>48</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <color>(0.85,0.75,0.4)</color>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Rimverse_Gestate_HullRepairer</defName>
+    <label>gestate hull repairer</label>
+    <description>Gestate a hull repairer.</description>
+    <researchPrerequisite>BasicMechtech</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreBasic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+        <li>SubcoreBasic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_Mech_HullRepairer>1</Rimverse_Mech_HullRepairer>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_Mech_HullRepairer</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <ThingDef ParentName="LancerMechanoidWalker">
+    <defName>Rimverse_Mech_CargoHauler</defName>
+    <label>cargo hauler</label>
+    <description>A broad, slow mech that moves cargo through ship corridors.</description>
+    <statBases>
+      <MoveSpeed>4.0</MoveSpeed>
+      <BandwidthCost>1</BandwidthCost>
+    </statBases>
+    <race>
+      <baseHealthScale>0.8</baseHealthScale>
+      <mechWeightClass>Light</mechWeightClass>
+      <mechEnabledWorkTypes>
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Rimverse_Mech_CargoHauler</defName>
+    <label>cargo hauler</label>
+    <race>Rimverse_Mech_CargoHauler</race>
+    <combatPower>64</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <color>(0.6,0.6,0.65)</color>
+          <drawSize>1.3</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Rimverse_Gestate_CargoHauler</defName>
+    <label>gestate cargo hauler</label>
+    <description>Gestate a cargo hauler.</description>
+    <researchPrerequisite>BasicMechtech</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreBasic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+        <li>SubcoreBasic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_Mech_CargoHauler>1</Rimverse_Mech_CargoHauler>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_Mech_CargoHauler</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <ThingDef ParentName="LancerMechanoidWalker">
+    <defName>Rimverse_Mech_AsteroidMiner</defName>
+    <label>asteroid miner</label>
+    <description>A drill-armed mech for asteroid and moon mining. Works fine in vacuum.</description>
+    <statBases>
+      <MoveSpeed>3.6</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+    </statBases>
+    <race>
+      <baseHealthScale>1.0</baseHealthScale>
+      <mechWeightClass>Medium</mechWeightClass>
+      <mechEnabledWorkTypes>
+        <li>Mining</li>
+      </mechEnabledWorkTypes>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Rimverse_Mech_AsteroidMiner</defName>
+    <label>asteroid miner</label>
+    <race>Rimverse_Mech_AsteroidMiner</race>
+    <combatPower>160</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <color>(0.55,0.45,0.35)</color>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>Rimverse_Gestate_AsteroidMiner</defName>
+    <label>gestate asteroid miner</label>
+    <description>Gestate a asteroid miner.</description>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>120</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+        <li>SubcoreRegular</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_Mech_AsteroidMiner>1</Rimverse_Mech_AsteroidMiner>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_Mech_AsteroidMiner</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <ThingDef ParentName="LancerMechanoidWalker">
+    <defName>Rimverse_Mech_CorridorSentry</defName>
+    <label>corridor sentry</label>
+    <description>A heavy, slow mech that holds a corridor against boarders.</description>
+    <statBases>
+      <MoveSpeed>2.4</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+    </statBases>
+    <race>
+      <baseHealthScale>1.3</baseHealthScale>
+      <mechWeightClass>Medium</mechWeightClass>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Rimverse_Mech_CorridorSentry</defName>
+    <label>corridor sentry</label>
+    <race>Rimverse_Mech_CorridorSentry</race>
+    <combatPower>208</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Pikeman</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <color>(0.45,0.5,0.55)</color>
+          <drawSize>1.6</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>MechanoidGunMedium</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>Rimverse_Gestate_CorridorSentry</defName>
+    <label>gestate corridor sentry</label>
+    <description>Gestate a corridor sentry.</description>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Plasteel</li>
+        <li>ComponentIndustrial</li>
+        <li>SubcoreRegular</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_Mech_CorridorSentry>1</Rimverse_Mech_CorridorSentry>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_Mech_CorridorSentry</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <ThingDef ParentName="LancerMechanoidWalker">
+    <defName>Rimverse_Mech_Boarder</defName>
+    <label>boarder</label>
+    <description>A fast melee mech made to cross a breach and cut through a ship's crew.</description>
+    <tools Inherit="False">
+      <li>
+        <label>left blade</label>
+        <labelNoLocation>blade</labelNoLocation>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right blade</label>
+        <labelNoLocation>blade</labelNoLocation>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+    <statBases>
+      <MoveSpeed>5.0</MoveSpeed>
+      <BandwidthCost>2</BandwidthCost>
+    </statBases>
+    <race>
+      <baseHealthScale>1.0</baseHealthScale>
+      <mechWeightClass>Medium</mechWeightClass>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Rimverse_Mech_Boarder</defName>
+    <label>boarder</label>
+    <race>Rimverse_Mech_Boarder</race>
+    <combatPower>160</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Scyther</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <color>(0.7,0.3,0.3)</color>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>Rimverse_Gestate_Boarder</defName>
+    <label>gestate boarder</label>
+    <description>Gestate a boarder.</description>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>120</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Plasteel</li>
+        <li>ComponentIndustrial</li>
+        <li>SubcoreRegular</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_Mech_Boarder>1</Rimverse_Mech_Boarder>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_Mech_Boarder</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <ThingDef ParentName="LancerMechanoidWalker">
+    <defName>Rimverse_Mech_MechFighter</defName>
+    <label>mech fighter</label>
+    <description>A heavy mech carrying a ship-grade gun. It shoots well at range.</description>
+    <statBases>
+      <MoveSpeed>3.0</MoveSpeed>
+      <BandwidthCost>4</BandwidthCost>
+    </statBases>
+    <race>
+      <baseHealthScale>1.6</baseHealthScale>
+      <mechWeightClass>Heavy</mechWeightClass>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Rimverse_Mech_MechFighter</defName>
+    <label>mech fighter</label>
+    <race>Rimverse_Mech_MechFighter</race>
+    <combatPower>384</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <color>(0.35,0.35,0.5)</color>
+          <drawSize>1.9</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>MechanoidGunHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <RecipeDef ParentName="HeavyMechanoidRecipe">
+    <defName>Rimverse_Gestate_MechFighter</defName>
+    <label>gestate mech fighter</label>
+    <description>Gestate a mech fighter.</description>
+    <researchPrerequisite>HighMechtech</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Plasteel</li>
+        <li>ComponentSpacer</li>
+        <li>SubcoreHigh</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_Mech_MechFighter>1</Rimverse_Mech_MechFighter>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_Mech_MechFighter</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_ShipClassroom</defName>
+    <label>onboard school</label>
+    <description>A compact classroom for children aboard. Children in the same room learn and gain skills, faster with an adult around. Pick a subject: general, piloting, engineering or medicine.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Table2x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.6,0.75,0.8)</color>
+    </graphicData>
+    <size>(2,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>20</Mass>
+      <Beauty>0</Beauty>
+    </statBases>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="Rimverse.CompProperties_ShipClassroom" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_ZeroGToys</defName>
+    <label>zero-g toys</label>
+    <description>Floating toys tethered to a frame. Children in the room play, which lifts recreation and eases cabin fever.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.6,0.75,0.8)</color>
+    </graphicData>
+    <size>(1,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <costList>
+      <Steel>20</Steel>
+      <Cloth>20</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>20</Mass>
+      <Beauty>2</Beauty>
+    </statBases>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipClassroom">
+        <lessons>false</lessons>
+        <joyPerInterval>0.01</joyPerInterval>
+        <cabinFeverRelief>0.004</cabinFeverRelief>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_WasteLauncher</defName>
+    <label>waste launcher</label>
+    <description>A small mass driver that fires wastepacks into space. Only works in space or in orbit. Haulers bring wastepacks to it.</description><thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.6,0.75,0.8)</color>
+    </graphicData>
+    <size>(1,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>20</Mass>
+      <Beauty>0</Beauty>
+    </statBases>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <thingDefs>
+            <li>Wastepack</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <thingDefs>
+            <li>Wastepack</li>
+          </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="Rimverse.CompProperties_WasteHandler">
+        <intervalTicks>600</intervalTicks>
+        <needsSpace>true</needsSpace>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_WasteRecycler</defName>
+    <label>waste recycler</label>
+    <description>Breaks wastepacks down into steel and chemfuel. Slow, power hungry, but it works anywhere.</description><thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.6,0.75,0.8)</color>
+    </graphicData>
+    <size>(2,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>20</Mass>
+      <Beauty>0</Beauty>
+    </statBases>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <thingDefs>
+            <li>Wastepack</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <thingDefs>
+            <li>Wastepack</li>
+          </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="Rimverse.CompProperties_WasteHandler">
+        <intervalTicks>5000</intervalTicks>
+        <outputs>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>4</count>
+          </li>
+          <li>
+            <thingDef>Chemfuel</thingDef>
+            <count>2</count>
+          </li>
+        </outputs>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

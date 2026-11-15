@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/TerrainDef[defName="Substructure"]</xpath>
+        <value>
+          <li Class="Rimverse.HullTerrainExtension">
+            <hullPoints>20</hullPoints>
+            <mass>0.5</mass>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="GravEngine"]/comps</xpath>
+        <value>
+          <li Class="Rimverse.CompProperties_ShipPart">
+            <role>Maneuver</role>
+            <mass>4</mass>
+            <thrust>40</thrust>
+            <dodgeBonus>0.08</dodgeBonus>
+            <heatPerSecond>2</heatPerSecond>
+            <heatOnlyWhenThrusting>true</heatOnlyWhenThrusting>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/GeneratedLocationDef[defName="Asteroids"]/layerDefs</xpath>
+        <value>
+          <li>Rimverse_RingLayer</li>
+          <li>Rimverse_BeltLayer</li>
+          <li>Rimverse_MoonLayer</li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

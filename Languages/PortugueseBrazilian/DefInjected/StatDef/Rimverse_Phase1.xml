@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_VacuumSeal.label>vedação contra vácuo</Rimverse_VacuumSeal.label>
+  <Rimverse_VacuumSeal.description>O quanto esta pessoa está protegida do vácuo. Em 100% ela respira e sobrevive fora de um cômodo pressurizado sem limite de tempo.</Rimverse_VacuumSeal.description>
+  <Rimverse_PilotingOffset.label>bônus de pilotagem</Rimverse_PilotingOffset.label>
+  <Rimverse_PilotingOffset.description>Somado ao nível de pilotagem desta pessoa, que vem de Intelectual e Tiro.</Rimverse_PilotingOffset.description>
+</LanguageData>

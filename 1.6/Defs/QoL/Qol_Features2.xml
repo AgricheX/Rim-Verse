@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_Hud</defName>
+    <label>ship and colony panel</label>
+    <description>A small panel in the top-left corner with the ship's air, hull, heat and fuel, days of food, stored power, the temperature under the mouse and the full date.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Jaxe.RimHUD</li>
+      <li>Owlchemist.ToggleableReadouts</li>
+      <li>Mlie.ShowDetailedDates</li>
+      <li>Mlie.TemperatureGauge</li>
+      <li>7h0m4s.RimworldReadableNumbers</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_PawnTable</defName>
+    <label>custom pawn table</label>
+    <description>A main tab with a table of colonists where you pick the columns (needs, skills, speed) and sort by any of them.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Mehni.Numbers</li>
+      <li>telardo.NumbersTraitAddOn</li>
+      <li>Scheigster.OmniTab</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_PowerTab</defName>
+    <label>power tab</label>
+    <description>A main tab listing every power net with production, use, balance and stored energy.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Owlchemist.PowerTab.forked.RunningBugs</li>
+      <li>erdelf.PowerIndicators</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_GearTab</defName>
+    <label>gear tab</label>
+    <description>A Gear tab on people with armor, insulation, vacuum protection, carried mass, weapon range, apparel condition and inventory.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Andromeda.NiceInventoryTab</li>
+      <li>Sandy.RPGStyleInventory.avilmask.Revamped</li>
+      <li>astryl.TrueRPGInventory</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_BillCopy</defName>
+    <label>copy and paste bills</label>
+    <description>Copy all bills of a workbench and paste them onto another workbench of the same kind.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>falconne.BWM</li>
+      <li>Andromeda.NiceBillTab</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_ItemInspect</defName>
+    <label>value and mass on items</label>
+    <description>Shows the total value and mass of a stack when you select it.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>tk421storm.BetterInspectCard</li>
+      <li>Mlie.RelevantStatsInDescription</li>
+      <li>Creeper.BetterInfoCard</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_QualityColors</defName>
+    <label>quality colors</label>
+    <description>Item quality words get a color, from red for awful to gold for legendary.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>legodude17.qualcolor</li>
+      <li>crtdgd.RoomQualityColors</li>
+      <li>DawnsGlow.qualcolor</li>
+      <li>telardo.QualityOverlay</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_TraitColors</defName>
+    <label>trait colors</label>
+    <description>Good traits show in green and bad traits in red on the character card.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>ferny.ColoredCategories</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_DamageNumbers</defName>
+    <label>damage numbers</label>
+    <description>Shows floating numbers when people take damage.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>CaesarV6.DamageIndicators</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_MaterialCount</defName>
+    <label>material count in build menu</label>
+    <description>The build menu shows how much of each needed material you have on the map.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Mlie.ShowPossibleMaterials</li>
+      <li>BP.ShowBuildableMaterialCount</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_DeepDrillAlert</defName>
+    <label>empty deep drill alert</label>
+    <description>Warns when a deep drill has nothing left to dig.</description>
+    <category>Alerts</category>
+    <disableIfModActive>
+      <li>georodin.deepdrillindicator</li>
+      <li>kikohi.ColoredDeepResources</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_RangeRing</defName>
+    <label>weapon range ring</label>
+    <description>Draws the weapon range of selected drafted people.</description>
+    <category>Combat</category>
+    <disableIfModActive>
+      <li>RER.AccuracyOverlay</li>
+      <li>Mlie.ExplosiveRadius</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_Minimap</defName>
+    <label>minimap</label>
+    <description>A small draggable map of the current map. Click it to move the camera. Toggle with Ctrl+M.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>dubwise.dubsmintminimap</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_KillerInfo</defName>
+    <label>who hurt whom</label>
+    <description>Corpses say who killed them and how, and you get a message when a colonist loses a body part and who did it.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Tixiv.WhoShotMyLegOff</li>
+      <li>Buggy.RimWorld.LetterPermanentInjury</li>
+      <li>arl85.CorpseInfo</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_Search</defName>
+    <label>search</label>
+    <description>Ctrl+F opens a search of items, people and buildings on the map and the bodies of the home system. Click a result to jump to it.</description>
+    <category>Search</category>
+    <disableIfModActive>
+      <li>Uuugggg.CtrlF</li>
+      <li>kathanon.GroupedMapSearch</li>
+      <li>kathanon.SearchableMenus</li>
+      <li>Owlchemist.CherryPicker</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_PowerAlerts</defName>
+    <label>low stored power alert</label>
+    <description>Warns when a power net is losing power and its batteries are below 15%.</description>
+    <category>Alerts</category>
+    <disableIfModActive>
+      <li>diddily.poweralerts</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_AutoPause</defName>
+    <label>pause on threats</label>
+    <description>Pauses the game when a threat letter arrives.</description>
+    <category>Alerts</category>
+    <disableIfModActive>
+      <li>sirrandoo.mpe</li>
+      <li>espio.endpopup</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_WorkProfiles</defName>
+    <label>copy work settings</label>
+    <description>Copy a colonist's work priorities, schedule and allowed area and paste them onto another.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>VouLT.BetterPawnControl</li>
+      <li>Mlie.ZoneToSchedule</li>
+      <li>Mazo.Schedules</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_WorkModes</defName>
+    <label>quick work modes</label>
+    <description>Switch selected colonists to emergency, repair or hauling mode in one click, and restore their old priorities later.</description>
+    <category>Work</category>
+    <disableIfModActive>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_HaulArea</defName>
+    <label>haul area</label>
+    <description>An order that marks every loose item in a dragged area for hauling.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>UnlimitedHugs.AllowTool</li>
+      <li>telardo.DragSelect</li>
+      <li>Merthsoft.DesignatorShapes</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_Blueprints</defName>
+    <label>copy and paste buildings</label>
+    <description>Copy the buildings in an area and paste them somewhere else as blueprints.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>Fluffy.Blueprints.fork</li>
+      <li>Defi.Blueprints.fork</li>
+      <li>Fluffy.Blueprints</li>
+      <li>RunningBugs.blueprint2</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_SelectBedOwner</defName>
+    <label>select bed owner</label>
+    <description>A button on beds that selects their owners.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>KunogiD.SelectPawnByBed</li>
+      <li>sensiblebedownership.1trickPwnyta</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_ToggleHarvest</defName>
+    <label>toggle harvest</label>
+    <description>Pause and resume harvesting on growing zones and hydroponics.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>Jaxe.ToggleHarvest</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_FlickStorage</defName>
+    <label>switch storage on and off</label>
+    <description>Stockpiles and storage buildings can be switched off and on without losing their settings.</description>
+    <category>Storage</category>
+    <disableIfModActive>
+      <li>Mlie.FlickableStorage</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_SmartMedicine</defName>
+    <label>smart medicine</label>
+    <description>Minor wounds are treated with cheaper medicine when it is around, saving the good medicine for serious cases.</description>
+    <category>Medicine</category>
+    <disableIfModActive>
+      <li>Uuugggg.SmartMedicine</li>
+      <li>tk421storm.PriorityTreatmentRessurected</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_SearchDestroy</defName>
+    <label>search and destroy</label>
+    <description>A toggle on drafted colonists that makes them hunt the nearest enemy on their own.</description>
+    <category>Combat</category>
+    <disableIfModActive>
+      <li>roolo.SearchAndDestroy</li>
+      <li>MemeGoddess.SearchAndDestroy</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_DefensivePositions</defName>
+    <label>defensive positions</label>
+    <description>Save a spot for a drafted colonist and send them back to it with one click.</description>
+    <category>Combat</category>
+    <disableIfModActive>
+      <li>Defi.DefensivePositions</li>
+      <li>UnlimitedHugs.DefensivePositions</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_PickupWeapon</defName>
+    <label>pick up dropped weapon</label>
+    <description>Colonists who dropped their weapon when downed pick it up again when they get up.</description>
+    <category>Combat</category>
+    <disableIfModActive>
+      <li>tammybee.whereismyweapon</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_NeverFlee</defName>
+    <label>permanent enemies never flee</label>
+    <description>Raiders from factions that are permanent enemies fight to the end instead of fleeing.</description>
+    <category>Combat</category>
+    <disableIfModActive>
+      <li>Mlie.PermanentEnemiesNeverFlee</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_TradeDropSpot</defName>
+    <label>trade drop spot</label>
+    <description>Build a drop spot where orbital traders deliver goods.</description>
+    <category>Trade</category>
+    <disableIfModActive>
+      <li>smashphil.dropspot</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <MainButtonDef>
+    <defName>Rimverse_PowerTab</defName>
+    <label>power</label>
+    <description>Every power net on the map.</description>
+    <tabWindowClass>Rimverse.MainTabWindow_RimversePower</tabWindowClass>
+    <workerClass>Rimverse.MainButtonWorker_RimverseQolTab</workerClass>
+    <order>46</order>
+  </MainButtonDef>
+
+  <MainButtonDef>
+    <defName>Rimverse_PawnTable</defName>
+    <label>table</label>
+    <description>A table of colonists with the columns you choose.</description>
+    <tabWindowClass>Rimverse.MainTabWindow_RimversePawnTable</tabWindowClass>
+    <workerClass>Rimverse.MainButtonWorker_RimverseQolTab</workerClass>
+    <order>47</order>
+  </MainButtonDef>
+
+  <KeyBindingCategoryDef>
+    <defName>Rimverse_Keys</defName>
+    <label>Rimverse</label>
+    <description>Rimverse shortcuts.</description>
+  </KeyBindingCategoryDef>
+
+  <KeyBindingDef>
+    <defName>Rimverse_Search</defName>
+    <label>search the map (with Ctrl)</label>
+    <category>Rimverse_Keys</category>
+    <defaultKeyCodeA>F</defaultKeyCodeA>
+  </KeyBindingDef>
+
+  <KeyBindingDef>
+    <defName>Rimverse_Minimap</defName>
+    <label>minimap (with Ctrl)</label>
+    <category>Rimverse_Keys</category>
+    <defaultKeyCodeA>M</defaultKeyCodeA>
+  </KeyBindingDef>
+
+</Defs>

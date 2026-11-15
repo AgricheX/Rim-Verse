@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>Rimverse_BanishToRooms</defName>
+    <label>banish</label>
+    <description>Tear a hole under the target and drop them into the backrooms. They land on a random level, far from here.</description>
+    <level>5</level>
+    <iconPath>UI/Abilities/SkipChaos</iconPath>
+    <hostile>true</hostile>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EntropyGain>40</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.3</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>3</warmupTime>
+      <range>24.9</range>
+      <requireLineOfSight>True</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>True</canTargetPawns>
+        <canTargetSelf>False</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_AbilityBanishToRooms" />
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>Rimverse_RecallFromRooms</defName>
+    <label>recall</label>
+    <description>Reach down into the backrooms and pull one lost colonist back to your side.</description>
+    <level>5</level>
+    <iconPath>UI/Abilities/Beckon</iconPath>
+    <targetRequired>False</targetRequired>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EntropyGain>40</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.3</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>3</warmupTime>
+      <range>0.9</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_AbilityRecallFromRooms" />
+    </comps>
+  </AbilityDef>
+
+</Defs>

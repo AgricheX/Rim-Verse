@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>Rimverse</AssemblyName>
+    <RootNamespace>Rimverse</RootNamespace>
+    <OutputPath>../../1.6/Assemblies/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <Nullable>disable</Nullable>
+    <RefsPath Condition="'$(RefsPath)' == ''">/mnt/project-files/rimverse-build/refs</RefsPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(RefsPath)/rw/*.dll" Private="false" />
+    <Reference Include="$(RefsPath)/h/0Harmony.dll" Private="false" />
+    <Reference Include="$(RefsPath)/vf/Vehicles.dll" Private="false" />
+    <Reference Include="$(RefsPath)/vf/SmashTools.dll" Private="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

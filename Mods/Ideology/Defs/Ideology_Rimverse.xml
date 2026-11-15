@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <IssueDef>
+    <defName>Rimverse_SpaceLife</defName>
+    <label>life in space</label>
+    <iconPath>UI/Issues/Lighting</iconPath>
+  </IssueDef>
+
+  <PreceptDef>
+    <defName>Rimverse_SpaceLife_Sacred</defName>
+    <issue>Rimverse_SpaceLife</issue>
+    <label>sacred</label>
+    <description>Life among the stars is the only true life. Living on the ground is a sad exile.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_EternalTravelers</li>
+    </associatedMemes>
+    <conflictingMemes>
+      <li>Tunneler</li>
+    </conflictingMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_SpaceLife_Sacred_InSpace</thought>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_SpaceLife_Sacred_OnGround</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_SpaceLife_Preferred</defName>
+    <issue>Rimverse_SpaceLife</issue>
+    <label>preferred</label>
+    <description>It is good to live aboard a ship, among the stars.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_Cosmism</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_SpaceLife_Preferred_InSpace</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_SpaceLife_Disliked</defName>
+    <issue>Rimverse_SpaceLife</issue>
+    <label>disliked</label>
+    <description>People belong under an open sky, with solid ground under their feet. The void is no place to live.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <conflictingMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+    </conflictingMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_SpaceLife_Disliked_InSpace</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_SpaceLife_Sacred_InSpace</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_InSpace</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>among the stars</label>
+        <description>Living among the stars, where we belong.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_SpaceLife_Sacred_OnGround</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_OnGround</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>chained to the ground</label>
+        <description>Stuck at the bottom of a gravity well, far from the stars.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_SpaceLife_Preferred_InSpace</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_InSpace</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>life in space</label>
+        <description>It is good to live aboard a ship.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_SpaceLife_Disliked_InSpace</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_InSpace</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>trapped in the void</label>
+        <description>Nothing but a thin hull between me and the void. This is no way to live.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <MemeDef>
+    <defName>Rimverse_VoidBorn</defName>
+    <label>void-born</label>
+    <description>People who were born between stars. Gravity wells are prisons, and the ship is the only true home.</description>
+    <iconPath>UI/Memes/Transhumanist</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>2</impact>
+    <requireOne>
+      <li>
+        <li>Rimverse_SpaceLife_Sacred</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed->void</li>
+        <li>memeCreed->hull</li>
+        <li>memeCreed->deck</li>
+        <li>memeAdjective->starborn</li>
+        <li>memeAdjective->hollow</li>
+        <li>memeAdjective->silent</li>
+        <li>memeHyphenPrefix->void</li>
+        <li>memeConcept->void</li>
+        <li>memeLeaderNoun->captain</li>
+        <li>memeMoralist->navigator</li>
+      </rulesStrings>
+    </generalRules>
+  </MemeDef>
+
+  <MemeDef>
+    <defName>Rimverse_Cosmism</defName>
+    <label>cosmism</label>
+    <description>Humanity's destiny is to spread through the cosmos, defeat death and wake the sleeping worlds.</description>
+    <iconPath>UI/Memes/HighLife</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>2</impact>
+    <requireOne>
+      <li>
+        <li>Rimverse_SpaceLife_Preferred</li>
+        <li>Rimverse_SpaceLife_Sacred</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed->cosmos</li>
+        <li>memeCreed->orbit</li>
+        <li>memeCreed->horizon</li>
+        <li>memeAdjective->cosmic</li>
+        <li>memeAdjective->stellar</li>
+        <li>memeAdjective->boundless</li>
+        <li>memeHyphenPrefix->star</li>
+        <li>memeConcept->cosmos</li>
+        <li>memeLeaderNoun->captain</li>
+        <li>memeMoralist->navigator</li>
+      </rulesStrings>
+    </generalRules>
+  </MemeDef>
+
+  <MemeDef>
+    <defName>Rimverse_EternalTravelers</defName>
+    <label>eternal travelers</label>
+    <description>To stop is to die. The journey from star to star is the meaning of life, and no world is worth settling forever.</description>
+    <iconPath>UI/Memes/Rancher</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>2</impact>
+    <requireOne>
+      <li>
+        <li>Rimverse_SpaceLife_Sacred</li>
+        <li>Rimverse_SpaceLife_Preferred</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed->voyage</li>
+        <li>memeCreed->wake</li>
+        <li>memeCreed->drift</li>
+        <li>memeAdjective->wandering</li>
+        <li>memeAdjective->restless</li>
+        <li>memeAdjective->far</li>
+        <li>memeHyphenPrefix->drift</li>
+        <li>memeConcept->voyage</li>
+        <li>memeLeaderNoun->captain</li>
+        <li>memeMoralist->navigator</li>
+      </rulesStrings>
+    </generalRules>
+  </MemeDef>
+
+  <MemeDef>
+    <defName>Rimverse_GateCult</defName>
+    <label>gate cult</label>
+    <description>The ancient gates are holy relics left by those who came before. Opening them is prayer, and passing through them is pilgrimage.</description>
+    <iconPath>UI/Structures/Archist</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>1</impact>
+    <requireOne>
+      <li>
+        <li>Rimverse_GateUse_Sacred</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed->gate</li>
+        <li>memeCreed->arch</li>
+        <li>memeCreed->threshold</li>
+        <li>memeAdjective->ancient</li>
+        <li>memeAdjective->open</li>
+        <li>memeAdjective->eternal</li>
+        <li>memeHyphenPrefix->gate</li>
+        <li>memeConcept->gate</li>
+        <li>memeLeaderNoun->captain</li>
+        <li>memeMoralist->navigator</li>
+      </rulesStrings>
+    </generalRules>
+  </MemeDef>
+
+</Defs>

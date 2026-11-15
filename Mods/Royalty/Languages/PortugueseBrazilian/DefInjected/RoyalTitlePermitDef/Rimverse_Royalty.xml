@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_ShipResupply.label>reabastecimento de nave</Rimverse_ShipResupply.label>
+  <Rimverse_ShipResupply.description>Pede ao Império um envio de 200 de combustível químico e 40 de matéria de dobra para a sua nave.</Rimverse_ShipResupply.description>
+  <Rimverse_HullRepairKit.label>kit de reparo de casco</Rimverse_HullRepairKit.label>
+  <Rimverse_HullRepairKit.description>Pede ao Império um envio de 300 de aço, 60 de plasteel e 12 componentes para remendar um casco danificado.</Rimverse_HullRepairKit.description>
+  <Rimverse_CallImperialFrigate.label>chamar fragata imperial</Rimverse_CallImperialFrigate.label>
+  <Rimverse_CallImperialFrigate.description>Uma fragata imperial manda uma equipe de abordagem de 6 catafractários para lutar do seu lado.</Rimverse_CallImperialFrigate.description>
+  <Rimverse_CallFighterSquadron.label>chamar esquadrão de caças</Rimverse_CallFighterSquadron.label>
+  <Rimverse_CallFighterSquadron.description>Um esquadrão de caças imperiais faz uma passada de metralha sobre a área alvo.</Rimverse_CallFighterSquadron.description>
+  <Rimverse_ImperialBombardment.label>bombardeio orbital imperial</Rimverse_ImperialBombardment.label>
+  <Rimverse_ImperialBombardment.description>Uma nave de guerra imperial em órbita bombardeia a área alvo com uma salva longa.</Rimverse_ImperialBombardment.description>
+  <Rimverse_ShipyardRepair.label>conserto em estaleiro imperial</Rimverse_ShipyardRepair.label>
+  <Rimverse_ShipyardRepair.description>Uma equipe de reparo imperial deixa todas as construções danificadas deste mapa em perfeito estado.</Rimverse_ShipyardRepair.description>
+  <Rimverse_GatePass.label>passe de portal</Rimverse_GatePass.label>
+  <Rimverse_GatePass.description>Códigos imperiais de portal. Enquanto um colono com esta permissão estiver a bordo, os portais antigos podem ser ativados sem componentes de portal.</Rimverse_GatePass.description>
+  <Rimverse_CrewRescue.label>resgate de tripulação</Rimverse_CrewRescue.label>
+  <Rimverse_CrewRescue.description>Uma equipe médica imperial trata todas as feridas abertas dos seus colonos neste mapa e acaba com a hipóxia.</Rimverse_CrewRescue.description>
+  <Rimverse_ConvoyEscort.label>escolta de comboio</Rimverse_ConvoyEscort.label>
+  <Rimverse_ConvoyEscort.description>Escoltas imperiais voam com a sua nave por 5 dias. Nenhuma emboscada ou raide de civilização alcança as suas naves no espaço enquanto elas estão com você.</Rimverse_ConvoyEscort.description>
+</LanguageData>

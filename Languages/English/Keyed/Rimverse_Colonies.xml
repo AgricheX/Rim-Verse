@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CmdFoundColony>Found colony</Rimverse_CmdFoundColony>
+  <Rimverse_CmdFoundColonyDesc>Leaves colonists on this body to found a colony that runs on its own and shows in the Colonies tab.</Rimverse_CmdFoundColonyDesc>
+  <Rimverse_ColonyNeedResearch>Needs the {0} research.</Rimverse_ColonyNeedResearch>
+  <Rimverse_ColonyNeedOrbit>The ship must be stopped in orbit of a body.</Rimverse_ColonyNeedOrbit>
+  <Rimverse_ColonyBadBody>A colony cannot be founded on this body.</Rimverse_ColonyBadBody>
+  <Rimverse_ColonyAlreadyThere>You already have a colony on this body.</Rimverse_ColonyAlreadyThere>
+  <Rimverse_ColonyNeedScan>The body needs an exact scan.</Rimverse_ColonyNeedScan>
+  <Rimverse_ColonyNeedSteel>Needs {0} steel on the map.</Rimverse_ColonyNeedSteel>
+  <Rimverse_ColonyNeedMeals>Needs {0} meals on the map.</Rimverse_ColonyNeedMeals>
+  <Rimverse_ColonyNeedColonists>Needs at least {0} colonists on the map (one stays).</Rimverse_ColonyNeedColonists>
+  <Rimverse_FoundColonyTitle>Found a colony on {0}</Rimverse_FoundColonyTitle>
+  <Rimverse_FoundColonyInfo>Planet hazard: {0}. Cost: {1} steel and {2} meals. Choose at least {3} colonists to stay. The one with the best Social becomes administrator.</Rimverse_FoundColonyInfo>
+  <Rimverse_SocialLevel>Social {0}</Rimverse_SocialLevel>
+  <Rimverse_FoundColonyConfirm>Found with {0} colonists</Rimverse_FoundColonyConfirm>
+  <Rimverse_LetterColonyFoundedLabel>Colony founded</Rimverse_LetterColonyFoundedLabel>
+  <Rimverse_LetterColonyFounded>{1} colonists stayed on {0} to found a colony. It grows, produces and pays income on its own. See everything in the Colonies tab.</Rimverse_LetterColonyFounded>
+  <Rimverse_LetterColonyWarnLabel>Colony drawing attention</Rimverse_LetterColonyWarnLabel>
+  <Rimverse_LetterColonyWarn>Pirates and rivals are eyeing {0}. If attention reaches 600 it will be attacked. A military base and a good administrator help it hold.</Rimverse_LetterColonyWarn>
+  <Rimverse_LetterColonyHeldLabel>Attack repelled</Rimverse_LetterColonyHeldLabel>
+  <Rimverse_LetterColonyHeld>{0} repelled an attack.</Rimverse_LetterColonyHeld>
+  <Rimverse_LetterColonyRaidedLabel>Colony raided</Rimverse_LetterColonyRaidedLabel>
+  <Rimverse_LetterColonyRaided>{0} was raided. Population fell, the stock was taken and the industry lost was: {1}.</Rimverse_LetterColonyRaided>
+  <Rimverse_ColoniesTitle>Colonies: {0} of {1} · Treasury: {2} silver</Rimverse_ColoniesTitle>
+  <Rimverse_ColoniesNone>You have no colonies yet. Bring colonists into orbit of a scanned body and use Found colony on the bridge.</Rimverse_ColoniesNone>
+  <Rimverse_ColoniesSelect>Choose a colony.</Rimverse_ColoniesSelect>
+  <Rimverse_ColonyPopShort>pop. {0}</Rimverse_ColonyPopShort>
+  <Rimverse_ColonyLine1>System {0} · Population {1} of {2} · Hazard {3}</Rimverse_ColonyLine1>
+  <Rimverse_ColonyLine2>Stability {0} · Last quadrum income {1} · Attention {2} of {3}</Rimverse_ColonyLine2>
+  <Rimverse_ColonyAdmin>Administrator: {0} · Settlers: {1}</Rimverse_ColonyAdmin>
+  <Rimverse_ColonyNextStep>Next quadrum in {0} days</Rimverse_ColonyNextStep>
+  <Rimverse_ColonyIndustries>Industries:</Rimverse_ColonyIndustries>
+  <Rimverse_IndustryReady>running</Rimverse_IndustryReady>
+  <Rimverse_IndustryBuilding>ready in {0} days</Rimverse_IndustryBuilding>
+  <Rimverse_BuildIndustry>Build {0}: {1} silver, {2} days, upkeep {3}</Rimverse_BuildIndustry>
+  <Rimverse_ColonyStock>Stock: {0}</Rimverse_ColonyStock>
+  <Rimverse_ColonyNeedPresence>Bring a ship or colonists to this system to collect stock, deposit or withdraw money.</Rimverse_ColonyNeedPresence>
+  <Rimverse_ColonyCollect>Collect the stock</Rimverse_ColonyCollect>
+  <Rimverse_ColonyDeposit>Deposit all money on the map ({0})</Rimverse_ColonyDeposit>
+  <Rimverse_ColonyWithdraw>Withdraw {0} silver as stellar marks</Rimverse_ColonyWithdraw>
+  <Rimverse_ColonyRecall>Abandon and bring the settlers</Rimverse_ColonyRecall>
+  <Rimverse_ColonyRecallConfirm>Abandon {0}? The settlers and the stock come here, and the industries are lost.</Rimverse_ColonyRecallConfirm>
+  <Rimverse_Industry_Agriculture>agriculture</Rimverse_Industry_Agriculture>
+  <Rimverse_IndustryDesc_Agriculture>Food for 20 population. Without food the colony shrinks.</Rimverse_IndustryDesc_Agriculture>
+  <Rimverse_Industry_Mining>mining</Rimverse_Industry_Mining>
+  <Rimverse_IndustryDesc_Mining>40 steel per quadrum × body class ÷ 20.</Rimverse_IndustryDesc_Mining>
+  <Rimverse_Industry_GasHarvest>gas harvest</Rimverse_Industry_GasHarvest>
+  <Rimverse_IndustryDesc_GasHarvest>60 chemfuel per quadrum. Needs a gas giant in the system.</Rimverse_IndustryDesc_GasHarvest>
+  <Rimverse_Industry_Refinery>refinery</Rimverse_Industry_Refinery>
+  <Rimverse_IndustryDesc_Refinery>40 chemfuel and 10 warp matter per quadrum.</Rimverse_IndustryDesc_Refinery>
+  <Rimverse_Industry_TradePort>trade port</Rimverse_Industry_TradePort>
+  <Rimverse_IndustryDesc_TradePort>+20% income.</Rimverse_IndustryDesc_TradePort>
+  <Rimverse_Industry_Factory>factory</Rimverse_Industry_Factory>
+  <Rimverse_IndustryDesc_Factory>10 components and 2 advanced components per quadrum.</Rimverse_IndustryDesc_Factory>
+  <Rimverse_Industry_MilitaryBase>military base</Rimverse_Industry_MilitaryBase>
+  <Rimverse_IndustryDesc_MilitaryBase>Defense against attacks on the colony.</Rimverse_IndustryDesc_MilitaryBase>
+  <Rimverse_Industry_Shipyard>shipyard</Rimverse_Industry_Shipyard>
+  <Rimverse_IndustryDesc_Shipyard>A base for building and repairing ships (shipyard functions arrive in a later phase).</Rimverse_IndustryDesc_Shipyard>
+</LanguageData>

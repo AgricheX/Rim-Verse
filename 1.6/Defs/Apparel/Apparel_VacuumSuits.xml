@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef Name="Rimverse_VacuumSuitBase" ParentName="ArmorMachineableBase" Abstract="True">
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+    <generateCommonality>0.5</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+        <li>ElectricTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_VacuumSuitBase">
+    <defName>Rimverse_SuitEmergency</defName>
+    <label>emergency vacuum suit</label>
+    <description>A thin, quick-to-don pressure suit kept in wall lockers. It holds 1 hour of air and gives almost no protection. Without a helmet the air lasts only a tenth as long.</description>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>20</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Cloth>30</Cloth>
+      <Steel>10</Steel>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_BasicSuits</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li Class="Rimverse.CompProperties_VacuumSuit">
+        <airHours>1</airHours>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_VacuumSuitBase">
+    <defName>Rimverse_SuitWork</defName>
+    <label>work vacuum suit</label>
+    <description>The standard suit for outside repairs. It holds 8 hours of air.</description>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.20</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>6</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.10</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Cloth>40</Cloth>
+      <Steel>40</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_BasicSuits</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li Class="Rimverse.CompProperties_VacuumSuit">
+        <airHours>8</airHours>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Rimverse_VacuumSuitBase">
+    <defName>Rimverse_SuitMining</defName>
+    <label>mining vacuum suit</label>
+    <description>A reinforced suit for asteroid and moon mining, with powered tools in the gloves. It holds 10 hours of air and mines 15% faster.</description>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <MaxHitPoints>220</MaxHitPoints>
+      <Mass>7</Mass>
+      <Flammability>0.3</Flammability>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.20</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <EquipDelay>8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+      <MiningSpeed>0.15</MiningSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>10</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceMining</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li Class="Rimverse.CompProperties_VacuumSuit">
+        <airHours>10</airHours>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>Rimverse_HelmetVacuum</defName>
+    <label>vacuum helmet</label>
+    <description>A simple sealed helmet. A vacuum suit only seals properly with a helmet on.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>ArmorHeadgear</li>
+    </thingCategories>
+    <generateCommonality>0.5</generateCommonality>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.15</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>Rimverse_BasicSuits</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+        <li>ElectricTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="Rimverse.CompProperties_VacuumSuit">
+        <helmet>true</helmet>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

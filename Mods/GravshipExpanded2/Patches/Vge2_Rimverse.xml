@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="VGE_GravshipSubarmor"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/TerrainDef[defName="VGE_GravshipSubarmor"]</xpath>
+      <value>
+        <li Class="Rimverse.HullTerrainExtension">
+          <hullPoints>60</hullPoints>
+          <mass>1.2</mass>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="VGE_PlayerSubcreep"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/TerrainDef[defName="VGE_PlayerSubcreep"]</xpath>
+      <value>
+        <li Class="Rimverse.HullTerrainExtension">
+          <hullPoints>15</hullPoints>
+          <mass>0.4</mass>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="VGE_AncientSubstructure"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/TerrainDef[defName="VGE_AncientSubstructure"]</xpath>
+      <value>
+        <li Class="Rimverse.HullTerrainExtension">
+          <hullPoints>20</hullPoints>
+          <mass>0.5</mass>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="VGE_EnemySubstructure"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/TerrainDef[defName="VGE_EnemySubstructure"]</xpath>
+      <value>
+        <li Class="Rimverse.HullTerrainExtension">
+          <hullPoints>20</hullPoints>
+          <mass>0.5</mass>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="VGE_EnemySubarmor"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/TerrainDef[defName="VGE_EnemySubarmor"]</xpath>
+      <value>
+        <li Class="Rimverse.HullTerrainExtension">
+          <hullPoints>60</hullPoints>
+          <mass>1.2</mass>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="VGE_EnemyDamagedSubstructure"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/TerrainDef[defName="VGE_EnemyDamagedSubstructure"]</xpath>
+      <value>
+        <li Class="Rimverse.HullTerrainExtension">
+          <hullPoints>10</hullPoints>
+          <mass>0.5</mass>
+        </li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

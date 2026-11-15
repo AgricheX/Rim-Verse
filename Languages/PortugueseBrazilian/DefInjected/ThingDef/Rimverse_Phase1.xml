@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_BridgeSmall.label>ponte pequena</Rimverse_BridgeSmall.label>
+  <Rimverse_BridgeSmall.description>Computador de bordo e leme. Define uma nave: toda célula de casco ligada a ela, até 400 células, vira uma nave só. Lançar, pousar e a aba da nave ficam aqui.</Rimverse_BridgeSmall.description>
+  <Rimverse_BridgeCommand.label>ponte de comando</Rimverse_BridgeCommand.label>
+  <Rimverse_BridgeCommand.description>Uma ponte maior, que controla até 1.200 células de casco.</Rimverse_BridgeCommand.description>
+  <Rimverse_BridgeCapital.label>ponte de nave capital</Rimverse_BridgeCapital.label>
+  <Rimverse_BridgeCapital.description>A ponte de uma nave capital, que controla até 4.000 células de casco.</Rimverse_BridgeCapital.description>
+  <Rimverse_StructureModule.label>módulo de estrutura</Rimverse_StructureModule.label>
+  <Rimverse_StructureModule.description>Treliças de carga e relés de controle. Soma 300 células ao limite da nave da qual faz parte.</Rimverse_StructureModule.description>
+  <Rimverse_FuelCell.label>célula de combustível</Rimverse_FuelCell.label>
+  <Rimverse_FuelCell.description>Queima combustível químico para gerar 1.000 W estáveis. Gasta 4 de combustível por dia.</Rimverse_FuelCell.description>
+  <Rimverse_ShipSolarPanel.label>painel solar de nave</Rimverse_ShipSolarPanel.label>
+  <Rimverse_ShipSolarPanel.description>Painel solar rígido. Gera 800 W no espaço aberto perto de uma estrela.</Rimverse_ShipSolarPanel.description>
+  <Rimverse_BatteryBank.label>banco de baterias de nave</Rimverse_BatteryBank.label>
+  <Rimverse_BatteryBank.description>Guarda até 2.000 Wd de energia.</Rimverse_BatteryBank.description>
+  <Rimverse_ChemThruster.label>propulsor químico</Rimverse_ChemThruster.label>
+  <Rimverse_ChemThruster.description>Queima combustível dos tanques da nave para 100 de empuxo. Esquenta enquanto está ligado.</Rimverse_ChemThruster.description>
+  <Rimverse_ManeuverThruster.label>propulsor de manobra</Rimverse_ManeuverThruster.label>
+  <Rimverse_ManeuverThruster.description>Pequeno jato de atitude. Cada um soma 10% de esquiva, até quatro.</Rimverse_ManeuverThruster.description>
+  <Rimverse_ChemTank.label>tanque de combustível químico</Rimverse_ChemTank.label>
+  <Rimverse_ChemTank.description>Guarda até 300 de combustível químico para propulsores, lançamentos e pousos.</Rimverse_ChemTank.description>
+  <Rimverse_AirGenerator.label>gerador de ar</Rimverse_AirGenerator.label>
+  <Rimverse_AirGenerator.description>Separa e filtra gases para produzir 6 ar-pawn-hora (APH) por hora para a nave inteira.</Rimverse_AirGenerator.description>
+  <Rimverse_AirTank.label>tanque de ar</Rimverse_AirTank.label>
+  <Rimverse_AirTank.description>Reserva pressurizada com 500 APH de ar respirável.</Rimverse_AirTank.description>
+  <Rimverse_RadiatorFixed.label>radiador fixo</Rimverse_RadiatorFixed.label>
+  <Rimverse_RadiatorFixed.description>Painel que joga 3 unidades de calor (UC) por segundo para o espaço.</Rimverse_RadiatorFixed.description>
+  <Rimverse_HeatBank.label>banco térmico</Rimverse_HeatBank.label>
+  <Rimverse_HeatBank.description>Massa térmica que soma 200 UC à capacidade de calor da nave.</Rimverse_HeatBank.description>
+  <Rimverse_Telescope.label>telescópio</Rimverse_Telescope.label>
+  <Rimverse_Telescope.description>Telescópio óptico e de rádio. Sensibilidade 10.000: só enxerga assinaturas muito fortes de longe.</Rimverse_Telescope.description>
+  <Rimverse_CargoBay.label>baia de carga</Rimverse_CargoBay.label>
+  <Rimverse_CargoBay.description>Prateleiras presas. Soma 20 t de carga à nave e guarda itens.</Rimverse_CargoBay.description>
+  <Rimverse_ScannerLongRange.label>scanner de longo alcance</Rimverse_ScannerLongRange.label>
+  <Rimverse_ScannerLongRange.description>Conjunto de sensores em fase. Sensibilidade 1.000: lê sistemas estelares a até 20 anos-luz em faixas.</Rimverse_ScannerLongRange.description>
+  <Rimverse_ScannerAdvanced.label>scanner avançado</Rimverse_ScannerAdvanced.label>
+  <Rimverse_ScannerAdvanced.description>Scanner gravítico e espectral. Sensibilidade 100: leituras exatas de sistemas estelares a até 50 anos-luz.</Rimverse_ScannerAdvanced.description>
+  <Rimverse_WarpDriveSmall.label>motor de dobra pequeno</Rimverse_WarpDriveSmall.label>
+  <Rimverse_WarpDriveSmall.description>Dobra o espaço para a nave saltar até 6 anos-luz para outra estrela. Move naves de até 600 t. Precisa de matéria de dobra nos tanques de dobra e de 12 horas de recarga depois de cada salto.</Rimverse_WarpDriveSmall.description>
+  <Rimverse_WarpDriveHeavy.label>motor de dobra pesado</Rimverse_WarpDriveHeavy.label>
+  <Rimverse_WarpDriveHeavy.description>Um motor de dobra pesado. Salta até 20 anos-luz e move naves de até 6.000 t. Precisa de 24 horas de recarga depois de cada salto.</Rimverse_WarpDriveHeavy.description>
+  <Rimverse_WarpTank.label>tanque de dobra</Rimverse_WarpTank.label>
+  <Rimverse_WarpTank.description>Contenção blindada para até 100 de matéria de dobra.</Rimverse_WarpTank.description>
+  <Rimverse_WarpMatter.label>matéria de dobra</Rimverse_WarpMatter.label>
+  <Rimverse_WarpMatter.description>Matéria exótica refinada de urânio e combustível químico. Motores de dobra a queimam para dobrar o espaço. Fica guardada em tanques de dobra.</Rimverse_WarpMatter.description>
+  <Rimverse_OrbitalCredit.label>crédito orbital</Rimverse_OrbitalCredit.label>
+  <Rimverse_OrbitalCredit.description>Um chip leve e criptografado que vale 10 de prata. Estações, comerciantes orbitais e civilizações estelares usam ele no lugar da prata pesada.</Rimverse_OrbitalCredit.description>
+  <Rimverse_StellarMark.label>marco estelar</Rimverse_StellarMark.label>
+  <Rimverse_StellarMark.description>Um chip selado que vale 100 de prata, usado no comércio entre estrelas.</Rimverse_StellarMark.description>
+  <Rimverse_HullWall.label>parede de casco</Rimverse_HullWall.label>
+  <Rimverse_HullWall.description>Parede de casco à prova de pressão. Vale 60 pontos de casco.</Rimverse_HullWall.description>
+  <Rimverse_HullWallArmored.label>parede de casco blindada</Rimverse_HullWallArmored.label>
+  <Rimverse_HullWallArmored.description>Parede de casco blindada com plasteel. Vale 180 pontos de casco.</Rimverse_HullWallArmored.description>
+  <Rimverse_SuitEmergency.label>traje de vácuo de emergência</Rimverse_SuitEmergency.label>
+  <Rimverse_SuitEmergency.description>Um traje pressurizado fino, rápido de vestir, guardado em armários de parede. Tem 1 hora de ar e quase nenhuma proteção. Sem capacete o ar dura só um décimo.</Rimverse_SuitEmergency.description>
+  <Rimverse_SuitWork.label>traje de vácuo de trabalho</Rimverse_SuitWork.label>
+  <Rimverse_SuitWork.description>O traje padrão para reparos do lado de fora. Tem 8 horas de ar.</Rimverse_SuitWork.description>
+  <Rimverse_SuitMining.label>traje de vácuo de mineração</Rimverse_SuitMining.label>
+  <Rimverse_SuitMining.description>Um traje reforçado para minerar asteroides e luas sem ar, com ferramentas nas luvas. Tem 10 horas de ar e minera 15% mais rápido.</Rimverse_SuitMining.description>
+  <Rimverse_HelmetVacuum.label>capacete de vácuo</Rimverse_HelmetVacuum.label>
+  <Rimverse_HelmetVacuum.description>Um capacete selado simples. Um traje de vácuo só veda direito com capacete.</Rimverse_HelmetVacuum.description>
+  <Rimverse_Autocannon.label>canhão automático de nave</Rimverse_Autocannon.label>
+  <Rimverse_Autocannon.description>Canhão de casco de tiro rápido para curta distância. Rajadas de 5 projéteis de 15 de dano a cada 4 segundos. Gasta 5 de aço por rajada.</Rimverse_Autocannon.description>
+  <Rimverse_HullCannon.label>canhão de casco</Rimverse_HullCannon.label>
+  <Rimverse_HullCannon.description>Canhão pesado para média distância. Um projétil explosivo de 80 de dano a cada 8 segundos. Gasta 10 de aço por tiro.</Rimverse_HullCannon.description>
+  <Rimverse_PointLaser.label>laser de defesa de ponto</Rimverse_PointLaser.label>
+  <Rimverse_PointLaser.description>Rastreia e queima mísseis que se aproximam. Cada um tem 50% de chance de derrubar um míssil.</Rimverse_PointLaser.description>
+  <Rimverse_LaserLance.label>lança laser</Rimverse_LaserLance.label>
+  <Rimverse_LaserLance.description>Laser concentrado para média distância. 150 de dano a cada 15 segundos, o dobro contra escudos.</Rimverse_LaserLance.description>
+  <Rimverse_PlasmaCannon.label>canhão de plasma</Rimverse_PlasmaCannon.label>
+  <Rimverse_PlasmaCannon.description>Dispara um jato de plasma que explode sobre uma área do casco inimigo. 200 de dano a cada 15 segundos.</Rimverse_PlasmaCannon.description>
+  <Rimverse_Railgun.label>canhão de ferrovia</Rimverse_Railgun.label>
+  <Rimverse_Railgun.description>Canhão magnético para longa distância. Um projétil de plasteel de 300 de dano a cada 20 segundos. Gasta 10 de plasteel por tiro.</Rimverse_Railgun.description>
+  <Rimverse_MissileLauncher.label>lançador de mísseis</Rimverse_MissileLauncher.label>
+  <Rimverse_MissileLauncher.description>Lança mísseis guiados de nave a longa distância. 100 de dano a cada 10 segundos. Defesa de ponto pode derrubar os mísseis. Carrega mísseis de nave.</Rimverse_MissileLauncher.description>
+  <Rimverse_IonCannon.label>canhão de íons</Rimverse_IonCannon.label>
+  <Rimverse_IonCannon.description>Jato de íons de 150 de dano que só afeta escudos e energia. Serve para tirar as defesas de uma nave e capturá-la inteira.</Rimverse_IonCannon.description>
+  <Rimverse_TractorBeam.label>raio trator</Rimverse_TractorBeam.label>
+  <Rimverse_TractorBeam.description>Feixe de grávitons que prende a nave inimiga perto, para ela não fugir nem se afastar.</Rimverse_TractorBeam.description>
+  <Rimverse_ShieldGenerator.label>gerador de escudo</Rimverse_ShieldGenerator.label>
+  <Rimverse_ShieldGenerator.description>Projeta um escudo de energia em volta da nave inteira. 300 pontos de escudo que recuperam 10 por segundo com energia.</Rimverse_ShieldGenerator.description>
+  <Rimverse_ShipMissile.label>míssil de nave</Rimverse_ShipMissile.label>
+  <Rimverse_ShipMissile.description>Um míssil guiado que carrega os lançadores de mísseis de nave.</Rimverse_ShipMissile.description>
+  <Rimverse_Proj_Autocannon.label>projétil de canhão automático</Rimverse_Proj_Autocannon.label>
+  <Rimverse_Proj_HullCannon.label>projétil de canhão de casco</Rimverse_Proj_HullCannon.label>
+  <Rimverse_Proj_LaserLance.label>raio de lança laser</Rimverse_Proj_LaserLance.label>
+  <Rimverse_Proj_Plasma.label>jato de plasma</Rimverse_Proj_Plasma.label>
+  <Rimverse_Proj_Railgun.label>projétil de ferrovia</Rimverse_Proj_Railgun.label>
+  <Rimverse_Proj_Missile.label>míssil de nave</Rimverse_Proj_Missile.label>
+  <Rimverse_Proj_Ion.label>jato de íons</Rimverse_Proj_Ion.label>
+  <Rimverse_Fauna_Lopehorn.label>chifre-saltador</Rimverse_Fauna_Lopehorn.label>
+  <Rimverse_Fauna_Lopehorn.description>Um pastador alienígena leve que salta pelas planícies abertas em pequenos bandos. Os chifres enrolados servem só para exibição.</Rimverse_Fauna_Lopehorn.description>
+  <Rimverse_Fauna_Mossback.label>dorso-musgo</Rimverse_Fauna_Mossback.label>
+  <Rimverse_Fauna_Mossback.description>Um pastador pequeno e calmo, com uma camada fina de musgo simbiótico crescendo nas costas.</Rimverse_Fauna_Mossback.description>
+  <Rimverse_Fauna_Titanhide.label>couro-titã</Rimverse_Fauna_Titanhide.label>
+  <Rimverse_Fauna_Titanhide.description>Um pastador alienígena colossal de couro em camadas. Pacífico até ser ferido, e então aterrorizante.</Rimverse_Fauna_Titanhide.description>
+  <Rimverse_Fauna_Dunewalker.label>andarilho-das-dunas</Rimverse_Fauna_Dunewalker.label>
+  <Rimverse_Fauna_Dunewalker.description>Um andarilho enorme que cruza continentes inteiros comendo tudo o que é verde.</Rimverse_Fauna_Dunewalker.description>
+  <Rimverse_Fauna_Shadecat.label>gato-sombra</Rimverse_Fauna_Shadecat.label>
+  <Rimverse_Fauna_Shadecat.description>Um caçador alienígena solitário de emboscada, com pelo que parece beber a luz.</Rimverse_Fauna_Shadecat.description>
+  <Rimverse_Fauna_Ridgeclaw.label>garra-de-crista</Rimverse_Fauna_Ridgeclaw.label>
+  <Rimverse_Fauna_Ridgeclaw.description>Um predador pesado com uma crista de placas ósseas e garras longas e curvas.</Rimverse_Fauna_Ridgeclaw.description>
+  <Rimverse_Fauna_Howlback.label>uivador</Rimverse_Fauna_Howlback.label>
+  <Rimverse_Fauna_Howlback.description>Um caçador alienígena de matilha que coordena os ataques com uivos estranhos e crescentes.</Rimverse_Fauna_Howlback.description>
+  <Rimverse_Fauna_Glassfang.label>presa-de-vidro</Rimverse_Fauna_Glassfang.label>
+  <Rimverse_Fauna_Glassfang.description>Um predador pequeno de matilha, com dentes translúcidos e afiados como navalha.</Rimverse_Fauna_Glassfang.description>
+  <Rimverse_Fauna_Skyfin.label>barbatana-do-céu</Rimverse_Fauna_Skyfin.label>
+  <Rimverse_Fauna_Skyfin.description>Uma criatura planadora que voa nas correntes de ar quente com barbatanas largas de pele. Põe ovos.</Rimverse_Fauna_Skyfin.description>
+  <Rimverse_Fauna_Duskwing.label>asa-crepuscular</Rimverse_Fauna_Duskwing.label>
+  <Rimverse_Fauna_Duskwing.description>Um voador pequeno que caça insetos ao entardecer. Põe ovos.</Rimverse_Fauna_Duskwing.description>
+  <Rimverse_Fauna_Shellback.label>dorso-de-casco</Rimverse_Fauna_Shellback.label>
+  <Rimverse_Fauna_Shellback.description>Um rastejador lento coberto de placas grossas de carapaça, que podem ser trabalhadas como armadura.</Rimverse_Fauna_Shellback.description>
+  <Rimverse_Fauna_Plated.label>rastejador blindado</Rimverse_Fauna_Plated.label>
+  <Rimverse_Fauna_Plated.description>Um rastejador baixo e blindado que se enrola numa bola quando ameaçado.</Rimverse_Fauna_Plated.description>
+  <Rimverse_Fauna_Hivemite.label>ácaro-de-colmeia</Rimverse_Fauna_Hivemite.label>
+  <Rimverse_Fauna_Hivemite.description>Um inseto de colônia que ergue montes de resina endurecida e ataca intrusos em enxame.</Rimverse_Fauna_Hivemite.description>
+  <Rimverse_Fauna_Silkling.label>tecelão-de-seda</Rimverse_Fauna_Silkling.label>
+  <Rimverse_Fauna_Silkling.description>Um inseto de colônia que tece seda fina para forrar os ninhos.</Rimverse_Fauna_Silkling.description>
+  <Rimverse_GravityGenerator.label>gerador de gravidade</Rimverse_GravityGenerator.label>
+  <Rimverse_GravityGenerator.description>Controle de placas de grávitons. Dá 1 g a uma nave de até 600 células. Mais geradores cobrem naves maiores. Evita enjoo de gravidade zero e perda óssea a bordo.</Rimverse_GravityGenerator.description>
+  <Rimverse_ShipRation.label>ração de nave</Rimverse_ShipRation.label>
+  <Rimverse_ShipRation.description>Uma ração densa e selada a vácuo, feita para durar viagens longas. Nunca estraga.</Rimverse_ShipRation.description>
+  <Rimverse_AlgaePaste.label>pasta de algas</Rimverse_AlgaePaste.label>
+  <Rimverse_AlgaePaste.description>Pasta verde feita nos tanques de algas da nave. Nutritiva e deprimente de comer. Estraga em 4 dias.</Rimverse_AlgaePaste.description>
+  <Rimverse_CombatRation.label>ração de combate</Rimverse_CombatRation.label>
+  <Rimverse_CombatRation.description>Uma ração leve com estimulantes fracos. Dá 10% a mais de movimento por cerca de 4 horas. Nunca estraga.</Rimverse_CombatRation.description>
+  <Rimverse_ZeroGTube.label>tubo de refeição de gravidade zero</Rimverse_ZeroGTube.label>
+  <Rimverse_ZeroGTube.description>Um tubo de apertar com comida batida que dá para comer em qualquer lugar, sem mesa. Estraga em 30 dias.</Rimverse_ZeroGTube.description>
+  <Rimverse_GatePart.label>componente de portal</Rimverse_GatePart.label>
+  <Rimverse_GatePart.description>Uma treliça densa de plasteel e matéria de dobra dobrada, afinada na ressonância dos portais antigos. Serve para ativar portais, estabilizar buracos de minhoca e levar o Grande Portal mais longe.</Rimverse_GatePart.description>
+  <Rimverse_WarpTank.comps.1.fuelLabel>matéria de dobra</Rimverse_WarpTank.comps.1.fuelLabel>
+  <Rimverse_Autocannon.comps.4.fuelLabel>aço</Rimverse_Autocannon.comps.4.fuelLabel>
+  <Rimverse_HullCannon.comps.4.fuelLabel>aço</Rimverse_HullCannon.comps.4.fuelLabel>
+  <Rimverse_Railgun.comps.4.fuelLabel>plasteel</Rimverse_Railgun.comps.4.fuelLabel>
+  <Rimverse_MissileLauncher.comps.4.fuelLabel>mísseis</Rimverse_MissileLauncher.comps.4.fuelLabel>
+</LanguageData>

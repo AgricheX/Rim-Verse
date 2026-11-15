@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_MakeWarpMatter.label>refinar matéria de dobra</Rimverse_MakeWarpMatter.label>
+  <Rimverse_MakeWarpMatter.description>Refina 10 de matéria de dobra a partir de urânio e combustível químico.</Rimverse_MakeWarpMatter.description>
+  <Rimverse_MakeShipMissile.label>fazer míssil de nave</Rimverse_MakeShipMissile.label>
+  <Rimverse_MakeShipMissile.description>Monta um míssil guiado de nave.</Rimverse_MakeShipMissile.description>
+  <Rimverse_CookShipRation.label>cozinhar rações de nave</Rimverse_CookShipRation.label>
+  <Rimverse_CookShipRation.description>Uma ração densa e selada a vácuo, feita para durar viagens longas. Nunca estraga.</Rimverse_CookShipRation.description>
+  <Rimverse_CookAlgaePaste.label>fazer pasta de algas</Rimverse_CookAlgaePaste.label>
+  <Rimverse_CookAlgaePaste.description>Pasta verde feita nos tanques de algas da nave. Nutritiva e deprimente de comer. Estraga em 4 dias.</Rimverse_CookAlgaePaste.description>
+  <Rimverse_CookCombatRation.label>cozinhar rações de combate</Rimverse_CookCombatRation.label>
+  <Rimverse_CookCombatRation.description>Uma ração leve com estimulantes fracos. Dá 10% a mais de movimento por cerca de 4 horas. Nunca estraga.</Rimverse_CookCombatRation.description>
+  <Rimverse_CookZeroGTube.label>cozinhar tubos de gravidade zero</Rimverse_CookZeroGTube.label>
+  <Rimverse_CookZeroGTube.description>Um tubo de apertar com comida batida que dá para comer em qualquer lugar, sem mesa. Estraga em 30 dias.</Rimverse_CookZeroGTube.description>
+  <Rimverse_MakeGatePart.label>fazer componente de portal</Rimverse_MakeGatePart.label>
+  <Rimverse_MakeGatePart.description>Faz um componente de portal com plasteel, componentes avançados e matéria de dobra.</Rimverse_MakeGatePart.description>
+  <Rimverse_MakeWarpMatter.jobString>Refinando matéria de dobra.</Rimverse_MakeWarpMatter.jobString>
+  <Rimverse_MakeShipMissile.jobString>Montando um míssil de nave.</Rimverse_MakeShipMissile.jobString>
+  <Rimverse_CookShipRation.jobString>Cozinhando rações de nave.</Rimverse_CookShipRation.jobString>
+  <Rimverse_CookAlgaePaste.jobString>Fazendo pasta de algas.</Rimverse_CookAlgaePaste.jobString>
+  <Rimverse_CookCombatRation.jobString>Cozinhando rações de combate.</Rimverse_CookCombatRation.jobString>
+  <Rimverse_CookZeroGTube.jobString>Cozinhando tubos de gravidade zero.</Rimverse_CookZeroGTube.jobString>
+  <Rimverse_MakeGatePart.jobString>Fazendo um componente de portal.</Rimverse_MakeGatePart.jobString>
+</LanguageData>

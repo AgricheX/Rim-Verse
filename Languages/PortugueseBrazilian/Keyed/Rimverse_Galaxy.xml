@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CmdGalaxyMap>Mapa da galáxia</Rimverse_CmdGalaxyMap>
+  <Rimverse_CmdGalaxyMapDesc>Mostra as estrelas próximas, o que os sensores sabem delas e a galáxia inteira. Daqui a nave salta com o motor de dobra.</Rimverse_CmdGalaxyMapDesc>
+  <Rimverse_GalaxyMapTitle>{0} ({1})</Rimverse_GalaxyMapTitle>
+  <Rimverse_ViewLocal>Vizinhança</Rimverse_ViewLocal>
+  <Rimverse_ViewGalaxy>Galáxia inteira</Rimverse_ViewGalaxy>
+  <Rimverse_ViewGalaxyButton>Ver</Rimverse_ViewGalaxyButton>
+  <Rimverse_CurrentSystem>Sistema atual: {0}</Rimverse_CurrentSystem>
+  <Rimverse_DistanceLy>Distância: {0} anos-luz</Rimverse_DistanceLy>
+  <Rimverse_StarsShown>{0} estrelas num raio de {1} anos-luz</Rimverse_StarsShown>
+  <Rimverse_UnknownStar>Estrela desconhecida</Rimverse_UnknownStar>
+  <Rimverse_SelectStar>Clique em uma estrela para ver os detalhes.</Rimverse_SelectStar>
+  <Rimverse_ScanLevelLine>Varredura: {0}</Rimverse_ScanLevelLine>
+  <Rimverse_ScanLevel_Unknown>nenhuma</Rimverse_ScanLevel_Unknown>
+  <Rimverse_ScanLevel_Word>por palavra</Rimverse_ScanLevel_Word>
+  <Rimverse_ScanLevel_Range>por faixa</Rimverse_ScanLevel_Range>
+  <Rimverse_ScanLevel_Exact>exata</Rimverse_ScanLevel_Exact>
+  <Rimverse_StarNeedsScan>Só se vê a cor da estrela. Leve sensores para perto para saber mais.</Rimverse_StarNeedsScan>
+  <Rimverse_SystemBodiesCount>{0} planetas, {1} luas, {2} cinturões</Rimverse_SystemBodiesCount>
+  <Rimverse_SystemSizeWord>Sistema {0}</Rimverse_SystemSizeWord>
+  <Rimverse_SystemsCataloged>Sistemas catalogados: {0}</Rimverse_SystemsCataloged>
+  <Rimverse_WarpSummary>Dobra: até {0} anos-luz, até {1} t, {2} de matéria de dobra</Rimverse_WarpSummary>
+  <Rimverse_NoWarpDriveShort>Esta nave não tem motor de dobra funcionando.</Rimverse_NoWarpDriveShort>
+  <Rimverse_WarpCooldownLeft>O motor de dobra recarrega em {0} h.</Rimverse_WarpCooldownLeft>
+  <Rimverse_WarpEstimate>Salto de {0} anos-luz: {1} de matéria de dobra, {2} dia.</Rimverse_WarpEstimate>
+  <Rimverse_WarpHere>Saltar para cá</Rimverse_WarpHere>
+  <Rimverse_WarpingTo>Em dobra para {0}: {1}, faltam {2} dias</Rimverse_WarpingTo>
+  <Rimverse_CannotWarp>Não é possível saltar:</Rimverse_CannotWarp>
+  <Rimverse_MsgWarpStarted>{0} entrou em dobra rumo a {1} ({2} anos-luz).</Rimverse_MsgWarpStarted>
+  <Rimverse_LetterWarpArrivedLabel>Saída da dobra</Rimverse_LetterWarpArrivedLabel>
+  <Rimverse_LetterWarpArrived>{0} saiu da dobra no sistema {1}, perto de {2}, o corpo mais afastado da estrela.</Rimverse_LetterWarpArrived>
+  <Rimverse_ProblemNoWarpDrive>A nave não tem motor de dobra funcionando.</Rimverse_ProblemNoWarpDrive>
+  <Rimverse_ProblemWarpRange>Distância de {0} anos-luz, mas o motor só alcança {1}.</Rimverse_ProblemWarpRange>
+  <Rimverse_ProblemWarpMass>A nave pesa {0} t, mas os motores de dobra só movem {1} t.</Rimverse_ProblemWarpMass>
+  <Rimverse_ProblemWarpCooldown>O motor de dobra ainda recarrega por {0} h.</Rimverse_ProblemWarpCooldown>
+  <Rimverse_ProblemWarpMatter>Matéria de dobra: {0} de {1}.</Rimverse_ProblemWarpMatter>
+  <Rimverse_ProblemOtherGalaxy>Essa estrela fica em outra galáxia.</Rimverse_ProblemOtherGalaxy>
+  <Rimverse_ProblemTravelRule>Nesta galáxia a regra de viagem é {0}; a dobra comum não funciona aqui.</Rimverse_ProblemTravelRule>
+  <Rimverse_GalaxyTypeLine>Tipo: {0}</Rimverse_GalaxyTypeLine>
+  <Rimverse_GalaxyClassLine>Classe de tamanho: {0}</Rimverse_GalaxyClassLine>
+  <Rimverse_GalaxyClassShort>classe {0}</Rimverse_GalaxyClassShort>
+  <Rimverse_GalaxyRadiusLine>Raio: {0} anos-luz</Rimverse_GalaxyRadiusLine>
+  <Rimverse_GalaxyRuleLine>Regra de viagem: {0}</Rimverse_GalaxyRuleLine>
+  <Rimverse_GalaxyYouAreHere>Sua nave está nesta galáxia (quadrado verde). O quadrado branco é o sistema natal.</Rimverse_GalaxyYouAreHere>
+  <Rimverse_GalaxyScale>Largura do mapa: {0} anos-luz</Rimverse_GalaxyScale>
+  <Rimverse_LocalGroup>Grupo local: {0} galáxias</Rimverse_LocalGroup>
+  <Rimverse_Stat_Sensor>Sensibilidade do sensor</Rimverse_Stat_Sensor>
+  <Rimverse_Stat_Sensor_Desc>Quanto menor, melhor. Até 10.000: palavra a 5 anos-luz. Até 1.000: faixa a 20 anos-luz. Até 100: exato a 50 anos-luz.</Rimverse_Stat_Sensor_Desc>
+  <Rimverse_Stat_WarpRange>Alcance de dobra</Rimverse_Stat_WarpRange>
+  <Rimverse_Stat_WarpRange_Desc>Distância máxima de um salto. A nave usa o maior alcance entre seus motores de dobra.</Rimverse_Stat_WarpRange_Desc>
+  <Rimverse_Stat_WarpMaxMass>Massa máxima de dobra</Rimverse_Stat_WarpMaxMass>
+  <Rimverse_Stat_WarpMaxMass_Desc>Quanta massa este motor consegue levar num salto. Vários motores somam.</Rimverse_Stat_WarpMaxMass_Desc>
+  <Rimverse_Stat_WarpCooldown>Recarga da dobra</Rimverse_Stat_WarpCooldown>
+  <Rimverse_Stat_WarpCooldown_Desc>Horas de espera entre um salto e outro.</Rimverse_Stat_WarpCooldown_Desc>
+  <Rimverse_Stat_WarpCapacity>Capacidade de matéria de dobra</Rimverse_Stat_WarpCapacity>
+  <Rimverse_Stat_WarpCapacity_Desc>Quanta matéria de dobra este módulo guarda.</Rimverse_Stat_WarpCapacity_Desc>
+  <Rimverse_GalaxyType_Spiral>espiral</Rimverse_GalaxyType_Spiral>
+  <Rimverse_GalaxyType_BarredSpiral>espiral barrada</Rimverse_GalaxyType_BarredSpiral>
+  <Rimverse_GalaxyType_Ringed>anelar</Rimverse_GalaxyType_Ringed>
+  <Rimverse_GalaxyType_Elliptical>elíptica</Rimverse_GalaxyType_Elliptical>
+  <Rimverse_GalaxyType_DwarfSpheroidal>esferoidal anã</Rimverse_GalaxyType_DwarfSpheroidal>
+  <Rimverse_GalaxyType_Irregular>irregular</Rimverse_GalaxyType_Irregular>
+  <Rimverse_TravelRule_Warp>dobra</Rimverse_TravelRule_Warp>
+  <Rimverse_TravelRuleDesc_Warp>Motores de dobra saltam livremente entre estrelas dentro do alcance.</Rimverse_TravelRuleDesc_Warp>
+  <Rimverse_TravelRule_WarpBarRoutes>dobra com rotas da barra</Rimverse_TravelRule_WarpBarRoutes>
+  <Rimverse_TravelRuleDesc_WarpBarRoutes>Dobra comum, e a barra central guarda rotas rápidas entre as pontas.</Rimverse_TravelRuleDesc_WarpBarRoutes>
+  <Rimverse_TravelRule_AncientGates>portões antigos</Rimverse_TravelRule_AncientGates>
+  <Rimverse_TravelRuleDesc_AncientGates>A dobra comum falha aqui. Só portões deixados por uma civilização antiga ligam as estrelas.</Rimverse_TravelRuleDesc_AncientGates>
+  <Rimverse_TravelRule_Hyperlanes>hiperpistas</Rimverse_TravelRule_Hyperlanes>
+  <Rimverse_TravelRuleDesc_Hyperlanes>Só dá para saltar por pistas fixas que ligam estrelas vizinhas.</Rimverse_TravelRuleDesc_Hyperlanes>
+  <Rimverse_TravelRule_Sublight>subluz</Rimverse_TravelRule_Sublight>
+  <Rimverse_TravelRuleDesc_Sublight>Não existe dobra aqui. As viagens entre estrelas são lentas, em criossono.</Rimverse_TravelRuleDesc_Sublight>
+  <Rimverse_TravelRule_Wormholes>buracos de minhoca</Rimverse_TravelRule_Wormholes>
+  <Rimverse_TravelRuleDesc_Wormholes>Buracos de minhoca instáveis abrem e fecham, ligando pontos distantes.</Rimverse_TravelRuleDesc_Wormholes>
+</LanguageData>

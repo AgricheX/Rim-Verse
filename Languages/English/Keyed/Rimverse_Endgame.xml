@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Endgame>Endgame</Rimverse_Endgame>
+  <Rimverse_Endgame_Desc>Gates, wormholes, galactic crises and endings with credits (the game continues afterwards).</Rimverse_Endgame_Desc>
+  <Rimverse_CrisisYears>Years until crises</Rimverse_CrisisYears>
+  <Rimverse_CrisisYears_Desc>How many in-game years pass before a galactic crisis can begin.</Rimverse_CrisisYears_Desc>
+  <Rimverse_GreatGateLabel>Great Gate</Rimverse_GreatGateLabel>
+  <Rimverse_CmdActivateGate>Activate gate</Rimverse_CmdActivateGate>
+  <Rimverse_CmdActivateGateDesc>Spends {0} gate components to wake this system's gate.</Rimverse_CmdActivateGateDesc>
+  <Rimverse_CmdUseGate>Use gate</Rimverse_CmdUseGate>
+  <Rimverse_CmdUseGateDesc>Passes through the active gate and arrives instantly at one of its linked destinations.</Rimverse_CmdUseGateDesc>
+  <Rimverse_CmdEnterWormhole>Enter wormhole</Rimverse_CmdEnterWormhole>
+  <Rimverse_CmdEnterWormholeDesc>Passes through the wormhole to a distant point of the galaxy. It is unstable and will close within a few days.</Rimverse_CmdEnterWormholeDesc>
+  <Rimverse_CmdEnterWormholeStableDesc>Passes through the stable wormhole. This route stays open for good.</Rimverse_CmdEnterWormholeStableDesc>
+  <Rimverse_CmdStabilizeWormhole>Stabilize wormhole</Rimverse_CmdStabilizeWormhole>
+  <Rimverse_CmdStabilizeWormholeDesc>Spends {0} gate components to keep this wormhole open for good.</Rimverse_CmdStabilizeWormholeDesc>
+  <Rimverse_MsgGateActivated>The gate at {0} has awakened.</Rimverse_MsgGateActivated>
+  <Rimverse_MsgWormholeStable>The wormhole is now stable.</Rimverse_MsgWormholeStable>
+  <Rimverse_MsgWormholeShifted>The wormhole has closed.</Rimverse_MsgWormholeShifted>
+  <Rimverse_NeedResearch>Needs the {0} research.</Rimverse_NeedResearch>
+  <Rimverse_NeedGateParts>Needs {0} gate components on the map.</Rimverse_NeedGateParts>
+  <Rimverse_GateBeyond>Beyond the Local Group ({0} gate components)</Rimverse_GateBeyond>
+  <Rimverse_GateBeyondBlocked>To go beyond you need the gate construction research and {0} gate components on the map.</Rimverse_GateBeyondBlocked>
+  <Rimverse_LetterWormholeLabel>Wormhole</Rimverse_LetterWormholeLabel>
+  <Rimverse_LetterWormhole>A wormhole has opened near {0}, {1} light-years from home. It leads somewhere far away and will not last long.</Rimverse_LetterWormhole>
+  <Rimverse_CrisisLabel_None>Crisis</Rimverse_CrisisLabel_None>
+  <Rimverse_CrisisLabel_MechanoidSwarm>Mechanoid swarm</Rimverse_CrisisLabel_MechanoidSwarm>
+  <Rimverse_CrisisLabel_GreyPlague>Grey plague</Rimverse_CrisisLabel_GreyPlague>
+  <Rimverse_CrisisLabel_ArchotechAwakening>Archotech awakening</Rimverse_CrisisLabel_ArchotechAwakening>
+  <Rimverse_CrisisLabel_Invasion>Invasion from beyond</Rimverse_CrisisLabel_Invasion>
+  <Rimverse_CrisisStart_None>A crisis has begun.</Rimverse_CrisisStart_None>
+  <Rimverse_CrisisStart_MechanoidSwarm>A mechanoid hive has awakened and calls itself {0}. It builds fleets without end and will consume civilization after civilization. Destroy its fleet before it reaches you.</Rimverse_CrisisStart_MechanoidSwarm>
+  <Rimverse_CrisisStart_GreyPlague>A plague of grey nanomachines is spreading from {0}. Whole worlds lose population every quadrum. It ends only when the source is destroyed.</Rimverse_CrisisStart_GreyPlague>
+  <Rimverse_CrisisStart_ArchotechAwakening>An archotech mind has woken full of hatred and calls itself {0}. It is gathering ships and wants to remake the galaxy its own way.</Rimverse_CrisisStart_ArchotechAwakening>
+  <Rimverse_CrisisStart_Invasion>Ships from outside the galaxy have crossed the void. They call themselves {0} and arrive with war fleets.</Rimverse_CrisisStart_Invasion>
+  <Rimverse_CrisisEndLabel>Crisis defeated</Rimverse_CrisisEndLabel>
+  <Rimverse_CrisisEnd_None>The crisis is over.</Rimverse_CrisisEnd_None>
+  <Rimverse_CrisisEnd_MechanoidSwarm>The mechanoid hive has fallen. Its fleets drift in space, without orders.</Rimverse_CrisisEnd_MechanoidSwarm>
+  <Rimverse_CrisisEnd_GreyPlague>The source of the grey plague has been destroyed. The worlds begin to recover.</Rimverse_CrisisEnd_GreyPlague>
+  <Rimverse_CrisisEnd_ArchotechAwakening>The archotech mind has been silenced. The galaxy breathes again.</Rimverse_CrisisEnd_ArchotechAwakening>
+  <Rimverse_CrisisEnd_Invasion>The invaders have been driven back into the void.</Rimverse_CrisisEnd_Invasion>
+  <Rimverse_Ending_CrisisDefeated>Against all odds, your people faced the greatest threat the galaxy had ever seen and won. For generations, worlds will tell the story of the crew that saved the stars.</Rimverse_Ending_CrisisDefeated>
+  <Rimverse_Ending_Ascension>Your people merged their minds with an archotech intelligence. What they were ceased to exist, and what they became no longer fits in human words.</Rimverse_Ending_Ascension>
+  <Rimverse_Ending_GalacticEmpire>From a patched-up ship to an empire of many worlds. Your colonies thrive and your allies swear loyalty. The galaxy has a new center.</Rimverse_Ending_GalacticEmpire>
+  <Rimverse_Ending_BeyondTheGroup>The Great Gate opened to where no map reaches. Your ship passed through and left behind everything known. What lies on the other side is now your story.</Rimverse_Ending_BeyondTheGroup>
+  <Rimverse_EndingContinue>You may keep playing with this colony.</Rimverse_EndingContinue>
+</LanguageData>

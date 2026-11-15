@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_OrbitMap.label>órbita</Rimverse_OrbitMap.label>
+  <Rimverse_OrbitPocket.label>órbita</Rimverse_OrbitPocket.label>
+  <Rimverse_AirlessBodyMap.label>mundo sem ar</Rimverse_AirlessBodyMap.label>
+  <Rimverse_HostileBodyMap.label>mundo hostil</Rimverse_HostileBodyMap.label>
+  <Rimverse_Surface_TemperateForest.label>mundo alienígena</Rimverse_Surface_TemperateForest.label>
+  <Rimverse_Surface_TemperateSwamp.label>mundo alienígena</Rimverse_Surface_TemperateSwamp.label>
+  <Rimverse_Surface_TropicalRainforest.label>mundo alienígena</Rimverse_Surface_TropicalRainforest.label>
+  <Rimverse_Surface_TropicalSwamp.label>mundo alienígena</Rimverse_Surface_TropicalSwamp.label>
+  <Rimverse_Surface_AridShrubland.label>mundo alienígena</Rimverse_Surface_AridShrubland.label>
+  <Rimverse_Surface_Desert.label>mundo alienígena</Rimverse_Surface_Desert.label>
+  <Rimverse_Surface_ExtremeDesert.label>mundo alienígena</Rimverse_Surface_ExtremeDesert.label>
+  <Rimverse_Surface_BorealForest.label>mundo alienígena</Rimverse_Surface_BorealForest.label>
+  <Rimverse_Surface_Tundra.label>mundo alienígena</Rimverse_Surface_Tundra.label>
+  <Rimverse_Surface_ColdBog.label>mundo alienígena</Rimverse_Surface_ColdBog.label>
+  <Rimverse_Surface_IceSheet.label>mundo alienígena</Rimverse_Surface_IceSheet.label>
+  <Rimverse_Surface_SeaIce.label>mundo alienígena</Rimverse_Surface_SeaIce.label>
+</LanguageData>

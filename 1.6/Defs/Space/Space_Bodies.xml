@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Rimverse_Regolith</defName>
+    <label>regolith</label>
+    <description>Loose dust and broken rock covering an airless world.</description>
+    <texturePath>Terrain/Surfaces/Gravel</texturePath>
+    <color>(0.42, 0.41, 0.40)</color>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>2</pathCost>
+    <fertility>0</fertility>
+    <canBePolluted>false</canBePolluted>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+  </TerrainDef>
+
+  <BiomeDef>
+    <defName>Rimverse_Airless</defName>
+    <label>airless world</label>
+    <description>A dead surface with no air: an asteroid, a dwarf planet or a small moon.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0</plantDensity>
+    <noAmbientWind>true</noAmbientWind>
+    <constantOutdoorTemperature>-120</constantOutdoorTemperature>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <maxFishPopulation>0</maxFishPopulation>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <baseWeatherCommonalities>
+      <Rimverse_SpaceClear>1</Rimverse_SpaceClear>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.SpaceBiomeExtension">
+        <gravity>0.1</gravity>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <GenStepDef>
+    <defName>Rimverse_AirlessBody</defName>
+    <order>100</order>
+    <genStep Class="Rimverse.GenStep_AirlessBody" />
+  </GenStepDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_AirlessBodyMap</defName>
+    <label>airless world</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <disableMapClippers>true</disableMapClippers>
+    <defaultUnderGridTerrain>Rimverse_Vacuum</defaultUnderGridTerrain>
+    <genSteps>
+      <li>Rimverse_AirlessBody</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_Airless</biome>
+      <temperature>-120</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_OrbitPocket</defName>
+    <label>orbit</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <disableMapClippers>true</disableMapClippers>
+    <defaultUnderGridTerrain>Rimverse_Vacuum</defaultUnderGridTerrain>
+    <genSteps>
+      <li>Rimverse_SpaceTerrain</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_Orbit</biome>
+      <temperature>-75</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+</Defs>

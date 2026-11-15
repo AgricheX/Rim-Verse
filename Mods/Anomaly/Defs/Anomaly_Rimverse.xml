@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <IncidentDef>
+    <defName>Rimverse_VoiceOnRadio</defName>
+    <label>voice on the radio</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_VoiceOnRadio</workerClass>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>30</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Rimverse_UnlistedCrewmate</defName>
+    <label>crewmate not on the list</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_UnlistedCrewmate</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>40</minRefireDays>
+  </IncidentDef>
+
+</Defs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Qol_TraderLeaving.label>aviso de comerciante saindo</Rimverse_Qol_TraderLeaving.label>
+  <Rimverse_Qol_TraderLeaving.description>Avisa quando um comerciante orbital tem menos de 6 horas antes de ir embora.</Rimverse_Qol_TraderLeaving.description>
+  <Rimverse_Qol_UndraftAfterTucking.label>desconvocar depois de levar à cama</Rimverse_Qol_UndraftAfterTucking.label>
+  <Rimverse_Qol_UndraftAfterTucking.description>Colonos convocados são desconvocados depois de levar alguém para a cama ou para uma cápsula de criossono, para poderem voltar ao trabalho ou cuidar do ferido.</Rimverse_Qol_UndraftAfterTucking.description>
+  <Rimverse_Qol_ModSource.label>mostrar o mod de origem</Rimverse_Qol_ModSource.label>
+  <Rimverse_Qol_ModSource.description>Soma uma linha ao cartão de informações dizendo de qual mod vem cada coisa.</Rimverse_Qol_ModSource.description>
+  <Rimverse_Qol_LoadedDing.label>sino ao carregar</Rimverse_Qol_LoadedDing.label>
+  <Rimverse_Qol_LoadedDing.description>Toca um sino curto quando o jogo termina de carregar até o menu principal.</Rimverse_Qol_LoadedDing.description>
+  <Rimverse_Qol_FpsTps.label>medidor de FPS e TPS</Rimverse_Qol_FpsTps.label>
+  <Rimverse_Qol_FpsTps.description>Mostra quadros por segundo e ticks por segundo no canto superior esquerdo.</Rimverse_Qol_FpsTps.description>
+  <Rimverse_Qol_PawnNotes.label>notas em pawns</Rimverse_Qol_PawnNotes.label>
+  <Rimverse_Qol_PawnNotes.description>Soma uma aba Notas às pessoas, para suas anotações. As notas ficam salvas no jogo.</Rimverse_Qol_PawnNotes.description>
+  <Rimverse_Qol_MedicalTab.label>aba médica</Rimverse_Qol_MedicalTab.label>
+  <Rimverse_Qol_MedicalTab.description>Uma aba principal com colonos, prisioneiros e animais por saúde, com sangramento, dor, feridas para tratar e a pior condição.</Rimverse_Qol_MedicalTab.description>
+  <Rimverse_Qol_CameraZoom.label>mais zoom da câmera</Rimverse_Qol_CameraZoom.label>
+  <Rimverse_Qol_CameraZoom.description>Deixa a câmera afastar muito mais e chegar um pouco mais perto, o que ajuda com naves grandes e mapas de órbita.</Rimverse_Qol_CameraZoom.description>
+</LanguageData>

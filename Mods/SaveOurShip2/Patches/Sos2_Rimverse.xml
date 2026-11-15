@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/StatDef[defName="DecompressionResistance"]/parts</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/StatDef[defName="DecompressionResistance"]/parts</xpath>
+      <value>
+        <li Class="Rimverse.StatPart_RimverseSuit">
+          <suitOnly>0.75</suitOnly>
+          <full>1</full>
+        </li>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/StatDef[defName="DecompressionResistance"]</xpath>
+      <value>
+        <parts>
+          <li Class="Rimverse.StatPart_RimverseSuit">
+            <suitOnly>0.75</suitOnly>
+            <full>1</full>
+          </li>
+        </parts>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/StatDef[defName="HypoxiaResistance"]/parts</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/StatDef[defName="HypoxiaResistance"]/parts</xpath>
+      <value>
+        <li Class="Rimverse.StatPart_RimverseSuit">
+          <suitOnly>0</suitOnly>
+          <full>1</full>
+        </li>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/StatDef[defName="HypoxiaResistance"]</xpath>
+      <value>
+        <parts>
+          <li Class="Rimverse.StatPart_RimverseSuit">
+            <suitOnly>0</suitOnly>
+            <full>1</full>
+          </li>
+        </parts>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>

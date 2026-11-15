@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Entity_HullPassenger.label>passageiro do casco</Rimverse_Entity_HullPassenger.label>
+  <Rimverse_Entity_HullPassenger.description>Uma coisa longa e achatada que vive entre as placas do casco. Dorme até corpos quentes passarem e então ataca do escuro.</Rimverse_Entity_HullPassenger.description>
+  <Rimverse_Entity_CrewEcho.label>eco de tripulação</Rimverse_Entity_CrewEcho.label>
+  <Rimverse_Entity_CrewEcho.description>Uma forma pálida que anda pelos caminhos de uma tripulação antiga. É frágil, mas ficar perto dela enche a mente de pavor.</Rimverse_Entity_CrewEcho.description>
+  <Rimverse_Entity_VoidHunger.label>fome do vazio</Rimverse_Entity_VoidHunger.label>
+  <Rimverse_Entity_VoidHunger.description>Uma sombra que se alimenta de ar. Dentro de uma nave, drena as reservas de oxigênio enquanto caça.</Rimverse_Entity_VoidHunger.description>
+  <Rimverse_Entity_ShadowSwarm.label>enxame de sombras</Rimverse_Entity_ShadowSwarm.label>
+  <Rimverse_Entity_ShadowSwarm.description>Sombras pequenas e rápidas que andam em bando. Uma é fraca, dez são um desastre.</Rimverse_Entity_ShadowSwarm.description>
+  <Rimverse_Entity_Sleeper.label>o que dorme no naufrágio</Rimverse_Entity_Sleeper.label>
+  <Rimverse_Entity_Sleeper.description>Algo enorme que dorme na parte mais funda de uma nave morta. Faz a própria carne crescer de novo.</Rimverse_Entity_Sleeper.description>
+  <Rimverse_VoidShard.label>fragmento do vazio</Rimverse_VoidShard.label>
+  <Rimverse_VoidShard.description>Uma lasca negra achada onde o espaço se curva em volta de um buraco negro. É fria ao toque e zumbe quando há entidades por perto. Colecionadores e pesquisadores pagam bem por ela.</Rimverse_VoidShard.description>
+  <Rimverse_MoonMonolith.label>monolito lunar</Rimverse_MoonMonolith.label>
+  <Rimverse_MoonMonolith.description>Um pilar negro sozinho numa lua morta. Ninguém o construiu. Estudá-lo traz conhecimento sombrio, e sombras se juntam à volta dele.</Rimverse_MoonMonolith.description>
+  <Rimverse_ContainmentCell.label>cela de contenção de bordo</Rimverse_ContainmentCell.label>
+  <Rimverse_ContainmentCell.description>Placas de campo reforçadas para plataformas de contenção numa nave. Cada cela ligada dificulta as fugas.</Rimverse_ContainmentCell.description>
+  <Rimverse_PurgeAirlock.label>eclusa de expurgo</Rimverse_PurgeAirlock.label>
+  <Rimverse_PurgeAirlock.description>Expulsa o ar de um cômodo numa rajada violenta. Hostis no cômodo são golpeados e atordoados, e quem estiver sem proteção começa a sufocar. Recarrega em um dia.</Rimverse_PurgeAirlock.description>
+  <Rimverse_VoidSensor.label>sensor do vazio</Rimverse_VoidSensor.label>
+  <Rimverse_VoidSensor.description>Escuta o zumbido das entidades. Mostra quantas há no mapa, acordadas ou dormindo, e pode mandar um pulso que acorda as que dormem na hora que você escolher.</Rimverse_VoidSensor.description>
+</LanguageData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CommandThrone.label>trono de comando</Rimverse_CommandThrone.label>
+  <Rimverse_CommandThrone.description>Um trono montado no convés da ponte, com controles da nave nos braços. Conta como trono para nobres e para a meditação digna.</Rimverse_CommandThrone.description>
+  <Rimverse_NobleBunk.label>cama de cabine nobre</Rimverse_NobleBunk.label>
+  <Rimverse_NobleBunk.description>Uma cama compacta mas luxuosa, embutida na parede de uma cabine da nave. Muito confortável e bonita, para que uma cabine pequena ainda atenda às exigências de um nobre.</Rimverse_NobleBunk.description>
+  <Rimverse_StarWindow.label>janela de meditação estelar</Rimverse_StarWindow.label>
+  <Rimverse_StarWindow.description>Uma escotilha reforçada com um banco de meditação. Psicastes de foco natural podem meditar olhando as estrelas, e funciona muito melhor no espaço.</Rimverse_StarWindow.description>
+</LanguageData>

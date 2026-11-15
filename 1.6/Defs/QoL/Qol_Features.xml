@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_TraderLeaving</defName>
+    <label>trader leaving alert</label>
+    <description>Warns when an orbital trader has less than 6 hours before leaving.</description>
+    <category>Alerts</category>
+    <disableIfModActive>
+      <li>Mlie.WeHadATrader</li>
+      <li>Electric.WeHadATrader</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_UndraftAfterTucking</defName>
+    <label>undraft after tucking</label>
+    <description>Drafted colonists are undrafted after carrying someone to a bed or a cryptosleep casket, so they can go back to work or give medical care.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>madarauchiha.undraftaftertucking</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_ModSource</defName>
+    <label>show source mod</label>
+    <description>Adds a line to the info card saying which mod each thing comes from.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>co.uk.epicguru.whatsthatmod</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_LoadedDing</defName>
+    <label>ding when loaded</label>
+    <description>Plays a short bell when the game finishes loading to the main menu.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Mlie.DingOnGameLoaded</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_FpsTps</defName>
+    <label>FPS and TPS meter</label>
+    <description>Shows frames per second and ticks per second in the top-left corner.</description>
+    <category>Performance</category>
+    <disableIfModActive>
+      <li>Yuki.FPSAndTPS</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_PawnNotes</defName>
+    <label>pawn notes</label>
+    <description>Adds a Notes tab to people, for your own notes. Notes are saved with the game.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>nalzurin.pawnnotes</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_MedicalTab</defName>
+    <label>medical tab</label>
+    <description>A main tab listing colonists, prisoners and animals by health, with bleeding, pain, wounds to treat and the worst condition.</description>
+    <category>Medicine</category>
+    <disableIfModActive>
+      <li>Fluffy.MedicalTab</li>
+      <li>MemeGoddess.MedicalTab</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_CameraZoom</defName>
+    <label>more camera zoom</label>
+    <description>Lets the camera zoom out much further and in a bit closer, which helps with large ships and orbit maps.</description>
+    <category>Camera</category>
+    <disableIfModActive>
+      <li>brrainz.cameraplus</li>
+      <li>ray1203.SimpleCameraSetting</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <MainButtonDef>
+    <defName>Rimverse_Medical</defName>
+    <label>medical</label>
+    <description>Health overview of colonists, prisoners and animals.</description>
+    <tabWindowClass>Rimverse.MainTabWindow_RimverseMedical</tabWindowClass>
+    <workerClass>Rimverse.MainButtonWorker_RimverseMedical</workerClass>
+    <order>45</order>
+  </MainButtonDef>
+
+</Defs>

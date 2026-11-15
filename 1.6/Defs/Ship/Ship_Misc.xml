@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <DesignationCategoryDef>
+    <defName>Rimverse_Ship</defName>
+    <label>starship</label>
+    <order>49</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+  </DesignationCategoryDef>
+
+  <StatDef>
+    <defName>Rimverse_PilotingOffset</defName>
+    <label>piloting bonus</label>
+    <description>Added to this person's piloting level, which is based on Intellectual and Shooting.</description>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showOnAnimals>false</showOnAnimals>
+    <hideAtValue>0</hideAtValue>
+    <displayPriorityInCategory>3800</displayPriorityInCategory>
+  </StatDef>
+
+  <HediffDef>
+    <defName>Rimverse_LaunchSickness</defName>
+    <label>launch sickness</label>
+    <description>Nausea and disorientation after a rough launch or landing.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+    <maxSeverity>1</maxSeverity>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.5</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <vomitMtbDays>0.25</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

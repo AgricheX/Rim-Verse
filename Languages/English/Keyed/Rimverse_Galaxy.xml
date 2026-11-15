@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CmdGalaxyMap>Galaxy map</Rimverse_CmdGalaxyMap>
+  <Rimverse_CmdGalaxyMapDesc>Shows nearby stars, what sensors know about them, and the whole galaxy. Warp jumps start here.</Rimverse_CmdGalaxyMapDesc>
+  <Rimverse_GalaxyMapTitle>{0} ({1})</Rimverse_GalaxyMapTitle>
+  <Rimverse_ViewLocal>Neighborhood</Rimverse_ViewLocal>
+  <Rimverse_ViewGalaxy>Whole galaxy</Rimverse_ViewGalaxy>
+  <Rimverse_ViewGalaxyButton>View</Rimverse_ViewGalaxyButton>
+  <Rimverse_CurrentSystem>Current system: {0}</Rimverse_CurrentSystem>
+  <Rimverse_DistanceLy>Distance: {0} light years</Rimverse_DistanceLy>
+  <Rimverse_StarsShown>{0} stars within {1} light years</Rimverse_StarsShown>
+  <Rimverse_UnknownStar>Unknown star</Rimverse_UnknownStar>
+  <Rimverse_SelectStar>Click a star to see its details.</Rimverse_SelectStar>
+  <Rimverse_ScanLevelLine>Scan: {0}</Rimverse_ScanLevelLine>
+  <Rimverse_ScanLevel_Unknown>none</Rimverse_ScanLevel_Unknown>
+  <Rimverse_ScanLevel_Word>rough</Rimverse_ScanLevel_Word>
+  <Rimverse_ScanLevel_Range>ranged</Rimverse_ScanLevel_Range>
+  <Rimverse_ScanLevel_Exact>exact</Rimverse_ScanLevel_Exact>
+  <Rimverse_StarNeedsScan>Only the star's color is visible. Bring sensors closer to learn more.</Rimverse_StarNeedsScan>
+  <Rimverse_SystemBodiesCount>{0} planets, {1} moons, {2} belts</Rimverse_SystemBodiesCount>
+  <Rimverse_SystemSizeWord>A {0} system</Rimverse_SystemSizeWord>
+  <Rimverse_SystemsCataloged>Systems cataloged: {0}</Rimverse_SystemsCataloged>
+  <Rimverse_WarpSummary>Warp: up to {0} light years, up to {1} t, {2} warp matter</Rimverse_WarpSummary>
+  <Rimverse_NoWarpDriveShort>This ship has no working warp drive.</Rimverse_NoWarpDriveShort>
+  <Rimverse_WarpCooldownLeft>The warp drive recharges in {0} h.</Rimverse_WarpCooldownLeft>
+  <Rimverse_WarpEstimate>Jump of {0} light years: {1} warp matter, {2} day.</Rimverse_WarpEstimate>
+  <Rimverse_WarpHere>Jump here</Rimverse_WarpHere>
+  <Rimverse_WarpingTo>Warping to {0}: {1}, {2} days left</Rimverse_WarpingTo>
+  <Rimverse_CannotWarp>Cannot jump:</Rimverse_CannotWarp>
+  <Rimverse_MsgWarpStarted>{0} has entered warp toward {1} ({2} light years).</Rimverse_MsgWarpStarted>
+  <Rimverse_LetterWarpArrivedLabel>Warp exit</Rimverse_LetterWarpArrivedLabel>
+  <Rimverse_LetterWarpArrived>{0} has left warp in the {1} system, near {2}, the body farthest from the star.</Rimverse_LetterWarpArrived>
+  <Rimverse_ProblemNoWarpDrive>The ship has no working warp drive.</Rimverse_ProblemNoWarpDrive>
+  <Rimverse_ProblemWarpRange>Distance is {0} light years, but the drive only reaches {1}.</Rimverse_ProblemWarpRange>
+  <Rimverse_ProblemWarpMass>The ship weighs {0} t, but the warp drives can only move {1} t.</Rimverse_ProblemWarpMass>
+  <Rimverse_ProblemWarpCooldown>The warp drive is still recharging for {0} h.</Rimverse_ProblemWarpCooldown>
+  <Rimverse_ProblemWarpMatter>Warp matter: {0} of {1}.</Rimverse_ProblemWarpMatter>
+  <Rimverse_ProblemOtherGalaxy>That star is in another galaxy.</Rimverse_ProblemOtherGalaxy>
+  <Rimverse_ProblemTravelRule>In this galaxy the travel rule is {0}; ordinary warp does not work here.</Rimverse_ProblemTravelRule>
+  <Rimverse_GalaxyTypeLine>Type: {0}</Rimverse_GalaxyTypeLine>
+  <Rimverse_GalaxyClassLine>Size class: {0}</Rimverse_GalaxyClassLine>
+  <Rimverse_GalaxyClassShort>class {0}</Rimverse_GalaxyClassShort>
+  <Rimverse_GalaxyRadiusLine>Radius: {0} light years</Rimverse_GalaxyRadiusLine>
+  <Rimverse_GalaxyRuleLine>Travel rule: {0}</Rimverse_GalaxyRuleLine>
+  <Rimverse_GalaxyYouAreHere>Your ship is in this galaxy (green square). The white square is your home system.</Rimverse_GalaxyYouAreHere>
+  <Rimverse_GalaxyScale>Map width: {0} light years</Rimverse_GalaxyScale>
+  <Rimverse_LocalGroup>Local group: {0} galaxies</Rimverse_LocalGroup>
+  <Rimverse_Stat_Sensor>Sensor sensitivity</Rimverse_Stat_Sensor>
+  <Rimverse_Stat_Sensor_Desc>Lower is better. Up to 10,000: rough at 5 light years. Up to 1,000: ranged at 20 light years. Up to 100: exact at 50 light years.</Rimverse_Stat_Sensor_Desc>
+  <Rimverse_Stat_WarpRange>Warp range</Rimverse_Stat_WarpRange>
+  <Rimverse_Stat_WarpRange_Desc>Maximum jump distance. The ship uses the longest range among its warp drives.</Rimverse_Stat_WarpRange_Desc>
+  <Rimverse_Stat_WarpMaxMass>Warp mass limit</Rimverse_Stat_WarpMaxMass>
+  <Rimverse_Stat_WarpMaxMass_Desc>How much mass this drive can carry in a jump. Several drives add up.</Rimverse_Stat_WarpMaxMass_Desc>
+  <Rimverse_Stat_WarpCooldown>Warp recharge</Rimverse_Stat_WarpCooldown>
+  <Rimverse_Stat_WarpCooldown_Desc>Hours to wait between jumps.</Rimverse_Stat_WarpCooldown_Desc>
+  <Rimverse_Stat_WarpCapacity>Warp matter capacity</Rimverse_Stat_WarpCapacity>
+  <Rimverse_Stat_WarpCapacity_Desc>How much warp matter this module holds.</Rimverse_Stat_WarpCapacity_Desc>
+  <Rimverse_GalaxyType_Spiral>spiral</Rimverse_GalaxyType_Spiral>
+  <Rimverse_GalaxyType_BarredSpiral>barred spiral</Rimverse_GalaxyType_BarredSpiral>
+  <Rimverse_GalaxyType_Ringed>ring</Rimverse_GalaxyType_Ringed>
+  <Rimverse_GalaxyType_Elliptical>elliptical</Rimverse_GalaxyType_Elliptical>
+  <Rimverse_GalaxyType_DwarfSpheroidal>dwarf spheroidal</Rimverse_GalaxyType_DwarfSpheroidal>
+  <Rimverse_GalaxyType_Irregular>irregular</Rimverse_GalaxyType_Irregular>
+  <Rimverse_TravelRule_Warp>warp</Rimverse_TravelRule_Warp>
+  <Rimverse_TravelRuleDesc_Warp>Warp drives jump freely between stars within range.</Rimverse_TravelRuleDesc_Warp>
+  <Rimverse_TravelRule_WarpBarRoutes>warp with bar routes</Rimverse_TravelRule_WarpBarRoutes>
+  <Rimverse_TravelRuleDesc_WarpBarRoutes>Ordinary warp, and the central bar holds fast routes between its ends.</Rimverse_TravelRuleDesc_WarpBarRoutes>
+  <Rimverse_TravelRule_AncientGates>ancient gates</Rimverse_TravelRule_AncientGates>
+  <Rimverse_TravelRuleDesc_AncientGates>Ordinary warp fails here. Only gates left by an ancient civilization link the stars.</Rimverse_TravelRuleDesc_AncientGates>
+  <Rimverse_TravelRule_Hyperlanes>hyperlanes</Rimverse_TravelRule_Hyperlanes>
+  <Rimverse_TravelRuleDesc_Hyperlanes>Jumps only work along fixed lanes between neighboring stars.</Rimverse_TravelRuleDesc_Hyperlanes>
+  <Rimverse_TravelRule_Sublight>sublight</Rimverse_TravelRule_Sublight>
+  <Rimverse_TravelRuleDesc_Sublight>There is no warp here. Travel between stars is slow and done in cryosleep.</Rimverse_TravelRuleDesc_Sublight>
+  <Rimverse_TravelRule_Wormholes>wormholes</Rimverse_TravelRule_Wormholes>
+  <Rimverse_TravelRuleDesc_Wormholes>Unstable wormholes open and close, linking distant points.</Rimverse_TravelRuleDesc_Wormholes>
+</LanguageData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Gestate_HullRepairer.label>gestar reparador de casco</Rimverse_Gestate_HullRepairer.label>
+  <Rimverse_Gestate_HullRepairer.description>Gestar um reparador de casco.</Rimverse_Gestate_HullRepairer.description>
+  <Rimverse_Gestate_CargoHauler.label>gestar carregador de carga</Rimverse_Gestate_CargoHauler.label>
+  <Rimverse_Gestate_CargoHauler.description>Gestar um carregador de carga.</Rimverse_Gestate_CargoHauler.description>
+  <Rimverse_Gestate_AsteroidMiner.label>gestar minerador de asteroides</Rimverse_Gestate_AsteroidMiner.label>
+  <Rimverse_Gestate_AsteroidMiner.description>Gestar um minerador de asteroides.</Rimverse_Gestate_AsteroidMiner.description>
+  <Rimverse_Gestate_CorridorSentry.label>gestar sentinela de corredor</Rimverse_Gestate_CorridorSentry.label>
+  <Rimverse_Gestate_CorridorSentry.description>Gestar um sentinela de corredor.</Rimverse_Gestate_CorridorSentry.description>
+  <Rimverse_Gestate_Boarder.label>gestar abordador</Rimverse_Gestate_Boarder.label>
+  <Rimverse_Gestate_Boarder.description>Gestar um abordador.</Rimverse_Gestate_Boarder.description>
+  <Rimverse_Gestate_MechFighter.label>gestar caça mecanoide</Rimverse_Gestate_MechFighter.label>
+  <Rimverse_Gestate_MechFighter.description>Gestar um caça mecanoide.</Rimverse_Gestate_MechFighter.description>
+</LanguageData>

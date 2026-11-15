@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <MainButtonDef>
+    <defName>Rimverse_Civilizations</defName>
+    <label>civilizations</label>
+    <description>Star civilizations you have met, their governments, and your diplomacy with them.</description>
+    <tabWindowClass>Rimverse.MainTabWindow_Civilizations</tabWindowClass>
+    <order>65</order>
+    <minimized>true</minimized>
+  </MainButtonDef>
+
+</Defs>

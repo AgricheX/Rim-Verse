@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <IncidentDef>
+    <defName>Rimverse_YellowSignal</defName>
+    <label>yellow signal</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_YellowSignal</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>45</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Rimverse_RoomsSurvivor</defName>
+    <label>survivor of the rooms</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RoomsSurvivor</workerClass>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>40</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Rimverse_OfficeEcho</defName>
+    <label>office echo</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_OfficeEcho</workerClass>
+    <baseChance>0.6</baseChance>
+    <minRefireDays>15</minRefireDays>
+  </IncidentDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_OfficeEcho</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>2</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>buzzing lights</label>
+        <description>I keep hearing the hum of fluorescent lights somewhere in the ship. There are no fluorescent lights on this ship.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

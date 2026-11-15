@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_MoonLayer.label>lua</Rimverse_MoonLayer.label>
+  <Rimverse_MoonLayer.viewGizmoTooltip>Veja a lua deste mundo.</Rimverse_MoonLayer.viewGizmoTooltip>
+  <Rimverse_RingLayer.label>anel</Rimverse_RingLayer.label>
+  <Rimverse_RingLayer.viewGizmoTooltip>Veja o anel de poeira e gelo em volta deste mundo.</Rimverse_RingLayer.viewGizmoTooltip>
+  <Rimverse_BeltLayer.label>cinturão próximo</Rimverse_BeltLayer.label>
+  <Rimverse_BeltLayer.viewGizmoTooltip>Veja o cinturão de asteroides perto deste mundo.</Rimverse_BeltLayer.viewGizmoTooltip>
+  <Rimverse_StationLayer.label>órbita alta</Rimverse_StationLayer.label>
+  <Rimverse_StationLayer.viewGizmoTooltip>Veja as estações em órbita alta.</Rimverse_StationLayer.viewGizmoTooltip>
+</LanguageData>

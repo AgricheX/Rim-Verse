@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Tab_General>Geral</Rimverse_Tab_General>
+  <Rimverse_Tab_Universe>Universo</Rimverse_Tab_Universe>
+  <Rimverse_Tab_Ship>Nave</Rimverse_Tab_Ship>
+  <Rimverse_Tab_Fluxo>Grande Fluxo</Rimverse_Tab_Fluxo>
+  <Rimverse_Tab_Qol>Qualidade de vida</Rimverse_Tab_Qol>
+  <Rimverse_Tab_Compat>Compatibilidade</Rimverse_Tab_Compat>
+  <Rimverse_ModInactive>(mod ou DLC inativo)</Rimverse_ModInactive>
+  <Rimverse_Threat>Ameaças espaciais</Rimverse_Threat>
+  <Rimverse_Threat_Desc>Multiplica o orçamento de ameaça de frotas, piratas e eventos do Rimverse.</Rimverse_Threat_Desc>
+  <Rimverse_Economy>Economia</Rimverse_Economy>
+  <Rimverse_Economy_Desc>Multiplica preços, rendas de colônias e custos de manutenção do Rimverse.</Rimverse_Economy_Desc>
+  <Rimverse_ResearchCost>Custo de pesquisa</Rimverse_ResearchCost>
+  <Rimverse_ResearchCost_Desc>Multiplica o custo dos projetos de pesquisa do Rimverse.</Rimverse_ResearchCost_Desc>
+  <Rimverse_DebugLogging>Registro de depuração</Rimverse_DebugLogging>
+  <Rimverse_DebugLogging_Desc>Escreve mensagens extras no registro para ajudar a encontrar problemas.</Rimverse_DebugLogging_Desc>
+  <Rimverse_ResetDefaults>Restaurar padrões</Rimverse_ResetDefaults>
+  <Rimverse_NewGameOnly>As opções de geração só valem para universos novos.</Rimverse_NewGameOnly>
+  <Rimverse_GalaxyCount>Galáxias</Rimverse_GalaxyCount>
+  <Rimverse_GalaxyCount_Desc>Quantas galáxias o universo gera no início do jogo.</Rimverse_GalaxyCount_Desc>
+  <Rimverse_StarDensity>Densidade de estrelas</Rimverse_StarDensity>
+  <Rimverse_StarDensity_Desc>Quantas estrelas cada região da galáxia tem, comparado com a densidade real (0,004 estrelas por ano-luz cúbico). Valores menores deixam o mapa mais leve e o espaço mais vazio.</Rimverse_StarDensity_Desc>
+  <Rimverse_CivSimulation>Simulação de civilizações</Rimverse_CivSimulation>
+  <Rimverse_CivSimulation_Desc>Civilizações crescem, negociam, entram em guerra e caem mesmo longe da sua colônia.</Rimverse_CivSimulation_Desc>
+  <Rimverse_CivTickInterval>Intervalo da simulação (dias)</Rimverse_CivTickInterval>
+  <Rimverse_CivTickInterval_Desc>De quanto em quanto tempo as civilizações são atualizadas. Valores maiores pesam menos no desempenho.</Rimverse_CivTickInterval_Desc>
+  <Rimverse_AirConsumption>Consumo de ar</Rimverse_AirConsumption>
+  <Rimverse_AirConsumption_Desc>Multiplica quanto ar cada colono consome a bordo.</Rimverse_AirConsumption_Desc>
+  <Rimverse_FuelConsumption>Consumo de combustível</Rimverse_FuelConsumption>
+  <Rimverse_FuelConsumption_Desc>Multiplica o combustível e a matéria de dobra gastos em viagens.</Rimverse_FuelConsumption_Desc>
+  <Rimverse_BreachDrain>Perda de ar em brechas</Rimverse_BreachDrain>
+  <Rimverse_BreachDrain_Desc>Multiplica a velocidade com que uma brecha esvazia o ar de um cômodo.</Rimverse_BreachDrain_Desc>
+  <Rimverse_ShipCombat>Combate entre naves</Rimverse_ShipCombat>
+  <Rimverse_ShipCombat_Desc>Permite batalhas espaciais entre naves e frotas.</Rimverse_ShipCombat_Desc>
+  <Rimverse_FluxoEnabled>Ativar o Grande Fluxo</Rimverse_FluxoEnabled>
+  <Rimverse_FluxoEnabled_Desc>Liga o sistema de poderes do Grande Fluxo, suas ordens e lâminas de feixe.</Rimverse_FluxoEnabled_Desc>
+  <Rimverse_FluxoChance>Chance de nascer sensível</Rimverse_FluxoChance>
+  <Rimverse_FluxoChance_Desc>Chance de um novo colono ter sensibilidade ao Grande Fluxo.</Rimverse_FluxoChance_Desc>
+  <Rimverse_QolEnabled>Ativar recursos de qualidade de vida</Rimverse_QolEnabled>
+  <Rimverse_QolEnabled_Desc>Liga os recursos de qualidade de vida do Rimverse. Cada um se desliga sozinho quando o mod original estiver ativo.</Rimverse_QolEnabled_Desc>
+  <Rimverse_QolNone>Nenhum recurso de qualidade de vida instalado.</Rimverse_QolNone>
+  <Rimverse_QolOriginalActive>(o mod original está ativo)</Rimverse_QolOriginalActive>
+  <Rimverse_RequiresRestart>(reinício necessário)</Rimverse_RequiresRestart>
+  <Rimverse_QolCategory_General>Geral</Rimverse_QolCategory_General>
+  <Rimverse_OdysseyIntegration>Integração com o Odyssey</Rimverse_OdysseyIntegration>
+  <Rimverse_OdysseyIntegration_Desc>Usa conteúdo do Odyssey dentro do Rimverse. A nave do Rimverse continua sendo própria.</Rimverse_OdysseyIntegration_Desc>
+  <Rimverse_CEIntegration>Integração com o Combat Extended</Rimverse_CEIntegration>
+  <Rimverse_CEIntegration_Desc>Converte armas, armaduras e munições do Rimverse para o Combat Extended.</Rimverse_CEIntegration_Desc>
+  <Rimverse_EndlessRoomsEvents>Eventos do Endless Rooms</Rimverse_EndlessRoomsEvents>
+  <Rimverse_EndlessRoomsEvents_Desc>Ativa os eventos, poderes e cenário que ligam o universo às Backrooms do Endless Rooms.</Rimverse_EndlessRoomsEvents_Desc>
+  <Rimverse_FacialAnimationIntegration>Integração com o Facial Animation</Rimverse_FacialAnimationIntegration>
+  <Rimverse_FacialAnimationIntegration_Desc>Dá rostos animados às linhagens do Rimverse.</Rimverse_FacialAnimationIntegration_Desc>
+  <Rimverse_YayoIntegration>Integração com o Yayo's Animation</Rimverse_YayoIntegration>
+  <Rimverse_YayoIntegration_Desc>Ajusta animações do Yayo's Animation em gravidade zero e a bordo.</Rimverse_YayoIntegration_Desc>
+</LanguageData>

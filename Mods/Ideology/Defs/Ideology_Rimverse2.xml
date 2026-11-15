@@ -1,0 +1,2704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <IssueDef>
+    <defName>Rimverse_Exploration</defName>
+    <label>exploration</label>
+    <iconPath>UI/Issues/Lighting</iconPath>
+  </IssueDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Exploration_Stagnant</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_ExplorationStagnant</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>no new stars</label>
+        <description>More than fifteen days without charting a new system. We are supposed to be explorers.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Exploration_Recent</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_ExploredRecently</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>new stars charted</label>
+        <description>We charted new systems recently. This is our purpose.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <PreceptDef>
+    <defName>Rimverse_Exploration_Duty</defName>
+    <issue>Rimverse_Exploration</issue>
+    <label>duty</label>
+    <description>Exploring the unknown is a sacred duty. Believers are happy while new systems keep being charted, and restless when exploration stops.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+      <li>Rimverse_Cosmism</li>
+    </associatedMemes>
+    <conflictingMemes>
+      <li>Rimverse_HomeworldGuardians</li>
+    </conflictingMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_Exploration_Stagnant</thought>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_Exploration_Recent</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <IssueDef>
+    <defName>Rimverse_Contact</defName>
+    <label>contact with other civilizations</label>
+    <iconPath>UI/Issues/Lighting</iconPath>
+  </IssueDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Contact_Many</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_ManyContacts</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>many peoples known</label>
+        <description>We know many peoples among the stars. The galaxy feels less lonely.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Contact_Ties</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_ForeignTies</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>foreign ties</label>
+        <description>We made pacts with outsiders. They will corrupt us.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <PreceptDef>
+    <defName>Rimverse_Contact_Welcomed</defName>
+    <issue>Rimverse_Contact</issue>
+    <label>welcomed</label>
+    <description>Meeting other civilizations is good. Believers are happy when many peoples are known.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_Cosmism</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_Contact_Many</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_Contact_Isolationist</defName>
+    <issue>Rimverse_Contact</issue>
+    <label>isolationist</label>
+    <description>Outsiders are a danger. Believers dislike trade agreements and alliances with other civilizations.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_HomeworldGuardians</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_Contact_Ties</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <IssueDef>
+    <defName>Rimverse_GateUse</defName>
+    <label>ancient gates</label>
+    <iconPath>UI/Issues/Lighting</iconPath>
+  </IssueDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_GateUse_Pilgrimage</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>gate pilgrimage</label>
+        <description>We passed through an ancient gate. It felt like walking into a cathedral.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_GateUse_Dread</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>4</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>crossed a gate</label>
+        <description>We went through one of those ancient things. Nothing made by the dead should be trusted.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <PreceptDef>
+    <defName>Rimverse_GateUse_Sacred</defName>
+    <issue>Rimverse_GateUse</issue>
+    <label>sacred</label>
+    <description>The ancient gates are holy. Passing through one is a pilgrimage.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_GateCult</li>
+      <li>Rimverse_VoidFaith</li>
+    </associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_GateUse_Feared</defName>
+    <issue>Rimverse_GateUse</issue>
+    <label>feared</label>
+    <description>The ancient gates are cursed works of the dead. Believers hate using them.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <conflictingMemes>
+      <li>Rimverse_GateCult</li>
+    </conflictingMemes>
+  </PreceptDef>
+
+  <IssueDef>
+    <defName>Rimverse_Cryosleep</defName>
+    <label>cryosleep</label>
+    <iconPath>UI/Issues/Lighting</iconPath>
+  </IssueDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Cryo_Sacred</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_HasCryo</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>sleepers aboard</label>
+        <description>The ship carries cryosleep caskets for the long dark. That is how our ancestors crossed the stars.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Cryo_Forbidden</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_CryoInUse</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>frozen souls</label>
+        <description>Someone is frozen in a casket here. A soul in ice is a soul stolen from time.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <PreceptDef>
+    <defName>Rimverse_Cryo_Sacred</defName>
+    <issue>Rimverse_Cryosleep</issue>
+    <label>sacred</label>
+    <description>Cryosleep is the sacred way our ancestors crossed the void.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_VoidFaith</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_Cryo_Sacred</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_Cryo_Forbidden</defName>
+    <issue>Rimverse_Cryosleep</issue>
+    <label>forbidden</label>
+    <description>Freezing a living person is an abomination.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_Cryo_Forbidden</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <IssueDef>
+    <defName>Rimverse_Salvage</defName>
+    <label>wreck salvage</label>
+    <iconPath>UI/Issues/Lighting</iconPath>
+  </IssueDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Salvage_Spoils</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>spoils of the void</label>
+        <description>We won in space and the wreck is ours to strip. Fair is fair.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Salvage_Desecration</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>desecrated wreck</label>
+        <description>A destroyed ship is a tomb. Stripping it is desecration.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <PreceptDef>
+    <defName>Rimverse_Salvage_Honorable</defName>
+    <issue>Rimverse_Salvage</issue>
+    <label>honorable</label>
+    <description>A wreck belongs to whoever won the battle.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_Frontier</li>
+    </associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_Salvage_Disrespectful</defName>
+    <issue>Rimverse_Salvage</issue>
+    <label>disrespectful</label>
+    <description>Destroyed ships are graves of the void and must not be stripped.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_VoidFaith</li>
+    </associatedMemes>
+  </PreceptDef>
+
+  <IssueDef>
+    <defName>Rimverse_Lineage</defName>
+    <label>lineage modification</label>
+    <iconPath>UI/Issues/Lighting</iconPath>
+  </IssueDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Lineage_Proud</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_SelfLineage</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>proud lineage</label>
+        <description>My people were shaped by another world. I carry it in my body.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Lineage_Impure</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_LineageAround</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>impure blood around</label>
+        <description>There are people of strange lineages among us. Humans should stay human.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <PreceptDef>
+    <defName>Rimverse_Lineage_Celebrated</defName>
+    <issue>Rimverse_Lineage</issue>
+    <label>celebrated</label>
+    <description>The marks other worlds leave on a people are a source of pride.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_Lineage_Proud</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_Lineage_Shunned</defName>
+    <issue>Rimverse_Lineage</issue>
+    <label>shunned</label>
+    <description>Humans should stay as they were on Earth. Altered lineages are unwelcome.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_HomeworldGuardians</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_Lineage_Impure</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <IssueDef>
+    <defName>Rimverse_Piracy</defName>
+    <label>piracy</label>
+    <iconPath>UI/Issues/Lighting</iconPath>
+  </IssueDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Piracy_Prize</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>prize ship</label>
+        <description>We took a whole ship. A good prize for brave raiders.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Piracy_Shame</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>stolen ship</label>
+        <description>We took another crew's ship. We are no better than pirates.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <PreceptDef>
+    <defName>Rimverse_Piracy_Honorable</defName>
+    <issue>Rimverse_Piracy</issue>
+    <label>honorable</label>
+    <description>Taking ships by boarding is the highest form of courage.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <associatedMemes>
+      <li>Raider</li>
+    </associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_Piracy_Abhorrent</defName>
+    <issue>Rimverse_Piracy</issue>
+    <label>abhorrent</label>
+    <description>Capturing other crews' ships is theft and shame.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+  </PreceptDef>
+
+  <IssueDef>
+    <defName>Rimverse_ShipName</defName>
+    <label>ship naming</label>
+    <iconPath>UI/Issues/Lighting</iconPath>
+  </IssueDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_ShipName_Unnamed</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_ShipUnnamed</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>nameless ship</label>
+        <description>Our ship has no name. A nameless ship has no soul.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_ShipName_Named</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_ShipNamed</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>named ship</label>
+        <description>Our ship carries a proper name. She is one of us.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <PreceptDef>
+    <defName>Rimverse_ShipName_Required</defName>
+    <issue>Rimverse_ShipName</issue>
+    <label>required</label>
+    <description>Every ship must carry a name. A nameless ship is bad luck.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_ShipName_Unnamed</thought>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_ShipName_Named</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <IssueDef>
+    <defName>Rimverse_Viewport</defName>
+    <label>windows and sky</label>
+    <iconPath>UI/Issues/Lighting</iconPath>
+  </IssueDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Viewport_None</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_NoViewport</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>no window to the stars</label>
+        <description>There is no viewport on this ship. Living without seeing the sky is unbearable.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_Viewport_Some</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_HasViewport</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>window to the stars</label>
+        <description>The ship has a viewport. Looking out at the stars keeps me sane.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <PreceptDef>
+    <defName>Rimverse_Viewport_Needed</defName>
+    <issue>Rimverse_Viewport</issue>
+    <label>needed</label>
+    <description>People need to see the sky. A ship must have viewports.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_StellarAscension</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_Viewport_None</thought>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_Viewport_Some</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <MemeDef>
+    <defName>Rimverse_StellarAscension</defName>
+    <label>stellar ascension</label>
+    <description>Humanity must climb toward the stars until it becomes something more. Every world charted and every lineage born is a step up.</description>
+    <iconPath>UI/Memes/Transhumanist</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>2</impact>
+    <requireOne>
+      <li>
+        <li>Rimverse_Exploration_Duty</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed->stellar</li>
+        <li>memeAdjective->ascension</li>
+        <li>memeConcept->stellar ascension</li>
+        <li>memeLeaderNoun->captain</li>
+        <li>memeMoralist->navigator</li>
+      </rulesStrings>
+    </generalRules>
+  </MemeDef>
+
+  <MemeDef>
+    <defName>Rimverse_HomeworldGuardians</defName>
+    <label>homeworld guardians</label>
+    <description>Our place is our homeworld. The stars are for visiting, never for living.</description>
+    <iconPath>UI/Memes/PrimacyHuman</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>2</impact>
+    <requireOne>
+      <li>
+        <li>Rimverse_SpaceLife_Disliked</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed->homeworld</li>
+        <li>memeAdjective->guardians</li>
+        <li>memeConcept->homeworld guardians</li>
+        <li>memeLeaderNoun->captain</li>
+        <li>memeMoralist->navigator</li>
+      </rulesStrings>
+    </generalRules>
+  </MemeDef>
+
+  <MemeDef>
+    <defName>Rimverse_VoidFaith</defName>
+    <label>void faith</label>
+    <description>The void between stars is the face of god. Its silence is a prayer, and the dead return to it.</description>
+    <iconPath>UI/Memes/Darkness</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>2</impact>
+    <requireOne>
+      <li>
+        <li>Rimverse_Cryo_Sacred</li>
+        <li>Rimverse_GateUse_Sacred</li>
+        <li>Rimverse_Salvage_Disrespectful</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed->void</li>
+        <li>memeAdjective->faith</li>
+        <li>memeConcept->void faith</li>
+        <li>memeLeaderNoun->captain</li>
+        <li>memeMoralist->navigator</li>
+      </rulesStrings>
+    </generalRules>
+  </MemeDef>
+
+  <MemeDef>
+    <defName>Rimverse_Frontier</defName>
+    <label>frontier</label>
+    <description>The frontier is where people are free. Whoever charts a world first has the right to it.</description>
+    <iconPath>UI/Memes/Individualist</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>2</impact>
+    <requireOne>
+      <li>
+        <li>Rimverse_Exploration_Duty</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed->frontier</li>
+        <li>memeAdjective->frontier</li>
+        <li>memeConcept->frontier</li>
+        <li>memeLeaderNoun->captain</li>
+        <li>memeMoralist->navigator</li>
+      </rulesStrings>
+    </generalRules>
+  </MemeDef>
+
+  <PreceptDef ParentName="FestivalBase">
+    <defName>Rimverse_ShipBaptism</defName>
+    <label>ship baptism</label>
+    <description>A gathering to bless a new or renamed ship. The leader speaks, the crew drinks to the hull, and everyone celebrates.</description>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <associatedMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+      <li>Rimverse_VoidFaith</li>
+    </associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef ParentName="FestivalBase">
+    <defName>Rimverse_FirstJump</defName>
+    <label>first jump</label>
+    <description>A celebration held before or after a long jump, to keep the crew's spirits high in the dark between stars.</description>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <associatedMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+      <li>Rimverse_VoidFaith</li>
+    </associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef ParentName="FestivalBase">
+    <defName>Rimverse_SpaceFuneral</defName>
+    <label>void funeral</label>
+    <description>A farewell for the dead who were given to the void. The crew gathers, remembers them and shares a meal.</description>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <associatedMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+      <li>Rimverse_VoidFaith</li>
+    </associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef ParentName="FestivalBase">
+    <defName>Rimverse_StarVigil</defName>
+    <label>star vigil</label>
+    <description>A quiet night watching the stars together, telling stories of the worlds left behind.</description>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <associatedMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+      <li>Rimverse_VoidFaith</li>
+    </associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef ParentName="FestivalBase">
+    <defName>Rimverse_ArrivalFeast</defName>
+    <label>arrival feast</label>
+    <description>A feast to celebrate reaching a new world or a long-awaited port.</description>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <associatedMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+      <li>Rimverse_VoidFaith</li>
+    </associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef ParentName="FestivalBase">
+    <defName>Rimverse_CrewOath</defName>
+    <label>crew oath</label>
+    <description>The crew renews its oath to the ship and to each other.</description>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <associatedMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+      <li>Rimverse_VoidFaith</li>
+    </associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef ParentName="PreceptRoleMultiBase">
+    <defName>Rimverse_Role_Captain</defName>
+    <label>captain</label>
+    <description>The ship's captain commands with authority. Better at negotiating and harder to break.</description>
+    <iconPath>UI/Roles/SpecialistShooting</iconPath>
+    <nameMaker>NamerRoleMoralist</nameMaker>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Social>6</Social>
+        </skills>
+      </li>
+    </roleRequirements>
+    <requiredMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+    </requiredMemes>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>NegotiationAbility</statDef>
+        <modifier>0.2</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>SocialImpact</statDef>
+        <modifier>0.15</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>MentalBreakThreshold</statDef>
+        <modifier>-0.04</modifier>
+      </li>
+    </roleEffects>
+    <displayOrderInImpact>3</displayOrderInImpact>
+  </PreceptDef>
+
+  <PreceptDef ParentName="PreceptRoleMultiBase">
+    <defName>Rimverse_Role_Navigator</defName>
+    <label>navigator</label>
+    <description>Reads the stars and plots the jumps. Learns faster and aims better.</description>
+    <iconPath>UI/Roles/SpecialistResearch</iconPath>
+    <nameMaker>NamerRoleResearcher</nameMaker>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Intellectual>6</Intellectual>
+        </skills>
+      </li>
+    </roleRequirements>
+    <requiredMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+    </requiredMemes>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>ResearchSpeed</statDef>
+        <modifier>0.2</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>ShootingAccuracyPawn</statDef>
+        <modifier>2</modifier>
+      </li>
+    </roleEffects>
+    <displayOrderInImpact>3</displayOrderInImpact>
+  </PreceptDef>
+
+  <PreceptDef ParentName="PreceptRoleMultiBase">
+    <defName>Rimverse_Role_ShipGuardian</defName>
+    <label>ship guardian</label>
+    <description>Keeps the hull whole. Builds and repairs much faster.</description>
+    <iconPath>UI/Roles/SpecialistProduction</iconPath>
+    <nameMaker>NamerRoleProductionSpecialist</nameMaker>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Construction>6</Construction>
+        </skills>
+      </li>
+    </roleRequirements>
+    <requiredMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+    </requiredMemes>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>ConstructionSpeed</statDef>
+        <modifier>0.3</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>FixBrokenDownBuildingSuccessChance</statDef>
+        <modifier>0.2</modifier>
+      </li>
+    </roleEffects>
+    <displayOrderInImpact>3</displayOrderInImpact>
+  </PreceptDef>
+
+  <PreceptDef ParentName="PreceptRoleMultiBase">
+    <defName>Rimverse_Role_Herald</defName>
+    <label>herald</label>
+    <description>Speaks for the crew to other civilizations. A great negotiator and trader.</description>
+    <iconPath>UI/Roles/SpecialistAnimals</iconPath>
+    <nameMaker>NamerRoleMoralist</nameMaker>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkillAny">
+        <skills>
+          <Social>8</Social>
+        </skills>
+      </li>
+    </roleRequirements>
+    <requiredMemes>
+      <li>Rimverse_VoidBorn</li>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+      <li>Rimverse_Frontier</li>
+      <li>Rimverse_StellarAscension</li>
+    </requiredMemes>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>NegotiationAbility</statDef>
+        <modifier>0.3</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>TradePriceImprovement</statDef>
+        <modifier>0.1</modifier>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>SocialImpact</statDef>
+        <modifier>0.2</modifier>
+      </li>
+    </roleEffects>
+    <displayOrderInImpact>3</displayOrderInImpact>
+  </PreceptDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_GravityGenerator</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_BridgeSmall</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_BridgeCommand</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,5)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_BridgeCapital</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,7)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_StructureModule</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_FuelCell</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_ShipSolarPanel</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_BatteryBank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_ChemThruster</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_ManeuverThruster</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_ChemTank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_AirGenerator</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_AirTank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_RadiatorFixed</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,3)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_HeatBank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_Telescope</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_ScannerLongRange</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_ScannerAdvanced</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_WarpDriveSmall</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_WarpDriveHeavy</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_WarpTank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_CargoBay</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_Autocannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_HullCannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_PointLaser</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_LaserLance</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_PlasmaCannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_Railgun</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_MissileLauncher</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_IonCannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_TractorBeam</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleImperial_ShieldGenerator</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.85,0.72,0.40)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <StyleCategoryDef>
+    <defName>Rimverse_StyleImperial</defName>
+    <label>imperial ship</label>
+    <iconPath>UI/StyleCategories/Christian</iconPath>
+    <thingDefStyles>
+      <li>
+        <thingDef>Rimverse_GravityGenerator</thingDef>
+        <styleDef>Rimverse_StyleImperial_GravityGenerator</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BridgeSmall</thingDef>
+        <styleDef>Rimverse_StyleImperial_BridgeSmall</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BridgeCommand</thingDef>
+        <styleDef>Rimverse_StyleImperial_BridgeCommand</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BridgeCapital</thingDef>
+        <styleDef>Rimverse_StyleImperial_BridgeCapital</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_StructureModule</thingDef>
+        <styleDef>Rimverse_StyleImperial_StructureModule</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_FuelCell</thingDef>
+        <styleDef>Rimverse_StyleImperial_FuelCell</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ShipSolarPanel</thingDef>
+        <styleDef>Rimverse_StyleImperial_ShipSolarPanel</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BatteryBank</thingDef>
+        <styleDef>Rimverse_StyleImperial_BatteryBank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ChemThruster</thingDef>
+        <styleDef>Rimverse_StyleImperial_ChemThruster</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ManeuverThruster</thingDef>
+        <styleDef>Rimverse_StyleImperial_ManeuverThruster</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ChemTank</thingDef>
+        <styleDef>Rimverse_StyleImperial_ChemTank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_AirGenerator</thingDef>
+        <styleDef>Rimverse_StyleImperial_AirGenerator</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_AirTank</thingDef>
+        <styleDef>Rimverse_StyleImperial_AirTank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_RadiatorFixed</thingDef>
+        <styleDef>Rimverse_StyleImperial_RadiatorFixed</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_HeatBank</thingDef>
+        <styleDef>Rimverse_StyleImperial_HeatBank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Telescope</thingDef>
+        <styleDef>Rimverse_StyleImperial_Telescope</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ScannerLongRange</thingDef>
+        <styleDef>Rimverse_StyleImperial_ScannerLongRange</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ScannerAdvanced</thingDef>
+        <styleDef>Rimverse_StyleImperial_ScannerAdvanced</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WarpDriveSmall</thingDef>
+        <styleDef>Rimverse_StyleImperial_WarpDriveSmall</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WarpDriveHeavy</thingDef>
+        <styleDef>Rimverse_StyleImperial_WarpDriveHeavy</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WarpTank</thingDef>
+        <styleDef>Rimverse_StyleImperial_WarpTank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_CargoBay</thingDef>
+        <styleDef>Rimverse_StyleImperial_CargoBay</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Autocannon</thingDef>
+        <styleDef>Rimverse_StyleImperial_Autocannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_HullCannon</thingDef>
+        <styleDef>Rimverse_StyleImperial_HullCannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_PointLaser</thingDef>
+        <styleDef>Rimverse_StyleImperial_PointLaser</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_LaserLance</thingDef>
+        <styleDef>Rimverse_StyleImperial_LaserLance</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_PlasmaCannon</thingDef>
+        <styleDef>Rimverse_StyleImperial_PlasmaCannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Railgun</thingDef>
+        <styleDef>Rimverse_StyleImperial_Railgun</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_MissileLauncher</thingDef>
+        <styleDef>Rimverse_StyleImperial_MissileLauncher</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_IonCannon</thingDef>
+        <styleDef>Rimverse_StyleImperial_IonCannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_TractorBeam</thingDef>
+        <styleDef>Rimverse_StyleImperial_TractorBeam</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ShieldGenerator</thingDef>
+        <styleDef>Rimverse_StyleImperial_ShieldGenerator</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_GravityGenerator</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_BridgeSmall</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_BridgeCommand</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,5)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_BridgeCapital</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,7)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_StructureModule</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_FuelCell</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_ShipSolarPanel</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_BatteryBank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_ChemThruster</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_ManeuverThruster</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_ChemTank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_AirGenerator</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_AirTank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_RadiatorFixed</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,3)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_HeatBank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_Telescope</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_ScannerLongRange</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_ScannerAdvanced</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_WarpDriveSmall</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_WarpDriveHeavy</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_WarpTank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_CargoBay</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_Autocannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_HullCannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_PointLaser</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_LaserLance</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_PlasmaCannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_Railgun</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_MissileLauncher</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_IonCannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_TractorBeam</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleIndustrial_ShieldGenerator</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.50,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <StyleCategoryDef>
+    <defName>Rimverse_StyleIndustrial</defName>
+    <label>industrial ship</label>
+    <iconPath>UI/StyleCategories/Rustic</iconPath>
+    <thingDefStyles>
+      <li>
+        <thingDef>Rimverse_GravityGenerator</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_GravityGenerator</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BridgeSmall</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_BridgeSmall</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BridgeCommand</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_BridgeCommand</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BridgeCapital</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_BridgeCapital</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_StructureModule</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_StructureModule</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_FuelCell</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_FuelCell</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ShipSolarPanel</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_ShipSolarPanel</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BatteryBank</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_BatteryBank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ChemThruster</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_ChemThruster</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ManeuverThruster</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_ManeuverThruster</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ChemTank</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_ChemTank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_AirGenerator</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_AirGenerator</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_AirTank</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_AirTank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_RadiatorFixed</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_RadiatorFixed</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_HeatBank</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_HeatBank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Telescope</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_Telescope</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ScannerLongRange</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_ScannerLongRange</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ScannerAdvanced</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_ScannerAdvanced</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WarpDriveSmall</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_WarpDriveSmall</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WarpDriveHeavy</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_WarpDriveHeavy</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WarpTank</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_WarpTank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_CargoBay</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_CargoBay</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Autocannon</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_Autocannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_HullCannon</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_HullCannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_PointLaser</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_PointLaser</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_LaserLance</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_LaserLance</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_PlasmaCannon</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_PlasmaCannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Railgun</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_Railgun</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_MissileLauncher</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_MissileLauncher</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_IonCannon</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_IonCannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_TractorBeam</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_TractorBeam</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ShieldGenerator</thingDef>
+        <styleDef>Rimverse_StyleIndustrial_ShieldGenerator</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_GravityGenerator</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_BridgeSmall</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_BridgeCommand</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,5)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_BridgeCapital</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,7)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_StructureModule</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_FuelCell</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_ShipSolarPanel</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_BatteryBank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_ChemThruster</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_ManeuverThruster</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_ChemTank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_AirGenerator</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_AirTank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_RadiatorFixed</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,3)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_HeatBank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_Telescope</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_ScannerLongRange</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_ScannerAdvanced</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_WarpDriveSmall</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_WarpDriveHeavy</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_WarpTank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_CargoBay</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_Autocannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_HullCannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_PointLaser</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_LaserLance</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_PlasmaCannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_Railgun</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_MissileLauncher</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_IonCannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_TractorBeam</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StyleOrganic_ShieldGenerator</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.45,0.70,0.45)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <StyleCategoryDef>
+    <defName>Rimverse_StyleOrganic</defName>
+    <label>organic ship</label>
+    <iconPath>UI/StyleCategories/Animalist</iconPath>
+    <thingDefStyles>
+      <li>
+        <thingDef>Rimverse_GravityGenerator</thingDef>
+        <styleDef>Rimverse_StyleOrganic_GravityGenerator</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BridgeSmall</thingDef>
+        <styleDef>Rimverse_StyleOrganic_BridgeSmall</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BridgeCommand</thingDef>
+        <styleDef>Rimverse_StyleOrganic_BridgeCommand</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BridgeCapital</thingDef>
+        <styleDef>Rimverse_StyleOrganic_BridgeCapital</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_StructureModule</thingDef>
+        <styleDef>Rimverse_StyleOrganic_StructureModule</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_FuelCell</thingDef>
+        <styleDef>Rimverse_StyleOrganic_FuelCell</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ShipSolarPanel</thingDef>
+        <styleDef>Rimverse_StyleOrganic_ShipSolarPanel</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BatteryBank</thingDef>
+        <styleDef>Rimverse_StyleOrganic_BatteryBank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ChemThruster</thingDef>
+        <styleDef>Rimverse_StyleOrganic_ChemThruster</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ManeuverThruster</thingDef>
+        <styleDef>Rimverse_StyleOrganic_ManeuverThruster</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ChemTank</thingDef>
+        <styleDef>Rimverse_StyleOrganic_ChemTank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_AirGenerator</thingDef>
+        <styleDef>Rimverse_StyleOrganic_AirGenerator</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_AirTank</thingDef>
+        <styleDef>Rimverse_StyleOrganic_AirTank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_RadiatorFixed</thingDef>
+        <styleDef>Rimverse_StyleOrganic_RadiatorFixed</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_HeatBank</thingDef>
+        <styleDef>Rimverse_StyleOrganic_HeatBank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Telescope</thingDef>
+        <styleDef>Rimverse_StyleOrganic_Telescope</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ScannerLongRange</thingDef>
+        <styleDef>Rimverse_StyleOrganic_ScannerLongRange</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ScannerAdvanced</thingDef>
+        <styleDef>Rimverse_StyleOrganic_ScannerAdvanced</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WarpDriveSmall</thingDef>
+        <styleDef>Rimverse_StyleOrganic_WarpDriveSmall</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WarpDriveHeavy</thingDef>
+        <styleDef>Rimverse_StyleOrganic_WarpDriveHeavy</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WarpTank</thingDef>
+        <styleDef>Rimverse_StyleOrganic_WarpTank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_CargoBay</thingDef>
+        <styleDef>Rimverse_StyleOrganic_CargoBay</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Autocannon</thingDef>
+        <styleDef>Rimverse_StyleOrganic_Autocannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_HullCannon</thingDef>
+        <styleDef>Rimverse_StyleOrganic_HullCannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_PointLaser</thingDef>
+        <styleDef>Rimverse_StyleOrganic_PointLaser</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_LaserLance</thingDef>
+        <styleDef>Rimverse_StyleOrganic_LaserLance</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_PlasmaCannon</thingDef>
+        <styleDef>Rimverse_StyleOrganic_PlasmaCannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Railgun</thingDef>
+        <styleDef>Rimverse_StyleOrganic_Railgun</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_MissileLauncher</thingDef>
+        <styleDef>Rimverse_StyleOrganic_MissileLauncher</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_IonCannon</thingDef>
+        <styleDef>Rimverse_StyleOrganic_IonCannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_TractorBeam</thingDef>
+        <styleDef>Rimverse_StyleOrganic_TractorBeam</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ShieldGenerator</thingDef>
+        <styleDef>Rimverse_StyleOrganic_ShieldGenerator</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_GravityGenerator</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_BridgeSmall</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_BridgeCommand</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,5)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_BridgeCapital</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,7)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_StructureModule</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_FuelCell</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_ShipSolarPanel</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_BatteryBank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_ChemThruster</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_ManeuverThruster</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_ChemTank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_AirGenerator</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_AirTank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_RadiatorFixed</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,3)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_HeatBank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_Telescope</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_ScannerLongRange</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_ScannerAdvanced</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_WarpDriveSmall</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_WarpDriveHeavy</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_WarpTank</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_CargoBay</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_Autocannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_HullCannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_PointLaser</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_LaserLance</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_PlasmaCannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_Railgun</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipEngine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_MissileLauncher</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_IonCannon</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_TractorBeam</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Rimverse_StylePrecursor_ShieldGenerator</defName>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <color>(0.55,0.65,0.95)</color>
+    </graphicData>
+  </ThingStyleDef>
+
+  <StyleCategoryDef>
+    <defName>Rimverse_StylePrecursor</defName>
+    <label>precursor ship</label>
+    <iconPath>UI/StyleCategories/Techist</iconPath>
+    <thingDefStyles>
+      <li>
+        <thingDef>Rimverse_GravityGenerator</thingDef>
+        <styleDef>Rimverse_StylePrecursor_GravityGenerator</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BridgeSmall</thingDef>
+        <styleDef>Rimverse_StylePrecursor_BridgeSmall</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BridgeCommand</thingDef>
+        <styleDef>Rimverse_StylePrecursor_BridgeCommand</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BridgeCapital</thingDef>
+        <styleDef>Rimverse_StylePrecursor_BridgeCapital</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_StructureModule</thingDef>
+        <styleDef>Rimverse_StylePrecursor_StructureModule</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_FuelCell</thingDef>
+        <styleDef>Rimverse_StylePrecursor_FuelCell</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ShipSolarPanel</thingDef>
+        <styleDef>Rimverse_StylePrecursor_ShipSolarPanel</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_BatteryBank</thingDef>
+        <styleDef>Rimverse_StylePrecursor_BatteryBank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ChemThruster</thingDef>
+        <styleDef>Rimverse_StylePrecursor_ChemThruster</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ManeuverThruster</thingDef>
+        <styleDef>Rimverse_StylePrecursor_ManeuverThruster</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ChemTank</thingDef>
+        <styleDef>Rimverse_StylePrecursor_ChemTank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_AirGenerator</thingDef>
+        <styleDef>Rimverse_StylePrecursor_AirGenerator</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_AirTank</thingDef>
+        <styleDef>Rimverse_StylePrecursor_AirTank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_RadiatorFixed</thingDef>
+        <styleDef>Rimverse_StylePrecursor_RadiatorFixed</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_HeatBank</thingDef>
+        <styleDef>Rimverse_StylePrecursor_HeatBank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Telescope</thingDef>
+        <styleDef>Rimverse_StylePrecursor_Telescope</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ScannerLongRange</thingDef>
+        <styleDef>Rimverse_StylePrecursor_ScannerLongRange</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ScannerAdvanced</thingDef>
+        <styleDef>Rimverse_StylePrecursor_ScannerAdvanced</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WarpDriveSmall</thingDef>
+        <styleDef>Rimverse_StylePrecursor_WarpDriveSmall</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WarpDriveHeavy</thingDef>
+        <styleDef>Rimverse_StylePrecursor_WarpDriveHeavy</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_WarpTank</thingDef>
+        <styleDef>Rimverse_StylePrecursor_WarpTank</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_CargoBay</thingDef>
+        <styleDef>Rimverse_StylePrecursor_CargoBay</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Autocannon</thingDef>
+        <styleDef>Rimverse_StylePrecursor_Autocannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_HullCannon</thingDef>
+        <styleDef>Rimverse_StylePrecursor_HullCannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_PointLaser</thingDef>
+        <styleDef>Rimverse_StylePrecursor_PointLaser</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_LaserLance</thingDef>
+        <styleDef>Rimverse_StylePrecursor_LaserLance</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_PlasmaCannon</thingDef>
+        <styleDef>Rimverse_StylePrecursor_PlasmaCannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_Railgun</thingDef>
+        <styleDef>Rimverse_StylePrecursor_Railgun</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_MissileLauncher</thingDef>
+        <styleDef>Rimverse_StylePrecursor_MissileLauncher</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_IonCannon</thingDef>
+        <styleDef>Rimverse_StylePrecursor_IonCannon</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_TractorBeam</thingDef>
+        <styleDef>Rimverse_StylePrecursor_TractorBeam</styleDef>
+      </li>
+      <li>
+        <thingDef>Rimverse_ShieldGenerator</thingDef>
+        <styleDef>Rimverse_StylePrecursor_ShieldGenerator</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+</Defs>

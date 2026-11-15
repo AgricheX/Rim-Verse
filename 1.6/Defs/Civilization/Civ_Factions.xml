@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>Rimverse_SpaceCiv</defName>
+    <label>star civilization</label>
+    <description>A spacefaring civilization of the Rimverse galaxy, with its own government, worlds and fleets.</description>
+    <pawnSingular>citizen</pawnSingular>
+    <pawnsPlural>citizens</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>false</displayInFactionSelection>
+    <canMakeRandomly>false</canMakeRandomly>
+    <leaderTitle>head of state</leaderTitle>
+    <colorSpectrum>
+      <li>(0.3, 0.6, 0.9)</li>
+      <li>(0.9, 0.8, 0.4)</li>
+    </colorSpectrum>
+  </FactionDef>
+
+  <FactionDef ParentName="PirateBandBase">
+    <defName>Rimverse_SpacePirates</defName>
+    <label>void raiders</label>
+    <description>Pirates who prey on the star lanes of the Rimverse galaxy.</description>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>false</displayInFactionSelection>
+    <canMakeRandomly>false</canMakeRandomly>
+  </FactionDef>
+
+</Defs>

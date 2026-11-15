@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Policy_TribalBand.label>bando tribal</Rimverse_Policy_TribalBand.label>
+  <Rimverse_Policy_TribalBand.description>Um bando pequeno guiado pelos membros mais respeitados.</Rimverse_Policy_TribalBand.description>
+  <Rimverse_Policy_Chiefdom.label>chefia</Rimverse_Policy_Chiefdom.label>
+  <Rimverse_Policy_Chiefdom.description>Um chefe governa e passa o poder a um herdeiro escolhido.</Rimverse_Policy_Chiefdom.description>
+  <Rimverse_Policy_TribalCouncil.label>conselho tribal</Rimverse_Policy_TribalCouncil.label>
+  <Rimverse_Policy_TribalCouncil.description>Os anciãos decidem juntos.</Rimverse_Policy_TribalCouncil.description>
+  <Rimverse_Policy_Monarchy.label>monarquia</Rimverse_Policy_Monarchy.label>
+  <Rimverse_Policy_Monarchy.description>Um soberano coroado e uma linhagem real.</Rimverse_Policy_Monarchy.description>
+  <Rimverse_Policy_Theocracy.label>teocracia</Rimverse_Policy_Theocracy.label>
+  <Rimverse_Policy_Theocracy.description>Sacerdotes governam em nome do divino.</Rimverse_Policy_Theocracy.description>
+  <Rimverse_Policy_Republic.label>república</Rimverse_Policy_Republic.label>
+  <Rimverse_Policy_Republic.description>Cidadãos elegem magistrados.</Rimverse_Policy_Republic.description>
+  <Rimverse_Policy_Democracy.label>democracia</Rimverse_Policy_Democracy.label>
+  <Rimverse_Policy_Democracy.description>Todos os cidadãos votam.</Rimverse_Policy_Democracy.description>
+  <Rimverse_Policy_FeudalMonarchy.label>monarquia feudal</Rimverse_Policy_FeudalMonarchy.label>
+  <Rimverse_Policy_FeudalMonarchy.description>Senhores recebem terras em troca de lealdade à coroa.</Rimverse_Policy_FeudalMonarchy.description>
+  <Rimverse_Policy_ElectiveMonarchy.label>monarquia eletiva</Rimverse_Policy_ElectiveMonarchy.label>
+  <Rimverse_Policy_ElectiveMonarchy.description>Os nobres elegem o próximo monarca.</Rimverse_Policy_ElectiveMonarchy.description>
+  <Rimverse_Policy_AbsoluteMonarchy.label>monarquia absoluta</Rimverse_Policy_AbsoluteMonarchy.label>
+  <Rimverse_Policy_AbsoluteMonarchy.description>A palavra do soberano é lei.</Rimverse_Policy_AbsoluteMonarchy.description>
+  <Rimverse_Policy_MerchantRepublic.label>república mercante</Rimverse_Policy_MerchantRepublic.label>
+  <Rimverse_Policy_MerchantRepublic.description>Casas comerciais comandam o estado.</Rimverse_Policy_MerchantRepublic.description>
+  <Rimverse_Policy_ConstitutionalMonarchy.label>monarquia constitucional</Rimverse_Policy_ConstitutionalMonarchy.label>
+  <Rimverse_Policy_ConstitutionalMonarchy.description>Um monarca reina, mas um parlamento governa.</Rimverse_Policy_ConstitutionalMonarchy.description>
+  <Rimverse_Policy_PresidentialRepublic.label>república presidencial</Rimverse_Policy_PresidentialRepublic.label>
+  <Rimverse_Policy_PresidentialRepublic.description>Um presidente eleito lidera o governo.</Rimverse_Policy_PresidentialRepublic.description>
+  <Rimverse_Policy_ParliamentaryRepublic.label>república parlamentar</Rimverse_Policy_ParliamentaryRepublic.label>
+  <Rimverse_Policy_ParliamentaryRepublic.description>O parlamento escolhe quem governa.</Rimverse_Policy_ParliamentaryRepublic.description>
+  <Rimverse_Policy_OnePartyState.label>estado de partido único</Rimverse_Policy_OnePartyState.label>
+  <Rimverse_Policy_OnePartyState.description>Um único partido controla tudo.</Rimverse_Policy_OnePartyState.description>
+  <Rimverse_Policy_MilitaryJunta.label>junta militar</Rimverse_Policy_MilitaryJunta.label>
+  <Rimverse_Policy_MilitaryJunta.description>Generais governam pela força.</Rimverse_Policy_MilitaryJunta.description>
+  <Rimverse_Policy_Technocracy.label>tecnocracia</Rimverse_Policy_Technocracy.label>
+  <Rimverse_Policy_Technocracy.description>Especialistas e cientistas têm o poder.</Rimverse_Policy_Technocracy.description>
+  <Rimverse_Policy_Corporatocracy.label>corporatocracia</Rimverse_Policy_Corporatocracy.label>
+  <Rimverse_Policy_Corporatocracy.description>Corporações são donas do estado.</Rimverse_Policy_Corporatocracy.description>
+  <Rimverse_Policy_PlanetaryFederation.label>federação planetária</Rimverse_Policy_PlanetaryFederation.label>
+  <Rimverse_Policy_PlanetaryFederation.description>Mundos se unem como iguais sob um conselho.</Rimverse_Policy_PlanetaryFederation.description>
+  <Rimverse_Policy_AITechnocracy.label>tecnocracia de IA</Rimverse_Policy_AITechnocracy.label>
+  <Rimverse_Policy_AITechnocracy.description>Mentes artificiais planejam o estado.</Rimverse_Policy_AITechnocracy.description>
+  <Rimverse_Policy_StellarEmpire.label>império estelar</Rimverse_Policy_StellarEmpire.label>
+  <Rimverse_Policy_StellarEmpire.description>Um imperador governa muitas estrelas por meio de casas nobres.</Rimverse_Policy_StellarEmpire.description>
+  <Rimverse_Policy_InterstellarRepublic.label>república interestelar</Rimverse_Policy_InterstellarRepublic.label>
+  <Rimverse_Policy_InterstellarRepublic.description>Sistemas estelares elegem um senado comum.</Rimverse_Policy_InterstellarRepublic.description>
+  <Rimverse_Policy_HiveMind.label>mente coletiva</Rimverse_Policy_HiveMind.label>
+  <Rimverse_Policy_HiveMind.description>Uma mente em muitos corpos.</Rimverse_Policy_HiveMind.description>
+  <Rimverse_Policy_DistributedConsciousness.label>consciência distribuída</Rimverse_Policy_DistributedConsciousness.label>
+  <Rimverse_Policy_DistributedConsciousness.description>Mentes ligadas dividem cada decisão.</Rimverse_Policy_DistributedConsciousness.description>
+  <Rimverse_Policy_CosmicTheocracy.label>teocracia cósmica</Rimverse_Policy_CosmicTheocracy.label>
+  <Rimverse_Policy_CosmicTheocracy.description>Uma igreja cuja fé cruza as estrelas.</Rimverse_Policy_CosmicTheocracy.description>
+  <Rimverse_Policy_GalacticCorporation.label>corporação galáctica</Rimverse_Policy_GalacticCorporation.label>
+  <Rimverse_Policy_GalacticCorporation.description>Uma empresa que virou estado.</Rimverse_Policy_GalacticCorporation.description>
+  <Rimverse_Policy_WebAssembly.label>assembleia da teia</Rimverse_Policy_WebAssembly.label>
+  <Rimverse_Policy_WebAssembly.description>Delegados dos filamentos cósmicos se reúnem numa assembleia.</Rimverse_Policy_WebAssembly.description>
+  <Rimverse_Policy_OmegaConclave.label>conclave ômega</Rimverse_Policy_OmegaConclave.label>
+  <Rimverse_Policy_OmegaConclave.description>Mentes antigas guardam o fim dos tempos.</Rimverse_Policy_OmegaConclave.description>
+  <Rimverse_Policy_Traditionalism.label>tradicionalismo</Rimverse_Policy_Traditionalism.label>
+  <Rimverse_Policy_ReligiousZeal.label>zelo religioso</Rimverse_Policy_ReligiousZeal.label>
+  <Rimverse_Policy_Legalism.label>legalismo</Rimverse_Policy_Legalism.label>
+  <Rimverse_Policy_Militarism.label>militarismo</Rimverse_Policy_Militarism.label>
+  <Rimverse_Policy_Humanism.label>humanismo</Rimverse_Policy_Humanism.label>
+  <Rimverse_Policy_Liberalism.label>liberalismo</Rimverse_Policy_Liberalism.label>
+  <Rimverse_Policy_Conservatism.label>conservadorismo</Rimverse_Policy_Conservatism.label>
+  <Rimverse_Policy_Nationalism.label>nacionalismo</Rimverse_Policy_Nationalism.label>
+  <Rimverse_Policy_Socialism.label>socialismo</Rimverse_Policy_Socialism.label>
+  <Rimverse_Policy_Communism.label>comunismo</Rimverse_Policy_Communism.label>
+  <Rimverse_Policy_Anarchism.label>anarquismo</Rimverse_Policy_Anarchism.label>
+  <Rimverse_Policy_Authoritarianism.label>autoritarismo</Rimverse_Policy_Authoritarianism.label>
+  <Rimverse_Policy_Environmentalism.label>ambientalismo</Rimverse_Policy_Environmentalism.label>
+  <Rimverse_Policy_TechProgressivism.label>tecnoprogressismo</Rimverse_Policy_TechProgressivism.label>
+  <Rimverse_Policy_Cosmism.label>cosmismo</Rimverse_Policy_Cosmism.label>
+  <Rimverse_Policy_Transhumanism.label>transumanismo</Rimverse_Policy_Transhumanism.label>
+  <Rimverse_Policy_XenoUnity.label>xenounidade</Rimverse_Policy_XenoUnity.label>
+  <Rimverse_Policy_Emulationism.label>emulacionismo</Rimverse_Policy_Emulationism.label>
+  <Rimverse_Policy_VoidFaith.label>fé do vazio</Rimverse_Policy_VoidFaith.label>
+  <Rimverse_Policy_GreatFlux.label>grande fluxo</Rimverse_Policy_GreatFlux.label>
+  <Rimverse_Policy_HibernationEthic.label>ética da hibernação</Rimverse_Policy_HibernationEthic.label>
+  <Rimverse_Policy_Reciprocity.label>reciprocidade</Rimverse_Policy_Reciprocity.label>
+  <Rimverse_Policy_PalaceEconomy.label>economia palaciana</Rimverse_Policy_PalaceEconomy.label>
+  <Rimverse_Policy_Tributary.label>tributária</Rimverse_Policy_Tributary.label>
+  <Rimverse_Policy_Manorial.label>senhorial</Rimverse_Policy_Manorial.label>
+  <Rimverse_Policy_Guilds.label>de guildas</Rimverse_Policy_Guilds.label>
+  <Rimverse_Policy_Mercantilism.label>mercantilismo</Rimverse_Policy_Mercantilism.label>
+  <Rimverse_Policy_LaissezFaire.label>laissez-faire</Rimverse_Policy_LaissezFaire.label>
+  <Rimverse_Policy_Planned.label>economia planejada</Rimverse_Policy_Planned.label>
+  <Rimverse_Policy_Welfare.label>bem-estar</Rimverse_Policy_Welfare.label>
+  <Rimverse_Policy_Mixed.label>economia mista</Rimverse_Policy_Mixed.label>
+  <Rimverse_Policy_Corporatist.label>corporativista</Rimverse_Policy_Corporatist.label>
+  <Rimverse_Policy_Digital.label>economia digital</Rimverse_Policy_Digital.label>
+  <Rimverse_Policy_PostScarcity.label>pós-escassez</Rimverse_Policy_PostScarcity.label>
+  <Rimverse_Policy_GalacticMarket.label>mercado galáctico</Rimverse_Policy_GalacticMarket.label>
+  <Rimverse_Policy_AsteroidEconomy.label>economia de asteroides</Rimverse_Policy_AsteroidEconomy.label>
+  <Rimverse_Policy_StellarEnergy.label>economia de energia estelar</Rimverse_Policy_StellarEnergy.label>
+  <Rimverse_Policy_DarkMatter.label>economia de matéria escura</Rimverse_Policy_DarkMatter.label>
+  <Rimverse_Policy_FilamentCommons.label>comuns dos filamentos</Rimverse_Policy_FilamentCommons.label>
+  <Rimverse_Policy_Xenophobia.label>xenofobia</Rimverse_Policy_Xenophobia.label>
+  <Rimverse_Policy_Xenophobia.description>Desconfiança e ódio de outras espécies e xenotipos.</Rimverse_Policy_Xenophobia.description>
+  <Rimverse_Policy_XenoNeutral.label>neutro</Rimverse_Policy_XenoNeutral.label>
+  <Rimverse_Policy_XenoNeutral.description>Os outros são julgados pelo que fazem.</Rimverse_Policy_XenoNeutral.description>
+  <Rimverse_Policy_Xenophilia.label>xenofilia</Rimverse_Policy_Xenophilia.label>
+  <Rimverse_Policy_Xenophilia.description>Curiosidade e boas-vindas a outras espécies.</Rimverse_Policy_Xenophilia.description>
+  <Rimverse_Policy_LogisticsGates.label>prioridade em portões</Rimverse_Policy_LogisticsGates.label>
+  <Rimverse_Policy_LogisticsGates.description>As rotas de suprimento preferem portões espaciais.</Rimverse_Policy_LogisticsGates.description>
+  <Rimverse_Policy_LogisticsWarp.label>prioridade em dobra</Rimverse_Policy_LogisticsWarp.label>
+  <Rimverse_Policy_LogisticsWarp.description>As rotas de suprimento preferem saltos de dobra.</Rimverse_Policy_LogisticsWarp.description>
+  <Rimverse_Policy_LogisticsHyperlanes.label>prioridade em hiperlanes</Rimverse_Policy_LogisticsHyperlanes.label>
+  <Rimverse_Policy_LogisticsHyperlanes.description>As rotas de suprimento seguem as hiperlanes.</Rimverse_Policy_LogisticsHyperlanes.description>
+  <Rimverse_Policy_OriginStandard.label>mundo natal comum</Rimverse_Policy_OriginStandard.label>
+  <Rimverse_Policy_OriginStandard.description>Um mundo comum que virou uma potência.</Rimverse_Policy_OriginStandard.description>
+  <Rimverse_Policy_OriginGlitterworld.label>glitterworld</Rimverse_Policy_OriginGlitterworld.label>
+  <Rimverse_Policy_OriginGlitterworld.description>Um mundo rico e avançado, de conforto e medicina.</Rimverse_Policy_OriginGlitterworld.description>
+  <Rimverse_Policy_OriginUrbworld.label>urbworld</Rimverse_Policy_OriginUrbworld.label>
+  <Rimverse_Policy_OriginUrbworld.description>Um mundo-cidade superlotado, comandado por corporações.</Rimverse_Policy_OriginUrbworld.description>
+  <Rimverse_Policy_OriginFallenEmpire.label>refugiados de um império caído</Rimverse_Policy_OriginFallenEmpire.label>
+  <Rimverse_Policy_OriginFallenEmpire.description>Sobreviventes de um grande império que desabou.</Rimverse_Policy_OriginFallenEmpire.description>
+  <Rimverse_Policy_OriginVoidborn.label>nascidos no vácuo</Rimverse_Policy_OriginVoidborn.label>
+  <Rimverse_Policy_OriginVoidborn.description>Um povo nascido em naves e estações.</Rimverse_Policy_OriginVoidborn.description>
+  <Rimverse_Policy_OriginToxicWorld.label>sobreviventes de mundo tóxico</Rimverse_Policy_OriginToxicWorld.label>
+  <Rimverse_Policy_OriginToxicWorld.description>Sobreviventes de um mundo arruinado por guerra.</Rimverse_Policy_OriginToxicWorld.description>
+  <Rimverse_Policy_OriginMedieval.label>mundo medieval</Rimverse_Policy_OriginMedieval.label>
+  <Rimverse_Policy_OriginMedieval.description>Um mundo que manteve os costumes antigos.</Rimverse_Policy_OriginMedieval.description>
+  <Rimverse_Policy_OriginTranscendent.label>mundo transcendente</Rimverse_Policy_OriginTranscendent.label>
+  <Rimverse_Policy_OriginTranscendent.description>Um mundo tocado por arcotecs.</Rimverse_Policy_OriginTranscendent.description>
+  <Rimverse_Policy_OriginMechanoid.label>colmeia mecanoide</Rimverse_Policy_OriginMechanoid.label>
+  <Rimverse_Policy_OriginMechanoid.description>Uma colmeia de máquinas sem vontade além da própria.</Rimverse_Policy_OriginMechanoid.description>
+  <Rimverse_Policy_CivicPirates.label>piratas</Rimverse_Policy_CivicPirates.label>
+  <Rimverse_Policy_CivicPirates.description>Saquear é um modo de vida.</Rimverse_Policy_CivicPirates.description>
+  <Rimverse_Policy_CivicMercenaries.label>mercenários</Rimverse_Policy_CivicMercenaries.label>
+  <Rimverse_Policy_CivicMercenaries.description>As frotas deles estão à venda.</Rimverse_Policy_CivicMercenaries.description>
+  <Rimverse_Policy_CivicGateKeepers.label>guardiões de portão</Rimverse_Policy_CivicGateKeepers.label>
+  <Rimverse_Policy_CivicGateKeepers.description>Eles guardam e mantêm portões antigos.</Rimverse_Policy_CivicGateKeepers.description>
+  <Rimverse_Policy_CivicBeltMiners.label>mineradores de cinturão</Rimverse_Policy_CivicBeltMiners.label>
+  <Rimverse_Policy_CivicBeltMiners.description>Minerar asteroides é o orgulho deles.</Rimverse_Policy_CivicBeltMiners.description>
+  <Rimverse_Policy_CivicTraders.label>liga comercial</Rimverse_Policy_CivicTraders.label>
+  <Rimverse_Policy_CivicTraders.description>Casas mercantes mantêm o estado unido.</Rimverse_Policy_CivicTraders.description>
+  <Rimverse_Policy_CivicScholars.label>eruditos</Rimverse_Policy_CivicScholars.label>
+  <Rimverse_Policy_CivicScholars.description>Bibliotecas e academias por toda parte.</Rimverse_Policy_CivicScholars.description>
+  <Rimverse_Policy_CivicWarriorCulture.label>cultura guerreira</Rimverse_Policy_CivicWarriorCulture.label>
+  <Rimverse_Policy_CivicWarriorCulture.description>A glória vem da batalha.</Rimverse_Policy_CivicWarriorCulture.description>
+  <Rimverse_Policy_CivicNobleHouses.label>casas nobres</Rimverse_Policy_CivicNobleHouses.label>
+  <Rimverse_Policy_CivicNobleHouses.description>Grandes casas disputam favores.</Rimverse_Policy_CivicNobleHouses.description>
+  <Rimverse_Policy_CivicColonizers.label>colonizadores</Rimverse_Policy_CivicColonizers.label>
+  <Rimverse_Policy_CivicColonizers.description>Cada mundo novo é uma vocação.</Rimverse_Policy_CivicColonizers.description>
+  <Rimverse_Policy_CivicShipwrights.label>construtores de naves</Rimverse_Policy_CivicShipwrights.label>
+  <Rimverse_Policy_CivicShipwrights.description>Os estaleiros deles são famosos.</Rimverse_Policy_CivicShipwrights.description>
+  <Rimverse_Policy_CivicIsolationist.label>isolacionistas</Rimverse_Policy_CivicIsolationist.label>
+  <Rimverse_Policy_CivicIsolationist.description>Querem ser deixados em paz.</Rimverse_Policy_CivicIsolationist.description>
+  <Rimverse_Policy_CivicAIServants.label>servos mecânicos</Rimverse_Policy_CivicAIServants.label>
+  <Rimverse_Policy_CivicAIServants.description>Máquinas fazem a maior parte do trabalho.</Rimverse_Policy_CivicAIServants.description>
+</LanguageData>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Mech_HullRepairer.label>reparador de casco</Rimverse_Mech_HullRepairer.label>
+  <Rimverse_Mech_HullRepairer.description>Um mecanoide operário pequeno feito para remendar paredes do casco e consertar sistemas da nave.</Rimverse_Mech_HullRepairer.description>
+  <Rimverse_Mech_CargoHauler.label>carregador de carga</Rimverse_Mech_CargoHauler.label>
+  <Rimverse_Mech_CargoHauler.description>Um mecanoide largo e lento que leva carga pelos corredores da nave.</Rimverse_Mech_CargoHauler.description>
+  <Rimverse_Mech_AsteroidMiner.label>minerador de asteroides</Rimverse_Mech_AsteroidMiner.label>
+  <Rimverse_Mech_AsteroidMiner.description>Um mecanoide com braço de broca para minerar asteroides e luas. Funciona bem no vácuo.</Rimverse_Mech_AsteroidMiner.description>
+  <Rimverse_Mech_CorridorSentry.label>sentinela de corredor</Rimverse_Mech_CorridorSentry.label>
+  <Rimverse_Mech_CorridorSentry.description>Um mecanoide pesado e lento que segura um corredor contra abordadores.</Rimverse_Mech_CorridorSentry.description>
+  <Rimverse_Mech_Boarder.label>abordador</Rimverse_Mech_Boarder.label>
+  <Rimverse_Mech_Boarder.description>Um mecanoide rápido de corpo a corpo, feito para atravessar uma brecha e cortar a tripulação de uma nave.</Rimverse_Mech_Boarder.description>
+  <Rimverse_Mech_MechFighter.label>caça mecanoide</Rimverse_Mech_MechFighter.label>
+  <Rimverse_Mech_MechFighter.description>Um mecanoide pesado com uma arma de nível naval. Atira bem a longa distância.</Rimverse_Mech_MechFighter.description>
+  <Rimverse_ShipClassroom.label>escola de bordo</Rimverse_ShipClassroom.label>
+  <Rimverse_ShipClassroom.description>Uma sala de aula compacta para as crianças a bordo. Crianças no mesmo cômodo aprendem e ganham habilidades, mais rápido com um adulto por perto. Escolha a matéria: geral, pilotagem, engenharia ou medicina.</Rimverse_ShipClassroom.description>
+  <Rimverse_ZeroGToys.label>brinquedos de gravidade zero</Rimverse_ZeroGToys.label>
+  <Rimverse_ZeroGToys.description>Brinquedos flutuantes presos numa armação. Crianças no cômodo brincam, o que melhora a recreação e alivia a febre de cabine.</Rimverse_ZeroGToys.description>
+  <Rimverse_WasteLauncher.label>lançador de resíduos</Rimverse_WasteLauncher.label>
+  <Rimverse_WasteLauncher.description>Um pequeno acelerador de massa que dispara pacotes de resíduos para o espaço. Só funciona no espaço ou em órbita. Os carregadores levam os pacotes até ele.</Rimverse_WasteLauncher.description>
+  <Rimverse_WasteRecycler.label>reciclador de resíduos</Rimverse_WasteRecycler.label>
+  <Rimverse_WasteRecycler.description>Desmonta pacotes de resíduos em aço e quimiocombustível. Lento e gasta muita energia, mas funciona em qualquer lugar.</Rimverse_WasteRecycler.description>
+</LanguageData>

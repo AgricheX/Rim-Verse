@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef>
+    <defName>Rimverse_ZeroGSickness</defName>
+    <label>zero-g sickness</label>
+    <description>Nausea and disorientation from the first days without gravity.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.334</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <vomitMtbDays>1</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_ZeroGAdaptation</defName>
+    <label>zero-g adaptation</label>
+    <description>The body has already adapted to weightlessness. It fades after a long time under gravity.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_BoneLoss</defName>
+    <label>bone loss</label>
+    <description>Bones and muscles waste away without gravity: about 1% less movement every 5 days, up to 30%. Recovers 2% a day under gravity.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>30</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.02</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>5</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>10</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>15</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>20</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>25</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>29.5</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.3</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_GravityCrush</defName>
+    <label>gravity crush</label>
+    <description>Gravity much stronger than the body is used to. Slower movement and faster tiredness.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>4</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <RestFallRateFactor>1.2</RestFallRateFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <RestFallRateFactor>1.2</RestFallRateFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <RestFallRateFactor>1.2</RestFallRateFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>3</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <RestFallRateFactor>1.2</RestFallRateFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_WarpSickness</defName>
+    <label>warp sickness</label>
+    <description>Dizziness and confusion after a warp jump. Lasts about 6 hours.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-4</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_CabinFever</defName>
+    <label>cabin fever</label>
+    <description>Too many days shut inside a hull or a sealed habitat, with no open sky. Raises the chance of a sad wandering break. Fades after time outside.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <minSeverity>0.999</minSeverity>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Wander_Sad</mentalState>
+            <mtbDays>20</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_LowGravityClumsy</defName>
+    <label>low-gravity clumsiness</label>
+    <description>A body built for heavy gravity moves awkwardly when gravity is weak.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_LowGravityStride</defName>
+    <label>low-gravity stride</label>
+    <description>A long, light body that moves easily in weak gravity.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.15</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_DryClimate</defName>
+    <label>dry climate</label>
+    <description>A body adapted to wet worlds struggles in dry air.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_CombatRationBoost</defName>
+    <label>combat ration boost</label>
+    <description>Stimulants from a combat ration. Lasts about 4 hours.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-6</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_Lineage_Gravitated</defName>
+    <label>gravitated lineage</label>
+    <description>Descendant of settlers on a high-gravity super-Earth. Short and broad, strong, and unbothered by gravity up to 1.6 g, but clumsy when gravity is weak.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.6, 0.8, 0.95)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statFactors>
+          <CarryingCapacity>1.3</CarryingCapacity>
+          <MeleeDamageFactor>1.1</MeleeDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="Rimverse.LineageExtension">
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Hulk</bodyTypeFemale>
+        <crushLimit>1.6</crushLimit>
+        <lowGravityClumsy>true</lowGravityClumsy>
+      </li>
+    </modExtensions>
+    <everCurableByItem>false</everCurableByItem>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_Lineage_Slender</defName>
+    <label>slender lineage</label>
+    <description>Descendant of people raised on moons and stations. Tall and thin, quick in low gravity, but with fragile bones.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.6, 0.8, 0.95)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statFactors>
+          <IncomingDamageFactor>1.1</IncomingDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="Rimverse.LineageExtension">
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <lowGravityStride>true</lowGravityStride>
+      </li>
+    </modExtensions>
+    <everCurableByItem>false</everCurableByItem>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_Lineage_Boreal</defName>
+    <label>boreal lineage</label>
+    <description>Descendant of settlers on an ice world. Pale skin and thick body hair. Handles cold well and heat badly.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.6, 0.8, 0.95)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+          <ComfyTemperatureMax>-10</ComfyTemperatureMax>
+        </statOffsets>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="Rimverse.LineageExtension">
+        <skinColor>(0.96, 0.92, 0.90)</skinColor>
+      </li>
+    </modExtensions>
+    <everCurableByItem>false</everCurableByItem>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_Lineage_Solar</defName>
+    <label>solar lineage</label>
+    <description>Descendant of settlers near a hot star. Dark skin with a faint sheen. Handles heat and harsh light well, and cold badly.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.6, 0.8, 0.95)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <ComfyTemperatureMax>15</ComfyTemperatureMax>
+          <ComfyTemperatureMin>10</ComfyTemperatureMin>
+          <ToxicResistance>0.1</ToxicResistance>
+        </statOffsets>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="Rimverse.LineageExtension">
+        <skinColor>(0.36, 0.26, 0.20)</skinColor>
+      </li>
+    </modExtensions>
+    <everCurableByItem>false</everCurableByItem>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_Lineage_Abyssal</defName>
+    <label>abyssal lineage</label>
+    <description>Descendant of settlers on an ocean world. Gill slits and large eyes. Holds breath for a long time and loves humid air, but tires in dry climates.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.6, 0.8, 0.95)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="Rimverse.LineageExtension">
+        <skinColor>(0.58, 0.74, 0.74)</skinColor>
+        <dryClimatePenalty>true</dryClimatePenalty>
+      </li>
+    </modExtensions>
+    <everCurableByItem>false</everCurableByItem>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_Lineage_VoidBorn</defName>
+    <label>void-born lineage</label>
+    <description>Born after generations aboard ships. Sensitive eyes and thin skin. Never sick from zero gravity and slow to get cabin fever, but afraid of open skies.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.6, 0.8, 0.95)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="Rimverse.LineageExtension">
+        <skinColor>(0.86, 0.86, 0.92)</skinColor>
+        <zeroGAdapted>true</zeroGAdapted>
+        <cabinFeverFactor>0.5</cabinFeverFactor>
+        <fearOfSky>true</fearOfSky>
+      </li>
+    </modExtensions>
+    <everCurableByItem>false</everCurableByItem>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_Lineage_Rad</defName>
+    <label>rad lineage</label>
+    <description>Descendant of survivors of a radiation desert. Mottled, thick skin that shrugs off radiation and toxins.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.6, 0.8, 0.95)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <ToxicResistance>0.3</ToxicResistance>
+        </statOffsets>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="Rimverse.LineageExtension">
+        <skinColor>(0.70, 0.58, 0.48)</skinColor>
+      </li>
+    </modExtensions>
+    <everCurableByItem>false</everCurableByItem>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_Lineage_Horned</defName>
+    <label>horned lineage</label>
+    <description>Descendant of hunters on a wild world. Small horns and a fierce look. Hits harder in close combat.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.6, 0.8, 0.95)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statFactors>
+          <MeleeDamageFactor>1.15</MeleeDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="Rimverse.LineageExtension">
+      </li>
+    </modExtensions>
+    <everCurableByItem>false</everCurableByItem>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_FearOfSky</defName>
+    <workerClass>Rimverse.ThoughtWorker_FearOfSky</workerClass>
+    <validWhileDespawned>false</validWhileDespawned>
+    <stages>
+      <li>
+        <label>open sky</label>
+        <description>There is no ceiling. Nothing between me and the endless sky.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_GravityGenerator</defName>
+    <label>gravity generator</label>
+    <description>Graviton plating control. Gives 1 g to a ship of up to 600 cells. More generators cover larger ships. Prevents zero-g sickness and bone loss aboard.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>200</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ArtificialGravity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Gravity</role>
+        <mass>10</mass>
+        <gravityCells>600</gravityCells>
+        <heatPerSecond>0.5</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ArtificialGravity</defName>
+    <label>artificial gravity</label>
+    <description>Graviton plating that gives a ship a steady 1 g, ending zero-g sickness and bone loss.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_LifeSupport</li>
+      <li>Rimverse_ThermalControl</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>10</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ShipGalley</defName>
+    <label>ship galley</label>
+    <description>Rations and pastes that keep well aboard a ship, including tubes made for eating in zero gravity.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_LifeSupport</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>11</researchViewY>
+  </ResearchProjectDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>Rimverse_ShipRation</defName>
+    <label>ship ration</label>
+    <description>A dense, vacuum-sealed ration made to last through long voyages. Never rots.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/SurvivalPack</texPath>
+      <graphicClass>Graphic_MealVariants</graphicClass>
+      <color>(0.75, 0.8, 0.9)</color>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>22</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetFeedingAnimals>-100</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>Rimverse_CookShipRation</defName>
+    <label>cook ship rations</label>
+    <description>A dense, vacuum-sealed ration made to last through long voyages. Never rots.</description>
+    <jobString>Cooking ship rations.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>0.3</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.3</count>
+      </li>
+    </ingredients>
+    <products>
+      <Rimverse_ShipRation>1</Rimverse_ShipRation>
+    </products>
+    <skillRequirements>
+      <Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>Rimverse_ShipGalley</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>Rimverse_AlgaePaste</defName>
+    <label>algae paste</label>
+    <description>Green paste made from ship algae vats. Nourishing and depressing to eat. Rots in 4 days.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/SurvivalPack</texPath>
+      <graphicClass>Graphic_MealVariants</graphicClass>
+      <color>(0.45, 0.7, 0.4)</color>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>8</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealAwful</preferability>
+      <optimalityOffsetFeedingAnimals>-100</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>4</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>Rimverse_CookAlgaePaste</defName>
+    <label>make algae paste</label>
+    <description>Green paste made from ship algae vats. Nourishing and depressing to eat. Rots in 4 days.</description>
+    <jobString>Making algae paste.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Rimverse_AlgaePaste>1</Rimverse_AlgaePaste>
+    </products>
+    <skillRequirements>
+      <Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>Rimverse_ShipGalley</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>Rimverse_CombatRation</defName>
+    <label>combat ration</label>
+    <description>A light ration laced with mild stimulants. Gives 10% more movement for about 4 hours. Never rots.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/SurvivalPack</texPath>
+      <graphicClass>Graphic_MealVariants</graphicClass>
+      <color>(0.85, 0.55, 0.4)</color>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>30</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.6</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetFeedingAnimals>-100</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_CombatRationBoost</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>Rimverse_CookCombatRation</defName>
+    <label>cook combat rations</label>
+    <description>A light ration laced with mild stimulants. Gives 10% more movement for about 4 hours. Never rots.</description>
+    <jobString>Cooking combat rations.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>0.25</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.2</count>
+      </li>
+    </ingredients>
+    <products>
+      <Rimverse_CombatRation>1</Rimverse_CombatRation>
+    </products>
+    <skillRequirements>
+      <Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>Rimverse_ShipGalley</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>Rimverse_ZeroGTube</defName>
+    <label>zero-g meal tube</label>
+    <description>A squeeze tube of blended food that can be eaten anywhere, with no need for a table. Rots in 30 days.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/SurvivalPack</texPath>
+      <graphicClass>Graphic_MealVariants</graphicClass>
+      <color>(0.9, 0.9, 0.95)</color>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>20</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetFeedingAnimals>-100</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <tableDesired>false</tableDesired>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>Rimverse_CookZeroGTube</defName>
+    <label>cook zero-g tubes</label>
+    <description>A squeeze tube of blended food that can be eaten anywhere, with no need for a table. Rots in 30 days.</description>
+    <jobString>Cooking zero-g meal tubes.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>0.3</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.3</count>
+      </li>
+    </ingredients>
+    <products>
+      <Rimverse_ZeroGTube>1</Rimverse_ZeroGTube>
+    </products>
+    <skillRequirements>
+      <Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>Rimverse_ShipGalley</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>Rimverse_ShipResupply</defName>
+    <label>ship resupply</label>
+    <description>Call for an imperial drop of 200 chemfuel and 40 warp matter for your ship.</description>
+    <minTitle>Knight</minTitle>
+    <uiPosition>(2,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Chemfuel>200</Chemfuel>
+        <Rimverse_WarpMatter>40</Rimverse_WarpMatter>
+      </itemsToDrop>
+      <favorCost>5</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>Rimverse_HullRepairKit</defName>
+    <label>hull repair kit</label>
+    <description>Call for an imperial drop of 300 steel, 60 plasteel and 12 components to patch a damaged hull.</description>
+    <minTitle>Praetor</minTitle>
+    <uiPosition>(2,4)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Steel>300</Steel>
+        <Plasteel>60</Plasteel>
+        <ComponentIndustrial>12</ComponentIndustrial>
+      </itemsToDrop>
+      <favorCost>7</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <HediffDef ParentName="PsycastHediffBase">
+    <defName>Rimverse_PsychicAirBubble</defName>
+    <label>psychic air bubble</label>
+    <description>A thin psychic membrane holds a pocket of air and pressure around the body. It protects against vacuum while it lasts.</description>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <Rimverse_VacuumSeal>1</Rimverse_VacuumSeal>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_PsychicCalm</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>psychic calm</label>
+        <description>A quiet wave washed over my mind. The ship feels a little less cramped.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>Rimverse_AirBubble</defName>
+    <label>air bubble</label>
+    <description>Wrap the target in a psychic membrane that holds air and pressure, protecting them from vacuum for a few hours.</description>
+    <level>2</level>
+    <iconPath>UI/Abilities/BulletShield</iconPath>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EntropyGain>15</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.03</Ability_PsyfocusCost>
+      <Ability_Duration>150</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <warmupTime>0.5</warmupTime>
+      <range>19.9</range>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+        <canTargetAnimals>True</canTargetAnimals>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>Rimverse_PsychicAirBubble</hediffDef>
+        <psychic>True</psychic>
+        <durationMultiplier>PsychicSensitivity</durationMultiplier>
+        <applicableToMechs>False</applicableToMechs>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>Rimverse_SenseSignatures</defName>
+    <label>sense signatures</label>
+    <description>Reach out through the psychic field and feel the minds and machines of nearby stars. Reveals the current system in detail and nearby systems at range, farther with higher psychic sensitivity. Only works aboard a ship or on a world of the Rimverse map.</description>
+    <level>3</level>
+    <iconPath>UI/Abilities/Farskip</iconPath>
+    <targetRequired>False</targetRequired>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <statBases>
+      <Ability_EntropyGain>25</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.1</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>4</warmupTime>
+      <range>0.9</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_AbilitySenseSignatures">
+        <rangeLy>12</rangeLy>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>Rimverse_CalmCrew</defName>
+    <label>calm crew</label>
+    <description>Send a soft psychic wave through the decks. Colonists nearby feel calmer for a day, and some break out of non-violent mental breaks.</description>
+    <level>4</level>
+    <iconPath>UI/Abilities/WordOfSerenity</iconPath>
+    <targetRequired>False</targetRequired>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EntropyGain>30</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.06</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>2</warmupTime>
+      <range>0.9</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_AbilityCalmCrew">
+        <thought>Rimverse_PsychicCalm</thought>
+        <radius>30</radius>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <RoyalTitlePermitDef>
+    <defName>Rimverse_CallImperialFrigate</defName>
+    <label>call imperial frigate</label>
+    <description>An imperial frigate drops a boarding team of 6 cataphracts to fight at your side.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Baron</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(2,6)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <pawnKindDef>Empire_Fighter_Cataphract</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>44.9</targetingRange>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>Rimverse_CallFighterSquadron</defName>
+    <label>call fighter squadron</label>
+    <description>A squadron of imperial fighters makes a strafing run over the target area.</description>
+    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+    <minTitle>Knight</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>40</cooldownDays>
+    <uiPosition>(2,5)</uiPosition>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <radius>6.9</radius>
+      <explosionRadiusRange>2.9~3.9</explosionRadiusRange>
+      <explosionCount>6</explosionCount>
+      <intervalTicks>30</intervalTicks>
+      <warmupTicks>180</warmupTicks>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>Rimverse_ImperialBombardment</defName>
+    <label>imperial orbital bombardment</label>
+    <description>An imperial warship in orbit bombards the target area with a long salvo.</description>
+    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+    <minTitle>Count</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>2</permitPointCost>
+    <cooldownDays>80</cooldownDays>
+    <uiPosition>(3,5)</uiPosition>
+    <royalAid>
+      <favorCost>12</favorCost>
+      <targetingRange>54.9</targetingRange>
+      <radius>9.9</radius>
+      <explosionRadiusRange>3.9~5.9</explosionRadiusRange>
+      <explosionCount>12</explosionCount>
+      <intervalTicks>45</intervalTicks>
+      <warmupTicks>300</warmupTicks>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>Rimverse_ShipyardRepair</defName>
+    <label>imperial shipyard repair</label>
+    <description>An imperial repair crew restores every damaged building on this map to full condition.</description>
+    <workerClass>Rimverse.RoyalTitlePermitWorker_ShipyardRepair</workerClass>
+    <minTitle>Praetor</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(3,4)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>Rimverse_GatePass</defName>
+    <label>gate pass</label>
+    <description>Imperial gate codes. While a colonist with this permit is aboard, ancient gates can be activated without gate components.</description>
+    <minTitle>Baron</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(3,1)</uiPosition>
+    <royalAid>
+      <favorCost>0</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>Rimverse_CrewRescue</defName>
+    <label>crew rescue</label>
+    <description>An imperial medical team tends every untreated wound of your colonists on this map and clears hypoxia.</description>
+    <workerClass>Rimverse.RoyalTitlePermitWorker_CrewRescue</workerClass>
+    <minTitle>Knight</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>40</cooldownDays>
+    <uiPosition>(2,8)</uiPosition>
+    <royalAid>
+      <favorCost>6</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>Rimverse_ConvoyEscort</defName>
+    <label>convoy escort</label>
+    <description>Imperial escorts fly with your ship for 5 days. No ambushes or civilization raids reach your ships in space while they are with you.</description>
+    <workerClass>Rimverse.RoyalTitlePermitWorker_ConvoyEscort</workerClass>
+    <minTitle>Count</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>60</cooldownDays>
+    <uiPosition>(3,7)</uiPosition>
+    <royalAid>
+      <favorCost>10</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <HediffDef ParentName="PsycastHediffBase">
+    <defName>Rimverse_SensorBlind</defName>
+    <label>blinded sensors</label>
+    <description>A psychic static fills the sight and the sensors of this creature.</description>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <setMax>0.5</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>Rimverse_VacuumPush</defName>
+    <label>vacuum push</label>
+    <description>A psychic shove that throws the target several cells away and stuns them for a moment. Works best in the tight corridors of a ship.</description>
+    <level>1</level>
+    <iconPath>UI/Abilities/Stun</iconPath>
+    <hostile>true</hostile>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EntropyGain>10</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>0.25</warmupTime>
+      <range>14.9</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>True</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_AbilityVacuumPush"><distance>6</distance></li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>Rimverse_SealBreach</defName>
+    <label>seal breach</label>
+    <description>Fold matter from the hull itself into the gaps around the target cell, sealing breaches in the ship with new hull walls.</description>
+    <level>3</level>
+    <iconPath>UI/Abilities/Wallraise</iconPath>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EntropyGain>20</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.04</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1</warmupTime>
+      <range>19.9</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns><canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_AbilitySealBreach"><radius>1.5</radius></li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>Rimverse_ShortSkip</defName>
+    <label>short skip</label>
+    <description>Skip yourself to a nearby cell, through walls and bulkheads, without line of sight.</description>
+    <level>2</level>
+    <iconPath>UI/Abilities/Skip</iconPath>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EntropyGain>15</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>0.5</warmupTime>
+      <range>12.9</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns><canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_AbilityShortSkip" />
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>Rimverse_BlindSensors</defName>
+    <label>blind sensors</label>
+    <description>Flood the area with psychic static. Hostile creatures nearby lose half their sight, and enemy ships in battle find it harder to target your ship for a while.</description>
+    <level>4</level>
+    <iconPath>UI/Abilities/BlindingPulse</iconPath>
+    <targetRequired>False</targetRequired>
+    <hostile>true</hostile>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EntropyGain>30</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.05</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1</warmupTime>
+      <range>0.9</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf><canTargetPawns>False</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_AbilityBlindSensors"><hediff>Rimverse_SensorBlind</hediff><radius>22</radius><durationTicks>5000</durationTicks></li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>Rimverse_HullShield</defName>
+    <label>hull shield</label>
+    <description>Pour psychic energy into the ship shield generators, recharging every shield of your ship at once.</description>
+    <level>5</level>
+    <iconPath>UI/Abilities/BulletShield</iconPath>
+    <targetRequired>False</targetRequired>
+    <cooldownTicksRange>120000</cooldownTicksRange>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EntropyGain>40</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.1</Ability_PsyfocusCost>
+    </statBases>
+    <verbProperties>
+      <warmupTime>2</warmupTime>
+      <range>0.9</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf><canTargetPawns>False</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_AbilityHullShield" />
+    </comps>
+  </AbilityDef>
+
+  <ThingDef ParentName="ThroneBase">
+    <defName>Rimverse_CommandThrone</defName>
+    <label>command throne</label>
+    <description>A throne mounted on the bridge deck, with ship controls built into the armrests. Counts as a throne for nobles and dignified meditation.</description>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>45</Mass>
+      <Flammability>0.5</Flammability>
+      <Beauty>18</Beauty>
+      <Comfort>0.8</Comfort>
+    </statBases>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>140</costStuffCount>
+    <costList>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <graphicData>
+      <drawSize>(2.4,2.4)</drawSize>
+      <texPath>Things/Building/Furniture/Throne</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <researchPrerequisites>
+      <li>Rimverse_NavalCommand</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BasicBedBase">
+    <defName>Rimverse_NobleBunk</defName>
+    <label>noble cabin bed</label>
+    <description>A compact but lavish bed built into the wall of a ship cabin. Very comfortable and beautiful, so a small cabin can still meet the demands of a noble.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/Bed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.85,0.75,0.45)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Beauty>30</Beauty>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>35</Mass>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.85</Comfort>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <costStuffCount>60</costStuffCount>
+    <costList>
+      <Gold>40</Gold>
+      <Cloth>30</Cloth>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_LifeSupport</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_StarWindow</defName>
+    <label>stellar meditation window</label>
+    <description>A reinforced viewport framed by a meditation bench. Psycasters with a natural focus can meditate looking at the stars, and it works much better in space.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(0.4,0.55,0.9)</color>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <designationCategory>Misc</designationCategory>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Beauty>8</Beauty>
+      <MeditationFocusStrength>0.12</MeditationFocusStrength>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Natural</li>
+        </focusTypes>
+        <offsets>
+          <li Class="Rimverse.FocusStrengthOffset_InSpace">
+            <offset>0.14</offset>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <IncidentDef>
+    <defName>Rimverse_EscortNoble</defName>
+    <label>escort a noble</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_EscortNoble</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>30</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Rimverse_DefendStellarch</defName>
+    <label>defend a stellarch</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_DefendStellarch</workerClass>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>40</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Rimverse_HuntDeserters</defName>
+    <label>hunt deserters</label>
+    <category>ThreatSmall</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_HuntDeserters</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>30</minRefireDays>
+  </IncidentDef>
+
+</Defs>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_BeltName>Cinturão {1} de {0}</Rimverse_BeltName>
+  <Rimverse_LetterArrivedLabel>Chegada</Rimverse_LetterArrivedLabel>
+  <Rimverse_LetterArrived>{0} chegou a {1}.</Rimverse_LetterArrived>
+  <Rimverse_ProblemNotInSpace>A nave precisa estar em órbita.</Rimverse_ProblemNotInSpace>
+  <Rimverse_ProblemAlreadyTraveling>A nave já está viajando.</Rimverse_ProblemAlreadyTraveling>
+  <Rimverse_ProblemAlreadyThere>A nave já está aqui.</Rimverse_ProblemAlreadyThere>
+  <Rimverse_CannotTravel>Não é possível viajar:</Rimverse_CannotTravel>
+  <Rimverse_MsgTravelStarted>{0} partiu para {1}. Chegada em {2} dias.</Rimverse_MsgTravelStarted>
+  <Rimverse_NoSystem>Nenhum sistema conhecido aqui.</Rimverse_NoSystem>
+  <Rimverse_SystemMapTitle>Sistema {0} ({1})</Rimverse_SystemMapTitle>
+  <Rimverse_UnknownBody>Corpo desconhecido</Rimverse_UnknownBody>
+  <Rimverse_CurrentLocation>Local atual: {0}</Rimverse_CurrentLocation>
+  <Rimverse_TravelingTo>Viajando para {0}: {1}, faltam {2} dias</Rimverse_TravelingTo>
+  <Rimverse_SelectBody>Clique em um corpo para ver os detalhes.</Rimverse_SelectBody>
+  <Rimverse_TravelEstimate>Distância {0} UA, {1} dias, {2} de combustível.</Rimverse_TravelEstimate>
+  <Rimverse_TravelHere>Viajar para cá</Rimverse_TravelHere>
+  <Rimverse_ScanUnknown>Nada se sabe sobre este corpo. Use sensores para descobrir mais.</Rimverse_ScanUnknown>
+  <Rimverse_ScanMore>Sensores melhores ou uma visita mostram mais.</Rimverse_ScanMore>
+  <Rimverse_BodyType>Tipo: {0}</Rimverse_BodyType>
+  <Rimverse_BodySizeWord>Tamanho: {0}</Rimverse_BodySizeWord>
+  <Rimverse_BodySizeRange>Classe de tamanho: {0} a {1}</Rimverse_BodySizeRange>
+  <Rimverse_BodySizeExact>Classe de tamanho: {0}</Rimverse_BodySizeExact>
+  <Rimverse_BodyAtmosphere>Atmosfera: {0}</Rimverse_BodyAtmosphere>
+  <Rimverse_BodyGravity>Gravidade: {0} g</Rimverse_BodyGravity>
+  <Rimverse_BodyTemperature>Temperatura média: {0}</Rimverse_BodyTemperature>
+  <Rimverse_BodyWater>Água na superfície: {0}</Rimverse_BodyWater>
+  <Rimverse_BodyOrbit>Órbita: {0} UA</Rimverse_BodyOrbit>
+  <Rimverse_BodyRings>Tem anéis.</Rimverse_BodyRings>
+  <Rimverse_BodyLandable>Dá para pousar.</Rimverse_BodyLandable>
+  <Rimverse_BodyNotLandable>Ainda não dá para pousar aqui.</Rimverse_BodyNotLandable>
+  <Rimverse_BodyNotLandableNow>Ainda não dá para pousar em {0}.</Rimverse_BodyNotLandableNow>
+  <Rimverse_SizeTiny>minúsculo</Rimverse_SizeTiny>
+  <Rimverse_SizeSmall>pequeno</Rimverse_SizeSmall>
+  <Rimverse_SizeMedium>médio</Rimverse_SizeMedium>
+  <Rimverse_SizeLarge>grande</Rimverse_SizeLarge>
+  <Rimverse_SizeHuge>enorme</Rimverse_SizeHuge>
+  <Rimverse_CmdSystemMap>Mapa do sistema</Rimverse_CmdSystemMap>
+  <Rimverse_CmdSystemMapDesc>Mostra o sistema estelar atual, o que os sensores sabem de cada corpo e permite viajar dentro do sistema.</Rimverse_CmdSystemMapDesc>
+  <Rimverse_SuitAir>Ar do traje: {0} / {1} h</Rimverse_SuitAir>
+  <Rimverse_Star_RedDwarf>anã vermelha</Rimverse_Star_RedDwarf>
+  <Rimverse_Star_Orange>estrela laranja</Rimverse_Star_Orange>
+  <Rimverse_Star_Yellow>estrela amarela</Rimverse_Star_Yellow>
+  <Rimverse_Star_White>estrela branca</Rimverse_Star_White>
+  <Rimverse_Star_Blue>estrela azul</Rimverse_Star_Blue>
+  <Rimverse_Star_WhiteDwarf>anã branca</Rimverse_Star_WhiteDwarf>
+  <Rimverse_Star_Neutron>estrela de nêutrons</Rimverse_Star_Neutron>
+  <Rimverse_Star_BlackHole>buraco negro</Rimverse_Star_BlackHole>
+  <Rimverse_BodyType_Asteroid>asteroide</Rimverse_BodyType_Asteroid>
+  <Rimverse_BodyType_DwarfPlanet>planeta-anão</Rimverse_BodyType_DwarfPlanet>
+  <Rimverse_BodyType_SmallMoon>lua pequena</Rimverse_BodyType_SmallMoon>
+  <Rimverse_BodyType_Rocky>planeta rochoso</Rimverse_BodyType_Rocky>
+  <Rimverse_BodyType_SuperEarth>super-Terra</Rimverse_BodyType_SuperEarth>
+  <Rimverse_BodyType_Ocean>mundo oceânico</Rimverse_BodyType_Ocean>
+  <Rimverse_BodyType_GasGiant>gigante gasoso</Rimverse_BodyType_GasGiant>
+  <Rimverse_BodyType_Belt>cinturão de asteroides</Rimverse_BodyType_Belt>
+  <Rimverse_Atmosphere_None>nenhuma</Rimverse_Atmosphere_None>
+  <Rimverse_Atmosphere_Thin>rarefeita</Rimverse_Atmosphere_Thin>
+  <Rimverse_Atmosphere_Breathable>respirável</Rimverse_Atmosphere_Breathable>
+  <Rimverse_Atmosphere_Toxic>tóxica</Rimverse_Atmosphere_Toxic>
+  <Rimverse_Atmosphere_Dense>densa</Rimverse_Atmosphere_Dense>
+</LanguageData>

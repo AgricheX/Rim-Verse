@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_GatePart</defName>
+    <label>gate component</label>
+    <description>A dense lattice of plasteel and folded warp matter, tuned to the resonance of the ancient gates. Used to activate gates, stabilize wormholes and push the Great Gate further.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(0.6, 0.85, 1)</color>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <MarketValue>900</MarketValue>
+      <Mass>2</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>Rimverse_MakeGatePart</defName>
+    <label>make gate component</label>
+    <description>Make a gate component from plasteel, advanced components and warp matter.</description>
+    <jobString>Making a gate component.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>12000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_WarpMatter</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>ComponentSpacer</li>
+        <li>Rimverse_WarpMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_GatePart>1</Rimverse_GatePart>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>Rimverse_GateUse</researchPrerequisite>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_GateUse</defName>
+    <label>gate activation</label>
+    <description>How to wake the ancient gates scattered across the galaxy and steer them toward their linked destinations.</description>
+    <baseCost>8000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_HeavyWarp</li>
+      <li>Rimverse_AdvancedSensors</li>
+    </prerequisites>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_WormholeStabilization</defName>
+    <label>wormhole stabilization</label>
+    <description>Field projectors that hold a wandering wormhole open for good, turning it into a permanent route.</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_GateUse</li>
+    </prerequisites>
+    <researchViewX>6</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_GateConstruction</defName>
+    <label>gate construction</label>
+    <description>Fabrication of gate components and the knowledge needed to push the Great Gate beyond its known destinations.</description>
+    <baseCost>12000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_GateUse</li>
+    </prerequisites>
+    <researchViewX>6</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ArchotechAscension</defName>
+    <label>archotech ascension</label>
+    <description>The final step: merging minds with an archotech intelligence. Completing this project ends the story of your people as they ascend.</description>
+    <baseCost>30000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_GateConstruction</li>
+      <li>Rimverse_ArtificialGravity</li>
+    </prerequisites>
+    <researchViewX>7</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Mech_HullRepairer.label>reparador de casco</Rimverse_Mech_HullRepairer.label>
+  <Rimverse_Mech_CargoHauler.label>carregador de carga</Rimverse_Mech_CargoHauler.label>
+  <Rimverse_Mech_AsteroidMiner.label>minerador de asteroides</Rimverse_Mech_AsteroidMiner.label>
+  <Rimverse_Mech_CorridorSentry.label>sentinela de corredor</Rimverse_Mech_CorridorSentry.label>
+  <Rimverse_Mech_Boarder.label>abordador</Rimverse_Mech_Boarder.label>
+  <Rimverse_Mech_MechFighter.label>caça mecanoide</Rimverse_Mech_MechFighter.label>
+</LanguageData>

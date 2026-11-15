@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CombatHud>Combate: faixa {0} ({1}) · sua ordem: {2} · inimigo: {3}</Rimverse_CombatHud>
+  <Rimverse_CombatHud2>Sua nave: casco {0}, escudo {1} · Inimigo: casco {2}, escudo {3}</Rimverse_CombatHud2>
+  <Rimverse_EnemyShipName>{1} de {0}</Rimverse_EnemyShipName>
+  <Rimverse_LetterShipCombatLabel>Nave hostil</Rimverse_LetterShipCombatLabel>
+  <Rimverse_LetterShipCombat>Uma nave de {0}, a {1}, saiu do escuro e está em rota de combate.
+
+Use as ordens na ponte para se aproximar, manter distância, fugir ou abordar. As armas atiram sozinhas quando o inimigo está na faixa delas.</Rimverse_LetterShipCombat>
+  <Rimverse_LetterCombatLostLabel>Nave perdida</Rimverse_LetterCombatLostLabel>
+  <Rimverse_LetterCombatLost>A ponte da sua nave foi destruída ou tomada. O combate acabou.</Rimverse_LetterCombatLost>
+  <Rimverse_LetterCombatWonLabel>Vitória no espaço</Rimverse_LetterCombatWonLabel>
+  <Rimverse_LetterCombatWon>A nave inimiga não tem mais quem a comande. O que sobrou dela pode ser saqueado.</Rimverse_LetterCombatWon>
+  <Rimverse_LetterSurrenderLabel>Nave rendida</Rimverse_LetterSurrenderLabel>
+  <Rimverse_LetterSurrender>A {0} se rendeu. Os {1} tripulantes que restaram agora são prisioneiros, e a nave é sua.</Rimverse_LetterSurrender>
+  <Rimverse_MsgEscaped>{0} escapou do combate.</Rimverse_MsgEscaped>
+  <Rimverse_MsgEnemyEscaped>{0} fugiu do combate.</Rimverse_MsgEnemyEscaped>
+  <Rimverse_MsgBoarded>{0} inimigos abordaram a nave!</Rimverse_MsgBoarded>
+  <Rimverse_MsgPlayerBoarded>{0} colonos abordaram a nave inimiga.</Rimverse_MsgPlayerBoarded>
+  <Rimverse_MsgBoardNeedsBand>A nave inimiga precisa estar na faixa de abordagem.</Rimverse_MsgBoardNeedsBand>
+  <Rimverse_MsgBoardNeedsDrafted>Convoque os colonos que vão abordar. Eles precisam estar a bordo da sua nave.</Rimverse_MsgBoardNeedsDrafted>
+  <Rimverse_CmdSendBoarders>Abordar agora</Rimverse_CmdSendBoarders>
+  <Rimverse_CmdSendBoardersDesc>Leva os colonos convocados a bordo desta nave para dentro da nave inimiga. Só funciona na faixa de abordagem.</Rimverse_CmdSendBoardersDesc>
+  <Rimverse_ShieldStatus>Escudo: {0} / {1}</Rimverse_ShieldStatus>
+  <Rimverse_WeaponReady>Pronta (faixa {0})</Rimverse_WeaponReady>
+  <Rimverse_WeaponReloading>Recarregando (faixa {0}): {1} s</Rimverse_WeaponReloading>
+  <Rimverse_Stat_WeaponBand>Faixa ideal</Rimverse_Stat_WeaponBand>
+  <Rimverse_Stat_WeaponBand_Desc>A faixa de distância em que esta arma acerta melhor: 80% na faixa certa, 50% a uma faixa de distância, 20% a duas.</Rimverse_Stat_WeaponBand_Desc>
+  <Rimverse_Stat_WeaponDamage>Dano por tiro</Rimverse_Stat_WeaponDamage>
+  <Rimverse_Stat_WeaponDamage_Desc>Dano de cada tiro e quantos tiros há em cada rajada.</Rimverse_Stat_WeaponDamage_Desc>
+  <Rimverse_Stat_WeaponCooldown>Cadência</Rimverse_Stat_WeaponCooldown>
+  <Rimverse_Stat_WeaponCooldown_Desc>Segundos entre uma rajada e a próxima.</Rimverse_Stat_WeaponCooldown_Desc>
+  <Rimverse_Stat_WeaponHeat>Calor por tiro</Rimverse_Stat_WeaponHeat>
+  <Rimverse_Stat_WeaponHeat_Desc>Calor que cada tiro soma ao calor da nave.</Rimverse_Stat_WeaponHeat_Desc>
+  <Rimverse_Stat_WeaponIntercept>Interceptação</Rimverse_Stat_WeaponIntercept>
+  <Rimverse_Stat_WeaponIntercept_Desc>Chance de derrubar cada míssil que vem contra a nave.</Rimverse_Stat_WeaponIntercept_Desc>
+  <Rimverse_Stat_ShieldHP>Pontos de escudo</Rimverse_Stat_ShieldHP>
+  <Rimverse_Stat_ShieldHP_Desc>Dano que o escudo absorve antes de cair.</Rimverse_Stat_ShieldHP_Desc>
+  <Rimverse_Stat_ShieldRegen>Recuperação do escudo</Rimverse_Stat_ShieldRegen>
+  <Rimverse_Stat_ShieldRegen_Desc>Pontos de escudo recuperados por segundo enquanto há energia.</Rimverse_Stat_ShieldRegen_Desc>
+  <Rimverse_Band_Far>longe</Rimverse_Band_Far>
+  <Rimverse_Band_Medium>média</Rimverse_Band_Medium>
+  <Rimverse_Band_Near>perto</Rimverse_Band_Near>
+  <Rimverse_Band_Boarding>abordagem</Rimverse_Band_Boarding>
+  <Rimverse_Order_Approach>Aproximar</Rimverse_Order_Approach>
+  <Rimverse_OrderDesc_Approach>Avança uma faixa por vez até ficar perto do inimigo.</Rimverse_OrderDesc_Approach>
+  <Rimverse_Order_Hold>Manter</Rimverse_Order_Hold>
+  <Rimverse_OrderDesc_Hold>Fica na faixa atual.</Rimverse_OrderDesc_Hold>
+  <Rimverse_Order_Flee>Fugir</Rimverse_Order_Flee>
+  <Rimverse_OrderDesc_Flee>Se afasta. Na faixa longe, a nave escapa depois de 20 segundos se for mais rápida que o inimigo ou tiver a dobra pronta, e se não estiver presa por raio trator.</Rimverse_OrderDesc_Flee>
+  <Rimverse_Order_Board>Abordar</Rimverse_Order_Board>
+  <Rimverse_OrderDesc_Board>Avança até a faixa de abordagem, onde os colonos convocados podem invadir a nave inimiga.</Rimverse_OrderDesc_Board>
+  <Rimverse_Order_KeepRange>Manter distância</Rimverse_Order_KeepRange>
+  <Rimverse_OrderDesc_KeepRange>Busca a faixa em que as armas da nave são mais fortes.</Rimverse_OrderDesc_KeepRange>
+  <Rimverse_EnemyTier_0>Corveta</Rimverse_EnemyTier_0>
+  <Rimverse_EnemyTier_1>Fragata</Rimverse_EnemyTier_1>
+  <Rimverse_EnemyTier_2>Cruzador</Rimverse_EnemyTier_2>
+  <Rimverse_EnemyTier_3>Nave de guerra</Rimverse_EnemyTier_3>
+</LanguageData>

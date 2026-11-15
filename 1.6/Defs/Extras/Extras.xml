@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="Wall">
+    <defName>Rimverse_HullViewport</defName>
+    <label>hull viewport</label>
+    <description>Pressure-tight transparent hull section. The crew can look out at the stars. Worth 30 hull points.</description>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+    <costList>
+      <Steel>6</Steel>
+      <Plasteel>4</Plasteel>
+    </costList>
+    <graphicData>
+      <color>(0.62, 0.80, 0.95)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>400</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>4</Beauty>
+    </statBases>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>Rimverse.PlaceWorker_OnHull</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Window</role>
+        <mass>1</mass>
+        <hullPoints>30</hullPoints>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_NavalPromotion</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>promoted</label>
+        <description>I earned a new naval rank. The crew looks at me differently now.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

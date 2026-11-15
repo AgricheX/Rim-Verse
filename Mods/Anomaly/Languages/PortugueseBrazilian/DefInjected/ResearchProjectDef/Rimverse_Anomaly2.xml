@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_VoidSignals.label>sinais do vazio</Rimverse_VoidSignals.label>
+  <Rimverse_VoidSignals.description>Aprenda a separar o zumbido das entidades no ruído dos sensores. Libera o sensor do vazio.</Rimverse_VoidSignals.description>
+  <Rimverse_ZeroGContainment.label>contenção em gravidade zero</Rimverse_ZeroGContainment.label>
+  <Rimverse_ZeroGContainment.description>Mantenha entidades presas numa nave. Libera as celas de contenção de bordo e a eclusa de expurgo.</Rimverse_ZeroGContainment.description>
+  <Rimverse_VoidNavigation.label>navegação pelo vazio</Rimverse_VoidNavigation.label>
+  <Rimverse_VoidNavigation.description>Rasgue um caminho pelo vazio. A nave salta para uma estrela aleatória a até 40 anos-luz sem matéria de dobra, queimando bioferrita no lugar. Algo pode voltar junto.</Rimverse_VoidNavigation.description>
+</LanguageData>

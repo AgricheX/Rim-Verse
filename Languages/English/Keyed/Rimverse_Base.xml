@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Tab_General>General</Rimverse_Tab_General>
+  <Rimverse_Tab_Universe>Universe</Rimverse_Tab_Universe>
+  <Rimverse_Tab_Ship>Ship</Rimverse_Tab_Ship>
+  <Rimverse_Tab_Fluxo>Great Flow</Rimverse_Tab_Fluxo>
+  <Rimverse_Tab_Qol>Quality of life</Rimverse_Tab_Qol>
+  <Rimverse_Tab_Compat>Compatibility</Rimverse_Tab_Compat>
+  <Rimverse_ModInactive>(mod or DLC inactive)</Rimverse_ModInactive>
+  <Rimverse_Threat>Space threats</Rimverse_Threat>
+  <Rimverse_Threat_Desc>Multiplies the threat budget of Rimverse fleets, pirates and events.</Rimverse_Threat_Desc>
+  <Rimverse_Economy>Economy</Rimverse_Economy>
+  <Rimverse_Economy_Desc>Multiplies Rimverse prices, colony income and upkeep.</Rimverse_Economy_Desc>
+  <Rimverse_ResearchCost>Research cost</Rimverse_ResearchCost>
+  <Rimverse_ResearchCost_Desc>Multiplies the cost of Rimverse research projects.</Rimverse_ResearchCost_Desc>
+  <Rimverse_DebugLogging>Debug logging</Rimverse_DebugLogging>
+  <Rimverse_DebugLogging_Desc>Writes extra messages to the log to help find problems.</Rimverse_DebugLogging_Desc>
+  <Rimverse_ResetDefaults>Reset to defaults</Rimverse_ResetDefaults>
+  <Rimverse_NewGameOnly>Generation options only apply to new universes.</Rimverse_NewGameOnly>
+  <Rimverse_GalaxyCount>Galaxies</Rimverse_GalaxyCount>
+  <Rimverse_GalaxyCount_Desc>How many galaxies the universe generates at game start.</Rimverse_GalaxyCount_Desc>
+  <Rimverse_StarDensity>Star density</Rimverse_StarDensity>
+  <Rimverse_StarDensity_Desc>How many stars each region of a galaxy has, compared to the real density (0.004 stars per cubic light-year). Lower values make maps lighter and space emptier.</Rimverse_StarDensity_Desc>
+  <Rimverse_CivSimulation>Civilization simulation</Rimverse_CivSimulation>
+  <Rimverse_CivSimulation_Desc>Civilizations grow, trade, wage war and fall even far from your colony.</Rimverse_CivSimulation_Desc>
+  <Rimverse_CivTickInterval>Simulation interval (days)</Rimverse_CivTickInterval>
+  <Rimverse_CivTickInterval_Desc>How often civilizations update. Higher values cost less performance.</Rimverse_CivTickInterval_Desc>
+  <Rimverse_AirConsumption>Air consumption</Rimverse_AirConsumption>
+  <Rimverse_AirConsumption_Desc>Multiplies how much air each colonist uses aboard.</Rimverse_AirConsumption_Desc>
+  <Rimverse_FuelConsumption>Fuel consumption</Rimverse_FuelConsumption>
+  <Rimverse_FuelConsumption_Desc>Multiplies fuel and warp matter used when travelling.</Rimverse_FuelConsumption_Desc>
+  <Rimverse_BreachDrain>Breach air loss</Rimverse_BreachDrain>
+  <Rimverse_BreachDrain_Desc>Multiplies how fast a breach drains a room's air.</Rimverse_BreachDrain_Desc>
+  <Rimverse_ShipCombat>Ship combat</Rimverse_ShipCombat>
+  <Rimverse_ShipCombat_Desc>Allows space battles between ships and fleets.</Rimverse_ShipCombat_Desc>
+  <Rimverse_FluxoEnabled>Enable the Great Flow</Rimverse_FluxoEnabled>
+  <Rimverse_FluxoEnabled_Desc>Turns on the Great Flow power system, its orders and beam blades.</Rimverse_FluxoEnabled_Desc>
+  <Rimverse_FluxoChance>Chance to be born sensitive</Rimverse_FluxoChance>
+  <Rimverse_FluxoChance_Desc>Chance for a new pawn to be sensitive to the Great Flow.</Rimverse_FluxoChance_Desc>
+  <Rimverse_QolEnabled>Enable quality of life features</Rimverse_QolEnabled>
+  <Rimverse_QolEnabled_Desc>Turns on Rimverse quality of life features. Each one turns itself off when its original mod is active.</Rimverse_QolEnabled_Desc>
+  <Rimverse_QolNone>No quality of life features installed.</Rimverse_QolNone>
+  <Rimverse_QolOriginalActive>(original mod is active)</Rimverse_QolOriginalActive>
+  <Rimverse_RequiresRestart>(restart required)</Rimverse_RequiresRestart>
+  <Rimverse_QolCategory_General>General</Rimverse_QolCategory_General>
+  <Rimverse_OdysseyIntegration>Odyssey integration</Rimverse_OdysseyIntegration>
+  <Rimverse_OdysseyIntegration_Desc>Uses Odyssey content inside Rimverse. Rimverse ships stay their own system.</Rimverse_OdysseyIntegration_Desc>
+  <Rimverse_CEIntegration>Combat Extended integration</Rimverse_CEIntegration>
+  <Rimverse_CEIntegration_Desc>Converts Rimverse weapons, armor and ammo to Combat Extended.</Rimverse_CEIntegration_Desc>
+  <Rimverse_EndlessRoomsEvents>Endless Rooms events</Rimverse_EndlessRoomsEvents>
+  <Rimverse_EndlessRoomsEvents_Desc>Enables the events, powers and scenario linking the universe to the Endless Rooms backrooms.</Rimverse_EndlessRoomsEvents_Desc>
+  <Rimverse_FacialAnimationIntegration>Facial Animation integration</Rimverse_FacialAnimationIntegration>
+  <Rimverse_FacialAnimationIntegration_Desc>Gives animated faces to Rimverse lineages.</Rimverse_FacialAnimationIntegration_Desc>
+  <Rimverse_YayoIntegration>Yayo's Animation integration</Rimverse_YayoIntegration>
+  <Rimverse_YayoIntegration_Desc>Adjusts Yayo's Animation animations in zero gravity and aboard.</Rimverse_YayoIntegration_Desc>
+</LanguageData>

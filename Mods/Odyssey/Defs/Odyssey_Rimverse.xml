@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PlanetLayerDef ParentName="OrbitLayer">
+    <defName>Rimverse_MoonLayer</defName>
+    <label>moon</label>
+    <viewGizmoTooltip>View the moon of this world.</viewGizmoTooltip>
+    <elevationString>200000km</elevationString>
+    <defaultBiome>Orbit</defaultBiome>
+    <rangeDistanceFactor>25</rangeDistanceFactor>
+    <settlementsPer100kTiles>0~0</settlementsPer100kTiles>
+  </PlanetLayerDef>
+
+  <PlanetLayerDef ParentName="OrbitLayer">
+    <defName>Rimverse_RingLayer</defName>
+    <label>ring</label>
+    <viewGizmoTooltip>View the ring of dust and ice around this world.</viewGizmoTooltip>
+    <elevationString>80000km</elevationString>
+    <defaultBiome>Orbit</defaultBiome>
+    <rangeDistanceFactor>25</rangeDistanceFactor>
+    <settlementsPer100kTiles>0~0</settlementsPer100kTiles>
+  </PlanetLayerDef>
+
+  <PlanetLayerDef ParentName="OrbitLayer">
+    <defName>Rimverse_BeltLayer</defName>
+    <label>near belt</label>
+    <viewGizmoTooltip>View the asteroid belt close to this world.</viewGizmoTooltip>
+    <elevationString>400000km</elevationString>
+    <defaultBiome>Orbit</defaultBiome>
+    <rangeDistanceFactor>25</rangeDistanceFactor>
+    <settlementsPer100kTiles>0~0</settlementsPer100kTiles>
+  </PlanetLayerDef>
+
+  <PlanetLayerDef ParentName="OrbitLayer">
+    <defName>Rimverse_StationLayer</defName>
+    <label>high orbit</label>
+    <viewGizmoTooltip>View the stations in high orbit.</viewGizmoTooltip>
+    <elevationString>36000km</elevationString>
+    <defaultBiome>Orbit</defaultBiome>
+    <rangeDistanceFactor>25</rangeDistanceFactor>
+    <settlementsPer100kTiles>300~500</settlementsPer100kTiles>
+  </PlanetLayerDef>
+
+  <IncidentDef>
+    <defName>Rimverse_OrbitCivTrader</defName>
+    <label>orbital civilization trader</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_OrbitCivTrader</workerClass>
+    <baseChance>1.2</baseChance>
+    <minRefireDays>10</minRefireDays>
+    <canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Rimverse_OrbitCivPatrol</defName>
+    <label>civilization patrol</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_OrbitCivPatrol</workerClass>
+    <baseChance>0.8</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Rimverse_OrbitFleetSighted</defName>
+    <label>fleet sighted</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_OrbitFleetSighted</workerClass>
+    <baseChance>0.6</baseChance>
+    <minRefireDays>25</minRefireDays>
+    <canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Rimverse_OrbitDerelictDrift</defName>
+    <label>derelict drift</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_OrbitDerelictDrift</workerClass>
+    <baseChance>0.9</baseChance>
+    <minRefireDays>12</minRefireDays>
+    <canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
+  </IncidentDef>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>Rimverse_GravshipTravelers</defName>
+    <label>Gravship travelers</label>
+    <description>Your crew lives aboard an old gravship docked at an orbital relay. It can hop between the planet and its orbit, but it will never reach the stars. Somewhere out there are civilizations, gates and whole galaxies. Build your first real starship: put a Rimverse bridge on the substructure, add engines and life support, and leave this world behind.</description>
+    <scenario>
+      <summary>Four travelers with a gravship who must build their first true starship.</summary>
+      <playerFaction>
+        <factionDef>GravshipCrew</factionDef>
+      </playerFaction>
+      <parts Inherit="False">
+        <li Class="ScenPart_PlanetLayer">
+          <def>PlanetLayerFixed</def>
+          <tag>Orbit</tag>
+          <layer>Orbit</layer>
+          <settingsDef>Orbit</settingsDef>
+          <hide>true</hide>
+          <connections>
+            <Surface>
+              <zoomMode>ZoomIn</zoomMode>
+            </Surface>
+          </connections>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Your gravship is docked at an old orbital relay. It is a good ship for this world, but it cannot cross the dark between stars.\n\nThe gravship substructure counts as hull for the Rimverse: build a Rimverse bridge on it, then engines, life support and a warp drive. The grav engine works as a maneuver thruster for your starship.\n\nWhen your starship is ready, use "Enter the star system" on its bridge.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>4</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+          <allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+          <requiredSkills>
+            <li>Construction</li>
+          </requiredSkills>
+        </li>
+        <li Class="ScenPart_ForcedMap">
+          <def>ForcedMap</def>
+          <mapGenerator>OrbitalRelay</mapGenerator>
+          <layerDef>Orbit</layerDef>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Gravship</method>
+        </li>
+        <li Class="ScenPart_DisableQuest">
+          <def>DisableQuest</def>
+          <questDef>MechanoidSignal</questDef>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>BasicGravtech</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Rimverse_ShipBasics</project>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Chemfuel</thingDef><count>250</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef><count>60</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef><count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef><count>50</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef><count>500</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Plasteel</thingDef><count>80</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_AssaultRifle</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_Autopistol</thingDef>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>GravlitePanel</thingDef>
+          <count>300</count>
+          <allowRoofed>false</allowRoofed>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>
