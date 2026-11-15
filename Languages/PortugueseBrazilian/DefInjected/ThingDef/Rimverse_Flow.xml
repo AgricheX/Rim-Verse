@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_ResonanceShard.label>fragmento de ressonância</Rimverse_ResonanceShard.label>
+  <Rimverse_ResonanceShard.description>Uma lasca de cristal que vibra com o Grande Fluxo. Nas mãos de uma mente sensível, desperta o Fluxo dentro dela. Ferreiros também usam para focar lâminas de feixe.</Rimverse_ResonanceShard.description>
+  <Rimverse_ResonanceShard.comps.0.useLabel>Sintonizar com o Fluxo</Rimverse_ResonanceShard.comps.0.useLabel>
+  <Rimverse_BeamBlade.label>lâmina de feixe</Rimverse_BeamBlade.label>
+  <Rimverse_BeamBlade.description>Um cabo que segura uma lâmina de luz focada, afinada por um fragmento de ressonância. Corta quase qualquer armadura. Nas mãos de alguém sensível ao Grande Fluxo, parece viva.</Rimverse_BeamBlade.description>
+  <Rimverse_BeamBlade.tools.0.label>feixe</Rimverse_BeamBlade.tools.0.label>
+  <Rimverse_BeamBlade.tools.1.label>ponta</Rimverse_BeamBlade.tools.1.label>
+</LanguageData>

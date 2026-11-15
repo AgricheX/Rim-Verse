@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimGram_RvLaunch_0>Engines hot, hatches sealed. {COLONY_name} is leaving orbit. Wave if you can see us.</RimGram_RvLaunch_0>
+  <RimGram_RvLaunch_1>Next stop: {EXTRA}. Snacks packed, nerves not.</RimGram_RvLaunch_1>
+  <RimGram_RvLaunch_2>Warp countdown. If this is my last post, the cat food is in the second locker.</RimGram_RvLaunch_2>
+  <RimGram_RvLaunch_3>Course set for {EXTRA}. The captain says it's 'perfectly safe'. The captain says that a lot.</RimGram_RvLaunch_3>
+  <RimGram_RvLaunch_4>Watching the planet shrink in the window. Weird how home looks so small from here.</RimGram_RvLaunch_4>
+  <RimGram_RvLaunch_5>Strapped in, praying to every engineer who ever touched this hull.</RimGram_RvLaunch_5>
+  <RimGram_RvArrive_0>We made it! {EXTRA}, you are gorgeous.</RimGram_RvArrive_0>
+  <RimGram_RvArrive_1>Dropped out of warp in {EXTRA}. Everyone still has the right number of limbs.</RimGram_RvArrive_1>
+  <RimGram_RvArrive_2>Arrival confirmed. The coffee survived. The coffee always survives.</RimGram_RvArrive_2>
+  <RimGram_RvArrive_3>New sky outside the porthole. I'll never get used to this.</RimGram_RvArrive_3>
+  <RimGram_RvArrive_4>Hull integrity: fine. Crew integrity: questionable. Welcome to {EXTRA}.</RimGram_RvArrive_4>
+  <RimGram_RvNewSystem_0>First humans in {EXTRA}? Maybe. First ones to post about it? Definitely.</RimGram_RvNewSystem_0>
+  <RimGram_RvNewSystem_1>Charted a new system today: {EXTRA}. Naming rights go to whoever cleans the toilets this week.</RimGram_RvNewSystem_1>
+  <RimGram_RvNewSystem_2>The star here is a different colour. The photos don't do it justice.</RimGram_RvNewSystem_2>
+  <RimGram_RvNewSystem_3>Somewhere out there, a cartographer just felt a disturbance. {EXTRA} is on the map now.</RimGram_RvNewSystem_3>
+  <RimGram_RvNewSystem_4>New system, new rocks, new chances to be eaten by something. Exploration!</RimGram_RvNewSystem_4>
+  <RimGram_RvStrangerWelcome_0>Welcome to {EXTRA}, travellers. Fuel is overpriced and the bar is worse.</RimGram_RvStrangerWelcome_0>
+  <RimGram_RvStrangerWelcome_1>New ship on the scopes. Hi, {COLONY_name}. Please don't shoot the ore haulers.</RimGram_RvStrangerWelcome_1>
+  <RimGram_RvStrangerWelcome_2>Locals of {EXTRA} say hello. Some of them say other things too.</RimGram_RvStrangerWelcome_2>
+  <RimGram_RvStrangerWelcome_3>Saw {COLONY_name} drop in. Nice hull. Shame about the paint.</RimGram_RvStrangerWelcome_3>
+  <RimGram_RvCivFall_0>BREAKING: {EXTRA} has collapsed. Their last broadcast was static.</RimGram_RvCivFall_0>
+  <RimGram_RvCivFall_1>{EXTRA} is gone. Refugee ships are already appearing on the lanes.</RimGram_RvCivFall_1>
+  <RimGram_RvCivFall_2>History closes a chapter today. {EXTRA} no longer exists as a state.</RimGram_RvCivFall_2>
+  <RimGram_RvCivFall_3>Markets crash as {EXTRA} falls. Scavengers are rejoicing.</RimGram_RvCivFall_3>
+  <RimGram_RvRumorFall_0>Unconfirmed: a whole civilization went silent somewhere past the frontier.</RimGram_RvRumorFall_0>
+  <RimGram_RvRumorFall_1>Traders talk of empty worlds and dead relays out in the dark.</RimGram_RvRumorFall_1>
+  <RimGram_RvRumorFall_2>A distant power has fallen. Nobody knows its name. Nobody will.</RimGram_RvRumorFall_2>
+  <RimGram_RvFirstContact_Imperial_0>By decree of the throne, we acknowledge {COLONY_name}. Kneel optional. For now.</RimGram_RvFirstContact_Imperial_0>
+  <RimGram_RvFirstContact_Imperial_1>The Crown notes your arrival, {COLONY_name}. Bring tribute and good manners.</RimGram_RvFirstContact_Imperial_1>
+  <RimGram_RvFirstContact_Imperial_2>Our heralds have recorded your name, {COLONY_name}. Do not make us regret it.</RimGram_RvFirstContact_Imperial_2>
+  <RimGram_RvFirstContact_Holy_0>The Light has guided {COLONY_name} to us. Blessed be the voyage.</RimGram_RvFirstContact_Holy_0>
+  <RimGram_RvFirstContact_Holy_1>Pilgrims, welcome. {COLONY_name} is now in our prayers. Whether you like it or not.</RimGram_RvFirstContact_Holy_1>
+  <RimGram_RvFirstContact_Holy_2>The stars foretold your coming, {COLONY_name}. They also foretold you'd be late.</RimGram_RvFirstContact_Holy_2>
+  <RimGram_RvFirstContact_Republic_0>The Assembly welcomes {COLONY_name}. A committee has been formed to decide how warmly.</RimGram_RvFirstContact_Republic_0>
+  <RimGram_RvFirstContact_Republic_1>Hello {COLONY_name}! Our citizens voted to say hi. 52 to 48.</RimGram_RvFirstContact_Republic_1>
+  <RimGram_RvFirstContact_Republic_2>Open borders, open markets, open minds. Welcome, {COLONY_name}.</RimGram_RvFirstContact_Republic_2>
+  <RimGram_RvFirstContact_Merchant_0>New customer detected: {COLONY_name}. Our catalogue is attached. Prices negotiable, fees are not.</RimGram_RvFirstContact_Merchant_0>
+  <RimGram_RvFirstContact_Merchant_1>{COLONY_name}! Welcome to the market. First trade gets a free logo sticker.</RimGram_RvFirstContact_Merchant_1>
+  <RimGram_RvFirstContact_Merchant_2>Every new contact is an opportunity. Hi {COLONY_name}, what are you buying?</RimGram_RvFirstContact_Merchant_2>
+  <RimGram_RvFirstContact_Martial_0>Contact logged: {COLONY_name}. Threat level under review. Stay in your lane.</RimGram_RvFirstContact_Martial_0>
+  <RimGram_RvFirstContact_Martial_1>Our fleet has seen you, {COLONY_name}. Our fleet sees everything.</RimGram_RvFirstContact_Martial_1>
+  <RimGram_RvFirstContact_Martial_2>Welcome. Weapons cold, please. Ours are always warm.</RimGram_RvFirstContact_Martial_2>
+  <RimGram_RvFirstContact_Hive_0>NEW NODE OBSERVED: {COLONY_name}. CURIOSITY RISING. GREETINGS.</RimGram_RvFirstContact_Hive_0>
+  <RimGram_RvFirstContact_Hive_1>We are many. You are few. We say hello in unison, {COLONY_name}.</RimGram_RvFirstContact_Hive_1>
+  <RimGram_RvFirstContact_Hive_2>Signal received. Signal parsed. Signal appreciated. Welcome, {COLONY_name}.</RimGram_RvFirstContact_Hive_2>
+  <RimGram_RvFirstContact_Glitter_0>Oh, a little rimworld ship! How charming. Welcome, {COLONY_name}.</RimGram_RvFirstContact_Glitter_0>
+  <RimGram_RvFirstContact_Glitter_1>Our children study ships like yours in history class. Welcome, {COLONY_name}!</RimGram_RvFirstContact_Glitter_1>
+  <RimGram_RvFirstContact_Glitter_2>Do you need anything, {COLONY_name}? Medicine? A hull that doesn't leak?</RimGram_RvFirstContact_Glitter_2>
+  <RimGram_RvFirstContact_Frontier_0>Another ship out here? Huh. Hi, {COLONY_name}. Got spare parts?</RimGram_RvFirstContact_Frontier_0>
+  <RimGram_RvFirstContact_Frontier_1>Out on the frontier everybody's a neighbour. Welcome, {COLONY_name}.</RimGram_RvFirstContact_Frontier_1>
+  <RimGram_RvFirstContact_Frontier_2>Saw your drive flare from three moons away, {COLONY_name}. Come by for stew.</RimGram_RvFirstContact_Frontier_2>
+  <RimGram_RvFirstContact_Pirate_0>Well well, fresh meat. Hi {COLONY_name}. Nice cargo you probably have.</RimGram_RvFirstContact_Pirate_0>
+  <RimGram_RvFirstContact_Pirate_1>{COLONY_name}, huh? We'll remember that name. For targeting purposes.</RimGram_RvFirstContact_Pirate_1>
+  <RimGram_RvFirstContact_Pirate_2>New ship on the lanes. Lads, sharpen the boarding axes.</RimGram_RvFirstContact_Pirate_2>
+  <RimGram_RvRumorCiv_0>Strange lights past the edge of the charts. Somebody big lives out there.</RimGram_RvRumorCiv_0>
+  <RimGram_RvRumorCiv_1>Picked up a broadcast in a language nobody here speaks. Creepy or exciting? Both.</RimGram_RvRumorCiv_1>
+  <RimGram_RvRumorCiv_2>They say there's an empire out past the nebula. They say a lot of things.</RimGram_RvRumorCiv_2>
+  <RimGram_RvRumorCiv_3>An unknown fleet crossed our relay last night. No hails. No names.</RimGram_RvRumorCiv_3>
+  <RimGram_RvWarOnPlayer_0>{COLONY_name} has chosen war. So be it.</RimGram_RvWarOnPlayer_0>
+  <RimGram_RvWarOnPlayer_1>To {COLONY_name}: our fleets are moving. Enjoy your last quiet week.</RimGram_RvWarOnPlayer_1>
+  <RimGram_RvWarOnPlayer_2>We have declared {COLONY_name} an enemy of {FACTION_name}. Spread the word.</RimGram_RvWarOnPlayer_2>
+  <RimGram_RvWarOnPlayer_3>Diplomacy failed. Engineers, load the torpedoes.</RimGram_RvWarOnPlayer_3>
+  <RimGram_RvPlayerWar_0>WAR: {COLONY_name} and {EXTRA} are now in open conflict.</RimGram_RvPlayerWar_0>
+  <RimGram_RvPlayerWar_1>Shipping lanes near {COLONY_name} declared unsafe as war with {EXTRA} begins.</RimGram_RvPlayerWar_1>
+  <RimGram_RvPlayerWar_2>Analysts give {COLONY_name} a 30% chance against {EXTRA}. Analysts have been wrong before.</RimGram_RvPlayerWar_2>
+  <RimGram_RvPeaceWithPlayer_0>Peace with {COLONY_name}. We'll be watching.</RimGram_RvPeaceWithPlayer_0>
+  <RimGram_RvPeaceWithPlayer_1>The guns go quiet. To {COLONY_name}: well fought.</RimGram_RvPeaceWithPlayer_1>
+  <RimGram_RvPeaceWithPlayer_2>Treaty signed with {COLONY_name}. Our historians will call it a victory either way.</RimGram_RvPeaceWithPlayer_2>
+  <RimGram_RvCivWar_0>WAR DECLARED: {EXTRA}. Traders advised to avoid the border.</RimGram_RvCivWar_0>
+  <RimGram_RvCivWar_1>Fleets mobilising: {EXTRA}. Popcorn prices up 300%.</RimGram_RvCivWar_1>
+  <RimGram_RvCivWar_2>Another war in the sector: {EXTRA}. Refugee relays on standby.</RimGram_RvCivWar_2>
+  <RimGram_RvCivWarDeclare_0>{TARGETFACTION_name} has pushed us too far. War it is.</RimGram_RvCivWarDeclare_0>
+  <RimGram_RvCivWarDeclare_1>Citizens of {FACTION_name}: we march against {TARGETFACTION_name}.</RimGram_RvCivWarDeclare_1>
+  <RimGram_RvCivWarDeclare_2>To {TARGETFACTION_name}: you had your chance.</RimGram_RvCivWarDeclare_2>
+  <RimGram_RvRumorWar_0>Unconfirmed reports: {EXTRA} is at war with someone nobody has heard of.</RimGram_RvRumorWar_0>
+  <RimGram_RvRumorWar_1>Wreckage drifting from beyond the charts. {EXTRA} fleets were seen heading there.</RimGram_RvRumorWar_1>
+  <RimGram_RvCivPeace_0>PEACE: {EXTRA} have signed a treaty. Insurance rates drop.</RimGram_RvCivPeace_0>
+  <RimGram_RvCivPeace_1>The war is over: {EXTRA}. Scrap dealers are devastated.</RimGram_RvCivPeace_1>
+  <RimGram_RvColonyTaken_0>{COLONY_name} has seized {EXTRA}. New flags are going up.</RimGram_RvColonyTaken_0>
+  <RimGram_RvColonyTaken_1>{EXTRA} wakes up under new management: {COLONY_name}.</RimGram_RvColonyTaken_1>
+  <RimGram_RvColonyFounded_0>We founded {EXTRA} today! Population: small. Hopes: huge.</RimGram_RvColonyFounded_0>
+  <RimGram_RvColonyFounded_1>Planted the flag at {EXTRA}. Somebody please water the flag.</RimGram_RvColonyFounded_1>
+  <RimGram_RvColonyFounded_2>{EXTRA} is officially a colony of {COLONY_name}. I cried a little. Maybe a lot.</RimGram_RvColonyFounded_2>
+  <RimGram_RvColonyFounded_3>New home unlocked: {EXTRA}. First rule: we don't talk about the landing.</RimGram_RvColonyFounded_3>
+  <RimGram_RvAnomaly_0>Sensors picked up something weird: {EXTRA}. Science team is either thrilled or terrified.</RimGram_RvAnomaly_0>
+  <RimGram_RvAnomaly_1>Found a {EXTRA} out here. I am not touching it. Somebody else touch it.</RimGram_RvAnomaly_1>
+  <RimGram_RvAnomaly_2>Our researcher hasn't slept since we found the {EXTRA}. Neither have I, but for different reasons.</RimGram_RvAnomaly_2>
+  <RimGram_RvAnomaly_3>The universe is strange and today it proved it. #{EXTRA}</RimGram_RvAnomaly_3>
+  <RimGram_RvCouncil_0>GALACTIC COUNCIL: resolution passed: {EXTRA}.</RimGram_RvCouncil_0>
+  <RimGram_RvCouncil_1>The Council has spoken. '{EXTRA}' is now law across member worlds.</RimGram_RvCouncil_1>
+  <RimGram_RvCouncil_2>Delegates celebrate '{EXTRA}'. Smugglers less so.</RimGram_RvCouncil_2>
+  <RimGram_RvFlow_Harmony_0>Something woke up inside me today. It feels like… music I can almost hear.</RimGram_RvFlow_Harmony_0>
+  <RimGram_RvFlow_Harmony_1>I moved a cup without touching it. I'm choosing to stay calm about this.</RimGram_RvFlow_Harmony_1>
+  <RimGram_RvFlow_Harmony_2>The Flow is real. And it's warm. #Harmony</RimGram_RvFlow_Harmony_2>
+  <RimGram_RvFlow_Rupture_0>I can feel everyone's fear on this ship. I like it more than I should.</RimGram_RvFlow_Rupture_0>
+  <RimGram_RvFlow_Rupture_1>Something broke open inside me. It's loud. It's angry. It's mine.</RimGram_RvFlow_Rupture_1>
+  <RimGram_RvFlow_Rupture_2>The Flow answers to strength. Lucky me. #Rupture</RimGram_RvFlow_Rupture_2>
+  <RimGram_RvSpaceLife_0>Day 100 without gravity. My hair has achieved independence.</RimGram_RvSpaceLife_0>
+  <RimGram_RvSpaceLife_1>Window view today: infinite darkness and one suspicious asteroid.</RimGram_RvSpaceLife_1>
+  <RimGram_RvSpaceLife_2>Miss the smell of rain. The recycled air smells like feet and ambition.</RimGram_RvSpaceLife_2>
+  <RimGram_RvSpaceLife_3>Cryopod check: still cold, still creepy, still not sleeping in one.</RimGram_RvSpaceLife_3>
+  <RimGram_RvSpaceLife_4>Galley served 'nutrient loaf' again. It was served with confidence.</RimGram_RvSpaceLife_4>
+  <RimGram_RvSpaceLife_5>EVA selfie! The visor reflection makes me look heroic. I was fixing a toilet vent.</RimGram_RvSpaceLife_5>
+  <RimGram_RvSpaceLife_6>Someone set the airlock playlist to dramatic music. I approve.</RimGram_RvSpaceLife_6>
+  <RimGram_RvSpaceLife_7>Ship life tip: never ask the engineer what that noise was.</RimGram_RvSpaceLife_7>
+  <RimGram_RvSpaceLife_8>Looked at the stars for an hour today. They didn't look back. Rude.</RimGram_RvSpaceLife_8>
+  <RimGram_RvSpaceLife_9>Hydroponics bay smells like a forest if you close your eyes and lie to yourself.</RimGram_RvSpaceLife_9>
+  <RimGram_RvStrangerChatter_0>Asteroid miner update: found nickel, iron, and one very angry space bug.</RimGram_RvStrangerChatter_0>
+  <RimGram_RvStrangerChatter_1>Selling slightly used reactor parts. Glow is normal. Probably.</RimGram_RvStrangerChatter_1>
+  <RimGram_RvStrangerChatter_2>Pilgrimage day 40. The holy relay is still 300 light years away. Faith!</RimGram_RvStrangerChatter_2>
+  <RimGram_RvStrangerChatter_3>Bounty board is full this week. If you see a man with a golden eyepatch, call me.</RimGram_RvStrangerChatter_3>
+  <RimGram_RvStrangerChatter_4>Customs officer at the jump gate asked if I had 'anything to declare'. I declared my sadness.</RimGram_RvStrangerChatter_4>
+  <RimGram_RvStrangerChatter_5>Hauling ice across the belt. 6 months alone. I've started naming the crates.</RimGram_RvStrangerChatter_5>
+  <RimGram_RvStrangerChatter_6>Rumour on the station: someone found an archotech fragment. Rumour on the station: someone always does.</RimGram_RvStrangerChatter_6>
+  <RimGram_RvStrangerChatter_7>Docking fees went up again. Space is free, parking is not.</RimGram_RvStrangerChatter_7>
+  <RimGram_RvVoice_Imperial_0>The Emperor's birthday parade went beautifully. Attendance was mandatory and joyful.</RimGram_RvVoice_Imperial_0>
+  <RimGram_RvVoice_Imperial_1>New noble titles available. Inquire with your nearest herald. Bring silver.</RimGram_RvVoice_Imperial_1>
+  <RimGram_RvVoice_Imperial_2>Order is peace. Peace is order. The Throne thanks you for your obedience.</RimGram_RvVoice_Imperial_2>
+  <RimGram_RvVoice_Imperial_3>Today our fleets saluted the Crown in perfect formation. Glory to {FACTION_name}.</RimGram_RvVoice_Imperial_3>
+  <RimGram_RvVoice_Holy_0>Daily reminder: the stars are listening. Behave.</RimGram_RvVoice_Holy_0>
+  <RimGram_RvVoice_Holy_1>Our temple ship completed its 1000th orbit of prayer.</RimGram_RvVoice_Holy_1>
+  <RimGram_RvVoice_Holy_2>Doubt is a cold vacuum. Faith is a warm hull.</RimGram_RvVoice_Holy_2>
+  <RimGram_RvVoice_Holy_3>Pilgrims welcome. Heretics also welcome, for different activities.</RimGram_RvVoice_Holy_3>
+  <RimGram_RvVoice_Republic_0>Election season! Please stop sending candidate holograms to children.</RimGram_RvVoice_Republic_0>
+  <RimGram_RvVoice_Republic_1>The Senate debated for 14 hours. Outcome: another debate.</RimGram_RvVoice_Republic_1>
+  <RimGram_RvVoice_Republic_2>Free speech, free trade, free coffee on Fridays. That's {FACTION_name}.</RimGram_RvVoice_Republic_2>
+  <RimGram_RvVoice_Republic_3>New infrastructure bill passed. The space road will be ready in only 40 years.</RimGram_RvVoice_Republic_3>
+  <RimGram_RvVoice_Merchant_0>Quarterly profits up 12%. Morale up 0%. Investors delighted.</RimGram_RvVoice_Merchant_0>
+  <RimGram_RvVoice_Merchant_1>Limited offer: buy one shuttle, get the second at 5% off. Terms apply. Many terms.</RimGram_RvVoice_Merchant_1>
+  <RimGram_RvVoice_Merchant_2>Customer satisfaction is our priority #47.</RimGram_RvVoice_Merchant_2>
+  <RimGram_RvVoice_Merchant_3>Our new logo has more stars. That means quality.</RimGram_RvVoice_Merchant_3>
+  <RimGram_RvVoice_Martial_0>Drill completed in 4 minutes flat. The enemy would have had no chance. The enemy was a cardboard target.</RimGram_RvVoice_Martial_0>
+  <RimGram_RvVoice_Martial_1>Strength through discipline. Discipline through push-ups.</RimGram_RvVoice_Martial_1>
+  <RimGram_RvVoice_Martial_2>Our borders are secure. Our patience is not.</RimGram_RvVoice_Martial_2>
+  <RimGram_RvVoice_Martial_3>New warship christened today. We named it 'Diplomacy'.</RimGram_RvVoice_Martial_3>
+  <RimGram_RvVoice_Hive_0>WE HAVE OPTIMISED BREAKFAST. EFFICIENCY UP 3%. DELIGHT UNCHANGED.</RimGram_RvVoice_Hive_0>
+  <RimGram_RvVoice_Hive_1>One thought. Many minds. Today the thought was about weather.</RimGram_RvVoice_Hive_1>
+  <RimGram_RvVoice_Hive_2>Individuality detected in sector 7. Correcting gently.</RimGram_RvVoice_Hive_2>
+  <RimGram_RvVoice_Hive_3>We dreamed of the old Earth. All of us. At once. It was nice.</RimGram_RvVoice_Hive_3>
+  <RimGram_RvVoice_Glitter_0>Our medical bays now regrow limbs in under an hour. Sorry, rimworlders.</RimGram_RvVoice_Glitter_0>
+  <RimGram_RvVoice_Glitter_1>Poetry festival this week. The AIs are winning again.</RimGram_RvVoice_Glitter_1>
+  <RimGram_RvVoice_Glitter_2>Reminder: please don't bring muffalo through the spaceport. Again.</RimGram_RvVoice_Glitter_2>
+  <RimGram_RvVoice_Glitter_3>Life here is easy. Too easy. Some of us have started breaking things on purpose.</RimGram_RvVoice_Glitter_3>
+  <RimGram_RvVoice_Frontier_0>Fixed the life support with tape again. Tape is the true backbone of civilization.</RimGram_RvVoice_Frontier_0>
+  <RimGram_RvVoice_Frontier_1>Grew our first tomato in vacuum soil. Named it Hope.</RimGram_RvVoice_Frontier_1>
+  <RimGram_RvVoice_Frontier_2>Out here, neighbours are 2 light weeks away and still borrow your tools.</RimGram_RvVoice_Frontier_2>
+  <RimGram_RvVoice_Frontier_3>Frontier life: no laws, no taxes, no hot water.</RimGram_RvVoice_Frontier_3>
+  <RimGram_RvVoice_Pirate_0>Fresh loot, fresh paint, fresh ego. Good week for {FACTION_name}.</RimGram_RvVoice_Pirate_0>
+  <RimGram_RvVoice_Pirate_1>Lost a ship to {COLONY_name}'s turrets. Rude. We'll be back.</RimGram_RvVoice_Pirate_1>
+  <RimGram_RvVoice_Pirate_2>Boarding party recruitment open. Benefits: none. Fun: plenty.</RimGram_RvVoice_Pirate_2>
+  <RimGram_RvVoice_Pirate_3>Merchant ships of the sector, consider this your friendly reminder.</RimGram_RvVoice_Pirate_3>
+</LanguageData>

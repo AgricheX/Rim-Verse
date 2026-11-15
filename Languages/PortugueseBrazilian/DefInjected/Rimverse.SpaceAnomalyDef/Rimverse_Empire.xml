@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Anomaly_DerelictColonyShip.label>nave colonial abandonada</Rimverse_Anomaly_DerelictColonyShip.label>
+  <Rimverse_Anomaly_DerelictColonyShip.description>Uma nave colonial que nunca chegou, à deriva e fria.</Rimverse_Anomaly_DerelictColonyShip.description>
+  <Rimverse_Anomaly_AncientBeacon.label>farol antigo</Rimverse_Anomaly_AncientBeacon.label>
+  <Rimverse_Anomaly_AncientBeacon.description>Um farol que ainda pulsa uma mensagem que ninguém lê.</Rimverse_Anomaly_AncientBeacon.description>
+  <Rimverse_Anomaly_PrecursorRuins.label>ruínas precursoras</Rimverse_Anomaly_PrecursorRuins.label>
+  <Rimverse_Anomaly_PrecursorRuins.description>Salões enterrados de uma civilização de máquinas. Precisa de uma colônia para escavar.</Rimverse_Anomaly_PrecursorRuins.description>
+  <Rimverse_Anomaly_CrystalLife.label>forma de vida cristalina</Rimverse_Anomaly_CrystalLife.label>
+  <Rimverse_Anomaly_CrystalLife.description>Cristais que crescem, se movem e parecem escutar.</Rimverse_Anomaly_CrystalLife.description>
+  <Rimverse_Anomaly_GravityWell.label>anomalia gravitacional</Rimverse_Anomaly_GravityWell.label>
+  <Rimverse_Anomaly_GravityWell.description>O espaço se dobra em volta de absolutamente nada.</Rimverse_Anomaly_GravityWell.description>
+  <Rimverse_Anomaly_DarkMatterPocket.label>bolsão de matéria escura</Rimverse_Anomaly_DarkMatterPocket.label>
+  <Rimverse_Anomaly_DarkMatterPocket.description>Um bolsão de algo mais pesado do que deveria.</Rimverse_Anomaly_DarkMatterPocket.description>
+  <Rimverse_Anomaly_AbandonedMine.label>mina abandonada</Rimverse_Anomaly_AbandonedMine.label>
+  <Rimverse_Anomaly_AbandonedMine.description>Poços antigos com minério ainda nas paredes. Precisa de uma colônia para escavar.</Rimverse_Anomaly_AbandonedMine.description>
+  <Rimverse_Anomaly_MechHive.label>colmeia mecanoide adormecida</Rimverse_Anomaly_MechHive.label>
+  <Rimverse_Anomaly_MechHive.description>Um ninho de máquinas, dormindo. Por enquanto.</Rimverse_Anomaly_MechHive.description>
+  <Rimverse_Anomaly_ImperialWreck.label>destroço imperial</Rimverse_Anomaly_ImperialWreck.label>
+  <Rimverse_Anomaly_ImperialWreck.description>O iate de um nobre, destruído mas não esvaziado.</Rimverse_Anomaly_ImperialWreck.description>
+  <Rimverse_Anomaly_FrozenSleepers.label>adormecidos congelados</Rimverse_Anomaly_FrozenSleepers.label>
+  <Rimverse_Anomaly_FrozenSleepers.description>Cápsulas de criossono de uma era esquecida.</Rimverse_Anomaly_FrozenSleepers.description>
+  <Rimverse_Anomaly_SingingAsteroid.label>asteroide cantante</Rimverse_Anomaly_SingingAsteroid.label>
+  <Rimverse_Anomaly_SingingAsteroid.description>Uma rocha que zumbe em todas as faixas de rádio.</Rimverse_Anomaly_SingingAsteroid.description>
+  <Rimverse_Anomaly_TimeDilation.label>campo de dilatação temporal</Rimverse_Anomaly_TimeDilation.label>
+  <Rimverse_Anomaly_TimeDilation.description>Os relógios andam devagar aqui. Muito devagar.</Rimverse_Anomaly_TimeDilation.description>
+  <Rimverse_Anomaly_AlienGarden.label>jardim alienígena</Rimverse_Anomaly_AlienGarden.label>
+  <Rimverse_Anomaly_AlienGarden.description>Plantas que florescem no vácuo.</Rimverse_Anomaly_AlienGarden.description>
+  <Rimverse_Anomaly_VoidSignal.label>sinal do vazio</Rimverse_Anomaly_VoidSignal.label>
+  <Rimverse_Anomaly_VoidSignal.description>Uma mensagem de entre as estrelas. Ela sabe o seu nome.</Rimverse_Anomaly_VoidSignal.description>
+  <Rimverse_Anomaly_LostArchive.label>arquivo perdido</Rimverse_Anomaly_LostArchive.label>
+  <Rimverse_Anomaly_LostArchive.description>Um cofre de dados sob a superfície. Precisa de uma colônia para escavar.</Rimverse_Anomaly_LostArchive.description>
+  <Rimverse_Anomaly_FossilFields.label>campos de fósseis</Rimverse_Anomaly_FossilFields.label>
+  <Rimverse_Anomaly_FossilFields.description>Ossos de coisas que viveram aqui há muito tempo. Precisa de uma colônia para escavar.</Rimverse_Anomaly_FossilFields.description>
+  <Rimverse_Anomaly_PirateCache.label>esconderijo pirata</Rimverse_Anomaly_PirateCache.label>
+  <Rimverse_Anomaly_PirateCache.description>Um esconderijo. Alguém pode voltar para buscar.</Rimverse_Anomaly_PirateCache.description>
+  <Rimverse_Anomaly_ShatteredMoon.label>lua estilhaçada</Rimverse_Anomaly_ShatteredMoon.label>
+  <Rimverse_Anomaly_ShatteredMoon.description>Os pedaços de uma lua, ricos em metal.</Rimverse_Anomaly_ShatteredMoon.description>
+  <Rimverse_Anomaly_WarpScar.label>cicatriz de dobra</Rimverse_Anomaly_WarpScar.label>
+  <Rimverse_Anomaly_WarpScar.description>Onde uma nave um dia rasgou o espaço.</Rimverse_Anomaly_WarpScar.description>
+  <Rimverse_Anomaly_ArchotechWhisper.label>sussurro arcotech</Rimverse_Anomaly_ArchotechWhisper.label>
+  <Rimverse_Anomaly_ArchotechWhisper.description>Uma mente além das mentes, pensando muito devagar em você.</Rimverse_Anomaly_ArchotechWhisper.description>
+</LanguageData>

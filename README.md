@@ -17,6 +17,8 @@ It uses its own ship system (it does not depend on the Odyssey gravship) and run
 - Four simple meters keep a ship alive: **integrity, air, power and heat**.
 - Launch to orbit and land again; the whole ship (buildings, terrain and pawns) moves with you.
 - A ship tab on the bridge with mass, thrust, fuel, crew, pilot and dodge, plus alerts for low air, high heat and low integrity.
+- A compact ship HUD in the top right corner, designed to sit next to RimHUD and similar mods.
+- Every ship building lives in a single **Rim Verse** architect tab; benches, furniture and decoration stay in the vanilla tabs.
 
 ### Space and travel
 - Every game gets a generated home star system with planets, moons, belts and rings, with real orbits, gravity, temperature and atmosphere.
@@ -31,6 +33,7 @@ It uses its own ship system (it does not depend on the Odyssey gravship) and run
 - 94 policies across government, ideology, economy, xeno and logistics, with elections, reforms, coups, civil wars and secession.
 - Real fleets travel the galaxy, fight off screen and can arrive at your system as actual raids.
 - First contact, diplomacy, orbital traders and physical currencies.
+- **Information fog**: depending on your starting origin you know every civilization, only some of them, or none. The rest must be discovered through rumors, contact and intel.
 
 ### Combat
 - Ship to ship combat with range bands, orders (approach, hold, flee, board), shields, missiles and point defense.
@@ -44,6 +47,21 @@ It uses its own ship system (it does not depend on the Odyssey gravship) and run
 
 ### Colonies and endgame
 - Found abstract colonies on other worlds, build industries and collect income.
+- Colonies grow through tiers, get their own facilities, tithe modes and governors, and face events that ask for your decision.
+- Found outposts on the planet surface by caravan.
+
+### Your empire
+- An **Empire** tab with your own government, civics and edicts.
+- Build fleets of hulls and squads at your shipyards and send them to attack, capture, raid or blockade other systems. Battles can be auto-resolved or fought on a real map.
+- Claims, war goals (conquest, subjugation, plunder, humiliation), war score and peace terms.
+- Ask allies for help, found a federation, keep vassals, and watch out for coalitions if you grow too strong.
+- A **Galactic Council** that votes on resolutions you can propose and lobby for.
+- Space anomalies found while scanning, with research chapters, dangers and rewards.
+
+### The Great Flow
+- Some people are born sensitive to the Flow, or awaken it with a Resonance Shard.
+- Two paths, **Harmony** and **Rupture**, with abilities such as push, sense, heal, calm, choke and storm.
+- The Beam Blade, a melee weapon built around a Resonance Shard.
 - Endgame crises and several endings, with the game continuing afterwards.
 
 ### Scenarios
@@ -76,6 +94,10 @@ Extra content loads automatically when these are active:
 | [NL] Facial Animation, Yayo's Animation | Lineage appearance support |
 | Save Our Ship 2 | Rimverse suits protect in SOS2 space |
 | Vanilla Gravship Expanded 1 & 2 | Their substructures count as hull and grav engines as maneuvering thrusters |
+| The Force (Standalone + Lightsaber) | The Great Flow and the Force are linked: Harmony with the Light, Rupture with the Dark, Resonance Shards work as kyber crystals |
+| RimGram | Posts about your voyages, first contacts, wars, colonies, anomalies and life aboard, with a voice for each civilization, no signal during warp and a Star Network news feed |
+
+Rimverse also checks for many other popular mods. When another mod already does something Rimverse does (vacuum, orbital traders, map generation, flying vehicles and more), Rimverse steps aside and uses that mod instead.
 
 ## Installation
 

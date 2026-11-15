@@ -119,7 +119,7 @@ namespace Rimverse
             }
             if (attacker.known || defender.known)
             {
-                Messages.Message("Rimverse_MsgBattle".Translate(attacker.Name, defender.Name, win ? attacker.Name : defender.Name), MessageTypeDefOf.NeutralEvent, false);
+                Messages.Message("Rimverse_MsgBattle".Translate(attacker.ShownName, defender.ShownName, win ? attacker.ShownName : defender.ShownName), MessageTypeDefOf.NeutralEvent, false);
             }
         }
 

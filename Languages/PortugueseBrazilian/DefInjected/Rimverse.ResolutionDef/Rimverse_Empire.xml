@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Resolution_AntiPiracy.label>acordo antipirataria</Rimverse_Resolution_AntiPiracy.label>
+  <Rimverse_Resolution_AntiPiracy.description>Os membros caçam piratas juntos. Menos ataques em todo lugar.</Rimverse_Resolution_AntiPiracy.description>
+  <Rimverse_Resolution_FreeTrade.label>carta de livre comércio</Rimverse_Resolution_FreeTrade.label>
+  <Rimverse_Resolution_FreeTrade.description>As tarifas entre membros caem.</Rimverse_Resolution_FreeTrade.description>
+  <Rimverse_Resolution_MutualDefense.label>pacto de defesa mútua</Rimverse_Resolution_MutualDefense.label>
+  <Rimverse_Resolution_MutualDefense.description>Um ataque a um é um ataque a todos. Guerras começam menos.</Rimverse_Resolution_MutualDefense.description>
+  <Rimverse_Resolution_Rearmament.label>protocolo de rearmamento</Rimverse_Resolution_Rearmament.label>
+  <Rimverse_Resolution_Rearmament.description>Os membros concordam em reforçar suas frotas.</Rimverse_Resolution_Rearmament.description>
+  <Rimverse_Resolution_ResearchCommons.label>pesquisa compartilhada</Rimverse_Resolution_ResearchCommons.label>
+  <Rimverse_Resolution_ResearchCommons.description>Os membros compartilham seus arquivos científicos.</Rimverse_Resolution_ResearchCommons.description>
+  <Rimverse_Resolution_MigrationCompact.label>pacto migratório</Rimverse_Resolution_MigrationCompact.label>
+  <Rimverse_Resolution_MigrationCompact.description>Colonos podem se mudar livremente entre os membros.</Rimverse_Resolution_MigrationCompact.description>
+  <Rimverse_Resolution_ColonialCharter.label>carta colonial</Rimverse_Resolution_ColonialCharter.label>
+  <Rimverse_Resolution_ColonialCharter.description>Regras claras para novas colônias acalmam todo mundo.</Rimverse_Resolution_ColonialCharter.description>
+  <Rimverse_Resolution_WarTribunal.label>tribunal de crimes de guerra</Rimverse_Resolution_WarTribunal.label>
+  <Rimverse_Resolution_WarTribunal.description>Agressores enfrentam o julgamento do conselho.</Rimverse_Resolution_WarTribunal.description>
+  <Rimverse_Resolution_PrecursorAccord.label>acordo precursor</Rimverse_Resolution_PrecursorAccord.label>
+  <Rimverse_Resolution_PrecursorAccord.description>Os sítios precursores são estudados em conjunto.</Rimverse_Resolution_PrecursorAccord.description>
+  <Rimverse_Resolution_Sanctions.label>sanções</Rimverse_Resolution_Sanctions.label>
+  <Rimverse_Resolution_Sanctions.description>Os membros param de negociar com o alvo.</Rimverse_Resolution_Sanctions.description>
+  <Rimverse_Resolution_Censure.label>censura</Rimverse_Resolution_Censure.label>
+  <Rimverse_Resolution_Censure.description>Uma repreensão formal de todo o conselho.</Rimverse_Resolution_Censure.description>
+  <Rimverse_Resolution_Embargo.label>embargo</Rimverse_Resolution_Embargo.label>
+  <Rimverse_Resolution_Embargo.description>Naves são barradas nos portos do alvo.</Rimverse_Resolution_Embargo.description>
+  <Rimverse_Resolution_Intervention.label>intervenção militar</Rimverse_Resolution_Intervention.label>
+  <Rimverse_Resolution_Intervention.description>O conselho autoriza o uso de força contra o alvo.</Rimverse_Resolution_Intervention.description>
+</LanguageData>

@@ -54,6 +54,7 @@ namespace Rimverse
             }
             GameComponent_Civilizations gc = GameComponent_Civilizations.Instance;
             Faction f = gc.EnsureFaction(c);
+            c.AddIntel(5f);
             Pawn negotiator = Negotiator(map);
             TradeShip existing = map.passingShipManager.passingShips.OfType<TradeShip>().FirstOrDefault(s => s.Faction == f && !s.Departed);
             if (existing == null)

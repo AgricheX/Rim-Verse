@@ -25,6 +25,8 @@ namespace Rimverse
         public bool shipCombatEnabled = true;
         public bool lineagesEnabled = true;
         public bool lifeAboardEnabled = true;
+        public bool hudOnlyShip;
+        public float hudOffsetY;
 
         public bool fluxoEnabled = true;
         public float fluxoSensitiveChance = 0.005f;
@@ -113,6 +115,8 @@ namespace Rimverse
             Scribe_Values.Look(ref shipCombatEnabled, "shipCombatEnabled", true);
             Scribe_Values.Look(ref lineagesEnabled, "lineagesEnabled", true);
             Scribe_Values.Look(ref lifeAboardEnabled, "lifeAboardEnabled", true);
+            Scribe_Values.Look(ref hudOnlyShip, "hudOnlyShip", false);
+            Scribe_Values.Look(ref hudOffsetY, "hudOffsetY", 0f);
             Scribe_Values.Look(ref fluxoEnabled, "fluxoEnabled", true);
             Scribe_Values.Look(ref fluxoSensitiveChance, "fluxoSensitiveChance", 0.005f);
             Scribe_Values.Look(ref qolEnabled, "qolEnabled", true);

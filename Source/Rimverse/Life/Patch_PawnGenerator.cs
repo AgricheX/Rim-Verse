@@ -12,6 +12,8 @@ namespace Rimverse
             try
             {
                 LineageUtility.TryApplyFromFaction(__result);
+                FlowUtility.OnGenerated(__result);
+                FlowForceBridge.Sync(__result);
             }
             catch (System.Exception ex)
             {

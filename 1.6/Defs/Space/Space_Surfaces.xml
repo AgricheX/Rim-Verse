@@ -51,6 +51,7 @@
     <disableMapClippers>true</disableMapClippers>
     <genSteps>
       <li>Rimverse_AirlessBody</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>Rimverse_HostileWorld</biome>
@@ -77,6 +78,7 @@
       <li>Snow</li>
       <li>Animals</li>
       <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>TemperateForest</biome>
@@ -103,6 +105,7 @@
       <li>Snow</li>
       <li>Animals</li>
       <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>TemperateSwamp</biome>
@@ -129,6 +132,7 @@
       <li>Snow</li>
       <li>Animals</li>
       <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>TropicalRainforest</biome>
@@ -155,6 +159,7 @@
       <li>Snow</li>
       <li>Animals</li>
       <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>TropicalSwamp</biome>
@@ -181,6 +186,7 @@
       <li>Snow</li>
       <li>Animals</li>
       <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>AridShrubland</biome>
@@ -207,6 +213,7 @@
       <li>Snow</li>
       <li>Animals</li>
       <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>Desert</biome>
@@ -233,6 +240,7 @@
       <li>Snow</li>
       <li>Animals</li>
       <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>ExtremeDesert</biome>
@@ -259,6 +267,7 @@
       <li>Snow</li>
       <li>Animals</li>
       <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>BorealForest</biome>
@@ -285,6 +294,7 @@
       <li>Snow</li>
       <li>Animals</li>
       <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>Tundra</biome>
@@ -311,6 +321,7 @@
       <li>Snow</li>
       <li>Animals</li>
       <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>ColdBog</biome>
@@ -337,6 +348,7 @@
       <li>Snow</li>
       <li>Animals</li>
       <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>IceSheet</biome>
@@ -363,6 +375,7 @@
       <li>Snow</li>
       <li>Animals</li>
       <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>SeaIce</biome>

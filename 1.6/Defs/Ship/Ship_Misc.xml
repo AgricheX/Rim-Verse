@@ -3,7 +3,7 @@
 
   <DesignationCategoryDef>
     <defName>Rimverse_Ship</defName>
-    <label>starship</label>
+    <label>Rim Verse</label>
     <order>49</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>

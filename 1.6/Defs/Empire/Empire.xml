@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <MainButtonDef>
+    <defName>Rimverse_Empire</defName>
+    <label>empire</label>
+    <description>Your interstellar realm: government, edicts, sectors, fleets, wars, federation, the galactic council and anomalies.</description>
+    <tabWindowClass>Rimverse.MainTabWindow_Empire</tabWindowClass>
+    <order>66</order>
+    <minimized>true</minimized>
+  </MainButtonDef>
+
+  <LetterDef>
+    <defName>Rimverse_ColonySituation</defName>
+    <letterClass>Rimverse.ChoiceLetter_ColonySituation</letterClass>
+    <color>(95, 151, 191)</color>
+    <flashInterval>-1</flashInterval>
+  </LetterDef>
+
+  <WorldObjectDef>
+    <defName>Rimverse_PlayerOutpost</defName>
+    <label>outpost</label>
+    <description>A settlement of your realm, run by its own settlers.</description>
+    <worldObjectClass>Rimverse.WorldObject_PlayerOutpost</worldObjectClass>
+    <texture>World/WorldObjects/Camp</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/Camp</expandingIconTexture>
+    <expandingIconPriority>55</expandingIconPriority>
+    <useDynamicDrawer>false</useDynamicDrawer>
+    <selectable>true</selectable>
+  </WorldObjectDef>
+
+  <Rimverse.EdictDef>
+    <defName>Rimverse_Edict_MartialLaw</defName>
+    <label>martial law</label>
+    <description>Soldiers on every corner. Order returns, business suffers.</description>
+    <costSilver>300</costSilver>
+    <costInfluence>20</costInfluence>
+    <durationDays>30</durationDays>
+    <effects>
+      <stability>15</stability>
+      <income>-0.1</income>
+    </effects>
+    <order>0</order>
+  </Rimverse.EdictDef>
+
+  <Rimverse.EdictDef>
+    <defName>Rimverse_Edict_TradeFair</defName>
+    <label>trade fair</label>
+    <description>A season of open markets across your colonies.</description>
+    <costSilver>2000</costSilver>
+    <costInfluence>10</costInfluence>
+    <durationDays>60</durationDays>
+    <effects>
+      <income>0.15</income>
+      <attention>0.1</attention>
+    </effects>
+    <order>1</order>
+  </Rimverse.EdictDef>
+
+  <Rimverse.EdictDef>
+    <defName>Rimverse_Edict_ResearchGrant</defName>
+    <label>research grants</label>
+    <description>Fund labs and scholars across the realm.</description>
+    <costSilver>3000</costSilver>
+    <costInfluence>15</costInfluence>
+    <durationDays>60</durationDays>
+    <effects>
+      <research>40</research>
+    </effects>
+    <order>2</order>
+  </Rimverse.EdictDef>
+
+  <Rimverse.EdictDef>
+    <defName>Rimverse_Edict_RecruitmentDrive</defName>
+    <label>recruitment drive</label>
+    <description>Posters, speeches and signing bonuses for the militia.</description>
+    <costSilver>1500</costSilver>
+    <costInfluence>15</costInfluence>
+    <durationDays>60</durationDays>
+    <effects>
+      <defense>20</defense>
+      <stability>-3</stability>
+    </effects>
+    <order>3</order>
+  </Rimverse.EdictDef>
+
+  <Rimverse.EdictDef>
+    <defName>Rimverse_Edict_FoodRationing</defName>
+    <label>food rationing</label>
+    <description>Strict rations stretch every harvest.</description>
+    <costSilver>0</costSilver>
+    <costInfluence>5</costInfluence>
+    <durationDays>30</durationDays>
+    <effects>
+      <food>15</food>
+      <stability>-5</stability>
+    </effects>
+    <order>4</order>
+  </Rimverse.EdictDef>
+
+  <Rimverse.EdictDef>
+    <defName>Rimverse_Edict_Propaganda</defName>
+    <label>propaganda campaign</label>
+    <description>Broadcast the glory of the realm on every channel.</description>
+    <costSilver>1000</costSilver>
+    <costInfluence>10</costInfluence>
+    <durationDays>60</durationDays>
+    <effects>
+      <stability>8</stability>
+      <influence>1</influence>
+    </effects>
+    <order>5</order>
+  </Rimverse.EdictDef>
+
+  <Rimverse.EdictDef>
+    <defName>Rimverse_Edict_FleetDrills</defName>
+    <label>fleet drills</label>
+    <description>Constant exercises keep the crews sharp.</description>
+    <costSilver>1000</costSilver>
+    <costInfluence>10</costInfluence>
+    <durationDays>45</durationDays>
+    <effects>
+      <defense>15</defense>
+      <fleetUpkeep>0.1</fleetUpkeep>
+    </effects>
+    <order>6</order>
+  </Rimverse.EdictDef>
+
+  <Rimverse.EdictDef>
+    <defName>Rimverse_Edict_SettlerIncentives</defName>
+    <label>settler incentives</label>
+    <description>Free land and passage for anyone willing to move.</description>
+    <costSilver>2500</costSilver>
+    <costInfluence>20</costInfluence>
+    <durationDays>90</durationDays>
+    <effects>
+      <growth>0.5</growth>
+      <capacity>10</capacity>
+    </effects>
+    <order>7</order>
+  </Rimverse.EdictDef>
+
+  <Rimverse.EdictDef>
+    <defName>Rimverse_Edict_LowProfile</defName>
+    <label>low profile</label>
+    <description>Dim the beacons, quiet the radio, trade through middlemen.</description>
+    <costSilver>500</costSilver>
+    <costInfluence>10</costInfluence>
+    <durationDays>60</durationDays>
+    <effects>
+      <attention>-0.3</attention>
+      <income>-0.1</income>
+    </effects>
+    <order>8</order>
+  </Rimverse.EdictDef>
+
+  <Rimverse.EdictDef>
+    <defName>Rimverse_Edict_DiplomaticCorps</defName>
+    <label>diplomatic corps</label>
+    <description>Envoys and gifts to every neighbour.</description>
+    <costSilver>1500</costSilver>
+    <costInfluence>25</costInfluence>
+    <durationDays>90</durationDays>
+    <effects>
+      <opinion>3</opinion>
+      <influence>1</influence>
+    </effects>
+    <order>9</order>
+  </Rimverse.EdictDef>
+
+  <Rimverse.EdictDef>
+    <defName>Rimverse_Edict_WarEconomy</defName>
+    <label>war economy</label>
+    <description>Every factory turns to the war. Only while at war.</description>
+    <costSilver>0</costSilver>
+    <costInfluence>30</costInfluence>
+    <durationDays>60</durationDays>
+    <effects>
+      <defense>30</defense>
+      <income>-0.15</income>
+      <fleetUpkeep>-0.25</fleetUpkeep>
+    </effects>
+    <war>true</war>
+    <order>10</order>
+  </Rimverse.EdictDef>
+
+  <Rimverse.EdictDef>
+    <defName>Rimverse_Edict_ShipSubsidies</defName>
+    <label>shipyard subsidies</label>
+    <description>The treasury covers part of the fleet's upkeep.</description>
+    <costSilver>2000</costSilver>
+    <costInfluence>15</costInfluence>
+    <durationDays>90</durationDays>
+    <effects>
+      <fleetUpkeep>-0.3</fleetUpkeep>
+      <income>-0.05</income>
+    </effects>
+    <research>Rimverse_Shipyards</research>
+    <order>11</order>
+  </Rimverse.EdictDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_HabitatDome</defName>
+    <label>habitat domes</label>
+    <description>Sealed domes that house many more settlers.</description>
+    <costSilver>3000</costSilver>
+    <days>20</days>
+    <upkeep>60</upkeep>
+    <minTier>0</minTier>
+    <maxCount>2</maxCount>
+    <effects>
+      <capacity>40</capacity>
+    </effects>
+    <order>0</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_OrbitalShipyard</defName>
+    <label>orbital shipyard</label>
+    <description>Builds and repairs fleet hulls in this system.</description>
+    <costSilver>10000</costSilver>
+    <days>60</days>
+    <upkeep>300</upkeep>
+    <minTier>1</minTier>
+    <maxCount>1</maxCount>
+    <effects>
+      <defense>10</defense>
+    </effects>
+    <research>Rimverse_Shipyards</research>
+    <order>1</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_PlanetaryShield</defName>
+    <label>planetary shield</label>
+    <description>A field that turns bombardment into light.</description>
+    <costSilver>12000</costSilver>
+    <days>45</days>
+    <upkeep>200</upkeep>
+    <minTier>2</minTier>
+    <maxCount>1</maxCount>
+    <effects>
+      <defense>60</defense>
+    </effects>
+    <research>Rimverse_Shields</research>
+    <order>2</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_Garrison</defName>
+    <label>garrison</label>
+    <description>Barracks and a standing militia.</description>
+    <costSilver>4000</costSilver>
+    <days>20</days>
+    <upkeep>100</upkeep>
+    <minTier>0</minTier>
+    <maxCount>2</maxCount>
+    <effects>
+      <defense>25</defense>
+      <stability>5</stability>
+    </effects>
+    <order>3</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_AdminCenter</defName>
+    <label>administrative center</label>
+    <description>Clerks, courts and a governor's office.</description>
+    <costSilver>5000</costSilver>
+    <days>30</days>
+    <upkeep>120</upkeep>
+    <minTier>1</minTier>
+    <maxCount>1</maxCount>
+    <effects>
+      <stability>10</stability>
+      <influence>1</influence>
+    </effects>
+    <research>Rimverse_ColonyAdministration</research>
+    <order>4</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_Institute</defName>
+    <label>research institute</label>
+    <description>Laboratories that feed the realm's research.</description>
+    <costSilver>6000</costSilver>
+    <days>30</days>
+    <upkeep>150</upkeep>
+    <minTier>1</minTier>
+    <maxCount>1</maxCount>
+    <effects>
+      <research>25</research>
+    </effects>
+    <research>Rimverse_Sensors</research>
+    <order>5</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_TradeExchange</defName>
+    <label>trade exchange</label>
+    <description>A market hall that draws merchants from far away.</description>
+    <costSilver>6000</costSilver>
+    <days>30</days>
+    <upkeep>120</upkeep>
+    <minTier>1</minTier>
+    <maxCount>1</maxCount>
+    <effects>
+      <income>0.25</income>
+      <attention>0.1</attention>
+    </effects>
+    <order>6</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_HydroFarms</defName>
+    <label>hydroponic farms</label>
+    <description>Racks of crops under lamps.</description>
+    <costSilver>2500</costSilver>
+    <days>15</days>
+    <upkeep>50</upkeep>
+    <minTier>0</minTier>
+    <maxCount>3</maxCount>
+    <effects>
+      <food>25</food>
+    </effects>
+    <order>7</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_OreRefinery</defName>
+    <label>ore refinery</label>
+    <description>Smelts local ore into usable metal.</description>
+    <costSilver>5000</costSilver>
+    <days>30</days>
+    <upkeep>120</upkeep>
+    <minTier>0</minTier>
+    <maxCount>2</maxCount>
+    <output>
+      <li>
+        <thingDef>Steel</thingDef>
+        <count>60</count>
+      </li>
+      <li>
+        <thingDef>Plasteel</thingDef>
+        <count>10</count>
+      </li>
+    </output>
+    <order>8</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_ComponentFab</defName>
+    <label>component fabricator</label>
+    <description>Assembles components for the realm.</description>
+    <costSilver>9000</costSilver>
+    <days>40</days>
+    <upkeep>180</upkeep>
+    <minTier>2</minTier>
+    <maxCount>1</maxCount>
+    <output>
+      <li>
+        <thingDef>ComponentIndustrial</thingDef>
+        <count>8</count>
+      </li>
+      <li>
+        <thingDef>ComponentSpacer</thingDef>
+        <count>1</count>
+      </li>
+    </output>
+    <order>9</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_MedicalCenter</defName>
+    <label>medical center</label>
+    <description>Hospitals and clinics for the settlers.</description>
+    <costSilver>4000</costSilver>
+    <days>25</days>
+    <upkeep>90</upkeep>
+    <minTier>0</minTier>
+    <maxCount>1</maxCount>
+    <effects>
+      <growth>0.3</growth>
+      <stability>5</stability>
+    </effects>
+    <output>
+      <li>
+        <thingDef>MedicineIndustrial</thingDef>
+        <count>6</count>
+      </li>
+    </output>
+    <order>10</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_Entertainment</defName>
+    <label>entertainment district</label>
+    <description>Theatres, bars and holo-arcades.</description>
+    <costSilver>3500</costSilver>
+    <days>20</days>
+    <upkeep>80</upkeep>
+    <minTier>1</minTier>
+    <maxCount>1</maxCount>
+    <effects>
+      <stability>12</stability>
+    </effects>
+    <order>11</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_SensorArray</defName>
+    <label>sensor array</label>
+    <description>Watches the sky and hides the colony's signature.</description>
+    <costSilver>3000</costSilver>
+    <days>20</days>
+    <upkeep>60</upkeep>
+    <minTier>0</minTier>
+    <maxCount>1</maxCount>
+    <effects>
+      <attention>-0.2</attention>
+      <defense>5</defense>
+    </effects>
+    <research>Rimverse_Sensors</research>
+    <order>12</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_Farmland</defName>
+    <label>farmland</label>
+    <description>Open fields of crops on a living world.</description>
+    <costSilver>1500</costSilver>
+    <days>15</days>
+    <upkeep>30</upkeep>
+    <minTier>0</minTier>
+    <maxCount>3</maxCount>
+    <surfaceOnly>true</surfaceOnly>
+    <effects>
+      <food>35</food>
+    </effects>
+    <output>
+      <li>
+        <thingDef>RawRice</thingDef>
+        <count>80</count>
+      </li>
+    </output>
+    <order>13</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_LumberCamp</defName>
+    <label>lumber camp</label>
+    <description>Cuts and stacks wood from nearby forests.</description>
+    <costSilver>1200</costSilver>
+    <days>10</days>
+    <upkeep>30</upkeep>
+    <minTier>0</minTier>
+    <maxCount>2</maxCount>
+    <surfaceOnly>true</surfaceOnly>
+    <output>
+      <li>
+        <thingDef>WoodLog</thingDef>
+        <count>150</count>
+      </li>
+    </output>
+    <order>14</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_SurfaceMine</defName>
+    <label>surface mine</label>
+    <description>Open pits that dig out metal and silver.</description>
+    <costSilver>3000</costSilver>
+    <days>25</days>
+    <upkeep>80</upkeep>
+    <minTier>0</minTier>
+    <maxCount>2</maxCount>
+    <surfaceOnly>true</surfaceOnly>
+    <output>
+      <li>
+        <thingDef>Steel</thingDef>
+        <count>80</count>
+      </li>
+      <li>
+        <thingDef>Silver</thingDef>
+        <count>50</count>
+      </li>
+    </output>
+    <order>15</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_GasRefinery</defName>
+    <label>gas refinery</label>
+    <description>Cracks gas and ice into chemfuel.</description>
+    <costSilver>4000</costSilver>
+    <days>25</days>
+    <upkeep>100</upkeep>
+    <minTier>0</minTier>
+    <maxCount>2</maxCount>
+    <spaceOnly>true</spaceOnly>
+    <output>
+      <li>
+        <thingDef>Chemfuel</thingDef>
+        <count>80</count>
+      </li>
+    </output>
+    <order>16</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_WarpCollector</defName>
+    <label>warp matter collector</label>
+    <description>Skims warp matter from local space.</description>
+    <costSilver>8000</costSilver>
+    <days>40</days>
+    <upkeep>200</upkeep>
+    <minTier>2</minTier>
+    <maxCount>1</maxCount>
+    <spaceOnly>true</spaceOnly>
+    <output>
+      <li>
+        <thingDef>Rimverse_WarpMatter</thingDef>
+        <count>15</count>
+      </li>
+    </output>
+    <research>Rimverse_WarpTheory</research>
+    <order>17</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_RingHabitat</defName>
+    <label>ring habitat</label>
+    <description>A megastructure ring that houses a nation.</description>
+    <costSilver>60000</costSilver>
+    <days>180</days>
+    <upkeep>800</upkeep>
+    <minTier>3</minTier>
+    <maxCount>1</maxCount>
+    <effects>
+      <capacity>200</capacity>
+      <stability>5</stability>
+    </effects>
+    <research>Rimverse_Megastructures</research>
+    <order>18</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ColonyFacilityDef>
+    <defName>Rimverse_Facility_Citadel</defName>
+    <label>citadel fortress</label>
+    <description>Layers of guns, bunkers and shields.</description>
+    <costSilver>40000</costSilver>
+    <days>120</days>
+    <upkeep>600</upkeep>
+    <minTier>3</minTier>
+    <maxCount>1</maxCount>
+    <effects>
+      <defense>120</defense>
+      <stability>5</stability>
+    </effects>
+    <research>Rimverse_CapitalShips</research>
+    <order>19</order>
+  </Rimverse.ColonyFacilityDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_AntiPiracy</defName>
+    <label>anti-piracy accord</label>
+    <description>Members hunt pirates together. Fewer raids everywhere.</description>
+    <effects>
+      <defense>5</defense>
+    </effects>
+    <tariffFactor>1</tariffFactor>
+    <pirateFactor>0.7</pirateFactor>
+    <warFactor>1</warFactor>
+    <favoredByPeaceful>true</favoredByPeaceful>
+    <favoredByMerchants>true</favoredByMerchants>
+    <favoredByMilitary>false</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_FreeTrade</defName>
+    <label>free trade charter</label>
+    <description>Tariffs between members are cut.</description>
+    <effects>
+      <income>0.05</income>
+    </effects>
+    <tariffFactor>1.15</tariffFactor>
+    <pirateFactor>1</pirateFactor>
+    <warFactor>1</warFactor>
+    <favoredByPeaceful>false</favoredByPeaceful>
+    <favoredByMerchants>true</favoredByMerchants>
+    <favoredByMilitary>false</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_MutualDefense</defName>
+    <label>mutual defense pact</label>
+    <description>An attack on one is an attack on all. Wars start less often.</description>
+    <tariffFactor>1</tariffFactor>
+    <pirateFactor>1</pirateFactor>
+    <warFactor>0.8</warFactor>
+    <favoredByPeaceful>true</favoredByPeaceful>
+    <favoredByMerchants>false</favoredByMerchants>
+    <favoredByMilitary>false</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_Rearmament</defName>
+    <label>rearmament protocol</label>
+    <description>Members agree to build up their fleets.</description>
+    <effects>
+      <fleetUpkeep>-0.1</fleetUpkeep>
+    </effects>
+    <tariffFactor>1</tariffFactor>
+    <pirateFactor>1</pirateFactor>
+    <warFactor>1.2</warFactor>
+    <favoredByPeaceful>false</favoredByPeaceful>
+    <favoredByMerchants>false</favoredByMerchants>
+    <favoredByMilitary>true</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_ResearchCommons</defName>
+    <label>research commons</label>
+    <description>Members share their scientific archives.</description>
+    <effects>
+      <research>20</research>
+    </effects>
+    <tariffFactor>1</tariffFactor>
+    <pirateFactor>1</pirateFactor>
+    <warFactor>1</warFactor>
+    <favoredByPeaceful>true</favoredByPeaceful>
+    <favoredByMerchants>false</favoredByMerchants>
+    <favoredByMilitary>false</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_MigrationCompact</defName>
+    <label>migration compact</label>
+    <description>Settlers may move freely between members.</description>
+    <effects>
+      <growth>0.2</growth>
+    </effects>
+    <tariffFactor>1</tariffFactor>
+    <pirateFactor>1</pirateFactor>
+    <warFactor>1</warFactor>
+    <favoredByPeaceful>true</favoredByPeaceful>
+    <favoredByMerchants>true</favoredByMerchants>
+    <favoredByMilitary>false</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_ColonialCharter</defName>
+    <label>colonial charter</label>
+    <description>Clear rules for new colonies calm everyone down.</description>
+    <effects>
+      <capacity>10</capacity>
+      <attention>-0.1</attention>
+    </effects>
+    <tariffFactor>1</tariffFactor>
+    <pirateFactor>1</pirateFactor>
+    <warFactor>1</warFactor>
+    <favoredByPeaceful>false</favoredByPeaceful>
+    <favoredByMerchants>true</favoredByMerchants>
+    <favoredByMilitary>false</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_WarTribunal</defName>
+    <label>war crimes tribunal</label>
+    <description>Aggressors face the council's judgement.</description>
+    <effects>
+      <opinion>0.5</opinion>
+    </effects>
+    <tariffFactor>1</tariffFactor>
+    <pirateFactor>1</pirateFactor>
+    <warFactor>0.85</warFactor>
+    <favoredByPeaceful>true</favoredByPeaceful>
+    <favoredByMerchants>false</favoredByMerchants>
+    <favoredByMilitary>false</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_PrecursorAccord</defName>
+    <label>precursor accord</label>
+    <description>Precursor sites are studied jointly.</description>
+    <effects>
+      <research>10</research>
+      <influence>1</influence>
+    </effects>
+    <tariffFactor>1</tariffFactor>
+    <pirateFactor>1</pirateFactor>
+    <warFactor>1</warFactor>
+    <favoredByPeaceful>true</favoredByPeaceful>
+    <favoredByMerchants>false</favoredByMerchants>
+    <favoredByMilitary>false</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_Sanctions</defName>
+    <label>sanctions</label>
+    <description>Members stop trading with the target.</description>
+    <targetsCiv>true</targetsCiv>
+    <effects>
+      <stability>-10</stability>
+      <income>-0.3</income>
+    </effects>
+    <tariffFactor>1</tariffFactor>
+    <pirateFactor>1</pirateFactor>
+    <warFactor>1</warFactor>
+    <favoredByPeaceful>true</favoredByPeaceful>
+    <favoredByMerchants>true</favoredByMerchants>
+    <favoredByMilitary>false</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_Censure</defName>
+    <label>censure</label>
+    <description>A formal rebuke from the whole council.</description>
+    <targetsCiv>true</targetsCiv>
+    <effects>
+      <stability>-5</stability>
+    </effects>
+    <tariffFactor>1</tariffFactor>
+    <pirateFactor>1</pirateFactor>
+    <warFactor>1</warFactor>
+    <favoredByPeaceful>true</favoredByPeaceful>
+    <favoredByMerchants>false</favoredByMerchants>
+    <favoredByMilitary>false</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_Embargo</defName>
+    <label>embargo</label>
+    <description>Ships are turned away from the target's ports.</description>
+    <targetsCiv>true</targetsCiv>
+    <effects>
+      <income>-0.5</income>
+    </effects>
+    <tariffFactor>1</tariffFactor>
+    <pirateFactor>1</pirateFactor>
+    <warFactor>1</warFactor>
+    <favoredByPeaceful>false</favoredByPeaceful>
+    <favoredByMerchants>true</favoredByMerchants>
+    <favoredByMilitary>true</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.ResolutionDef>
+    <defName>Rimverse_Resolution_Intervention</defName>
+    <label>military intervention</label>
+    <description>The council authorises force against the target.</description>
+    <targetsCiv>true</targetsCiv>
+    <effects>
+      <stability>-15</stability>
+    </effects>
+    <tariffFactor>1</tariffFactor>
+    <pirateFactor>1</pirateFactor>
+    <warFactor>1.1</warFactor>
+    <favoredByPeaceful>false</favoredByPeaceful>
+    <favoredByMerchants>false</favoredByMerchants>
+    <favoredByMilitary>true</favoredByMilitary>
+  </Rimverse.ResolutionDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_DerelictColonyShip</defName>
+    <label>derelict colony ship</label>
+    <description>A colony ship that never arrived, drifting cold.</description>
+    <commonality>1</commonality>
+    <researchDays>3</researchDays>
+    <chapters>1</chapters>
+    <rewardSilver>1500</rewardSilver>
+    <rewardItems>
+      <li>
+        <thingDef>Steel</thingDef>
+        <count>200</count>
+      </li>
+      <li>
+        <thingDef>ComponentIndustrial</thingDef>
+        <count>10</count>
+      </li>
+    </rewardItems>
+    <dangerChance>0.1</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_AncientBeacon</defName>
+    <label>ancient beacon</label>
+    <description>A beacon still pulsing a message nobody can read.</description>
+    <commonality>1</commonality>
+    <researchDays>5</researchDays>
+    <chapters>2</chapters>
+    <rewardResearch>1500</rewardResearch>
+    <rewardInfluence>10</rewardInfluence>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_PrecursorRuins</defName>
+    <label>precursor ruins</label>
+    <description>Buried halls of a machine civilization. Needs a colony to dig.</description>
+    <commonality>0.6</commonality>
+    <researchDays>10</researchDays>
+    <chapters>3</chapters>
+    <needsColony>true</needsColony>
+    <rewardResearch>4000</rewardResearch>
+    <rewardItems>
+      <li>
+        <thingDef>Rimverse_PrecursorFragment</thingDef>
+        <count>6</count>
+      </li>
+    </rewardItems>
+    <dangerChance>0.25</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_CrystalLife</defName>
+    <label>crystalline lifeform</label>
+    <description>Crystals that grow, move and seem to listen.</description>
+    <commonality>1</commonality>
+    <researchDays>6</researchDays>
+    <chapters>2</chapters>
+    <rewardResearch>2000</rewardResearch>
+    <rewardInfluence>5</rewardInfluence>
+    <rewardItems>
+      <li>
+        <thingDef>Rimverse_ResonanceShard</thingDef>
+        <count>1</count>
+      </li>
+    </rewardItems>
+    <dangerChance>0.15</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_GravityWell</defName>
+    <label>gravitational anomaly</label>
+    <description>Space folds around nothing at all.</description>
+    <commonality>1</commonality>
+    <researchDays>4</researchDays>
+    <chapters>1</chapters>
+    <rewardResearch>1200</rewardResearch>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_DarkMatterPocket</defName>
+    <label>dark matter pocket</label>
+    <description>A pocket of something heavier than it should be.</description>
+    <commonality>0.6</commonality>
+    <researchDays>8</researchDays>
+    <chapters>2</chapters>
+    <rewardResearch>2500</rewardResearch>
+    <rewardItems>
+      <li>
+        <thingDef>Rimverse_ExoticMatter</thingDef>
+        <count>1</count>
+      </li>
+    </rewardItems>
+    <dangerChance>0.1</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_AbandonedMine</defName>
+    <label>abandoned mine</label>
+    <description>Old shafts with ore still in the walls. Needs a colony to dig.</description>
+    <commonality>1</commonality>
+    <researchDays>6</researchDays>
+    <chapters>2</chapters>
+    <needsColony>true</needsColony>
+    <rewardItems>
+      <li>
+        <thingDef>Steel</thingDef>
+        <count>400</count>
+      </li>
+      <li>
+        <thingDef>Plasteel</thingDef>
+        <count>80</count>
+      </li>
+      <li>
+        <thingDef>Gold</thingDef>
+        <count>30</count>
+      </li>
+    </rewardItems>
+    <dangerChance>0.15</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_MechHive</defName>
+    <label>dormant mech hive</label>
+    <description>A nest of machines, asleep. For now.</description>
+    <commonality>0.7</commonality>
+    <researchDays>5</researchDays>
+    <chapters>2</chapters>
+    <rewardResearch>1500</rewardResearch>
+    <rewardItems>
+      <li>
+        <thingDef>ComponentSpacer</thingDef>
+        <count>6</count>
+      </li>
+    </rewardItems>
+    <dangerChance>0.5</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_ImperialWreck</defName>
+    <label>imperial wreck</label>
+    <description>A noble's yacht, gutted but not emptied.</description>
+    <commonality>0.8</commonality>
+    <researchDays>4</researchDays>
+    <chapters>1</chapters>
+    <rewardSilver>3000</rewardSilver>
+    <rewardItems>
+      <li>
+        <thingDef>ComponentSpacer</thingDef>
+        <count>4</count>
+      </li>
+    </rewardItems>
+    <dangerChance>0.1</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_FrozenSleepers</defName>
+    <label>frozen sleepers</label>
+    <description>Cryptosleep pods from a forgotten age.</description>
+    <commonality>1</commonality>
+    <researchDays>3</researchDays>
+    <chapters>1</chapters>
+    <rewardResearch>500</rewardResearch>
+    <rewardInfluence>5</rewardInfluence>
+    <rewardItems>
+      <li>
+        <thingDef>MedicineIndustrial</thingDef>
+        <count>10</count>
+      </li>
+    </rewardItems>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_SingingAsteroid</defName>
+    <label>singing asteroid</label>
+    <description>A rock that hums on every radio band.</description>
+    <commonality>1</commonality>
+    <researchDays>3</researchDays>
+    <chapters>1</chapters>
+    <rewardResearch>800</rewardResearch>
+    <rewardInfluence>15</rewardInfluence>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_TimeDilation</defName>
+    <label>time dilation field</label>
+    <description>Clocks run slow here. Very slow.</description>
+    <commonality>0.5</commonality>
+    <researchDays>10</researchDays>
+    <chapters>2</chapters>
+    <rewardResearch>5000</rewardResearch>
+    <dangerChance>0.1</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_AlienGarden</defName>
+    <label>alien garden</label>
+    <description>Plants that bloom in vacuum.</description>
+    <commonality>1</commonality>
+    <researchDays>5</researchDays>
+    <chapters>2</chapters>
+    <rewardResearch>1200</rewardResearch>
+    <rewardItems>
+      <li>
+        <thingDef>Rimverse_AlienExtractRaw</thingDef>
+        <count>40</count>
+      </li>
+    </rewardItems>
+    <dangerChance>0.1</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_VoidSignal</defName>
+    <label>signal from the void</label>
+    <description>A message from between the stars. It knows your name.</description>
+    <commonality>0.7</commonality>
+    <researchDays>6</researchDays>
+    <chapters>3</chapters>
+    <rewardResearch>3000</rewardResearch>
+    <rewardInfluence>20</rewardInfluence>
+    <rewardItems>
+      <li>
+        <thingDef>Rimverse_ResonanceShard</thingDef>
+        <count>1</count>
+      </li>
+    </rewardItems>
+    <dangerChance>0.2</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_LostArchive</defName>
+    <label>lost archive</label>
+    <description>A vault of data under the surface. Needs a colony to dig.</description>
+    <commonality>0.8</commonality>
+    <researchDays>8</researchDays>
+    <chapters>2</chapters>
+    <needsColony>true</needsColony>
+    <rewardResearch>3500</rewardResearch>
+    <rewardInfluence>5</rewardInfluence>
+    <dangerChance>0.1</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_FossilFields</defName>
+    <label>fossil fields</label>
+    <description>Bones of things that lived here long ago. Needs a colony to dig.</description>
+    <commonality>1</commonality>
+    <researchDays>6</researchDays>
+    <chapters>2</chapters>
+    <needsColony>true</needsColony>
+    <rewardResearch>2000</rewardResearch>
+    <rewardSilver>1000</rewardSilver>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_PirateCache</defName>
+    <label>pirate cache</label>
+    <description>A hidden stash. Someone may come back for it.</description>
+    <commonality>1</commonality>
+    <researchDays>2</researchDays>
+    <chapters>1</chapters>
+    <rewardSilver>4000</rewardSilver>
+    <dangerChance>0.35</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_ShatteredMoon</defName>
+    <label>shattered moon</label>
+    <description>The pieces of a moon, rich in metal.</description>
+    <commonality>1</commonality>
+    <researchDays>5</researchDays>
+    <chapters>1</chapters>
+    <rewardItems>
+      <li>
+        <thingDef>Steel</thingDef>
+        <count>600</count>
+      </li>
+      <li>
+        <thingDef>Uranium</thingDef>
+        <count>60</count>
+      </li>
+    </rewardItems>
+    <dangerChance>0.05</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_WarpScar</defName>
+    <label>warp scar</label>
+    <description>Where a ship once tore space open.</description>
+    <commonality>0.8</commonality>
+    <researchDays>7</researchDays>
+    <chapters>2</chapters>
+    <rewardResearch>1000</rewardResearch>
+    <rewardItems>
+      <li>
+        <thingDef>Rimverse_WarpMatter</thingDef>
+        <count>60</count>
+      </li>
+    </rewardItems>
+    <dangerChance>0.2</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.SpaceAnomalyDef>
+    <defName>Rimverse_Anomaly_ArchotechWhisper</defName>
+    <label>archotech whisper</label>
+    <description>A mind beyond minds, thinking very slowly at you.</description>
+    <commonality>0.3</commonality>
+    <researchDays>12</researchDays>
+    <chapters>3</chapters>
+    <rewardResearch>8000</rewardResearch>
+    <rewardInfluence>10</rewardInfluence>
+    <rewardItems>
+      <li>
+        <thingDef>Rimverse_PrecursorFragment</thingDef>
+        <count>3</count>
+      </li>
+      <li>
+        <thingDef>Rimverse_ResonanceShard</thingDef>
+        <count>2</count>
+      </li>
+    </rewardItems>
+    <dangerChance>0.3</dangerChance>
+  </Rimverse.SpaceAnomalyDef>
+
+  <Rimverse.ColonySituationDef>
+    <defName>Rimverse_Situation_LaborStrike</defName>
+    <label>labor strike</label>
+    <description>Workers have stopped the colony's machines.</description>
+    <maxStability>60</maxStability>
+    <options>
+      <li>
+        <key>Negotiate</key>
+        <costSilver>800</costSilver>
+        <stability>10</stability>
+      </li>
+      <li>
+        <key>Crackdown</key>
+        <stability>6</stability>
+        <successChance>0.6</successChance>
+        <population>-0.02</population>
+      </li>
+      <li>
+        <key>Ignore</key>
+        <stability>-8</stability>
+      </li>
+    </options>
+  </Rimverse.ColonySituationDef>
+
+  <Rimverse.ColonySituationDef>
+    <defName>Rimverse_Situation_Plague</defName>
+    <label>plague outbreak</label>
+    <description>A sickness is spreading through the habitats.</description>
+    <options>
+      <li>
+        <key>Quarantine</key>
+        <costSilver>1000</costSilver>
+        <stability>4</stability>
+      </li>
+      <li>
+        <key>MassTreatment</key>
+        <costSilver>2000</costSilver>
+        <population>0.03</population>
+        <stability>6</stability>
+      </li>
+      <li>
+        <key>Ignore</key>
+        <population>-0.15</population>
+        <stability>-5</stability>
+      </li>
+    </options>
+  </Rimverse.ColonySituationDef>
+
+  <Rimverse.ColonySituationDef>
+    <defName>Rimverse_Situation_Smugglers</defName>
+    <label>smuggler ring</label>
+    <description>Smugglers are running goods through the colony.</description>
+    <options>
+      <li>
+        <key>Bust</key>
+        <costInfluence>10</costInfluence>
+        <silver>1500</silver>
+        <successChance>0.7</successChance>
+      </li>
+      <li>
+        <key>TaxThem</key>
+        <silver>800</silver>
+        <stability>-5</stability>
+        <attention>50</attention>
+      </li>
+      <li>
+        <key>Ignore</key>
+        <stability>-3</stability>
+      </li>
+    </options>
+  </Rimverse.ColonySituationDef>
+
+  <Rimverse.ColonySituationDef>
+    <defName>Rimverse_Situation_Refugees</defName>
+    <label>refugee fleet</label>
+    <description>Battered ships ask for a place to land.</description>
+    <options>
+      <li>
+        <key>Accept</key>
+        <population>0.2</population>
+        <stability>-5</stability>
+      </li>
+      <li>
+        <key>AcceptAid</key>
+        <costSilver>1500</costSilver>
+        <population>0.2</population>
+        <stability>3</stability>
+      </li>
+      <li>
+        <key>TurnAway</key>
+        <attention>-20</attention>
+        <influence>-5</influence>
+      </li>
+    </options>
+  </Rimverse.ColonySituationDef>
+
+  <Rimverse.ColonySituationDef>
+    <defName>Rimverse_Situation_MineralStrike</defName>
+    <label>mineral strike</label>
+    <description>Surveyors found a rich vein near the colony.</description>
+    <options>
+      <li>
+        <key>Exploit</key>
+        <costSilver>1000</costSilver>
+        <stockDef>Steel</stockDef>
+        <stockCount>500</stockCount>
+      </li>
+      <li>
+        <key>SellRights</key>
+        <silver>2500</silver>
+      </li>
+      <li>
+        <key>Ignore</key>
+      </li>
+    </options>
+  </Rimverse.ColonySituationDef>
+
+  <Rimverse.ColonySituationDef>
+    <defName>Rimverse_Situation_Separatists</defName>
+    <label>separatist movement</label>
+    <description>A faction wants the colony to break away.</description>
+    <maxStability>40</maxStability>
+    <options>
+      <li>
+        <key>Concede</key>
+        <costInfluence>20</costInfluence>
+        <stability>15</stability>
+      </li>
+      <li>
+        <key>Suppress</key>
+        <stability>10</stability>
+        <successChance>0.5</successChance>
+        <population>-0.05</population>
+      </li>
+      <li>
+        <key>Ignore</key>
+        <stability>-10</stability>
+      </li>
+    </options>
+  </Rimverse.ColonySituationDef>
+
+  <Rimverse.ColonySituationDef>
+    <defName>Rimverse_Situation_Festival</defName>
+    <label>founders' festival</label>
+    <description>The settlers want to celebrate the colony's founding.</description>
+    <minStability>30</minStability>
+    <options>
+      <li>
+        <key>Fund</key>
+        <costSilver>600</costSilver>
+        <stability>12</stability>
+      </li>
+      <li>
+        <key>Skip</key>
+        <stability>-2</stability>
+      </li>
+    </options>
+  </Rimverse.ColonySituationDef>
+
+  <Rimverse.ColonySituationDef>
+    <defName>Rimverse_Situation_ReactorLeak</defName>
+    <label>reactor leak</label>
+    <description>A habitat reactor is leaking.</description>
+    <spaceOnly>true</spaceOnly>
+    <options>
+      <li>
+        <key>Repair</key>
+        <costSilver>1500</costSilver>
+        <stability>3</stability>
+      </li>
+      <li>
+        <key>Evacuate</key>
+        <population>-0.05</population>
+      </li>
+      <li>
+        <key>Ignore</key>
+        <population>-0.1</population>
+        <stability>-6</stability>
+      </li>
+    </options>
+  </Rimverse.ColonySituationDef>
+
+  <Rimverse.ColonySituationDef>
+    <defName>Rimverse_Situation_AlienFauna</defName>
+    <label>alien fauna</label>
+    <description>Creatures from the wilds are attacking the outskirts.</description>
+    <surfaceOnly>true</surfaceOnly>
+    <options>
+      <li>
+        <key>Hunt</key>
+        <stockDef>Rimverse_AlienExtractRaw</stockDef>
+        <stockCount>30</stockCount>
+        <successChance>0.75</successChance>
+        <population>-0.02</population>
+      </li>
+      <li>
+        <key>Fence</key>
+        <costSilver>800</costSilver>
+        <stability>3</stability>
+      </li>
+      <li>
+        <key>StudyThem</key>
+        <costInfluence>5</costInfluence>
+        <influence>10</influence>
+      </li>
+    </options>
+  </Rimverse.ColonySituationDef>
+
+  <Rimverse.ColonySituationDef>
+    <defName>Rimverse_Situation_NobleDispute</defName>
+    <label>noble dispute</label>
+    <description>Two powerful families want the governor's favour.</description>
+    <minPopulation>20</minPopulation>
+    <options>
+      <li>
+        <key>PickSide</key>
+        <influence>10</influence>
+        <stability>-5</stability>
+      </li>
+      <li>
+        <key>Mediate</key>
+        <costInfluence>10</costInfluence>
+        <stability>8</stability>
+      </li>
+      <li>
+        <key>Ignore</key>
+        <stability>-4</stability>
+      </li>
+    </options>
+  </Rimverse.ColonySituationDef>
+
+  <Rimverse.ColonySituationDef>
+    <defName>Rimverse_Situation_AncientTomb</defName>
+    <label>ancient tomb</label>
+    <description>Diggers broke into a sealed tomb.</description>
+    <surfaceOnly>true</surfaceOnly>
+    <options>
+      <li>
+        <key>Excavate</key>
+        <costSilver>1200</costSilver>
+        <stockDef>Gold</stockDef>
+        <stockCount>40</stockCount>
+        <successChance>0.8</successChance>
+      </li>
+      <li>
+        <key>Seal</key>
+        <stability>5</stability>
+      </li>
+    </options>
+  </Rimverse.ColonySituationDef>
+
+  <Rimverse.ColonySituationDef>
+    <defName>Rimverse_Situation_InvestorBoom</defName>
+    <label>investor boom</label>
+    <description>Investors offer to double any money put in now.</description>
+    <minStability>60</minStability>
+    <options>
+      <li>
+        <key>Invest</key>
+        <costSilver>3000</costSilver>
+        <silver>6000</silver>
+        <successChance>0.6</successChance>
+      </li>
+      <li>
+        <key>Pass</key>
+      </li>
+    </options>
+  </Rimverse.ColonySituationDef>
+
+  <Rimverse.FleetHullDef>
+    <defName>Rimverse_Hull_Corvette</defName>
+    <label>corvette</label>
+    <description>Small, fast and cheap.</description>
+    <power>8</power>
+    <ground>0</ground>
+    <costSilver>1500</costSilver>
+    <upkeep>15</upkeep>
+    <days>8</days>
+    <speedLyPerDay>6</speedLyPerDay>
+    <order>0</order>
+  </Rimverse.FleetHullDef>
+
+  <Rimverse.FleetHullDef>
+    <defName>Rimverse_Hull_Frigate</defName>
+    <label>frigate</label>
+    <description>The workhorse of any fleet.</description>
+    <power>16</power>
+    <ground>1</ground>
+    <costSilver>3000</costSilver>
+    <upkeep>30</upkeep>
+    <days>12</days>
+    <speedLyPerDay>5</speedLyPerDay>
+    <order>1</order>
+  </Rimverse.FleetHullDef>
+
+  <Rimverse.FleetHullDef>
+    <defName>Rimverse_Hull_Destroyer</defName>
+    <label>destroyer</label>
+    <description>A missile boat that hits hard for its size.</description>
+    <power>28</power>
+    <ground>0</ground>
+    <costSilver>5500</costSilver>
+    <upkeep>55</upkeep>
+    <days>18</days>
+    <speedLyPerDay>5</speedLyPerDay>
+    <research>Rimverse_ShipMissiles</research>
+    <order>2</order>
+  </Rimverse.FleetHullDef>
+
+  <Rimverse.FleetHullDef>
+    <defName>Rimverse_Hull_Cruiser</defName>
+    <label>cruiser</label>
+    <description>A long-range warship with troop bays.</description>
+    <power>55</power>
+    <ground>10</ground>
+    <costSilver>11000</costSilver>
+    <upkeep>110</upkeep>
+    <days>30</days>
+    <speedLyPerDay>4</speedLyPerDay>
+    <research>Rimverse_NavalCommand</research>
+    <order>3</order>
+  </Rimverse.FleetHullDef>
+
+  <Rimverse.FleetHullDef>
+    <defName>Rimverse_Hull_Carrier</defName>
+    <label>carrier</label>
+    <description>Launches wings of small craft.</description>
+    <power>70</power>
+    <ground>5</ground>
+    <costSilver>20000</costSilver>
+    <upkeep>200</upkeep>
+    <days>40</days>
+    <speedLyPerDay>3.5</speedLyPerDay>
+    <research>Rimverse_CapitalShips</research>
+    <order>4</order>
+  </Rimverse.FleetHullDef>
+
+  <Rimverse.FleetHullDef>
+    <defName>Rimverse_Hull_Battleship</defName>
+    <label>battleship</label>
+    <description>A wall of guns and armor.</description>
+    <power>110</power>
+    <ground>0</ground>
+    <costSilver>24000</costSilver>
+    <upkeep>240</upkeep>
+    <days>45</days>
+    <speedLyPerDay>3</speedLyPerDay>
+    <research>Rimverse_CapitalShips</research>
+    <order>5</order>
+  </Rimverse.FleetHullDef>
+
+  <Rimverse.FleetHullDef>
+    <defName>Rimverse_Hull_MarineCompany</defName>
+    <label>marine company</label>
+    <description>Infantry for landings and boarding.</description>
+    <power>0</power>
+    <ground>15</ground>
+    <costSilver>1200</costSilver>
+    <upkeep>12</upkeep>
+    <days>6</days>
+    <speedLyPerDay>0</speedLyPerDay>
+    <squad>true</squad>
+    <order>6</order>
+  </Rimverse.FleetHullDef>
+
+  <Rimverse.FleetHullDef>
+    <defName>Rimverse_Hull_DropTroopers</defName>
+    <label>drop troopers</label>
+    <description>Elite soldiers dropped from orbit.</description>
+    <power>2</power>
+    <ground>25</ground>
+    <costSilver>2200</costSilver>
+    <upkeep>22</upkeep>
+    <days>8</days>
+    <speedLyPerDay>0</speedLyPerDay>
+    <squad>true</squad>
+    <research>Rimverse_Boarding</research>
+    <order>7</order>
+  </Rimverse.FleetHullDef>
+
+  <Rimverse.FleetHullDef>
+    <defName>Rimverse_Hull_ArmoredLegion</defName>
+    <label>armored legion</label>
+    <description>Tanks and walkers for planetary assaults.</description>
+    <power>0</power>
+    <ground>35</ground>
+    <costSilver>3000</costSilver>
+    <upkeep>30</upkeep>
+    <days>10</days>
+    <speedLyPerDay>0</speedLyPerDay>
+    <squad>true</squad>
+    <research>Rimverse_ArmoredVehicles</research>
+    <order>8</order>
+  </Rimverse.FleetHullDef>
+
+  <Rimverse.FleetHullDef>
+    <defName>Rimverse_Hull_FighterWing</defName>
+    <label>fighter wing</label>
+    <description>A wing of small fighters.</description>
+    <power>6</power>
+    <ground>0</ground>
+    <costSilver>1000</costSilver>
+    <upkeep>10</upkeep>
+    <days>5</days>
+    <speedLyPerDay>0</speedLyPerDay>
+    <squad>true</squad>
+    <research>Rimverse_SmallCraft</research>
+    <order>9</order>
+  </Rimverse.FleetHullDef>
+
+  <Rimverse.FleetHullDef>
+    <defName>Rimverse_Hull_BomberWing</defName>
+    <label>bomber wing</label>
+    <description>Bombers that also support landings.</description>
+    <power>12</power>
+    <ground>5</ground>
+    <costSilver>2000</costSilver>
+    <upkeep>20</upkeep>
+    <days>7</days>
+    <speedLyPerDay>0</speedLyPerDay>
+    <squad>true</squad>
+    <research>Rimverse_Aircraft</research>
+    <order>10</order>
+  </Rimverse.FleetHullDef>
+
+</Defs>

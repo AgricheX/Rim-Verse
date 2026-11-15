@@ -44,7 +44,7 @@ namespace Rimverse
         {
             foreach (Gizmo g in base.CompGetGizmosExtra()) yield return g;
             VehiclePawn v = Vehicle;
-            if (v == null || !v.Spawned || v.Faction != Faction.OfPlayer) yield break;
+            if (v == null || !v.Spawned || v.Faction != Faction.OfPlayer || ExternalCompat.LocalFlight) yield break;
             Command_Action fly = new Command_Action
             {
                 defaultLabel = "Rimverse_CraftFly".Translate(),
@@ -341,7 +341,7 @@ namespace Rimverse
             if (!Rand.MTBEventOccurs(Props.traderMtbDays, 60000f, 250f)) return;
             if (map.passingShipManager.passingShips.Count >= 5) return;
             IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.Misc, map);
-            parms.traderKind = DefDatabase<TraderKindDef>.GetNamedSilentFail("Rimverse_SpaceGoodsTrader");
+            parms.traderKind = BetterRimCompat.OrbitalTrader();
             IncidentDefOf.OrbitalTraderArrival.Worker.TryExecute(parms);
         }
 

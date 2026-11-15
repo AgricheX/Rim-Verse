@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Edict_MartialLaw.label>lei marcial</Rimverse_Edict_MartialLaw.label>
+  <Rimverse_Edict_MartialLaw.description>Soldados em cada esquina. A ordem volta, o comércio sofre.</Rimverse_Edict_MartialLaw.description>
+  <Rimverse_Edict_TradeFair.label>feira comercial</Rimverse_Edict_TradeFair.label>
+  <Rimverse_Edict_TradeFair.description>Uma temporada de mercados abertos nas suas colônias.</Rimverse_Edict_TradeFair.description>
+  <Rimverse_Edict_ResearchGrant.label>bolsas de pesquisa</Rimverse_Edict_ResearchGrant.label>
+  <Rimverse_Edict_ResearchGrant.description>Financia laboratórios e estudiosos pelo reino.</Rimverse_Edict_ResearchGrant.description>
+  <Rimverse_Edict_RecruitmentDrive.label>campanha de alistamento</Rimverse_Edict_RecruitmentDrive.label>
+  <Rimverse_Edict_RecruitmentDrive.description>Cartazes, discursos e bônus de alistamento para a milícia.</Rimverse_Edict_RecruitmentDrive.description>
+  <Rimverse_Edict_FoodRationing.label>racionamento</Rimverse_Edict_FoodRationing.label>
+  <Rimverse_Edict_FoodRationing.description>Rações rígidas esticam cada colheita.</Rimverse_Edict_FoodRationing.description>
+  <Rimverse_Edict_Propaganda.label>campanha de propaganda</Rimverse_Edict_Propaganda.label>
+  <Rimverse_Edict_Propaganda.description>Transmite a glória do reino em todos os canais.</Rimverse_Edict_Propaganda.description>
+  <Rimverse_Edict_FleetDrills.label>manobras da frota</Rimverse_Edict_FleetDrills.label>
+  <Rimverse_Edict_FleetDrills.description>Exercícios constantes mantêm as tripulações afiadas.</Rimverse_Edict_FleetDrills.description>
+  <Rimverse_Edict_SettlerIncentives.label>incentivo a colonos</Rimverse_Edict_SettlerIncentives.label>
+  <Rimverse_Edict_SettlerIncentives.description>Terra e passagem grátis para quem aceitar se mudar.</Rimverse_Edict_SettlerIncentives.description>
+  <Rimverse_Edict_LowProfile.label>perfil discreto</Rimverse_Edict_LowProfile.label>
+  <Rimverse_Edict_LowProfile.description>Apaga os faróis, cala o rádio, negocia por intermediários.</Rimverse_Edict_LowProfile.description>
+  <Rimverse_Edict_DiplomaticCorps.label>corpo diplomático</Rimverse_Edict_DiplomaticCorps.label>
+  <Rimverse_Edict_DiplomaticCorps.description>Enviados e presentes para todos os vizinhos.</Rimverse_Edict_DiplomaticCorps.description>
+  <Rimverse_Edict_WarEconomy.label>economia de guerra</Rimverse_Edict_WarEconomy.label>
+  <Rimverse_Edict_WarEconomy.description>Toda fábrica se volta para a guerra. Só durante uma guerra.</Rimverse_Edict_WarEconomy.description>
+  <Rimverse_Edict_ShipSubsidies.label>subsídio aos estaleiros</Rimverse_Edict_ShipSubsidies.label>
+  <Rimverse_Edict_ShipSubsidies.description>O tesouro cobre parte da manutenção da frota.</Rimverse_Edict_ShipSubsidies.description>
+</LanguageData>

@@ -98,6 +98,7 @@
           <research>
             <li>Rimverse_ShipBasics</li>
           </research>
+          <infoFog>Partial</infoFog>
         </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
@@ -172,6 +173,7 @@
           <air>0.35</air>
           <hull>0.7</hull>
           <shipNameKey>Rimverse_ShipName_Drifter</shipNameKey>
+          <infoFog>Partial</infoFog>
         </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
@@ -257,6 +259,7 @@
           </civs>
           <fuel>0.6</fuel>
           <shipNameKey>Rimverse_ShipName_Station</shipNameKey>
+          <infoFog>Partial</infoFog>
         </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
@@ -349,6 +352,7 @@
           <air>0.6</air>
           <hull>0.6</hull>
           <shipNameKey>Rimverse_ShipName_Refugee</shipNameKey>
+          <infoFog>Full</infoFog>
         </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
@@ -454,6 +458,7 @@
               <opinion>60</opinion>
             </li>
           </civs>
+          <infoFog>Full</infoFog>
         </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
@@ -531,6 +536,7 @@
           <def>Rimverse_Start</def>
           <location>Surface</location>
           <layout>None</layout>
+          <infoFog>None</infoFog>
         </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
@@ -615,6 +621,7 @@
           <hull>0.8</hull>
           <yearsAsleep>80</yearsAsleep>
           <shipNameKey>Rimverse_ShipName_Cryo</shipNameKey>
+          <infoFog>None</infoFog>
         </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
@@ -739,6 +746,7 @@
             </li>
           </civs>
           <shipNameKey>Rimverse_ShipName_Explorer</shipNameKey>
+          <infoFog>Full</infoFog>
         </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>

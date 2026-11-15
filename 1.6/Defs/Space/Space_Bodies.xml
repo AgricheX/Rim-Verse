@@ -60,6 +60,12 @@
     <genStep Class="Rimverse.GenStep_AirlessBody" />
   </GenStepDef>
 
+  <GenStepDef>
+    <defName>Rimverse_Fog</defName>
+    <order>1500</order>
+    <genStep Class="Rimverse.GenStep_RimverseFog" />
+  </GenStepDef>
+
   <MapGeneratorDef>
     <defName>Rimverse_AirlessBodyMap</defName>
     <label>airless world</label>
@@ -70,6 +76,7 @@
     <defaultUnderGridTerrain>Rimverse_Vacuum</defaultUnderGridTerrain>
     <genSteps>
       <li>Rimverse_AirlessBody</li>
+      <li>Rimverse_Fog</li>
     </genSteps>
     <pocketMapProperties>
       <biome>Rimverse_Airless</biome>

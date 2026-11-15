@@ -141,6 +141,9 @@
     <IncidentTargetTags>
       <li>Map_PlayerHome</li>
     </IncidentTargetTags>
+    <modExtensions>
+      <li Class="Vehicles.SpaceObjectDefModExtension" />
+    </modExtensions>
   </WorldObjectDef>
 
 </Defs>

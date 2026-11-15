@@ -108,7 +108,7 @@ namespace Rimverse
             }
             if (!tile.Valid) return null;
             Settlement home = SettleUtility.AddNewHome(tile, Faction.OfPlayer);
-            return MapGenerator.GenerateMap(SizeFor(body), home, GeneratorFor(body), home.ExtraGenStepDefs, null, true);
+            return MapGenerator.GenerateMap(SizeFor(body), home, GeneratorFor(body), home.ExtraGenStepDefs, null, false);
         }
 
         public static Map CreateOrbitPocket(Map from, IntVec3 size)

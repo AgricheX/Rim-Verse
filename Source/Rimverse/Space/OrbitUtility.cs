@@ -80,7 +80,7 @@ namespace Rimverse
             parent.shipName = shipName;
             parent.SetFaction(Faction.OfPlayer);
             Find.WorldObjects.Add(parent);
-            return MapGenerator.GenerateMap(size, parent, parent.MapGeneratorDef, parent.ExtraGenStepDefs, null, true);
+            return MapGenerator.GenerateMap(size, parent, parent.MapGeneratorDef, parent.ExtraGenStepDefs, null, false);
         }
     }
 }

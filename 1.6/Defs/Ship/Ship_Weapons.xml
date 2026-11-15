@@ -630,7 +630,7 @@
     <description>A guided missile loaded into ship missile launchers.</description>
     <graphicData>
       <texPath>Rimverse/Things/Item/Resource/ShipMissile</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <drawSize>1</drawSize>
     </graphicData>
     <stackLimit>10</stackLimit>

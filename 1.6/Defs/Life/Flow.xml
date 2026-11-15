@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef>
+    <defName>Rimverse_FlowSensitive</defName>
+    <label>Great Flow sensitive</label>
+    <description>This person feels the Great Flow, the current that runs through every living thing. With training they can push, sense and shape it.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(150,200,255)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <statOffsets>
+          <PsychicSensitivity>0.2</PsychicSensitivity>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDefs>
+          <li>Rimverse_FlowPush</li>
+          <li>Rimverse_FlowSense</li>
+        </abilityDefs>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_FlowHarmony</defName>
+    <label>Harmony of the Flow</label>
+    <description>Walks the path of Harmony: calm, healing and balance.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(150,200,255)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <statOffsets>
+          <MentalBreakThreshold>-0.04</MentalBreakThreshold>
+          <SocialImpact>0.1</SocialImpact>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDefs>
+          <li>Rimverse_FlowHeal</li>
+          <li>Rimverse_FlowCalm</li>
+        </abilityDefs>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_FlowRupture</defName>
+    <label>Rupture of the Flow</label>
+    <description>Walks the path of Rupture: will, anger and power.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(150,200,255)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeHitChance>2</MeleeHitChance>
+          <MentalBreakThreshold>0.03</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDefs>
+          <li>Rimverse_FlowChoke</li>
+          <li>Rimverse_FlowStorm</li>
+        </abilityDefs>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <AbilityDef>
+    <defName>Rimverse_FlowPush</defName>
+    <label>flow push</label>
+    <description>Throw a target back with a wave of the Flow and stun them for a moment.</description>
+    <iconPath>Rimverse/UI/Flow/Push</iconPath>
+    <cooldownTicksRange>1800</cooldownTicksRange>
+    <hostile>true</hostile>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>12</range>
+      <warmupTime>0.5</warmupTime>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_FlowEffect">
+        <mode>Push</mode>
+        <amount>3</amount>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Rimverse_FlowSense</defName>
+    <label>flow sense</label>
+    <description>Feel the area around a point, lifting the fog of war.</description>
+    <iconPath>Rimverse/UI/Flow/Sense</iconPath>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+    <hostile>false</hostile>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>30</range>
+      <warmupTime>0.5</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_FlowEffect">
+        <mode>Sense</mode>
+        <amount>14</amount>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Rimverse_FlowHeal</defName>
+    <label>flow mending</label>
+    <description>Close wounds with the gentle current of Harmony.</description>
+    <iconPath>Rimverse/UI/Flow/Heal</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <hostile>false</hostile>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>6</range>
+      <warmupTime>0.5</warmupTime>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_FlowEffect">
+        <mode>Heal</mode>
+        <amount>12</amount>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Rimverse_FlowCalm</defName>
+    <label>flow calm</label>
+    <description>Soothe a troubled mind and end a mental break.</description>
+    <iconPath>Rimverse/UI/Flow/Calm</iconPath>
+    <cooldownTicksRange>4000</cooldownTicksRange>
+    <hostile>false</hostile>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>10</range>
+      <warmupTime>0.5</warmupTime>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_FlowEffect">
+        <mode>Calm</mode>
+        <amount>1</amount>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Rimverse_FlowChoke</defName>
+    <label>flow grip</label>
+    <description>Crush a target with the will of Rupture.</description>
+    <iconPath>Rimverse/UI/Flow/Choke</iconPath>
+    <cooldownTicksRange>2400</cooldownTicksRange>
+    <hostile>true</hostile>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>14</range>
+      <warmupTime>0.5</warmupTime>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_FlowEffect">
+        <mode>Choke</mode>
+        <amount>12</amount>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Rimverse_FlowStorm</defName>
+    <label>flow storm</label>
+    <description>Unleash a burst of raw energy around a point.</description>
+    <iconPath>Rimverse/UI/Flow/Storm</iconPath>
+    <cooldownTicksRange>3600</cooldownTicksRange>
+    <hostile>true</hostile>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>16</range>
+      <warmupTime>0.5</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimverse.CompProperties_FlowEffect">
+        <mode>Storm</mode>
+        <amount>10</amount>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_FlowCalmed</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>calmed by the Flow</label>
+        <description>A warm current washed my worries away.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_ResonanceShard</defName>
+    <label>resonance shard</label>
+    <description>A sliver of crystal that hums with the Great Flow. Held by a sensitive mind, it wakes the Flow inside them. Smiths also use it to focus beam blades.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/ResonanceShard</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.1</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <techLevel>Archotech</techLevel>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Attune to the Flow</useLabel>
+        <useDuration>600</useDuration>
+      </li>
+      <li Class="Rimverse.CompProperties_UseEffectAwakenFlow" />
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Rimverse_BeamBlade</defName>
+    <label>beam blade</label>
+    <description>A hilt that holds a blade of focused light, tuned by a resonance shard. It cuts through almost any armor. In the hands of someone sensitive to the Great Flow it feels alive.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Weapon/BeamBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>Rimverse_BeamBlade</li>
+    </weaponTags>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Rimverse_ResonanceShard>1</Rimverse_ResonanceShard>
+    </costList>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>1</Mass>
+      <MarketValue>4500</MarketValue>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_ExoticMaterials</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <displayPriority>500</displayPriority>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>beam</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>0.85</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

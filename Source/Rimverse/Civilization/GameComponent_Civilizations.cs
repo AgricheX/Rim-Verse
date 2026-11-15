@@ -266,6 +266,8 @@ namespace Rimverse
         {
             if (c == null || c.known || c.dead) return;
             c.known = true;
+            c.rumored = true;
+            c.AddIntel(Mathf.Max(0f, 20f - c.intel));
             EnsureFaction(c);
             if (letter)
             {
@@ -273,19 +275,54 @@ namespace Rimverse
             }
         }
 
+        public void Rumor(Civilization c, bool letter)
+        {
+            if (c == null || c.dead || c.known || c.rumored) return;
+            c.rumored = true;
+            if (letter && c.lore != LoreKind.Mechanoids)
+            {
+                Find.LetterStack.ReceiveLetter("Rimverse_LetterRumorLabel".Translate(), "Rimverse_LetterRumor".Translate(RumorDirection(c)), LetterDefOf.NeutralEvent);
+            }
+        }
+
+        public string RumorDirection(Civilization c)
+        {
+            double d = DistanceToPlayer(c, out _);
+            if (d < 50.0) return "Rimverse_RumorVeryClose".Translate();
+            if (d < 150.0) return "Rimverse_RumorClose".Translate();
+            return "Rimverse_RumorFar".Translate();
+        }
+
         public void CheckContacts()
         {
             GameComponent_Universe u = GameComponent_Universe.Instance;
             if (u == null) return;
+            float days = Mathf.Max(RimverseUnits.TicksPerHour, RimverseMod.Settings.civilizationTickInterval) / (float)RimverseUnits.TicksPerDay;
+            HashSet<int> present = new HashSet<int>();
             foreach (StarSystemId id in PlayerSystems())
             {
                 Civilization owner = OwnerOf(id);
-                if (owner != null && !owner.known) MakeContact(owner, true);
+                if (owner == null) continue;
+                present.Add(owner.id);
+                if (!owner.known) MakeContact(owner, true);
             }
             foreach (Civilization c in civilizations)
             {
-                if (c.dead || c.known) continue;
-                if (u.GetSystemScan(c.Capital) >= ScanLevel.Range) MakeContact(c, true);
+                if (c.dead) continue;
+                ScanLevel scan = u.GetSystemScan(c.Capital);
+                if (!c.known)
+                {
+                    if (scan >= ScanLevel.Exact) MakeContact(c, true);
+                    else if (scan >= ScanLevel.Range || (IsNearPlayer(c) && Rand.Chance(0.02f * days))) Rumor(c, true);
+                    continue;
+                }
+                float gain = 0.05f;
+                if (present.Contains(c.id)) gain += 1f;
+                if (scan >= ScanLevel.Exact) gain += 0.3f;
+                if (c.playerState >= DiploState.TradeAgreement) gain += 0.4f;
+                if (c.playerState >= DiploState.Alliance) gain += 0.8f;
+                if (IsNearPlayer(c)) gain += 0.15f;
+                c.AddIntel(gain * days);
             }
         }
 

@@ -4,13 +4,15 @@ using Verse;
 
 namespace Rimverse
 {
-    [StaticConstructorOnStartup]
     public class ITab_RimverseShip : ITab
     {
         private static readonly Vector2 WinSize = new Vector2(420f, 480f);
-        private static readonly Texture2D HullBar = SolidColorMaterials.NewSolidColorTexture(new Color(0.6f, 0.6f, 0.65f));
-        private static readonly Texture2D AirBar = SolidColorMaterials.NewSolidColorTexture(new Color(0.4f, 0.7f, 1f));
-        private static readonly Texture2D HeatBar = SolidColorMaterials.NewSolidColorTexture(new Color(1f, 0.45f, 0.2f));
+        private static Texture2D hullBar;
+        private static Texture2D airBar;
+        private static Texture2D heatBar;
+        private static Texture2D HullBar => hullBar ?? (hullBar = SolidColorMaterials.NewSolidColorTexture(new Color(0.6f, 0.6f, 0.65f)));
+        private static Texture2D AirBar => airBar ?? (airBar = SolidColorMaterials.NewSolidColorTexture(new Color(0.4f, 0.7f, 1f)));
+        private static Texture2D HeatBar => heatBar ?? (heatBar = SolidColorMaterials.NewSolidColorTexture(new Color(1f, 0.45f, 0.2f)));
 
         public ITab_RimverseShip()
         {

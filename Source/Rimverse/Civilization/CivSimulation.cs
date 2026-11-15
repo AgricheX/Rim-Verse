@@ -285,7 +285,7 @@ namespace Rimverse
                 if (!r.Chance(0.3f)) continue;
                 gc.SetState(c, o, DiploState.War);
                 LaunchFleet(gc, c, o.capitalKey, o.id, FleetMission.War, 0.6f);
-                if (c.known || o.known) Find.LetterStack.ReceiveLetter("Rimverse_LetterWarLabel".Translate(), "Rimverse_LetterWar".Translate(c.Name, o.Name), LetterDefOf.NeutralEvent);
+                if (c.known || o.known) Find.LetterStack.ReceiveLetter("Rimverse_LetterWarLabel".Translate(), "Rimverse_LetterWar".Translate(c.ShownName, o.ShownName), LetterDefOf.NeutralEvent);
                 return;
             }
         }
@@ -300,7 +300,7 @@ namespace Rimverse
                 if (o == null || o.Hostile) continue;
                 gc.SetState(c, o, DiploState.Truce);
                 c.warWeariness *= 0.5f;
-                if (c.known || o.known) Find.LetterStack.ReceiveLetter("Rimverse_LetterPeaceLabel".Translate(), "Rimverse_LetterPeace".Translate(c.Name, o.Name), LetterDefOf.NeutralEvent);
+                if (c.known || o.known) Find.LetterStack.ReceiveLetter("Rimverse_LetterPeaceLabel".Translate(), "Rimverse_LetterPeace".Translate(c.ShownName, o.ShownName), LetterDefOf.NeutralEvent);
                 return;
             }
         }
@@ -346,6 +346,8 @@ namespace Rimverse
             if (!target.Valid || d > reach) return;
             float chance = (c.lore == LoreKind.Pirates ? 0.5f : 0.25f) * years * RimverseMod.Settings.threatMultiplier;
             if (c.goal == CivGoal.Arm || c.goal == CivGoal.Expand) chance *= 1.5f;
+            chance *= c.lore == LoreKind.Pirates || c.Hostile ? GalacticCouncil.PirateFactor : GalacticCouncil.WarFactor;
+            if (GameComponent_PlayerEmpire.Instance != null && GameComponent_PlayerEmpire.Instance.allyDefense.Count > 0) chance *= 0.8f;
             if (!r.Chance(Mathf.Clamp01(chance))) return;
             Fleet raid = LaunchFleet(gc, c, target.Key, Civilization.PlayerId, FleetMission.Raid, 0.3f);
             if (raid == null) return;
