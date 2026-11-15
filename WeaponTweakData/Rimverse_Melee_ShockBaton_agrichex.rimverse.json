@@ -1,0 +1,20 @@
+{
+  "TextureModID": "agrichex.rimverse",
+  "ItemDefName": "Rimverse_Melee_ShockBaton",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.32656,
+  "OffY": -0.0043,
+  "ScaleX": 1.1,
+  "ScaleY": 1.1,
+  "HandsMode": 1,
+  "BladeStart": 0.18906,
+  "BladeEnd": 0.80781,
+  "MeleeWeaponType": 9,
+  "TrailTint": {
+    "r": 0.55,
+    "g": 0.85,
+    "b": 1.0,
+    "a": 0.9
+  }
+}

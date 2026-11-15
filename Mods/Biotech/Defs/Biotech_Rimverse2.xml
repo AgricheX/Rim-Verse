@@ -850,14 +850,8 @@
       <li Class="Rimverse.CompProperties_WasteHandler">
         <intervalTicks>5000</intervalTicks>
         <outputs>
-          <li>
-            <thingDef>Steel</thingDef>
-            <count>4</count>
-          </li>
-          <li>
-            <thingDef>Chemfuel</thingDef>
-            <count>2</count>
-          </li>
+          <Steel>4</Steel>
+          <Chemfuel>2</Chemfuel>
         </outputs>
       </li>
     </comps>

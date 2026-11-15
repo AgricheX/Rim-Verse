@@ -1,0 +1,13 @@
+{
+  "TextureModID": "agrichex.rimverse",
+  "ItemDefName": "Rimverse_Melee_EmergencyAxe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.43125,
+  "OffY": 0.08984,
+  "ScaleX": 1.15,
+  "ScaleY": 1.15,
+  "BladeStart": 0.64687,
+  "BladeEnd": 0.95234,
+  "MeleeWeaponType": 2
+}
