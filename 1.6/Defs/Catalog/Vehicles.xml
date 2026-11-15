@@ -1551,9 +1551,9 @@
           <li>
             <turretDef>Rimverse_VT_MG</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 0.265)</north>
+              <south>(0.000, 0.838)</south>
+              <east>(-0.286, 0.551)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>mounted machine gun</gizmoLabel>
@@ -1730,9 +1730,9 @@
           <li>
             <turretDef>Rimverse_VT_LightCannon</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 0.366)</north>
+              <south>(0.000, 0.766)</south>
+              <east>(-0.200, 0.566)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>light cannon</gizmoLabel>
@@ -1896,9 +1896,9 @@
           <li>
             <turretDef>Rimverse_VT_Laser</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 0.055)</north>
+              <south>(0.000, 0.629)</south>
+              <east>(-0.287, 0.342)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>mounted laser carbine</gizmoLabel>
@@ -2066,9 +2066,9 @@
           <li>
             <turretDef>Rimverse_VT_Plasma</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 0.381)</north>
+              <south>(0.000, 0.757)</south>
+              <east>(-0.188, 0.569)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>plasma cannon</gizmoLabel>
@@ -2236,9 +2236,9 @@
           <li>
             <turretDef>Rimverse_VT_HeavyPair</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 0.712)</north>
+              <south>(0.000, 0.812)</south>
+              <east>(-0.050, 0.762)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>twin heavy guns</gizmoLabel>
@@ -2555,9 +2555,9 @@
           <li>
             <turretDef>Rimverse_VT_Rocket</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 0.770)</north>
+              <south>(0.000, 0.870)</south>
+              <east>(-0.050, 0.820)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>rocket pod</gizmoLabel>
@@ -2919,9 +2919,9 @@
           <li>
             <turretDef>Rimverse_VT_Autocannon</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 1.510)</north>
+              <south>(0.000, -0.529)</south>
+              <east>(1.019, 0.490)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>autocannon</gizmoLabel>
@@ -3518,9 +3518,9 @@
           <li>
             <turretDef>Rimverse_VT_Rocket</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 0.387)</north>
+              <south>(0.000, 0.742)</south>
+              <east>(-0.178, 0.564)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>rocket pod</gizmoLabel>
@@ -4132,9 +4132,9 @@
           <li>
             <turretDef>Rimverse_VT_Autocannon</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 2.209)</north>
+              <south>(0.000, -1.136)</south>
+              <east>(1.673, 0.536)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>autocannon</gizmoLabel>
@@ -4537,9 +4537,9 @@
           <li>
             <turretDef>Rimverse_VT_PointLaser</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 1.048)</north>
+              <south>(0.000, -0.031)</south>
+              <east>(0.539, 0.509)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>point laser</gizmoLabel>
@@ -4756,9 +4756,9 @@
           <li>
             <turretDef>Rimverse_VT_Torpedo</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 0.282)</north>
+              <south>(0.000, 0.825)</south>
+              <east>(-0.271, 0.553)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>torpedo launcher</gizmoLabel>
@@ -4984,9 +4984,9 @@
           <li>
             <turretDef>Rimverse_VT_Harpoon</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 1.162)</north>
+              <south>(0.000, -0.336)</south>
+              <east>(0.749, 0.413)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>harpoon</gizmoLabel>
@@ -5214,9 +5214,9 @@
           <li>
             <turretDef>Rimverse_VT_MiningLaser</turretDef>
             <renderProperties>
-              <north>(0, 0)</north>
-              <south>(0, 0)</south>
-              <east>(0, 0)</east>
+              <north>(0.000, 1.079)</north>
+              <south>(0.000, -0.253)</south>
+              <east>(0.666, 0.413)</east>
             </renderProperties>
             <drawLayer>3</drawLayer>
             <gizmoLabel>mining laser</gizmoLabel>
