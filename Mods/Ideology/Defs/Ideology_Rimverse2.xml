@@ -4,7 +4,7 @@
   <IssueDef>
     <defName>Rimverse_Exploration</defName>
     <label>exploration</label>
-    <iconPath>UI/Issues/Lighting</iconPath>
+    <iconPath>Rimverse/UI/Issue/Exploration</iconPath>
   </IssueDef>
 
   <ThoughtDef>
@@ -63,7 +63,7 @@
   <IssueDef>
     <defName>Rimverse_Contact</defName>
     <label>contact with other civilizations</label>
-    <iconPath>UI/Issues/Lighting</iconPath>
+    <iconPath>Rimverse/UI/Issue/Contact</iconPath>
   </IssueDef>
 
   <ThoughtDef>
@@ -131,7 +131,7 @@
   <IssueDef>
     <defName>Rimverse_GateUse</defName>
     <label>ancient gates</label>
-    <iconPath>UI/Issues/Lighting</iconPath>
+    <iconPath>Rimverse/UI/Issue/GateUse</iconPath>
   </IssueDef>
 
   <ThoughtDef>
@@ -192,7 +192,7 @@
   <IssueDef>
     <defName>Rimverse_Cryosleep</defName>
     <label>cryosleep</label>
-    <iconPath>UI/Issues/Lighting</iconPath>
+    <iconPath>Rimverse/UI/Issue/Cryosleep</iconPath>
   </IssueDef>
 
   <ThoughtDef>
@@ -257,7 +257,7 @@
   <IssueDef>
     <defName>Rimverse_Salvage</defName>
     <label>wreck salvage</label>
-    <iconPath>UI/Issues/Lighting</iconPath>
+    <iconPath>Rimverse/UI/Issue/Salvage</iconPath>
   </IssueDef>
 
   <ThoughtDef>
@@ -317,7 +317,7 @@
   <IssueDef>
     <defName>Rimverse_Lineage</defName>
     <label>lineage modification</label>
-    <iconPath>UI/Issues/Lighting</iconPath>
+    <iconPath>Rimverse/UI/Issue/Lineage</iconPath>
   </IssueDef>
 
   <ThoughtDef>
@@ -386,7 +386,7 @@
   <IssueDef>
     <defName>Rimverse_Piracy</defName>
     <label>piracy</label>
-    <iconPath>UI/Issues/Lighting</iconPath>
+    <iconPath>Rimverse/UI/Issue/Piracy</iconPath>
   </IssueDef>
 
   <ThoughtDef>
@@ -443,7 +443,7 @@
   <IssueDef>
     <defName>Rimverse_ShipName</defName>
     <label>ship naming</label>
-    <iconPath>UI/Issues/Lighting</iconPath>
+    <iconPath>Rimverse/UI/Issue/ShipName</iconPath>
   </IssueDef>
 
   <ThoughtDef>
@@ -501,7 +501,7 @@
   <IssueDef>
     <defName>Rimverse_Viewport</defName>
     <label>windows and sky</label>
-    <iconPath>UI/Issues/Lighting</iconPath>
+    <iconPath>Rimverse/UI/Issue/Viewport</iconPath>
   </IssueDef>
 
   <ThoughtDef>
@@ -557,7 +557,7 @@
     <defName>Rimverse_StellarAscension</defName>
     <label>stellar ascension</label>
     <description>Humanity must climb toward the stars until it becomes something more. Every world charted and every lineage born is a step up.</description>
-    <iconPath>UI/Memes/Transhumanist</iconPath>
+    <iconPath>Rimverse/UI/Meme/StellarAscension</iconPath>
     <groupDef>Misc</groupDef>
     <impact>2</impact>
     <requireOne>
@@ -580,7 +580,7 @@
     <defName>Rimverse_HomeworldGuardians</defName>
     <label>homeworld guardians</label>
     <description>Our place is our homeworld. The stars are for visiting, never for living.</description>
-    <iconPath>UI/Memes/PrimacyHuman</iconPath>
+    <iconPath>Rimverse/UI/Meme/HomeworldGuardians</iconPath>
     <groupDef>Misc</groupDef>
     <impact>2</impact>
     <requireOne>
@@ -603,7 +603,7 @@
     <defName>Rimverse_VoidFaith</defName>
     <label>void faith</label>
     <description>The void between stars is the face of god. Its silence is a prayer, and the dead return to it.</description>
-    <iconPath>UI/Memes/Darkness</iconPath>
+    <iconPath>Rimverse/UI/Meme/VoidFaith</iconPath>
     <groupDef>Misc</groupDef>
     <impact>2</impact>
     <requireOne>
@@ -628,7 +628,7 @@
     <defName>Rimverse_Frontier</defName>
     <label>frontier</label>
     <description>The frontier is where people are free. Whoever charts a world first has the right to it.</description>
-    <iconPath>UI/Memes/Individualist</iconPath>
+    <iconPath>Rimverse/UI/Meme/Frontier</iconPath>
     <groupDef>Misc</groupDef>
     <impact>2</impact>
     <requireOne>
@@ -741,7 +741,7 @@
     <defName>Rimverse_Role_Captain</defName>
     <label>captain</label>
     <description>The ship's captain commands with authority. Better at negotiating and harder to break.</description>
-    <iconPath>UI/Roles/SpecialistShooting</iconPath>
+    <iconPath>Rimverse/UI/Precept/Role_Captain</iconPath>
     <nameMaker>NamerRoleMoralist</nameMaker>
     <roleRequirements>
       <li Class="RoleRequirement_MinSkillAny">
@@ -778,7 +778,7 @@
     <defName>Rimverse_Role_Navigator</defName>
     <label>navigator</label>
     <description>Reads the stars and plots the jumps. Learns faster and aims better.</description>
-    <iconPath>UI/Roles/SpecialistResearch</iconPath>
+    <iconPath>Rimverse/UI/Precept/Role_Navigator</iconPath>
     <nameMaker>NamerRoleResearcher</nameMaker>
     <roleRequirements>
       <li Class="RoleRequirement_MinSkillAny">
@@ -811,7 +811,7 @@
     <defName>Rimverse_Role_ShipGuardian</defName>
     <label>ship guardian</label>
     <description>Keeps the hull whole. Builds and repairs much faster.</description>
-    <iconPath>UI/Roles/SpecialistProduction</iconPath>
+    <iconPath>Rimverse/UI/Precept/Role_ShipGuardian</iconPath>
     <nameMaker>NamerRoleProductionSpecialist</nameMaker>
     <roleRequirements>
       <li Class="RoleRequirement_MinSkillAny">
@@ -844,7 +844,7 @@
     <defName>Rimverse_Role_Herald</defName>
     <label>herald</label>
     <description>Speaks for the crew to other civilizations. A great negotiator and trader.</description>
-    <iconPath>UI/Roles/SpecialistAnimals</iconPath>
+    <iconPath>Rimverse/UI/Precept/Role_Herald</iconPath>
     <nameMaker>NamerRoleMoralist</nameMaker>
     <roleRequirements>
       <li Class="RoleRequirement_MinSkillAny">
@@ -880,8 +880,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_GravityGenerator</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Misc/GravityGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -890,8 +890,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_BridgeSmall</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BridgeSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -900,8 +900,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_BridgeCommand</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BridgeCommand</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(5,5)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -910,8 +910,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_BridgeCapital</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BridgeCapital</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(7,7)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -920,8 +920,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_StructureModule</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipBeam</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/StructureModule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -930,8 +930,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_FuelCell</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/FuelCell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -940,8 +940,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_ShipSolarPanel</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ShipSolarPanel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -950,8 +950,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_BatteryBank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BatteryBank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -960,8 +960,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_ChemThruster</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ChemThruster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,3)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -970,8 +970,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_ManeuverThruster</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ManeuverThruster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -980,8 +980,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_ChemTank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ChemTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -990,8 +990,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_AirGenerator</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/AirGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1000,8 +1000,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_AirTank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/AirTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1010,8 +1010,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_RadiatorFixed</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipBeam</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/RadiatorFixed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,3)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1020,8 +1020,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_HeatBank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/HeatBank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1030,8 +1030,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_Telescope</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/Telescope</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1040,8 +1040,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_ScannerLongRange</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ScannerLongRange</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1050,8 +1050,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_ScannerAdvanced</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ScannerAdvanced</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1060,8 +1060,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_WarpDriveSmall</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/WarpDriveSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1070,8 +1070,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_WarpDriveHeavy</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/WarpDriveHeavy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1080,8 +1080,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_WarpTank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/WarpTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1090,8 +1090,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_CargoBay</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipBeam</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/CargoBay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1100,7 +1100,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_CargoCrate</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/CargoCrate</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.85,0.72,0.40)</color>
@@ -1110,7 +1110,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_HoldContainer</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/HoldContainer</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
@@ -1120,7 +1120,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_SealedLocker</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/SealedLocker</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
@@ -1130,7 +1130,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_ColdShelf</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/ColdShelf</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
@@ -1140,7 +1140,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_VacuumContainer</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/VacuumContainer</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.85,0.72,0.40)</color>
@@ -1150,7 +1150,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_Vault</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/Vault</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.85,0.72,0.40)</color>
@@ -1160,7 +1160,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_WeaponRack</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/WeaponRack</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.85,0.72,0.40)</color>
@@ -1170,7 +1170,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_WeaponLocker</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/WeaponLocker</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
@@ -1180,7 +1180,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_DefenseArmory</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/DefenseArmory</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
@@ -1190,7 +1190,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_RelicDisplay</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/RelicDisplay</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.85,0.72,0.40)</color>
@@ -1200,7 +1200,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_ClosedGarden</defName>
     <graphicData>
-      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <texPath>Rimverse/Things/Building/Ship/ClosedGarden</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,4)</drawSize>
       <color>(0.85,0.72,0.40)</color>
@@ -1210,8 +1210,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_Autocannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/Autocannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1220,8 +1220,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_HullCannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/HullCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1230,8 +1230,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_PointLaser</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/PointLaser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1240,8 +1240,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_LaserLance</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/LaserLance</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1250,8 +1250,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_PlasmaCannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/PlasmaCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1260,8 +1260,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_Railgun</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/Railgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,3)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1270,8 +1270,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_MissileLauncher</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/MissileLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1280,8 +1280,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_IonCannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/IonCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1290,8 +1290,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_TractorBeam</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/TractorBeam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1300,8 +1300,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleImperial_ShieldGenerator</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ShieldGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.85,0.72,0.40)</color>
     </graphicData>
@@ -1490,8 +1490,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_GravityGenerator</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Misc/GravityGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1500,8 +1500,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_BridgeSmall</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BridgeSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1510,8 +1510,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_BridgeCommand</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BridgeCommand</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(5,5)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1520,8 +1520,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_BridgeCapital</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BridgeCapital</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(7,7)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1530,8 +1530,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_StructureModule</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipBeam</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/StructureModule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1540,8 +1540,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_FuelCell</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/FuelCell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1550,8 +1550,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_ShipSolarPanel</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ShipSolarPanel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1560,8 +1560,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_BatteryBank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BatteryBank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1570,8 +1570,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_ChemThruster</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ChemThruster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,3)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1580,8 +1580,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_ManeuverThruster</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ManeuverThruster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1590,8 +1590,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_ChemTank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ChemTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1600,8 +1600,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_AirGenerator</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/AirGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1610,8 +1610,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_AirTank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/AirTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1620,8 +1620,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_RadiatorFixed</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipBeam</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/RadiatorFixed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,3)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1630,8 +1630,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_HeatBank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/HeatBank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1640,8 +1640,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_Telescope</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/Telescope</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1650,8 +1650,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_ScannerLongRange</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ScannerLongRange</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1660,8 +1660,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_ScannerAdvanced</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ScannerAdvanced</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1670,8 +1670,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_WarpDriveSmall</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/WarpDriveSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1680,8 +1680,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_WarpDriveHeavy</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/WarpDriveHeavy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1690,8 +1690,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_WarpTank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/WarpTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1700,8 +1700,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_CargoBay</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipBeam</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/CargoBay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1710,7 +1710,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_CargoCrate</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/CargoCrate</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.50,0.45)</color>
@@ -1720,7 +1720,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_HoldContainer</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/HoldContainer</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
@@ -1730,7 +1730,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_SealedLocker</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/SealedLocker</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
@@ -1740,7 +1740,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_ColdShelf</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/ColdShelf</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
@@ -1750,7 +1750,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_VacuumContainer</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/VacuumContainer</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.50,0.45)</color>
@@ -1760,7 +1760,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_Vault</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/Vault</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.50,0.45)</color>
@@ -1770,7 +1770,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_WeaponRack</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/WeaponRack</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.50,0.45)</color>
@@ -1780,7 +1780,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_WeaponLocker</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/WeaponLocker</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
@@ -1790,7 +1790,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_DefenseArmory</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/DefenseArmory</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
@@ -1800,7 +1800,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_RelicDisplay</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/RelicDisplay</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.50,0.45)</color>
@@ -1810,7 +1810,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_ClosedGarden</defName>
     <graphicData>
-      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <texPath>Rimverse/Things/Building/Ship/ClosedGarden</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,4)</drawSize>
       <color>(0.55,0.50,0.45)</color>
@@ -1820,8 +1820,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_Autocannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/Autocannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1830,8 +1830,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_HullCannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/HullCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1840,8 +1840,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_PointLaser</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/PointLaser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1850,8 +1850,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_LaserLance</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/LaserLance</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1860,8 +1860,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_PlasmaCannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/PlasmaCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1870,8 +1870,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_Railgun</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/Railgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,3)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1880,8 +1880,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_MissileLauncher</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/MissileLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1890,8 +1890,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_IonCannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/IonCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1900,8 +1900,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_TractorBeam</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/TractorBeam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -1910,8 +1910,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleIndustrial_ShieldGenerator</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ShieldGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.50,0.45)</color>
     </graphicData>
@@ -2100,8 +2100,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_GravityGenerator</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Misc/GravityGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2110,8 +2110,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_BridgeSmall</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BridgeSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2120,8 +2120,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_BridgeCommand</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BridgeCommand</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(5,5)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2130,8 +2130,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_BridgeCapital</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BridgeCapital</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(7,7)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2140,8 +2140,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_StructureModule</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipBeam</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/StructureModule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2150,8 +2150,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_FuelCell</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/FuelCell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2160,8 +2160,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_ShipSolarPanel</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ShipSolarPanel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2170,8 +2170,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_BatteryBank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BatteryBank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2180,8 +2180,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_ChemThruster</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ChemThruster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,3)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2190,8 +2190,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_ManeuverThruster</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ManeuverThruster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2200,8 +2200,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_ChemTank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ChemTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2210,8 +2210,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_AirGenerator</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/AirGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2220,8 +2220,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_AirTank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/AirTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2230,8 +2230,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_RadiatorFixed</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipBeam</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/RadiatorFixed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,3)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2240,8 +2240,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_HeatBank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/HeatBank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2250,8 +2250,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_Telescope</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/Telescope</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2260,8 +2260,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_ScannerLongRange</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ScannerLongRange</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2270,8 +2270,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_ScannerAdvanced</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ScannerAdvanced</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2280,8 +2280,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_WarpDriveSmall</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/WarpDriveSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2290,8 +2290,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_WarpDriveHeavy</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/WarpDriveHeavy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2300,8 +2300,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_WarpTank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/WarpTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2310,8 +2310,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_CargoBay</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipBeam</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/CargoBay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2320,7 +2320,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_CargoCrate</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/CargoCrate</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.45,0.70,0.45)</color>
@@ -2330,7 +2330,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_HoldContainer</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/HoldContainer</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
@@ -2340,7 +2340,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_SealedLocker</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/SealedLocker</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
@@ -2350,7 +2350,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_ColdShelf</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/ColdShelf</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
@@ -2360,7 +2360,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_VacuumContainer</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/VacuumContainer</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.45,0.70,0.45)</color>
@@ -2370,7 +2370,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_Vault</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/Vault</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.45,0.70,0.45)</color>
@@ -2380,7 +2380,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_WeaponRack</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/WeaponRack</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.45,0.70,0.45)</color>
@@ -2390,7 +2390,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_WeaponLocker</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/WeaponLocker</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
@@ -2400,7 +2400,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_DefenseArmory</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/DefenseArmory</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
@@ -2410,7 +2410,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_RelicDisplay</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/RelicDisplay</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.45,0.70,0.45)</color>
@@ -2420,7 +2420,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_ClosedGarden</defName>
     <graphicData>
-      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <texPath>Rimverse/Things/Building/Ship/ClosedGarden</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,4)</drawSize>
       <color>(0.45,0.70,0.45)</color>
@@ -2430,8 +2430,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_Autocannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/Autocannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2440,8 +2440,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_HullCannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/HullCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2450,8 +2450,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_PointLaser</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/PointLaser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2460,8 +2460,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_LaserLance</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/LaserLance</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2470,8 +2470,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_PlasmaCannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/PlasmaCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2480,8 +2480,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_Railgun</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/Railgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,3)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2490,8 +2490,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_MissileLauncher</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/MissileLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2500,8 +2500,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_IonCannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/IonCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2510,8 +2510,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_TractorBeam</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/TractorBeam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2520,8 +2520,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StyleOrganic_ShieldGenerator</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ShieldGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.45,0.70,0.45)</color>
     </graphicData>
@@ -2710,8 +2710,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_GravityGenerator</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Misc/GravityGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2720,8 +2720,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_BridgeSmall</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BridgeSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2730,8 +2730,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_BridgeCommand</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BridgeCommand</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(5,5)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2740,8 +2740,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_BridgeCapital</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipComputerCore</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BridgeCapital</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(7,7)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2750,8 +2750,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_StructureModule</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipBeam</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/StructureModule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2760,8 +2760,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_FuelCell</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/FuelCell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2770,8 +2770,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_ShipSolarPanel</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ShipSolarPanel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2780,8 +2780,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_BatteryBank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/BatteryBank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2790,8 +2790,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_ChemThruster</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ChemThruster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,3)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2800,8 +2800,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_ManeuverThruster</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ManeuverThruster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2810,8 +2810,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_ChemTank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ChemTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2820,8 +2820,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_AirGenerator</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/AirGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2830,8 +2830,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_AirTank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/AirTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2840,8 +2840,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_RadiatorFixed</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipBeam</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/RadiatorFixed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,3)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2850,8 +2850,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_HeatBank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/HeatBank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2860,8 +2860,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_Telescope</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/Telescope</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2870,8 +2870,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_ScannerLongRange</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ScannerLongRange</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2880,8 +2880,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_ScannerAdvanced</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ScannerAdvanced</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2890,8 +2890,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_WarpDriveSmall</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/WarpDriveSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2900,8 +2900,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_WarpDriveHeavy</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/WarpDriveHeavy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2910,8 +2910,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_WarpTank</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/WarpTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2920,8 +2920,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_CargoBay</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipBeam</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/CargoBay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -2930,7 +2930,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_CargoCrate</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/CargoCrate</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.65,0.95)</color>
@@ -2940,7 +2940,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_HoldContainer</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/HoldContainer</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
@@ -2950,7 +2950,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_SealedLocker</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/SealedLocker</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
@@ -2960,7 +2960,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_ColdShelf</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/ColdShelf</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
@@ -2970,7 +2970,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_VacuumContainer</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/VacuumContainer</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.65,0.95)</color>
@@ -2980,7 +2980,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_Vault</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/Vault</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.65,0.95)</color>
@@ -2990,7 +2990,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_WeaponRack</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/WeaponRack</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.65,0.95)</color>
@@ -3000,7 +3000,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_WeaponLocker</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/WeaponLocker</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
@@ -3010,7 +3010,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_DefenseArmory</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <texPath>Rimverse/Things/Building/Ship/DefenseArmory</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
@@ -3020,7 +3020,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_RelicDisplay</defName>
     <graphicData>
-      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <texPath>Rimverse/Things/Building/Ship/RelicDisplay</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.65,0.95)</color>
@@ -3030,7 +3030,7 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_ClosedGarden</defName>
     <graphicData>
-      <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+      <texPath>Rimverse/Things/Building/Ship/ClosedGarden</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,4)</drawSize>
       <color>(0.55,0.65,0.95)</color>
@@ -3040,8 +3040,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_Autocannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/Autocannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -3050,8 +3050,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_HullCannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/HullCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -3060,8 +3060,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_PointLaser</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/PointLaser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -3070,8 +3070,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_LaserLance</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/LaserLance</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -3080,8 +3080,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_PlasmaCannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/PlasmaCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -3090,8 +3090,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_Railgun</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipEngine</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/Railgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,3)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -3100,8 +3100,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_MissileLauncher</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/MissileLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -3110,8 +3110,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_IonCannon</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/IonCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -3120,8 +3120,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_TractorBeam</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipSensorCluster</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/TractorBeam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>
@@ -3130,8 +3130,8 @@
   <ThingStyleDef>
     <defName>Rimverse_StylePrecursor_ShieldGenerator</defName>
     <graphicData>
-      <texPath>Things/Building/Ship/ShipReactor</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Ship/ShieldGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <color>(0.55,0.65,0.95)</color>
     </graphicData>

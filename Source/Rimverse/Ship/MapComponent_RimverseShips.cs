@@ -254,6 +254,7 @@ namespace Rimverse
                     maneuvers++;
                     ship.dodgeBonus += p.dodgeBonus * eff;
                 }
+                if (p.role != ShipPartRole.Maneuver && p.dodgeBonus > 0f) ship.dodgeBonus += p.dodgeBonus * eff;
                 if (p.heatPerSecond > 0f && (!p.heatOnlyWhenThrusting || state.thrusting)) ship.heatGeneration += p.heatPerSecond * eff;
                 ship.heatRemoval += p.heatRemovalPerSecond * eff;
                 ship.airGeneration += p.airPerHour * eff;

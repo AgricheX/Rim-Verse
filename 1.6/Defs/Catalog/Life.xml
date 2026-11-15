@@ -1,0 +1,5274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_SpaceBotany</defName>
+    <label>space botany</label>
+    <description>Cultivars bred for tanks, hydroponics and alien soil.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_AdvancedHydroponics</li>
+    </prerequisites>
+    <researchViewX>8</researchViewX>
+    <researchViewY>7</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ShipCuisine</defName>
+    <label>ship cuisine</label>
+    <description>Proper meals, cultured protein and crew drinks for long voyages.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_ShipGalley</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>7</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_SpacePharma</defName>
+    <label>space pharmacology</label>
+    <description>Drugs for shifts, gravity and the void.</description>
+    <baseCost>1600</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_SpaceBotany</li>
+    </prerequisites>
+    <researchViewX>10</researchViewX>
+    <researchViewY>7</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_SpaceMedicine</defName>
+    <label>space medicine</label>
+    <description>Medicine for vacuum wounds, radiation and alien plagues.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_LifeSupport</li>
+    </prerequisites>
+    <researchViewX>8</researchViewX>
+    <researchViewY>8</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_SpaceBionics</defName>
+    <label>space bionics</label>
+    <description>Implants made for life in the void.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_SpaceMedicine</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>8</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_Metallurgy</defName>
+    <label>ship metallurgy</label>
+    <description>Hull alloys, ceramics and glass forged from asteroid ore.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_SpaceMining</li>
+    </prerequisites>
+    <researchViewX>8</researchViewX>
+    <researchViewY>9</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_ExoticMaterials</defName>
+    <label>exotic materials</label>
+    <description>Isotopes, exotic matter and warp cores.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_Metallurgy</li>
+      <li>Rimverse_WarpTheory</li>
+    </prerequisites>
+    <researchViewX>9</researchViewX>
+    <researchViewY>9</researchViewY>
+  </ResearchProjectDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_PowerCell</defName>
+    <label>power cell</label>
+    <description>A dense rechargeable cell that powers vehicles and spacer gear.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/PowerCell</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>420</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <costList>
+      <Steel>4</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_ShipBasics</researchPrerequisite>
+      <productCount>10</productCount>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Rimverse_PartFabricator</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_HullAlloy</defName>
+    <label>hull alloy</label>
+    <description>Rolled steel and plasteel layered into standard hull plating.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/HullAlloy</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>6</MarketValue>
+      <Mass>0.6</Mass>
+      <WorkToMake>348</WorkToMake>
+      <StuffPower_Armor_Sharp>1.0</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <stuffProps>
+      <categories><li>Metallic</li></categories>
+      <appearance>Metal</appearance>
+      <commonality>0.03</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <isAirtight>true</isAirtight>
+      <color>(158,168,183)</color>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+      <statFactors>
+        <MaxHitPoints>2.2</MaxHitPoints>
+        <Beauty>0.8</Beauty>
+        <Flammability>0</Flammability>
+        <WorkToMake>1.6</WorkToMake>
+        <WorkToBuild>1.6</WorkToBuild>
+      </statFactors>
+    </stuffProps>
+    <costList>
+      <Steel>4</Steel>
+      <Plasteel>1</Plasteel>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_Metallurgy</researchPrerequisite>
+      <productCount>10</productCount>
+      <recipeUsers>
+        <li>ElectricSmelter</li>
+        <li>Rimverse_AsteroidFoundry</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_ArmorAlloy</defName>
+    <label>armor alloy</label>
+    <description>A heavy laminated alloy used in armored walls and suits.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/ArmorAlloy</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>14</MarketValue>
+      <Mass>0.8</Mass>
+      <WorkToMake>412</WorkToMake>
+      <StuffPower_Armor_Sharp>1.35</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.8</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <stuffProps>
+      <categories><li>Metallic</li></categories>
+      <appearance>Metal</appearance>
+      <commonality>0.01</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <isAirtight>true</isAirtight>
+      <color>(107,117,132)</color>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+      <statFactors>
+        <MaxHitPoints>4</MaxHitPoints>
+        <Beauty>0.5</Beauty>
+        <Flammability>0</Flammability>
+        <WorkToMake>2.6</WorkToMake>
+        <WorkToBuild>2.6</WorkToBuild>
+      </statFactors>
+    </stuffProps>
+    <costList>
+      <Plasteel>3</Plasteel>
+      <Rimverse_RareMetal>1</Rimverse_RareMetal>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_ExoticMaterials</researchPrerequisite>
+      <productCount>5</productCount>
+      <recipeUsers>
+        <li>ElectricSmelter</li>
+        <li>Rimverse_AsteroidFoundry</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_ThermalCeramic</defName>
+    <label>thermal ceramic</label>
+    <description>Heat-resistant ceramic tiles for radiators and heat shields.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/ThermalCeramic</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <Mass>0.5</Mass>
+      <WorkToMake>340</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <stuffProps>
+      <categories><li>Stony</li></categories>
+      <appearance>Bricks</appearance>
+      <commonality>0.02</commonality>
+      <constructEffect>ConstructDirt</constructEffect>
+      <color>(216,209,191)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <statFactors>
+        <MaxHitPoints>1.6</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+        <WorkToMake>1.4</WorkToMake>
+        <WorkToBuild>1.4</WorkToBuild>
+      </statFactors>
+    </stuffProps>
+    <costList>
+      <Steel>2</Steel>
+      <Rimverse_Regolith>4</Rimverse_Regolith>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_Metallurgy</researchPrerequisite>
+      <productCount>10</productCount>
+      <recipeUsers>
+        <li>ElectricSmelter</li>
+        <li>Rimverse_AsteroidFoundry</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_HullGlass</defName>
+    <label>hull glass</label>
+    <description>Pressure-rated glass melted from asteroid sand.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/HullGlass</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>4</MarketValue>
+      <Mass>0.4</Mass>
+      <WorkToMake>332</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <costList>
+      <Rimverse_Regolith>5</Rimverse_Regolith>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_Metallurgy</researchPrerequisite>
+      <productCount>10</productCount>
+      <recipeUsers>
+        <li>ElectricSmelter</li>
+        <li>Rimverse_AsteroidFoundry</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_Ice</defName>
+    <label>ice</label>
+    <description>Water ice mined from comets and moons. Becomes water, air and fuel.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/Ice</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+      <Mass>0.5</Mass>
+      <WorkToMake>304</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_LightGas</defName>
+    <label>light gas</label>
+    <description>Pressurized hydrogen and helium skimmed from gas giants. Fusion fuel.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/LightGas</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>3</MarketValue>
+      <Mass>0.2</Mass>
+      <WorkToMake>324</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_SensorCrystal</defName>
+    <label>sensor crystal</label>
+    <description>A living crystal that resonates with faint signals. Used in advanced sensors.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/SensorCrystal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>0.2</Mass>
+      <WorkToMake>660</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_RareMetal</defName>
+    <label>rare metal</label>
+    <description>Platinum-group metals from metallic asteroids, used in spacer components.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/RareMetal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Mass>0.5</Mass>
+      <WorkToMake>396</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_Isotope</defName>
+    <label>isotope</label>
+    <description>Shielded fissile isotope pellets. Fuel for fission reactors.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/Isotope</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>30</MarketValue>
+      <Mass>0.4</Mass>
+      <WorkToMake>540</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_ExoticMatter</defName>
+    <label>exotic matter</label>
+    <description>Negative-energy matter held in a magnetic bottle. Powers exotic reactors and gates.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/ExoticMatter</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>220</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>2060</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_Biomass</defName>
+    <label>biomass</label>
+    <description>Processed living matter from fertile worlds. Becomes food, medicine and cloth.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/Biomass</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <Mass>0.4</Mass>
+      <WorkToMake>312</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_NavalComponent</defName>
+    <label>naval component</label>
+    <description>A ruggedized component rated for vacuum and heat cycles.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/NavalComponent</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>0.6</Mass>
+      <WorkToMake>660</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <costList>
+      <Steel>10</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Rimverse_RareMetal>1</Rimverse_RareMetal>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_Metallurgy</researchPrerequisite>
+      <productCount>1</productCount>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Rimverse_PartFabricator</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_WarpCore</defName>
+    <label>warp core</label>
+    <description>The heart of a warp drive: a sealed lattice that folds space around itself.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/WarpCore</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MarketValue>900</MarketValue>
+      <Mass>4</Mass>
+      <WorkToMake>7500</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <costList>
+      <Plasteel>60</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Rimverse_WarpMatter>20</Rimverse_WarpMatter>
+      <Rimverse_ExoticMatter>1</Rimverse_ExoticMatter>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_ExoticMaterials</researchPrerequisite>
+      <productCount>1</productCount>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Rimverse_PartFabricator</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_PrecursorFragment</defName>
+    <label>precursor fragment</label>
+    <description>A shard of a machine older than humanity. Valuable for research.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/PrecursorFragment</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>160</MarketValue>
+      <Mass>0.5</Mass>
+      <WorkToMake>1580</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_Coral</defName>
+    <label>ocean coral</label>
+    <description>Bright coral grown on ocean worlds, prized as a luxury building material.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/Coral</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>8</MarketValue>
+      <Mass>0.5</Mass>
+      <WorkToMake>364</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <stuffProps>
+      <categories><li>Stony</li></categories>
+      <appearance>Bricks</appearance>
+      <commonality>0.02</commonality>
+      <constructEffect>ConstructDirt</constructEffect>
+      <color>(255,140,140)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <statFactors>
+        <MaxHitPoints>1.2</MaxHitPoints>
+        <Beauty>3</Beauty>
+        <Flammability>0</Flammability>
+        <WorkToMake>1.4</WorkToMake>
+        <WorkToBuild>1.4</WorkToBuild>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_ShipFiber</defName>
+    <label>ship fiber</label>
+    <description>Soft fiber grown in hydroponics and spun into crew cloth.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/ShipFiber</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>1.6</MarketValue>
+      <Mass>0.03</Mass>
+      <WorkToMake>312</WorkToMake>
+      <StuffPower_Armor_Sharp>0.4</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.25</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+    </statBases>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <stuffProps>
+      <categories><li>Fabric</li></categories>
+      <commonality>0.02</commonality>
+      <color>(204,216,204)</color>
+      <statFactors>
+        <Flammability>0.9</Flammability>
+        <MaxHitPoints>1.2</MaxHitPoints>
+        <Beauty>1</Beauty>
+      </statFactors>
+      <statOffsets>
+        <Insulation_Cold>18</Insulation_Cold>
+        <Insulation_Heat>14</Insulation_Heat>
+      </statOffsets>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_ShipTorpedo</defName>
+    <label>heavy torpedo</label>
+    <description>Ammunition for heavy torpedo tubes.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/ShipTorpedo</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MarketValue>260</MarketValue>
+      <Mass>30</Mass>
+      <WorkToMake>2380</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <costList>
+      <Plasteel>80</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_ShipMissiles</researchPrerequisite>
+      <productCount>1</productCount>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Rimverse_PartFabricator</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_PulseMissile</defName>
+    <label>pulse missile</label>
+    <description>A missile whose EMP warhead drains shields and stuns modules.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/PulseMissile</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MarketValue>90</MarketValue>
+      <Mass>12</Mass>
+      <WorkToMake>1020</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_ShipMissiles</researchPrerequisite>
+      <productCount>1</productCount>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Rimverse_PartFabricator</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_BoardingTorpedo</defName>
+    <label>boarding torpedo</label>
+    <description>A torpedo with a pressurized cabin for four boarders.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/BoardingTorpedo</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MarketValue>180</MarketValue>
+      <Mass>40</Mass>
+      <WorkToMake>1740</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_Boarding</researchPrerequisite>
+      <productCount>1</productCount>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Rimverse_PartFabricator</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_SpaceMine</defName>
+    <label>space mine</label>
+    <description>A proximity mine laid behind a retreating ship.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/SpaceMine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MarketValue>30</MarketValue>
+      <Mass>6</Mass>
+      <WorkToMake>540</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <costList>
+      <Steel>20</Steel>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_KineticWeapons</researchPrerequisite>
+      <productCount>1</productCount>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Rimverse_PartFabricator</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_RailSlug</defName>
+    <label>rail slug</label>
+    <description>A dense plasteel slug for railguns.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/RailSlug</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MarketValue>40</MarketValue>
+      <Mass>4</Mass>
+      <WorkToMake>620</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <costList>
+      <Plasteel>10</Plasteel>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_Railguns</researchPrerequisite>
+      <productCount>1</productCount>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Rimverse_PartFabricator</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_SpinalSlug</defName>
+    <label>spinal slug</label>
+    <description>A massive slug for a spinal mount.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/SpinalSlug</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MarketValue>240</MarketValue>
+      <Mass>25</Mass>
+      <WorkToMake>2220</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <costList>
+      <Plasteel>60</Plasteel>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_Railguns</researchPrerequisite>
+      <productCount>1</productCount>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Rimverse_PartFabricator</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_Probe</defName>
+    <label>probe</label>
+    <description>A small automated probe launched to scan distant systems.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/Probe</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MarketValue>110</MarketValue>
+      <Mass>8</Mass>
+      <WorkToMake>1180</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <researchPrerequisite>Rimverse_AdvancedSensors</researchPrerequisite>
+      <productCount>1</productCount>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Rimverse_PartFabricator</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_AlienExtractRaw</defName>
+    <label>alien sap</label>
+    <description>Raw sap from a local alien plant. Its effects depend on the world.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/AlienExtractRaw</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>6</MarketValue>
+      <Mass>0.1</Mass>
+      <WorkToMake>348</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_RadLichen</defName>
+    <label>radiation lichen</label>
+    <description>Lichen that thrives on radiation. Base for anti-radiation medicine.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/RadLichen</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>3</MarketValue>
+      <Mass>0.1</Mass>
+      <WorkToMake>324</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tradeTags>
+      <li>Rimverse_SpaceGoods</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>Rimverse_RawAlgae</defName>
+    <label>tank algae</label>
+    <description>Slimy green algae from a tank. Edible raw, barely.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/RawAlgae</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>Fungus</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>12</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>Rimverse_RawDwarfWheat</defName>
+    <label>dwarf wheat</label>
+    <description>Short-stemmed wheat bred for hydroponic racks.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/RawDwarfWheat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>Seed</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>Rimverse_RawShipTuber</defName>
+    <label>ship tuber</label>
+    <description>A dense, starchy tuber that yields a lot per cell.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/RawShipTuber</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>Rimverse_PodFruit</defName>
+    <label>pod fruit</label>
+    <description>A sweet, juicy fruit grown in sealed hydroponics.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/PodFruit</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>Rimverse_RawProteinSoy</defName>
+    <label>protein soy</label>
+    <description>Protein-rich beans that replace meat on long voyages.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/RawProteinSoy</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>Seed</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>Rimverse_RawIceCactus</defName>
+    <label>ice cactus flesh</label>
+    <description>Watery cactus flesh from frozen worlds.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/RawIceCactus</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>Rimverse_RawLavaMushroom</defName>
+    <label>lava mushroom</label>
+    <description>A scorched, peppery mushroom that grows near magma.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/RawLavaMushroom</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>Fungus</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>Rimverse_RawFloatVine</defName>
+    <label>float vine fruit</label>
+    <description>Light, airy fruit from a vine that grows in every direction.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/RawFloatVine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_TankAlgae</defName>
+    <label>tank algae</label>
+    <description>Fast, ugly and almost free. Grows in tanks even under weak light.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/TankAlgae</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/TankAlgae_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_RawAlgae</harvestedThingDef>
+      <harvestYield>8</harvestYield>
+      <sowTags>
+        <li>Hydroponic</li>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.1</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>2.2</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_HoldFungus</defName>
+    <label>hold fungus</label>
+    <description>A pale fungus that grows in the dark corners of a ship.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/HoldFungus</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/HoldFungus_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>RawFungus</harvestedThingDef>
+      <harvestYield>7</harvestYield>
+      <sowTags>
+        <li>Hydroponic</li>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>4</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_DwarfWheat</defName>
+    <label>dwarf wheat</label>
+    <description>A short wheat for hydroponic racks. Base for rations.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/DwarfWheat</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/DwarfWheat_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_RawDwarfWheat</harvestedThingDef>
+      <harvestYield>9</harvestYield>
+      <sowTags>
+        <li>Hydroponic</li>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>4.5</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_ShipTuber</defName>
+    <label>ship tuber</label>
+    <description>A tuber that yields a lot per cell.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/ShipTuber</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/ShipTuber_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_RawShipTuber</harvestedThingDef>
+      <harvestYield>14</harvestYield>
+      <sowTags>
+        <li>Hydroponic</li>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>6</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_PodFruit</defName>
+    <label>pod fruit bush</label>
+    <description>A delicate fruiting bush for sealed hydroponics. Its fruit lifts the mood.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/PodFruit</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/PodFruit_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_PodFruit</harvestedThingDef>
+      <harvestYield>8</harvestYield>
+      <sowTags>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>8</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_ProteinSoy</defName>
+    <label>protein soy</label>
+    <description>A bean plant that replaces meat aboard.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/ProteinSoy</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/ProteinSoy_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_RawProteinSoy</harvestedThingDef>
+      <harvestYield>8</harvestYield>
+      <sowTags>
+        <li>Hydroponic</li>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>5</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_ShipHerb</defName>
+    <label>ship herb</label>
+    <description>A compact medicinal herb for hydroponics.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/ShipHerb</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/ShipHerb_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>MedicineHerbal</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <sowTags>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>8</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Health</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_ShipFiber</defName>
+    <label>ship fiber</label>
+    <description>Soft fiber for crew cloth.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/ShipFiber</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/ShipFiber_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_ShipFiber</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <sowTags>
+        <li>Hydroponic</li>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>7</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_AirMoss</defName>
+    <label>air moss</label>
+    <description>A decorative moss that freshens the air of a room.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+      <Beauty>12</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/AirMoss</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/AirMoss_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <sowTags>
+        <li>Hydroponic</li>
+        <li>Ground</li>
+        <li>Decorative</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.1</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>6</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Beauty</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="TreeBase">
+    <defName>Rimverse_Plant_BiosphereTree</defName>
+    <label>biosphere tree</label>
+    <description>A slow, beautiful tree bred for closed gardens. Gives a little wood.</description>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+      <Beauty>12</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/BiosphereTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/BiosphereTree_Immature</immatureGraphicPath>
+      <dieIfLeafless>false</dieIfLeafless>
+      <maxMeshCount>1</maxMeshCount>
+      <harvestTag>Wood</harvestTag>
+      <harvestedThingDef>WoodLog</harvestedThingDef>
+      <harvestYield>20</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.5</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>20</growDays>
+      <visualSizeRange>1.3~1.9</visualSizeRange>
+      <purpose>Beauty</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_LightFlower</defName>
+    <label>light flower</label>
+    <description>A glowing flower that brightens gardens and moods.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+      <Beauty>12</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/LightFlower</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/LightFlower_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <sowTags>
+        <li>Decorative</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>6</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Beauty</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_IceCactus</defName>
+    <label>ice cactus</label>
+    <description>A cactus that stores water and grows on frozen worlds.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/IceCactus</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/IceCactus_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_RawIceCactus</harvestedThingDef>
+      <harvestYield>8</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.2</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>9</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_LavaMushroom</defName>
+    <label>lava mushroom</label>
+    <description>A mushroom that endures extreme heat.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/LavaMushroom</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/LavaMushroom_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_RawLavaMushroom</harvestedThingDef>
+      <harvestYield>8</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>7</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_RadLichen</defName>
+    <label>radiation lichen</label>
+    <description>A lichen from radiation deserts. Base for anti-radiation medicine.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/RadLichen</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/RadLichen_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_RadLichen</harvestedThingDef>
+      <harvestYield>4</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>9</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Health</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_LivingCrystal</defName>
+    <label>living crystal</label>
+    <description>A slow crystalline growth that becomes sensor crystal.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/LivingCrystal</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/LivingCrystal_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_SensorCrystal</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.2</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>30</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_OceanCoral</defName>
+    <label>ocean coral</label>
+    <description>A coral grown in shallow water. Luxury material.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/OceanCoral</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/OceanCoral_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_Coral</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>18</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_FloatVine</defName>
+    <label>float vine</label>
+    <description>A vine that grows in every direction and yields more in low gravity.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/FloatVine</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/FloatVine_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_RawFloatVine</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <sowTags>
+        <li>Hydroponic</li>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>6</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Rimverse_Plant_AlienLocal</defName>
+    <label>local alien plant</label>
+    <description>A plant native to this world. Its sap does different things on each planet.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+      <Beauty>0</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Rimverse/Things/Plant/AlienLocal</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Rimverse/Things/Plant/AlienLocal_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Rimverse_AlienExtractRaw</harvestedThingDef>
+      <harvestYield>3</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>Rimverse_SpaceBotany</li>
+      </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>7</growDays>
+      <visualSizeRange>0.5~0.9</visualSizeRange>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>Rimverse_ShipMeal</defName>
+    <label>ship meal</label>
+    <description>A plain hot meal served in the mess hall.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Meal/ShipMeal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <WorkToMake>450</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+    </ingestible>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>Rimverse_CookShipMeal</defName>
+    <label>cook ship meal</label>
+    <description>A plain hot meal served in the mess hall.</description>
+    <jobString>Cooking ship meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>450</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.25</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>0.25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_ShipMeal>1</Rimverse_ShipMeal>
+    </products>
+    <skillRequirements>
+      <Cooking>4</Cooking>
+    </skillRequirements>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>Rimverse_ShipCuisine</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+      <li>Rimverse_CompactKitchen</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <ThingDef ParentName="MealFineBase">
+    <defName>Rimverse_CaptainMeal</defName>
+    <label>captain's meal</label>
+    <description>A carefully plated meal for officers and guests.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Meal/CaptainMeal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>28</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+    </ingestible>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>Rimverse_CookCaptainMeal</defName>
+    <label>cook captain's meal</label>
+    <description>A carefully plated meal for officers and guests.</description>
+    <jobString>Cooking captain's meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>700</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.25</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>0.25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_CaptainMeal>1</Rimverse_CaptainMeal>
+    </products>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>Rimverse_ShipCuisine</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+      <li>Rimverse_CompactKitchen</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <ThingDef ParentName="MealLavishBase">
+    <defName>Rimverse_StellarFeast</defName>
+    <label>stellar feast</label>
+    <description>A lavish spread for parties and diplomacy.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Meal/StellarFeast</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>40</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+    </ingestible>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>Rimverse_CookStellarFeast</defName>
+    <label>cook stellar feast</label>
+    <description>A lavish spread for parties and diplomacy.</description>
+    <jobString>Cooking stellar feast.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>700</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_StellarFeast>1</Rimverse_StellarFeast>
+    </products>
+    <skillRequirements>
+      <Cooking>12</Cooking>
+    </skillRequirements>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>Rimverse_ShipCuisine</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+      <li>Rimverse_CompactKitchen</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>Rimverse_ExoticPreserve</defName>
+    <label>exotic preserve</label>
+    <description>Preserved alien flora and fauna. Lasts long and sells high.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Meal/ExoticPreserve</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Nutrition>0.8</Nutrition>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+    </ingestible>
+    <comps Inherit="False">
+      <li Class="CompProperties_Ingredients"/>
+      <li Class="CompProperties_FoodPoisonable"/>
+    </comps>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>Rimverse_CookExoticPreserve</defName>
+    <label>cook exotic preserve</label>
+    <description>Preserved alien flora and fauna. Lasts long and sells high.</description>
+    <jobString>Cooking exotic preserve.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>700</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.3</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>0.3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_ExoticPreserve>1</Rimverse_ExoticPreserve>
+    </products>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>Rimverse_ShipCuisine</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+      <li>Rimverse_CompactKitchen</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <ThingDef ParentName="MealLavishBase">
+    <defName>Rimverse_GlitterDelicacy</defName>
+    <label>glitterworld delicacy</label>
+    <description>An imported delicacy from a glitterworld. Can only be bought.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Meal/GlitterDelicacy</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>90</MarketValue>
+      <Nutrition>0.7</Nutrition>
+      <WorkToMake>450</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>Rimverse_CulturedProtein</defName>
+    <label>cultured protein</label>
+    <description>Vat-grown meat. No animal was harmed.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/CulturedProtein</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.2</MarketValue>
+      <WorkToMake>300</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <preferability>RawBad</preferability>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <RecipeDef>
+    <defName>Rimverse_GrowCulturedProtein</defName>
+    <label>grow cultured protein</label>
+    <description>Grow vat meat from biomass or soy.</description>
+    <jobString>Growing cultured protein.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>600</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_Biomass</li>
+            <li>Rimverse_RawProteinSoy</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_Biomass</li>
+        <li>Rimverse_RawProteinSoy</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_CulturedProtein>12</Rimverse_CulturedProtein>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>Rimverse_ShipCuisine</researchPrerequisite>
+    <recipeUsers>
+      <li>Rimverse_CompactKitchen</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <HediffDef>
+    <defName>Rimverse_Decompression</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>decompression injury</label>
+    <description>Damage from sudden exposure to vacuum: burst capillaries and strained lungs.</description>
+    <defaultLabelColor>(0.9,0.4,0.4)</defaultLabelColor>
+    <isBad>true</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.4</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.3</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_VacuumFrostbite</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>vacuum frostbite</label>
+    <description>Cold burns from skin touching the void.</description>
+    <defaultLabelColor>(0.9,0.4,0.4)</defaultLabelColor>
+    <isBad>true</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.3</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_MuscleAtrophy</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>muscle atrophy</label>
+    <description>Months without gravity have weakened this person's muscles.</description>
+    <defaultLabelColor>(0.9,0.4,0.4)</defaultLabelColor>
+    <isBad>true</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.12</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_RadiationSickness</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>radiation sickness</label>
+    <description>Cell damage from radiation. Gets worse without treatment.</description>
+    <defaultLabelColor>(0.9,0.4,0.4)</defaultLabelColor>
+    <isBad>true</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.02</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_CryoSyndrome</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>cryosleep syndrome</label>
+    <description>Weakness after waking from long cryosleep.</description>
+    <defaultLabelColor>(0.9,0.4,0.4)</defaultLabelColor>
+    <isBad>true</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.3</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_SkyLonging</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>sky longing</label>
+    <description>Years without standing on a planet have worn this person down.</description>
+    <defaultLabelColor>(0.9,0.4,0.4)</defaultLabelColor>
+    <isBad>true</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.03</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_AirPoisoning</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>air poisoning</label>
+    <description>Coughing and headaches from badly recycled air.</description>
+    <defaultLabelColor>(0.9,0.4,0.4)</defaultLabelColor>
+    <isBad>true</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_SkyLongingThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Rimverse_SkyLonging</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>missing the sky</label>
+        <description>It has been so long since I walked under an open sky.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>Rimverse_AlienPlague</defName>
+    <label>alien plague</label>
+    <description>A disease caught from a newly visited world. Rest and medicine build immunity.</description>
+    <makesSickThought>true</makesSickThought>
+    <lethalSeverity>1</lethalSeverity>
+    <tendable>true</tendable>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>12</baseTendDurationHours>
+        <severityPerDayTended>-0.08</severityPerDayTended>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.17</severityPerDayNotImmune>
+        <immunityPerDaySick>0.18</immunityPerDaySick>
+        <severityPerDayImmune>-0.3</severityPerDayImmune>
+        <immunityPerDayNotSick>-0.06</immunityPerDayNotSick>
+      </li>
+      <li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>minor</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>major</label>
+        <vomitMtbDays>1</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.85</minSeverity>
+        <label>extreme</label>
+        <lifeThreatening>true</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <IncidentDef>
+    <defName>Rimverse_Disease_AlienPlague</defName>
+    <label>alien plague</label>
+    <category>DiseaseHuman</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_DiseaseHuman</workerClass>
+    <diseaseIncident>Rimverse_AlienPlague</diseaseIncident>
+    <diseasePartsToAffect>
+      <li>Torso</li>
+    </diseasePartsToAffect>
+    <baseChance>0.6</baseChance>
+    <minDifficulty>0</minDifficulty>
+    <diseaseVictimFractionRange>0.2~0.5</diseaseVictimFractionRange>
+    <diseaseMaxVictims>5</diseaseMaxVictims>
+    <letterLabel>Alien plague</letterLabel>
+    <letterText>Something from this world has made {VICTIMS_count} colonists sick:\n\n{VICTIMS_list}</letterText>
+    <letterDef>NegativeEvent</letterDef>
+  </IncidentDef>
+  <HediffDef ParentName="DiseaseBase">
+    <defName>Rimverse_Parasite</defName>
+    <label>parasite infestation</label>
+    <description>Alien parasites from a derelict ship. Only surgery removes them.</description>
+    <makesSickThought>true</makesSickThought>
+    <tendable>false</tendable>
+    <lethalSeverity>1</lethalSeverity>
+    <initialSeverity>0.1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.05</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <hungerRateFactor>1.5</hungerRateFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>severe</label>
+        <lifeThreatening>true</lifeThreatening>
+        <hungerRateFactor>2</hungerRateFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>Rimverse_RemoveParasite</defName>
+    <label>remove parasites</label>
+    <description>Cut the alien parasites out.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing parasites.</jobString>
+    <workAmount>2500</workAmount>
+    <removesHediff>Rimverse_Parasite</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s parasites.</successfullyRemovedHediffMessage>
+    <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>6</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>Rimverse_MedkitShip</defName>
+    <label>ship medkit</label>
+    <description>A compact industrial medkit packed for zero gravity.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Medicine/MedkitShip</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MarketValue>24</MarketValue>
+      <Mass>0.4</Mass>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>1.0</MedicalPotency>
+      <MedicalQualityMax>1.0</MedicalQualityMax>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+      <Cloth>3</Cloth>
+      <Rimverse_Biomass>2</Rimverse_Biomass>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Drug</soundWorking>
+      <researchPrerequisite>Rimverse_SpaceMedicine</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>Rimverse_SealGel</defName>
+    <label>sealing gel</label>
+    <description>A spray gel that closes wounds and stops bleeding in zero gravity.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Medicine/SealGel</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MarketValue>22</MarketValue>
+      <Mass>0.4</Mass>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>0.9</MedicalPotency>
+      <MedicalQualityMax>0.9</MedicalQualityMax>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+      <Rimverse_Biomass>3</Rimverse_Biomass>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Drug</soundWorking>
+      <researchPrerequisite>Rimverse_SpaceMedicine</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Rimverse_AntiRadHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>anti-radiation dose</label>
+    <description>Anti-radiation compounds are clearing damaged cells.</description>
+    <defaultLabelColor>(0.5,0.8,1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_BoneStabilized</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>bone stabilized</label>
+    <description>A bone stabilizer is slowing bone loss.</description>
+    <defaultLabelColor>(0.5,0.8,1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.02</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_Vaccinated</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>contact vaccine</label>
+    <description>Protected against plagues from scanned worlds.</description>
+    <defaultLabelColor>(0.5,0.8,1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.05</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_VigilHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>on vigil</label>
+    <description>No need to sleep for a long shift.</description>
+    <defaultLabelColor>(0.5,0.8,1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <restFallFactor>0.1</restFallFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_CabinCalmHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>cabin calm</label>
+    <description>Calm and slow.</description>
+    <defaultLabelColor>(0.5,0.8,1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <MentalBreakThreshold>-0.08</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_PilotFocusHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>pilot focus</label>
+    <description>Sharp eyes and steady hands.</description>
+    <defaultLabelColor>(0.5,0.8,1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.15</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+          <Rimverse_PilotingOffset>3</Rimverse_PilotingOffset>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_StardustHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>high on stardust</label>
+    <description>Beautiful hallucinations of drifting stars.</description>
+    <defaultLabelColor>(0.5,0.8,1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_GravSerumHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>gravity serum</label>
+    <description>The heart works harder to endure high gravity.</description>
+    <defaultLabelColor>(0.5,0.8,1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.15</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_ColdBloodHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>cold blood</label>
+    <description>No fear and no pain. A little too aggressive.</description>
+    <defaultLabelColor>(0.5,0.8,1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painFactor>0.3</painFactor>
+        <statOffsets>
+          <MentalBreakThreshold>0.04</MentalBreakThreshold>
+          <MeleeHitChance>2</MeleeHitChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_NebulaNectarHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>nebula nectar</label>
+    <description>A soft, luxurious glow.</description>
+    <defaultLabelColor>(0.5,0.8,1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_HibernaHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>hiberna sleep</label>
+    <description>Deep sleep with a slowed metabolism.</description>
+    <defaultLabelColor>(0.5,0.8,1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <hungerRateFactor>0.3</hungerRateFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.6</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_AlienExtractHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>alien extract</label>
+    <description>The effect of local alien sap.</description>
+    <defaultLabelColor>(0.5,0.8,1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_AntiRad</defName>
+    <label>anti-radiation pills</label>
+    <description>Reduces radiation sickness.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/AntiRad</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>28</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_AntiRadHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="Rimverse.IngestionOutcomeDoer_ReduceHediffs">
+          <amount>0.5</amount>
+          <hediffs>
+            <li>Rimverse_RadiationSickness</li>
+          </hediffs>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceMedicine</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Rimverse_RadLichen>4</Rimverse_RadLichen>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_BoneStabilizer</defName>
+    <label>bone stabilizer</label>
+    <description>Reverses some bone loss and slows it for days.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/BoneStabilizer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>30</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_BoneStabilized</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="Rimverse.IngestionOutcomeDoer_ReduceHediffs">
+          <amount>0.3</amount>
+          <hediffs>
+            <li>Rimverse_BoneLoss</li>
+            <li>Rimverse_MuscleAtrophy</li>
+          </hediffs>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceMedicine</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>2</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_ContactVaccine</defName>
+    <label>contact vaccine</label>
+    <description>Speeds up immunity to alien plagues.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/ContactVaccine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>26</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_Vaccinated</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceMedicine</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+      <Rimverse_Biomass>2</Rimverse_Biomass>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_Vigil</defName>
+    <label>vigil</label>
+    <description>Skip sleep for a long shift. Addictive, and you crash after.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/Vigil</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>24</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_VigilHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>0.6</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+      <Rimverse_RawDwarfWheat>4</Rimverse_RawDwarfWheat>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Rimverse_Vigil</chemical>
+        <addictiveness>0.03</addictiveness>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+        <largeOverdoseChance>0.005</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ChemicalDef>
+    <defName>Rimverse_Vigil</defName>
+    <label>vigil</label>
+    <addictionHediff>Rimverse_VigilAddiction</addictionHediff>
+  </ChemicalDef>
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Rimverse_Chemical_Vigil</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>vigil</label>
+    <description>Because of an addiction to vigil, this person needs regular doses to avoid withdrawal.</description>
+    <fallPerDay>0.333</fallPerDay>
+    <listPriority>45</listPriority>
+  </NeedDef>
+  <HediffDef ParentName="AddictionBase">
+    <defName>Rimverse_VigilAddiction</defName>
+    <label>vigil addiction</label>
+    <description>A chemical addiction to vigil.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <chemicalNeed>Rimverse_Chemical_Vigil</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.04</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_CabinCalm</defName>
+    <label>cabin calm</label>
+    <description>Takes away cabin fever. Makes you slow.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/CabinCalm</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>20</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_CabinCalmHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="Rimverse.IngestionOutcomeDoer_ReduceHediffs">
+          <amount>0.5</amount>
+          <hediffs>
+            <li>Rimverse_CabinFever</li>
+          </hediffs>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_AntiNausea</defName>
+    <label>anti-nausea</label>
+    <description>Removes zero-gravity and warp sickness.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/AntiNausea</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>15</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="Rimverse.IngestionOutcomeDoer_ReduceHediffs">
+          <amount>1</amount>
+          <hediffs>
+            <li>Rimverse_ZeroGSickness</li>
+            <li>Rimverse_WarpSickness</li>
+            <li>Rimverse_LaunchSickness</li>
+          </hediffs>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceMedicine</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_PilotFocus</defName>
+    <label>pilot focus</label>
+    <description>Better piloting and aim. Strongly addictive.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/PilotFocus</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_PilotFocusHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>2</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Rimverse_PilotFocus</chemical>
+        <addictiveness>0.06</addictiveness>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+        <largeOverdoseChance>0.005</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ChemicalDef>
+    <defName>Rimverse_PilotFocus</defName>
+    <label>pilot focus</label>
+    <addictionHediff>Rimverse_PilotFocusAddiction</addictionHediff>
+  </ChemicalDef>
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Rimverse_Chemical_PilotFocus</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>pilot focus</label>
+    <description>Because of an addiction to pilot focus, this person needs regular doses to avoid withdrawal.</description>
+    <fallPerDay>0.333</fallPerDay>
+    <listPriority>45</listPriority>
+  </NeedDef>
+  <HediffDef ParentName="AddictionBase">
+    <defName>Rimverse_PilotFocusAddiction</defName>
+    <label>pilot focus addiction</label>
+    <description>A chemical addiction to pilot focus.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <chemicalNeed>Rimverse_Chemical_PilotFocus</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.04</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_Stardust</defName>
+    <label>stardust</label>
+    <description>Strong recreation with beautiful hallucinations. Addictive and banned in many civilizations.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/Stardust</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>40</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <joyKind>Chemical</joyKind>
+      <joy>0.6</joy>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_StardustHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Rimverse_AlienExtractRaw>3</Rimverse_AlienExtractRaw>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Rimverse_Stardust</chemical>
+        <addictiveness>0.05</addictiveness>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+        <largeOverdoseChance>0.005</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ChemicalDef>
+    <defName>Rimverse_Stardust</defName>
+    <label>stardust</label>
+    <addictionHediff>Rimverse_StardustAddiction</addictionHediff>
+  </ChemicalDef>
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Rimverse_Chemical_Stardust</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>stardust</label>
+    <description>Because of an addiction to stardust, this person needs regular doses to avoid withdrawal.</description>
+    <fallPerDay>0.333</fallPerDay>
+    <listPriority>45</listPriority>
+  </NeedDef>
+  <HediffDef ParentName="AddictionBase">
+    <defName>Rimverse_StardustAddiction</defName>
+    <label>stardust addiction</label>
+    <description>A chemical addiction to stardust.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <chemicalNeed>Rimverse_Chemical_Stardust</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.04</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_GravitySerum</defName>
+    <label>gravity serum</label>
+    <description>Endure high gravity for hours. Hard on the heart.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/GravitySerum</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>30</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_GravSerumHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="Rimverse.IngestionOutcomeDoer_ReduceHediffs">
+          <amount>1</amount>
+          <hediffs>
+            <li>Rimverse_GravityCrush</li>
+          </hediffs>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>2</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_ColdBlood</defName>
+    <label>cold blood</label>
+    <description>No fear or pain during a boarding. Raises aggression.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/ColdBlood</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>35</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_ColdBloodHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>2</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Rimverse_ColdBlood</chemical>
+        <addictiveness>0.02</addictiveness>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+        <largeOverdoseChance>0.005</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ChemicalDef>
+    <defName>Rimverse_ColdBlood</defName>
+    <label>cold blood</label>
+    <addictionHediff>Rimverse_ColdBloodAddiction</addictionHediff>
+  </ChemicalDef>
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Rimverse_Chemical_ColdBlood</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>cold blood</label>
+    <description>Because of an addiction to cold blood, this person needs regular doses to avoid withdrawal.</description>
+    <fallPerDay>0.333</fallPerDay>
+    <listPriority>45</listPriority>
+  </NeedDef>
+  <HediffDef ParentName="AddictionBase">
+    <defName>Rimverse_ColdBloodAddiction</defName>
+    <label>cold blood addiction</label>
+    <description>A chemical addiction to cold blood.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <chemicalNeed>Rimverse_Chemical_ColdBlood</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.04</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_NebulaNectar</defName>
+    <label>nebula nectar</label>
+    <description>A luxury drink of rare gas. Mildly addictive.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/NebulaNectar</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>60</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Social</drugCategory>
+      <joyKind>Chemical</joyKind>
+      <joy>0.5</joy>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_NebulaNectarHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Rimverse_LightGas>2</Rimverse_LightGas>
+      <Rimverse_PodFruit>4</Rimverse_PodFruit>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Rimverse_NebulaNectar</chemical>
+        <addictiveness>0.01</addictiveness>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+        <largeOverdoseChance>0.005</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ChemicalDef>
+    <defName>Rimverse_NebulaNectar</defName>
+    <label>nebula nectar</label>
+    <addictionHediff>Rimverse_NebulaNectarAddiction</addictionHediff>
+  </ChemicalDef>
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Rimverse_Chemical_NebulaNectar</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>nebula nectar</label>
+    <description>Because of an addiction to nebula nectar, this person needs regular doses to avoid withdrawal.</description>
+    <fallPerDay>0.333</fallPerDay>
+    <listPriority>45</listPriority>
+  </NeedDef>
+  <HediffDef ParentName="AddictionBase">
+    <defName>Rimverse_NebulaNectarAddiction</defName>
+    <label>nebula nectar addiction</label>
+    <description>A chemical addiction to nebula nectar.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <chemicalNeed>Rimverse_Chemical_NebulaNectar</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.04</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_Hiberna</defName>
+    <label>hiberna</label>
+    <description>Deep sleep without a pod, using less food. You wake up weak.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/Hiberna</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>28</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_HibernaHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>1</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>2</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Rimverse_AlienExtract</defName>
+    <label>alien extract</label>
+    <description>Refined local sap. Its effect depends on the world it came from.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/AlienExtract</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>30</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <joyKind>Chemical</joyKind>
+      <joy>0.2</joy>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Rimverse_AlienExtractHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpacePharma</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Rimverse_AlienExtractRaw>4</Rimverse_AlienExtractRaw>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DrugBase">
+    <defName>Rimverse_ReactorBrew</defName>
+    <label>reactor brew</label>
+    <description>The crew's homemade drink, distilled in a corner of the engine room. Social recreation.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/ReactorBrew</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Mass>0.3</Mass>
+      <Nutrition>0.05</Nutrition>
+      <WorkToMake>400</WorkToMake>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed, Liquor</foodType>
+      <joyKind>Social</joyKind>
+      <joy>0.17</joy>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <costList>
+      <Rimverse_RawShipTuber>12</Rimverse_RawShipTuber>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_ShipCuisine</researchPrerequisite>
+      <recipeUsers>
+        <li>Rimverse_ShipBar</li>
+        <li>Rimverse_CompactKitchen</li>
+      </recipeUsers>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Alcohol</chemical>
+        <addictiveness>0.01</addictiveness>
+        <minToleranceToAddict>0.25</minToleranceToAddict>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>11</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="DrugBase">
+    <defName>Rimverse_MossTea</defName>
+    <label>moss tea</label>
+    <description>A mild, soothing tea brewed from air moss.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Drug/MossTea</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MarketValue>8</MarketValue>
+      <Mass>0.2</Mass>
+      <Nutrition>0.05</Nutrition>
+      <WorkToMake>300</WorkToMake>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+      <joyKind>Gluttonous</joyKind>
+      <joy>0.12</joy>
+      <drugCategory>Social</drugCategory>
+      <outcomeDoers>
+        <li Class="Rimverse.IngestionOutcomeDoer_ReduceHediffs">
+          <amount>0.1</amount>
+          <hediffs>
+            <li>Rimverse_CabinFever</li>
+          </hediffs>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <costList>
+      <Rimverse_RawDwarfWheat>4</Rimverse_RawDwarfWheat>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_ShipCuisine</researchPrerequisite>
+      <recipeUsers>
+        <li>Rimverse_ShipBar</li>
+        <li>Rimverse_CompactKitchen</li>
+      </recipeUsers>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>12</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>Rimverse_VacuumLung</defName>
+    <label>vacuum lung</label>
+    <labelNoun>a vacuum lung</labelNoun>
+    <description>A lung with an oxygen reserve that buys minutes without air.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_VacuumLung</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_VacuumLung</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Rimverse_VacuumLung</defName>
+    <label>vacuum lung</label>
+    <description>A lung with an oxygen reserve that buys minutes without air.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/VacuumLung</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallVacuumLung</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceBionics</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Rimverse_InstallVacuumLung</defName>
+    <label>install vacuum lung</label>
+    <description>Install a vacuum lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_VacuumLung</ThingDef>
+      <HediffDef>Rimverse_VacuumLung</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vacuum lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_VacuumLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_VacuumLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_VacuumLung</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Rimverse_SealedSkin</defName>
+    <label>sealed skin</label>
+    <labelNoun>a sealed skin</labelNoun>
+    <description>A subdermal mesh that resists decompression.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_SealedSkin</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_SealedSkin</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+          <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Rimverse_SealedSkin</defName>
+    <label>sealed skin</label>
+    <description>A subdermal mesh that resists decompression.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/SealedSkin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallSealedSkin</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceBionics</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Rimverse_InstallSealedSkin</defName>
+    <label>install sealed skin</label>
+    <description>Install a sealed skin.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_SealedSkin</ThingDef>
+      <HediffDef>Rimverse_SealedSkin</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing sealed skin.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_SealedSkin</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_SealedSkin</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_SealedSkin</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Rimverse_ReinforcedBones</defName>
+    <label>reinforced bones</label>
+    <labelNoun>a reinforced bones</labelNoun>
+    <description>Laced bones immune to bone loss that endure high gravity.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_ReinforcedBones</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_ReinforcedBones</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Rimverse_ReinforcedBones</defName>
+    <label>reinforced bones</label>
+    <description>Laced bones immune to bone loss that endure high gravity.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/ReinforcedBones</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallReinforcedBones</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceBionics</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Rimverse_InstallReinforcedBones</defName>
+    <label>install reinforced bones</label>
+    <description>Install a reinforced bones.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_ReinforcedBones</ThingDef>
+      <HediffDef>Rimverse_ReinforcedBones</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing reinforced bones.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_ReinforcedBones</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_ReinforcedBones</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_ReinforcedBones</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>Rimverse_BalanceEar</defName>
+    <label>balance ear</label>
+    <labelNoun>a balance ear</labelNoun>
+    <description>An inner ear that ignores zero-g and warp sickness.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_BalanceEar</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_BalanceEar</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Hearing</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Rimverse_BalanceEar</defName>
+    <label>balance ear</label>
+    <description>An inner ear that ignores zero-g and warp sickness.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/BalanceEar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallBalanceEar</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>8</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceBionics</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Rimverse_InstallBalanceEar</defName>
+    <label>install balance ear</label>
+    <description>Install a balance ear.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_BalanceEar</ThingDef>
+      <HediffDef>Rimverse_BalanceEar</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing balance ear.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_BalanceEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_BalanceEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_BalanceEar</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>Rimverse_SensorEye</defName>
+    <label>sensor eye</label>
+    <labelNoun>a sensor eye</labelNoun>
+    <description>An eye that sees heat and signatures. Improves aim.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_SensorEye</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_SensorEye</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.3</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Rimverse_SensorEye</defName>
+    <label>sensor eye</label>
+    <description>An eye that sees heat and signatures. Improves aim.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/SensorEye</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallSensorEye</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Rimverse_SensorCrystal>1</Rimverse_SensorCrystal>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceBionics</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Rimverse_InstallSensorEye</defName>
+    <label>install sensor eye</label>
+    <description>Install a sensor eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_SensorEye</ThingDef>
+      <HediffDef>Rimverse_SensorEye</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing sensor eye.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_SensorEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_SensorEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_SensorEye</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Rimverse_PilotInterface</defName>
+    <label>pilot interface</label>
+    <labelNoun>a pilot interface</labelNoun>
+    <description>A neural link between pilot and ship.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_PilotInterface</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_PilotInterface</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <Rimverse_PilotingOffset>4</Rimverse_PilotingOffset>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Rimverse_PilotInterface</defName>
+    <label>pilot interface</label>
+    <description>A neural link between pilot and ship.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/PilotInterface</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallPilotInterface</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceBionics</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Rimverse_InstallPilotInterface</defName>
+    <label>install pilot interface</label>
+    <description>Install a pilot interface.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_PilotInterface</ThingDef>
+      <HediffDef>Rimverse_PilotInterface</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing pilot interface.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_PilotInterface</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_PilotInterface</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_PilotInterface</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Rimverse_WeaponsInterface</defName>
+    <label>weapons interface</label>
+    <labelNoun>a weapons interface</labelNoun>
+    <description>A neural link to ship weapons.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_WeaponsInterface</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_WeaponsInterface</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Rimverse_WeaponsInterface</defName>
+    <label>weapons interface</label>
+    <description>A neural link to ship weapons.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/WeaponsInterface</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallWeaponsInterface</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceBionics</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Rimverse_InstallWeaponsInterface</defName>
+    <label>install weapons interface</label>
+    <description>Install a weapons interface.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_WeaponsInterface</ThingDef>
+      <HediffDef>Rimverse_WeaponsInterface</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing weapons interface.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_WeaponsInterface</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_WeaponsInterface</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_WeaponsInterface</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>Rimverse_EngineerHand</defName>
+    <label>engineer hand</label>
+    <labelNoun>a engineer hand</labelNoun>
+    <description>A hand with built-in tools.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_EngineerHand</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_EngineerHand</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ConstructionSpeed>0.15</ConstructionSpeed>
+          <FixBrokenDownBuildingSuccessChance>0.1</FixBrokenDownBuildingSuccessChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Rimverse_EngineerHand</defName>
+    <label>engineer hand</label>
+    <description>A hand with built-in tools.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/EngineerHand</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallEngineerHand</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceBionics</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Rimverse_InstallEngineerHand</defName>
+    <label>install engineer hand</label>
+    <description>Install a engineer hand.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_EngineerHand</ThingDef>
+      <HediffDef>Rimverse_EngineerHand</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing engineer hand.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_EngineerHand</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_EngineerHand</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_EngineerHand</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>Rimverse_MagneticFeet</defName>
+    <label>magnetic feet</label>
+    <labelNoun>a magnetic feet</labelNoun>
+    <description>Feet with built-in magnetic boots.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_MagneticFeet</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_MagneticFeet</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Rimverse_MagneticFeet</defName>
+    <label>magnetic feet</label>
+    <description>Feet with built-in magnetic boots.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/MagneticFeet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallMagneticFeet</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceBionics</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Rimverse_InstallMagneticFeet</defName>
+    <label>install magnetic feet</label>
+    <description>Install a magnetic feet.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_MagneticFeet</ThingDef>
+      <HediffDef>Rimverse_MagneticFeet</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing magnetic feet.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_MagneticFeet</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_MagneticFeet</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Foot</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_MagneticFeet</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>Rimverse_BloodFilter</defName>
+    <label>blood filter</label>
+    <labelNoun>a blood filter</labelNoun>
+    <description>Filters toxins and plague agents.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_BloodFilter</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_BloodFilter</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>0.3</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+          <ToxicResistance>0.3</ToxicResistance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Rimverse_BloodFilter</defName>
+    <label>blood filter</label>
+    <description>Filters toxins and plague agents.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/BloodFilter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallBloodFilter</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceBionics</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>Rimverse_InstallBloodFilter</defName>
+    <label>install blood filter</label>
+    <description>Install a blood filter.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_BloodFilter</ThingDef>
+      <HediffDef>Rimverse_BloodFilter</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing blood filter.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_BloodFilter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_BloodFilter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_BloodFilter</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Rimverse_SleepRegulator</defName>
+    <label>sleep regulator</label>
+    <labelNoun>a sleep regulator</labelNoun>
+    <description>Less sleep, for long shifts.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_SleepRegulator</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_SleepRegulator</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <RestFallRateFactor>-0.2</RestFallRateFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Rimverse_SleepRegulator</defName>
+    <label>sleep regulator</label>
+    <description>Less sleep, for long shifts.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/SleepRegulator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallSleepRegulator</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>8</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceBionics</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Rimverse_InstallSleepRegulator</defName>
+    <label>install sleep regulator</label>
+    <description>Install a sleep regulator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_SleepRegulator</ThingDef>
+      <HediffDef>Rimverse_SleepRegulator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing sleep regulator.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_SleepRegulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_SleepRegulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_SleepRegulator</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Rimverse_CryoImplant</defName>
+    <label>cryo implant</label>
+    <labelNoun>a cryo implant</labelNoun>
+    <description>Wake from cryosleep without the syndrome.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_CryoImplant</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_CryoImplant</spawnThingOnRemoved>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>Rimverse_CryoImplant</defName>
+    <label>cryo implant</label>
+    <description>Wake from cryosleep without the syndrome.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/CryoImplant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallCryoImplant</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>6</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Rimverse_SpaceBionics</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>26000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Rimverse_InstallCryoImplant</defName>
+    <label>install cryo implant</label>
+    <description>Install a cryo implant.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_CryoImplant</ThingDef>
+      <HediffDef>Rimverse_CryoImplant</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing cryo implant.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_CryoImplant</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_CryoImplant</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_CryoImplant</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Rimverse_PrecursorCore</defName>
+    <label>precursor core</label>
+    <labelNoun>a precursor core</labelNoun>
+    <description>A rare implant recovered from ruins. Its builders are long gone.</description>
+    <descriptionHyperlinks><ThingDef>Rimverse_PrecursorCore</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rimverse_PrecursorCore</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ResearchSpeed>0.25</ResearchSpeed>
+          <GlobalLearningFactor>0.3</GlobalLearningFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>Rimverse_PrecursorCore</defName>
+    <label>precursor core</label>
+    <description>A rare implant recovered from ruins. Its builders are long gone.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/BodyPart/PrecursorCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>Rimverse_InstallPrecursorCore</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>0</WorkToMake>
+      <MarketValue>4000</MarketValue>
+    </statBases>
+  </ThingDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Rimverse_InstallPrecursorCore</defName>
+    <label>install precursor core</label>
+    <description>Install a precursor core.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rimverse_PrecursorCore</ThingDef>
+      <HediffDef>Rimverse_PrecursorCore</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing precursor core.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_PrecursorCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_PrecursorCore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rimverse_PrecursorCore</addsHediff>
+  </RecipeDef>
+
+  <TraitDef>
+    <defName>Rimverse_VoidBorn</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>void-born</label>
+        <description>{PAWN_nameDef} was born between the stars. {PAWN_pronoun} never gets space sick and cabin fever never touches {PAWN_objective}.</description>
+        <statOffsets>
+          <MentalBreakThreshold>-0.02</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Rimverse_Grounded</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>grounded</label>
+        <description>{PAWN_nameDef} hates space. {PAWN_pronoun} is happiest with soil underfoot.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Rimverse_NaturalPilot</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>natural pilot</label>
+        <description>{PAWN_nameDef} flies like breathing.</description>
+        <statOffsets>
+          <Rimverse_PilotingOffset>4</Rimverse_PilotingOffset>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Rimverse_Navigator</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>navigator</label>
+        <description>{PAWN_nameDef} reads sensor data and star charts at a glance.</description>
+        <skillGains>
+          <Intellectual>2</Intellectual>
+        </skillGains>
+        <statOffsets>
+          <ResearchSpeed>0.1</ResearchSpeed>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Rimverse_Claustrophobic</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>claustrophobic</label>
+        <description>{PAWN_nameDef} hates small rooms.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.04</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Rimverse_SpaceLoner</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>space loner</label>
+        <description>{PAWN_nameDef} doesn't mind long isolation.</description>
+        <statOffsets>
+          <SocialImpact>-0.1</SocialImpact>
+          <MentalBreakThreshold>-0.03</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Rimverse_Curious</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>curious</label>
+        <description>{PAWN_nameDef} lights up when exploring the unknown.</description>
+        <skillGains>
+          <Intellectual>1</Intellectual>
+        </skillGains>
+        <statOffsets>
+          <GlobalLearningFactor>0.1</GlobalLearningFactor>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Rimverse_ShipMechanic</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>ship mechanic</label>
+        <description>{PAWN_nameDef} grew up fixing engines.</description>
+        <skillGains>
+          <Construction>3</Construction>
+        </skillGains>
+        <statOffsets>
+          <FixBrokenDownBuildingSuccessChance>0.1</FixBrokenDownBuildingSuccessChance>
+          <ConstructionSpeed>0.1</ConstructionSpeed>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Rimverse_ColdUnderPressure</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>cold under pressure</label>
+        <description>{PAWN_nameDef} stays calm during breaches and boarding actions.</description>
+        <statOffsets>
+          <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+          <AimingDelayFactor>-0.1</AimingDelayFactor>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Rimverse_Smuggler</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>smuggler</label>
+        <description>{PAWN_nameDef} knows every black market in the sector.</description>
+        <skillGains>
+          <Social>2</Social>
+        </skillGains>
+        <statOffsets>
+          <TradePriceImprovement>0.08</TradePriceImprovement>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Rimverse_Diplomat</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>diplomat</label>
+        <description>{PAWN_nameDef} speaks the language of many civilizations.</description>
+        <skillGains>
+          <Social>3</Social>
+        </skillGains>
+        <statOffsets>
+          <NegotiationAbility>0.2</NegotiationAbility>
+          <SocialImpact>0.1</SocialImpact>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Rimverse_VoidSuperstitious</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>void-superstitious</label>
+        <description>{PAWN_nameDef} believes the void is watching.</description>
+        <statOffsets>
+          <PsychicSensitivity>0.2</PsychicSensitivity>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

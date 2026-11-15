@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/JoyGiverDef[defName="WatchTelevision"]/thingDefs</xpath>
+    <value>
+      <li>Rimverse_ObservationWindow</li>
+      <li>Rimverse_FlightSimulator</li>
+      <li>Rimverse_DigitalLibrary</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/JoyGiverDef[defName="Play_Chess"]/thingDefs</xpath>
+    <value>
+      <li>Rimverse_HoloGameTable</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/JoyGiverDef[defName="Play_Horseshoes"]/thingDefs</xpath>
+    <value>
+      <li>Rimverse_ShipGym</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SimpleResearchBench" or defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+    <value>
+      <li>Rimverse_NavigationTable</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Rimverse_NavigationTable"]/comps</xpath>
+    <value>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <ResearchSpeedFactor>0.08</ResearchSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>2</maxSimultaneous>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraderKindDef[defName="Rimverse_CivSpaceTrader"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Rimverse_SpaceGoods</tradeTag>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <totalPriceRange>1200~3000</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Rimverse_SpaceGoods</tag></li>
+    </value>
+  </Operation>
+</Patch>

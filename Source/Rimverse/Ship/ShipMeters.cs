@@ -85,6 +85,7 @@ namespace Rimverse
                 float target = ship.AirFraction;
                 float step = MapComponent_RimverseShips.RoomEqualizePerSecond * seconds;
                 cur = cur < target ? Mathf.Min(target, cur + step) : Mathf.Max(target, cur - step);
+                if (CombatVentUtility.IsVented(room)) cur = 0f;
                 s.roomAir[room.ID] = cur;
             }
             List<int> stale = null;
@@ -154,20 +155,23 @@ namespace Rimverse
                 if (ship == null)
                 {
                     rate = vacuum ? HypoxiaPerSecondVacuum : HypoxiaPerSecondLowAir;
+                    if (vacuum) CatalogHealth.VacuumExposure(pawn, seconds);
                 }
                 else
                 {
                     float air = comp.RoomAir(room);
                     if (air >= MapComponent_RimverseShips.HypoxiaAirThreshold)
                     {
+                        if (air < 0.5f && ship.airGeneration <= 0f) CatalogHealth.StaleAir(pawn, seconds);
                         if (air >= 0.5f) VacuumSuitUtility.Refill(pawn, seconds, ship);
                         continue;
                     }
                     rate = Mathf.Lerp(HypoxiaPerSecondVacuum, HypoxiaPerSecondLowAir, air / MapComponent_RimverseShips.HypoxiaAirThreshold);
+                    if (air < 0.05f) CatalogHealth.VacuumExposure(pawn, seconds);
                 }
                 if (SpaceMapUtility.VacuumProtection(pawn) >= 1f) continue;
                 if (VacuumSuitUtility.TryBreatheFromSuit(pawn, seconds)) continue;
-                HealthUtility.AdjustSeverity(pawn, RimverseDefOf.Rimverse_Hypoxia, rate * seconds * GeneSpace.Factor(pawn, e => e.hypoxiaFactor));
+                HealthUtility.AdjustSeverity(pawn, RimverseDefOf.Rimverse_Hypoxia, rate * seconds * GeneSpace.Factor(pawn, e => e.hypoxiaFactor) * CatalogHealth.HypoxiaFactor(pawn));
                 if (toxic && ship == null)
                 {
                     float resist = Mathf.Max(pawn.GetStatValue(StatDefOf.ToxicResistance), pawn.GetStatValue(StatDefOf.ToxicEnvironmentResistance));

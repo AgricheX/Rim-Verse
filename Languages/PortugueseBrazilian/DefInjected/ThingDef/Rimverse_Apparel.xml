@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Clothes_CrewJumpsuit.label>macacão de tripulação</Rimverse_Clothes_CrewJumpsuit.label>
+  <Rimverse_Clothes_CrewJumpsuit.description>Roupa padrão e barata de bordo, cheia de bolsos.</Rimverse_Clothes_CrewJumpsuit.description>
+  <Rimverse_Clothes_ThermalJumpsuit.label>macacão térmico</Rimverse_Clothes_ThermalJumpsuit.label>
+  <Rimverse_Clothes_ThermalJumpsuit.description>Para naves frias e mundos gelados.</Rimverse_Clothes_ThermalJumpsuit.description>
+  <Rimverse_Clothes_CoolingJumpsuit.label>macacão refrigerado</Rimverse_Clothes_CoolingJumpsuit.label>
+  <Rimverse_Clothes_CoolingJumpsuit.description>Para mundos quentes e salas de reator.</Rimverse_Clothes_CoolingJumpsuit.description>
+  <Rimverse_Clothes_OfficerUniform.label>uniforme de oficial</Rimverse_Clothes_OfficerUniform.label>
+  <Rimverse_Clothes_OfficerUniform.description>Um uniforme bem passado que impõe respeito a bordo.</Rimverse_Clothes_OfficerUniform.description>
+  <Rimverse_Clothes_MarineFatigues.label>farda de fuzileiro</Rimverse_Clothes_MarineFatigues.label>
+  <Rimverse_Clothes_MarineFatigues.description>Uma farda leve que ajuda os soldados a mirar mais rápido.</Rimverse_Clothes_MarineFatigues.description>
+  <Rimverse_Clothes_LabCoat.label>jaleco de bordo</Rimverse_Clothes_LabCoat.label>
+  <Rimverse_Clothes_LabCoat.description>Jaleco limpo para médicos e pesquisadores.</Rimverse_Clothes_LabCoat.description>
+  <Rimverse_Clothes_EngineerApron.label>avental de engenheiro</Rimverse_Clothes_EngineerApron.label>
+  <Rimverse_Clothes_EngineerApron.description>Um avental resistente a fogo com alças de ferramentas.</Rimverse_Clothes_EngineerApron.description>
+  <Rimverse_Clothes_HydroSuit.label>roupa de hidroponia</Rimverse_Clothes_HydroSuit.label>
+  <Rimverse_Clothes_HydroSuit.description>Macacão para quem cuida dos jardins.</Rimverse_Clothes_HydroSuit.description>
+  <Rimverse_Clothes_GalaUniform.label>traje de gala estelar</Rimverse_Clothes_GalaUniform.label>
+  <Rimverse_Clothes_GalaUniform.description>Traje formal para diplomacia e festas.</Rimverse_Clothes_GalaUniform.description>
+  <Rimverse_Clothes_NavigatorMantle.label>manto de navegador</Rimverse_Clothes_NavigatorMantle.label>
+  <Rimverse_Clothes_NavigatorMantle.description>Um manto com fios de sensor que ajuda os pilotos a ler os instrumentos.</Rimverse_Clothes_NavigatorMantle.description>
+  <Rimverse_Clothes_CaptainCoat.label>casaco de capitão</Rimverse_Clothes_CaptainCoat.label>
+  <Rimverse_Clothes_CaptainCoat.description>Um casaco longo que marca o líder da tripulação.</Rimverse_Clothes_CaptainCoat.description>
+  <Rimverse_Clothes_CabinWear.label>roupa de cabine</Rimverse_Clothes_CabinWear.label>
+  <Rimverse_Clothes_CabinWear.description>Roupas macias para dormir bem.</Rimverse_Clothes_CabinWear.description>
+  <Rimverse_Clothes_CryoGarment.label>roupa de criossono</Rimverse_Clothes_CryoGarment.label>
+  <Rimverse_Clothes_CryoGarment.description>Roupa com fios que suaviza o despertar do criossono.</Rimverse_Clothes_CryoGarment.description>
+  <Rimverse_Clothes_QuarantineSuit.label>traje de quarentena</Rimverse_Clothes_QuarantineSuit.label>
+  <Rimverse_Clothes_QuarantineSuit.description>Protege de doenças e de ar tóxico.</Rimverse_Clothes_QuarantineSuit.description>
+  <Rimverse_Clothes_ColonistPoncho.label>poncho de colono</Rimverse_Clothes_ColonistPoncho.label>
+  <Rimverse_Clothes_ColonistPoncho.description>Proteção barata contra poeira e chuva ácida.</Rimverse_Clothes_ColonistPoncho.description>
+  <Rimverse_Clothes_SmugglerCoat.label>roupa de contrabandista</Rimverse_Clothes_SmugglerCoat.label>
+  <Rimverse_Clothes_SmugglerCoat.description>Bolsos escondidos enganam a fiscalização.</Rimverse_Clothes_SmugglerCoat.description>
+  <Rimverse_Armor_SuitExplorer.label>traje de vácuo de explorador</Rimverse_Armor_SuitExplorer.label>
+  <Rimverse_Armor_SuitExplorer.description>Resiste a calor, frio e radiação. Tem 16 horas de ar.</Rimverse_Armor_SuitExplorer.description>
+  <Rimverse_Armor_SuitBoarding.label>traje de vácuo de abordagem</Rimverse_Armor_SuitBoarding.label>
+  <Rimverse_Armor_SuitBoarding.description>Traje de combate pesado com propulsores curtos. Tem 6 horas de ar.</Rimverse_Armor_SuitBoarding.description>
+  <Rimverse_Armor_SuitEngineer.label>traje de vácuo de engenheiro</Rimverse_Armor_SuitEngineer.label>
+  <Rimverse_Armor_SuitEngineer.description>Ferramentas embutidas selam brechas mais rápido. Tem 12 horas de ar.</Rimverse_Armor_SuitEngineer.description>
+  <Rimverse_Armor_SuitStealth.label>traje de vácuo furtivo</Rimverse_Armor_SuitStealth.label>
+  <Rimverse_Armor_SuitStealth.description>Assinatura baixa para infiltração. Tem 6 horas de ar.</Rimverse_Armor_SuitStealth.description>
+  <Rimverse_Armor_SuitCommand.label>traje de comando</Rimverse_Armor_SuitCommand.label>
+  <Rimverse_Armor_SuitCommand.description>Escudo leve e auxílios de liderança. Tem 24 horas de ar.</Rimverse_Armor_SuitCommand.description>
+  <Rimverse_Armor_SuitLiving.label>traje vivo</Rimverse_Armor_SuitLiving.label>
+  <Rimverse_Armor_SuitLiving.description>Um traje cultivado que recicla o próprio ar e se conserta sozinho.</Rimverse_Armor_SuitLiving.description>
+  <Rimverse_Armor_VestCrew.label>colete de tripulante</Rimverse_Armor_VestCrew.label>
+  <Rimverse_Armor_VestCrew.description>Colete leve usado por baixo do uniforme.</Rimverse_Armor_VestCrew.description>
+  <Rimverse_Armor_ArmorMarine.label>armadura de fuzileiro</Rimverse_Armor_ArmorMarine.label>
+  <Rimverse_Armor_ArmorMarine.description>Armadura média e barata.</Rimverse_Armor_ArmorMarine.description>
+  <Rimverse_Armor_ArmorMarineSealed.label>armadura de fuzileiro selada</Rimverse_Armor_ArmorMarineSealed.label>
+  <Rimverse_Armor_ArmorMarineSealed.description>A armadura padrão de combate em nave, selada para 4 horas de vácuo.</Rimverse_Armor_ArmorMarineSealed.description>
+  <Rimverse_Armor_ArmorShock.label>armadura de choque</Rimverse_Armor_ArmorShock.label>
+  <Rimverse_Armor_ArmorShock.description>Armadura pesada para abrir caminho em abordagem. 2 horas de ar.</Rimverse_Armor_ArmorShock.description>
+  <Rimverse_Armor_ArmorMagnetic.label>armadura magnética</Rimverse_Armor_ArmorMagnetic.label>
+  <Rimverse_Armor_ArmorMagnetic.description>Nunca perde o chão em gravidade zero. 4 horas de ar.</Rimverse_Armor_ArmorMagnetic.description>
+  <Rimverse_Armor_ArmorHunter.label>armadura de caçador</Rimverse_Armor_ArmorHunter.label>
+  <Rimverse_Armor_ArmorHunter.description>Sensores de assinatura ajudam a rastrear presas. 8 horas de ar.</Rimverse_Armor_ArmorHunter.description>
+  <Rimverse_Armor_Exoskeleton.label>exoesqueleto de combate</Rimverse_Armor_Exoskeleton.label>
+  <Rimverse_Armor_Exoskeleton.description>Propulsores e membros motorizados carregam armas pesadas. 12 horas de ar.</Rimverse_Armor_Exoskeleton.description>
+  <Rimverse_Armor_ArmorPrecursor.label>armadura precursora</Rimverse_Armor_ArmorPrecursor.label>
+  <Rimverse_Armor_ArmorPrecursor.description>Achada só em ruínas. O ar nunca acaba.</Rimverse_Armor_ArmorPrecursor.description>
+  <Rimverse_Gear_HelmetCombatSealed.label>capacete de combate selado</Rimverse_Gear_HelmetCombatSealed.label>
+  <Rimverse_Gear_HelmetCombatSealed.description>Veda armaduras e trajes de vácuo. Proteção alta.</Rimverse_Gear_HelmetCombatSealed.description>
+  <Rimverse_Gear_HelmetWideVisor.label>capacete de visor amplo</Rimverse_Gear_HelmetWideVisor.label>
+  <Rimverse_Gear_HelmetWideVisor.description>Mais visão e mira, menos proteção. Veda trajes.</Rimverse_Gear_HelmetWideVisor.description>
+  <Rimverse_Gear_SensorVisor.label>visor de sensor</Rimverse_Gear_SensorVisor.label>
+  <Rimverse_Gear_SensorVisor.description>Mostra a classe de tamanho de objetos próximos e ajuda a ler sensores.</Rimverse_Gear_SensorVisor.description>
+  <Rimverse_Gear_BreathMask.label>máscara de respiração</Rimverse_Gear_BreathMask.label>
+  <Rimverse_Gear_BreathMask.description>Para ar ruim e atmosfera fina. Não protege do vácuo.</Rimverse_Gear_BreathMask.description>
+  <Rimverse_Gear_MagBoots.label>botas magnéticas</Rimverse_Gear_MagBoots.label>
+  <Rimverse_Gear_MagBoots.description>Ande normalmente em gravidade zero.</Rimverse_Gear_MagBoots.description>
+  <Rimverse_Gear_ThrusterBelt.label>cinto de propulsor</Rimverse_Gear_ThrusterBelt.label>
+  <Rimverse_Gear_ThrusterBelt.description>Saltos curtos em gravidade zero.</Rimverse_Gear_ThrusterBelt.description>
+  <Rimverse_Gear_OxygenPack.label>mochila de oxigênio</Rimverse_Gear_OxygenPack.label>
+  <Rimverse_Gear_OxygenPack.description>Soma 8 horas de ar a um traje selado.</Rimverse_Gear_OxygenPack.description>
+  <Rimverse_Gear_RepairPack.label>mochila de reparo</Rimverse_Gear_RepairPack.label>
+  <Rimverse_Gear_RepairPack.description>Sela uma brecha na hora e acelera reparos.</Rimverse_Gear_RepairPack.description>
+  <Rimverse_Gear_ShipShield.label>escudo pessoal de bordo</Rimverse_Gear_ShipShield.label>
+  <Rimverse_Gear_ShipShield.description>Um cinto de escudo ajustado para corredores de nave.</Rimverse_Gear_ShipShield.description>
+  <Rimverse_Gear_MedBelt.label>cinto médico</Rimverse_Gear_MedBelt.label>
+  <Rimverse_Gear_MedBelt.description>Tratamento de emergência em campo.</Rimverse_Gear_MedBelt.description>
+  <Rimverse_Gear_TargetBeacon.label>balizador</Rimverse_Gear_TargetBeacon.label>
+  <Rimverse_Gear_TargetBeacon.description>Marca um alvo para as armas da nave durante o bombardeio orbital.</Rimverse_Gear_TargetBeacon.description>
+  <Rimverse_Gear_PersonalAnchor.label>âncora pessoal</Rimverse_Gear_PersonalAnchor.label>
+  <Rimverse_Gear_PersonalAnchor.description>Impede que quem usa seja sugado numa descompressão.</Rimverse_Gear_PersonalAnchor.description>
+  <Rimverse_Gear_Translator.label>tradutor</Rimverse_Gear_Translator.label>
+  <Rimverse_Gear_Translator.description>Conversa melhor com civilizações desconhecidas.</Rimverse_Gear_Translator.description>
+</LanguageData>

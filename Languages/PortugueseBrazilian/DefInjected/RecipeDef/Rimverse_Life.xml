@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CookShipMeal.label>cozinhar refeição de bordo</Rimverse_CookShipMeal.label>
+  <Rimverse_CookShipMeal.description>Uma refeição quente simples servida no refeitório.</Rimverse_CookShipMeal.description>
+  <Rimverse_CookShipMeal.jobString>Cozinhando refeição de bordo.</Rimverse_CookShipMeal.jobString>
+  <Rimverse_CookCaptainMeal.label>cozinhar refeição de capitão</Rimverse_CookCaptainMeal.label>
+  <Rimverse_CookCaptainMeal.description>Uma refeição bem montada para oficiais e visitantes.</Rimverse_CookCaptainMeal.description>
+  <Rimverse_CookCaptainMeal.jobString>Cozinhando refeição de capitão.</Rimverse_CookCaptainMeal.jobString>
+  <Rimverse_CookStellarFeast.label>cozinhar banquete estelar</Rimverse_CookStellarFeast.label>
+  <Rimverse_CookStellarFeast.description>Um banquete farto para festas e diplomacia.</Rimverse_CookStellarFeast.description>
+  <Rimverse_CookStellarFeast.jobString>Cozinhando banquete estelar.</Rimverse_CookStellarFeast.jobString>
+  <Rimverse_CookExoticPreserve.label>cozinhar conserva exótica</Rimverse_CookExoticPreserve.label>
+  <Rimverse_CookExoticPreserve.description>Fauna e flora alienígenas em conserva. Dura muito e vale caro.</Rimverse_CookExoticPreserve.description>
+  <Rimverse_CookExoticPreserve.jobString>Cozinhando conserva exótica.</Rimverse_CookExoticPreserve.jobString>
+  <Rimverse_GrowCulturedProtein.label>cultivar proteína</Rimverse_GrowCulturedProtein.label>
+  <Rimverse_GrowCulturedProtein.description>Cultivar carne de tanque a partir de biomassa ou soja.</Rimverse_GrowCulturedProtein.description>
+  <Rimverse_GrowCulturedProtein.jobString>Cultivando proteína.</Rimverse_GrowCulturedProtein.jobString>
+  <Rimverse_RemoveParasite.label>remover parasitas</Rimverse_RemoveParasite.label>
+  <Rimverse_RemoveParasite.description>Retirar os parasitas alienígenas.</Rimverse_RemoveParasite.description>
+  <Rimverse_RemoveParasite.jobString>Removendo parasitas.</Rimverse_RemoveParasite.jobString>
+  <Rimverse_RemoveParasite.successfullyRemovedHediffMessage>{0} removeu com sucesso os parasitas de {1}.</Rimverse_RemoveParasite.successfullyRemovedHediffMessage>
+  <Rimverse_InstallVacuumLung.label>instalar pulmão de vácuo</Rimverse_InstallVacuumLung.label>
+  <Rimverse_InstallVacuumLung.description>Instalar pulmão de vácuo.</Rimverse_InstallVacuumLung.description>
+  <Rimverse_InstallVacuumLung.jobString>Instalando pulmão de vácuo.</Rimverse_InstallVacuumLung.jobString>
+  <Rimverse_InstallSealedSkin.label>instalar pele selada</Rimverse_InstallSealedSkin.label>
+  <Rimverse_InstallSealedSkin.description>Instalar pele selada.</Rimverse_InstallSealedSkin.description>
+  <Rimverse_InstallSealedSkin.jobString>Instalando pele selada.</Rimverse_InstallSealedSkin.jobString>
+  <Rimverse_InstallReinforcedBones.label>instalar ossos reforçados</Rimverse_InstallReinforcedBones.label>
+  <Rimverse_InstallReinforcedBones.description>Instalar ossos reforçados.</Rimverse_InstallReinforcedBones.description>
+  <Rimverse_InstallReinforcedBones.jobString>Instalando ossos reforçados.</Rimverse_InstallReinforcedBones.jobString>
+  <Rimverse_InstallBalanceEar.label>instalar ouvido de equilíbrio</Rimverse_InstallBalanceEar.label>
+  <Rimverse_InstallBalanceEar.description>Instalar ouvido de equilíbrio.</Rimverse_InstallBalanceEar.description>
+  <Rimverse_InstallBalanceEar.jobString>Instalando ouvido de equilíbrio.</Rimverse_InstallBalanceEar.jobString>
+  <Rimverse_InstallSensorEye.label>instalar olho de sensor</Rimverse_InstallSensorEye.label>
+  <Rimverse_InstallSensorEye.description>Instalar olho de sensor.</Rimverse_InstallSensorEye.description>
+  <Rimverse_InstallSensorEye.jobString>Instalando olho de sensor.</Rimverse_InstallSensorEye.jobString>
+  <Rimverse_InstallPilotInterface.label>instalar interface de pilotagem</Rimverse_InstallPilotInterface.label>
+  <Rimverse_InstallPilotInterface.description>Instalar interface de pilotagem.</Rimverse_InstallPilotInterface.description>
+  <Rimverse_InstallPilotInterface.jobString>Instalando interface de pilotagem.</Rimverse_InstallPilotInterface.jobString>
+  <Rimverse_InstallWeaponsInterface.label>instalar interface de armas</Rimverse_InstallWeaponsInterface.label>
+  <Rimverse_InstallWeaponsInterface.description>Instalar interface de armas.</Rimverse_InstallWeaponsInterface.description>
+  <Rimverse_InstallWeaponsInterface.jobString>Instalando interface de armas.</Rimverse_InstallWeaponsInterface.jobString>
+  <Rimverse_InstallEngineerHand.label>instalar mão de engenheiro</Rimverse_InstallEngineerHand.label>
+  <Rimverse_InstallEngineerHand.description>Instalar mão de engenheiro.</Rimverse_InstallEngineerHand.description>
+  <Rimverse_InstallEngineerHand.jobString>Instalando mão de engenheiro.</Rimverse_InstallEngineerHand.jobString>
+  <Rimverse_InstallMagneticFeet.label>instalar pés magnéticos</Rimverse_InstallMagneticFeet.label>
+  <Rimverse_InstallMagneticFeet.description>Instalar pés magnéticos.</Rimverse_InstallMagneticFeet.description>
+  <Rimverse_InstallMagneticFeet.jobString>Instalando pés magnéticos.</Rimverse_InstallMagneticFeet.jobString>
+  <Rimverse_InstallBloodFilter.label>instalar filtro de sangue</Rimverse_InstallBloodFilter.label>
+  <Rimverse_InstallBloodFilter.description>Instalar filtro de sangue.</Rimverse_InstallBloodFilter.description>
+  <Rimverse_InstallBloodFilter.jobString>Instalando filtro de sangue.</Rimverse_InstallBloodFilter.jobString>
+  <Rimverse_InstallSleepRegulator.label>instalar regulador de sono</Rimverse_InstallSleepRegulator.label>
+  <Rimverse_InstallSleepRegulator.description>Instalar regulador de sono.</Rimverse_InstallSleepRegulator.description>
+  <Rimverse_InstallSleepRegulator.jobString>Instalando regulador de sono.</Rimverse_InstallSleepRegulator.jobString>
+  <Rimverse_InstallCryoImplant.label>instalar implante de criossono</Rimverse_InstallCryoImplant.label>
+  <Rimverse_InstallCryoImplant.description>Instalar implante de criossono.</Rimverse_InstallCryoImplant.description>
+  <Rimverse_InstallCryoImplant.jobString>Instalando implante de criossono.</Rimverse_InstallCryoImplant.jobString>
+  <Rimverse_InstallPrecursorCore.label>instalar núcleo precursor</Rimverse_InstallPrecursorCore.label>
+  <Rimverse_InstallPrecursorCore.description>Instalar núcleo precursor.</Rimverse_InstallPrecursorCore.description>
+  <Rimverse_InstallPrecursorCore.jobString>Instalando núcleo precursor.</Rimverse_InstallPrecursorCore.jobString>
+</LanguageData>

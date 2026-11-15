@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CrewClothing.label>roupas de bordo</Rimverse_CrewClothing.label>
+  <Rimverse_CrewClothing.description>Macacões, uniformes, jalecos e o resto das roupas usadas a bordo.</Rimverse_CrewClothing.description>
+  <Rimverse_AdvancedSuits.label>trajes de vácuo avançados</Rimverse_AdvancedSuits.label>
+  <Rimverse_AdvancedSuits.description>Trajes de explorador, de abordagem, de engenheiro e furtivo.</Rimverse_AdvancedSuits.description>
+  <Rimverse_SealedArmor.label>armadura selada</Rimverse_SealedArmor.label>
+  <Rimverse_SealedArmor.description>Armadura de fuzileiro selada contra o vácuo, armadura magnética e capacetes que vedam armaduras.</Rimverse_SealedArmor.description>
+  <Rimverse_Exosuits.label>exoesqueletos de combate</Rimverse_Exosuits.label>
+  <Rimverse_Exosuits.description>Exoesqueletos ultratecnológicos, trajes de comando e trajes vivos.</Rimverse_Exosuits.description>
+  <Rimverse_SpaceGear.label>equipamento espacial</Rimverse_SpaceGear.label>
+  <Rimverse_SpaceGear.description>Botas magnéticas, cintos de propulsor, mochilas de oxigênio e de reparo, tradutores e outros equipamentos.</Rimverse_SpaceGear.description>
+</LanguageData>

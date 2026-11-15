@@ -126,7 +126,7 @@
     <label>ship in orbit</label>
     <description>A Rimverse ship holding orbit above the planet.</description>
     <worldObjectClass>Rimverse.ShipOrbitMapParent</worldObjectClass>
-    <texture>World/WorldObjects/Expanding/TravelingShuttle</texture>
+    <texture>Rimverse/World/ShipInOrbit</texture>
     <expandingIcon>true</expandingIcon>
     <expandingIconTexture>World/WorldObjects/Expanding/TravelingShuttle</expandingIconTexture>
     <expandingIconPriority>60</expandingIconPriority>

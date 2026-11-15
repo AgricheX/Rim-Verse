@@ -6,7 +6,7 @@
     <label>warp matter</label>
     <description>Exotic matter refined from uranium and chemfuel. Warp drives burn it to fold space. Stored in warp tanks.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Chemfuel</texPath>
+      <texPath>Rimverse/Things/Item/Resource/WarpMatter</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.85</drawSize>
       <color>(0.55, 0.75, 1)</color>

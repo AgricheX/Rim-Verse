@@ -6,7 +6,7 @@
     <label>slow breathing</label>
     <labelShortAdj>slow-breathing</labelShortAdj>
     <description>Efficient lungs and a slow metabolism. Uses less ship air and resists hypoxia.</description>
-    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconPath>Rimverse/UI/Gene/Gene_SlowBreathing</iconPath>
     <iconColor>(0.7,0.9,0.9)</iconColor>
     <displayCategory>Rimverse_Lineages</displayCategory>
     <displayOrderInCategory>200</displayOrderInCategory>
@@ -28,7 +28,7 @@
     <label>radiation skin</label>
     <labelShortAdj>rad-skinned</labelShortAdj>
     <description>Thick, pigmented skin that blocks hard radiation and toxic fallout.</description>
-    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconPath>Rimverse/UI/Gene/Gene_RadiationSkin</iconPath>
     <iconColor>(0.7,0.9,0.9)</iconColor>
     <displayCategory>Rimverse_Lineages</displayCategory>
     <displayOrderInCategory>210</displayOrderInCategory>
@@ -45,7 +45,7 @@
     <label>perfect balance</label>
     <labelShortAdj>balanced</labelShortAdj>
     <description>An inner ear that never gets confused. Zero gravity and low gravity do not bother them.</description>
-    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconPath>Rimverse/UI/Gene/Gene_PerfectBalance</iconPath>
     <iconColor>(0.7,0.9,0.9)</iconColor>
     <displayCategory>Rimverse_Lineages</displayCategory>
     <displayOrderInCategory>220</displayOrderInCategory>
@@ -68,7 +68,7 @@
     <label>hibernation</label>
     <labelShortAdj>hibernating</labelShortAdj>
     <description>They slow down during long trips: more tolerance for cold rooms and far less cabin fever, but they sleep more.</description>
-    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <iconPath>Rimverse/UI/Gene/Gene_Hibernation</iconPath>
     <iconColor>(0.7,0.9,0.9)</iconColor>
     <displayCategory>Rimverse_Lineages</displayCategory>
     <displayOrderInCategory>230</displayOrderInCategory>
@@ -112,7 +112,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
+          <texPath>Rimverse/Things/Pawn/Mech/HullRepairer/HullRepairer</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <shaderType>CutoutComplex</shaderType>
           <color>(0.85,0.75,0.4)</color>
@@ -196,7 +196,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
+          <texPath>Rimverse/Things/Pawn/Mech/CargoHauler/CargoHauler</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <shaderType>CutoutComplex</shaderType>
           <color>(0.6,0.6,0.65)</color>
@@ -280,7 +280,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
+          <texPath>Rimverse/Things/Pawn/Mech/AsteroidMiner/AsteroidMiner</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <shaderType>CutoutComplex</shaderType>
           <color>(0.55,0.45,0.35)</color>
@@ -361,7 +361,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Pikeman</texPath>
+          <texPath>Rimverse/Things/Pawn/Mech/CorridorSentry/CorridorSentry</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <shaderType>CutoutComplex</shaderType>
           <color>(0.45,0.5,0.55)</color>
@@ -481,7 +481,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Scyther</texPath>
+          <texPath>Rimverse/Things/Pawn/Mech/Boarder/Boarder</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <shaderType>CutoutComplex</shaderType>
           <color>(0.7,0.3,0.3)</color>
@@ -571,7 +571,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
+          <texPath>Rimverse/Things/Pawn/Mech/MechFighter/MechFighter</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <shaderType>CutoutComplex</shaderType>
           <color>(0.35,0.35,0.5)</color>
@@ -648,8 +648,8 @@
     <label>onboard school</label>
     <description>A compact classroom for children aboard. Children in the same room learn and gain skills, faster with an adult around. Pick a subject: general, piloting, engineering or medicine.</description>
     <graphicData>
-      <texPath>Things/Building/Furniture/Table2x2</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Rimverse/Things/Building/Misc/ShipClassroom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.6,0.75,0.8)</color>
     </graphicData>
@@ -688,7 +688,7 @@
     <label>zero-g toys</label>
     <description>Floating toys tethered to a frame. Children in the room play, which lifts recreation and eases cabin fever.</description>
     <graphicData>
-      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <texPath>Rimverse/Things/Building/Misc/ZeroGToys</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.6,0.75,0.8)</color>
@@ -727,7 +727,7 @@
     <label>waste launcher</label>
     <description>A small mass driver that fires wastepacks into space. Only works in space or in orbit. Haulers bring wastepacks to it.</description><thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <texPath>Rimverse/Things/Building/Misc/WasteLauncher</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(0.6,0.75,0.8)</color>
@@ -793,7 +793,7 @@
     <label>waste recycler</label>
     <description>Breaks wastepacks down into steel and chemfuel. Slow, power hungry, but it works anywhere.</description><thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <texPath>Rimverse/Things/Building/Misc/WasteRecycler</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <color>(0.6,0.75,0.8)</color>

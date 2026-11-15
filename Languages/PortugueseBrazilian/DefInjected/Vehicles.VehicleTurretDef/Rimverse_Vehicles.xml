@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_VT_MG.label>metralhadora montada</Rimverse_VT_MG.label>
+  <Rimverse_VT_MG.description>metralhadora montada</Rimverse_VT_MG.description>
+  <Rimverse_VT_LightCannon.label>canhão leve</Rimverse_VT_LightCannon.label>
+  <Rimverse_VT_LightCannon.description>canhão leve</Rimverse_VT_LightCannon.description>
+  <Rimverse_VT_HeavyCannon.label>canhão pesado</Rimverse_VT_HeavyCannon.label>
+  <Rimverse_VT_HeavyCannon.description>canhão pesado</Rimverse_VT_HeavyCannon.description>
+  <Rimverse_VT_Laser.label>carabina laser montada</Rimverse_VT_Laser.label>
+  <Rimverse_VT_Laser.description>carabina laser montada</Rimverse_VT_Laser.description>
+  <Rimverse_VT_Plasma.label>canhão de plasma</Rimverse_VT_Plasma.label>
+  <Rimverse_VT_Plasma.description>canhão de plasma</Rimverse_VT_Plasma.description>
+  <Rimverse_VT_HeavyPair.label>armas pesadas duplas</Rimverse_VT_HeavyPair.label>
+  <Rimverse_VT_HeavyPair.description>armas pesadas duplas</Rimverse_VT_HeavyPair.description>
+  <Rimverse_VT_Rocket.label>casulo de foguetes</Rimverse_VT_Rocket.label>
+  <Rimverse_VT_Rocket.description>casulo de foguetes</Rimverse_VT_Rocket.description>
+  <Rimverse_VT_Autocannon.label>canhão automático</Rimverse_VT_Autocannon.label>
+  <Rimverse_VT_Autocannon.description>canhão automático</Rimverse_VT_Autocannon.description>
+  <Rimverse_VT_PointLaser.label>laser de ponto</Rimverse_VT_PointLaser.label>
+  <Rimverse_VT_PointLaser.description>laser de ponto</Rimverse_VT_PointLaser.description>
+  <Rimverse_VT_Torpedo.label>lançador de torpedo</Rimverse_VT_Torpedo.label>
+  <Rimverse_VT_Torpedo.description>lançador de torpedo</Rimverse_VT_Torpedo.description>
+  <Rimverse_VT_Harpoon.label>arpão</Rimverse_VT_Harpoon.label>
+  <Rimverse_VT_Harpoon.description>arpão</Rimverse_VT_Harpoon.description>
+  <Rimverse_VT_MiningLaser.label>cortador laser</Rimverse_VT_MiningLaser.label>
+  <Rimverse_VT_MiningLaser.description>cortador laser</Rimverse_VT_MiningLaser.description>
+</LanguageData>

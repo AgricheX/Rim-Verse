@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_ShipboardFirearms.label>armas de bordo</Rimverse_ShipboardFirearms.label>
+  <Rimverse_ShipboardFirearms.description>Armas compactas feitas para corredores e munição frágil que se desfaz em vez de furar o casco.</Rimverse_ShipboardFirearms.description>
+  <Rimverse_LaserSmallArms.label>armas laser portáteis</Rimverse_LaserSmallArms.label>
+  <Rimverse_LaserSmallArms.description>Pistolas, carabinas e fuzis laser sem recuo, que funcionam bem em gravidade zero.</Rimverse_LaserSmallArms.description>
+  <Rimverse_PlasmaSmallArms.label>armas de plasma portáteis</Rimverse_PlasmaSmallArms.label>
+  <Rimverse_PlasmaSmallArms.description>Armas de plasma de mão: dano enorme e perigo real para o casco.</Rimverse_PlasmaSmallArms.description>
+  <Rimverse_RailSmallArms.label>armas de ferrovia portáteis</Rimverse_RailSmallArms.label>
+  <Rimverse_RailSmallArms.description>Pistolas de agulha, lança-dardos e fuzis de ferrovia que atravessam armadura e paredes finas.</Rimverse_RailSmallArms.description>
+  <Rimverse_BoardingGear.label>equipamento de abordagem</Rimverse_BoardingGear.label>
+  <Rimverse_BoardingGear.description>Cargas de casco, lança-espuma e lança-rede, armas de atordoar e granadas especiais para lutar dentro de naves.</Rimverse_BoardingGear.description>
+</LanguageData>

@@ -5,7 +5,7 @@
     <defName>Rimverse_Regolith</defName>
     <label>regolith</label>
     <description>Loose dust and broken rock covering an airless world.</description>
-    <texturePath>Terrain/Surfaces/Gravel</texturePath>
+    <texturePath>Rimverse/Terrain/Regolith</texturePath>
     <color>(0.42, 0.41, 0.40)</color>
     <edgeType>FadeRough</edgeType>
     <renderPrecedence>340</renderPrecedence>

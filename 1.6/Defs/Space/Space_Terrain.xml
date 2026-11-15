@@ -21,7 +21,7 @@
     <defName>Rimverse_Vacuum</defName>
     <label>vacuum</label>
     <description>Empty space. Nothing can stand here without a hull underneath.</description>
-    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <texturePath>Rimverse/Terrain/Vacuum</texturePath>
     <fertility>0</fertility>
     <edgeType>Hard</edgeType>
     <renderPrecedence>300</renderPrecedence>
@@ -49,7 +49,7 @@
   </TerrainDef>
 
   <TerrainDef Name="Rimverse_HullFloorBase" ParentName="FloorBase" Abstract="True">
-    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <texturePath>Rimverse/Terrain/HullFloor</texturePath>
     <color>(0.30, 0.32, 0.36)</color>
     <edgeType>Hard</edgeType>
     <renderPrecedence>398</renderPrecedence>

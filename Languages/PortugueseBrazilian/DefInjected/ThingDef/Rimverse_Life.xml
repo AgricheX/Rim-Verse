@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_PowerCell.label>célula de energia</Rimverse_PowerCell.label>
+  <Rimverse_PowerCell.description>Uma célula recarregável e densa que alimenta veículos e equipamentos espaciais.</Rimverse_PowerCell.description>
+  <Rimverse_HullAlloy.label>liga de casco</Rimverse_HullAlloy.label>
+  <Rimverse_HullAlloy.description>Aço e plasteel laminados em camadas, formando a chapa padrão de casco.</Rimverse_HullAlloy.description>
+  <Rimverse_ArmorAlloy.label>liga blindada</Rimverse_ArmorAlloy.label>
+  <Rimverse_ArmorAlloy.description>Uma liga laminada pesada usada em paredes blindadas e trajes.</Rimverse_ArmorAlloy.description>
+  <Rimverse_ThermalCeramic.label>cerâmica térmica</Rimverse_ThermalCeramic.label>
+  <Rimverse_ThermalCeramic.description>Placas de cerâmica resistentes ao calor para radiadores e escudos térmicos.</Rimverse_ThermalCeramic.description>
+  <Rimverse_HullGlass.label>vidro de casco</Rimverse_HullGlass.label>
+  <Rimverse_HullGlass.description>Vidro resistente à pressão, derretido de areia de asteroide.</Rimverse_HullGlass.description>
+  <Rimverse_Ice.label>gelo</Rimverse_Ice.label>
+  <Rimverse_Ice.description>Gelo de água minerado de cometas e luas. Vira água, ar e combustível.</Rimverse_Ice.description>
+  <Rimverse_LightGas.label>gás leve</Rimverse_LightGas.label>
+  <Rimverse_LightGas.description>Hidrogênio e hélio pressurizados coletados de gigantes gasosos. Combustível de fusão.</Rimverse_LightGas.description>
+  <Rimverse_SensorCrystal.label>cristal de sensor</Rimverse_SensorCrystal.label>
+  <Rimverse_SensorCrystal.description>Um cristal vivo que ressoa com sinais fracos. Usado em sensores avançados.</Rimverse_SensorCrystal.description>
+  <Rimverse_RareMetal.label>metal raro</Rimverse_RareMetal.label>
+  <Rimverse_RareMetal.description>Metais do grupo da platina vindos de asteroides metálicos, usados em componentes espaciais.</Rimverse_RareMetal.description>
+  <Rimverse_Isotope.label>isótopo</Rimverse_Isotope.label>
+  <Rimverse_Isotope.description>Pastilhas de isótopo físsil blindadas. Combustível de reatores de fissão.</Rimverse_Isotope.description>
+  <Rimverse_ExoticMatter.label>matéria exótica</Rimverse_ExoticMatter.label>
+  <Rimverse_ExoticMatter.description>Matéria de energia negativa presa numa garrafa magnética. Alimenta reatores exóticos e portões.</Rimverse_ExoticMatter.description>
+  <Rimverse_Biomass.label>biomassa</Rimverse_Biomass.label>
+  <Rimverse_Biomass.description>Matéria viva processada de mundos férteis. Vira comida, remédio e tecido.</Rimverse_Biomass.description>
+  <Rimverse_NavalComponent.label>componente naval</Rimverse_NavalComponent.label>
+  <Rimverse_NavalComponent.description>Um componente reforçado, feito para aguentar vácuo e ciclos de calor.</Rimverse_NavalComponent.description>
+  <Rimverse_WarpCore.label>núcleo de dobra</Rimverse_WarpCore.label>
+  <Rimverse_WarpCore.description>O coração de um motor de dobra: uma treliça selada que dobra o espaço ao redor de si.</Rimverse_WarpCore.description>
+  <Rimverse_PrecursorFragment.label>fragmento precursor</Rimverse_PrecursorFragment.label>
+  <Rimverse_PrecursorFragment.description>Um pedaço de uma máquina mais antiga que a humanidade. Valioso para pesquisa.</Rimverse_PrecursorFragment.description>
+  <Rimverse_Coral.label>coral oceânico</Rimverse_Coral.label>
+  <Rimverse_Coral.description>Coral vivo cultivado em mundos oceânicos, valorizado como material de luxo.</Rimverse_Coral.description>
+  <Rimverse_ShipFiber.label>fibra de bordo</Rimverse_ShipFiber.label>
+  <Rimverse_ShipFiber.description>Fibra macia cultivada na hidroponia e fiada como tecido de tripulação.</Rimverse_ShipFiber.description>
+  <Rimverse_ShipTorpedo.label>torpedo pesado</Rimverse_ShipTorpedo.label>
+  <Rimverse_ShipTorpedo.description>Munição para tubos de torpedo pesado.</Rimverse_ShipTorpedo.description>
+  <Rimverse_PulseMissile.label>míssil de pulso</Rimverse_PulseMissile.label>
+  <Rimverse_PulseMissile.description>Um míssil com ogiva EMP que drena escudos e desliga módulos.</Rimverse_PulseMissile.description>
+  <Rimverse_BoardingTorpedo.label>torpedo de abordagem</Rimverse_BoardingTorpedo.label>
+  <Rimverse_BoardingTorpedo.description>Um torpedo com uma cabine pressurizada para quatro invasores.</Rimverse_BoardingTorpedo.description>
+  <Rimverse_SpaceMine.label>mina espacial</Rimverse_SpaceMine.label>
+  <Rimverse_SpaceMine.description>Uma mina de proximidade lançada atrás de uma nave em retirada.</Rimverse_SpaceMine.description>
+  <Rimverse_RailSlug.label>projétil de ferrovia</Rimverse_RailSlug.label>
+  <Rimverse_RailSlug.description>Um projétil denso de plasteel para canhões de ferrovia.</Rimverse_RailSlug.description>
+  <Rimverse_SpinalSlug.label>projétil espinhal</Rimverse_SpinalSlug.label>
+  <Rimverse_SpinalSlug.description>Um projétil enorme para um canhão espinhal.</Rimverse_SpinalSlug.description>
+  <Rimverse_Probe.label>sonda</Rimverse_Probe.label>
+  <Rimverse_Probe.description>Uma sonda automática pequena, lançada para escanear sistemas distantes.</Rimverse_Probe.description>
+  <Rimverse_AlienExtractRaw.label>seiva alienígena</Rimverse_AlienExtractRaw.label>
+  <Rimverse_AlienExtractRaw.description>Seiva bruta de uma planta alienígena local. O efeito depende do mundo.</Rimverse_AlienExtractRaw.description>
+  <Rimverse_RadLichen.label>líquen de radiação</Rimverse_RadLichen.label>
+  <Rimverse_RadLichen.description>Líquen que prospera na radiação. Base de remédios contra radiação.</Rimverse_RadLichen.description>
+  <Rimverse_RawAlgae.label>alga de tanque</Rimverse_RawAlgae.label>
+  <Rimverse_RawAlgae.description>Alga verde e gosmenta de um tanque. Dá para comer crua, mal e mal.</Rimverse_RawAlgae.description>
+  <Rimverse_RawDwarfWheat.label>trigo anão</Rimverse_RawDwarfWheat.label>
+  <Rimverse_RawDwarfWheat.description>Trigo de caule curto, criado para as prateleiras de hidroponia.</Rimverse_RawDwarfWheat.description>
+  <Rimverse_RawShipTuber.label>tubérculo de nave</Rimverse_RawShipTuber.label>
+  <Rimverse_RawShipTuber.description>Um tubérculo denso e cheio de amido que rende muito por célula.</Rimverse_RawShipTuber.description>
+  <Rimverse_PodFruit.label>fruta de cápsula</Rimverse_PodFruit.label>
+  <Rimverse_PodFruit.description>Uma fruta doce e suculenta cultivada em hidroponia selada.</Rimverse_PodFruit.description>
+  <Rimverse_RawProteinSoy.label>soja protéica</Rimverse_RawProteinSoy.label>
+  <Rimverse_RawProteinSoy.description>Feijões ricos em proteína que substituem a carne em viagens longas.</Rimverse_RawProteinSoy.description>
+  <Rimverse_RawIceCactus.label>polpa de cacto de gelo</Rimverse_RawIceCactus.label>
+  <Rimverse_RawIceCactus.description>Polpa aguada de cacto, vinda de mundos gelados.</Rimverse_RawIceCactus.description>
+  <Rimverse_RawLavaMushroom.label>cogumelo de lava</Rimverse_RawLavaMushroom.label>
+  <Rimverse_RawLavaMushroom.description>Um cogumelo tostado e picante que cresce perto do magma.</Rimverse_RawLavaMushroom.description>
+  <Rimverse_RawFloatVine.label>fruta de vinha flutuante</Rimverse_RawFloatVine.label>
+  <Rimverse_RawFloatVine.description>Fruta leve e aerada de uma vinha que cresce para todos os lados.</Rimverse_RawFloatVine.description>
+  <Rimverse_Plant_TankAlgae.label>alga de tanque</Rimverse_Plant_TankAlgae.label>
+  <Rimverse_Plant_TankAlgae.description>Rápida, feia e quase de graça. Cresce em tanques mesmo com pouca luz.</Rimverse_Plant_TankAlgae.description>
+  <Rimverse_Plant_HoldFungus.label>fungo de porão</Rimverse_Plant_HoldFungus.label>
+  <Rimverse_Plant_HoldFungus.description>Um fungo pálido que cresce nos cantos escuros da nave.</Rimverse_Plant_HoldFungus.description>
+  <Rimverse_Plant_DwarfWheat.label>trigo anão</Rimverse_Plant_DwarfWheat.label>
+  <Rimverse_Plant_DwarfWheat.description>Um trigo baixo para prateleiras de hidroponia. Base para rações.</Rimverse_Plant_DwarfWheat.description>
+  <Rimverse_Plant_ShipTuber.label>tubérculo de nave</Rimverse_Plant_ShipTuber.label>
+  <Rimverse_Plant_ShipTuber.description>Um tubérculo que rende muito por célula.</Rimverse_Plant_ShipTuber.description>
+  <Rimverse_Plant_PodFruit.label>arbusto de fruta de cápsula</Rimverse_Plant_PodFruit.label>
+  <Rimverse_Plant_PodFruit.description>Um arbusto frutífero delicado para hidroponia selada. A fruta melhora o humor.</Rimverse_Plant_PodFruit.description>
+  <Rimverse_Plant_ProteinSoy.label>soja protéica</Rimverse_Plant_ProteinSoy.label>
+  <Rimverse_Plant_ProteinSoy.description>Uma planta de feijão que substitui a carne a bordo.</Rimverse_Plant_ProteinSoy.description>
+  <Rimverse_Plant_ShipHerb.label>erva medicinal de bordo</Rimverse_Plant_ShipHerb.label>
+  <Rimverse_Plant_ShipHerb.description>Uma erva medicinal compacta para hidroponia.</Rimverse_Plant_ShipHerb.description>
+  <Rimverse_Plant_ShipFiber.label>fibra de bordo</Rimverse_Plant_ShipFiber.label>
+  <Rimverse_Plant_ShipFiber.description>Fibra macia para tecido de tripulação.</Rimverse_Plant_ShipFiber.description>
+  <Rimverse_Plant_AirMoss.label>musgo de ar</Rimverse_Plant_AirMoss.label>
+  <Rimverse_Plant_AirMoss.description>Um musgo decorativo que deixa o ar do cômodo mais fresco.</Rimverse_Plant_AirMoss.description>
+  <Rimverse_Plant_BiosphereTree.label>árvore de biosfera</Rimverse_Plant_BiosphereTree.label>
+  <Rimverse_Plant_BiosphereTree.description>Uma árvore lenta e bonita criada para jardins fechados. Dá um pouco de madeira.</Rimverse_Plant_BiosphereTree.description>
+  <Rimverse_Plant_LightFlower.label>flor de luz</Rimverse_Plant_LightFlower.label>
+  <Rimverse_Plant_LightFlower.description>Uma flor luminosa que alegra jardins e humores.</Rimverse_Plant_LightFlower.description>
+  <Rimverse_Plant_IceCactus.label>cacto de gelo</Rimverse_Plant_IceCactus.label>
+  <Rimverse_Plant_IceCactus.description>Um cacto que guarda água e cresce em mundos gelados.</Rimverse_Plant_IceCactus.description>
+  <Rimverse_Plant_LavaMushroom.label>cogumelo de lava</Rimverse_Plant_LavaMushroom.label>
+  <Rimverse_Plant_LavaMushroom.description>Um cogumelo que aguenta calor extremo.</Rimverse_Plant_LavaMushroom.description>
+  <Rimverse_Plant_RadLichen.label>líquen de radiação</Rimverse_Plant_RadLichen.label>
+  <Rimverse_Plant_RadLichen.description>Um líquen de desertos de radiação. Base de remédios contra radiação.</Rimverse_Plant_RadLichen.description>
+  <Rimverse_Plant_LivingCrystal.label>cristal vivo</Rimverse_Plant_LivingCrystal.label>
+  <Rimverse_Plant_LivingCrystal.description>Um crescimento cristalino lento que vira cristal de sensor.</Rimverse_Plant_LivingCrystal.description>
+  <Rimverse_Plant_OceanCoral.label>coral oceânico</Rimverse_Plant_OceanCoral.label>
+  <Rimverse_Plant_OceanCoral.description>Um coral cultivado em água rasa. Material de luxo.</Rimverse_Plant_OceanCoral.description>
+  <Rimverse_Plant_FloatVine.label>vinha flutuante</Rimverse_Plant_FloatVine.label>
+  <Rimverse_Plant_FloatVine.description>Uma vinha que cresce para todos os lados e rende mais em gravidade baixa.</Rimverse_Plant_FloatVine.description>
+  <Rimverse_Plant_AlienLocal.label>planta alienígena local</Rimverse_Plant_AlienLocal.label>
+  <Rimverse_Plant_AlienLocal.description>Uma planta nativa deste mundo. A seiva faz coisas diferentes em cada planeta.</Rimverse_Plant_AlienLocal.description>
+  <Rimverse_ShipMeal.label>refeição de bordo</Rimverse_ShipMeal.label>
+  <Rimverse_ShipMeal.description>Uma refeição quente simples servida no refeitório.</Rimverse_ShipMeal.description>
+  <Rimverse_CaptainMeal.label>refeição de capitão</Rimverse_CaptainMeal.label>
+  <Rimverse_CaptainMeal.description>Uma refeição bem montada para oficiais e visitantes.</Rimverse_CaptainMeal.description>
+  <Rimverse_StellarFeast.label>banquete estelar</Rimverse_StellarFeast.label>
+  <Rimverse_StellarFeast.description>Um banquete farto para festas e diplomacia.</Rimverse_StellarFeast.description>
+  <Rimverse_ExoticPreserve.label>conserva exótica</Rimverse_ExoticPreserve.label>
+  <Rimverse_ExoticPreserve.description>Fauna e flora alienígenas em conserva. Dura muito e vale caro.</Rimverse_ExoticPreserve.description>
+  <Rimverse_GlitterDelicacy.label>iguaria glitterworld</Rimverse_GlitterDelicacy.label>
+  <Rimverse_GlitterDelicacy.description>Uma iguaria importada de um glitterworld. Só pode ser comprada.</Rimverse_GlitterDelicacy.description>
+  <Rimverse_CulturedProtein.label>proteína cultivada</Rimverse_CulturedProtein.label>
+  <Rimverse_CulturedProtein.description>Carne de tanque. Nenhum animal sofreu.</Rimverse_CulturedProtein.description>
+  <Rimverse_MedkitShip.label>kit médico de bordo</Rimverse_MedkitShip.label>
+  <Rimverse_MedkitShip.description>Um kit médico industrial compacto, feito para gravidade zero.</Rimverse_MedkitShip.description>
+  <Rimverse_SealGel.label>gel selante</Rimverse_SealGel.label>
+  <Rimverse_SealGel.description>Um gel em spray que fecha feridas e estanca sangramentos em gravidade zero.</Rimverse_SealGel.description>
+  <Rimverse_AntiRad.label>pílulas antirradiação</Rimverse_AntiRad.label>
+  <Rimverse_AntiRad.description>Reduz a doença de radiação.</Rimverse_AntiRad.description>
+  <Rimverse_BoneStabilizer.label>estabilizador ósseo</Rimverse_BoneStabilizer.label>
+  <Rimverse_BoneStabilizer.description>Reverte parte da perda óssea e a desacelera por dias.</Rimverse_BoneStabilizer.description>
+  <Rimverse_ContactVaccine.label>vacina de contato</Rimverse_ContactVaccine.label>
+  <Rimverse_ContactVaccine.description>Acelera a imunidade a pragas alienígenas.</Rimverse_ContactVaccine.description>
+  <Rimverse_Vigil.label>vigília</Rimverse_Vigil.label>
+  <Rimverse_Vigil.description>Pula o sono num turno longo. Vicia, e a queda vem depois.</Rimverse_Vigil.description>
+  <Rimverse_CabinCalm.label>calma de cabine</Rimverse_CabinCalm.label>
+  <Rimverse_CabinCalm.description>Tira a febre de cabine. Deixa a pessoa lenta.</Rimverse_CabinCalm.description>
+  <Rimverse_AntiNausea.label>antienjoo</Rimverse_AntiNausea.label>
+  <Rimverse_AntiNausea.description>Tira o enjoo de gravidade zero e de dobra.</Rimverse_AntiNausea.description>
+  <Rimverse_PilotFocus.label>foco de piloto</Rimverse_PilotFocus.label>
+  <Rimverse_PilotFocus.description>Melhora pilotagem e mira. Vicia muito.</Rimverse_PilotFocus.description>
+  <Rimverse_Stardust.label>pó estelar</Rimverse_Stardust.label>
+  <Rimverse_Stardust.description>Recreação forte com alucinações bonitas. Vicia e é proibida em muitas civilizações.</Rimverse_Stardust.description>
+  <Rimverse_GravitySerum.label>soro de gravidade</Rimverse_GravitySerum.label>
+  <Rimverse_GravitySerum.description>Aguenta gravidade alta por horas. Pesa no coração.</Rimverse_GravitySerum.description>
+  <Rimverse_ColdBlood.label>sangue frio</Rimverse_ColdBlood.label>
+  <Rimverse_ColdBlood.description>Sem medo ou dor numa abordagem. Aumenta a agressividade.</Rimverse_ColdBlood.description>
+  <Rimverse_NebulaNectar.label>néctar de nebulosa</Rimverse_NebulaNectar.label>
+  <Rimverse_NebulaNectar.description>Uma bebida de luxo feita de gás raro. Vicia pouco.</Rimverse_NebulaNectar.description>
+  <Rimverse_Hiberna.label>hiberna</Rimverse_Hiberna.label>
+  <Rimverse_Hiberna.description>Sono profundo sem cápsula, gastando menos comida. Acorda fraco.</Rimverse_Hiberna.description>
+  <Rimverse_AlienExtract.label>extrato alienígena</Rimverse_AlienExtract.label>
+  <Rimverse_AlienExtract.description>Seiva local refinada. O efeito depende do mundo de origem.</Rimverse_AlienExtract.description>
+  <Rimverse_ReactorBrew.label>bebida de reator</Rimverse_ReactorBrew.label>
+  <Rimverse_ReactorBrew.description>A bebida caseira da tripulação, destilada num canto da sala de máquinas. Recreação social.</Rimverse_ReactorBrew.description>
+  <Rimverse_MossTea.label>chá de musgo</Rimverse_MossTea.label>
+  <Rimverse_MossTea.description>Um chá leve e calmante feito de musgo de ar.</Rimverse_MossTea.description>
+  <Rimverse_VacuumLung.label>pulmão de vácuo</Rimverse_VacuumLung.label>
+  <Rimverse_VacuumLung.description>Um pulmão com reserva de oxigênio que dá minutos extras sem ar.</Rimverse_VacuumLung.description>
+  <Rimverse_SealedSkin.label>pele selada</Rimverse_SealedSkin.label>
+  <Rimverse_SealedSkin.description>Uma malha sob a pele que resiste à descompressão.</Rimverse_SealedSkin.description>
+  <Rimverse_ReinforcedBones.label>ossos reforçados</Rimverse_ReinforcedBones.label>
+  <Rimverse_ReinforcedBones.description>Ossos reforçados, imunes à perda óssea, que aguentam gravidade alta.</Rimverse_ReinforcedBones.description>
+  <Rimverse_BalanceEar.label>ouvido de equilíbrio</Rimverse_BalanceEar.label>
+  <Rimverse_BalanceEar.description>Um ouvido interno que ignora enjoo de gravidade zero e de dobra.</Rimverse_BalanceEar.description>
+  <Rimverse_SensorEye.label>olho de sensor</Rimverse_SensorEye.label>
+  <Rimverse_SensorEye.description>Um olho que vê calor e assinaturas. Melhora a mira.</Rimverse_SensorEye.description>
+  <Rimverse_PilotInterface.label>interface de pilotagem</Rimverse_PilotInterface.label>
+  <Rimverse_PilotInterface.description>Uma ligação neural entre o piloto e a nave.</Rimverse_PilotInterface.description>
+  <Rimverse_WeaponsInterface.label>interface de armas</Rimverse_WeaponsInterface.label>
+  <Rimverse_WeaponsInterface.description>Uma ligação neural com as armas da nave.</Rimverse_WeaponsInterface.description>
+  <Rimverse_EngineerHand.label>mão de engenheiro</Rimverse_EngineerHand.label>
+  <Rimverse_EngineerHand.description>Uma mão com ferramentas embutidas.</Rimverse_EngineerHand.description>
+  <Rimverse_MagneticFeet.label>pés magnéticos</Rimverse_MagneticFeet.label>
+  <Rimverse_MagneticFeet.description>Pés com botas magnéticas embutidas.</Rimverse_MagneticFeet.description>
+  <Rimverse_BloodFilter.label>filtro de sangue</Rimverse_BloodFilter.label>
+  <Rimverse_BloodFilter.description>Filtra toxinas e agentes de praga.</Rimverse_BloodFilter.description>
+  <Rimverse_SleepRegulator.label>regulador de sono</Rimverse_SleepRegulator.label>
+  <Rimverse_SleepRegulator.description>Menos sono, para turnos longos.</Rimverse_SleepRegulator.description>
+  <Rimverse_CryoImplant.label>implante de criossono</Rimverse_CryoImplant.label>
+  <Rimverse_CryoImplant.description>Acorda do criossono sem a síndrome.</Rimverse_CryoImplant.description>
+  <Rimverse_PrecursorCore.label>núcleo precursor</Rimverse_PrecursorCore.label>
+  <Rimverse_PrecursorCore.description>Um implante raro recuperado de ruínas. Quem o fez sumiu há muito tempo.</Rimverse_PrecursorCore.description>
+</LanguageData>

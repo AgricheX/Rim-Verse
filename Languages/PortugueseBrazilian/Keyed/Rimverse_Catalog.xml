@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_MsgWeaponBreach>Um tiro furou o casco!</Rimverse_MsgWeaponBreach>
+  <Rimverse_DroneBay_Clean>Drones de limpeza: {0} células. Limpos: {1}.</Rimverse_DroneBay_Clean>
+  <Rimverse_DroneBay_Haul>Drones de carga: {0} células. Carregados: {1}.</Rimverse_DroneBay_Haul>
+  <Rimverse_DroneBay_Mine>Drones de mineração: {0} células. Minerados: {1}.</Rimverse_DroneBay_Mine>
+  <Rimverse_HeatDump>Jogar calor fora</Rimverse_HeatDump>
+  <Rimverse_HeatDumpDesc>Ferve {1} de gelo para tirar {0} UC de calor da nave de uma vez.</Rimverse_HeatDumpDesc>
+  <Rimverse_HeatDumpNoFuel>Gelo insuficiente.</Rimverse_HeatDumpNoFuel>
+  <Rimverse_CombatVent>Esvaziar cômodo</Rimverse_CombatVent>
+  <Rimverse_CombatVentDesc>Tira o ar deste cômodo por uma hora. Quem estiver sem traje vai sufocar.</Rimverse_CombatVentDesc>
+  <Rimverse_CombatVentMsg>O ar do cômodo está sendo retirado.</Rimverse_CombatVentMsg>
+  <Rimverse_Lockdown>Bloqueio</Rimverse_Lockdown>
+  <Rimverse_LockdownDesc>Tranca todas as portas do mapa para colonos, prisioneiros e visitantes.</Rimverse_LockdownDesc>
+  <Rimverse_SecurityInspect>Hostis no mapa: {0}</Rimverse_SecurityInspect>
+  <Rimverse_RadiationLeaking>Vazando radiação!</Rimverse_RadiationLeaking>
+  <Rimverse_MegaResearch>Pesquisa: +{0} por dia</Rimverse_MegaResearch>
+  <Rimverse_MegaSilver>Renda: {0} de prata por dia</Rimverse_MegaSilver>
+  <Rimverse_MegaProduce>Produz {0} de {1} por dia</Rimverse_MegaProduce>
+  <Rimverse_MegaTraders>Atrai um mercador a cada {0} dias, mais ou menos</Rimverse_MegaTraders>
+</LanguageData>

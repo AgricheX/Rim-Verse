@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_FissionPower.label>fissão naval</Rimverse_FissionPower.label>
+  <Rimverse_FissionPower.description>Reatores de fissão blindados para naves.</Rimverse_FissionPower.description>
+  <Rimverse_FusionPower.label>fusão</Rimverse_FusionPower.label>
+  <Rimverse_FusionPower.description>Reatores e propulsores de fusão.</Rimverse_FusionPower.description>
+  <Rimverse_ExoticPower.label>energia exótica</Rimverse_ExoticPower.label>
+  <Rimverse_ExoticPower.description>Reatores alimentados por matéria exótica.</Rimverse_ExoticPower.description>
+  <Rimverse_IonPropulsion.label>propulsão iônica</Rimverse_IonPropulsion.label>
+  <Rimverse_IonPropulsion.description>Propulsores elétricos e velas solares que não precisam de combustível.</Rimverse_IonPropulsion.description>
+  <Rimverse_SignatureDetection.label>detecção de assinaturas</Rimverse_SignatureDetection.label>
+  <Rimverse_SignatureDetection.description>Detectores que acham naves pelo calor e pelas emissões.</Rimverse_SignatureDetection.description>
+  <Rimverse_Cloaking.label>camuflagem</Rimverse_Cloaking.label>
+  <Rimverse_Cloaking.description>Camuflagem de assinatura e iscas.</Rimverse_Cloaking.description>
+  <Rimverse_Probes.label>sondas</Rimverse_Probes.label>
+  <Rimverse_Probes.description>Lançadores de sondas de escaneamento.</Rimverse_Probes.description>
+  <Rimverse_IceProcessing.label>processamento de gelo</Rimverse_IceProcessing.label>
+  <Rimverse_IceProcessing.description>Transformar gelo em ar, água e combustível.</Rimverse_IceProcessing.description>
+  <Rimverse_ShipOperations.label>operações de nave</Rimverse_ShipOperations.label>
+  <Rimverse_ShipOperations.description>Hangares, baias e portas de acoplamento.</Rimverse_ShipOperations.description>
+  <Rimverse_Drones.label>drones</Rimverse_Drones.label>
+  <Rimverse_Drones.description>Baias de drones de limpeza, carga, mineração e reparo.</Rimverse_Drones.description>
+  <Rimverse_Shipyards.label>estaleiros</Rimverse_Shipyards.label>
+  <Rimverse_Shipyards.description>Grandes estaleiros e oficinas navais.</Rimverse_Shipyards.description>
+  <Rimverse_ShipSecurity.label>segurança de bordo</Rimverse_ShipSecurity.label>
+  <Rimverse_ShipSecurity.description>Torres internas, anteparas e sistemas de segurança.</Rimverse_ShipSecurity.description>
+  <Rimverse_ShipFurniture.label>móveis de bordo</Rimverse_ShipFurniture.label>
+  <Rimverse_ShipFurniture.description>Móveis feitos para cascos apertados.</Rimverse_ShipFurniture.description>
+  <Rimverse_ShipWorkshops.label>oficinas de bordo</Rimverse_ShipWorkshops.label>
+  <Rimverse_ShipWorkshops.description>Bancadas para peças navais, trajes e munição.</Rimverse_ShipWorkshops.description>
+  <Rimverse_Stations.label>estações espaciais</Rimverse_Stations.label>
+  <Rimverse_Stations.description>Núcleos de estação para órbita, asteroides e gigantes gasosos.</Rimverse_Stations.description>
+  <Rimverse_Megastructures.label>megaestruturas</Rimverse_Megastructures.label>
+  <Rimverse_Megastructures.description>Obras de muitos anos: anéis, coletores e habitats.</Rimverse_Megastructures.description>
+</LanguageData>

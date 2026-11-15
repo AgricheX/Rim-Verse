@@ -6,7 +6,7 @@
     <label>gate component</label>
     <description>A dense lattice of plasteel and folded warp matter, tuned to the resonance of the ancient gates. Used to activate gates, stabilize wormholes and push the Great Gate further.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <texPath>Rimverse/Things/Item/Resource/GatePart</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
       <color>(0.6, 0.85, 1)</color>
     </graphicData>
