@@ -30,6 +30,7 @@ namespace Rimverse
         public int warpRangeLy;
         public int warpCooldownHours;
         public float warpMaxMass;
+        public float aiPilotLevel;
 
         public CompProperties_ShipPart()
         {
@@ -61,6 +62,8 @@ namespace Rimverse
             if (warpMaxMass > 0f) yield return new StatDrawEntry(cat, "Rimverse_Stat_WarpMaxMass".Translate(), warpMaxMass.ToString("0") + " t", "Rimverse_Stat_WarpMaxMass_Desc".Translate(), 4855);
             if (warpCooldownHours > 0) yield return new StatDrawEntry(cat, "Rimverse_Stat_WarpCooldown".Translate(), warpCooldownHours + " h", "Rimverse_Stat_WarpCooldown_Desc".Translate(), 4850);
             if (warpCapacity > 0f) yield return new StatDrawEntry(cat, "Rimverse_Stat_WarpCapacity".Translate(), warpCapacity.ToString("0"), "Rimverse_Stat_WarpCapacity_Desc".Translate(), 4845);
+            if (aiPilotLevel > 0f) yield return new StatDrawEntry(cat, "Rimverse_Stat_AIPilot".Translate(), aiPilotLevel.ToString("0"), "Rimverse_Stat_AIPilot_Desc".Translate(), 4842);
+            if (signatureFactor < 1f) yield return new StatDrawEntry(cat, "Rimverse_Stat_Signature".Translate(), "x" + signatureFactor.ToString("0.##"), "Rimverse_Stat_Signature_Desc".Translate(), 4841);
             if (dodgeBonus > 0f) yield return new StatDrawEntry(cat, "Rimverse_Stat_Dodge".Translate(), "+" + dodgeBonus.ToStringPercent(), "Rimverse_Stat_Dodge_Desc".Translate(), 4870);
         }
     }

@@ -210,7 +210,7 @@ namespace Rimverse
         {
             Pawn leader = PawnsFinder.AllMaps_FreeColonists.Where(p => p.skills != null).OrderByDescending(p => p.skills.GetSkill(SkillDefOf.Social).Level).FirstOrDefault();
             int social = leader?.skills.GetSkill(SkillDefOf.Social).Level ?? 0;
-            return 3 + social / 5;
+            return 3 + social / 5 + StationLinkUtility.ExtraColonyLimit();
         }
     }
 }

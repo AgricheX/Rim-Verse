@@ -10,6 +10,7 @@ namespace Rimverse
         public string archetype;
         public int herdMin = 1;
         public int herdMax = 3;
+        public bool vacuum;
     }
 
     public class GenStep_AlienFauna : GenStep

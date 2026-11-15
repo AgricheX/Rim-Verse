@@ -7,8 +7,8 @@ namespace Rimverse
 {
     public class GenStep_AirlessBody : GenStep
     {
-        private static readonly string[] Ores = { "MineableSteel", "MineableSteel", "MineableSteel", "MineableComponentsIndustrial", "MineablePlasteel", "MineableSilver", "MineableGold", "MineableUranium", "MineableJade" };
-        private static readonly float[] OreWeights = { 30f, 0f, 0f, 10f, 8f, 10f, 3f, 5f, 2f };
+        private static readonly string[] Ores = { "MineableSteel", "MineableSteel", "MineableSteel", "MineableComponentsIndustrial", "MineablePlasteel", "MineableSilver", "MineableGold", "MineableUranium", "MineableJade", "Rimverse_MineableIce", "Rimverse_MineablePrecursorWreck" };
+        private static readonly float[] OreWeights = { 30f, 0f, 0f, 10f, 8f, 10f, 3f, 5f, 2f, 14f, 1.5f };
 
         public override int SeedPart => 911834227;
 

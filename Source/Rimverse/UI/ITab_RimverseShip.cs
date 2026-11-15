@@ -53,7 +53,8 @@ namespace Rimverse
             l.Label("Rimverse_ShipFuel".Translate(ShipLaunchUtility.FuelAvailable(ship).ToString("0"), ship.fuelCapacity.ToString("0")));
             l.Label("Rimverse_ShipCrew".Translate(ship.crewCount));
             ShipCrewUtility.PilotAndCopilot(ship, out Pawn pilot, out Pawn copilot);
-            l.Label("Rimverse_ShipPilot".Translate(pilot != null ? pilot.LabelShort + " (" + ShipCrewUtility.PilotLevel(pilot).ToString("0.#") + ")" : "-", copilot != null ? copilot.LabelShort : "-"));
+            l.Label("Rimverse_ShipPilot".Translate(pilot != null ? pilot.LabelShort + " (" + ShipCrewUtility.PilotLevel(pilot).ToString("0.#") + ")" : ship.aiPilotLevel > 0f ? "Rimverse_AIHelm".Translate().ToString() : "-", copilot != null ? copilot.LabelShort : ship.aiPilotLevel > 0f ? "Rimverse_AIHelm".Translate().ToString() : "-"));
+            l.Label("Rimverse_ShipSignature".Translate(ship.Signature.ToStringPercent()));
             l.Label("Rimverse_ShipDodge".Translate(ShipCrewUtility.Dodge(ship, pilot).ToStringPercent()));
             if (ship.multipleBridges)
             {

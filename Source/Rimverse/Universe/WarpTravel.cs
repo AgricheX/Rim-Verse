@@ -69,7 +69,7 @@ namespace Rimverse
             float have = MatterAvailable(ship);
             if (have < matter) problems.Add("Rimverse_ProblemWarpMatter".Translate(have.ToString("0"), matter.ToString("0")));
             ShipCrewUtility.PilotAndCopilot(ship, out Pawn pilot, out _);
-            if (pilot == null) problems.Add("Rimverse_ProblemNoPilot".Translate());
+            if (!ShipCrewUtility.HasHelm(ship, pilot)) problems.Add("Rimverse_ProblemNoPilot".Translate());
             return problems;
         }
 

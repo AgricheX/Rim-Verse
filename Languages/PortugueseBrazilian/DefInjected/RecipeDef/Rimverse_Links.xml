@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_MakeBiomass.label>prensar biomassa</Rimverse_MakeBiomass.label>
+  <Rimverse_MakeBiomass.description>Prensar comida vegetal crua, feno ou carne em biomassa compacta.</Rimverse_MakeBiomass.description>
+  <Rimverse_MakeBiomass.jobString>Prensando biomassa.</Rimverse_MakeBiomass.jobString>
+  <Rimverse_EnrichIsotope.label>enriquecer isótopo</Rimverse_EnrichIsotope.label>
+  <Rimverse_EnrichIsotope.description>Refinar urânio em pastilhas de isótopo físsil blindadas para reatores de fissão.</Rimverse_EnrichIsotope.description>
+  <Rimverse_EnrichIsotope.jobString>Enriquecendo isótopo.</Rimverse_EnrichIsotope.jobString>
+  <Rimverse_CondenseExoticMatter.label>condensar matéria exótica</Rimverse_CondenseExoticMatter.label>
+  <Rimverse_CondenseExoticMatter.description>Dobrar matéria de dobra sob muita energia até virar uma garrafa de matéria exótica.</Rimverse_CondenseExoticMatter.description>
+  <Rimverse_CondenseExoticMatter.jobString>Condensando matéria exótica.</Rimverse_CondenseExoticMatter.jobString>
+  <Rimverse_MeltIceWater.label>derreter gelo em combustível</Rimverse_MeltIceWater.label>
+  <Rimverse_MeltIceWater.description>Quebrar gelo em hidrogênio e oxigênio e engarrafar como combustível químico.</Rimverse_MeltIceWater.description>
+  <Rimverse_MeltIceWater.jobString>Quebrando gelo.</Rimverse_MeltIceWater.jobString>
+  <Rimverse_StudyPrecursorFragment.label>estudar fragmento precursor</Rimverse_StudyPrecursorFragment.label>
+  <Rimverse_StudyPrecursorFragment.description>Desmontar um fragmento precursor sob os scanners. Dá 1.500 de pesquisa ao projeto atual.</Rimverse_StudyPrecursorFragment.description>
+  <Rimverse_StudyPrecursorFragment.jobString>Estudando um fragmento precursor.</Rimverse_StudyPrecursorFragment.jobString>
+  <Rimverse_StudyAlienSap.label>analisar seiva alienígena</Rimverse_StudyAlienSap.label>
+  <Rimverse_StudyAlienSap.description>Passar seiva alienígena pelos analisadores. Dá 250 de pesquisa ao projeto atual.</Rimverse_StudyAlienSap.description>
+  <Rimverse_StudyAlienSap.jobString>Analisando seiva alienígena.</Rimverse_StudyAlienSap.jobString>
+</LanguageData>

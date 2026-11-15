@@ -3772,6 +3772,11 @@
           </landingProperties>
         </launchProtocol>
       </li>
+      <li Class="Rimverse.CompProperties_SpaceCraft">
+        <role>Shuttle</role>
+        <interceptChance>0</interceptChance>
+        <fuelPerTrip>40</fuelPerTrip>
+      </li>
     </comps>
   </Vehicles.VehicleDef>
 
@@ -3965,6 +3970,11 @@
             </zPositionCurve>
           </landingProperties>
         </launchProtocol>
+      </li>
+      <li Class="Rimverse.CompProperties_SpaceCraft">
+        <role>Shuttle</role>
+        <interceptChance>0</interceptChance>
+        <fuelPerTrip>50</fuelPerTrip>
       </li>
     </comps>
   </Vehicles.VehicleDef>
@@ -4181,6 +4191,15 @@
             </zPositionCurve>
           </landingProperties>
         </launchProtocol>
+      </li>
+      <li Class="Rimverse.CompProperties_SpaceCraft">
+        <role>Shuttle</role>
+        <projectile>Rimverse_Proj_Autocannon</projectile>
+        <damage>30</damage>
+        <shots>2</shots>
+        <cooldownSeconds>10</cooldownSeconds>
+        <interceptChance>0.05</interceptChance>
+        <fuelPerTrip>8</fuelPerTrip>
       </li>
     </comps>
   </Vehicles.VehicleDef>
@@ -4578,6 +4597,15 @@
           </landingProperties>
         </launchProtocol>
       </li>
+      <li Class="Rimverse.CompProperties_SpaceCraft">
+        <role>Fighter</role>
+        <projectile>Rimverse_Proj_LaserLance</projectile>
+        <damage>45</damage>
+        <shots>2</shots>
+        <cooldownSeconds>8</cooldownSeconds>
+        <interceptChance>0.15</interceptChance>
+        <fuelPerTrip>6</fuelPerTrip>
+      </li>
     </comps>
   </Vehicles.VehicleDef>
 
@@ -4787,6 +4815,15 @@
             </zPositionCurve>
           </landingProperties>
         </launchProtocol>
+      </li>
+      <li Class="Rimverse.CompProperties_SpaceCraft">
+        <role>Bomber</role>
+        <projectile>Rimverse_Proj_Missile</projectile>
+        <damage>300</damage>
+        <shots>1</shots>
+        <cooldownSeconds>30</cooldownSeconds>
+        <interceptChance>0</interceptChance>
+        <fuelPerTrip>8</fuelPerTrip>
       </li>
     </comps>
   </Vehicles.VehicleDef>
@@ -5006,6 +5043,11 @@
             </zPositionCurve>
           </landingProperties>
         </launchProtocol>
+      </li>
+      <li Class="Rimverse.CompProperties_SpaceCraft">
+        <role>Shuttle</role>
+        <interceptChance>0</interceptChance>
+        <fuelPerTrip>20</fuelPerTrip>
       </li>
     </comps>
   </Vehicles.VehicleDef>
@@ -5232,6 +5274,11 @@
           </landingProperties>
         </launchProtocol>
       </li>
+      <li Class="Rimverse.CompProperties_SpaceCraft">
+        <role>Shuttle</role>
+        <interceptChance>0</interceptChance>
+        <fuelPerTrip>20</fuelPerTrip>
+      </li>
     </comps>
   </Vehicles.VehicleDef>
 
@@ -5416,6 +5463,11 @@
             </zPositionCurve>
           </landingProperties>
         </launchProtocol>
+      </li>
+      <li Class="Rimverse.CompProperties_SpaceCraft">
+        <role>Shuttle</role>
+        <interceptChance>0</interceptChance>
+        <fuelPerTrip>6</fuelPerTrip>
       </li>
     </comps>
   </Vehicles.VehicleDef>

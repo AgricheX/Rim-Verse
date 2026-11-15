@@ -11,6 +11,7 @@ namespace Rimverse
         public int intervalTicks = 2500;
         public int repairPerInterval = 80;
         public float radius = 30f;
+        public bool repairVehicles;
 
         public CompProperties_MaintenanceDrones()
         {
@@ -31,7 +32,7 @@ namespace Rimverse
             if (power != null && !power.PowerOn) return;
             Map map = parent.Map;
             RimverseShip ship = map.GetComponent<MapComponent_RimverseShips>()?.Ships.FirstOrDefault(s => s.Contains(parent.Position));
-            int budget = Props.repairPerInterval;
+            int budget = Mathf.RoundToInt(Props.repairPerInterval * DroneWorkshopUtility.Factor(parent));
             IEnumerable<Building> targets = map.listerBuildings.allBuildingsColonist.Where(b => b.def.useHitPoints && b.HitPoints < b.MaxHitPoints && (ship != null ? ship.Contains(b.Position) : b.Position.InHorDistOf(parent.Position, Props.radius))).OrderBy(b => b.HitPoints / (float)b.MaxHitPoints).ToList();
             foreach (Building b in targets)
             {
@@ -42,6 +43,26 @@ namespace Rimverse
                 repairedTotal += amount;
                 map.listerBuildingsRepairable.Notify_BuildingRepaired(b);
                 FleckMaker.ThrowMicroSparks(b.DrawPos, map);
+            }
+            if (Props.repairVehicles && budget > 0)
+            {
+                foreach (Pawn p in map.mapPawns.AllPawnsSpawned.ToList())
+                {
+                    if (budget <= 0) break;
+                    if (!(p is Vehicles.VehiclePawn v) || v.Faction != Faction.OfPlayer || v.statHandler == null || !v.statHandler.NeedsRepairs) continue;
+                    if (ship != null ? !ship.Contains(v.Position) : !v.Position.InHorDistOf(parent.Position, Props.radius)) continue;
+                    foreach (Vehicles.VehicleComponent c in v.statHandler.components)
+                    {
+                        if (budget <= 0) break;
+                        float miss = c.MaxHealth - c.Health;
+                        if (miss <= 0f) continue;
+                        int amount = Mathf.Min(budget, Mathf.CeilToInt(miss));
+                        c.HealComponent(amount);
+                        budget -= amount;
+                        repairedTotal += amount;
+                    }
+                    FleckMaker.ThrowMicroSparks(v.DrawPos, map);
+                }
             }
         }
 

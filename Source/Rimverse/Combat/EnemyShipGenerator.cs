@@ -15,9 +15,9 @@ namespace Rimverse
         private static readonly int[] WeaponCounts = { 1, 2, 4, 6 };
         private static readonly int[] CrewCaps = { 4, 6, 10, 16 };
 
-        private static readonly string[] IndustrialWeapons = { "Rimverse_Autocannon", "Rimverse_HullCannon", "Rimverse_MissileLauncher" };
-        private static readonly string[] SpacerWeapons = { "Rimverse_Autocannon", "Rimverse_HullCannon", "Rimverse_MissileLauncher", "Rimverse_LaserLance", "Rimverse_Railgun", "Rimverse_IonCannon" };
-        private static readonly string[] UltraWeapons = { "Rimverse_LaserLance", "Rimverse_PlasmaCannon", "Rimverse_Railgun", "Rimverse_MissileLauncher", "Rimverse_IonCannon" };
+        private static readonly string[] IndustrialWeapons = { "Rimverse_Autocannon", "Rimverse_HullCannon", "Rimverse_MissileLauncher", "Rimverse_FlakBattery", "Rimverse_MineLayer" };
+        private static readonly string[] SpacerWeapons = { "Rimverse_Autocannon", "Rimverse_HullCannon", "Rimverse_MissileLauncher", "Rimverse_LaserLance", "Rimverse_Railgun", "Rimverse_IonCannon", "Rimverse_BeamLaser", "Rimverse_RailBattery", "Rimverse_PulseMissileLauncher" };
+        private static readonly string[] UltraWeapons = { "Rimverse_LaserLance", "Rimverse_PlasmaCannon", "Rimverse_Railgun", "Rimverse_MissileLauncher", "Rimverse_IonCannon", "Rimverse_PlasmaMortar", "Rimverse_TorpedoTube", "Rimverse_BeamLaser" };
 
         private static ThingDef Named(string defName) => DefDatabase<ThingDef>.GetNamedSilentFail(defName);
 
@@ -65,6 +65,10 @@ namespace Rimverse
             if (tier >= 1) order.Add(Named("Rimverse_ChemTank"));
             for (int i = 0; i < tier + 2; i++) order.Add(Named("Rimverse_RadiatorFixed"));
             for (int i = 0; i < Mathf.Min(4, tier + 1); i++) order.Add(Named("Rimverse_ManeuverThruster"));
+            if (tier >= 1) order.Add(Named("Rimverse_Decoy"));
+            if (tier >= 2) order.Add(Named("Rimverse_ReactiveArmor"));
+            if (tier >= 2 && tech >= TechLevel.Spacer) order.Add(Named("Rimverse_EmergencyHeatSink"));
+            if (tier >= 3 && tech >= TechLevel.Spacer && Rand.Chance(0.5f)) order.Add(Named("Rimverse_SignatureCloak"));
             foreach (ThingDef def in order)
             {
                 if (def == null) continue;
@@ -117,13 +121,18 @@ namespace Rimverse
             for (int i = 0; i < WeaponCounts[tier]; i++) list.Add(options.RandomElement());
             if (tier >= 1 && tech >= TechLevel.Spacer)
             {
-                ThingDef pd = Named("Rimverse_PointLaser");
+                ThingDef pd = Named(Rand.Chance(0.5f) ? "Rimverse_PointLaser" : "Rimverse_FlakBattery");
                 if (pd != null) list.Add(pd);
             }
             if (tier >= 1 && faction != null && faction.def.permanentEnemy)
             {
-                ThingDef tractor = Named("Rimverse_TractorBeam");
+                ThingDef tractor = Named(Rand.Chance(0.5f) ? "Rimverse_TractorBeam" : "Rimverse_TowHarpoon");
                 if (tractor != null && Rand.Chance(0.5f)) list.Add(tractor);
+            }
+            if (tier >= 2 && tech >= TechLevel.Spacer && Rand.Chance(0.4f))
+            {
+                ThingDef jam = Named("Rimverse_Jammer");
+                if (jam != null) list.Add(jam);
             }
             return list;
         }

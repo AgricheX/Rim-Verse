@@ -73,6 +73,7 @@ namespace Rimverse
             if (pawn == null || pawn.Dead || !pawn.Spawned) return false;
             if (pawn.RaceProps.IsFlesh == false) return false;
             if (pawn.health?.hediffSet == null) return false;
+            if (pawn.kindDef?.GetModExtension<AlienFaunaExtension>()?.vacuum == true) return false;
             return true;
         }
     }

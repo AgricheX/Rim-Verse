@@ -29,7 +29,7 @@ namespace Rimverse
             float have = ShipLaunchUtility.FuelAvailable(ship);
             if (have < fuel) problems.Add("Rimverse_ProblemFuel".Translate(have.ToString("0"), fuel.ToString("0")));
             ShipCrewUtility.PilotAndCopilot(ship, out Pawn pilot, out _);
-            if (pilot == null) problems.Add("Rimverse_ProblemNoPilot".Translate());
+            if (!ShipCrewUtility.HasHelm(ship, pilot)) problems.Add("Rimverse_ProblemNoPilot".Translate());
             return problems;
         }
 

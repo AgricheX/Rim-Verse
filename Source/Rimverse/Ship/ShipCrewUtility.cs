@@ -36,10 +36,14 @@ namespace Rimverse
             copilot = candidates.Count > 1 ? candidates[1] : null;
         }
 
+        public static bool HasHelm(RimverseShip ship, Pawn pilot) => pilot != null || ship != null && ship.aiPilotLevel > 0f;
+
+        public static float HelmLevel(RimverseShip ship, Pawn pilot) => Mathf.Max(pilot == null ? 0f : PilotLevel(pilot), ship?.aiPilotLevel ?? 0f);
+
         public static float Dodge(RimverseShip ship, Pawn pilot)
         {
             if (ship.mass <= 0f) return 0.05f;
-            float level = pilot == null ? 0f : PilotLevel(pilot);
+            float level = HelmLevel(ship, pilot);
             float dodge = 0.3f * (ship.thrust / ship.mass) * (1f + 0.03f * (level - 10f)) + ship.dodgeBonus;
             return Mathf.Clamp(dodge, 0.05f, 0.9f);
         }

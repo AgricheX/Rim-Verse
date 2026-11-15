@@ -39,43 +39,45 @@
   <Rimverse_Decoy.label>emissor de isca</Rimverse_Decoy.label>
   <Rimverse_Decoy.description>Gera ecos falsos. Um bônus pequeno de esquiva.</Rimverse_Decoy.description>
   <Rimverse_Hangar.label>hangar</Rimverse_Hangar.label>
-  <Rimverse_Hangar.description>Um hangar pressurizado para duas lançadeiras ou quatro caças.</Rimverse_Hangar.description>
+  <Rimverse_Hangar.description>Um hangar pressurizado para duas lançadeiras ou quatro caças. Veículos estacionados nele ou ao lado são reabastecidos e consertados aos poucos, caças e bombardeiros tripulados parados aqui entram no combate de naves, e lançadeiras paradas aqui podem voar para os seus outros mapas neste sistema estelar.</Rimverse_Hangar.description>
   <Rimverse_ShuttleBay.label>baia de lançadeira</Rimverse_ShuttleBay.label>
-  <Rimverse_ShuttleBay.description>Uma baia para uma lançadeira.</Rimverse_ShuttleBay.description>
+  <Rimverse_ShuttleBay.description>Uma baia para uma lançadeira. Veículos estacionados nele ou ao lado são reabastecidos e consertados aos poucos, caças e bombardeiros tripulados parados aqui entram no combate de naves, e lançadeiras paradas aqui podem voar para os seus outros mapas neste sistema estelar.</Rimverse_ShuttleBay.description>
+  <Rimverse_IceHarvester.label>coletor de gelo</Rimverse_IceHarvester.label>
+  <Rimverse_IceHarvester.description>Agarra e perfura gelo de cometas, anéis e luas geladas perto da nave. Produz 20 de gelo por dia.</Rimverse_IceHarvester.description>
   <Rimverse_MiningBay.label>baia de mineração</Rimverse_MiningBay.label>
   <Rimverse_MiningBay.description>Uma baia com laser de mineração. Produz um pouco de metal raro e regolito por dia.</Rimverse_MiningBay.description>
   <Rimverse_SalvageBay.label>baia de salvamento</Rimverse_SalvageBay.label>
   <Rimverse_SalvageBay.description>Recupera aço de destroços à deriva perto da nave.</Rimverse_SalvageBay.description>
   <Rimverse_DockingPort.label>doca de acoplamento</Rimverse_DockingPort.label>
-  <Rimverse_DockingPort.description>Uma porta que deixa outras naves acoplarem. Aumenta o limite de células do casco.</Rimverse_DockingPort.description>
+  <Rimverse_DockingPort.description>Uma porta onde cargueiros de passagem acoplam para negociar, mais ou menos a cada dez dias enquanto estiver ligada (fale com eles num console de comunicação). Aumenta o limite de células do casco.</Rimverse_DockingPort.description>
   <Rimverse_TugModule.label>módulo rebocador</Rimverse_TugModule.label>
   <Rimverse_TugModule.description>Um equipamento de reboque com garras fortes. Soma empuxo para rebocar.</Rimverse_TugModule.description>
   <Rimverse_SecurityCentral.label>central de segurança</Rimverse_SecurityCentral.label>
   <Rimverse_SecurityCentral.description>Mostra hostis a bordo e pode trancar todas as portas.</Rimverse_SecurityCentral.description>
   <Rimverse_OrbitalOutpost.label>núcleo de posto orbital</Rimverse_OrbitalOutpost.label>
-  <Rimverse_OrbitalOutpost.description>O núcleo de uma primeira base fora do planeta. Controla até 600 células.</Rimverse_OrbitalOutpost.description>
+  <Rimverse_OrbitalOutpost.description>O núcleo de uma primeira base fora do planeta. Controla até 600 células. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_OrbitalOutpost.description>
   <Rimverse_MiningStation.label>núcleo de estação de mineração</Rimverse_MiningStation.label>
-  <Rimverse_MiningStation.description>Um núcleo de estação preso a um asteroide. Produz minério todo dia.</Rimverse_MiningStation.description>
+  <Rimverse_MiningStation.description>Um núcleo de estação preso a um asteroide. Produz minério todo dia. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_MiningStation.description>
   <Rimverse_GasStation.label>núcleo de estação de gás</Rimverse_GasStation.label>
-  <Rimverse_GasStation.description>Um núcleo de estação flutuando num gigante gasoso. Produz gás leve todo dia.</Rimverse_GasStation.description>
+  <Rimverse_GasStation.description>Um núcleo de estação flutuando num gigante gasoso. Produz gás leve todo dia. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_GasStation.description>
   <Rimverse_TradeStation.label>núcleo de estação comercial</Rimverse_TradeStation.label>
-  <Rimverse_TradeStation.description>Um núcleo de estação com balizas que atraem cargueiros e mercadores.</Rimverse_TradeStation.description>
+  <Rimverse_TradeStation.description>Um núcleo de estação com balizas que atraem cargueiros e mercadores. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_TradeStation.description>
   <Rimverse_ShipyardStation.label>núcleo de estaleiro</Rimverse_ShipyardStation.label>
-  <Rimverse_ShipyardStation.description>Um núcleo de estação que constrói e conserta naves grandes.</Rimverse_ShipyardStation.description>
+  <Rimverse_ShipyardStation.description>Um núcleo de estação que constrói e conserta naves grandes. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_ShipyardStation.description>
   <Rimverse_FortressStation.label>núcleo de fortaleza</Rimverse_FortressStation.label>
-  <Rimverse_FortressStation.description>Um núcleo de estação muito blindado para defender um sistema.</Rimverse_FortressStation.description>
+  <Rimverse_FortressStation.description>Um núcleo de estação muito blindado para defender um sistema. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_FortressStation.description>
   <Rimverse_ResearchStation.label>núcleo de estação de pesquisa</Rimverse_ResearchStation.label>
-  <Rimverse_ResearchStation.description>Um núcleo de estação cheio de laboratórios. Gera pesquisa.</Rimverse_ResearchStation.description>
+  <Rimverse_ResearchStation.description>Um núcleo de estação cheio de laboratórios. Gera pesquisa. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_ResearchStation.description>
   <Rimverse_OrbitalRing.label>segmento de anel orbital</Rimverse_OrbitalRing.label>
-  <Rimverse_OrbitalRing.description>Um segmento de anel ao redor do planeta. Muito espaço para construir e um fluxo constante de comércio.</Rimverse_OrbitalRing.description>
+  <Rimverse_OrbitalRing.description>Um segmento de anel ao redor do planeta. Muito espaço para construir e um fluxo constante de comércio. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_OrbitalRing.description>
   <Rimverse_StellarCollector.label>coletor estelar</Rimverse_StellarCollector.label>
-  <Rimverse_StellarCollector.description>Um enxame de coletores em volta da estrela, mandando energia quase sem limite.</Rimverse_StellarCollector.description>
+  <Rimverse_StellarCollector.description>Um enxame de coletores em volta da estrela, mandando energia quase sem limite. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_StellarCollector.description>
   <Rimverse_GiantHabitat.label>núcleo de habitat gigante</Rimverse_GiantHabitat.label>
-  <Rimverse_GiantHabitat.description>O coração de um habitat para milhões. Produz comida e prata com a sua população.</Rimverse_GiantHabitat.description>
+  <Rimverse_GiantHabitat.description>O coração de um habitat para milhões. Produz comida e prata com a sua população. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_GiantHabitat.description>
   <Rimverse_DeepObservatory.label>observatório profundo</Rimverse_DeepObservatory.label>
-  <Rimverse_DeepObservatory.description>Um observatório que mapeia um setor inteiro. Uma enxurrada de pesquisa.</Rimverse_DeepObservatory.description>
+  <Rimverse_DeepObservatory.description>Um observatório que mapeia um setor inteiro. Uma enxurrada de pesquisa. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_DeepObservatory.description>
   <Rimverse_WormholeStabilizer.label>estabilizador de buraco de minhoca</Rimverse_WormholeStabilizer.label>
-  <Rimverse_WormholeStabilizer.description>Prende um buraco de minhoca instável no lugar e tira matéria exótica da sua garganta.</Rimverse_WormholeStabilizer.description>
+  <Rimverse_WormholeStabilizer.description>Prende um buraco de minhoca instável no lugar e tira matéria exótica da sua garganta. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_WormholeStabilizer.description>
   <Rimverse_FlakBattery.label>bateria de flak</Rimverse_FlakBattery.label>
   <Rimverse_FlakBattery.description>Dispara nuvens de estilhaços a curta distância. 10 × 8 de dano e 70% de chance de abater mísseis.</Rimverse_FlakBattery.description>
   <Rimverse_BeamLaser.label>laser de feixe</Rimverse_BeamLaser.label>
@@ -96,6 +98,8 @@
   <Rimverse_MineLayer.description>Solta minas de proximidade atrás da nave. 60 de dano por mina.</Rimverse_MineLayer.description>
   <Rimverse_TowHarpoon.label>arpão de reboque</Rimverse_TowHarpoon.label>
   <Rimverse_TowHarpoon.description>Prende a nave inimiga para que não fuja.</Rimverse_TowHarpoon.description>
+  <Rimverse_RailBattery.label>bateria de ferrovia</Rimverse_RailBattery.label>
+  <Rimverse_RailBattery.description>Trilhos duplos que disparam projéteis densos de plasteel. 3 × 70 de dano perfurante a longa distância. Usa projéteis de ferrovia.</Rimverse_RailBattery.description>
   <Rimverse_RuinWeapon.label>arma de ruína</Rimverse_RuinWeapon.label>
   <Rimverse_RuinWeapon.description>Uma arma precursora restaurada de um naufrágio antigo. 600 de dano que ignora escudos metade das vezes.</Rimverse_RuinWeapon.description>
   <Rimverse_TurretBullet_CorridorTurret.label>disparo de torre de corredor</Rimverse_TurretBullet_CorridorTurret.label>
@@ -180,17 +184,17 @@
   <Rimverse_EmergencyLight.label>luz de emergência</Rimverse_EmergencyLight.label>
   <Rimverse_EmergencyLight.description>Uma luz vermelha que quase não gasta energia.</Rimverse_EmergencyLight.description>
   <Rimverse_StatusPanel.label>painel de status</Rimverse_StatusPanel.label>
-  <Rimverse_StatusPanel.description>Um painel de parede com os sinais vitais da nave.</Rimverse_StatusPanel.description>
+  <Rimverse_StatusPanel.description>Um painel de parede com os sinais vitais da nave: casco, ar, calor, combustível e tripulação.</Rimverse_StatusPanel.description>
   <Rimverse_NamePlate.label>placa com o nome da nave</Rimverse_NamePlate.label>
   <Rimverse_NamePlate.description>Uma placa polida com o nome da nave.</Rimverse_NamePlate.description>
   <Rimverse_StarMap.label>mapa estelar de parede</Rimverse_StarMap.label>
   <Rimverse_StarMap.description>Um mapa luminoso das estrelas conhecidas.</Rimverse_StarMap.description>
   <Rimverse_ShipPlanter.label>vaso de bordo</Rimverse_ShipPlanter.label>
-  <Rimverse_ShipPlanter.description>Um vaso pequeno e selado para uma planta.</Rimverse_ShipPlanter.description>
+  <Rimverse_ShipPlanter.description>Um vaso pequeno e selado para uma planta decorativa ou hidropônica.</Rimverse_ShipPlanter.description>
   <Rimverse_SuitLocker.label>armário de trajes na parede</Rimverse_SuitLocker.label>
   <Rimverse_SuitLocker.description>Um suporte de parede que guarda dois trajes de vácuo prontos para uso.</Rimverse_SuitLocker.description>
   <Rimverse_RepairDroneBay.label>baia de drones de reparo</Rimverse_RepairDroneBay.label>
-  <Rimverse_RepairDroneBay.description>Lança drones que consertam casco e módulos num raio de 30 células.</Rimverse_RepairDroneBay.description>
+  <Rimverse_RepairDroneBay.description>Uma melhoria da baia de drones de manutenção. Os drones consertam casco, módulos e veículos estacionados num raio de 30 células.</Rimverse_RepairDroneBay.description>
   <Rimverse_CleaningDroneBay.label>baia de drones de limpeza</Rimverse_CleaningDroneBay.label>
   <Rimverse_CleaningDroneBay.description>Lança drones que limpam a sujeira num raio de 20 células.</Rimverse_CleaningDroneBay.description>
   <Rimverse_CargoDroneBay.label>baia de drones de carga</Rimverse_CargoDroneBay.label>
@@ -198,7 +202,7 @@
   <Rimverse_MiningDroneBay.label>baia de drones de mineração</Rimverse_MiningDroneBay.label>
   <Rimverse_MiningDroneBay.description>Lança drones que mineram a rocha marcada num raio de 25 células.</Rimverse_MiningDroneBay.description>
   <Rimverse_DroneWorkshop.label>oficina de drones</Rimverse_DroneWorkshop.label>
-  <Rimverse_DroneWorkshop.description>Faz a manutenção dos drones da nave. Acelera as baias de drones por perto.</Rimverse_DroneWorkshop.description>
+  <Rimverse_DroneWorkshop.description>Faz a manutenção dos drones da nave. Toda baia de drones num raio de 30 células trabalha 50% mais.</Rimverse_DroneWorkshop.description>
   <Rimverse_FoamEmitter.label>emissor de espuma</Rimverse_FoamEmitter.label>
   <Rimverse_FoamEmitter.description>Inunda o cômodo de espuma antifogo quando detecta fogo.</Rimverse_FoamEmitter.description>
   <Rimverse_CombatVent.label>ventilação de combate</Rimverse_CombatVent.label>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="RockBase">
+    <defName>Rimverse_MineableIce</defName>
+    <label>ice vein</label>
+    <description>A seam of old water ice frozen into the rock. Mine it for ice.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(170,205,230)</color>
+      <colorTwo>(225,240,255)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Rimverse_Ice</mineableThing>
+      <mineableYield>30</mineableYield>
+      <mineableScatterCommonality>0</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>8~16</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="RockBase">
+    <defName>Rimverse_MineablePrecursorWreck</defName>
+    <label>precursor wreckage</label>
+    <description>Fused wreckage of a machine older than humanity, buried in the rock. Mining it recovers precursor fragments.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(120,100,60)</color>
+      <colorTwo>(240,210,110)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>3000</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Rimverse_PrecursorFragment</mineableThing>
+      <mineableYield>2</mineableYield>
+      <mineableScatterCommonality>0</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>8~16</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>Rimverse_MakeBiomass</defName>
+    <label>press biomass</label>
+    <description>Press raw plant food, hay or meat into compact biomass.</description>
+    <jobString>Pressing biomass.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Cooking</workSkill>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter><thingDefs>
+            <li>Hay</li>
+          </thingDefs><categories>
+            <li>PlantFoodRaw</li>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>1.0</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs>
+        <li>Hay</li>
+      </thingDefs><categories>
+        <li>PlantFoodRaw</li>
+        <li>MeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_Biomass>8</Rimverse_Biomass>
+    </products>
+    <researchPrerequisite>Rimverse_LifeSupport</researchPrerequisite>
+    <recipeUsers>
+      <li>Rimverse_AnalysisLab</li>
+      <li>Rimverse_CompactKitchen</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Rimverse_EnrichIsotope</defName>
+    <label>enrich isotope</label>
+    <description>Refine uranium into shielded fissile isotope pellets for fission reactors.</description>
+    <jobString>Enriching isotope.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workAmount>3000</workAmount>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <ingredients>
+      <li>
+        <filter><thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs>
+        <li>Uranium</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_Isotope>1</Rimverse_Isotope>
+    </products>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>Rimverse_FissionPower</researchPrerequisite>
+    <recipeUsers>
+      <li>Rimverse_NavalEngineeringBench</li>
+      <li>Rimverse_AsteroidFoundry</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Rimverse_CondenseExoticMatter</defName>
+    <label>condense exotic matter</label>
+    <description>Fold warp matter under heavy power into a single bottle of exotic matter.</description>
+    <jobString>Condensing exotic matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workAmount>12000</workAmount>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <ingredients>
+      <li>
+        <filter><thingDefs>
+            <li>Rimverse_WarpMatter</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter><thingDefs>
+            <li>Rimverse_PowerCell</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter><thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs>
+        <li>Rimverse_WarpMatter</li>
+        <li>Rimverse_PowerCell</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Rimverse_ExoticMatter>1</Rimverse_ExoticMatter>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>Rimverse_ExoticMaterials</researchPrerequisite>
+    <recipeUsers>
+      <li>Rimverse_NavalEngineeringBench</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Rimverse_MeltIceWater</defName>
+    <label>melt ice for chemfuel</label>
+    <description>Crack ice into hydrogen and oxygen and bottle it as chemfuel.</description>
+    <jobString>Cracking ice.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workAmount>800</workAmount>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <ingredients>
+      <li>
+        <filter><thingDefs>
+            <li>Rimverse_Ice</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs>
+        <li>Rimverse_Ice</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Chemfuel>12</Chemfuel>
+    </products>
+    <researchPrerequisite>Rimverse_IceProcessing</researchPrerequisite>
+    <recipeUsers>
+      <li>Rimverse_NavalEngineeringBench</li>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Rimverse_StudyPrecursorFragment</defName>
+    <label>study precursor fragment</label>
+    <description>Take a precursor fragment apart under the scanners. Gives 1,500 research to the current project.</description>
+    <jobString>Studying a precursor fragment.</jobString>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <workAmount>4000</workAmount>
+    <effectWorking>Research</effectWorking>
+    <soundWorking>Interact_Research</soundWorking>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter><thingDefs>
+            <li>Rimverse_PrecursorFragment</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs>
+        <li>Rimverse_PrecursorFragment</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <researchPrerequisite>Rimverse_ShipWorkshops</researchPrerequisite>
+    <recipeUsers>
+      <li>Rimverse_AnalysisLab</li>
+    </recipeUsers>
+    <workerClass>Rimverse.RecipeWorker_Study</workerClass>
+    <modExtensions>
+      <li Class="Rimverse.StudyExtension">
+        <research>1500</research>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Rimverse_StudyAlienSap</defName>
+    <label>analyze alien sap</label>
+    <description>Run alien sap through the analyzers. Gives 250 research to the current project.</description>
+    <jobString>Analyzing alien sap.</jobString>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <workAmount>1500</workAmount>
+    <effectWorking>Research</effectWorking>
+    <soundWorking>Interact_Research</soundWorking>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter><thingDefs>
+            <li>Rimverse_AlienExtractRaw</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs>
+        <li>Rimverse_AlienExtractRaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <researchPrerequisite>Rimverse_ShipWorkshops</researchPrerequisite>
+    <recipeUsers>
+      <li>Rimverse_AnalysisLab</li>
+    </recipeUsers>
+    <workerClass>Rimverse.RecipeWorker_Study</workerClass>
+    <modExtensions>
+      <li Class="Rimverse.StudyExtension">
+        <research>250</research>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+</Defs>

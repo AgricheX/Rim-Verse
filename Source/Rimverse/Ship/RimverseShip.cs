@@ -36,6 +36,8 @@ namespace Rimverse
         public float sensorSensitivity;
         public int sealedCells;
         public int crewCount;
+        public float aiPilotLevel;
+        public float signature = 1f;
         public ShipClass shipClass;
 
         public string Label => state?.name ?? bridge?.LabelShort ?? "?";
@@ -43,6 +45,8 @@ namespace Rimverse
         public float Integrity => hullMax <= 0f ? 1f : hullCurrent / (hullMax + state.lostHullPoints);
 
         public float AirFraction => airCapacity <= 0f ? 0f : state.airStock / airCapacity;
+
+        public float Signature => UnityEngine.Mathf.Clamp(signature * (1f + 0.5f * HeatFraction), 0.15f, 1.5f);
 
         public float HeatFraction => heatCapacity <= 0f ? 0f : state.heat / heatCapacity;
 

@@ -29,7 +29,7 @@
   <Rimverse_MaintenanceBay.label>baia de drones de manutenção</Rimverse_MaintenanceBay.label>
   <Rimverse_MaintenanceBay.description>Um suporte com drones pequenos de reparo. A cada hora eles saem e consertam o casco, as paredes e os módulos danificados da nave onde estão, sem ninguém pegar numa ferramenta.</Rimverse_MaintenanceBay.description>
   <Rimverse_AutoGalley.label>cozinha automática</Rimverse_AutoGalley.label>
-  <Rimverse_AutoGalley.description>Uma cozinha selada. A cada meia hora ela pega comida crua dos armazéns em volta e cozinha sozinha uma refeição simples. Ponha prateleiras ou a saída da hidroponia do lado dela.</Rimverse_AutoGalley.description>
+  <Rimverse_AutoGalley.description>Uma cozinha selada. A cada meia hora ela pega comida crua dos armazéns em volta e cozinha sozinha uma refeição de bordo. Ponha prateleiras ou a saída da hidroponia do lado dela.</Rimverse_AutoGalley.description>
   <Rimverse_AutoMedPod.label>cápsula médica automática</Rimverse_AutoMedPod.label>
   <Rimverse_AutoMedPod.description>Uma cama médica selada com braços cirúrgicos. Trata as feridas e doenças de quem estiver deitado nela a cada hora, sem médico nem remédio.</Rimverse_AutoMedPod.description>
   <Rimverse_TradeDropSpot.label>ponto de entrega do comércio</Rimverse_TradeDropSpot.label>
