@@ -11,13 +11,37 @@ namespace Rimverse
 {
     public class GameComponent_RimverseHud : GameComponent
     {
-        private static readonly StringBuilder sb = new StringBuilder();
+        private struct HudRow
+        {
+            public string label;
+            public string value;
+            public float fill;
+            public int level;
+            public string tip;
+        }
+
+        private const float Width = 228f;
+        private const float RowHeight = 20f;
+        private const float Pad = 8f;
+        private static readonly Color Back = new Color(0.08f, 0.09f, 0.1f, 0.78f);
+        private static readonly Color Edge = new Color(1f, 1f, 1f, 0.07f);
+        private static readonly Color Muted = new Color(0.62f, 0.64f, 0.67f);
+        private static readonly Color Accent = new Color(0.36f, 0.66f, 0.95f);
+        private static readonly Color Warn = new Color(0.98f, 0.78f, 0.3f);
+        private static readonly Color Crit = new Color(0.95f, 0.35f, 0.3f);
+        private static readonly Color Track = new Color(1f, 1f, 1f, 0.08f);
+
+        private readonly List<HudRow> rows = new List<HudRow>();
+        private string title = "";
+        private string subtitle = "";
         private int lastUpdate = -1;
-        private string cached = "";
+        private bool collapsed;
 
         public GameComponent_RimverseHud(Game game)
         {
         }
+
+        public static string Num(float v) => Mathf.Abs(v) >= 10000f ? v.ToString("N0") : v.ToString("0.#");
 
         public override void GameComponentOnGUI()
         {
@@ -27,45 +51,104 @@ namespace Rimverse
             if (Time.frameCount - lastUpdate > 30)
             {
                 lastUpdate = Time.frameCount;
-                cached = Build(map);
+                Build(map);
             }
-            Text.Font = GameFont.Tiny;
-            float h = Text.CalcHeight(cached, 230f) + 8f;
-            Rect r = new Rect(8f, 34f, 238f, h);
-            Widgets.DrawBoxSolid(r, new Color(0f, 0f, 0f, 0.45f));
-            Widgets.Label(r.ContractedBy(4f), cached);
+            if (rows.Count == 0) return;
+            float height = Pad * 2f + 22f + (collapsed ? 0f : rows.Count * RowHeight + 4f);
+            float x = UI.screenWidth - Width - 10f;
+            float y = 10f + RimverseMod.Settings.hudOffsetY;
+            Rect r = new Rect(x, y, Width, height);
+            Widgets.DrawBoxSolid(r, Back);
+            GUI.color = Edge;
+            Widgets.DrawBox(r);
+            GUI.color = Color.white;
+            Widgets.DrawBoxSolid(new Rect(r.x, r.y, 2f, r.height), Worst() == 2 ? Crit : Worst() == 1 ? Warn : Accent);
+            Rect head = new Rect(r.x + Pad + 2f, r.y + Pad, r.width - Pad * 2f - 2f, 22f);
             Text.Font = GameFont.Small;
+            Text.Anchor = TextAnchor.MiddleLeft;
+            Widgets.Label(new Rect(head.x, head.y, head.width - 70f, head.height), title.Truncate(head.width - 70f));
+            Text.Font = GameFont.Tiny;
+            Text.Anchor = TextAnchor.MiddleRight;
+            GUI.color = Muted;
+            Widgets.Label(new Rect(head.xMax - 70f, head.y, 70f, head.height), subtitle);
+            GUI.color = Color.white;
+            if (Widgets.ButtonInvisible(head)) collapsed = !collapsed;
+            TooltipHandler.TipRegion(head, "Rimverse_HudToggle".Translate());
+            if (!collapsed)
+            {
+                float ry = head.yMax + 4f;
+                foreach (HudRow row in rows)
+                {
+                    Rect rr = new Rect(head.x, ry, head.width, RowHeight);
+                    Text.Anchor = TextAnchor.MiddleLeft;
+                    GUI.color = Muted;
+                    Widgets.Label(new Rect(rr.x, rr.y, rr.width * 0.45f, rr.height - 3f), row.label);
+                    Text.Anchor = TextAnchor.MiddleRight;
+                    GUI.color = row.level == 2 ? Crit : row.level == 1 ? Warn : Color.white;
+                    Widgets.Label(new Rect(rr.x + rr.width * 0.4f, rr.y, rr.width * 0.6f, rr.height - 3f), row.value);
+                    if (row.fill >= 0f)
+                    {
+                        Rect bar = new Rect(rr.x, rr.yMax - 3f, rr.width, 2f);
+                        GUI.color = Color.white;
+                        Widgets.DrawBoxSolid(bar, Track);
+                        Widgets.DrawBoxSolid(new Rect(bar.x, bar.y, bar.width * Mathf.Clamp01(row.fill), bar.height), row.level == 2 ? Crit : row.level == 1 ? Warn : Accent);
+                    }
+                    GUI.color = Color.white;
+                    if (!row.tip.NullOrEmpty()) TooltipHandler.TipRegion(rr, row.tip);
+                    ry += RowHeight;
+                }
+            }
+            Text.Anchor = TextAnchor.UpperLeft;
+            Text.Font = GameFont.Small;
+            GUI.color = Color.white;
         }
 
-        public static string Num(float v) => v >= 10000f ? v.ToString("N0") : v.ToString("0.#");
-
-        private static string Build(Map map)
+        private int Worst()
         {
-            sb.Length = 0;
+            int w = 0;
+            foreach (HudRow r in rows) if (r.level > w) w = r.level;
+            return w;
+        }
+
+        private void Add(string label, string value, float fill, int level, string tip = null)
+        {
+            rows.Add(new HudRow { label = label, value = value, fill = fill, level = level, tip = tip });
+        }
+
+        private static int Low(float frac, float warn, float crit) => frac <= crit ? 2 : frac <= warn ? 1 : 0;
+
+        private void Build(Map map)
+        {
+            rows.Clear();
             RimverseShip ship = ColonyUtility.PlayerShipOn(map);
-            if (ship != null)
-            {
-                sb.AppendLine(ship.Label);
-                sb.AppendLine("Rimverse_HudShip".Translate((ship.AirFraction * 100f).ToString("0"), (ship.Integrity * 100f).ToString("0"), ship.heatCapacity <= 0f ? "0" : (ship.state.heat / ship.heatCapacity * 100f).ToString("0"), Num(ShipLaunchUtility.FuelAvailable(ship))));
-            }
+            if (ship == null && RimverseMod.Settings.hudOnlyShip) return;
+            title = ship != null ? ship.Label : map.Parent?.LabelCap ?? map.ToString();
+            MapComponent_ShipLocation loc = MapComponent_ShipLocation.For(map);
+            subtitle = ship != null ? (loc != null && !loc.OnSurface ? "Rimverse_HudInSpace".Translate().ToString() : "Rimverse_HudLanded".Translate().ToString()) : "";
             int colonists = Mathf.Max(1, map.mapPawns.FreeColonistsSpawnedCount);
             float days = map.resourceCounter.TotalHumanEdibleNutrition / (colonists * 1.6f);
-            float stored = 0f, gain = 0f;
+            Add("Rimverse_HudFood".Translate(), "Rimverse_HudDays".Translate(days.ToString("0.#")), -1f, days < 2f ? 2 : days < 5f ? 1 : 0, "Rimverse_HudFoodTip".Translate(colonists));
+            float stored = 0f, gain = 0f, cap = 0f;
             foreach (PowerNet net in map.powerNetManager.AllNetsListForReading)
             {
                 stored += net.CurrentStoredEnergy();
                 gain += net.CurrentEnergyGainRate() / CompPower.WattsToWattDaysPerTick;
+                foreach (CompPowerBattery b in net.batteryComps) cap += b.Props.storedEnergyMax;
             }
-            sb.AppendLine("Rimverse_HudColony".Translate(days.ToString("0.#"), Num(stored), Num(gain)));
-            IntVec3 mouse = UI.MouseCell();
-            if (mouse.InBounds(map))
+            int powerLevel = gain < 0f && stored < -gain * 0.5f ? 2 : gain < 0f ? 1 : 0;
+            Add("Rimverse_HudPower".Translate(), (gain >= 0f ? "+" : "") + Num(gain) + " W", cap > 0f ? stored / cap : -1f, powerLevel, "Rimverse_HudPowerTip".Translate(Num(stored), Num(cap)));
+            if (ship != null)
             {
-                float t = mouse.GetTemperature(map);
-                sb.AppendLine("Rimverse_HudTemp".Translate(t.ToStringTemperature("F0"), map.mapTemperature.OutdoorTemp.ToStringTemperature("F0")));
+                Add("Rimverse_HudAir".Translate(), ship.AirFraction.ToStringPercent("0"), ship.AirFraction, Low(ship.AirFraction, 0.5f, 0.25f));
+                Add("Rimverse_HudHull".Translate(), ship.Integrity.ToStringPercent("0"), ship.Integrity, Low(ship.Integrity, 0.6f, 0.3f));
+                float heat = ship.heatCapacity <= 0f ? 0f : ship.state.heat / ship.heatCapacity;
+                Add("Rimverse_HudHeat".Translate(), heat.ToStringPercent("0"), heat, heat >= 0.9f ? 2 : heat >= 0.7f ? 1 : 0);
+                float fuel = ShipLaunchUtility.FuelAvailable(ship);
+                Add("Rimverse_HudFuel".Translate(), Num(fuel), -1f, fuel <= 0f ? 2 : 0);
             }
-            Vector2 ll = Find.WorldGrid.LongLatOf(map.Tile);
-            sb.Append(GenDate.DateFullStringWithHourAt(Find.TickManager.TicksAbs, ll));
-            return sb.ToString();
+            IntVec3 mouse = UI.MouseCell();
+            float inside = mouse.InBounds(map) ? mouse.GetTemperature(map) : map.mapTemperature.OutdoorTemp;
+            Add("Rimverse_HudTempShort".Translate(), inside.ToStringTemperature("F0") + "  /  " + map.mapTemperature.OutdoorTemp.ToStringTemperature("F0"), -1f, 0, "Rimverse_HudTempTip".Translate());
         }
     }
 

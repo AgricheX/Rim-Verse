@@ -112,6 +112,7 @@ namespace Rimverse
             string key = BodyKey(id, body);
             if (catalog.TryGetValue(key, out int cur) && cur >= (int)level) return;
             catalog[key] = (int)level;
+            if (level == ScanLevel.Exact) EmpireAnomalies.OnScanned(id, body);
         }
 
         public int CatalogCount => catalog.Count;

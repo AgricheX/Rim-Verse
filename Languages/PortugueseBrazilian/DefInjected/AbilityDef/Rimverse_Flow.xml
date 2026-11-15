@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_FlowPush.label>empurrão do Fluxo</Rimverse_FlowPush.label>
+  <Rimverse_FlowPush.description>Joga o alvo para trás com uma onda do Fluxo e o atordoa por um instante.</Rimverse_FlowPush.description>
+  <Rimverse_FlowSense.label>sentido do Fluxo</Rimverse_FlowSense.label>
+  <Rimverse_FlowSense.description>Sente a área em volta de um ponto e tira a névoa de guerra.</Rimverse_FlowSense.description>
+  <Rimverse_FlowHeal.label>cura do Fluxo</Rimverse_FlowHeal.label>
+  <Rimverse_FlowHeal.description>Fecha ferimentos com a corrente suave da Harmonia.</Rimverse_FlowHeal.description>
+  <Rimverse_FlowCalm.label>calma do Fluxo</Rimverse_FlowCalm.label>
+  <Rimverse_FlowCalm.description>Acalma uma mente perturbada e encerra um colapso mental.</Rimverse_FlowCalm.description>
+  <Rimverse_FlowChoke.label>aperto do Fluxo</Rimverse_FlowChoke.label>
+  <Rimverse_FlowChoke.description>Esmaga o alvo com a vontade da Ruptura.</Rimverse_FlowChoke.description>
+  <Rimverse_FlowStorm.label>tempestade do Fluxo</Rimverse_FlowStorm.label>
+  <Rimverse_FlowStorm.description>Libera uma explosão de energia bruta em volta de um ponto.</Rimverse_FlowStorm.description>
+</LanguageData>

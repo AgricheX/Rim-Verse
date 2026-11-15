@@ -4331,9 +4331,6 @@
       <sowTag>Decorative</sowTag>
     </building>
     <fertility>1</fertility>
-    <inspectorTabs>
-      <li>ITab_Inventory</li>
-    </inspectorTabs>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -4570,9 +4567,6 @@
       <sowTag>Decorative</sowTag>
     </building>
     <fertility>1</fertility>
-    <inspectorTabs>
-      <li>ITab_Inventory</li>
-    </inspectorTabs>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -4866,7 +4860,7 @@
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.2</fillPercent>
-    <designationCategory>Security</designationCategory>
+    <designationCategory>Rimverse_Ship</designationCategory>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
       <WorkToBuild>2000</WorkToBuild>
@@ -4904,7 +4898,7 @@
     <altitudeLayer>Building</altitudeLayer>
     <passability>Standable</passability>
     <fillPercent>0.1</fillPercent>
-    <designationCategory>Security</designationCategory>
+    <designationCategory>Rimverse_Ship</designationCategory>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
       <WorkToBuild>2000</WorkToBuild>

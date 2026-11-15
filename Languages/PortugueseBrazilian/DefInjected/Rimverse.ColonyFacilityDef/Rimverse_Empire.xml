@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Facility_HabitatDome.label>cúpulas habitacionais</Rimverse_Facility_HabitatDome.label>
+  <Rimverse_Facility_HabitatDome.description>Cúpulas seladas que abrigam muito mais colonos.</Rimverse_Facility_HabitatDome.description>
+  <Rimverse_Facility_OrbitalShipyard.label>estaleiro orbital</Rimverse_Facility_OrbitalShipyard.label>
+  <Rimverse_Facility_OrbitalShipyard.description>Constrói e repara cascos da frota neste sistema.</Rimverse_Facility_OrbitalShipyard.description>
+  <Rimverse_Facility_PlanetaryShield.label>escudo planetário</Rimverse_Facility_PlanetaryShield.label>
+  <Rimverse_Facility_PlanetaryShield.description>Um campo que transforma bombardeio em luz.</Rimverse_Facility_PlanetaryShield.description>
+  <Rimverse_Facility_Garrison.label>guarnição</Rimverse_Facility_Garrison.label>
+  <Rimverse_Facility_Garrison.description>Quartéis e uma milícia permanente.</Rimverse_Facility_Garrison.description>
+  <Rimverse_Facility_AdminCenter.label>centro administrativo</Rimverse_Facility_AdminCenter.label>
+  <Rimverse_Facility_AdminCenter.description>Escrivães, tribunais e um gabinete de governador.</Rimverse_Facility_AdminCenter.description>
+  <Rimverse_Facility_Institute.label>instituto de pesquisa</Rimverse_Facility_Institute.label>
+  <Rimverse_Facility_Institute.description>Laboratórios que alimentam a pesquisa do reino.</Rimverse_Facility_Institute.description>
+  <Rimverse_Facility_TradeExchange.label>bolsa de comércio</Rimverse_Facility_TradeExchange.label>
+  <Rimverse_Facility_TradeExchange.description>Um mercado que atrai comerciantes de longe.</Rimverse_Facility_TradeExchange.description>
+  <Rimverse_Facility_HydroFarms.label>fazendas hidropônicas</Rimverse_Facility_HydroFarms.label>
+  <Rimverse_Facility_HydroFarms.description>Prateleiras de plantações sob lâmpadas.</Rimverse_Facility_HydroFarms.description>
+  <Rimverse_Facility_OreRefinery.label>refinaria de minério</Rimverse_Facility_OreRefinery.label>
+  <Rimverse_Facility_OreRefinery.description>Funde o minério local em metal utilizável.</Rimverse_Facility_OreRefinery.description>
+  <Rimverse_Facility_ComponentFab.label>fábrica de componentes</Rimverse_Facility_ComponentFab.label>
+  <Rimverse_Facility_ComponentFab.description>Monta componentes para o reino.</Rimverse_Facility_ComponentFab.description>
+  <Rimverse_Facility_MedicalCenter.label>centro médico</Rimverse_Facility_MedicalCenter.label>
+  <Rimverse_Facility_MedicalCenter.description>Hospitais e clínicas para os colonos.</Rimverse_Facility_MedicalCenter.description>
+  <Rimverse_Facility_Entertainment.label>distrito de lazer</Rimverse_Facility_Entertainment.label>
+  <Rimverse_Facility_Entertainment.description>Teatros, bares e salões de holo-jogos.</Rimverse_Facility_Entertainment.description>
+  <Rimverse_Facility_SensorArray.label>rede de sensores</Rimverse_Facility_SensorArray.label>
+  <Rimverse_Facility_SensorArray.description>Vigia o céu e esconde a assinatura da colônia.</Rimverse_Facility_SensorArray.description>
+  <Rimverse_Facility_Farmland.label>lavouras</Rimverse_Facility_Farmland.label>
+  <Rimverse_Facility_Farmland.description>Campos abertos de plantações num mundo vivo.</Rimverse_Facility_Farmland.description>
+  <Rimverse_Facility_LumberCamp.label>madeireira</Rimverse_Facility_LumberCamp.label>
+  <Rimverse_Facility_LumberCamp.description>Corta e empilha madeira das florestas próximas.</Rimverse_Facility_LumberCamp.description>
+  <Rimverse_Facility_SurfaceMine.label>mina de superfície</Rimverse_Facility_SurfaceMine.label>
+  <Rimverse_Facility_SurfaceMine.description>Cavas abertas que tiram metal e prata.</Rimverse_Facility_SurfaceMine.description>
+  <Rimverse_Facility_GasRefinery.label>refinaria de gás</Rimverse_Facility_GasRefinery.label>
+  <Rimverse_Facility_GasRefinery.description>Quebra gás e gelo em combustível químico.</Rimverse_Facility_GasRefinery.description>
+  <Rimverse_Facility_WarpCollector.label>coletor de matéria de dobra</Rimverse_Facility_WarpCollector.label>
+  <Rimverse_Facility_WarpCollector.description>Colhe matéria de dobra do espaço local.</Rimverse_Facility_WarpCollector.description>
+  <Rimverse_Facility_RingHabitat.label>habitat anelar</Rimverse_Facility_RingHabitat.label>
+  <Rimverse_Facility_RingHabitat.description>Um anel megaestrutural que abriga uma nação.</Rimverse_Facility_RingHabitat.description>
+  <Rimverse_Facility_Citadel.label>fortaleza cidadela</Rimverse_Facility_Citadel.label>
+  <Rimverse_Facility_Citadel.description>Camadas de canhões, bunkers e escudos.</Rimverse_Facility_Citadel.description>
+</LanguageData>

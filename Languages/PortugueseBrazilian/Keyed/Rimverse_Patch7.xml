@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_StartFailed>Falha ao montar a nave</Rimverse_StartFailed>
+  <Rimverse_StartFailedText>A nave inicial não pôde ser montada, então seu grupo acordou no chão. A carga está aqui e liberada. Ainda dá para construir uma nave e decolar depois.</Rimverse_StartFailedText>
+  <Rimverse_LetterRumorLabel>Rumor de uma civilização</Rimverse_LetterRumorLabel>
+  <Rimverse_LetterRumor>Comerciantes e sinais interceptados falam de uma civilização {0}. Ninguém sabe o nome dela nem o que ela quer. Escaneie mais estrelas, viaje ou negocie para descobrir mais.</Rimverse_LetterRumor>
+  <Rimverse_RumorVeryClose>muito perto de vocês</Rimverse_RumorVeryClose>
+  <Rimverse_RumorClose>a algumas dezenas de anos-luz</Rimverse_RumorClose>
+  <Rimverse_RumorFar>longe daqui</Rimverse_RumorFar>
+  <Rimverse_CivTabTitleFog>Civilizações conhecidas: {0} · rumores: {1}</Rimverse_CivTabTitleFog>
+  <Rimverse_CivUnknownName>Civilização desconhecida</Rimverse_CivUnknownName>
+  <Rimverse_CivRumorInfo>Tudo o que vocês têm é um rumor: tem alguém lá fora, {0}. Escaneie as estrelas, encontre as naves ou negocie com os vizinhos para saber mais.</Rimverse_CivRumorInfo>
+  <Rimverse_Knowledge_Unknown>desconhecida</Rimverse_Knowledge_Unknown>
+  <Rimverse_Knowledge_Rumor>rumor</Rimverse_Knowledge_Rumor>
+  <Rimverse_Knowledge_Contact>primeiro contato</Rimverse_Knowledge_Contact>
+  <Rimverse_Knowledge_Known>conhecida</Rimverse_Knowledge_Known>
+  <Rimverse_Knowledge_Detailed>bem conhecida</Rimverse_Knowledge_Detailed>
+  <Rimverse_CivKnowledgeLine>O que vocês sabem: {0} ({1}/100)</Rimverse_CivKnowledgeLine>
+  <Rimverse_CivMoreIntel>Mais detalhes aparecem conforme vocês aprendem sobre eles: contato, comércio, tratados, escaneamentos e tempo no espaço deles.</Rimverse_CivMoreIntel>
+  <Rimverse_FleetGuess_Small>pequena</Rimverse_FleetGuess_Small>
+  <Rimverse_FleetGuess_Medium>média</Rimverse_FleetGuess_Medium>
+  <Rimverse_FleetGuess_Large>grande</Rimverse_FleetGuess_Large>
+  <Rimverse_FleetGuess_Huge>enorme</Rimverse_FleetGuess_Huge>
+  <Rimverse_HudToggle>Clique para recolher ou abrir.</Rimverse_HudToggle>
+  <Rimverse_HudInSpace>no espaço</Rimverse_HudInSpace>
+  <Rimverse_HudLanded>pousada</Rimverse_HudLanded>
+  <Rimverse_HudFood>Comida</Rimverse_HudFood>
+  <Rimverse_HudDays>{0} dias</Rimverse_HudDays>
+  <Rimverse_HudFoodTip>Comida guardada neste mapa, dividida entre {0} colonos.</Rimverse_HudFoodTip>
+  <Rimverse_HudPower>Energia</Rimverse_HudPower>
+  <Rimverse_HudPowerTip>Guardada: {0} Wd de {1} Wd. A barra mostra o quanto as baterias estão cheias.</Rimverse_HudPowerTip>
+  <Rimverse_HudAir>Ar</Rimverse_HudAir>
+  <Rimverse_HudHull>Casco</Rimverse_HudHull>
+  <Rimverse_HudHeat>Calor</Rimverse_HudHeat>
+  <Rimverse_HudFuel>Combustível</Rimverse_HudFuel>
+  <Rimverse_HudTempShort>Temp.</Rimverse_HudTempShort>
+  <Rimverse_HudTempTip>Sob o mouse / lá fora.</Rimverse_HudTempTip>
+  <Rimverse_HudOnlyShip>Painel só em mapas com nave</Rimverse_HudOnlyShip>
+  <Rimverse_HudOnlyShip_Desc>Esconde o painel de status em mapas sem nave do Rimverse.</Rimverse_HudOnlyShip_Desc>
+  <Rimverse_HudOffset>Deslocamento vertical do painel</Rimverse_HudOffset>
+  <Rimverse_HudOffset_Desc>Desce o painel a partir do canto superior direito, por exemplo para ficar abaixo do RimHUD ou de outros painéis.</Rimverse_HudOffset_Desc>
+  <Rimverse_OutpostNeedColonists>A caravana precisa de pelo menos {0} colonos.</Rimverse_OutpostNeedColonists>
+  <Rimverse_OutpostNeedSteel>A caravana precisa de {0} de aço.</Rimverse_OutpostNeedSteel>
+  <Rimverse_AlreadyAtWar>Já em guerra.</Rimverse_AlreadyAtWar>
+  <Rimverse_AnomalyChapterGeneric>A equipe terminou esta etapa do estudo. Mande de volta para continuar.</Rimverse_AnomalyChapterGeneric>
+  <Rimverse_AnomalyChapterShort>etapa {0}/{1}</Rimverse_AnomalyChapterShort>
+  <Rimverse_AnomalyDone>estudada</Rimverse_AnomalyDone>
+  <Rimverse_AnomalyEndGeneric>O estudo terminou.</Rimverse_AnomalyEndGeneric>
+  <Rimverse_AnomalyInfo>Anomalias aparecem quando um corpo é escaneado em detalhe. Estude com uma nave no sistema, ou com uma colônia no caso de escavações.</Rimverse_AnomalyInfo>
+  <Rimverse_AnomalyNeedColony>Precisa de uma colônia sua neste sistema.</Rimverse_AnomalyNeedColony>
+  <Rimverse_AnomalyNeedPresence>Precisa da sua nave ou de uma colônia neste sistema.</Rimverse_AnomalyNeedPresence>
+  <Rimverse_AnomalyNone>Nenhuma anomalia encontrada ainda.</Rimverse_AnomalyNone>
+  <Rimverse_AnomalyRewards>Recompensas: {0} de pesquisa, {1} de prata para o tesouro, {2} de influência, mais os itens listados.</Rimverse_AnomalyRewards>
+  <Rimverse_AnomalyStudy>Estudar</Rimverse_AnomalyStudy>
+  <Rimverse_AnomalyWorking>estudando, faltam {0} dias</Rimverse_AnomalyWorking>
+  <Rimverse_BuildFacility>Construir {0} · {1} de prata · {2} dias · manutenção {3}</Rimverse_BuildFacility>
+  <Rimverse_ClaimAlready>Já reivindicado.</Rimverse_ClaimAlready>
+  <Rimverse_ClaimButton>Reivindicar</Rimverse_ClaimButton>
+  <Rimverse_ClaimNeedIntel>Você precisa conhecer melhor esta civilização (nível Conhecida).</Rimverse_ClaimNeedIntel>
+  <Rimverse_ClaimsShort>{0} reivindicações</Rimverse_ClaimsShort>
+  <Rimverse_ColonySurfaceCollect>Posto na superfície: mande uma caravana até lá para coletar.</Rimverse_ColonySurfaceCollect>
+  <Rimverse_CouncilActive>Já está em vigor.</Rimverse_CouncilActive>
+  <Rimverse_CouncilActiveHeader>Resoluções em vigor</Rimverse_CouncilActiveHeader>
+  <Rimverse_CouncilBusy>Já há uma votação em andamento.</Rimverse_CouncilBusy>
+  <Rimverse_CouncilInfo>{0} civilizações membros. Peso do seu voto: {1}.</Rimverse_CouncilInfo>
+  <Rimverse_CouncilNone>O conselho galáctico se forma quando você conhece pelo menos três civilizações dispostas a conversar.</Rimverse_CouncilNone>
+  <Rimverse_CouncilProposal>Em votação: {0} · resultado em {1} dias</Rimverse_CouncilProposal>
+  <Rimverse_CouncilPropose>Propor uma resolução (40 de influência)</Rimverse_CouncilPropose>
+  <Rimverse_CouncilTally>Sim {0} · Não {1} · seu lobby {2}</Rimverse_CouncilTally>
+  <Rimverse_CouncilVoteNo>Fazer lobby contra ({0} de influência)</Rimverse_CouncilVoteNo>
+  <Rimverse_CouncilVoteYes>Fazer lobby a favor ({0} de influência)</Rimverse_CouncilVoteYes>
+  <Rimverse_DaysShort>{0} dias</Rimverse_DaysShort>
+  <Rimverse_EdictActive>ativo, faltam {0} dias</Rimverse_EdictActive>
+  <Rimverse_EdictCost>{0} de prata · {1} de influência · {2} dias</Rimverse_EdictCost>
+  <Rimverse_Eff_Attention>Atenção dos piratas {0}</Rimverse_Eff_Attention>
+  <Rimverse_Eff_Capacity>Capacidade {0}</Rimverse_Eff_Capacity>
+  <Rimverse_Eff_Defense>Defesa {0}</Rimverse_Eff_Defense>
+  <Rimverse_Eff_FleetUpkeep>Manutenção da frota {0}</Rimverse_Eff_FleetUpkeep>
+  <Rimverse_Eff_Food>Comida {0}</Rimverse_Eff_Food>
+  <Rimverse_Eff_Growth>Crescimento {0}</Rimverse_Eff_Growth>
+  <Rimverse_Eff_Income>Renda {0}</Rimverse_Eff_Income>
+  <Rimverse_Eff_Influence>Influência {0}</Rimverse_Eff_Influence>
+  <Rimverse_Eff_Opinion>Opinião dos outros {0} por quadrum</Rimverse_Eff_Opinion>
+  <Rimverse_Eff_Research>Pesquisa {0}</Rimverse_Eff_Research>
+  <Rimverse_Eff_Stability>Estabilidade {0}</Rimverse_Eff_Stability>
+  <Rimverse_EmpireAnomaliesHeader>Anomalias</Rimverse_EmpireAnomaliesHeader>
+  <Rimverse_EmpireApplyGov>Aplicar mudanças</Rimverse_EmpireApplyGov>
+  <Rimverse_EmpireAssignGovernor>Nomear governador</Rimverse_EmpireAssignGovernor>
+  <Rimverse_EmpireCivicSlot>Cívica {0}</Rimverse_EmpireCivicSlot>
+  <Rimverse_EmpireCivsHeader>Civilizações conhecidas</Rimverse_EmpireCivsHeader>
+  <Rimverse_EmpireCouncilHeader>Conselho galáctico</Rimverse_EmpireCouncilHeader>
+  <Rimverse_EmpireEdictsHeader>Editos</Rimverse_EmpireEdictsHeader>
+  <Rimverse_EmpireEffectsHeader>Efeitos no reino todo</Rimverse_EmpireEffectsHeader>
+  <Rimverse_EmpireFederationHeader>Federação</Rimverse_EmpireFederationHeader>
+  <Rimverse_EmpireFirstGov>Escolha como seu reino é governado. A primeira escolha é grátis.</Rimverse_EmpireFirstGov>
+  <Rimverse_EmpireGovHeader>Governo</Rimverse_EmpireGovHeader>
+  <Rimverse_EmpireNoWars>Nenhuma guerra no momento.</Rimverse_EmpireNoWars>
+  <Rimverse_EmpireReformInfo>Uma reforma custa {0} de influência e pode ser feita uma vez por ano.</Rimverse_EmpireReformInfo>
+  <Rimverse_EmpireSectorColonies>{0} colônias, {1} pessoas</Rimverse_EmpireSectorColonies>
+  <Rimverse_EmpireSectorsHeader>Setores e governadores</Rimverse_EmpireSectorsHeader>
+  <Rimverse_EmpireTitle>Império · influência {0}/{1} (+{2}/dia) · tesouro {3}</Rimverse_EmpireTitle>
+  <Rimverse_EmpireWarsHeader>Guerras</Rimverse_EmpireWarsHeader>
+  <Rimverse_EmpireTab_Government>Governo</Rimverse_EmpireTab_Government>
+  <Rimverse_EmpireTab_Edicts>Editos</Rimverse_EmpireTab_Edicts>
+  <Rimverse_EmpireTab_Fleets>Frotas</Rimverse_EmpireTab_Fleets>
+  <Rimverse_EmpireTab_Diplomacy>Diplomacia</Rimverse_EmpireTab_Diplomacy>
+  <Rimverse_EmpireTab_Council>Conselho</Rimverse_EmpireTab_Council>
+  <Rimverse_EmpireTab_Anomalies>Anomalias</Rimverse_EmpireTab_Anomalies>
+  <Rimverse_FacilityMax>Já está no limite desta colônia.</Rimverse_FacilityMax>
+  <Rimverse_FacilityNeedTier>A colônia precisa ser {0} antes.</Rimverse_FacilityNeedTier>
+  <Rimverse_FacilityOutput>Produz a cada quadrum: {0}</Rimverse_FacilityOutput>
+  <Rimverse_FacilitySpaceOnly>Só para colônias no espaço.</Rimverse_FacilitySpaceOnly>
+  <Rimverse_FacilitySurfaceOnly>Só para postos na superfície de um planeta.</Rimverse_FacilitySurfaceOnly>
+  <Rimverse_FederationDefaultName>Estrelas Unidas</Rimverse_FederationDefaultName>
+  <Rimverse_FederationExists>Você já lidera uma federação.</Rimverse_FederationExists>
+  <Rimverse_FederationFound>Fundar federação</Rimverse_FederationFound>
+  <Rimverse_FederationInvite>Convidar</Rimverse_FederationInvite>
+  <Rimverse_FederationLeave>Expulsar</Rimverse_FederationLeave>
+  <Rimverse_FederationLine>{0}: {1}</Rimverse_FederationLine>
+  <Rimverse_FederationNamePrompt>Nome da federação:</Rimverse_FederationNamePrompt>
+  <Rimverse_FederationNone>Nenhuma federação ainda. Funde uma com um aliado (60 de influência).</Rimverse_FederationNone>
+  <Rimverse_FleetAutoResolve>Resolver automático</Rimverse_FleetAutoResolve>
+  <Rimverse_FleetBattleChoice>{0} entrou em combate com {1}. Sua nave está no sistema: comandar a batalha você mesma ou deixar os almirantes resolverem?</Rimverse_FleetBattleChoice>
+  <Rimverse_FleetBuild>Construir naves</Rimverse_FleetBuild>
+  <Rimverse_FleetBuildOption>{0} ×{1} · {2} de prata · poder {3} · terra {4}</Rimverse_FleetBuildOption>
+  <Rimverse_FleetCannotReach>A frota não consegue chegar a esse sistema.</Rimverse_FleetCannotReach>
+  <Rimverse_FleetCommand>Comandar a batalha</Rimverse_FleetCommand>
+  <Rimverse_FleetDefaultName>Frota {0}</Rimverse_FleetDefaultName>
+  <Rimverse_FleetDisband>Desfazer</Rimverse_FleetDisband>
+  <Rimverse_FleetDisbandConfirm>Desfazer {0}? As naves viram sucata, sem reembolso.</Rimverse_FleetDisbandConfirm>
+  <Rimverse_FleetEnRoute>para {0}, {1} dias</Rimverse_FleetEnRoute>
+  <Rimverse_FleetLine>Poder {0} · terra {1} · velocidade {2} al/dia · estado {3} · manutenção {4}/quadrum · missão: {5}</Rimverse_FleetLine>
+  <Rimverse_FleetLocation>Local: {0}</Rimverse_FleetLocation>
+  <Rimverse_FleetMoving>A frota está em movimento.</Rimverse_FleetMoving>
+  <Rimverse_FleetNew>Nova frota</Rimverse_FleetNew>
+  <Rimverse_FleetNoShipyard>Precisa de um estaleiro: uma colônia com estaleiro, ou sua nave no sistema.</Rimverse_FleetNoShipyard>
+  <Rimverse_FleetNoTarget>{0} não encontrou nada para enfrentar lá.</Rimverse_FleetNoTarget>
+  <Rimverse_FleetNone>Nenhuma frota ainda. Crie uma num estaleiro.</Rimverse_FleetNone>
+  <Rimverse_FleetNotAtWar>Você não está em guerra com {0}.</Rimverse_FleetNotAtWar>
+  <Rimverse_FleetOrder>construindo {0} ×{1}, {2} dias</Rimverse_FleetOrder>
+  <Rimverse_FleetPowerShort>poder {0}</Rimverse_FleetPowerShort>
+  <Rimverse_FleetQueueFull>A fila de construção está cheia.</Rimverse_FleetQueueFull>
+  <Rimverse_FleetRename>Renomear</Rimverse_FleetRename>
+  <Rimverse_FleetResultAttack>Os defensores deles foram derrotados.</Rimverse_FleetResultAttack>
+  <Rimverse_FleetResultCapital>A capital resistiu. Tome os outros mundos deles antes.</Rimverse_FleetResultCapital>
+  <Rimverse_FleetResultCaptured>{0} agora é uma das suas colônias.</Rimverse_FleetResultCaptured>
+  <Rimverse_FleetResultNoGround>Tropas de terra insuficientes para tomar o planeta ({0} de {1}).</Rimverse_FleetResultNoGround>
+  <Rimverse_FleetResultNoPlanet>Não havia mundo habitado para tomar aqui.</Rimverse_FleetResultNoPlanet>
+  <Rimverse_FleetResultRaid>A frota saqueou {0} de prata.</Rimverse_FleetResultRaid>
+  <Rimverse_FleetSelect>Selecione uma frota.</Rimverse_FleetSelect>
+  <Rimverse_FleetSend>Enviar</Rimverse_FleetSend>
+  <Rimverse_FleetMission_Idle>Aguardar</Rimverse_FleetMission_Idle>
+  <Rimverse_FleetMission_Defend>Defender</Rimverse_FleetMission_Defend>
+  <Rimverse_FleetMission_Attack>Atacar</Rimverse_FleetMission_Attack>
+  <Rimverse_FleetMission_Raid>Saquear</Rimverse_FleetMission_Raid>
+  <Rimverse_FleetMission_Capture>Capturar</Rimverse_FleetMission_Capture>
+  <Rimverse_FleetMission_Blockade>Bloquear</Rimverse_FleetMission_Blockade>
+  <Rimverse_FleetMissionDesc_Idle>ficar parada</Rimverse_FleetMissionDesc_Idle>
+  <Rimverse_FleetMissionDesc_Defend>proteger suas colônias no sistema</Rimverse_FleetMissionDesc_Defend>
+  <Rimverse_FleetMissionDesc_Attack>destruir frotas e defesas inimigas</Rimverse_FleetMissionDesc_Attack>
+  <Rimverse_FleetMissionDesc_Raid>atacar e levar prata</Rimverse_FleetMissionDesc_Raid>
+  <Rimverse_FleetMissionDesc_Capture>tomar um mundo, precisa de tropas de terra</Rimverse_FleetMissionDesc_Capture>
+  <Rimverse_FleetMissionDesc_Blockade>sufocar o comércio deles todo dia</Rimverse_FleetMissionDesc_Blockade>
+  <Rimverse_GovernorSkills>social {0}, intelectual {1}, tiro {2}</Rimverse_GovernorSkills>
+  <Rimverse_LetterAnomaly>Nossos scanners acharam algo em {1}: {0}.\n\n{2}\n\nEstude pela aba Império.</Rimverse_LetterAnomaly>
+  <Rimverse_LetterAnomalyChapterLabel>{0}: etapa {1}/{2}</Rimverse_LetterAnomalyChapterLabel>
+  <Rimverse_LetterAnomalyDanger>O estudo de {0} deu errado.</Rimverse_LetterAnomalyDanger>
+  <Rimverse_LetterAnomalyDangerLabel>Acidente com anomalia</Rimverse_LetterAnomalyDangerLabel>
+  <Rimverse_LetterAnomalyDoneLabel>{0} estudada</Rimverse_LetterAnomalyDoneLabel>
+  <Rimverse_LetterAnomalyLabel>Anomalia encontrada</Rimverse_LetterAnomalyLabel>
+  <Rimverse_LetterCoalition>Seu reino ficou forte demais para o gosto dos outros. {1} civilizações se aproximaram, e {0} declarou guerra a você.</Rimverse_LetterCoalition>
+  <Rimverse_LetterCoalitionLabel>Coalizão</Rimverse_LetterCoalitionLabel>
+  <Rimverse_LetterCouncil>O conselho galáctico vai votar: {0}.\n\nA votação fecha em {1} dias. Faça lobby a favor ou contra na aba Império.</Rimverse_LetterCouncil>
+  <Rimverse_LetterCouncilLabel>Votação no conselho</Rimverse_LetterCouncilLabel>
+  <Rimverse_LetterCouncilPassed>O conselho aprovou {0} ({1} a {2}).</Rimverse_LetterCouncilPassed>
+  <Rimverse_LetterCouncilFailed>O conselho rejeitou {0} ({1} a {2}).</Rimverse_LetterCouncilFailed>
+  <Rimverse_LetterCouncilResultLabel>Resultado do conselho</Rimverse_LetterCouncilResultLabel>
+  <Rimverse_LetterEmpirePeace>A guerra com {0} acabou.\n\n{1}</Rimverse_LetterEmpirePeace>
+  <Rimverse_LetterFederation>A {0} foi fundada, junto com {1}.</Rimverse_LetterFederation>
+  <Rimverse_LetterFederationLabel>Federação fundada</Rimverse_LetterFederationLabel>
+  <Rimverse_LetterFleetDefeat>{0} foi derrotada por {1} em {2}. Os sobreviventes recuam.</Rimverse_LetterFleetDefeat>
+  <Rimverse_LetterFleetDefeatLabel>Frota derrotada</Rimverse_LetterFleetDefeatLabel>
+  <Rimverse_LetterFleetUnpaid>O tesouro não conseguiu pagar {0} de prata da manutenção da frota. As tripulações estão insatisfeitas e as naves se desgastam.</Rimverse_LetterFleetUnpaid>
+  <Rimverse_LetterFleetUnpaidLabel>Frota sem pagamento</Rimverse_LetterFleetUnpaidLabel>
+  <Rimverse_LetterFleetVictory>{0} venceu {1} em {2}.\n\n{3}</Rimverse_LetterFleetVictory>
+  <Rimverse_LetterFleetVictoryLabel>Vitória da frota</Rimverse_LetterFleetVictoryLabel>
+  <Rimverse_LetterVassalRevolt>{0} se livrou do seu domínio e pegou em armas.</Rimverse_LetterVassalRevolt>
+  <Rimverse_LetterVassalRevoltLabel>Revolta de vassalo</Rimverse_LetterVassalRevoltLabel>
+  <Rimverse_LetterWarDeclared>Agora você está em guerra com {0}. Objetivo: {1}.</Rimverse_LetterWarDeclared>
+  <Rimverse_LetterWarDeclaredLabel>Guerra declarada</Rimverse_LetterWarDeclaredLabel>
+  <Rimverse_ManageCaptured>Conquistada há pouco: a estabilidade fica mais baixa por um tempo.</Rimverse_ManageCaptured>
+  <Rimverse_ManageColony>Gerenciar colônia</Rimverse_ManageColony>
+  <Rimverse_ManageEffects>Efeitos nesta colônia:</Rimverse_ManageEffects>
+  <Rimverse_ManageFacilities>Instalações</Rimverse_ManageFacilities>
+  <Rimverse_ManageGovernor>Governador do setor</Rimverse_ManageGovernor>
+  <Rimverse_ManageLine>População {0} · estabilidade {1} · renda {2} · defesa {3} · tesouro {4}</Rimverse_ManageLine>
+  <Rimverse_ManageTithe>Dízimo</Rimverse_ManageTithe>
+  <Rimverse_MsgAllyAttack>{0} manda uma frota contra {1}.</Rimverse_MsgAllyAttack>
+  <Rimverse_MsgAllyDefense>{0} vai ajudar a defender suas colônias por um ano.</Rimverse_MsgAllyDefense>
+  <Rimverse_MsgAllyNoFleet>{0} aceitou, mas não tem frota livre agora.</Rimverse_MsgAllyNoFleet>
+  <Rimverse_MsgAllySupplies>{0} mandou suprimentos.</Rimverse_MsgAllySupplies>
+  <Rimverse_MsgBlockadeStarted>{0} está bloqueando {1}.</Rimverse_MsgBlockadeStarted>
+  <Rimverse_MsgFederationJoined>{0} entrou na {1}.</Rimverse_MsgFederationJoined>
+  <Rimverse_MsgFleetArrived>{0} chegou a {1}.</Rimverse_MsgFleetArrived>
+  <Rimverse_MsgFleetLost>{0} ficou sem naves e foi desfeita.</Rimverse_MsgFleetLost>
+  <Rimverse_MsgFleetUnitsReady>{0} {1} entraram em {2}.</Rimverse_MsgFleetUnitsReady>
+  <Rimverse_NeedsResearch>Precisa da pesquisa: {0}</Rimverse_NeedsResearch>
+  <Rimverse_None>Nenhum</Rimverse_None>
+  <Rimverse_NotEnoughInfluence>Precisa de {0} de influência.</Rimverse_NotEnoughInfluence>
+  <Rimverse_NotEnoughTreasury>Precisa de {0} de prata no tesouro.</Rimverse_NotEnoughTreasury>
+  <Rimverse_OpenEmpire>Gerenciar</Rimverse_OpenEmpire>
+  <Rimverse_OpenEmpireDesc>Abre a janela de gerência deste posto.</Rimverse_OpenEmpireDesc>
+  <Rimverse_OpinionShort>opinião {0}</Rimverse_OpinionShort>
+  <Rimverse_OutpostAbandon>Abandonar posto</Rimverse_OutpostAbandon>
+  <Rimverse_OutpostAbandonConfirm>Abandonar {0}? Os colonos entram nesta caravana e o posto some para sempre.</Rimverse_OutpostAbandonConfirm>
+  <Rimverse_OutpostAbandonDesc>Traz os colonos de volta para esta caravana e abandona o posto.</Rimverse_OutpostAbandonDesc>
+  <Rimverse_OutpostCollect>Coletar mercadorias</Rimverse_OutpostCollect>
+  <Rimverse_OutpostCollectDesc>Carrega nesta caravana tudo que o posto produziu.</Rimverse_OutpostCollectDesc>
+  <Rimverse_OutpostDefaultName>Posto {0}</Rimverse_OutpostDefaultName>
+  <Rimverse_OutpostEmpty>Nada guardado ainda.</Rimverse_OutpostEmpty>
+  <Rimverse_OutpostFound>Fundar posto</Rimverse_OutpostFound>
+  <Rimverse_OutpostFoundDesc>Deixa alguns colonos aqui para fundar um posto do seu reino. Ele cresce, produz e paga renda sozinho. Custa {0} de aço da caravana.</Rimverse_OutpostFoundDesc>
+  <Rimverse_OutpostInfo>Escolha quem fica. Custa {0} de aço. Pelo menos {1} colonos.</Rimverse_OutpostInfo>
+  <Rimverse_OutpostInspect>{0} · população {1} · estabilidade {2}\nRenda {3} por quadrum · dízimo: {4}</Rimverse_OutpostInspect>
+  <Rimverse_OutpostTileTaken>Já tem algo aqui.</Rimverse_OutpostTileTaken>
+  <Rimverse_OutpostTitle>Fundar um posto</Rimverse_OutpostTitle>
+  <Rimverse_PeaceDemand>Exigir termos ({0} de chance)</Rimverse_PeaceDemand>
+  <Rimverse_PeaceRejected>{0} recusou a proposta de paz.</Rimverse_PeaceRejected>
+  <Rimverse_PeaceTermsConquest>{0} mundos reivindicados passam para você.</Rimverse_PeaceTermsConquest>
+  <Rimverse_PeaceTermsHumiliation>Eles são humilhados. Você ganha 40 de influência.</Rimverse_PeaceTermsHumiliation>
+  <Rimverse_PeaceTermsLost>Você perdeu a guerra. Paga {0} de prata e perde influência.</Rimverse_PeaceTermsLost>
+  <Rimverse_PeaceTermsPlunder>Eles pagam {0} de prata em reparações.</Rimverse_PeaceTermsPlunder>
+  <Rimverse_PeaceTermsVassal>Eles viram seus vassalos e pagam tributo a cada quadrum.</Rimverse_PeaceTermsVassal>
+  <Rimverse_PeaceTermsWhite>Uma paz branca: nada muda de mãos.</Rimverse_PeaceTermsWhite>
+  <Rimverse_PeaceWhite>Oferecer paz branca</Rimverse_PeaceWhite>
+  <Rimverse_Request_JointAttack>Ataque conjunto ({0} de influência, {1} de opinião)</Rimverse_Request_JointAttack>
+  <Rimverse_Request_Defense>Defender minhas colônias por um ano ({0} de influência, {1} de opinião)</Rimverse_Request_Defense>
+  <Rimverse_Request_Supplies>Mandar suprimentos ({0} de influência, {1} de opinião)</Rimverse_Request_Supplies>
+  <Rimverse_RequestActive>Já está ativo.</Rimverse_RequestActive>
+  <Rimverse_RequestButton>Pedir</Rimverse_RequestButton>
+  <Rimverse_RequestLowOpinion>A opinião deles sobre você está baixa demais.</Rimverse_RequestLowOpinion>
+  <Rimverse_RequestNeedAlly>Precisa de uma aliança (suprimentos: acordo comercial).</Rimverse_RequestNeedAlly>
+  <Rimverse_RequestNoWar>Você não está em guerra com ninguém.</Rimverse_RequestNoWar>
+  <Rimverse_Sanctioned>sancionada</Rimverse_Sanctioned>
+  <Rimverse_SitChance>{0} de chance</Rimverse_SitChance>
+  <Rimverse_SitCostInfluence>{0} de influência</Rimverse_SitCostInfluence>
+  <Rimverse_SitCostSilver>{0} de prata</Rimverse_SitCostSilver>
+  <Rimverse_SitResultOk>{0}: deu certo.</Rimverse_SitResultOk>
+  <Rimverse_SitResultFail>{0}: deu errado.</Rimverse_SitResultFail>
+  <Rimverse_SituationLabel>{0}: {1}</Rimverse_SituationLabel>
+  <Rimverse_SituationText>Notícias de {0}:\n\n{1}\n\nO que o governador deve fazer?</Rimverse_SituationText>
+  <Rimverse_Tier_0>posto</Rimverse_Tier_0>
+  <Rimverse_Tier_1>colônia</Rimverse_Tier_1>
+  <Rimverse_Tier_2>cidade</Rimverse_Tier_2>
+  <Rimverse_Tier_3>cidadela</Rimverse_Tier_3>
+  <Rimverse_Tithe_Silver>Prata</Rimverse_Tithe_Silver>
+  <Rimverse_Tithe_Goods>Mercadorias</Rimverse_Tithe_Goods>
+  <Rimverse_Tithe_Food>Comida</Rimverse_Tithe_Food>
+  <Rimverse_Tithe_Balanced>Equilibrado</Rimverse_Tithe_Balanced>
+  <Rimverse_TitheDesc_Silver>mais prata, sem mercadorias, um pouco menos de estabilidade</Rimverse_TitheDesc_Silver>
+  <Rimverse_TitheDesc_Goods>mercadorias em dobro, menos prata</Rimverse_TitheDesc_Goods>
+  <Rimverse_TitheDesc_Food>alimenta o povo: mais crescimento e estabilidade, menos prata</Rimverse_TitheDesc_Food>
+  <Rimverse_TitheDesc_Balanced>um pouco de tudo</Rimverse_TitheDesc_Balanced>
+  <Rimverse_VassalRelease>Libertar</Rimverse_VassalRelease>
+  <Rimverse_WarButton>Declarar guerra</Rimverse_WarButton>
+  <Rimverse_WarConfirm>Declarar guerra a {0}? Os aliados deles vão gostar menos de você.</Rimverse_WarConfirm>
+  <Rimverse_WarFederationMember>Eles estão na sua federação.</Rimverse_WarFederationMember>
+  <Rimverse_WarLine>{0} · objetivo: {1} · placar {2} (precisa {3}) · exaustão {4}</Rimverse_WarLine>
+  <Rimverse_WarNeedClaim>Conquista precisa de pelo menos uma reivindicação sobre eles.</Rimverse_WarNeedClaim>
+  <Rimverse_WarGoal_Conquest>Conquista</Rimverse_WarGoal_Conquest>
+  <Rimverse_WarGoal_Humiliation>Humilhação</Rimverse_WarGoal_Humiliation>
+  <Rimverse_WarGoal_Subjugation>Subjugação</Rimverse_WarGoal_Subjugation>
+  <Rimverse_WarGoal_Plunder>Saque</Rimverse_WarGoal_Plunder>
+  <Rimverse_WarGoalDesc_Conquest>tomar os mundos que você reivindicou</Rimverse_WarGoalDesc_Conquest>
+  <Rimverse_WarGoalDesc_Humiliation>envergonhá-los, ganhar influência</Rimverse_WarGoalDesc_Humiliation>
+  <Rimverse_WarGoalDesc_Subjugation>torná-los seus vassalos</Rimverse_WarGoalDesc_Subjugation>
+  <Rimverse_WarGoalDesc_Plunder>cobrar reparações em prata</Rimverse_WarGoalDesc_Plunder>
+  <Rimverse_YearsLeft>faltam {0} anos</Rimverse_YearsLeft>
+  <Rimverse_LetterFlowAwakenLabel>O Fluxo desperta</Rimverse_LetterFlowAwakenLabel>
+  <Rimverse_LetterFlowAwaken>{PAWN_nameDef} agora sente o Grande Fluxo e segue o caminho da {1}.\n\nNovos poderes aparecem nas habilidades de {PAWN_objective}.</Rimverse_LetterFlowAwaken>
+  <Rimverse_FlowSide_None>nada</Rimverse_FlowSide_None>
+  <Rimverse_FlowSide_Harmony>Harmonia</Rimverse_FlowSide_Harmony>
+  <Rimverse_FlowSide_Rupture>Ruptura</Rimverse_FlowSide_Rupture>
+  <Rimverse_FlowDisabled>O Grande Fluxo está desligado nas configurações.</Rimverse_FlowDisabled>
+  <Rimverse_FlowAlready>{PAWN_nameDef} já sente o Fluxo.</Rimverse_FlowAlready>
+  <Rimverse_RG_StarNetwork>Rede Estelar</Rimverse_RG_StarNetwork>
+  <Rimverse_RG_UnknownPower>uma potência desconhecida</Rimverse_RG_UnknownPower>
+  <Rimverse_RG_SignalBack>Sinal restabelecido. {0} posts na fila estão sendo entregues.</Rimverse_RG_SignalBack>
+  <Rimverse_RG_AnomalySolved>{0} terminou de estudar {1}. A ciência agradece.</Rimverse_RG_AnomalySolved>
+  <Rimverse_RG_Stranger_Miner>Minerador do Cinturão</Rimverse_RG_Stranger_Miner>
+  <Rimverse_RG_Stranger_Trader>Comerciante Orbital</Rimverse_RG_Stranger_Trader>
+  <Rimverse_RG_Stranger_Pilgrim>Peregrino do Vazio</Rimverse_RG_Stranger_Pilgrim>
+  <Rimverse_RG_Stranger_Hunter>Caçador de Recompensas</Rimverse_RG_Stranger_Hunter>
+  <Rimverse_RG_Stranger_Pilot>Piloto de Carga</Rimverse_RG_Stranger_Pilot>
+  <Rimverse_RG_Stranger_Smuggler>Contrabandista</Rimverse_RG_Stranger_Smuggler>
+  <Rimverse_SitOpt_Negotiate>Negociar</Rimverse_SitOpt_Negotiate>
+  <Rimverse_SitOpt_Crackdown>Reprimir</Rimverse_SitOpt_Crackdown>
+  <Rimverse_SitOpt_Ignore>Ignorar</Rimverse_SitOpt_Ignore>
+  <Rimverse_SitOpt_Quarantine>Quarentena</Rimverse_SitOpt_Quarantine>
+  <Rimverse_SitOpt_MassTreatment>Tratar todo mundo</Rimverse_SitOpt_MassTreatment>
+  <Rimverse_SitOpt_Bust>Desmontar a rede</Rimverse_SitOpt_Bust>
+  <Rimverse_SitOpt_TaxThem>Cobrar uma taxa por baixo dos panos</Rimverse_SitOpt_TaxThem>
+  <Rimverse_SitOpt_Accept>Acolher</Rimverse_SitOpt_Accept>
+  <Rimverse_SitOpt_AcceptAid>Acolher com ajuda</Rimverse_SitOpt_AcceptAid>
+  <Rimverse_SitOpt_TurnAway>Mandar embora</Rimverse_SitOpt_TurnAway>
+  <Rimverse_SitOpt_Exploit>Minerar</Rimverse_SitOpt_Exploit>
+  <Rimverse_SitOpt_SellRights>Vender os direitos</Rimverse_SitOpt_SellRights>
+  <Rimverse_SitOpt_Concede>Conceder autonomia</Rimverse_SitOpt_Concede>
+  <Rimverse_SitOpt_Suppress>Reprimir o movimento</Rimverse_SitOpt_Suppress>
+  <Rimverse_SitOpt_Fund>Pagar a festa</Rimverse_SitOpt_Fund>
+  <Rimverse_SitOpt_Skip>Não fazer</Rimverse_SitOpt_Skip>
+  <Rimverse_SitOpt_Repair>Consertar</Rimverse_SitOpt_Repair>
+  <Rimverse_SitOpt_Evacuate>Evacuar o setor</Rimverse_SitOpt_Evacuate>
+  <Rimverse_SitOpt_Hunt>Caçar</Rimverse_SitOpt_Hunt>
+  <Rimverse_SitOpt_Fence>Construir cercas</Rimverse_SitOpt_Fence>
+  <Rimverse_SitOpt_StudyThem>Estudar</Rimverse_SitOpt_StudyThem>
+  <Rimverse_SitOpt_PickSide>Escolher um lado</Rimverse_SitOpt_PickSide>
+  <Rimverse_SitOpt_Mediate>Mediar</Rimverse_SitOpt_Mediate>
+  <Rimverse_SitOpt_Excavate>Escavar</Rimverse_SitOpt_Excavate>
+  <Rimverse_SitOpt_Seal>Lacrar de novo</Rimverse_SitOpt_Seal>
+  <Rimverse_SitOpt_Invest>Investir 3.000</Rimverse_SitOpt_Invest>
+  <Rimverse_SitOpt_Pass>Recusar</Rimverse_SitOpt_Pass>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_DerelictColonyShip>As equipes de resgate desmontam a nave velha e trazem o que ainda funciona.</Rimverse_AnomalyEnd_Rimverse_Anomaly_DerelictColonyShip>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_AncientBeacon>A mensagem enfim é decifrada: um mapa estelar de um povo perdido.</Rimverse_AnomalyEnd_Rimverse_Anomaly_AncientBeacon>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_PrecursorRuins>O salão mais fundo se abre. Fragmentos das máquinas antigas sobem para a superfície.</Rimverse_AnomalyEnd_Rimverse_Anomaly_PrecursorRuins>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_CrystalLife>Os cristais silenciam, deixando páginas de anotações.</Rimverse_AnomalyEnd_Rimverse_Anomaly_CrystalLife>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_GravityWell>As leituras explicam um pouco mais sobre como o espaço se curva.</Rimverse_AnomalyEnd_Rimverse_Anomaly_GravityWell>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_DarkMatterPocket>Uma única garrafa de matéria estranha é lacrada e enviada.</Rimverse_AnomalyEnd_Rimverse_Anomaly_DarkMatterPocket>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_AbandonedMine>Os poços antigos entregam o último minério.</Rimverse_AnomalyEnd_Rimverse_Anomaly_AbandonedMine>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_MechHive>A colmeia é desmontada antes de acordar.</Rimverse_AnomalyEnd_Rimverse_Anomaly_MechHive>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_ImperialWreck>O cofre do nobre é arrombado.</Rimverse_AnomalyEnd_Rimverse_Anomaly_ImperialWreck>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_FrozenSleepers>Os adormecidos já tinham morrido havia muito, mas o remédio deles não.</Rimverse_AnomalyEnd_Rimverse_Anomaly_FrozenSleepers>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_SingingAsteroid>A canção é gravada e tocada pelo reino. O povo adora.</Rimverse_AnomalyEnd_Rimverse_Anomaly_SingingAsteroid>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_TimeDilation>Anos de dados no que pareceram dias.</Rimverse_AnomalyEnd_Rimverse_Anomaly_TimeDilation>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_AlienGarden>Amostras do jardim são colhidas e estudadas.</Rimverse_AnomalyEnd_Rimverse_Anomaly_AlienGarden>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_VoidSignal>O sinal para. O que quer que o tenha mandado disse o que queria.</Rimverse_AnomalyEnd_Rimverse_Anomaly_VoidSignal>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_LostArchive>O arquivo é copiado antes de a energia acabar.</Rimverse_AnomalyEnd_Rimverse_Anomaly_LostArchive>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_FossilFields>Museus do reino inteiro pedem os ossos.</Rimverse_AnomalyEnd_Rimverse_Anomaly_FossilFields>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_PirateCache>O esconderijo agora é nosso.</Rimverse_AnomalyEnd_Rimverse_Anomaly_PirateCache>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_ShatteredMoon>Cargueiros arrastam os pedaços mais ricos para casa.</Rimverse_AnomalyEnd_Rimverse_Anomaly_ShatteredMoon>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_WarpScar>A cicatriz é drenada de matéria de dobra e se fecha devagar.</Rimverse_AnomalyEnd_Rimverse_Anomaly_WarpScar>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_ArchotechWhisper>O sussurro termina com um presente e um aviso que ninguém entende.</Rimverse_AnomalyEnd_Rimverse_Anomaly_ArchotechWhisper>
+</LanguageData>

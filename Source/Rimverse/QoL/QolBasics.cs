@@ -79,7 +79,13 @@ namespace Rimverse
         {
             LongEventHandler.ExecuteWhenFinished(() =>
             {
-                if (QolFeatures.IsEnabled("Rimverse_Qol_LoadedDing")) SoundDefOf.TinyBell.PlayOneShotOnCamera();
+                try
+                {
+                    if (QolFeatures.IsEnabled("Rimverse_Qol_LoadedDing") && SoundDefOf.TinyBell != null && Find.SoundRoot != null) SoundDefOf.TinyBell.PlayOneShotOnCamera();
+                }
+                catch (System.Exception)
+                {
+                }
             });
         }
     }

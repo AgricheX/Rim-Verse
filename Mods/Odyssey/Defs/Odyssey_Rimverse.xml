@@ -9,6 +9,9 @@
     <defaultBiome>Orbit</defaultBiome>
     <rangeDistanceFactor>25</rangeDistanceFactor>
     <settlementsPer100kTiles>0~0</settlementsPer100kTiles>
+    <worldGenSteps Inherit="False">
+      <li>Tiles</li>
+    </worldGenSteps>
   </PlanetLayerDef>
 
   <PlanetLayerDef ParentName="OrbitLayer">
@@ -19,6 +22,9 @@
     <defaultBiome>Orbit</defaultBiome>
     <rangeDistanceFactor>25</rangeDistanceFactor>
     <settlementsPer100kTiles>0~0</settlementsPer100kTiles>
+    <worldGenSteps Inherit="False">
+      <li>Tiles</li>
+    </worldGenSteps>
   </PlanetLayerDef>
 
   <PlanetLayerDef ParentName="OrbitLayer">
@@ -29,6 +35,9 @@
     <defaultBiome>Orbit</defaultBiome>
     <rangeDistanceFactor>25</rangeDistanceFactor>
     <settlementsPer100kTiles>0~0</settlementsPer100kTiles>
+    <worldGenSteps Inherit="False">
+      <li>Tiles</li>
+    </worldGenSteps>
   </PlanetLayerDef>
 
   <PlanetLayerDef ParentName="OrbitLayer">
@@ -38,7 +47,10 @@
     <elevationString>36000km</elevationString>
     <defaultBiome>Orbit</defaultBiome>
     <rangeDistanceFactor>25</rangeDistanceFactor>
-    <settlementsPer100kTiles>300~500</settlementsPer100kTiles>
+    <settlementsPer100kTiles>0~0</settlementsPer100kTiles>
+    <worldGenSteps Inherit="False">
+      <li>Tiles</li>
+    </worldGenSteps>
   </PlanetLayerDef>
 
   <IncidentDef>

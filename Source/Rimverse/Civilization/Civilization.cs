@@ -17,6 +17,15 @@ namespace Rimverse
         Federation
     }
 
+    public enum CivKnowledge
+    {
+        Unknown,
+        Rumor,
+        Contact,
+        Known,
+        Detailed
+    }
+
     public enum CivGoal
     {
         Expand,
@@ -117,6 +126,8 @@ namespace Rimverse
         public DiploState playerState = DiploState.Peace;
         public int playerStateSince;
         public bool known;
+        public bool rumored;
+        public float intel;
         public Faction faction;
         public LoreKind lore = LoreKind.None;
         public string lineage;
@@ -131,6 +142,26 @@ namespace Rimverse
         public bool Hostile => lore == LoreKind.Mechanoids || HasCivic("Rimverse_Policy_CivicPirates");
 
         public bool NoDiplomacy => lore == LoreKind.Mechanoids;
+
+        public CivKnowledge Knowledge
+        {
+            get
+            {
+                if (!known) return rumored ? CivKnowledge.Rumor : CivKnowledge.Unknown;
+                if (intel >= 80f || playerState >= DiploState.Alliance) return CivKnowledge.Detailed;
+                if (intel >= 40f) return CivKnowledge.Known;
+                return CivKnowledge.Contact;
+            }
+        }
+
+        public bool Reveals(CivKnowledge level) => Knowledge >= level;
+
+        public string ShownName => known ? Name : "Rimverse_CivUnknownName".Translate().ToString();
+
+        public void AddIntel(float amount)
+        {
+            intel = Mathf.Clamp(intel + amount, 0f, 100f);
+        }
 
         public StarSystemId Capital => StarSystemId.FromKey(capitalKey);
 
@@ -266,6 +297,9 @@ namespace Rimverse
             Scribe_Values.Look(ref playerState, "playerState", DiploState.Peace);
             Scribe_Values.Look(ref playerStateSince, "playerStateSince");
             Scribe_Values.Look(ref known, "known");
+            Scribe_Values.Look(ref rumored, "rumored");
+            Scribe_Values.Look(ref intel, "intel", -1f);
+            if (Scribe.mode == LoadSaveMode.PostLoadInit && intel < 0f) intel = known ? 60f : 0f;
             Scribe_References.Look(ref faction, "faction");
             Scribe_Values.Look(ref lore, "lore");
             Scribe_Values.Look(ref lineage, "lineage");

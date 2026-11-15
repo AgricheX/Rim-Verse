@@ -131,6 +131,10 @@ namespace Rimverse
             Check(l, "Rimverse_ShipCombat", ref s.shipCombatEnabled);
             Check(l, "Rimverse_LifeAboard", ref s.lifeAboardEnabled);
             Check(l, "Rimverse_Lineages", ref s.lineagesEnabled);
+            l.GapLine();
+            Check(l, "Rimverse_HudOnlyShip", ref s.hudOnlyShip);
+            l.Label((string)("Rimverse_HudOffset".Translate() + ": " + s.hudOffsetY.ToString("0")), -1f, (TipSignal?)(string)("Rimverse_HudOffset_Desc".Translate()));
+            s.hudOffsetY = Mathf.Round(l.Slider(s.hudOffsetY, 0f, 600f));
         }
 
         private static void DrawFluxo(Listing_Standard l, RimverseSettings s)

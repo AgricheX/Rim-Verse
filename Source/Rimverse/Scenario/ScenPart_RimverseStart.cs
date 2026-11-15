@@ -14,8 +14,16 @@ namespace Rimverse
         public bool contact = true;
     }
 
+    public enum InfoFogLevel
+    {
+        Full,
+        Partial,
+        None
+    }
+
     public class ScenPart_RimverseStart : ScenPart
     {
+        public InfoFogLevel infoFog = InfoFogLevel.Partial;
         public RimverseStartLocation location = RimverseStartLocation.Surface;
         public RimverseStartLayout layout = RimverseStartLayout.None;
         public List<ResearchProjectDef> research = new List<ResearchProjectDef>();
@@ -50,6 +58,7 @@ namespace Rimverse
             Scribe_Values.Look(ref yearsAsleep, "yearsAsleep");
             Scribe_Values.Look(ref waitForBackroomsExit, "waitForBackroomsExit");
             Scribe_Values.Look(ref shipNameKey, "shipNameKey");
+            Scribe_Values.Look(ref infoFog, "infoFog", InfoFogLevel.Partial);
             Scribe_Values.Look(ref pendingExit, "pendingExit");
             Scribe_Values.Look(ref shipMapId, "shipMapId", -1);
             Scribe_Values.Look(ref bridgeId, "bridgeId", -1);
@@ -92,10 +101,18 @@ namespace Rimverse
             PlanetTile surfaceTile = start.Tile;
             if (!surfaceTile.Valid || surfaceTile.Layer != Find.WorldGrid.Surface) surfaceTile = TileFinder.RandomSettlementTileFor(Faction.OfPlayer);
             string name = shipNameKey.NullOrEmpty() ? null : shipNameKey.Translate().ToString();
-            Map orbit = OrbitUtility.CreateOrbitMap(surfaceTile, name, ShipLaunchUtility.OrbitMapSize);
+            Map orbit = null;
+            try
+            {
+                orbit = OrbitUtility.CreateOrbitMap(surfaceTile, name, ShipLaunchUtility.OrbitMapSize);
+            }
+            catch (System.Exception ex)
+            {
+                RimverseLog.Warning("Scenario: orbit map failed: " + ex);
+            }
             if (orbit == null)
             {
-                RimverseLog.Warning("Scenario: no orbit tile for the starting ship.");
+                FailStart(start, spot);
                 return;
             }
             List<Pawn> pawns = start.mapPawns.AllPawnsSpawned.Where(p => p.Faction == Faction.OfPlayer).ToList();
@@ -105,6 +122,7 @@ namespace Rimverse
             if (bridge == null)
             {
                 RimverseLog.Warning("Scenario: starting ship could not be built.");
+                FailStart(start, spot);
                 return;
             }
             bridgeId = bridge.thingIDNumber;
@@ -124,6 +142,7 @@ namespace Rimverse
             }
             List<Thing> items = start.listerThings.AllThings.Where(t => t.Spawned && t.def.category == ThingCategory.Item && t.def.EverHaulable && t.Position.InHorDistOf(spot, 16f)).ToList();
             MoveInto(orbit, free, pawns, items);
+            Unforbid(items);
             if (Current.Game.CurrentMap == start) Current.Game.CurrentMap = orbit;
             MapParent parent = start.Parent;
             if (start.mapPawns.FreeColonistsSpawnedCount == 0)
@@ -133,6 +152,20 @@ namespace Rimverse
             }
             CameraJumper.TryJump(bridge);
             Find.LetterStack.ReceiveLetter(("Rimverse_StartLetter_" + layout).Translate(), ("Rimverse_StartLetterText_" + layout).Translate(), LetterDefOf.NeutralEvent, bridge);
+        }
+
+        private static void Unforbid(IEnumerable<Thing> things)
+        {
+            foreach (Thing t in things)
+            {
+                if (t != null && !t.Destroyed) t.SetForbidden(false, false);
+            }
+        }
+
+        private void FailStart(Map start, IntVec3 spot)
+        {
+            Unforbid(start.listerThings.AllThings.Where(t => t.Spawned && t.def.category == ThingCategory.Item && t.Position.InHorDistOf(spot, 20f)).ToList());
+            Find.LetterStack.ReceiveLetter("Rimverse_StartFailed".Translate(), "Rimverse_StartFailedText".Translate(), LetterDefOf.NegativeEvent);
         }
 
         private void SetLocation(Map orbit)
@@ -183,7 +216,7 @@ namespace Rimverse
         private void ApplyCivs()
         {
             GameComponent_Civilizations gc = GameComponent_Civilizations.Instance;
-            if (gc == null || (civs.Count == 0 && yearsAsleep <= 0)) return;
+            if (gc == null) return;
             gc.EnsureGenerated();
             for (int y = 0; y < Mathf.Min(yearsAsleep, 200); y++)
             {
@@ -205,13 +238,32 @@ namespace Rimverse
                 foreach (Civilization c in gc.civilizations) c.lastSimTick = now;
                 gc.InvalidateTerritory();
             }
+            StarSystemId homeId = GameComponent_Universe.Instance.HomeSystemId;
+            HashSet<int> origin = new HashSet<int>();
             foreach (CivStartRelation rel in civs)
             {
-                StarSystemId home = GameComponent_Universe.Instance.HomeSystemId;
-                Civilization civ = gc.Alive.Where(c => c.lore == rel.lore).OrderBy(c => gc.DistanceLy(c, home)).FirstOrDefault();
+                Civilization civ = gc.Alive.Where(c => c.lore == rel.lore).OrderBy(c => gc.DistanceLy(c, homeId)).FirstOrDefault();
                 if (civ == null) continue;
-                if (rel.contact && !civ.known) gc.MakeContact(civ, false);
+                if (rel.contact && infoFog != InfoFogLevel.None)
+                {
+                    if (!civ.known) gc.MakeContact(civ, false);
+                    civ.AddIntel(60f - civ.intel);
+                    origin.Add(civ.id);
+                }
                 gc.ChangePlayerOpinion(civ, rel.opinion);
+            }
+            foreach (Civilization c in gc.Alive.ToList())
+            {
+                if (origin.Contains(c.id) || !gc.IsNearPlayer(c)) continue;
+                if (infoFog == InfoFogLevel.Full)
+                {
+                    if (!c.known) gc.MakeContact(c, false);
+                    c.AddIntel(45f - c.intel);
+                }
+                else if (infoFog == InfoFogLevel.Partial)
+                {
+                    c.rumored = true;
+                }
             }
         }
 

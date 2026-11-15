@@ -26,9 +26,9 @@ namespace Rimverse
                 return;
             }
             gc.EnsureGenerated();
-            List<Civilization> known = gc.Known.OrderBy(c => gc.DistanceToPlayer(c, out _)).ToList();
+            List<Civilization> known = gc.Alive.Where(c => c.known || c.rumored).OrderBy(c => c.known ? 0 : 1).ThenBy(c => gc.DistanceToPlayer(c, out _)).ToList();
             Text.Font = GameFont.Medium;
-            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 34f), "Rimverse_CivTabTitle".Translate(known.Count, gc.Alive.Count()));
+            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 34f), "Rimverse_CivTabTitleFog".Translate(known.Count(c => c.known), known.Count(c => !c.known)));
             Text.Font = GameFont.Small;
             Rect body = new Rect(inRect.x, inRect.y + 38f, inRect.width, inRect.height - 38f);
             Rect listRect = body.LeftPart(0.34f).ContractedBy(4f);
@@ -54,12 +54,13 @@ namespace Rimverse
                 Rect row = new Rect(0f, y, view.width, 50f);
                 if (c.id == selectedId) Widgets.DrawHighlightSelected(row);
                 else if (Mouse.IsOver(row)) Widgets.DrawHighlight(row);
-                Widgets.DrawBoxSolid(new Rect(row.x + 4f, row.y + 8f, 6f, 34f), c.color);
-                Widgets.Label(new Rect(row.x + 16f, row.y + 3f, row.width - 20f, 24f), c.Name);
+                Widgets.DrawBoxSolid(new Rect(row.x + 4f, row.y + 8f, 6f, 34f), c.known ? c.color : Color.gray);
+                Widgets.Label(new Rect(row.x + 16f, row.y + 3f, row.width - 20f, 24f), c.known ? c.Name : "Rimverse_CivUnknownName".Translate().ToString());
                 GUI.color = Color.gray;
                 Text.Font = GameFont.Tiny;
                 double d = gc.DistanceToPlayer(c, out _);
-                Widgets.Label(new Rect(row.x + 16f, row.y + 26f, row.width - 20f, 22f), ("Rimverse_Stage_" + c.stage).Translate() + " · " + ("Rimverse_Diplo_" + c.playerState).Translate() + " · " + "Rimverse_UnitLy".Translate(d.ToString("0")));
+                string sub = c.known ? ("Rimverse_Stage_" + c.stage).Translate() + " · " + ("Rimverse_Diplo_" + c.playerState).Translate() + " · " + "Rimverse_UnitLy".Translate(d.ToString("0")) + " · " + ("Rimverse_Knowledge_" + c.Knowledge).Translate() : "Rimverse_Knowledge_Rumor".Translate() + " · " + gc.RumorDirection(c);
+                Widgets.Label(new Rect(row.x + 16f, row.y + 26f, row.width - 20f, 22f), sub);
                 Text.Font = GameFont.Small;
                 GUI.color = Color.white;
                 if (Widgets.ButtonInvisible(row)) selectedId = c.id;
@@ -75,32 +76,62 @@ namespace Rimverse
             Listing_Standard l = new Listing_Standard();
             l.Begin(view);
             Text.Font = GameFont.Medium;
+            if (!c.known)
+            {
+                GUI.color = Color.gray;
+                l.Label("Rimverse_CivUnknownName".Translate());
+                GUI.color = Color.white;
+                Text.Font = GameFont.Small;
+                l.Label("Rimverse_CivRumorInfo".Translate(gc.RumorDirection(c)));
+                l.End();
+                infoHeight = l.CurHeight + 20f;
+                Widgets.EndScrollView();
+                return;
+            }
             GUI.color = c.color;
             l.Label(c.Name);
             GUI.color = Color.white;
             Text.Font = GameFont.Small;
-            l.Label("Rimverse_CivStageLine".Translate(("Rimverse_Stage_" + c.stage).Translate(), c.sizeClass, c.tech.ToStringHuman()));
-            l.Label("Rimverse_CivPopulation".Translate(PopText(c.Population), c.planets.Count));
-            l.Label("Rimverse_CivStability".Translate(c.stability.ToString("0"), c.warWeariness.ToString("0")));
-            l.Label("Rimverse_CivFleetPower".Translate(CivSimulation.FleetPower(gc, c).ToString("0")));
+            bool known = c.Reveals(CivKnowledge.Known);
+            bool detailed = c.Reveals(CivKnowledge.Detailed);
+            l.Label("Rimverse_CivKnowledgeLine".Translate(("Rimverse_Knowledge_" + c.Knowledge).Translate(), c.intel.ToString("0")));
+            l.Label("Rimverse_CivStageLine".Translate(("Rimverse_Stage_" + c.stage).Translate(), known ? c.sizeClass.ToString() : "?", known ? c.tech.ToStringHuman() : "?"));
+            l.Label("Rimverse_CivPopulation".Translate(known ? PopText(c.Population) : "?", known ? c.planets.Count.ToString() : "?"));
+            if (detailed) l.Label("Rimverse_CivStability".Translate(c.stability.ToString("0"), c.warWeariness.ToString("0")));
+            l.Label("Rimverse_CivFleetPower".Translate(detailed ? CivSimulation.FleetPower(gc, c).ToString("0") : known ? FleetGuess(CivSimulation.FleetPower(gc, c)) : "?"));
             StarSystemData cap = GameComponent_Universe.Instance.GetSystem(c.Capital);
             l.Label("Rimverse_CivCapital".Translate(cap?.name ?? "?", gc.DistanceToPlayer(c, out _).ToString("0")));
-            if (c.InfluenceRadiusLy > 0f) l.Label("Rimverse_CivReach".Translate(c.InfluenceRadiusLy.ToString("0")));
-            l.Label("Rimverse_CivGoal".Translate(("Rimverse_Goal_" + c.goal).Translate()));
-            HediffDef lineage = c.lineage.NullOrEmpty() ? null : DefDatabase<HediffDef>.GetNamedSilentFail(c.lineage);
-            l.Label(lineage != null ? "Rimverse_CivLineage".Translate(lineage.label) : "Rimverse_CivLineageNone".Translate());
+            if (known && c.InfluenceRadiusLy > 0f) l.Label("Rimverse_CivReach".Translate(c.InfluenceRadiusLy.ToString("0")));
+            if (detailed) l.Label("Rimverse_CivGoal".Translate(("Rimverse_Goal_" + c.goal).Translate()));
+            if (known)
+            {
+                HediffDef lineage = c.lineage.NullOrEmpty() ? null : DefDatabase<HediffDef>.GetNamedSilentFail(c.lineage);
+                l.Label(lineage != null ? "Rimverse_CivLineage".Translate(lineage.label) : "Rimverse_CivLineageNone".Translate());
+            }
             l.GapLine();
             PolicyLine(l, "Rimverse_PolicyGroup_Government", c.government);
-            PolicyLine(l, "Rimverse_PolicyGroup_Ideology", c.ideology);
-            PolicyLine(l, "Rimverse_PolicyGroup_Economy", c.economy);
-            PolicyLine(l, "Rimverse_PolicyGroup_Xeno", c.xeno);
-            PolicyLine(l, "Rimverse_PolicyGroup_Origin", c.origin);
-            foreach (PolicyDef civic in c.civics) PolicyLine(l, "Rimverse_PolicyGroup_Civic", civic);
-            if (c.ideologySupport.Count > 0)
+            if (known)
             {
-                l.Label("Rimverse_CivIdeologySupport".Translate() + " " + string.Join(", ", c.ideologySupport.OrderByDescending(kv => kv.Value).Select(kv => (DefDatabase<PolicyDef>.GetNamedSilentFail(kv.Key)?.label ?? kv.Key) + " " + kv.Value.ToString("0") + "%")));
+                PolicyLine(l, "Rimverse_PolicyGroup_Ideology", c.ideology);
+                PolicyLine(l, "Rimverse_PolicyGroup_Economy", c.economy);
+                PolicyLine(l, "Rimverse_PolicyGroup_Xeno", c.xeno);
             }
-            l.Label("Rimverse_CivGroups".Translate() + " " + string.Join(", ", c.groupMood.Select(kv => ("Rimverse_Group_" + kv.Key).Translate().ToString() + " " + kv.Value.ToString("0"))));
+            if (detailed)
+            {
+                PolicyLine(l, "Rimverse_PolicyGroup_Origin", c.origin);
+                foreach (PolicyDef civic in c.civics) PolicyLine(l, "Rimverse_PolicyGroup_Civic", civic);
+                if (c.ideologySupport.Count > 0)
+                {
+                    l.Label("Rimverse_CivIdeologySupport".Translate() + " " + string.Join(", ", c.ideologySupport.OrderByDescending(kv => kv.Value).Select(kv => (DefDatabase<PolicyDef>.GetNamedSilentFail(kv.Key)?.label ?? kv.Key) + " " + kv.Value.ToString("0") + "%")));
+                }
+                l.Label("Rimverse_CivGroups".Translate() + " " + string.Join(", ", c.groupMood.Select(kv => ("Rimverse_Group_" + kv.Key).Translate().ToString() + " " + kv.Value.ToString("0"))));
+            }
+            if (!detailed)
+            {
+                GUI.color = Color.gray;
+                l.Label("Rimverse_CivMoreIntel".Translate());
+                GUI.color = Color.white;
+            }
             l.GapLine();
             l.Label("Rimverse_CivPlayerRelation".Translate(("Rimverse_Diplo_" + c.playerState).Translate(), c.playerOpinion.ToString("0")));
             if (!c.NoDiplomacy && !c.Hostile) l.Label("Rimverse_CivTariff".Translate(CivDiplomacy.Tariff(c.playerState).ToStringPercent()));
@@ -139,13 +170,21 @@ namespace Rimverse
             }
             l.GapLine();
             List<CivRelation> wars = c.relations.Where(r => r.state == DiploState.War).ToList();
-            if (wars.Count > 0)
+            if (wars.Count > 0 && known)
             {
                 l.Label("Rimverse_CivWars".Translate(string.Join(", ", wars.Select(r => gc.Civ(r.other)).Where(o => o != null && o.known).Select(o => o.Name))));
             }
             l.End();
             infoHeight = l.CurHeight + 20f;
             Widgets.EndScrollView();
+        }
+
+        private static string FleetGuess(float power)
+        {
+            if (power < 200f) return "Rimverse_FleetGuess_Small".Translate();
+            if (power < 1000f) return "Rimverse_FleetGuess_Medium".Translate();
+            if (power < 5000f) return "Rimverse_FleetGuess_Large".Translate();
+            return "Rimverse_FleetGuess_Huge".Translate();
         }
 
         private static string PopText(float points)

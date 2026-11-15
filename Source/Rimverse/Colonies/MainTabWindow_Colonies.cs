@@ -56,8 +56,9 @@ namespace Rimverse
             Listing_Standard l = new Listing_Standard();
             l.Begin(rect);
             Text.Font = GameFont.Medium;
-            l.Label(c.name);
+            l.Label(c.name + " · " + c.TierLabel);
             Text.Font = GameFont.Small;
+            if (l.ButtonText("Rimverse_ManageColony".Translate())) Find.WindowStack.Add(new Dialog_ColonyManage(c));
             Pawn admin = c.Administrator;
             l.Label("Rimverse_ColonyLine1".Translate(c.System?.name ?? "?", c.population.ToString("0"), c.Capacity.ToString("0"), c.Hazard.ToStringPercent()));
             l.Label("Rimverse_ColonyLine2".Translate(c.stability.ToString("0"), c.lastIncome.ToString("N0"), c.attention.ToString("0"), ColonyUtility.AttackAttention.ToString("0")));
@@ -87,8 +88,14 @@ namespace Rimverse
             l.GapLine();
             string stock = c.stock.Count == 0 ? "-" : string.Join(", ", c.stock.Select(kv => (DefDatabase<ThingDef>.GetNamedSilentFail(kv.Key)?.label ?? kv.Key) + " ×" + kv.Value));
             l.Label("Rimverse_ColonyStock".Translate(stock));
-            Map map = ColonyUtility.PlayerMapInSystem(c.systemKey);
-            if (map == null)
+            Map map = c.surface ? null : ColonyUtility.PlayerMapInSystem(c.systemKey);
+            if (c.surface)
+            {
+                GUI.color = Color.gray;
+                l.Label("Rimverse_ColonySurfaceCollect".Translate());
+                GUI.color = Color.white;
+            }
+            else if (map == null)
             {
                 GUI.color = Color.gray;
                 l.Label("Rimverse_ColonyNeedPresence".Translate());

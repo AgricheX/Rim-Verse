@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Rimverse_ResonanceShard"]/thingCategories</xpath>
+    <value>
+      <li>Force_KyberCrystals</li>
+    </value>
+  </Operation>
+</Patch>

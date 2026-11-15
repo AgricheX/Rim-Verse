@@ -56,6 +56,7 @@ namespace Rimverse
         public static bool Applies(Map map)
         {
             if (SpaceMapUtility.RimverseHandlesAir(map)) return false;
+            if (ExternalCompat.HardVacuum) return false;
             return SpaceMapUtility.IsOdysseyVacuum(map) || IsSos2Space(map);
         }
 

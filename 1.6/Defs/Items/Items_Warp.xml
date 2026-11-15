@@ -7,7 +7,7 @@
     <description>Exotic matter refined from uranium and chemfuel. Warp drives burn it to fold space. Stored in warp tanks.</description>
     <graphicData>
       <texPath>Rimverse/Things/Item/Resource/WarpMatter</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <drawSize>0.85</drawSize>
       <color>(0.55, 0.75, 1)</color>
     </graphicData>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Situation_LaborStrike.label>greve</Rimverse_Situation_LaborStrike.label>
+  <Rimverse_Situation_LaborStrike.description>Os trabalhadores pararam as máquinas da colônia.</Rimverse_Situation_LaborStrike.description>
+  <Rimverse_Situation_Plague.label>surto de praga</Rimverse_Situation_Plague.label>
+  <Rimverse_Situation_Plague.description>Uma doença está se espalhando pelos habitats.</Rimverse_Situation_Plague.description>
+  <Rimverse_Situation_Smugglers.label>rede de contrabando</Rimverse_Situation_Smugglers.label>
+  <Rimverse_Situation_Smugglers.description>Contrabandistas estão passando mercadorias pela colônia.</Rimverse_Situation_Smugglers.description>
+  <Rimverse_Situation_Refugees.label>frota de refugiados</Rimverse_Situation_Refugees.label>
+  <Rimverse_Situation_Refugees.description>Naves castigadas pedem um lugar para pousar.</Rimverse_Situation_Refugees.description>
+  <Rimverse_Situation_MineralStrike.label>descoberta mineral</Rimverse_Situation_MineralStrike.label>
+  <Rimverse_Situation_MineralStrike.description>Os topógrafos acharam um veio rico perto da colônia.</Rimverse_Situation_MineralStrike.description>
+  <Rimverse_Situation_Separatists.label>movimento separatista</Rimverse_Situation_Separatists.label>
+  <Rimverse_Situation_Separatists.description>Uma facção quer que a colônia se separe.</Rimverse_Situation_Separatists.description>
+  <Rimverse_Situation_Festival.label>festa dos fundadores</Rimverse_Situation_Festival.label>
+  <Rimverse_Situation_Festival.description>Os colonos querem comemorar a fundação da colônia.</Rimverse_Situation_Festival.description>
+  <Rimverse_Situation_ReactorLeak.label>vazamento no reator</Rimverse_Situation_ReactorLeak.label>
+  <Rimverse_Situation_ReactorLeak.description>Um reator de habitat está vazando.</Rimverse_Situation_ReactorLeak.description>
+  <Rimverse_Situation_AlienFauna.label>fauna alienígena</Rimverse_Situation_AlienFauna.label>
+  <Rimverse_Situation_AlienFauna.description>Criaturas da natureza estão atacando os arredores.</Rimverse_Situation_AlienFauna.description>
+  <Rimverse_Situation_NobleDispute.label>disputa de nobres</Rimverse_Situation_NobleDispute.label>
+  <Rimverse_Situation_NobleDispute.description>Duas famílias poderosas querem o favor do governador.</Rimverse_Situation_NobleDispute.description>
+  <Rimverse_Situation_AncientTomb.label>tumba antiga</Rimverse_Situation_AncientTomb.label>
+  <Rimverse_Situation_AncientTomb.description>Escavadores abriram uma tumba lacrada.</Rimverse_Situation_AncientTomb.description>
+  <Rimverse_Situation_InvestorBoom.label>onda de investidores</Rimverse_Situation_InvestorBoom.label>
+  <Rimverse_Situation_InvestorBoom.description>Investidores oferecem dobrar qualquer dinheiro aplicado agora.</Rimverse_Situation_InvestorBoom.description>
+</LanguageData>

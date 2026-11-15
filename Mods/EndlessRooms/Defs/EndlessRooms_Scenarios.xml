@@ -96,6 +96,7 @@
           <air>0.4</air>
           <hull>0.45</hull>
           <shipNameKey>Rimverse_ShipName_Derelict</shipNameKey>
+          <infoFog>Partial</infoFog>
           <waitForBackroomsExit>true</waitForBackroomsExit>
         </li>
       </parts>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_StartFailed>Ship start failed</Rimverse_StartFailed>
+  <Rimverse_StartFailedText>The starting ship could not be built, so your people woke up on the ground. Your cargo is here and unlocked. You can still build a ship and launch later.</Rimverse_StartFailedText>
+  <Rimverse_LetterRumorLabel>Rumor of a civilization</Rimverse_LetterRumorLabel>
+  <Rimverse_LetterRumor>Traders and intercepted signals talk about a civilization {0}. Nobody knows its name or what it wants. Scan more stars, travel or trade to find out more.</Rimverse_LetterRumor>
+  <Rimverse_RumorVeryClose>very close to you</Rimverse_RumorVeryClose>
+  <Rimverse_RumorClose>a few dozen light-years away</Rimverse_RumorClose>
+  <Rimverse_RumorFar>far from here</Rimverse_RumorFar>
+  <Rimverse_CivTabTitleFog>Known civilizations: {0} · rumors: {1}</Rimverse_CivTabTitleFog>
+  <Rimverse_CivUnknownName>Unknown civilization</Rimverse_CivUnknownName>
+  <Rimverse_CivRumorInfo>All you have is a rumor: someone is out there, {0}. Scan their stars, meet their ships or trade with their neighbours to learn more.</Rimverse_CivRumorInfo>
+  <Rimverse_Knowledge_Unknown>unknown</Rimverse_Knowledge_Unknown>
+  <Rimverse_Knowledge_Rumor>rumor</Rimverse_Knowledge_Rumor>
+  <Rimverse_Knowledge_Contact>first contact</Rimverse_Knowledge_Contact>
+  <Rimverse_Knowledge_Known>known</Rimverse_Knowledge_Known>
+  <Rimverse_Knowledge_Detailed>well known</Rimverse_Knowledge_Detailed>
+  <Rimverse_CivKnowledgeLine>What you know: {0} ({1}/100)</Rimverse_CivKnowledgeLine>
+  <Rimverse_CivMoreIntel>More details appear as you learn about them: contact, trade, treaties, scans and time spent in their space.</Rimverse_CivMoreIntel>
+  <Rimverse_FleetGuess_Small>small</Rimverse_FleetGuess_Small>
+  <Rimverse_FleetGuess_Medium>medium</Rimverse_FleetGuess_Medium>
+  <Rimverse_FleetGuess_Large>large</Rimverse_FleetGuess_Large>
+  <Rimverse_FleetGuess_Huge>huge</Rimverse_FleetGuess_Huge>
+  <Rimverse_HudToggle>Click to collapse or expand.</Rimverse_HudToggle>
+  <Rimverse_HudInSpace>in space</Rimverse_HudInSpace>
+  <Rimverse_HudLanded>landed</Rimverse_HudLanded>
+  <Rimverse_HudFood>Food</Rimverse_HudFood>
+  <Rimverse_HudDays>{0} days</Rimverse_HudDays>
+  <Rimverse_HudFoodTip>Edible food stored on this map, divided among {0} colonists.</Rimverse_HudFoodTip>
+  <Rimverse_HudPower>Power</Rimverse_HudPower>
+  <Rimverse_HudPowerTip>Stored: {0} Wd of {1} Wd. The bar shows how full the batteries are.</Rimverse_HudPowerTip>
+  <Rimverse_HudAir>Air</Rimverse_HudAir>
+  <Rimverse_HudHull>Hull</Rimverse_HudHull>
+  <Rimverse_HudHeat>Heat</Rimverse_HudHeat>
+  <Rimverse_HudFuel>Fuel</Rimverse_HudFuel>
+  <Rimverse_HudTempShort>Temp.</Rimverse_HudTempShort>
+  <Rimverse_HudTempTip>Under the mouse / outside.</Rimverse_HudTempTip>
+  <Rimverse_HudOnlyShip>Ship panel only on ship maps</Rimverse_HudOnlyShip>
+  <Rimverse_HudOnlyShip_Desc>Hide the status panel on maps without a Rimverse ship.</Rimverse_HudOnlyShip_Desc>
+  <Rimverse_HudOffset>Ship panel vertical offset</Rimverse_HudOffset>
+  <Rimverse_HudOffset_Desc>Moves the panel down from the top right corner, for example to sit below RimHUD or other panels.</Rimverse_HudOffset_Desc>
+  <Rimverse_OutpostNeedColonists>The caravan needs at least {0} colonists.</Rimverse_OutpostNeedColonists>
+  <Rimverse_OutpostNeedSteel>The caravan needs {0} steel.</Rimverse_OutpostNeedSteel>
+  <Rimverse_AlreadyAtWar>Already at war.</Rimverse_AlreadyAtWar>
+  <Rimverse_AnomalyChapterGeneric>The team finished this stage of the study. Send them back to continue.</Rimverse_AnomalyChapterGeneric>
+  <Rimverse_AnomalyChapterShort>stage {0}/{1}</Rimverse_AnomalyChapterShort>
+  <Rimverse_AnomalyDone>studied</Rimverse_AnomalyDone>
+  <Rimverse_AnomalyEndGeneric>The study is complete.</Rimverse_AnomalyEndGeneric>
+  <Rimverse_AnomalyInfo>Anomalies are found when a body is scanned in detail. Study them with a ship in the system, or with a colony for digs.</Rimverse_AnomalyInfo>
+  <Rimverse_AnomalyNeedColony>Needs one of your colonies in this system.</Rimverse_AnomalyNeedColony>
+  <Rimverse_AnomalyNeedPresence>Needs your ship or a colony in this system.</Rimverse_AnomalyNeedPresence>
+  <Rimverse_AnomalyNone>No anomalies found yet.</Rimverse_AnomalyNone>
+  <Rimverse_AnomalyRewards>Rewards: {0} research, {1} silver to the treasury, {2} influence, plus any items listed.</Rimverse_AnomalyRewards>
+  <Rimverse_AnomalyStudy>Study</Rimverse_AnomalyStudy>
+  <Rimverse_AnomalyWorking>studying, {0} days left</Rimverse_AnomalyWorking>
+  <Rimverse_BuildFacility>Build {0} · {1} silver · {2} days · upkeep {3}</Rimverse_BuildFacility>
+  <Rimverse_ClaimAlready>Already claimed.</Rimverse_ClaimAlready>
+  <Rimverse_ClaimButton>Claim</Rimverse_ClaimButton>
+  <Rimverse_ClaimNeedIntel>You need to know this civilization better (Known level).</Rimverse_ClaimNeedIntel>
+  <Rimverse_ClaimsShort>{0} claims</Rimverse_ClaimsShort>
+  <Rimverse_ColonySurfaceCollect>Surface outpost: send a caravan there to collect goods.</Rimverse_ColonySurfaceCollect>
+  <Rimverse_CouncilActive>Already in force.</Rimverse_CouncilActive>
+  <Rimverse_CouncilActiveHeader>Resolutions in force</Rimverse_CouncilActiveHeader>
+  <Rimverse_CouncilBusy>A vote is already under way.</Rimverse_CouncilBusy>
+  <Rimverse_CouncilInfo>{0} member civilizations. Your vote weight: {1}.</Rimverse_CouncilInfo>
+  <Rimverse_CouncilNone>The galactic council forms once you know at least three civilizations that are willing to talk.</Rimverse_CouncilNone>
+  <Rimverse_CouncilProposal>On the floor: {0} · vote in {1} days</Rimverse_CouncilProposal>
+  <Rimverse_CouncilPropose>Propose a resolution (40 influence)</Rimverse_CouncilPropose>
+  <Rimverse_CouncilTally>Yes {0} · No {1} · your lobbying {2}</Rimverse_CouncilTally>
+  <Rimverse_CouncilVoteNo>Lobby against ({0} influence)</Rimverse_CouncilVoteNo>
+  <Rimverse_CouncilVoteYes>Lobby in favour ({0} influence)</Rimverse_CouncilVoteYes>
+  <Rimverse_DaysShort>{0} days</Rimverse_DaysShort>
+  <Rimverse_EdictActive>active, {0} days left</Rimverse_EdictActive>
+  <Rimverse_EdictCost>{0} silver · {1} influence · {2} days</Rimverse_EdictCost>
+  <Rimverse_Eff_Attention>Pirate attention {0}</Rimverse_Eff_Attention>
+  <Rimverse_Eff_Capacity>Capacity {0}</Rimverse_Eff_Capacity>
+  <Rimverse_Eff_Defense>Defense {0}</Rimverse_Eff_Defense>
+  <Rimverse_Eff_FleetUpkeep>Fleet upkeep {0}</Rimverse_Eff_FleetUpkeep>
+  <Rimverse_Eff_Food>Food {0}</Rimverse_Eff_Food>
+  <Rimverse_Eff_Growth>Growth {0}</Rimverse_Eff_Growth>
+  <Rimverse_Eff_Income>Income {0}</Rimverse_Eff_Income>
+  <Rimverse_Eff_Influence>Influence {0}</Rimverse_Eff_Influence>
+  <Rimverse_Eff_Opinion>Opinion of others {0} per quadrum</Rimverse_Eff_Opinion>
+  <Rimverse_Eff_Research>Research {0}</Rimverse_Eff_Research>
+  <Rimverse_Eff_Stability>Stability {0}</Rimverse_Eff_Stability>
+  <Rimverse_EmpireAnomaliesHeader>Anomalies</Rimverse_EmpireAnomaliesHeader>
+  <Rimverse_EmpireApplyGov>Apply changes</Rimverse_EmpireApplyGov>
+  <Rimverse_EmpireAssignGovernor>Assign governor</Rimverse_EmpireAssignGovernor>
+  <Rimverse_EmpireCivicSlot>Civic {0}</Rimverse_EmpireCivicSlot>
+  <Rimverse_EmpireCivsHeader>Known civilizations</Rimverse_EmpireCivsHeader>
+  <Rimverse_EmpireCouncilHeader>Galactic council</Rimverse_EmpireCouncilHeader>
+  <Rimverse_EmpireEdictsHeader>Edicts</Rimverse_EmpireEdictsHeader>
+  <Rimverse_EmpireEffectsHeader>Realm-wide effects</Rimverse_EmpireEffectsHeader>
+  <Rimverse_EmpireFederationHeader>Federation</Rimverse_EmpireFederationHeader>
+  <Rimverse_EmpireFirstGov>Choose how your realm is run. The first choice is free.</Rimverse_EmpireFirstGov>
+  <Rimverse_EmpireGovHeader>Government</Rimverse_EmpireGovHeader>
+  <Rimverse_EmpireNoWars>No wars right now.</Rimverse_EmpireNoWars>
+  <Rimverse_EmpireReformInfo>A reform costs {0} influence and can be done once per year.</Rimverse_EmpireReformInfo>
+  <Rimverse_EmpireSectorColonies>{0} colonies, {1} people</Rimverse_EmpireSectorColonies>
+  <Rimverse_EmpireSectorsHeader>Sectors and governors</Rimverse_EmpireSectorsHeader>
+  <Rimverse_EmpireTitle>Empire · influence {0}/{1} (+{2}/day) · treasury {3}</Rimverse_EmpireTitle>
+  <Rimverse_EmpireWarsHeader>Wars</Rimverse_EmpireWarsHeader>
+  <Rimverse_EmpireTab_Government>Government</Rimverse_EmpireTab_Government>
+  <Rimverse_EmpireTab_Edicts>Edicts</Rimverse_EmpireTab_Edicts>
+  <Rimverse_EmpireTab_Fleets>Fleets</Rimverse_EmpireTab_Fleets>
+  <Rimverse_EmpireTab_Diplomacy>Diplomacy</Rimverse_EmpireTab_Diplomacy>
+  <Rimverse_EmpireTab_Council>Council</Rimverse_EmpireTab_Council>
+  <Rimverse_EmpireTab_Anomalies>Anomalies</Rimverse_EmpireTab_Anomalies>
+  <Rimverse_FacilityMax>Already at the limit for this colony.</Rimverse_FacilityMax>
+  <Rimverse_FacilityNeedTier>The colony must be a {0} first.</Rimverse_FacilityNeedTier>
+  <Rimverse_FacilityOutput>Produces each quadrum: {0}</Rimverse_FacilityOutput>
+  <Rimverse_FacilitySpaceOnly>Only for colonies in space.</Rimverse_FacilitySpaceOnly>
+  <Rimverse_FacilitySurfaceOnly>Only for outposts on a planet surface.</Rimverse_FacilitySurfaceOnly>
+  <Rimverse_FederationDefaultName>United Stars</Rimverse_FederationDefaultName>
+  <Rimverse_FederationExists>You already lead a federation.</Rimverse_FederationExists>
+  <Rimverse_FederationFound>Found federation</Rimverse_FederationFound>
+  <Rimverse_FederationInvite>Invite</Rimverse_FederationInvite>
+  <Rimverse_FederationLeave>Expel</Rimverse_FederationLeave>
+  <Rimverse_FederationLine>{0}: {1}</Rimverse_FederationLine>
+  <Rimverse_FederationNamePrompt>Name of the federation:</Rimverse_FederationNamePrompt>
+  <Rimverse_FederationNone>No federation yet. Found one with an ally (60 influence).</Rimverse_FederationNone>
+  <Rimverse_FleetAutoResolve>Auto-resolve</Rimverse_FleetAutoResolve>
+  <Rimverse_FleetBattleChoice>{0} has engaged {1}. Your ship is in the system: command the battle yourself, or let the admirals resolve it?</Rimverse_FleetBattleChoice>
+  <Rimverse_FleetBuild>Build ships</Rimverse_FleetBuild>
+  <Rimverse_FleetBuildOption>{0} ×{1} · {2} silver · power {3} · ground {4}</Rimverse_FleetBuildOption>
+  <Rimverse_FleetCannotReach>The fleet cannot reach that system.</Rimverse_FleetCannotReach>
+  <Rimverse_FleetCommand>Command the battle</Rimverse_FleetCommand>
+  <Rimverse_FleetDefaultName>Fleet {0}</Rimverse_FleetDefaultName>
+  <Rimverse_FleetDisband>Disband</Rimverse_FleetDisband>
+  <Rimverse_FleetDisbandConfirm>Disband {0}? The ships are scrapped with no refund.</Rimverse_FleetDisbandConfirm>
+  <Rimverse_FleetEnRoute>to {0}, {1} days</Rimverse_FleetEnRoute>
+  <Rimverse_FleetLine>Power {0} · ground {1} · speed {2} ly/day · condition {3} · upkeep {4}/quadrum · mission: {5}</Rimverse_FleetLine>
+  <Rimverse_FleetLocation>Location: {0}</Rimverse_FleetLocation>
+  <Rimverse_FleetMoving>The fleet is moving.</Rimverse_FleetMoving>
+  <Rimverse_FleetNew>New fleet</Rimverse_FleetNew>
+  <Rimverse_FleetNoShipyard>Needs a shipyard: a colony with a shipyard, or your ship in the system.</Rimverse_FleetNoShipyard>
+  <Rimverse_FleetNoTarget>{0} found nothing to fight there.</Rimverse_FleetNoTarget>
+  <Rimverse_FleetNone>No fleets yet. Create one at a shipyard.</Rimverse_FleetNone>
+  <Rimverse_FleetNotAtWar>You are not at war with {0}.</Rimverse_FleetNotAtWar>
+  <Rimverse_FleetOrder>building {0} ×{1}, {2} days</Rimverse_FleetOrder>
+  <Rimverse_FleetPowerShort>power {0}</Rimverse_FleetPowerShort>
+  <Rimverse_FleetQueueFull>The build queue is full.</Rimverse_FleetQueueFull>
+  <Rimverse_FleetRename>Rename</Rimverse_FleetRename>
+  <Rimverse_FleetResultAttack>Their defenders were broken.</Rimverse_FleetResultAttack>
+  <Rimverse_FleetResultCapital>The capital held out. Take its other worlds first.</Rimverse_FleetResultCapital>
+  <Rimverse_FleetResultCaptured>{0} is now one of your colonies.</Rimverse_FleetResultCaptured>
+  <Rimverse_FleetResultNoGround>Not enough ground troops to take the planet ({0} of {1}).</Rimverse_FleetResultNoGround>
+  <Rimverse_FleetResultNoPlanet>There was no settled world to take here.</Rimverse_FleetResultNoPlanet>
+  <Rimverse_FleetResultRaid>The fleet plundered {0} silver.</Rimverse_FleetResultRaid>
+  <Rimverse_FleetSelect>Select a fleet.</Rimverse_FleetSelect>
+  <Rimverse_FleetSend>Send</Rimverse_FleetSend>
+  <Rimverse_FleetMission_Idle>Hold</Rimverse_FleetMission_Idle>
+  <Rimverse_FleetMission_Defend>Defend</Rimverse_FleetMission_Defend>
+  <Rimverse_FleetMission_Attack>Attack</Rimverse_FleetMission_Attack>
+  <Rimverse_FleetMission_Raid>Raid</Rimverse_FleetMission_Raid>
+  <Rimverse_FleetMission_Capture>Capture</Rimverse_FleetMission_Capture>
+  <Rimverse_FleetMission_Blockade>Blockade</Rimverse_FleetMission_Blockade>
+  <Rimverse_FleetMissionDesc_Idle>stay put</Rimverse_FleetMissionDesc_Idle>
+  <Rimverse_FleetMissionDesc_Defend>protect your colonies in the system</Rimverse_FleetMissionDesc_Defend>
+  <Rimverse_FleetMissionDesc_Attack>destroy enemy fleets and defenses</Rimverse_FleetMissionDesc_Attack>
+  <Rimverse_FleetMissionDesc_Raid>strike and take silver</Rimverse_FleetMissionDesc_Raid>
+  <Rimverse_FleetMissionDesc_Capture>take a world, needs ground troops</Rimverse_FleetMissionDesc_Capture>
+  <Rimverse_FleetMissionDesc_Blockade>choke their trade every day</Rimverse_FleetMissionDesc_Blockade>
+  <Rimverse_GovernorSkills>social {0}, intellectual {1}, shooting {2}</Rimverse_GovernorSkills>
+  <Rimverse_LetterAnomaly>Our scanners found something on {1}: {0}.\n\n{2}\n\nStudy it from the Empire tab.</Rimverse_LetterAnomaly>
+  <Rimverse_LetterAnomalyChapterLabel>{0}: stage {1}/{2}</Rimverse_LetterAnomalyChapterLabel>
+  <Rimverse_LetterAnomalyDanger>Studying {0} went wrong.</Rimverse_LetterAnomalyDanger>
+  <Rimverse_LetterAnomalyDangerLabel>Anomaly accident</Rimverse_LetterAnomalyDangerLabel>
+  <Rimverse_LetterAnomalyDoneLabel>{0} studied</Rimverse_LetterAnomalyDoneLabel>
+  <Rimverse_LetterAnomalyLabel>Anomaly found</Rimverse_LetterAnomalyLabel>
+  <Rimverse_LetterCoalition>Your realm has grown too strong for comfort. {1} civilizations have drawn closer together, and {0} has declared war on you.</Rimverse_LetterCoalition>
+  <Rimverse_LetterCoalitionLabel>Coalition</Rimverse_LetterCoalitionLabel>
+  <Rimverse_LetterCouncil>The galactic council will vote on: {0}.\n\nThe vote closes in {1} days. Lobby for or against it in the Empire tab.</Rimverse_LetterCouncil>
+  <Rimverse_LetterCouncilLabel>Council vote</Rimverse_LetterCouncilLabel>
+  <Rimverse_LetterCouncilPassed>The council passed {0} ({1} to {2}).</Rimverse_LetterCouncilPassed>
+  <Rimverse_LetterCouncilFailed>The council rejected {0} ({1} to {2}).</Rimverse_LetterCouncilFailed>
+  <Rimverse_LetterCouncilResultLabel>Council result</Rimverse_LetterCouncilResultLabel>
+  <Rimverse_LetterEmpirePeace>The war with {0} is over.\n\n{1}</Rimverse_LetterEmpirePeace>
+  <Rimverse_LetterFederation>The {0} is founded, together with {1}.</Rimverse_LetterFederation>
+  <Rimverse_LetterFederationLabel>Federation founded</Rimverse_LetterFederationLabel>
+  <Rimverse_LetterFleetDefeat>{0} was beaten by {1} at {2}. The survivors fall back.</Rimverse_LetterFleetDefeat>
+  <Rimverse_LetterFleetDefeatLabel>Fleet defeated</Rimverse_LetterFleetDefeatLabel>
+  <Rimverse_LetterFleetUnpaid>The treasury could not pay {0} silver of fleet upkeep. The crews are unhappy and the ships fall into disrepair.</Rimverse_LetterFleetUnpaid>
+  <Rimverse_LetterFleetUnpaidLabel>Fleet unpaid</Rimverse_LetterFleetUnpaidLabel>
+  <Rimverse_LetterFleetVictory>{0} beat {1} at {2}.\n\n{3}</Rimverse_LetterFleetVictory>
+  <Rimverse_LetterFleetVictoryLabel>Fleet victory</Rimverse_LetterFleetVictoryLabel>
+  <Rimverse_LetterVassalRevolt>{0} has thrown off your rule and taken up arms.</Rimverse_LetterVassalRevolt>
+  <Rimverse_LetterVassalRevoltLabel>Vassal revolt</Rimverse_LetterVassalRevoltLabel>
+  <Rimverse_LetterWarDeclared>You are now at war with {0}. War goal: {1}.</Rimverse_LetterWarDeclared>
+  <Rimverse_LetterWarDeclaredLabel>War declared</Rimverse_LetterWarDeclaredLabel>
+  <Rimverse_ManageCaptured>Recently conquered: stability is lower for a while.</Rimverse_ManageCaptured>
+  <Rimverse_ManageColony>Manage colony</Rimverse_ManageColony>
+  <Rimverse_ManageEffects>Effects on this colony:</Rimverse_ManageEffects>
+  <Rimverse_ManageFacilities>Facilities</Rimverse_ManageFacilities>
+  <Rimverse_ManageGovernor>Sector governor</Rimverse_ManageGovernor>
+  <Rimverse_ManageLine>Population {0} · stability {1} · income {2} · defense {3} · treasury {4}</Rimverse_ManageLine>
+  <Rimverse_ManageTithe>Tithe</Rimverse_ManageTithe>
+  <Rimverse_MsgAllyAttack>{0} sends a fleet against {1}.</Rimverse_MsgAllyAttack>
+  <Rimverse_MsgAllyDefense>{0} will help defend your colonies for a year.</Rimverse_MsgAllyDefense>
+  <Rimverse_MsgAllyNoFleet>{0} agreed, but has no fleet free right now.</Rimverse_MsgAllyNoFleet>
+  <Rimverse_MsgAllySupplies>{0} sent supplies.</Rimverse_MsgAllySupplies>
+  <Rimverse_MsgBlockadeStarted>{0} is blockading {1}.</Rimverse_MsgBlockadeStarted>
+  <Rimverse_MsgFederationJoined>{0} joined the {1}.</Rimverse_MsgFederationJoined>
+  <Rimverse_MsgFleetArrived>{0} arrived at {1}.</Rimverse_MsgFleetArrived>
+  <Rimverse_MsgFleetLost>{0} has no ships left and was dissolved.</Rimverse_MsgFleetLost>
+  <Rimverse_MsgFleetUnitsReady>{0} {1} joined {2}.</Rimverse_MsgFleetUnitsReady>
+  <Rimverse_NeedsResearch>Needs research: {0}</Rimverse_NeedsResearch>
+  <Rimverse_None>None</Rimverse_None>
+  <Rimverse_NotEnoughInfluence>Needs {0} influence.</Rimverse_NotEnoughInfluence>
+  <Rimverse_NotEnoughTreasury>Needs {0} silver in the treasury.</Rimverse_NotEnoughTreasury>
+  <Rimverse_OpenEmpire>Manage</Rimverse_OpenEmpire>
+  <Rimverse_OpenEmpireDesc>Open this outpost's management window.</Rimverse_OpenEmpireDesc>
+  <Rimverse_OpinionShort>opinion {0}</Rimverse_OpinionShort>
+  <Rimverse_OutpostAbandon>Abandon outpost</Rimverse_OutpostAbandon>
+  <Rimverse_OutpostAbandonConfirm>Abandon {0}? Its settlers join this caravan and the outpost is gone for good.</Rimverse_OutpostAbandonConfirm>
+  <Rimverse_OutpostAbandonDesc>Bring the settlers back into this caravan and abandon the outpost.</Rimverse_OutpostAbandonDesc>
+  <Rimverse_OutpostCollect>Collect goods</Rimverse_OutpostCollect>
+  <Rimverse_OutpostCollectDesc>Load everything the outpost produced into this caravan.</Rimverse_OutpostCollectDesc>
+  <Rimverse_OutpostDefaultName>Outpost {0}</Rimverse_OutpostDefaultName>
+  <Rimverse_OutpostEmpty>Nothing stored yet.</Rimverse_OutpostEmpty>
+  <Rimverse_OutpostFound>Found outpost</Rimverse_OutpostFound>
+  <Rimverse_OutpostFoundDesc>Leave some colonists here to found an outpost of your realm. It grows, produces and pays income on its own. Costs {0} steel from the caravan.</Rimverse_OutpostFoundDesc>
+  <Rimverse_OutpostInfo>Choose who stays. Costs {0} steel. At least {1} settlers.</Rimverse_OutpostInfo>
+  <Rimverse_OutpostInspect>{0} · population {1} · stability {2}\nIncome {3} per quadrum · tithe: {4}</Rimverse_OutpostInspect>
+  <Rimverse_OutpostTileTaken>Something is already here.</Rimverse_OutpostTileTaken>
+  <Rimverse_OutpostTitle>Found an outpost</Rimverse_OutpostTitle>
+  <Rimverse_PeaceDemand>Demand terms ({0} chance)</Rimverse_PeaceDemand>
+  <Rimverse_PeaceRejected>{0} rejected the peace offer.</Rimverse_PeaceRejected>
+  <Rimverse_PeaceTermsConquest>{0} claimed worlds are handed over to you.</Rimverse_PeaceTermsConquest>
+  <Rimverse_PeaceTermsHumiliation>They are humiliated. You gain 40 influence.</Rimverse_PeaceTermsHumiliation>
+  <Rimverse_PeaceTermsLost>You lost the war. You pay {0} silver and lose influence.</Rimverse_PeaceTermsLost>
+  <Rimverse_PeaceTermsPlunder>They pay {0} silver in reparations.</Rimverse_PeaceTermsPlunder>
+  <Rimverse_PeaceTermsVassal>They become your vassal and pay tribute every quadrum.</Rimverse_PeaceTermsVassal>
+  <Rimverse_PeaceTermsWhite>A white peace: nothing changes hands.</Rimverse_PeaceTermsWhite>
+  <Rimverse_PeaceWhite>Offer white peace</Rimverse_PeaceWhite>
+  <Rimverse_Request_JointAttack>Joint attack ({0} influence, {1} opinion)</Rimverse_Request_JointAttack>
+  <Rimverse_Request_Defense>Defend my colonies for a year ({0} influence, {1} opinion)</Rimverse_Request_Defense>
+  <Rimverse_Request_Supplies>Send supplies ({0} influence, {1} opinion)</Rimverse_Request_Supplies>
+  <Rimverse_RequestActive>Already active.</Rimverse_RequestActive>
+  <Rimverse_RequestButton>Request</Rimverse_RequestButton>
+  <Rimverse_RequestLowOpinion>Their opinion of you is too low.</Rimverse_RequestLowOpinion>
+  <Rimverse_RequestNeedAlly>Needs an alliance (supplies: a trade agreement).</Rimverse_RequestNeedAlly>
+  <Rimverse_RequestNoWar>You are not at war with anyone.</Rimverse_RequestNoWar>
+  <Rimverse_Sanctioned>sanctioned</Rimverse_Sanctioned>
+  <Rimverse_SitChance>{0} chance</Rimverse_SitChance>
+  <Rimverse_SitCostInfluence>{0} influence</Rimverse_SitCostInfluence>
+  <Rimverse_SitCostSilver>{0} silver</Rimverse_SitCostSilver>
+  <Rimverse_SitResultOk>{0}: it worked out.</Rimverse_SitResultOk>
+  <Rimverse_SitResultFail>{0}: it went badly.</Rimverse_SitResultFail>
+  <Rimverse_SituationLabel>{0}: {1}</Rimverse_SituationLabel>
+  <Rimverse_SituationText>News from {0}:\n\n{1}\n\nWhat should the governor do?</Rimverse_SituationText>
+  <Rimverse_Tier_0>outpost</Rimverse_Tier_0>
+  <Rimverse_Tier_1>colony</Rimverse_Tier_1>
+  <Rimverse_Tier_2>city</Rimverse_Tier_2>
+  <Rimverse_Tier_3>citadel</Rimverse_Tier_3>
+  <Rimverse_Tithe_Silver>Silver</Rimverse_Tithe_Silver>
+  <Rimverse_Tithe_Goods>Goods</Rimverse_Tithe_Goods>
+  <Rimverse_Tithe_Food>Food</Rimverse_Tithe_Food>
+  <Rimverse_Tithe_Balanced>Balanced</Rimverse_Tithe_Balanced>
+  <Rimverse_TitheDesc_Silver>more silver, no goods, a bit less stability</Rimverse_TitheDesc_Silver>
+  <Rimverse_TitheDesc_Goods>double goods, less silver</Rimverse_TitheDesc_Goods>
+  <Rimverse_TitheDesc_Food>feeds the people: more growth and stability, less silver</Rimverse_TitheDesc_Food>
+  <Rimverse_TitheDesc_Balanced>a bit of everything</Rimverse_TitheDesc_Balanced>
+  <Rimverse_VassalRelease>Release</Rimverse_VassalRelease>
+  <Rimverse_WarButton>Declare war</Rimverse_WarButton>
+  <Rimverse_WarConfirm>Declare war on {0}? Their allies will think less of you.</Rimverse_WarConfirm>
+  <Rimverse_WarFederationMember>They are in your federation.</Rimverse_WarFederationMember>
+  <Rimverse_WarLine>{0} · goal: {1} · score {2} (needs {3}) · exhaustion {4}</Rimverse_WarLine>
+  <Rimverse_WarNeedClaim>Conquest needs at least one claim on them.</Rimverse_WarNeedClaim>
+  <Rimverse_WarGoal_Conquest>Conquest</Rimverse_WarGoal_Conquest>
+  <Rimverse_WarGoal_Humiliation>Humiliation</Rimverse_WarGoal_Humiliation>
+  <Rimverse_WarGoal_Subjugation>Subjugation</Rimverse_WarGoal_Subjugation>
+  <Rimverse_WarGoal_Plunder>Plunder</Rimverse_WarGoal_Plunder>
+  <Rimverse_WarGoalDesc_Conquest>take the worlds you claimed</Rimverse_WarGoalDesc_Conquest>
+  <Rimverse_WarGoalDesc_Humiliation>shame them, gain influence</Rimverse_WarGoalDesc_Humiliation>
+  <Rimverse_WarGoalDesc_Subjugation>make them your vassal</Rimverse_WarGoalDesc_Subjugation>
+  <Rimverse_WarGoalDesc_Plunder>take reparations in silver</Rimverse_WarGoalDesc_Plunder>
+  <Rimverse_YearsLeft>{0} years left</Rimverse_YearsLeft>
+  <Rimverse_LetterFlowAwakenLabel>The Flow awakens</Rimverse_LetterFlowAwakenLabel>
+  <Rimverse_LetterFlowAwaken>{PAWN_nameDef} now feels the Great Flow and follows the path of {1}.\n\nNew powers appear among {PAWN_possessive} abilities.</Rimverse_LetterFlowAwaken>
+  <Rimverse_FlowSide_None>nothing</Rimverse_FlowSide_None>
+  <Rimverse_FlowSide_Harmony>Harmony</Rimverse_FlowSide_Harmony>
+  <Rimverse_FlowSide_Rupture>Rupture</Rimverse_FlowSide_Rupture>
+  <Rimverse_FlowDisabled>The Great Flow is turned off in the settings.</Rimverse_FlowDisabled>
+  <Rimverse_FlowAlready>{PAWN_nameDef} already feels the Flow.</Rimverse_FlowAlready>
+  <Rimverse_RG_StarNetwork>Star Network</Rimverse_RG_StarNetwork>
+  <Rimverse_RG_UnknownPower>an unknown power</Rimverse_RG_UnknownPower>
+  <Rimverse_RG_SignalBack>Signal restored. {0} queued posts are being delivered.</Rimverse_RG_SignalBack>
+  <Rimverse_RG_AnomalySolved>{0} has finished studying the {1}. Science is proud.</Rimverse_RG_AnomalySolved>
+  <Rimverse_RG_Stranger_Miner>Belt Miner</Rimverse_RG_Stranger_Miner>
+  <Rimverse_RG_Stranger_Trader>Orbital Trader</Rimverse_RG_Stranger_Trader>
+  <Rimverse_RG_Stranger_Pilgrim>Void Pilgrim</Rimverse_RG_Stranger_Pilgrim>
+  <Rimverse_RG_Stranger_Hunter>Bounty Hunter</Rimverse_RG_Stranger_Hunter>
+  <Rimverse_RG_Stranger_Pilot>Freight Pilot</Rimverse_RG_Stranger_Pilot>
+  <Rimverse_RG_Stranger_Smuggler>Smuggler</Rimverse_RG_Stranger_Smuggler>
+  <Rimverse_SitOpt_Negotiate>Negotiate</Rimverse_SitOpt_Negotiate>
+  <Rimverse_SitOpt_Crackdown>Crack down</Rimverse_SitOpt_Crackdown>
+  <Rimverse_SitOpt_Ignore>Ignore it</Rimverse_SitOpt_Ignore>
+  <Rimverse_SitOpt_Quarantine>Quarantine</Rimverse_SitOpt_Quarantine>
+  <Rimverse_SitOpt_MassTreatment>Treat everyone</Rimverse_SitOpt_MassTreatment>
+  <Rimverse_SitOpt_Bust>Bust the ring</Rimverse_SitOpt_Bust>
+  <Rimverse_SitOpt_TaxThem>Tax them quietly</Rimverse_SitOpt_TaxThem>
+  <Rimverse_SitOpt_Accept>Take them in</Rimverse_SitOpt_Accept>
+  <Rimverse_SitOpt_AcceptAid>Take them in with aid</Rimverse_SitOpt_AcceptAid>
+  <Rimverse_SitOpt_TurnAway>Turn them away</Rimverse_SitOpt_TurnAway>
+  <Rimverse_SitOpt_Exploit>Mine it</Rimverse_SitOpt_Exploit>
+  <Rimverse_SitOpt_SellRights>Sell the rights</Rimverse_SitOpt_SellRights>
+  <Rimverse_SitOpt_Concede>Grant autonomy</Rimverse_SitOpt_Concede>
+  <Rimverse_SitOpt_Suppress>Suppress them</Rimverse_SitOpt_Suppress>
+  <Rimverse_SitOpt_Fund>Fund the festival</Rimverse_SitOpt_Fund>
+  <Rimverse_SitOpt_Skip>Skip it</Rimverse_SitOpt_Skip>
+  <Rimverse_SitOpt_Repair>Repair it</Rimverse_SitOpt_Repair>
+  <Rimverse_SitOpt_Evacuate>Evacuate the sector</Rimverse_SitOpt_Evacuate>
+  <Rimverse_SitOpt_Hunt>Hunt them</Rimverse_SitOpt_Hunt>
+  <Rimverse_SitOpt_Fence>Build fences</Rimverse_SitOpt_Fence>
+  <Rimverse_SitOpt_StudyThem>Study them</Rimverse_SitOpt_StudyThem>
+  <Rimverse_SitOpt_PickSide>Pick a side</Rimverse_SitOpt_PickSide>
+  <Rimverse_SitOpt_Mediate>Mediate</Rimverse_SitOpt_Mediate>
+  <Rimverse_SitOpt_Excavate>Excavate</Rimverse_SitOpt_Excavate>
+  <Rimverse_SitOpt_Seal>Seal it again</Rimverse_SitOpt_Seal>
+  <Rimverse_SitOpt_Invest>Invest 3,000</Rimverse_SitOpt_Invest>
+  <Rimverse_SitOpt_Pass>Pass</Rimverse_SitOpt_Pass>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_DerelictColonyShip>The salvage teams strip the old ship and bring home what still works.</Rimverse_AnomalyEnd_Rimverse_Anomaly_DerelictColonyShip>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_AncientBeacon>The message is finally decoded: a star chart from a lost people.</Rimverse_AnomalyEnd_Rimverse_Anomaly_AncientBeacon>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_PrecursorRuins>The deepest hall opens. Fragments of the old machines are carried to the surface.</Rimverse_AnomalyEnd_Rimverse_Anomaly_PrecursorRuins>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_CrystalLife>The crystals go quiet, leaving pages of notes behind.</Rimverse_AnomalyEnd_Rimverse_Anomaly_CrystalLife>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_GravityWell>The readings explain a little more about how space bends.</Rimverse_AnomalyEnd_Rimverse_Anomaly_GravityWell>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_DarkMatterPocket>A single bottle of strange matter is sealed and shipped.</Rimverse_AnomalyEnd_Rimverse_Anomaly_DarkMatterPocket>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_AbandonedMine>The old shafts give up their last ore.</Rimverse_AnomalyEnd_Rimverse_Anomaly_AbandonedMine>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_MechHive>The hive is taken apart before it wakes up.</Rimverse_AnomalyEnd_Rimverse_Anomaly_MechHive>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_ImperialWreck>The noble's vault is cracked open.</Rimverse_AnomalyEnd_Rimverse_Anomaly_ImperialWreck>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_FrozenSleepers>The sleepers were long dead, but their medicine was not.</Rimverse_AnomalyEnd_Rimverse_Anomaly_FrozenSleepers>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_SingingAsteroid>The song is recorded and played across the realm. People love it.</Rimverse_AnomalyEnd_Rimverse_Anomaly_SingingAsteroid>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_TimeDilation>Years of data in what felt like days.</Rimverse_AnomalyEnd_Rimverse_Anomaly_TimeDilation>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_AlienGarden>Samples of the garden are harvested and studied.</Rimverse_AnomalyEnd_Rimverse_Anomaly_AlienGarden>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_VoidSignal>The signal stops. Whatever sent it has said what it wanted to say.</Rimverse_AnomalyEnd_Rimverse_Anomaly_VoidSignal>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_LostArchive>The archive is copied before its power dies.</Rimverse_AnomalyEnd_Rimverse_Anomaly_LostArchive>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_FossilFields>Museums across the realm ask for the bones.</Rimverse_AnomalyEnd_Rimverse_Anomaly_FossilFields>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_PirateCache>The stash is ours now.</Rimverse_AnomalyEnd_Rimverse_Anomaly_PirateCache>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_ShatteredMoon>Haulers drag the richest pieces home.</Rimverse_AnomalyEnd_Rimverse_Anomaly_ShatteredMoon>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_WarpScar>The scar is drained of warp matter and slowly closes.</Rimverse_AnomalyEnd_Rimverse_Anomaly_WarpScar>
+  <Rimverse_AnomalyEnd_Rimverse_Anomaly_ArchotechWhisper>The whisper ends with a gift and a warning nobody understands.</Rimverse_AnomalyEnd_Rimverse_Anomaly_ArchotechWhisper>
+</LanguageData>

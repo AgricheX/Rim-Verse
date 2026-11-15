@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Hull_Corvette.label>corveta</Rimverse_Hull_Corvette.label>
+  <Rimverse_Hull_Corvette.description>Pequena, rápida e barata.</Rimverse_Hull_Corvette.description>
+  <Rimverse_Hull_Frigate.label>fragata</Rimverse_Hull_Frigate.label>
+  <Rimverse_Hull_Frigate.description>O burro de carga de qualquer frota.</Rimverse_Hull_Frigate.description>
+  <Rimverse_Hull_Destroyer.label>destróier</Rimverse_Hull_Destroyer.label>
+  <Rimverse_Hull_Destroyer.description>Um lançador de mísseis que bate forte para o tamanho.</Rimverse_Hull_Destroyer.description>
+  <Rimverse_Hull_Cruiser.label>cruzador</Rimverse_Hull_Cruiser.label>
+  <Rimverse_Hull_Cruiser.description>Uma nave de guerra de longo alcance com baias de tropas.</Rimverse_Hull_Cruiser.description>
+  <Rimverse_Hull_Carrier.label>porta-naves</Rimverse_Hull_Carrier.label>
+  <Rimverse_Hull_Carrier.description>Lança esquadrilhas de naves pequenas.</Rimverse_Hull_Carrier.description>
+  <Rimverse_Hull_Battleship.label>encouraçado</Rimverse_Hull_Battleship.label>
+  <Rimverse_Hull_Battleship.description>Uma muralha de canhões e blindagem.</Rimverse_Hull_Battleship.description>
+  <Rimverse_Hull_MarineCompany.label>companhia de fuzileiros</Rimverse_Hull_MarineCompany.label>
+  <Rimverse_Hull_MarineCompany.description>Infantaria para desembarques e abordagens.</Rimverse_Hull_MarineCompany.description>
+  <Rimverse_Hull_DropTroopers.label>tropas de queda</Rimverse_Hull_DropTroopers.label>
+  <Rimverse_Hull_DropTroopers.description>Soldados de elite lançados da órbita.</Rimverse_Hull_DropTroopers.description>
+  <Rimverse_Hull_ArmoredLegion.label>legião blindada</Rimverse_Hull_ArmoredLegion.label>
+  <Rimverse_Hull_ArmoredLegion.description>Tanques e caminhantes para assaltos planetários.</Rimverse_Hull_ArmoredLegion.description>
+  <Rimverse_Hull_FighterWing.label>esquadrilha de caças</Rimverse_Hull_FighterWing.label>
+  <Rimverse_Hull_FighterWing.description>Uma esquadrilha de caças pequenos.</Rimverse_Hull_FighterWing.description>
+  <Rimverse_Hull_BomberWing.label>esquadrilha de bombardeiros</Rimverse_Hull_BomberWing.label>
+  <Rimverse_Hull_BomberWing.description>Bombardeiros que também apoiam desembarques.</Rimverse_Hull_BomberWing.description>
+</LanguageData>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimGram_RvLaunch_0>Motores quentes, escotilhas lacradas. {COLONY_name} está saindo de órbita. Acenem se conseguirem ver a gente.</RimGram_RvLaunch_0>
+  <RimGram_RvLaunch_1>Próxima parada: {EXTRA}. Lanches na bolsa, nervos não.</RimGram_RvLaunch_1>
+  <RimGram_RvLaunch_2>Contagem pra dobra. Se este for meu último post, a ração do gato está no segundo armário.</RimGram_RvLaunch_2>
+  <RimGram_RvLaunch_3>Rota traçada pra {EXTRA}. O capitão diz que é 'perfeitamente seguro'. O capitão diz isso muito.</RimGram_RvLaunch_3>
+  <RimGram_RvLaunch_4>Vendo o planeta encolher pela janela. Estranho como a casa parece pequena daqui.</RimGram_RvLaunch_4>
+  <RimGram_RvLaunch_5>Cinto afivelado, rezando pra todo engenheiro que já encostou neste casco.</RimGram_RvLaunch_5>
+  <RimGram_RvArrive_0>Chegamos! {EXTRA}, você é linda.</RimGram_RvArrive_0>
+  <RimGram_RvArrive_1>Saímos da dobra em {EXTRA}. Todo mundo ainda tem o número certo de membros.</RimGram_RvArrive_1>
+  <RimGram_RvArrive_2>Chegada confirmada. O café sobreviveu. O café sempre sobrevive.</RimGram_RvArrive_2>
+  <RimGram_RvArrive_3>Céu novo do lado de fora da escotilha. Nunca vou me acostumar com isso.</RimGram_RvArrive_3>
+  <RimGram_RvArrive_4>Integridade do casco: ok. Integridade da tripulação: duvidosa. Bem-vindos a {EXTRA}.</RimGram_RvArrive_4>
+  <RimGram_RvNewSystem_0>Primeiros humanos em {EXTRA}? Talvez. Primeiros a postar sobre isso? Com certeza.</RimGram_RvNewSystem_0>
+  <RimGram_RvNewSystem_1>Mapeamos um sistema novo hoje: {EXTRA}. O direito de batizar fica com quem limpar os banheiros essa semana.</RimGram_RvNewSystem_1>
+  <RimGram_RvNewSystem_2>A estrela aqui é de outra cor. As fotos não fazem jus.</RimGram_RvNewSystem_2>
+  <RimGram_RvNewSystem_3>Em algum lugar, um cartógrafo sentiu um arrepio. {EXTRA} agora está no mapa.</RimGram_RvNewSystem_3>
+  <RimGram_RvNewSystem_4>Sistema novo, pedras novas, chances novas de ser devorado por alguma coisa. Exploração!</RimGram_RvNewSystem_4>
+  <RimGram_RvStrangerWelcome_0>Bem-vindos a {EXTRA}, viajantes. O combustível é caro e o bar é pior.</RimGram_RvStrangerWelcome_0>
+  <RimGram_RvStrangerWelcome_1>Nave nova nos radares. Oi, {COLONY_name}. Por favor, não atirem nos cargueiros de minério.</RimGram_RvStrangerWelcome_1>
+  <RimGram_RvStrangerWelcome_2>Os locais de {EXTRA} mandam um oi. Alguns mandam outras coisas também.</RimGram_RvStrangerWelcome_2>
+  <RimGram_RvStrangerWelcome_3>Vi a {COLONY_name} chegar. Casco bonito. Pena a pintura.</RimGram_RvStrangerWelcome_3>
+  <RimGram_RvCivFall_0>URGENTE: {EXTRA} entrou em colapso. A última transmissão foi só estática.</RimGram_RvCivFall_0>
+  <RimGram_RvCivFall_1>{EXTRA} acabou. Naves de refugiados já aparecem nas rotas.</RimGram_RvCivFall_1>
+  <RimGram_RvCivFall_2>A história fecha um capítulo hoje. {EXTRA} não existe mais como Estado.</RimGram_RvCivFall_2>
+  <RimGram_RvCivFall_3>Mercados despencam com a queda de {EXTRA}. Saqueadores comemoram.</RimGram_RvCivFall_3>
+  <RimGram_RvRumorFall_0>Sem confirmação: uma civilização inteira ficou em silêncio em algum lugar além da fronteira.</RimGram_RvRumorFall_0>
+  <RimGram_RvRumorFall_1>Comerciantes falam de mundos vazios e relés mortos lá no escuro.</RimGram_RvRumorFall_1>
+  <RimGram_RvRumorFall_2>Uma potência distante caiu. Ninguém sabe o nome. Ninguém vai saber.</RimGram_RvRumorFall_2>
+  <RimGram_RvFirstContact_Imperial_0>Por decreto do trono, reconhecemos {COLONY_name}. Ajoelhar é opcional. Por enquanto.</RimGram_RvFirstContact_Imperial_0>
+  <RimGram_RvFirstContact_Imperial_1>A Coroa registra a chegada de vocês, {COLONY_name}. Tragam tributo e bons modos.</RimGram_RvFirstContact_Imperial_1>
+  <RimGram_RvFirstContact_Imperial_2>Nossos arautos anotaram o nome de vocês, {COLONY_name}. Não nos façam arrepender.</RimGram_RvFirstContact_Imperial_2>
+  <RimGram_RvFirstContact_Holy_0>A Luz guiou {COLONY_name} até nós. Abençoada seja a viagem.</RimGram_RvFirstContact_Holy_0>
+  <RimGram_RvFirstContact_Holy_1>Peregrinos, sejam bem-vindos. {COLONY_name} agora está nas nossas orações. Querendo ou não.</RimGram_RvFirstContact_Holy_1>
+  <RimGram_RvFirstContact_Holy_2>As estrelas previram a vinda de vocês, {COLONY_name}. Também previram o atraso.</RimGram_RvFirstContact_Holy_2>
+  <RimGram_RvFirstContact_Republic_0>A Assembleia dá boas-vindas a {COLONY_name}. Uma comissão foi criada pra decidir o quão calorosas.</RimGram_RvFirstContact_Republic_0>
+  <RimGram_RvFirstContact_Republic_1>Olá, {COLONY_name}! Nossos cidadãos votaram por dizer oi. 52 a 48.</RimGram_RvFirstContact_Republic_1>
+  <RimGram_RvFirstContact_Republic_2>Fronteiras abertas, mercados abertos, mentes abertas. Bem-vindos, {COLONY_name}.</RimGram_RvFirstContact_Republic_2>
+  <RimGram_RvFirstContact_Merchant_0>Cliente novo detectado: {COLONY_name}. Catálogo em anexo. Preço negocia, taxa não.</RimGram_RvFirstContact_Merchant_0>
+  <RimGram_RvFirstContact_Merchant_1>{COLONY_name}! Bem-vindos ao mercado. A primeira compra ganha um adesivo da marca.</RimGram_RvFirstContact_Merchant_1>
+  <RimGram_RvFirstContact_Merchant_2>Todo contato novo é uma oportunidade. Oi, {COLONY_name}, vão comprar o quê?</RimGram_RvFirstContact_Merchant_2>
+  <RimGram_RvFirstContact_Martial_0>Contato registrado: {COLONY_name}. Nível de ameaça em análise. Fiquem na sua rota.</RimGram_RvFirstContact_Martial_0>
+  <RimGram_RvFirstContact_Martial_1>Nossa frota viu vocês, {COLONY_name}. Nossa frota vê tudo.</RimGram_RvFirstContact_Martial_1>
+  <RimGram_RvFirstContact_Martial_2>Bem-vindos. Armas frias, por favor. As nossas estão sempre quentes.</RimGram_RvFirstContact_Martial_2>
+  <RimGram_RvFirstContact_Hive_0>NOVO NÓ OBSERVADO: {COLONY_name}. CURIOSIDADE SUBINDO. SAUDAÇÕES.</RimGram_RvFirstContact_Hive_0>
+  <RimGram_RvFirstContact_Hive_1>Nós somos muitos. Vocês são poucos. Dizemos oi em uníssono, {COLONY_name}.</RimGram_RvFirstContact_Hive_1>
+  <RimGram_RvFirstContact_Hive_2>Sinal recebido. Sinal interpretado. Sinal apreciado. Bem-vindos, {COLONY_name}.</RimGram_RvFirstContact_Hive_2>
+  <RimGram_RvFirstContact_Glitter_0>Ah, uma naviazinha da orla! Que graça. Bem-vindos, {COLONY_name}.</RimGram_RvFirstContact_Glitter_0>
+  <RimGram_RvFirstContact_Glitter_1>Nossas crianças estudam naves como a de vocês na aula de história. Bem-vindos, {COLONY_name}!</RimGram_RvFirstContact_Glitter_1>
+  <RimGram_RvFirstContact_Glitter_2>Precisam de algo, {COLONY_name}? Remédio? Um casco que não vaze?</RimGram_RvFirstContact_Glitter_2>
+  <RimGram_RvFirstContact_Frontier_0>Outra nave por aqui? Hum. Oi, {COLONY_name}. Tem peça sobrando?</RimGram_RvFirstContact_Frontier_0>
+  <RimGram_RvFirstContact_Frontier_1>Na fronteira todo mundo é vizinho. Bem-vindos, {COLONY_name}.</RimGram_RvFirstContact_Frontier_1>
+  <RimGram_RvFirstContact_Frontier_2>Vimos o brilho do motor de vocês a três luas de distância, {COLONY_name}. Passem aqui pra um ensopado.</RimGram_RvFirstContact_Frontier_2>
+  <RimGram_RvFirstContact_Pirate_0>Olha só, carne nova. Oi, {COLONY_name}. Que carga bonita vocês devem ter.</RimGram_RvFirstContact_Pirate_0>
+  <RimGram_RvFirstContact_Pirate_1>{COLONY_name}, é? Vamos lembrar desse nome. Pra mira.</RimGram_RvFirstContact_Pirate_1>
+  <RimGram_RvFirstContact_Pirate_2>Nave nova nas rotas. Pessoal, afiem os machados de abordagem.</RimGram_RvFirstContact_Pirate_2>
+  <RimGram_RvRumorCiv_0>Luzes estranhas além da borda dos mapas. Tem alguém grande morando lá.</RimGram_RvRumorCiv_0>
+  <RimGram_RvRumorCiv_1>Captei uma transmissão numa língua que ninguém aqui fala. Assustador ou empolgante? Os dois.</RimGram_RvRumorCiv_1>
+  <RimGram_RvRumorCiv_2>Dizem que tem um império além da nebulosa. Dizem muita coisa.</RimGram_RvRumorCiv_2>
+  <RimGram_RvRumorCiv_3>Uma frota desconhecida passou pelo nosso relé ontem à noite. Sem saudação. Sem nome.</RimGram_RvRumorCiv_3>
+  <RimGram_RvWarOnPlayer_0>{COLONY_name} escolheu a guerra. Que assim seja.</RimGram_RvWarOnPlayer_0>
+  <RimGram_RvWarOnPlayer_1>Para {COLONY_name}: nossas frotas estão em movimento. Aproveitem a última semana tranquila.</RimGram_RvWarOnPlayer_1>
+  <RimGram_RvWarOnPlayer_2>Declaramos {COLONY_name} inimiga de {FACTION_name}. Espalhem a notícia.</RimGram_RvWarOnPlayer_2>
+  <RimGram_RvWarOnPlayer_3>A diplomacia falhou. Engenheiros, carreguem os torpedos.</RimGram_RvWarOnPlayer_3>
+  <RimGram_RvPlayerWar_0>GUERRA: {COLONY_name} e {EXTRA} estão agora em conflito aberto.</RimGram_RvPlayerWar_0>
+  <RimGram_RvPlayerWar_1>Rotas perto de {COLONY_name} declaradas inseguras com o início da guerra contra {EXTRA}.</RimGram_RvPlayerWar_1>
+  <RimGram_RvPlayerWar_2>Analistas dão 30% de chance a {COLONY_name} contra {EXTRA}. Analistas já erraram antes.</RimGram_RvPlayerWar_2>
+  <RimGram_RvPeaceWithPlayer_0>Paz com {COLONY_name}. Vamos ficar de olho.</RimGram_RvPeaceWithPlayer_0>
+  <RimGram_RvPeaceWithPlayer_1>As armas se calam. Para {COLONY_name}: boa luta.</RimGram_RvPeaceWithPlayer_1>
+  <RimGram_RvPeaceWithPlayer_2>Tratado assinado com {COLONY_name}. Nossos historiadores vão chamar de vitória de qualquer jeito.</RimGram_RvPeaceWithPlayer_2>
+  <RimGram_RvCivWar_0>GUERRA DECLARADA: {EXTRA}. Comerciantes devem evitar a fronteira.</RimGram_RvCivWar_0>
+  <RimGram_RvCivWar_1>Frotas se mobilizando: {EXTRA}. Preço da pipoca sobe 300%.</RimGram_RvCivWar_1>
+  <RimGram_RvCivWar_2>Mais uma guerra no setor: {EXTRA}. Relés de refugiados de prontidão.</RimGram_RvCivWar_2>
+  <RimGram_RvCivWarDeclare_0>{TARGETFACTION_name} passou dos limites. Então é guerra.</RimGram_RvCivWarDeclare_0>
+  <RimGram_RvCivWarDeclare_1>Cidadãos de {FACTION_name}: marchamos contra {TARGETFACTION_name}.</RimGram_RvCivWarDeclare_1>
+  <RimGram_RvCivWarDeclare_2>Para {TARGETFACTION_name}: vocês tiveram a sua chance.</RimGram_RvCivWarDeclare_2>
+  <RimGram_RvRumorWar_0>Relatos sem confirmação: {EXTRA} está em guerra com alguém que ninguém conhece.</RimGram_RvRumorWar_0>
+  <RimGram_RvRumorWar_1>Destroços vindo de além dos mapas. Frotas de {EXTRA} foram vistas indo pra lá.</RimGram_RvRumorWar_1>
+  <RimGram_RvCivPeace_0>PAZ: {EXTRA} assinaram um tratado. O preço do seguro cai.</RimGram_RvCivPeace_0>
+  <RimGram_RvCivPeace_1>A guerra acabou: {EXTRA}. Os ferros-velhos estão arrasados.</RimGram_RvCivPeace_1>
+  <RimGram_RvColonyTaken_0>{COLONY_name} tomou {EXTRA}. Bandeiras novas estão subindo.</RimGram_RvColonyTaken_0>
+  <RimGram_RvColonyTaken_1>{EXTRA} acorda sob nova direção: {COLONY_name}.</RimGram_RvColonyTaken_1>
+  <RimGram_RvColonyFounded_0>Fundamos {EXTRA} hoje! População: pequena. Esperança: enorme.</RimGram_RvColonyFounded_0>
+  <RimGram_RvColonyFounded_1>Fincamos a bandeira em {EXTRA}. Alguém por favor rega a bandeira.</RimGram_RvColonyFounded_1>
+  <RimGram_RvColonyFounded_2>{EXTRA} agora é oficialmente uma colônia de {COLONY_name}. Chorei um pouco. Talvez muito.</RimGram_RvColonyFounded_2>
+  <RimGram_RvColonyFounded_3>Casa nova desbloqueada: {EXTRA}. Primeira regra: não se fala do pouso.</RimGram_RvColonyFounded_3>
+  <RimGram_RvAnomaly_0>Os sensores captaram algo estranho: {EXTRA}. A equipe de ciência está empolgada ou apavorada.</RimGram_RvAnomaly_0>
+  <RimGram_RvAnomaly_1>Achamos um(a) {EXTRA} por aqui. Eu não vou encostar. Alguém encosta.</RimGram_RvAnomaly_1>
+  <RimGram_RvAnomaly_2>Nossa pesquisadora não dorme desde que achamos o(a) {EXTRA}. Nem eu, mas por outros motivos.</RimGram_RvAnomaly_2>
+  <RimGram_RvAnomaly_3>O universo é estranho e hoje provou. #{EXTRA}</RimGram_RvAnomaly_3>
+  <RimGram_RvCouncil_0>CONSELHO GALÁCTICO: resolução aprovada: {EXTRA}.</RimGram_RvCouncil_0>
+  <RimGram_RvCouncil_1>O Conselho falou. '{EXTRA}' agora é lei nos mundos-membro.</RimGram_RvCouncil_1>
+  <RimGram_RvCouncil_2>Delegados comemoram '{EXTRA}'. Contrabandistas, nem tanto.</RimGram_RvCouncil_2>
+  <RimGram_RvFlow_Harmony_0>Algo despertou dentro de mim hoje. Parece… uma música que eu quase consigo ouvir.</RimGram_RvFlow_Harmony_0>
+  <RimGram_RvFlow_Harmony_1>Movi um copo sem encostar nele. Estou escolhendo ficar calma(o) com isso.</RimGram_RvFlow_Harmony_1>
+  <RimGram_RvFlow_Harmony_2>O Fluxo é real. E é quentinho. #Harmonia</RimGram_RvFlow_Harmony_2>
+  <RimGram_RvFlow_Rupture_0>Sinto o medo de todo mundo nesta nave. Gosto mais do que deveria.</RimGram_RvFlow_Rupture_0>
+  <RimGram_RvFlow_Rupture_1>Algo se rompeu dentro de mim. É barulhento. É raivoso. É meu.</RimGram_RvFlow_Rupture_1>
+  <RimGram_RvFlow_Rupture_2>O Fluxo responde à força. Sorte a minha. #Ruptura</RimGram_RvFlow_Rupture_2>
+  <RimGram_RvSpaceLife_0>Dia 100 sem gravidade. Meu cabelo conquistou a independência.</RimGram_RvSpaceLife_0>
+  <RimGram_RvSpaceLife_1>Vista da janela hoje: escuridão infinita e um asteroide suspeito.</RimGram_RvSpaceLife_1>
+  <RimGram_RvSpaceLife_2>Saudade do cheiro de chuva. O ar reciclado cheira a pé e ambição.</RimGram_RvSpaceLife_2>
+  <RimGram_RvSpaceLife_3>Checagem das criocápsulas: ainda frias, ainda sinistras, ainda não vou dormir numa.</RimGram_RvSpaceLife_3>
+  <RimGram_RvSpaceLife_4>A cozinha serviu 'bolo nutritivo' de novo. Serviu com confiança.</RimGram_RvSpaceLife_4>
+  <RimGram_RvSpaceLife_5>Selfie de EVA! O reflexo do visor me deixa heroico(a). Eu estava consertando um duto do banheiro.</RimGram_RvSpaceLife_5>
+  <RimGram_RvSpaceLife_6>Alguém colocou música dramática na playlist da eclusa. Aprovo.</RimGram_RvSpaceLife_6>
+  <RimGram_RvSpaceLife_7>Dica da vida a bordo: nunca pergunte ao engenheiro que barulho foi aquele.</RimGram_RvSpaceLife_7>
+  <RimGram_RvSpaceLife_8>Olhei as estrelas por uma hora hoje. Elas não me olharam de volta. Grosseiras.</RimGram_RvSpaceLife_8>
+  <RimGram_RvSpaceLife_9>A estufa hidropônica cheira a floresta se você fechar os olhos e mentir pra si mesma(o).</RimGram_RvSpaceLife_9>
+  <RimGram_RvStrangerChatter_0>Notícias do minerador: achei níquel, ferro e um inseto espacial muito bravo.</RimGram_RvStrangerChatter_0>
+  <RimGram_RvStrangerChatter_1>Vendo peças de reator pouco usadas. O brilho é normal. Provavelmente.</RimGram_RvStrangerChatter_1>
+  <RimGram_RvStrangerChatter_2>Dia 40 da peregrinação. O relé sagrado ainda está a 300 anos-luz. Fé!</RimGram_RvStrangerChatter_2>
+  <RimGram_RvStrangerChatter_3>Mural de recompensas cheio essa semana. Se virem um homem com tapa-olho dourado, me chamem.</RimGram_RvStrangerChatter_3>
+  <RimGram_RvStrangerChatter_4>O fiscal no portal de salto perguntou se eu tinha 'algo a declarar'. Declarei minha tristeza.</RimGram_RvStrangerChatter_4>
+  <RimGram_RvStrangerChatter_5>Transportando gelo pelo cinturão. 6 meses sozinho. Comecei a dar nome pras caixas.</RimGram_RvStrangerChatter_5>
+  <RimGram_RvStrangerChatter_6>Boato na estação: alguém achou um fragmento arcotech. Boato na estação: alguém sempre acha.</RimGram_RvStrangerChatter_6>
+  <RimGram_RvStrangerChatter_7>A taxa de atracagem subiu de novo. O espaço é de graça, estacionar não.</RimGram_RvStrangerChatter_7>
+  <RimGram_RvVoice_Imperial_0>O desfile de aniversário do Imperador foi lindo. A presença era obrigatória e alegre.</RimGram_RvVoice_Imperial_0>
+  <RimGram_RvVoice_Imperial_1>Novos títulos de nobreza disponíveis. Procure o arauto mais próximo. Traga prata.</RimGram_RvVoice_Imperial_1>
+  <RimGram_RvVoice_Imperial_2>Ordem é paz. Paz é ordem. O Trono agradece sua obediência.</RimGram_RvVoice_Imperial_2>
+  <RimGram_RvVoice_Imperial_3>Hoje nossas frotas saudaram a Coroa em formação perfeita. Glória a {FACTION_name}.</RimGram_RvVoice_Imperial_3>
+  <RimGram_RvVoice_Holy_0>Lembrete diário: as estrelas estão ouvindo. Comportem-se.</RimGram_RvVoice_Holy_0>
+  <RimGram_RvVoice_Holy_1>Nossa nave-templo completou a milésima órbita de oração.</RimGram_RvVoice_Holy_1>
+  <RimGram_RvVoice_Holy_2>A dúvida é um vácuo frio. A fé é um casco quente.</RimGram_RvVoice_Holy_2>
+  <RimGram_RvVoice_Holy_3>Peregrinos são bem-vindos. Hereges também, pra outras atividades.</RimGram_RvVoice_Holy_3>
+  <RimGram_RvVoice_Republic_0>Época de eleição! Por favor, parem de mandar hologramas de candidatos pras crianças.</RimGram_RvVoice_Republic_0>
+  <RimGram_RvVoice_Republic_1>O Senado debateu por 14 horas. Resultado: outro debate.</RimGram_RvVoice_Republic_1>
+  <RimGram_RvVoice_Republic_2>Liberdade de expressão, livre comércio, café grátis às sextas. Isso é {FACTION_name}.</RimGram_RvVoice_Republic_2>
+  <RimGram_RvVoice_Republic_3>Nova lei de infraestrutura aprovada. A estrada espacial fica pronta em só 40 anos.</RimGram_RvVoice_Republic_3>
+  <RimGram_RvVoice_Merchant_0>Lucro trimestral subiu 12%. Moral subiu 0%. Investidores encantados.</RimGram_RvVoice_Merchant_0>
+  <RimGram_RvVoice_Merchant_1>Oferta limitada: compre uma lançadeira e leve a segunda com 5% de desconto. Termos se aplicam. Muitos termos.</RimGram_RvVoice_Merchant_1>
+  <RimGram_RvVoice_Merchant_2>A satisfação do cliente é a nossa prioridade nº 47.</RimGram_RvVoice_Merchant_2>
+  <RimGram_RvVoice_Merchant_3>Nosso logo novo tem mais estrelas. Isso significa qualidade.</RimGram_RvVoice_Merchant_3>
+  <RimGram_RvVoice_Martial_0>Treino concluído em 4 minutos cravados. O inimigo não teria chance. O inimigo era um alvo de papelão.</RimGram_RvVoice_Martial_0>
+  <RimGram_RvVoice_Martial_1>Força pela disciplina. Disciplina pelas flexões.</RimGram_RvVoice_Martial_1>
+  <RimGram_RvVoice_Martial_2>Nossas fronteiras estão seguras. Nossa paciência, não.</RimGram_RvVoice_Martial_2>
+  <RimGram_RvVoice_Martial_3>Nave de guerra nova batizada hoje. Demos o nome de 'Diplomacia'.</RimGram_RvVoice_Martial_3>
+  <RimGram_RvVoice_Hive_0>OTIMIZAMOS O CAFÉ DA MANHÃ. EFICIÊNCIA SUBIU 3%. ALEGRIA INALTERADA.</RimGram_RvVoice_Hive_0>
+  <RimGram_RvVoice_Hive_1>Um pensamento. Muitas mentes. Hoje o pensamento foi sobre o clima.</RimGram_RvVoice_Hive_1>
+  <RimGram_RvVoice_Hive_2>Individualidade detectada no setor 7. Corrigindo com delicadeza.</RimGram_RvVoice_Hive_2>
+  <RimGram_RvVoice_Hive_3>Sonhamos com a velha Terra. Todos nós. Ao mesmo tempo. Foi bom.</RimGram_RvVoice_Hive_3>
+  <RimGram_RvVoice_Glitter_0>Nossas alas médicas agora regeneram membros em menos de uma hora. Foi mal, povo da orla.</RimGram_RvVoice_Glitter_0>
+  <RimGram_RvVoice_Glitter_1>Festival de poesia essa semana. As IAs estão ganhando de novo.</RimGram_RvVoice_Glitter_1>
+  <RimGram_RvVoice_Glitter_2>Lembrete: por favor, não tragam muffalos pelo espaçoporto. De novo.</RimGram_RvVoice_Glitter_2>
+  <RimGram_RvVoice_Glitter_3>A vida aqui é fácil. Fácil demais. Alguns de nós começaram a quebrar coisas de propósito.</RimGram_RvVoice_Glitter_3>
+  <RimGram_RvVoice_Frontier_0>Consertei o suporte de vida com fita de novo. A fita é a verdadeira coluna da civilização.</RimGram_RvVoice_Frontier_0>
+  <RimGram_RvVoice_Frontier_1>Plantamos o primeiro tomate em solo de vácuo. O nome dele é Esperança.</RimGram_RvVoice_Frontier_1>
+  <RimGram_RvVoice_Frontier_2>Por aqui o vizinho mora a 2 semanas-luz e ainda pede ferramenta emprestada.</RimGram_RvVoice_Frontier_2>
+  <RimGram_RvVoice_Frontier_3>Vida na fronteira: sem leis, sem impostos, sem água quente.</RimGram_RvVoice_Frontier_3>
+  <RimGram_RvVoice_Pirate_0>Saque novo, pintura nova, ego novo. Semana boa pra {FACTION_name}.</RimGram_RvVoice_Pirate_0>
+  <RimGram_RvVoice_Pirate_1>Perdemos uma nave pras torretas de {COLONY_name}. Grosseria. A gente volta.</RimGram_RvVoice_Pirate_1>
+  <RimGram_RvVoice_Pirate_2>Recrutamento pra abordagem aberto. Benefícios: nenhum. Diversão: muita.</RimGram_RvVoice_Pirate_2>
+  <RimGram_RvVoice_Pirate_3>Naves mercantes do setor, considerem isso um lembrete amigável.</RimGram_RvVoice_Pirate_3>
+</LanguageData>

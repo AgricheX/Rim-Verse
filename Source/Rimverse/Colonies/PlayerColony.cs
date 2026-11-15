@@ -33,8 +33,37 @@ namespace Rimverse
         }
     }
 
+    public enum TitheMode
+    {
+        Silver,
+        Goods,
+        Food,
+        Balanced
+    }
+
+    public class ColonyFacility : IExposable
+    {
+        public ColonyFacilityDef def;
+        public int readyTick;
+
+        public bool Ready => Find.TickManager.TicksGame >= readyTick;
+
+        public void ExposeData()
+        {
+            Scribe_Defs.Look(ref def, "def");
+            Scribe_Values.Look(ref readyTick, "readyTick");
+        }
+    }
+
     public class PlayerColony : IExposable
     {
+        public List<ColonyFacility> facilities = new List<ColonyFacility>();
+        public TitheMode tithe = TitheMode.Balanced;
+        public bool surface;
+        public int surfaceTileId = -1;
+        public int captured;
+        public int nextSituationTick;
+        public float strength;
         public int id;
         public string name;
         public string systemKey;
@@ -74,7 +103,24 @@ namespace Rimverse
             }
         }
 
-        public float Wealth => industries.Sum(i => ColonyUtility.Cost(i.type)) + population * 100f;
+        public float Wealth => industries.Sum(i => ColonyUtility.Cost(i.type)) + facilities.Where(f => f.def != null).Sum(f => f.def.costSilver) + population * 100f;
+
+        public int Tier
+        {
+            get
+            {
+                if (population >= 250f && (Has(ColonyIndustry.MilitaryBase) || facilities.Any(f => f.Ready && f.def != null && f.def.effects.defense >= 40f))) return 3;
+                if (population >= 80f) return 2;
+                if (population >= 20f) return 1;
+                return 0;
+            }
+        }
+
+        public string TierLabel => ("Rimverse_Tier_" + Tier).Translate();
+
+        public int FacilityCount(ColonyFacilityDef d) => facilities.Count(f => f.def == d);
+
+        public bool HasFacility(ColonyFacilityDef d) => facilities.Any(f => f.def == d && f.Ready);
 
         public void AddStock(string defName, int count)
         {
@@ -99,12 +145,21 @@ namespace Rimverse
             Scribe_Collections.Look(ref industries, "industries", LookMode.Deep);
             Scribe_Collections.Look(ref settlers, "settlers", LookMode.Reference);
             Scribe_Collections.Look(ref stock, "stock", LookMode.Value, LookMode.Value);
+            Scribe_Collections.Look(ref facilities, "facilities", LookMode.Deep);
+            Scribe_Values.Look(ref tithe, "tithe", TitheMode.Balanced);
+            Scribe_Values.Look(ref surface, "surface");
+            Scribe_Values.Look(ref surfaceTileId, "surfaceTileId", -1);
+            Scribe_Values.Look(ref captured, "captured");
+            Scribe_Values.Look(ref nextSituationTick, "nextSituationTick");
+            Scribe_Values.Look(ref strength, "strength");
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 if (industries == null) industries = new List<ColonyBuild>();
                 if (settlers == null) settlers = new List<Pawn>();
                 settlers.RemoveAll(p => p == null);
                 if (stock == null) stock = new Dictionary<string, int>();
+                if (facilities == null) facilities = new List<ColonyFacility>();
+                facilities.RemoveAll(f => f.def == null);
             }
         }
     }
