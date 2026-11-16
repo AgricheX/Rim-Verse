@@ -15,6 +15,7 @@ namespace Rimverse
     public class GameComponent_Universe : GameComponent
     {
         public int universeSeed;
+        public float yearsInCryo;
         public string homeSystemKey;
         public float densityFactor = -1f;
         public int groupSize = -1;
@@ -281,6 +282,7 @@ namespace Rimverse
             Scribe_Values.Look(ref groupSize, "groupSize", -1);
             Scribe_Values.Look(ref scaleVersion, "scaleVersion", 0);
             Scribe_Collections.Look(ref scanBubbles, "scanBubbles", LookMode.Deep);
+            Scribe_Values.Look(ref yearsInCryo, "yearsInCryo");
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 if (catalog == null) catalog = new Dictionary<string, int>();

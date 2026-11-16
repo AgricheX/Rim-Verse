@@ -17,6 +17,8 @@ namespace Rimverse
         public bool surface;
         public bool surfaceSet;
         public string destinationSystemKey;
+        public InterstellarMode travelMode;
+        public float travelYears;
 
         private bool atmosphereCached;
         private AtmosphereType atmosphereCache;
@@ -223,6 +225,8 @@ namespace Rimverse
             Scribe_Values.Look(ref surface, "surface");
             Scribe_Values.Look(ref surfaceSet, "surfaceSet");
             Scribe_Values.Look(ref destinationSystemKey, "destinationSystemKey");
+            Scribe_Values.Look(ref travelMode, "travelMode");
+            Scribe_Values.Look(ref travelYears, "travelYears");
         }
     }
 }

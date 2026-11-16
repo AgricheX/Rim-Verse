@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <Rimverse_BarRouteBonus>Rota da barra: as duas estrelas estão na barra galáctica, então o salto gasta metade da matéria, alcança o dobro e leva metade do tempo.</Rimverse_BarRouteBonus>
   <Rimverse_BodyDensity>Densidade: {0} g/cm³</Rimverse_BodyDensity>
   <Rimverse_BodyEscape>Velocidade de escape: {0} km/s</Rimverse_BodyEscape>
   <Rimverse_BodyKm>Raio: {0} km</Rimverse_BodyKm>
@@ -37,6 +38,15 @@
   <Rimverse_CosmicRadius>Raio: {0} milhões de anos-luz</Rimverse_CosmicRadius>
   <Rimverse_CosmicScaleLine>Largura da vista: {0} milhões de anos-luz</Rimverse_CosmicScaleLine>
   <Rimverse_CosmicZoomIn>Aproximar</Rimverse_CosmicZoomIn>
+  <Rimverse_CryoAdvanced>{0} subiu {1} estágios de desenvolvimento.</Rimverse_CryoAdvanced>
+  <Rimverse_CryoEstimate>Travessia em criossono: {0} al a um décimo da velocidade da luz, cerca de {1} anos dormindo, {2} de combustível químico.</Rimverse_CryoEstimate>
+  <Rimverse_CryoExpanded>{0} colonizou {1} mundos novos.</Rimverse_CryoExpanded>
+  <Rimverse_CryoFell>{0} não existe mais.</Rimverse_CryoFell>
+  <Rimverse_CryoHere>Atravessar em criossono</Rimverse_CryoHere>
+  <Rimverse_CryoNewCiv>{0} surgiu enquanto você dormia.</Rimverse_CryoNewCiv>
+  <Rimverse_CryoQuiet>Pouca coisa mudou entre os povos que você conhece.</Rimverse_CryoQuiet>
+  <Rimverse_CryoRumours>Sinais antigos falam de {0} povos que ninguém conheceu ainda.</Rimverse_CryoRumours>
+  <Rimverse_CryoShrank>{0} perdeu {1} mundos.</Rimverse_CryoShrank>
   <Rimverse_GalaxyAttr_Barred>{0} barrada</Rimverse_GalaxyAttr_Barred>
   <Rimverse_GalaxyAttr_Ringed>{0} com anel</Rimverse_GalaxyAttr_Ringed>
   <Rimverse_GalaxyClickHelp>Clique em qualquer ponto da galáxia para abrir aquele setor.</Rimverse_GalaxyClickHelp>
@@ -45,8 +55,12 @@
   <Rimverse_GridSize>Tamanho: {0} anos-luz de largura</Rimverse_GridSize>
   <Rimverse_GridSystems>Sistemas estelares esperados: {0}</Rimverse_GridSystems>
   <Rimverse_InBar>Dentro da barra galáctica: estrelas mais densas e rotas mais rápidas.</Rimverse_InBar>
+  <Rimverse_LaneEstimate>Hiperrota: {0} al, cerca de {1} dias. Nada de combustível depois de entrar na rota.</Rimverse_LaneEstimate>
+  <Rimverse_LaneHere>Seguir a hiperrota</Rimverse_LaneHere>
   <Rimverse_LetterBaseCleared>Base pirata tomada</Rimverse_LetterBaseCleared>
   <Rimverse_LetterBaseClearedDesc>Os últimos defensores de {0} caíram. A base é sua para saquear: o que sobrou nos porões pode ser levado para a sua nave.</Rimverse_LetterBaseClearedDesc>
+  <Rimverse_LetterCryoWake>As cápsulas se abrem depois de {0} anos. A galáxia não esperou por você:</Rimverse_LetterCryoWake>
+  <Rimverse_LetterCryoWakeLabel>Despertar</Rimverse_LetterCryoWakeLabel>
   <Rimverse_LetterMegaStage>{0}: etapa concluída</Rimverse_LetterMegaStage>
   <Rimverse_LetterMegaStageDesc>{0} chegou a uma nova etapa: {1} ({2}/{3}). A obra segue lá fora na órbita, e a estrutura agora rende mais do que foi feita para dar.</Rimverse_LetterMegaStageDesc>
   <Rimverse_MegaAlreadySupplied>Esta etapa já foi abastecida.</Rimverse_MegaAlreadySupplied>
@@ -73,15 +87,26 @@
   <Rimverse_Mega_RingHabitat>habitat em anel</Rimverse_Mega_RingHabitat>
   <Rimverse_Mega_StellarCollector>coletor estelar</Rimverse_Mega_StellarCollector>
   <Rimverse_Mega_WormholeStabilizer>estabilizador de buraco de minhoca</Rimverse_Mega_WormholeStabilizer>
+  <Rimverse_MsgCryoStarted>{0} está à deriva rumo a {1}. A tripulação dorme pelos próximos {2} anos.</Rimverse_MsgCryoStarted>
+  <Rimverse_MsgLaneStarted>{0} entrou na hiperrota para {1}. Chegada em cerca de {2} dias.</Rimverse_MsgLaneStarted>
   <Rimverse_MsgMegaDocked>Atracado em {0}. Uma passarela leva até a eclusa mais próxima.</Rimverse_MsgMegaDocked>
   <Rimverse_MsgMegaSection>{0} passou para a seção {2} de {3} de {1}.</Rimverse_MsgMegaSection>
   <Rimverse_MsgMegaSupplied>Materiais enviados: a obra de {0} continua.</Rimverse_MsgMegaSupplied>
   <Rimverse_MsgTraderDocked>{0} encostou ao lado. Vá até o terminal de comércio para negociar pessoalmente, ou chame pelo console de comunicação.</Rimverse_MsgTraderDocked>
   <Rimverse_MsgTraderLeft>O comerciante soltou as amarras e partiu.</Rimverse_MsgTraderLeft>
+  <Rimverse_ProblemCryoAwake>{0} colonos ainda estão acordados. A travessia leva cerca de {1} anos: coloque todo mundo em cápsulas de criossono antes.</Rimverse_ProblemCryoAwake>
+  <Rimverse_ProblemCryoRange>Longe demais para uma travessia dormindo ({0} al, no máximo {1} al).</Rimverse_ProblemCryoRange>
+  <Rimverse_ProblemLaneClass>Só naves capitais conseguem entrar numa hiperrota (esta nave é {0}).</Rimverse_ProblemLaneClass>
+  <Rimverse_ProblemNoLanes>Esta galáxia não tem hiperrotas.</Rimverse_ProblemNoLanes>
+  <Rimverse_ProblemNotOnLane>Nenhuma hiperrota liga esta estrela ao sistema atual.</Rimverse_ProblemNotOnLane>
+  <Rimverse_ProblemWarpClass>Uma nave da classe {0} não segura a bolha de dobra entre estrelas. Atravesse em criossono ou melhore a nave.</Rimverse_ProblemWarpClass>
   <Rimverse_RG_MegaStage>{0} acabou de concluir uma nova etapa de {1}: {2}. Dá para ver da órbita.</Rimverse_RG_MegaStage>
   <Rimverse_ScannedVolume>Varreduras de sensor: {0} ({1} anos-luz cúbicos)</Rimverse_ScannedVolume>
   <Rimverse_SectorCharted>Este setor tem estrelas.</Rimverse_SectorCharted>
   <Rimverse_SectorEmpty>Quase vazio: nenhum sistema estelar mapeado aqui.</Rimverse_SectorEmpty>
+  <Rimverse_SizeClassExact>Classe de tamanho: {0}</Rimverse_SizeClassExact>
+  <Rimverse_SizeClassRange>Classe de tamanho: entre {0} e {1}</Rimverse_SizeClassRange>
+  <Rimverse_SizeClassUnknown>Classe de tamanho: fora do alcance dos sensores</Rimverse_SizeClassUnknown>
   <Rimverse_SysBeyondFrost>Além da linha de gelo: o gelo não derrete aqui.</Rimverse_SysBeyondFrost>
   <Rimverse_SysInHabitable>Dentro da zona habitável: água líquida é possível.</Rimverse_SysInHabitable>
   <Rimverse_SysLegend>Faixa verde: zona habitável. Anel azul tracejado: linha de gelo. Halo colorido: mundo habitado.</Rimverse_SysLegend>
@@ -93,6 +118,7 @@
   <Rimverse_TerminalLinked>Ligado a: {0}</Rimverse_TerminalLinked>
   <Rimverse_TerminalNoTrader>Nenhum comerciante ligado a este terminal agora.</Rimverse_TerminalNoTrader>
   <Rimverse_TerminalTrade>Negociar com {0}</Rimverse_TerminalTrade>
+  <Rimverse_TravelRuleLine>Viagem nesta galáxia: {0}</Rimverse_TravelRuleLine>
   <Rimverse_UniverseAge>Idade do universo: {0} bilhões de anos</Rimverse_UniverseAge>
   <Rimverse_ViewHere>Ir para o atual</Rimverse_ViewHere>
 </LanguageData>

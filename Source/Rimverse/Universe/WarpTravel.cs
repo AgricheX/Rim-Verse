@@ -37,6 +37,16 @@ namespace Rimverse
 
         public static float MatterCost(RimverseShip ship, double ly) => (float)(MatterPerLyPer100t * ly * ship.mass / 100.0) * RimverseMod.Settings.fuelConsumptionMultiplier;
 
+        public static bool BarRoute(StarSystemId a, StarSystemId b)
+        {
+            GameComponent_Universe u = GameComponent_Universe.Instance;
+            if (u == null || a.galaxy != b.galaxy) return false;
+            GalaxyData g = u.Galaxy(a.galaxy);
+            return g != null && g.rule == TravelRule.WarpBarRoutes && g.InBar(u.PositionOf(a)) && g.InBar(u.PositionOf(b));
+        }
+
+        public static float DaysFor(StarSystemId a, StarSystemId b) => BarRoute(a, b) ? JumpDays * 0.5f : JumpDays;
+
         public static int CooldownTicksLeft(RimverseShip ship)
         {
             int end = ship.state.lastWarpTick + ship.warpCooldownHours * RimverseUnits.TicksPerHour;
@@ -51,17 +61,20 @@ namespace Rimverse
             GameComponent_Universe u = GameComponent_Universe.Instance;
             StarSystemId here = loc.SystemId;
             ly = u.DistanceLy(here, dest);
-            matter = double.IsInfinity(ly) ? 0f : MatterCost(ship, ly);
+            bool bar = BarRoute(here, dest);
+            matter = double.IsInfinity(ly) ? 0f : MatterCost(ship, ly) * (bar ? 0.5f : 1f);
+            int range = bar ? ship.warpRangeLy * 2 : ship.warpRangeLy;
             if (!SpaceMapUtility.IsRimverseSpace(ship.map)) problems.Add("Rimverse_ProblemNotInSpace".Translate());
             if (loc.Traveling) problems.Add("Rimverse_ProblemAlreadyTraveling".Translate());
             if (dest == here) problems.Add("Rimverse_ProblemAlreadyThere".Translate());
             if (dest.galaxy != here.galaxy) problems.Add("Rimverse_ProblemOtherGalaxy".Translate());
             else if (!RuleAllowsWarp(u.Galaxy(here.galaxy).rule)) problems.Add("Rimverse_ProblemTravelRule".Translate(("Rimverse_TravelRule_" + u.Galaxy(here.galaxy).rule).Translate()));
             if (ship.multipleBridges) problems.Add("Rimverse_ProblemMultipleBridges".Translate());
+            if (ship.warpRangeLy > 0 && !ShipClassifier.CanInterstellarWarp(ship.shipClass)) problems.Add("Rimverse_ProblemWarpClass".Translate(("Rimverse_Class_" + ship.shipClass).Translate()));
             if (ship.warpRangeLy <= 0) problems.Add("Rimverse_ProblemNoWarpDrive".Translate());
             else
             {
-                if (ly > ship.warpRangeLy) problems.Add("Rimverse_ProblemWarpRange".Translate(ly.ToString("0.#"), ship.warpRangeLy));
+                if (ly > range) problems.Add("Rimverse_ProblemWarpRange".Translate(ly.ToString("0.#"), range));
                 if (ship.mass > ship.warpMaxMass) problems.Add("Rimverse_ProblemWarpMass".Translate(ship.mass.ToString("0"), ship.warpMaxMass.ToString("0")));
                 int cd = CooldownTicksLeft(ship);
                 if (cd > 0) problems.Add("Rimverse_ProblemWarpCooldown".Translate((cd / (float)RimverseUnits.TicksPerHour).ToString("0.#")));
@@ -88,14 +101,60 @@ namespace Rimverse
             loc.destinationSystemKey = dest.Key;
             loc.destinationBody = -1;
             loc.departTick = now;
-            loc.arriveTick = now + RimverseUnits.TicksFromDays(JumpDays);
+            loc.arriveTick = now + RimverseUnits.TicksFromDays(DaysFor(loc.SystemId, dest));
             loc.travelAU = 0f;
             loc.travelingShipId = ship.id;
+            loc.travelMode = InterstellarMode.Warp;
+            loc.travelYears = 0f;
             ship.state.thrusting = true;
             ship.state.warping = true;
             ship.map.GetComponent<MapComponent_RimverseShips>().Dirty();
             StarSystemData target = GameComponent_Universe.Instance.GetSystem(dest);
             Messages.Message("Rimverse_MsgWarpStarted".Translate(ship.Label, target.name, ly.ToString("0.#")), ship.bridge, MessageTypeDefOf.TaskCompletion, false);
+            return true;
+        }
+
+        public static List<string> LaneProblems(RimverseShip ship, MapComponent_ShipLocation loc, StarSystemId dest, out double ly)
+        {
+            List<string> problems = new List<string>();
+            GameComponent_Universe u = GameComponent_Universe.Instance;
+            StarSystemId here = loc.SystemId;
+            ly = u.DistanceLy(here, dest);
+            if (!SpaceMapUtility.IsRimverseSpace(ship.map)) problems.Add("Rimverse_ProblemNotInSpace".Translate());
+            if (loc.Traveling) problems.Add("Rimverse_ProblemAlreadyTraveling".Translate());
+            if (dest == here) problems.Add("Rimverse_ProblemAlreadyThere".Translate());
+            if (!Hyperlanes.GalaxyHasLanes(u, here.galaxy)) problems.Add("Rimverse_ProblemNoLanes".Translate());
+            else if (!Hyperlanes.Connected(u, here, dest)) problems.Add("Rimverse_ProblemNotOnLane".Translate());
+            if (!ShipClassifier.CanUseHyperlanes(ship.shipClass)) problems.Add("Rimverse_ProblemLaneClass".Translate(("Rimverse_Class_" + ship.shipClass).Translate()));
+            if (ship.multipleBridges) problems.Add("Rimverse_ProblemMultipleBridges".Translate());
+            ShipCrewUtility.PilotAndCopilot(ship, out Pawn pilot, out _);
+            if (!ShipCrewUtility.HasHelm(ship, pilot)) problems.Add("Rimverse_ProblemNoPilot".Translate());
+            return problems;
+        }
+
+        public static bool TryStartLane(RimverseShip ship, StarSystemId dest)
+        {
+            MapComponent_ShipLocation loc = MapComponent_ShipLocation.For(ship.map);
+            if (loc == null) return false;
+            List<string> problems = LaneProblems(ship, loc, dest, out double ly);
+            if (problems.Count > 0)
+            {
+                Messages.Message("Rimverse_CannotTravel".Translate() + "\n- " + string.Join("\n- ", problems), ship.bridge, MessageTypeDefOf.RejectInput, false);
+                return false;
+            }
+            int now = Find.TickManager.TicksGame;
+            loc.destinationSystemKey = dest.Key;
+            loc.destinationBody = -1;
+            loc.departTick = now;
+            loc.arriveTick = now + RimverseUnits.TicksFromDays(Hyperlanes.Days(ly));
+            loc.travelAU = 0f;
+            loc.travelingShipId = ship.id;
+            loc.travelMode = InterstellarMode.Hyperlane;
+            loc.travelYears = 0f;
+            ship.state.thrusting = true;
+            ship.map.GetComponent<MapComponent_RimverseShips>().Dirty();
+            StarSystemData target = GameComponent_Universe.Instance.GetSystem(dest);
+            Messages.Message("Rimverse_MsgLaneStarted".Translate(ship.Label, target.name, Hyperlanes.Days(ly).ToString("0.#")), ship.bridge, MessageTypeDefOf.TaskCompletion, false);
             return true;
         }
 
@@ -130,6 +189,10 @@ namespace Rimverse
             GameComponent_Universe u = GameComponent_Universe.Instance;
             StarSystemId dest = StarSystemId.FromKey(loc.destinationSystemKey);
             int shipId = loc.travelingShipId;
+            InterstellarMode mode = loc.travelMode;
+            float years = loc.travelYears;
+            loc.travelMode = InterstellarMode.Warp;
+            loc.travelYears = 0f;
             StarSystemId origin = loc.SystemId;
             int originBody = loc.bodyIndex;
             loc.SetLocation(origin, originBody);
@@ -146,7 +209,7 @@ namespace Rimverse
             }
             ship.state.warping = false;
             ship.state.thrusting = false;
-            ship.state.lastWarpTick = Find.TickManager.TicksGame;
+            if (mode == InterstellarMode.Warp) ship.state.lastWarpTick = Find.TickManager.TicksGame;
             comp.Dirty();
             Map target = BodyMapUtility.CreateOrbitPocket(map, ShipLaunchUtility.OrbitMapSize);
             MapComponent_ShipLocation dstLoc = MapComponent_ShipLocation.For(target);
@@ -159,11 +222,12 @@ namespace Rimverse
             ShipMover.Move(ship, target, offset);
             BodyMapUtility.CleanupIfEmpty(map);
             u.SetSystemScan(dest, ScanLevel.Range);
-            LifeAboard.WarpSickness(target);
+            if (mode == InterstellarMode.Warp) LifeAboard.WarpSickness(target);
             RimverseShip moved = target.GetComponent<MapComponent_RimverseShips>().ShipById(bridge.thingIDNumber);
             if (moved != null && moved.sensorSensitivity > 0f && moved.sensorSensitivity <= 100f) u.SetSystemScan(dest, ScanLevel.Exact);
             Find.LetterStack.ReceiveLetter("Rimverse_LetterWarpArrivedLabel".Translate(), "Rimverse_LetterWarpArrived".Translate(label, sys.name, sys.Body(body).name), LetterDefOf.NeutralEvent, bridge);
             AnomalyContent.OnWarpArrived(target, bridge, sys);
+            if (mode == InterstellarMode.Cryosleep) CryoTravel.OnArrived(target, years);
         }
     }
 }

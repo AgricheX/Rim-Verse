@@ -502,6 +502,7 @@ namespace Rimverse
             if (GameComponent_Civilizations.Instance != null) foreach (Civilization cv in GameComponent_Civilizations.Instance.Alive) if (cv.known && !cv.capitalKey.NullOrEmpty()) capitals[cv.capitalKey] = cv;
             List<StarEntry> list = LocalStars(here.galaxy, center, radius);
             List<Civilization> owners = Owners(list);
+            if (Hyperlanes.GalaxyHasLanes(U, here.galaxy) && list.Count <= 600) DrawLanes(list, lc, center, scale, here);
             StarEntry hovered = null;
             bool dense = list.Count > 1500;
             for (int i = 0; i < list.Count; i++)
@@ -581,6 +582,33 @@ namespace Rimverse
             Widgets.Label(new Rect(rect.x + 6f, rect.yMax - 20f, rect.width, 20f), "Rimverse_StarsShown".Translate(list.Count, radius));
             GUI.color = Color.white;
             Text.Font = GameFont.Small;
+        }
+
+        private static void DrawLanes(List<StarEntry> list, Vector2 lc, Vec3d center, float scale, StarSystemId here)
+        {
+            Dictionary<string, Vector2> pos = new Dictionary<string, Vector2>(list.Count);
+            foreach (StarEntry e in list)
+            {
+                Vec3d d = e.position - center;
+                pos[e.id.Key] = lc + new Vector2((float)d.x, (float)-d.z) * scale;
+            }
+            int budget = 25;
+            foreach (StarEntry e in list)
+            {
+                List<StarSystemId> near;
+                if (!Hyperlanes.TryCachedNearest(e.id, out near))
+                {
+                    if (budget-- <= 0) continue;
+                    near = Hyperlanes.Nearest(U, e.id);
+                }
+                Vector2 a = pos[e.id.Key];
+                foreach (StarSystemId o in near)
+                {
+                    if (!pos.TryGetValue(o.Key, out Vector2 b)) continue;
+                    bool mine = e.id == here || o == here;
+                    Widgets.DrawLine(a, b, mine ? new Color(0.45f, 0.95f, 1f, 0.75f) : new Color(0.35f, 0.6f, 1f, 0.28f), mine ? 2f : 1f);
+                }
+            }
         }
 
         private static void DrawFleets(Vector2 lc, Vec3d center, float scale, int radius)
@@ -674,6 +702,7 @@ namespace Rimverse
             StarSystemData sys = U.GetSystem(selected);
             double ly = U.DistanceLy(here, selected);
             l.Label("Rimverse_DistanceLy".Translate(ly.ToString("0.#")));
+            if (sys != null) l.Label(SizeClassLine(sys, ly, ship, scan));
             Civilization ownerCiv = GameComponent_Civilizations.Instance?.generated == true ? GameComponent_Civilizations.Instance.OwnerOf(selected) : null;
             if (ownerCiv != null && ownerCiv.known) l.Label("Rimverse_TerritoryOf".Translate(ownerCiv.Name));
             else if (ownerCiv != null && scan >= ScanLevel.Range) l.Label("Rimverse_TerritoryUnknownCiv".Translate());
@@ -706,33 +735,68 @@ namespace Rimverse
                         l.Label("  " + b.name + ": " + ("Rimverse_BodyType_" + b.type).Translate().ToString() + extra);
                     }
                 }
-                else
-                {
-                    l.Label("Rimverse_SystemSizeWord".Translate(Window_SystemMap.SizeWord(sys.sizeClass)));
-                }
             }
             l.GapLine();
             if (ship != null && selected != here)
             {
-                List<string> problems = WarpTravel.Problems(ship, loc, selected, out double dist, out float matter);
-                l.Label("Rimverse_WarpEstimate".Translate(dist.ToString("0.#"), matter.ToString("0"), WarpTravel.JumpDays.ToString("0.#")));
-                if (problems.Count == 0)
+                GalaxyData hg = U.Galaxy(here.galaxy);
+                TravelRule rule = hg?.rule ?? TravelRule.Warp;
+                l.Label("Rimverse_TravelRuleLine".Translate(("Rimverse_TravelRule_" + rule).Translate()));
+                if (WarpTravel.RuleAllowsWarp(rule))
                 {
-                    if (l.ButtonText("Rimverse_WarpHere".Translate()))
-                    {
-                        if (WarpTravel.TryStart(ship, selected)) Close();
-                    }
+                    List<string> problems = WarpTravel.Problems(ship, loc, selected, out double dist, out float matter);
+                    l.Label("Rimverse_WarpEstimate".Translate(dist.ToString("0.#"), matter.ToString("0"), WarpTravel.DaysFor(here, selected).ToString("0.#")));
+                    if (WarpTravel.BarRoute(here, selected)) l.Label("Rimverse_BarRouteBonus".Translate());
+                    TravelOption(l, problems, "Rimverse_WarpHere", () => WarpTravel.TryStart(ship, selected));
                 }
-                else
+                if (Hyperlanes.GalaxyHasLanes(U, here.galaxy))
                 {
-                    GUI.color = new Color(1f, 0.5f, 0.45f);
-                    foreach (string p in problems) l.Label("- " + p);
-                    GUI.color = Color.white;
+                    List<string> problems = WarpTravel.LaneProblems(ship, loc, selected, out double dist);
+                    l.Label("Rimverse_LaneEstimate".Translate(dist.ToString("0.#"), Hyperlanes.Days(dist).ToString("0.#")));
+                    TravelOption(l, problems, "Rimverse_LaneHere", () => WarpTravel.TryStartLane(ship, selected));
+                }
+                if (ly <= CryoTravel.MaxLy || rule == TravelRule.Sublight)
+                {
+                    l.GapLine();
+                    List<string> problems = CryoTravel.Problems(ship, loc, selected, out double dist, out float fuel);
+                    l.Label("Rimverse_CryoEstimate".Translate(dist.ToString("0.#"), CryoTravel.Years(dist).ToString("0"), fuel.ToString("0")));
+                    TravelOption(l, problems, "Rimverse_CryoHere", () => CryoTravel.TryStart(ship, selected));
                 }
             }
             l.End();
             infoHeight = l.CurHeight + 20f;
             Widgets.EndScrollView();
+        }
+
+        private void TravelOption(Listing_Standard l, List<string> problems, string buttonKey, Func<bool> start)
+        {
+            if (problems.Count == 0)
+            {
+                if (l.ButtonText(buttonKey.Translate()) && start()) Close();
+                return;
+            }
+            GUI.color = new Color(1f, 0.5f, 0.45f);
+            foreach (string p in problems) l.Label("- " + p);
+            GUI.color = Color.white;
+        }
+
+        private static string SizeClassLine(StarSystemData sys, double ly, RimverseShip ship, ScanLevel scan)
+        {
+            ScanLevel level = scan;
+            if (ship != null)
+            {
+                GameComponent_Universe.SensorReach(ship.sensorSensitivity, out double reach, out ScanLevel sensor);
+                if (ly <= reach && sensor > level) level = sensor;
+                else if (ly <= reach * 3 && sensor > ScanLevel.Word && level < ScanLevel.Word) level = ScanLevel.Word;
+            }
+            if (level == ScanLevel.Exact) return "Rimverse_SizeClassExact".Translate(sys.sizeClass);
+            if (level == ScanLevel.Range)
+            {
+                int low = Mathf.Max(1, (sys.sizeClass / 20) * 20);
+                return "Rimverse_SizeClassRange".Translate(low, Mathf.Min(100, low + 20));
+            }
+            if (level == ScanLevel.Word) return "Rimverse_SystemSizeWord".Translate(Window_SystemMap.SizeWord(sys.sizeClass));
+            return "Rimverse_SizeClassUnknown".Translate();
         }
 
         private static Texture2D GalaxyTexture(GalaxyData g)

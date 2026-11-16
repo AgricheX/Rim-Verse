@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <Rimverse_BarRouteBonus>Bar route: both stars sit in the galactic bar, so the jump costs half the matter, reaches twice as far and takes half the time.</Rimverse_BarRouteBonus>
   <Rimverse_BodyDensity>Density: {0} g/cm³</Rimverse_BodyDensity>
   <Rimverse_BodyEscape>Escape velocity: {0} km/s</Rimverse_BodyEscape>
   <Rimverse_BodyKm>Radius: {0} km</Rimverse_BodyKm>
@@ -37,6 +38,15 @@
   <Rimverse_CosmicRadius>Radius: {0} million light-years</Rimverse_CosmicRadius>
   <Rimverse_CosmicScaleLine>View width: {0} million light-years</Rimverse_CosmicScaleLine>
   <Rimverse_CosmicZoomIn>Zoom in</Rimverse_CosmicZoomIn>
+  <Rimverse_CryoAdvanced>{0} climbed {1} stages of development.</Rimverse_CryoAdvanced>
+  <Rimverse_CryoEstimate>Cryosleep crossing: {0} ly at a tenth of light speed, about {1} years asleep, {2} chemfuel.</Rimverse_CryoEstimate>
+  <Rimverse_CryoExpanded>{0} settled {1} new worlds.</Rimverse_CryoExpanded>
+  <Rimverse_CryoFell>{0} is gone.</Rimverse_CryoFell>
+  <Rimverse_CryoHere>Cross in cryosleep</Rimverse_CryoHere>
+  <Rimverse_CryoNewCiv>{0} rose while you slept.</Rimverse_CryoNewCiv>
+  <Rimverse_CryoQuiet>Little changed among the peoples you know.</Rimverse_CryoQuiet>
+  <Rimverse_CryoRumours>Old signals speak of {0} peoples nobody has met yet.</Rimverse_CryoRumours>
+  <Rimverse_CryoShrank>{0} lost {1} worlds.</Rimverse_CryoShrank>
   <Rimverse_GalaxyAttr_Barred>barred {0}</Rimverse_GalaxyAttr_Barred>
   <Rimverse_GalaxyAttr_Ringed>{0} with a ring</Rimverse_GalaxyAttr_Ringed>
   <Rimverse_GalaxyClickHelp>Click anywhere on the galaxy to open that sector.</Rimverse_GalaxyClickHelp>
@@ -45,8 +55,12 @@
   <Rimverse_GridSize>Size: {0} light-years across</Rimverse_GridSize>
   <Rimverse_GridSystems>Expected star systems: {0}</Rimverse_GridSystems>
   <Rimverse_InBar>Inside the galactic bar: denser stars and faster routes.</Rimverse_InBar>
+  <Rimverse_LaneEstimate>Hyperlane: {0} ly, about {1} days. No fuel once inside the lane.</Rimverse_LaneEstimate>
+  <Rimverse_LaneHere>Follow the hyperlane</Rimverse_LaneHere>
   <Rimverse_LetterBaseCleared>Pirate base taken</Rimverse_LetterBaseCleared>
   <Rimverse_LetterBaseClearedDesc>The last defenders of the {0} are down. The base is yours to strip: whatever is left in its holds can be carried back to your ship.</Rimverse_LetterBaseClearedDesc>
+  <Rimverse_LetterCryoWake>The caskets open after {0} years. The galaxy did not wait for you:</Rimverse_LetterCryoWake>
+  <Rimverse_LetterCryoWakeLabel>Waking up</Rimverse_LetterCryoWakeLabel>
   <Rimverse_LetterMegaStage>{0}: stage finished</Rimverse_LetterMegaStage>
   <Rimverse_LetterMegaStageDesc>The {0} has reached a new stage: {1} ({2}/{3}). The work goes on far out in orbit, and the structure now gives more of what it was built for.</Rimverse_LetterMegaStageDesc>
   <Rimverse_MegaAlreadySupplied>This stage is already supplied.</Rimverse_MegaAlreadySupplied>
@@ -73,15 +87,26 @@
   <Rimverse_Mega_RingHabitat>ring habitat</Rimverse_Mega_RingHabitat>
   <Rimverse_Mega_StellarCollector>stellar collector</Rimverse_Mega_StellarCollector>
   <Rimverse_Mega_WormholeStabilizer>wormhole stabilizer</Rimverse_Mega_WormholeStabilizer>
+  <Rimverse_MsgCryoStarted>{0} is drifting toward {1}. The crew sleeps through the next {2} years.</Rimverse_MsgCryoStarted>
+  <Rimverse_MsgLaneStarted>{0} entered the hyperlane to {1}. Arrival in about {2} days.</Rimverse_MsgLaneStarted>
   <Rimverse_MsgMegaDocked>Docked at the {0}. A gangway leads to the nearest airlock.</Rimverse_MsgMegaDocked>
   <Rimverse_MsgMegaSection>{0} crossed into section {2} of {3} of the {1}.</Rimverse_MsgMegaSection>
   <Rimverse_MsgMegaSupplied>Materials sent: work on the {0} continues.</Rimverse_MsgMegaSupplied>
   <Rimverse_MsgTraderDocked>{0} has come alongside. Walk to its trade terminal to trade in person, or call it on the comms console.</Rimverse_MsgTraderDocked>
   <Rimverse_MsgTraderLeft>The trader has cast off and left.</Rimverse_MsgTraderLeft>
+  <Rimverse_ProblemCryoAwake>{0} colonists are still awake. The crossing takes about {1} years: put everyone in cryptosleep caskets first.</Rimverse_ProblemCryoAwake>
+  <Rimverse_ProblemCryoRange>Too far for a sleeper crossing ({0} ly, at most {1} ly).</Rimverse_ProblemCryoRange>
+  <Rimverse_ProblemLaneClass>Only capital ships can force their way into a hyperlane (this ship is {0}).</Rimverse_ProblemLaneClass>
+  <Rimverse_ProblemNoLanes>This galaxy has no hyperlanes.</Rimverse_ProblemNoLanes>
+  <Rimverse_ProblemNotOnLane>No hyperlane links this star to the current system.</Rimverse_ProblemNotOnLane>
+  <Rimverse_ProblemWarpClass>A ship of class {0} can't hold a warp bubble between stars. Cross in cryosleep instead, or upgrade the ship.</Rimverse_ProblemWarpClass>
   <Rimverse_RG_MegaStage>{0} just finished a new stage of the {1}: {2}. You can see it from orbit.</Rimverse_RG_MegaStage>
   <Rimverse_ScannedVolume>Sensor sweeps: {0} ({1} cubic light-years)</Rimverse_ScannedVolume>
   <Rimverse_SectorCharted>This sector has stars.</Rimverse_SectorCharted>
   <Rimverse_SectorEmpty>Nearly empty: no star systems charted here.</Rimverse_SectorEmpty>
+  <Rimverse_SizeClassExact>Size class: {0}</Rimverse_SizeClassExact>
+  <Rimverse_SizeClassRange>Size class: between {0} and {1}</Rimverse_SizeClassRange>
+  <Rimverse_SizeClassUnknown>Size class: out of sensor reach</Rimverse_SizeClassUnknown>
   <Rimverse_SysBeyondFrost>Beyond the frost line: ices stay frozen here.</Rimverse_SysBeyondFrost>
   <Rimverse_SysInHabitable>Inside the habitable zone: liquid water is possible.</Rimverse_SysInHabitable>
   <Rimverse_SysLegend>Green band: habitable zone. Dashed blue ring: frost line. Coloured halo: settled world.</Rimverse_SysLegend>
@@ -93,6 +118,7 @@
   <Rimverse_TerminalLinked>Linked to: {0}</Rimverse_TerminalLinked>
   <Rimverse_TerminalNoTrader>No trader linked to this terminal right now.</Rimverse_TerminalNoTrader>
   <Rimverse_TerminalTrade>Trade with {0}</Rimverse_TerminalTrade>
+  <Rimverse_TravelRuleLine>Travel in this galaxy: {0}</Rimverse_TravelRuleLine>
   <Rimverse_UniverseAge>Universe age: {0} billion years</Rimverse_UniverseAge>
   <Rimverse_ViewHere>Go to current</Rimverse_ViewHere>
 </LanguageData>
