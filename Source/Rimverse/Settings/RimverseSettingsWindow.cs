@@ -105,8 +105,8 @@ namespace Rimverse
         {
             l.Label("Rimverse_NewGameOnly".Translate());
             l.GapLine();
-            IntSlider(l, "Rimverse_GalaxyCount", ref s.galaxyCount, 1, 20);
-            Slider(l, "Rimverse_StarDensity", ref s.starDensity, 0.02f, 1f);
+            IntSlider(l, "Rimverse_GalaxyCount", ref s.galaxyCap, 1, 32);
+            Slider(l, "Rimverse_StarDensity", ref s.starDensityFactor, 0.05f, 1f);
             l.GapLine();
             Check(l, "Rimverse_CivSimulation", ref s.civilizationSimulation);
             Slider(l, "Rimverse_CivDensity", ref s.civilizationDensity, 0.2f, 2f);

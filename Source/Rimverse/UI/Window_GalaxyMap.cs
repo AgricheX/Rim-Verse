@@ -76,7 +76,7 @@ namespace Rimverse
             StarSystemId here = loc.SystemId;
             Text.Font = GameFont.Medium;
             GalaxyData g = U.Galaxy(galaxyView ? viewedGalaxy : here.galaxy);
-            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width * 0.5f, 34f), "Rimverse_GalaxyMapTitle".Translate(g.name, ("Rimverse_GalaxyType_" + g.type).Translate()));
+            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width * 0.5f, 34f), "Rimverse_GalaxyMapTitle".Translate(g.name, g.TypeLabel));
             Text.Font = GameFont.Small;
             DrawToolbar(new Rect(inRect.x + inRect.width * 0.5f, inRect.y, inRect.width * 0.5f, 30f));
             Rect body = new Rect(inRect.x, inRect.y + 38f, inRect.width, inRect.height - 38f);
@@ -418,7 +418,7 @@ namespace Rimverse
 
         private static Texture2D GalaxyTexture(GalaxyData g)
         {
-            string key = U.universeSeed + ":" + g.index + ":" + GalaxyGenerator.StarDensityFactor;
+            string key = U.universeSeed + ":" + g.index + ":" + U.DensityFactor;
             if (galaxyTextures.TryGetValue(key, out Texture2D tex) && tex != null) return tex;
             tex = new Texture2D(TexSize, TexSize, TextureFormat.RGBA32, false);
             tex.wrapMode = TextureWrapMode.Clamp;
@@ -481,7 +481,7 @@ namespace Rimverse
             Text.Font = GameFont.Medium;
             l.Label(g.name);
             Text.Font = GameFont.Small;
-            l.Label("Rimverse_GalaxyTypeLine".Translate(("Rimverse_GalaxyType_" + g.type).Translate()));
+            l.Label("Rimverse_GalaxyTypeLine".Translate(g.TypeLabel));
             l.Label("Rimverse_GalaxyClassLine".Translate(g.sizeClass));
             l.Label("Rimverse_GalaxyRadiusLine".Translate(g.radiusLy.ToString("N0")));
             l.Label("Rimverse_GalaxyRuleLine".Translate(("Rimverse_TravelRule_" + g.rule).Translate()));
@@ -493,7 +493,7 @@ namespace Rimverse
             {
                 GalaxyData o = U.Galaxy(i);
                 float mly = (o.groupPositionMly - g.groupPositionMly).magnitude;
-                string line = o.name + " (" + ("Rimverse_GalaxyType_" + o.type).Translate() + ", " + "Rimverse_GalaxyClassShort".Translate(o.sizeClass) + ", " + mly.ToString("0.##") + " Mly)";
+                string line = o.name + " (" + o.TypeLabel + ", " + "Rimverse_GalaxyClassShort".Translate(o.sizeClass) + ", " + mly.ToString("0.##") + " Mly)";
                 if (i == viewedGalaxy)
                 {
                     GUI.color = SelectColor;

@@ -61,6 +61,7 @@ namespace Rimverse
                 hw.radiusEarth = 1f;
                 hw.massEarth = 1f;
                 hw.gravity = 1f;
+                hw.densityRel = 1f;
                 hw.temperatureC = 15f;
                 hw.atmosphere = AtmosphereType.Breathable;
                 hw.water = 0.7f;
@@ -68,6 +69,13 @@ namespace Rimverse
                 hw.name = homeWorldName;
             }
             planets.Sort((a, b) => a.orbitAU.CompareTo(b.orbitAU));
+            float massSun = sys.TotalMassSun;
+            UniverseRand orbitRand = new UniverseRand(UniverseRand.Hash((long)id.Seed(universeSeed), 8));
+            foreach (BodyData p in planets)
+            {
+                p.periodYears = KeplerYears(p.orbitAU, massSun);
+                p.phase = orbitRand.Range(0f, Mathf.PI * 2f);
+            }
             int letter = 0;
             foreach (BodyData p in planets)
             {
@@ -84,17 +92,46 @@ namespace Rimverse
                     FillPhysics(moon, rand, lum);
                     moon.index = sys.bodies.Count;
                     moon.name = p.name + " " + Roman[Math.Min(m, Roman.Length - 1)];
+                    moon.moonOrbitKm = p.RadiusKm * (12f + 18f * moon.moonOrbitFactor + orbitRand.Range(0f, 10f));
+                    moon.periodYears = MoonPeriodYears(moon.moonOrbitKm, p.massEarth);
+                    moon.phase = orbitRand.Range(0f, Mathf.PI * 2f);
                     sys.bodies.Add(moon);
                 }
             }
             return sys;
         }
 
+        public static float KeplerYears(float orbitAU, float massSun) => Mathf.Sqrt(Mathf.Pow(Mathf.Max(orbitAU, 0.001f), 3f) / Mathf.Max(massSun, 0.05f));
+
+        public static float MoonPeriodYears(float orbitKm, float parentMassEarth)
+        {
+            double a = orbitKm * 1000.0;
+            double gm = 3.986004418e14 * Math.Max(parentMassEarth, 0.0001f);
+            double seconds = 2.0 * Math.PI * Math.Sqrt(a * a * a / gm);
+            return (float)(seconds / 31557600.0);
+        }
+
+        private static readonly Dictionary<int, float[]> ageWeights = new Dictionary<int, float[]>();
+
+        public static float[] WeightsFor(int universeSeed)
+        {
+            if (ageWeights.TryGetValue(universeSeed, out float[] w)) return w;
+            float age = CosmicScale.AgeFactor(universeSeed);
+            w = (float[])StarWeights.Clone();
+            w[3] *= 1.2f - 0.4f * age;
+            w[4] *= 0.6f + 1.4f * age;
+            w[5] *= 1.5f - 1.0f * age;
+            w[6] *= 0.8f + 0.6f * age;
+            w[7] *= 0.8f + 0.6f * age;
+            ageWeights[universeSeed] = w;
+            return w;
+        }
+
         public static StarType PrimaryTypeFor(StarSystemId id, int universeSeed, bool home)
         {
             UniverseRand r = new UniverseRand(UniverseRand.Hash((long)id.Seed(universeSeed), 7));
             if (home) return r.Chance(0.6f) ? StarType.Yellow : StarType.Orange;
-            return r.Weighted(StarTypes, StarWeights);
+            return r.Weighted(StarTypes, WeightsFor(universeSeed));
         }
 
         private static string MakeName(UniverseRand rand)
@@ -168,6 +205,7 @@ namespace Rimverse
             float t = sMax == sMin ? 0f : Mathf.Clamp01((b.sizeClass - sMin) / (float)(sMax - sMin));
             b.radiusEarth = Mathf.Lerp(rMin, rMax, t);
             b.massEarth = density * b.radiusEarth * b.radiusEarth * b.radiusEarth;
+            b.densityRel = density;
             b.gravity = b.type == BodyType.Belt ? 0f : density * b.radiusEarth;
             b.atmosphere = AtmosphereType.None;
             if (b.type == BodyType.GasGiant) b.atmosphere = AtmosphereType.Dense;

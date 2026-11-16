@@ -56,8 +56,6 @@
   <Rimverse_Stat_WarpCapacity>Capacidade de matéria de dobra</Rimverse_Stat_WarpCapacity>
   <Rimverse_Stat_WarpCapacity_Desc>Quanta matéria de dobra este módulo guarda.</Rimverse_Stat_WarpCapacity_Desc>
   <Rimverse_GalaxyType_Spiral>espiral</Rimverse_GalaxyType_Spiral>
-  <Rimverse_GalaxyType_BarredSpiral>espiral barrada</Rimverse_GalaxyType_BarredSpiral>
-  <Rimverse_GalaxyType_Ringed>anelar</Rimverse_GalaxyType_Ringed>
   <Rimverse_GalaxyType_Elliptical>elíptica</Rimverse_GalaxyType_Elliptical>
   <Rimverse_GalaxyType_DwarfSpheroidal>esferoidal anã</Rimverse_GalaxyType_DwarfSpheroidal>
   <Rimverse_GalaxyType_Irregular>irregular</Rimverse_GalaxyType_Irregular>

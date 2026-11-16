@@ -11,8 +11,8 @@ namespace Rimverse
         public float economyMultiplier = 1f;
         public float researchCostMultiplier = 1f;
 
-        public int galaxyCount = 3;
-        public float starDensity = 0.1f;
+        public int galaxyCap = 32;
+        public float starDensityFactor = 1f;
         public bool civilizationSimulation = true;
         public float civilizationDensity = 1f;
         public bool endgameEnabled = true;
@@ -68,8 +68,8 @@ namespace Rimverse
             threatMultiplier = 1f;
             economyMultiplier = 1f;
             researchCostMultiplier = 1f;
-            galaxyCount = 3;
-            starDensity = 0.1f;
+            galaxyCap = 32;
+            starDensityFactor = 1f;
             civilizationSimulation = true;
             civilizationDensity = 1f;
             endgameEnabled = true;
@@ -98,8 +98,8 @@ namespace Rimverse
             Scribe_Values.Look(ref threatMultiplier, "threatMultiplier", 1f);
             Scribe_Values.Look(ref economyMultiplier, "economyMultiplier", 1f);
             Scribe_Values.Look(ref researchCostMultiplier, "researchCostMultiplier", 1f);
-            Scribe_Values.Look(ref galaxyCount, "galaxyCount", 3);
-            Scribe_Values.Look(ref starDensity, "starDensity", 0.1f);
+            Scribe_Values.Look(ref galaxyCap, "galaxyCap", 32);
+            Scribe_Values.Look(ref starDensityFactor, "starDensityFactor", 1f);
             Scribe_Values.Look(ref civilizationSimulation, "civilizationSimulation", true);
             Scribe_Values.Look(ref civilizationDensity, "civilizationDensity", 1f);
             Scribe_Values.Look(ref endgameEnabled, "endgameEnabled", true);

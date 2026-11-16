@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_BodyDensity>Density: {0} g/cm³</Rimverse_BodyDensity>
+  <Rimverse_BodyEscape>Escape velocity: {0} km/s</Rimverse_BodyEscape>
+  <Rimverse_BodyKm>Radius: {0} km</Rimverse_BodyKm>
+  <Rimverse_BodyPeriod>Orbital period: {0} days</Rimverse_BodyPeriod>
+  <Rimverse_BodyPeriodYears>Orbital period: {0} years</Rimverse_BodyPeriodYears>
+  <Rimverse_CosmicLevel_Body>body</Rimverse_CosmicLevel_Body>
+  <Rimverse_CosmicLevel_Chunk>universe chunk</Rimverse_CosmicLevel_Chunk>
+  <Rimverse_CosmicLevel_Cluster>cluster</Rimverse_CosmicLevel_Cluster>
+  <Rimverse_CosmicLevel_District>district</Rimverse_CosmicLevel_District>
+  <Rimverse_CosmicLevel_Galaxy>galaxy</Rimverse_CosmicLevel_Galaxy>
+  <Rimverse_CosmicLevel_Group>galaxy group</Rimverse_CosmicLevel_Group>
+  <Rimverse_CosmicLevel_LargeGroup>large group</Rimverse_CosmicLevel_LargeGroup>
+  <Rimverse_CosmicLevel_Sector>sector</Rimverse_CosmicLevel_Sector>
+  <Rimverse_CosmicLevel_Subcell>subcell</Rimverse_CosmicLevel_Subcell>
+  <Rimverse_CosmicLevel_Supercluster>supercluster</Rimverse_CosmicLevel_Supercluster>
+  <Rimverse_CosmicLevel_Surface>surface</Rimverse_CosmicLevel_Surface>
+  <Rimverse_CosmicLevel_System>star system</Rimverse_CosmicLevel_System>
+  <Rimverse_CosmicLevel_Web>cosmic web</Rimverse_CosmicLevel_Web>
+  <Rimverse_CosmicLevel_Zone>zone</Rimverse_CosmicLevel_Zone>
+  <Rimverse_GalaxyAttr_Barred>barred {0}</Rimverse_GalaxyAttr_Barred>
+  <Rimverse_GalaxyAttr_Ringed>{0} with a ring</Rimverse_GalaxyAttr_Ringed>
+  <Rimverse_ScannedVolume>Sensor sweeps: {0} ({1} cubic light-years)</Rimverse_ScannedVolume>
+  <Rimverse_SystemAddress>Address: {0}</Rimverse_SystemAddress>
+  <Rimverse_UniverseAge>Universe age: {0} billion years</Rimverse_UniverseAge>
+</LanguageData>

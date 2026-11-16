@@ -241,13 +241,17 @@ namespace Rimverse
             yield return "Rimverse_BodySizeExact".Translate(b.sizeClass);
             if (b.type != BodyType.Belt)
             {
+                yield return "Rimverse_BodyKm".Translate(b.RadiusKm.ToString("N0"));
+                yield return "Rimverse_BodyDensity".Translate(b.DensityGcm3.ToString("0.##"));
                 yield return "Rimverse_BodyGravity".Translate(b.gravity.ToString("0.##"));
+                yield return "Rimverse_BodyEscape".Translate(b.EscapeVelocityKms.ToString("0.##"));
                 yield return "Rimverse_BodyTemperature".Translate(b.temperatureC.ToStringTemperature("F0"));
                 yield return "Rimverse_BodyAtmosphere".Translate(("Rimverse_Atmosphere_" + b.atmosphere).Translate());
                 yield return "Rimverse_BodyWater".Translate(b.water.ToStringPercent());
                 if (b.atmosphere == AtmosphereType.Breathable && !b.homeWorld) yield return "Rimverse_BodyFauna".Translate(GenStep_AlienFauna.SpeciesFor(b).Count);
             }
             yield return "Rimverse_BodyOrbit".Translate(b.orbitAU.ToString("0.##"));
+            if (b.type != BodyType.Belt && b.periodYears > 0f) yield return b.PeriodDays < 120f ? "Rimverse_BodyPeriod".Translate(b.PeriodDays.ToString("0.#")) : "Rimverse_BodyPeriodYears".Translate(b.periodYears.ToString("0.##"));
             if (b.rings) yield return "Rimverse_BodyRings".Translate();
             yield return b.LandableNow ? "Rimverse_BodyLandable".Translate() : "Rimverse_BodyNotLandable".Translate();
         }

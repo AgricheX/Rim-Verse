@@ -118,7 +118,7 @@ namespace Rimverse
             List<Pawn> pawns = start.mapPawns.AllPawnsSpawned.Where(p => p.Faction == Faction.OfPlayer).ToList();
             int crew = Mathf.Max(1, pawns.Count(p => p.RaceProps.Humanlike));
             StartShipSpec spec = StartShipBuilder.SpecFor(layout, crew);
-            Building bridge = StartShipBuilder.Build(orbit, orbit.Center, spec, fuel, hull, out List<IntVec3> free, out CellRect rect);
+            Building bridge = StartShipBuilder.Build(orbit, orbit.Center, spec, layout, fuel, hull, out List<IntVec3> free, out CellRect rect);
             if (bridge == null)
             {
                 RimverseLog.Warning("Scenario: starting ship could not be built.");

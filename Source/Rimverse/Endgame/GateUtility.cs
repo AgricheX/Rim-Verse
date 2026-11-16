@@ -39,11 +39,11 @@ namespace Rimverse
                 double d = r.Range(25f, 60f);
                 anchors.Add(home + new Vec3d(Math.Cos(a) * d, 0, Math.Sin(a) * d));
             }
-            int count = 12 + (g.rule == TravelRule.AncientGates ? 24 : 0) + g.sizeClass / 10;
+            int count = 12 + (g.hasRing ? 24 : 0) + g.sizeClass / 10;
             for (int i = 0; i < count; i++)
             {
                 double a = r.ValueDouble * Math.PI * 2.0;
-                double d = g.radiusLy * (0.1 + 0.8 * r.ValueDouble);
+                double d = g.hasRing && i % 2 == 0 ? g.radiusLy * (g.ringRadius + (r.ValueDouble - 0.5) * 0.12) : g.radiusLy * (0.1 + 0.8 * r.ValueDouble);
                 anchors.Add(new Vec3d(Math.Cos(a) * d, 0, Math.Sin(a) * d));
             }
             foreach (Vec3d p in anchors)
