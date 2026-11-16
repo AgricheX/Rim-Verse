@@ -42,7 +42,7 @@ namespace Rimverse
             GameComponent_Universe u = GameComponent_Universe.Instance;
             if (u == null || a.galaxy != b.galaxy) return false;
             GalaxyData g = u.Galaxy(a.galaxy);
-            return g != null && g.rule == TravelRule.WarpBarRoutes && g.InBar(u.PositionOf(a)) && g.InBar(u.PositionOf(b));
+            return g != null && g.rule == TravelRule.WarpBarRoutes && ResearchGate.Done("Rimverse_BarRouteCharts") && g.InBar(u.PositionOf(a)) && g.InBar(u.PositionOf(b));
         }
 
         public static float DaysFor(StarSystemId a, StarSystemId b) => BarRoute(a, b) ? JumpDays * 0.5f : JumpDays;
@@ -125,6 +125,7 @@ namespace Rimverse
             if (dest == here) problems.Add("Rimverse_ProblemAlreadyThere".Translate());
             if (!Hyperlanes.GalaxyHasLanes(u, here.galaxy)) problems.Add("Rimverse_ProblemNoLanes".Translate());
             else if (!Hyperlanes.Connected(u, here, dest)) problems.Add("Rimverse_ProblemNotOnLane".Translate());
+            if (!ResearchGate.Done("Rimverse_HyperlaneNavigation")) problems.Add(ResearchGate.Need("Rimverse_HyperlaneNavigation"));
             if (!ShipClassifier.CanUseHyperlanes(ship.shipClass)) problems.Add("Rimverse_ProblemLaneClass".Translate(("Rimverse_Class_" + ship.shipClass).Translate()));
             if (ship.multipleBridges) problems.Add("Rimverse_ProblemMultipleBridges".Translate());
             ShipCrewUtility.PilotAndCopilot(ship, out Pawn pilot, out _);

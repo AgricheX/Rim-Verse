@@ -500,7 +500,7 @@ namespace Rimverse
             }
             List<IntVec3> floor = cells.Where(c => c.Standable(map) && c.GetFirstItem(map) == null).ToList();
             if (floor.Count == 0) return;
-            float mass = Mathf.Max(20f, ship.mass);
+            float mass = Mathf.Max(20f, ship.mass) * (ResearchGate.Done("Rimverse_SalvageOperations") && ship.bridge?.Faction != Faction.OfPlayer ? 1.5f : 1f);
             Salvage(map, floor, ThingDefOf.Steel, Mathf.RoundToInt(mass * 1.5f));
             Salvage(map, floor, ThingDefOf.Plasteel, Mathf.RoundToInt(mass * 0.2f));
             Salvage(map, floor, ThingDefOf.ComponentIndustrial, Mathf.RoundToInt(mass * 0.04f));

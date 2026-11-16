@@ -413,7 +413,7 @@ namespace Rimverse
         {
             List<ThingDefCountClass> list = new List<ThingDefCountClass>();
             if (parent.def.costList == null || d == null) return list;
-            float f = Props.stageCostFactor * (1f + 0.25f * d.stage);
+            float f = Props.stageCostFactor * (1f + 0.25f * d.stage) * (ResearchGate.Done("Rimverse_MegaLogistics") ? 0.75f : 1f);
             foreach (ThingDefCountClass c in parent.def.costList) list.Add(new ThingDefCountClass(c.thingDef, Mathf.Max(1, Mathf.RoundToInt(c.count * f))));
             return list;
         }

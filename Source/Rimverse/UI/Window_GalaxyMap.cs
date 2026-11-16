@@ -786,6 +786,7 @@ namespace Rimverse
             if (ship != null)
             {
                 GameComponent_Universe.SensorReach(ship.sensorSensitivity, out double reach, out ScanLevel sensor);
+                if (ResearchGate.Done("Rimverse_DeepSensorAnalysis")) reach *= 2;
                 if (ly <= reach && sensor > level) level = sensor;
                 else if (ly <= reach * 3 && sensor > ScanLevel.Word && level < ScanLevel.Word) level = ScanLevel.Word;
             }

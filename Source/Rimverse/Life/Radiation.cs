@@ -69,6 +69,7 @@ namespace Rimverse
             CompVacuumSuit suit = VacuumSuitUtility.WornSuit(p, out bool helmet);
             if (suit != null) r += 0.4f;
             if (helmet) r += 0.15f;
+            if (p.Faction == Faction.OfPlayer && ResearchGate.Done("Rimverse_RadiationShielding")) r += 0.2f;
             return Mathf.Clamp01(r);
         }
 

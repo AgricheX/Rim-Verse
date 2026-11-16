@@ -214,6 +214,13 @@ namespace Rimverse
                 if (fee > 0f) TooltipHandler.TipRegion(row, "Rimverse_BankFee".Translate(fee.ToStringPercent()));
             }
             l.GapLine();
+            if (!ResearchGate.Done("Rimverse_MarketAnalytics"))
+            {
+                l.Label(ResearchGate.Need("Rimverse_MarketAnalytics"));
+                l.End();
+                Widgets.EndScrollView();
+                return;
+            }
             l.Label("Rimverse_MarketTitle".Translate());
             List<KeyValuePair<string, float>> cats = new List<KeyValuePair<string, float>>();
             foreach (ThingCategoryDef cat in ThingCategoryDefOf.Root.childCategories) cats.Add(new KeyValuePair<string, float>(cat.defName, bank.Supply(civ, cat.defName)));

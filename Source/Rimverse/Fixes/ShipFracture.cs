@@ -13,7 +13,7 @@ namespace Rimverse
         public static bool TryFracture(RimverseShip ship, int tick)
         {
             float integrity = ship.Integrity;
-            if (integrity > FractureIntegrity || ship.map == null || ship.cells.Count < 30) return false;
+            if (integrity > (ResearchGate.Done("Rimverse_FrameBracing") ? FractureIntegrity * 0.5f : FractureIntegrity) || ship.map == null || ship.cells.Count < 30) return false;
             if (integrity > 0.001f && !Rand.Chance(0.25f)) return false;
             CellRect bounds = ShipMover.Bounds(ship);
             bool alongX = bounds.Width < bounds.Height;

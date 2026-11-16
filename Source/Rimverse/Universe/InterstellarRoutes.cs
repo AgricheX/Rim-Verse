@@ -95,6 +95,7 @@ namespace Rimverse
             if (dest == here) problems.Add("Rimverse_ProblemAlreadyThere".Translate());
             if (dest.galaxy != here.galaxy) problems.Add("Rimverse_ProblemOtherGalaxy".Translate());
             else if (ly > MaxLy) problems.Add("Rimverse_ProblemCryoRange".Translate(ly.ToString("0.#"), MaxLy.ToString("0")));
+            if (!ResearchGate.Done("Rimverse_CryoCrossings")) problems.Add(ResearchGate.Need("Rimverse_CryoCrossings"));
             if (ship.multipleBridges) problems.Add("Rimverse_ProblemMultipleBridges".Translate());
             if (ship.CountRole(ShipPartRole.Thruster, true) == 0) problems.Add("Rimverse_ProblemNoThruster".Translate());
             float have = ShipLaunchUtility.FuelAvailable(ship);

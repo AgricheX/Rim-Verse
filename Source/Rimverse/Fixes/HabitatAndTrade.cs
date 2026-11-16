@@ -14,6 +14,7 @@ namespace Rimverse
         {
             if (room == null || map == null) return false;
             if (MegaSectionUtility.Pressurized(map, room)) return true;
+            if (!ResearchGate.Done("Rimverse_HabitatSealing")) return false;
             int now = Find.TickManager.TicksGame;
             if (cache.TryGetValue(room.ID, out KeyValuePair<int, bool> hit) && now - hit.Key < 250) return hit.Value;
             bool ok = Compute(room);
@@ -42,7 +43,7 @@ namespace Rimverse
     {
         public static void Postfix(Map map, ref IEnumerable<Thing> __result)
         {
-            if (map == null || !Applies(map)) return;
+            if (map == null || !ResearchGate.Done("Rimverse_OrbitalTradeDocking") || !Applies(map)) return;
             List<Thing> extra = Extra(map);
             if (extra.Count == 0) return;
             __result = __result.Concat(extra).Distinct().ToList();

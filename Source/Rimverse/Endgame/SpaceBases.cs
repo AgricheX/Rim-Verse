@@ -191,7 +191,8 @@ namespace Rimverse
                 selPawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
             });
             Civilization bankCiv = Currencies.CivOf(ts.Faction);
-            if (bankCiv != null && bankCiv.stage >= 7)
+            if (bankCiv != null && bankCiv.stage >= 7 && !ResearchGate.Done("Rimverse_InterstellarBanking")) yield return new FloatMenuOption("Rimverse_TerminalBank".Translate(bankCiv.ShownName) + " (" + ResearchGate.Need("Rimverse_InterstellarBanking") + ")", null);
+            else if (bankCiv != null && bankCiv.stage >= 7)
             {
                 Building_TradeTerminal self = this;
                 yield return new FloatMenuOption("Rimverse_TerminalBank".Translate(bankCiv.ShownName), () => Find.WindowStack.Add(new Window_Bank(bankCiv, self.Map, self.Position)));

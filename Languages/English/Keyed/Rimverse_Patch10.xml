@@ -111,6 +111,7 @@
   <Rimverse_MsgTraderDocked>{0} has come alongside. Walk to its trade terminal to trade in person, or call it on the comms console.</Rimverse_MsgTraderDocked>
   <Rimverse_MsgTraderLeft>The trader has cast off and left.</Rimverse_MsgTraderLeft>
   <Rimverse_MsgWreckSalvage>The wreck of {0} is open for salvage: steel, plasteel, parts and whatever was in its holds.</Rimverse_MsgWreckSalvage>
+  <Rimverse_NeedsResearch>Needs research: {0}</Rimverse_NeedsResearch>
   <Rimverse_PlayerStage>Your stage: {0} ({1})</Rimverse_PlayerStage>
   <Rimverse_ProblemCryoAwake>{0} colonists are still awake. The crossing takes about {1} years: put everyone in cryptosleep caskets first.</Rimverse_ProblemCryoAwake>
   <Rimverse_ProblemCryoRange>Too far for a sleeper crossing ({0} ly, at most {1} ly).</Rimverse_ProblemCryoRange>

@@ -111,6 +111,7 @@
   <Rimverse_MsgTraderDocked>{0} encostou ao lado. Vá até o terminal de comércio para negociar pessoalmente, ou chame pelo console de comunicação.</Rimverse_MsgTraderDocked>
   <Rimverse_MsgTraderLeft>O comerciante soltou as amarras e partiu.</Rimverse_MsgTraderLeft>
   <Rimverse_MsgWreckSalvage>Os destroços de {0} estão abertos para saque: aço, plastaço, peças e o que havia nos porões.</Rimverse_MsgWreckSalvage>
+  <Rimverse_NeedsResearch>Precisa da pesquisa: {0}</Rimverse_NeedsResearch>
   <Rimverse_PlayerStage>Seu estágio: {0} ({1})</Rimverse_PlayerStage>
   <Rimverse_ProblemCryoAwake>{0} colonos ainda estão acordados. A travessia leva cerca de {1} anos: coloque todo mundo em cápsulas de criossono antes.</Rimverse_ProblemCryoAwake>
   <Rimverse_ProblemCryoRange>Longe demais para uma travessia dormindo ({0} al, no máximo {1} al).</Rimverse_ProblemCryoRange>
