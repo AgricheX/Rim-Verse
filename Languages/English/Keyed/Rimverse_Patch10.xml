@@ -11,6 +11,15 @@
   <Rimverse_CmdMegaSupplyDesc>Send the materials for the next stage to the work crews in orbit. Needs: {0}. The stage then takes about {1} days while this node has power.</Rimverse_CmdMegaSupplyDesc>
   <Rimverse_CmdMegaUndock>Undock</Rimverse_CmdMegaUndock>
   <Rimverse_CmdMegaUndockDesc>Leave the megastructure and return to open orbit.</Rimverse_CmdMegaUndockDesc>
+  <Rimverse_CosmicChildren>Contains: {0} × {1}</Rimverse_CosmicChildren>
+  <Rimverse_CosmicChunk>Universe chunk: {0}</Rimverse_CosmicChunk>
+  <Rimverse_CosmicDesc_Cluster>A cluster: hundreds of galaxies held together by their own gravity, bathed in hot gas.</Rimverse_CosmicDesc_Cluster>
+  <Rimverse_CosmicDesc_Group>A galaxy group: a handful of galaxies sharing one neighbourhood.</Rimverse_CosmicDesc_Group>
+  <Rimverse_CosmicDesc_LargeGroup>A large group: a few dozen galaxies falling slowly toward each other.</Rimverse_CosmicDesc_LargeGroup>
+  <Rimverse_CosmicDesc_Supercluster>A supercluster: thousands of galaxies bound loosely along one stretch of the web.</Rimverse_CosmicDesc_Supercluster>
+  <Rimverse_CosmicDesc_Web>The cosmic web: filaments of dark matter and gas, with superclusters strung along them and great voids between.</Rimverse_CosmicDesc_Web>
+  <Rimverse_CosmicFar>Far beyond the reach of any drive you have.</Rimverse_CosmicFar>
+  <Rimverse_CosmicHome>Your ship is somewhere inside this.</Rimverse_CosmicHome>
   <Rimverse_CosmicLevel_Body>body</Rimverse_CosmicLevel_Body>
   <Rimverse_CosmicLevel_Chunk>universe chunk</Rimverse_CosmicLevel_Chunk>
   <Rimverse_CosmicLevel_Cluster>cluster</Rimverse_CosmicLevel_Cluster>
@@ -25,8 +34,17 @@
   <Rimverse_CosmicLevel_System>star system</Rimverse_CosmicLevel_System>
   <Rimverse_CosmicLevel_Web>cosmic web</Rimverse_CosmicLevel_Web>
   <Rimverse_CosmicLevel_Zone>zone</Rimverse_CosmicLevel_Zone>
+  <Rimverse_CosmicRadius>Radius: {0} million light-years</Rimverse_CosmicRadius>
+  <Rimverse_CosmicScaleLine>View width: {0} million light-years</Rimverse_CosmicScaleLine>
+  <Rimverse_CosmicZoomIn>Zoom in</Rimverse_CosmicZoomIn>
   <Rimverse_GalaxyAttr_Barred>barred {0}</Rimverse_GalaxyAttr_Barred>
   <Rimverse_GalaxyAttr_Ringed>{0} with a ring</Rimverse_GalaxyAttr_Ringed>
+  <Rimverse_GalaxyClickHelp>Click anywhere on the galaxy to open that sector.</Rimverse_GalaxyClickHelp>
+  <Rimverse_GridHelp>Click a cell to look closer. Scroll to zoom in or out.</Rimverse_GridHelp>
+  <Rimverse_GridScale>View: {0} ly across, cells of {1} ly</Rimverse_GridScale>
+  <Rimverse_GridSize>Size: {0} light-years across</Rimverse_GridSize>
+  <Rimverse_GridSystems>Expected star systems: {0}</Rimverse_GridSystems>
+  <Rimverse_InBar>Inside the galactic bar: denser stars and faster routes.</Rimverse_InBar>
   <Rimverse_LetterBaseCleared>Pirate base taken</Rimverse_LetterBaseCleared>
   <Rimverse_LetterBaseClearedDesc>The last defenders of the {0} are down. The base is yours to strip: whatever is left in its holds can be carried back to your ship.</Rimverse_LetterBaseClearedDesc>
   <Rimverse_LetterMegaStage>{0}: stage finished</Rimverse_LetterMegaStage>
@@ -62,9 +80,19 @@
   <Rimverse_MsgTraderLeft>The trader has cast off and left.</Rimverse_MsgTraderLeft>
   <Rimverse_RG_MegaStage>{0} just finished a new stage of the {1}: {2}. You can see it from orbit.</Rimverse_RG_MegaStage>
   <Rimverse_ScannedVolume>Sensor sweeps: {0} ({1} cubic light-years)</Rimverse_ScannedVolume>
+  <Rimverse_SectorCharted>This sector has stars.</Rimverse_SectorCharted>
+  <Rimverse_SectorEmpty>Nearly empty: no star systems charted here.</Rimverse_SectorEmpty>
+  <Rimverse_SysBeyondFrost>Beyond the frost line: ices stay frozen here.</Rimverse_SysBeyondFrost>
+  <Rimverse_SysInHabitable>Inside the habitable zone: liquid water is possible.</Rimverse_SysInHabitable>
+  <Rimverse_SysLegend>Green band: habitable zone. Dashed blue ring: frost line. Coloured halo: settled world.</Rimverse_SysLegend>
+  <Rimverse_SysOwnedBy>Settled by: {0}</Rimverse_SysOwnedBy>
+  <Rimverse_SysYourColony>Your colony: {0}</Rimverse_SysYourColony>
+  <Rimverse_SysYourShip>Your ship</Rimverse_SysYourShip>
+  <Rimverse_SysZoomHelp>Scroll to zoom, right-drag to pan.</Rimverse_SysZoomHelp>
   <Rimverse_SystemAddress>Address: {0}</Rimverse_SystemAddress>
   <Rimverse_TerminalLinked>Linked to: {0}</Rimverse_TerminalLinked>
   <Rimverse_TerminalNoTrader>No trader linked to this terminal right now.</Rimverse_TerminalNoTrader>
   <Rimverse_TerminalTrade>Trade with {0}</Rimverse_TerminalTrade>
   <Rimverse_UniverseAge>Universe age: {0} billion years</Rimverse_UniverseAge>
+  <Rimverse_ViewHere>Go to current</Rimverse_ViewHere>
 </LanguageData>

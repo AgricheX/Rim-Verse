@@ -209,6 +209,7 @@ namespace Rimverse
         }
 
         public int ScanBubbleCount => scanBubbles.Count;
+        public IReadOnlyList<ScanBubble> ScanBubbles => scanBubbles;
 
         public double ScannedVolumeLy3
         {

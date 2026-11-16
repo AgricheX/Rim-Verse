@@ -11,6 +11,15 @@
   <Rimverse_CmdMegaSupplyDesc>Envia os materiais da próxima etapa para as equipes na órbita. Precisa de: {0}. A etapa leva cerca de {1} dias enquanto este nó tiver energia.</Rimverse_CmdMegaSupplyDesc>
   <Rimverse_CmdMegaUndock>Desatracar</Rimverse_CmdMegaUndock>
   <Rimverse_CmdMegaUndockDesc>Sai da megaestrutura e volta para a órbita aberta.</Rimverse_CmdMegaUndockDesc>
+  <Rimverse_CosmicChildren>Contém: {0} × {1}</Rimverse_CosmicChildren>
+  <Rimverse_CosmicChunk>Pedaço do universo: {0}</Rimverse_CosmicChunk>
+  <Rimverse_CosmicDesc_Cluster>Um aglomerado: centenas de galáxias presas pela própria gravidade, banhadas em gás quente.</Rimverse_CosmicDesc_Cluster>
+  <Rimverse_CosmicDesc_Group>Um grupo de galáxias: um punhado de galáxias que dividem a mesma vizinhança.</Rimverse_CosmicDesc_Group>
+  <Rimverse_CosmicDesc_LargeGroup>Um grupo grande: algumas dezenas de galáxias caindo devagar umas em direção às outras.</Rimverse_CosmicDesc_LargeGroup>
+  <Rimverse_CosmicDesc_Supercluster>Um superaglomerado: milhares de galáxias ligadas de leve ao longo de um trecho da teia.</Rimverse_CosmicDesc_Supercluster>
+  <Rimverse_CosmicDesc_Web>A teia cósmica: filamentos de matéria escura e gás, com superaglomerados presos a eles e grandes vazios entre eles.</Rimverse_CosmicDesc_Web>
+  <Rimverse_CosmicFar>Muito além do alcance de qualquer propulsor que você tem.</Rimverse_CosmicFar>
+  <Rimverse_CosmicHome>Sua nave está em algum lugar aqui dentro.</Rimverse_CosmicHome>
   <Rimverse_CosmicLevel_Body>corpo</Rimverse_CosmicLevel_Body>
   <Rimverse_CosmicLevel_Chunk>chunk do universo</Rimverse_CosmicLevel_Chunk>
   <Rimverse_CosmicLevel_Cluster>aglomerado</Rimverse_CosmicLevel_Cluster>
@@ -25,8 +34,17 @@
   <Rimverse_CosmicLevel_System>sistema estelar</Rimverse_CosmicLevel_System>
   <Rimverse_CosmicLevel_Web>teia cósmica</Rimverse_CosmicLevel_Web>
   <Rimverse_CosmicLevel_Zone>zona</Rimverse_CosmicLevel_Zone>
+  <Rimverse_CosmicRadius>Raio: {0} milhões de anos-luz</Rimverse_CosmicRadius>
+  <Rimverse_CosmicScaleLine>Largura da vista: {0} milhões de anos-luz</Rimverse_CosmicScaleLine>
+  <Rimverse_CosmicZoomIn>Aproximar</Rimverse_CosmicZoomIn>
   <Rimverse_GalaxyAttr_Barred>{0} barrada</Rimverse_GalaxyAttr_Barred>
   <Rimverse_GalaxyAttr_Ringed>{0} com anel</Rimverse_GalaxyAttr_Ringed>
+  <Rimverse_GalaxyClickHelp>Clique em qualquer ponto da galáxia para abrir aquele setor.</Rimverse_GalaxyClickHelp>
+  <Rimverse_GridHelp>Clique numa célula para ver de perto. Use a rolagem para aproximar ou afastar.</Rimverse_GridHelp>
+  <Rimverse_GridScale>Vista: {0} al de largura, células de {1} al</Rimverse_GridScale>
+  <Rimverse_GridSize>Tamanho: {0} anos-luz de largura</Rimverse_GridSize>
+  <Rimverse_GridSystems>Sistemas estelares esperados: {0}</Rimverse_GridSystems>
+  <Rimverse_InBar>Dentro da barra galáctica: estrelas mais densas e rotas mais rápidas.</Rimverse_InBar>
   <Rimverse_LetterBaseCleared>Base pirata tomada</Rimverse_LetterBaseCleared>
   <Rimverse_LetterBaseClearedDesc>Os últimos defensores de {0} caíram. A base é sua para saquear: o que sobrou nos porões pode ser levado para a sua nave.</Rimverse_LetterBaseClearedDesc>
   <Rimverse_LetterMegaStage>{0}: etapa concluída</Rimverse_LetterMegaStage>
@@ -62,9 +80,19 @@
   <Rimverse_MsgTraderLeft>O comerciante soltou as amarras e partiu.</Rimverse_MsgTraderLeft>
   <Rimverse_RG_MegaStage>{0} acabou de concluir uma nova etapa de {1}: {2}. Dá para ver da órbita.</Rimverse_RG_MegaStage>
   <Rimverse_ScannedVolume>Varreduras de sensor: {0} ({1} anos-luz cúbicos)</Rimverse_ScannedVolume>
+  <Rimverse_SectorCharted>Este setor tem estrelas.</Rimverse_SectorCharted>
+  <Rimverse_SectorEmpty>Quase vazio: nenhum sistema estelar mapeado aqui.</Rimverse_SectorEmpty>
+  <Rimverse_SysBeyondFrost>Além da linha de gelo: o gelo não derrete aqui.</Rimverse_SysBeyondFrost>
+  <Rimverse_SysInHabitable>Dentro da zona habitável: água líquida é possível.</Rimverse_SysInHabitable>
+  <Rimverse_SysLegend>Faixa verde: zona habitável. Anel azul tracejado: linha de gelo. Halo colorido: mundo habitado.</Rimverse_SysLegend>
+  <Rimverse_SysOwnedBy>Habitado por: {0}</Rimverse_SysOwnedBy>
+  <Rimverse_SysYourColony>Sua colônia: {0}</Rimverse_SysYourColony>
+  <Rimverse_SysYourShip>Sua nave</Rimverse_SysYourShip>
+  <Rimverse_SysZoomHelp>Role para aproximar, arraste com o botão direito para mover.</Rimverse_SysZoomHelp>
   <Rimverse_SystemAddress>Endereço: {0}</Rimverse_SystemAddress>
   <Rimverse_TerminalLinked>Ligado a: {0}</Rimverse_TerminalLinked>
   <Rimverse_TerminalNoTrader>Nenhum comerciante ligado a este terminal agora.</Rimverse_TerminalNoTrader>
   <Rimverse_TerminalTrade>Negociar com {0}</Rimverse_TerminalTrade>
   <Rimverse_UniverseAge>Idade do universo: {0} bilhões de anos</Rimverse_UniverseAge>
+  <Rimverse_ViewHere>Ir para o atual</Rimverse_ViewHere>
 </LanguageData>
