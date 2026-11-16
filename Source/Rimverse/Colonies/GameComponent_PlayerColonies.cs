@@ -67,11 +67,12 @@ namespace Rimverse
             if (c.tithe == TitheMode.Silver) income *= 1.15f;
             else if (c.tithe == TitheMode.Goods) income *= 0.6f;
             else if (c.tithe == TitheMode.Food) income *= 0.8f;
+            if (GameComponent_RimverseEvents.Halted(c)) income *= 0.25f;
             c.lastIncome = income - upkeep;
             treasury = Mathf.Max(0, treasury + Mathf.RoundToInt(c.lastIncome));
             BodyData b = c.Body;
             int size = b?.sizeClass ?? 30;
-            int prodFactor = c.stability >= 20f && c.tithe != TitheMode.Silver ? (c.tithe == TitheMode.Goods ? 2 : 1) : 0;
+            int prodFactor = c.stability >= 20f && c.tithe != TitheMode.Silver && !GameComponent_RimverseEvents.Halted(c) ? (c.tithe == TitheMode.Goods ? 2 : 1) : 0;
             if (c.tithe == TitheMode.Silver && c.stability >= 20f) treasury += Mathf.RoundToInt(c.population * 2f);
             foreach (ColonyFacility f in c.facilities) if (f.Ready && f.def != null) foreach (ThingDefCountClass o in f.def.output) if (o.thingDef != null) c.AddStock(o.thingDef.defName, o.count * prodFactor);
             c.AddStock("Steel", industriesReady(c, ColonyIndustry.Mining) * 40 * size / 20 * prodFactor);

@@ -256,6 +256,7 @@ namespace Rimverse
                 StarSystemId here = loc.SystemId;
                 SetSystemScan(here, ScanLevel.Range);
                 SensorReach(best, out double range, out ScanLevel level);
+                if (GameComponent_RimverseEvents.SensorsBlind) range *= 0.25;
                 if (range <= 0) continue;
                 AddScanBubble(here.galaxy, PositionOf(here), range, level);
             }

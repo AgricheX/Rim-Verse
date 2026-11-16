@@ -210,7 +210,7 @@ namespace Rimverse
             }
             ship.state.warping = false;
             ship.state.thrusting = false;
-            if (mode == InterstellarMode.Warp) ship.state.lastWarpTick = Find.TickManager.TicksGame;
+            if (mode == InterstellarMode.Warp) { ship.state.lastWarpTick = Find.TickManager.TicksGame; ship.state.heat += ship.heatCapacity * 0.25f; }
             comp.Dirty();
             Map target = BodyMapUtility.CreateOrbitPocket(map, ShipLaunchUtility.OrbitMapSize);
             MapComponent_ShipLocation dstLoc = MapComponent_ShipLocation.For(target);
