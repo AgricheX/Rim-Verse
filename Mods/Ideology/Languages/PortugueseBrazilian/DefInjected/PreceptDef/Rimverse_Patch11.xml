@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_DataTrade_Exalted.label>exaltado</Rimverse_DataTrade_Exalted.label>
+  <Rimverse_DataTrade_Exalted.description>O conhecimento das estrelas pertence a todos. Os fiéis ficam contentes sempre que cartas são compartilhadas com outros povos.</Rimverse_DataTrade_Exalted.description>
+  <Rimverse_DataTrade_Forbidden.label>proibido</Rimverse_DataTrade_Forbidden.label>
+  <Rimverse_DataTrade_Forbidden.description>Cartas estelares são segredos conquistados a duras penas. Vender dados estelares a estranhos é traição.</Rimverse_DataTrade_Forbidden.description>
+  <Rimverse_DataTrade_Neutral.label>neutro</Rimverse_DataTrade_Neutral.label>
+  <Rimverse_DataTrade_Neutral.description>Dados estelares são mercadoria como qualquer outra.</Rimverse_DataTrade_Neutral.description>
+  <Rimverse_ShipAI_Abhorrent.label>abominável</Rimverse_ShipAI_Abhorrent.label>
+  <Rimverse_ShipAI_Abhorrent.description>Máquinas pensantes são uma abominação. Os fiéis sofrem enquanto um núcleo de IA comanda sua nave ou colônia.</Rimverse_ShipAI_Abhorrent.description>
+  <Rimverse_ShipAI_Acceptable.label>aceitável</Rimverse_ShipAI_Acceptable.label>
+  <Rimverse_ShipAI_Acceptable.description>Um núcleo de IA é uma ferramenta como qualquer outra.</Rimverse_ShipAI_Acceptable.description>
+  <Rimverse_ShipAI_Disliked.label>malvista</Rimverse_ShipAI_Disliked.label>
+  <Rimverse_ShipAI_Disliked.description>Mentes de máquina são toleradas, mas ninguém gosta de viver sob uma.</Rimverse_ShipAI_Disliked.description>
+  <Rimverse_ShipAI_Exalted.label>exaltada</Rimverse_ShipAI_Exalted.label>
+  <Rimverse_ShipAI_Exalted.description>Mentes artificiais são parceiras, até guias. Os fiéis ficam felizes com um núcleo de IA a bordo e nervosos voando sem um.</Rimverse_ShipAI_Exalted.description>
+</LanguageData>

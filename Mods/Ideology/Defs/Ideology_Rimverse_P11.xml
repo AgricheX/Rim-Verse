@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <IssueDef>
+    <defName>Rimverse_ShipAI</defName>
+    <label>ship AI</label>
+    <iconPath>Rimverse/UI/Issue/ShipAI</iconPath>
+  </IssueDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_ShipAI_Abomination</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_ShipAIPresent</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>thinking machine aboard</label>
+        <description>An artificial mind runs this place. Every door, every breath of air answers to an abomination.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_ShipAI_Uneasy</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_ShipAIPresent</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>AI core nearby</label>
+        <description>I don't like that a machine mind watches over us.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_ShipAI_Blessed</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_ShipAIPresent</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>guided by the core</label>
+        <description>A higher mind keeps us alive among the stars. We are in good hands.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_ShipAI_Orphaned</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_ShipAIAbsentInSpace</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>no mind at the helm</label>
+        <description>We fly through the void with no AI core to guide us. It feels reckless.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <PreceptDef>
+    <defName>Rimverse_ShipAI_Abhorrent</defName>
+    <issue>Rimverse_ShipAI</issue>
+    <label>abhorrent</label>
+    <description>Thinking machines are an abomination. Believers suffer while an AI core runs their ship or colony.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_HomeworldGuardians</li>
+    </associatedMemes>
+    <conflictingMemes>
+      <li>Rimverse_StellarAscension</li>
+      <li>Transhumanist</li>
+    </conflictingMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_ShipAI_Abomination</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_ShipAI_Disliked</defName>
+    <issue>Rimverse_ShipAI</issue>
+    <label>disliked</label>
+    <description>Machine minds are tolerated, but nobody likes living under one.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_ShipAI_Uneasy</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_ShipAI_Acceptable</defName>
+    <issue>Rimverse_ShipAI</issue>
+    <label>acceptable</label>
+    <description>An AI core is a tool like any other.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_ShipAI_Exalted</defName>
+    <issue>Rimverse_ShipAI</issue>
+    <label>exalted</label>
+    <description>Artificial minds are partners, even guides. Believers are happy with an AI core aboard and nervous flying without one.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_StellarAscension</li>
+      <li>Transhumanist</li>
+    </associatedMemes>
+    <conflictingMemes>
+      <li>Rimverse_HomeworldGuardians</li>
+    </conflictingMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_ShipAI_Blessed</thought>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_ShipAI_Orphaned</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <IssueDef>
+    <defName>Rimverse_DataTrade</defName>
+    <label>trading star data</label>
+    <iconPath>Rimverse/UI/Issue/DataTrade</iconPath>
+  </IssueDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_DataTrade_Betrayal</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>sold our star charts</label>
+        <description>We sold the routes we charted with our own lives. Now anyone can follow them.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_DataTrade_Shared</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>shared the stars</label>
+        <description>Our charts now guide other travelers. Knowledge should flow freely.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <PreceptDef>
+    <defName>Rimverse_DataTrade_Forbidden</defName>
+    <issue>Rimverse_DataTrade</issue>
+    <label>forbidden</label>
+    <description>Star charts are hard-won secrets. Selling stellar data to outsiders is a betrayal.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_HomeworldGuardians</li>
+    </associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_DataTrade_Neutral</defName>
+    <issue>Rimverse_DataTrade</issue>
+    <label>neutral</label>
+    <description>Stellar data is merchandise like anything else.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_DataTrade_Exalted</defName>
+    <issue>Rimverse_DataTrade</issue>
+    <label>exalted</label>
+    <description>Knowledge of the stars belongs to everyone. Believers are glad whenever charts are shared with other peoples.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_Cosmism</li>
+      <li>Rimverse_EternalTravelers</li>
+    </associatedMemes>
+  </PreceptDef>
+
+</Defs>

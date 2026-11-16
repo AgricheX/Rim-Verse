@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_DataTrade_Betrayal.stages.0.label>vendemos nossas cartas estelares</Rimverse_DataTrade_Betrayal.stages.0.label>
+  <Rimverse_DataTrade_Betrayal.stages.0.description>Vendemos as rotas que mapeamos arriscando a vida. Agora qualquer um pode segui-las.</Rimverse_DataTrade_Betrayal.stages.0.description>
+  <Rimverse_DataTrade_Shared.stages.0.label>compartilhamos as estrelas</Rimverse_DataTrade_Shared.stages.0.label>
+  <Rimverse_DataTrade_Shared.stages.0.description>Nossas cartas agora guiam outros viajantes. O conhecimento deve circular livremente.</Rimverse_DataTrade_Shared.stages.0.description>
+  <Rimverse_ShipAI_Abomination.stages.0.label>máquina pensante a bordo</Rimverse_ShipAI_Abomination.stages.0.label>
+  <Rimverse_ShipAI_Abomination.stages.0.description>Uma mente artificial comanda este lugar. Cada porta, cada sopro de ar obedece a uma abominação.</Rimverse_ShipAI_Abomination.stages.0.description>
+  <Rimverse_ShipAI_Blessed.stages.0.label>guiados pelo núcleo</Rimverse_ShipAI_Blessed.stages.0.label>
+  <Rimverse_ShipAI_Blessed.stages.0.description>Uma mente superior nos mantém vivos entre as estrelas. Estamos em boas mãos.</Rimverse_ShipAI_Blessed.stages.0.description>
+  <Rimverse_ShipAI_Orphaned.stages.0.label>nenhuma mente no leme</Rimverse_ShipAI_Orphaned.stages.0.label>
+  <Rimverse_ShipAI_Orphaned.stages.0.description>Voamos pelo vazio sem um núcleo de IA para nos guiar. Parece imprudente.</Rimverse_ShipAI_Orphaned.stages.0.description>
+  <Rimverse_ShipAI_Uneasy.stages.0.label>núcleo de IA por perto</Rimverse_ShipAI_Uneasy.stages.0.label>
+  <Rimverse_ShipAI_Uneasy.stages.0.description>Não gosto de ter uma mente de máquina nos vigiando.</Rimverse_ShipAI_Uneasy.stages.0.description>
+</LanguageData>

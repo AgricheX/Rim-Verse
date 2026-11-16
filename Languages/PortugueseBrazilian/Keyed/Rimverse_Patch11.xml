@@ -48,6 +48,10 @@
   <Rimverse_RaiderKind_Pirates>piratas</Rimverse_RaiderKind_Pirates>
   <Rimverse_RareFind>Os sensores travaram em {0}, um objeto de classe de tamanho {1}. Coisas desse tamanho aparecem uma vez na vida. Só os dados já valem uma fortuna, e a equipe de pesquisa já está trabalhando.</Rimverse_RareFind>
   <Rimverse_RareFindLabel>Achado raro</Rimverse_RareFindLabel>
+  <Rimverse_RetrofitDoneLabel>Gravship convertida</Rimverse_RetrofitDoneLabel>
+  <Rimverse_RetrofitDoneText>{0} células de subestrutura da gravship agora são casco do Rimverse. Instale a ponte entregue na nave para comandá-la como uma nave do Rimverse. O motor grav continua funcionando.</Rimverse_RetrofitDoneText>
+  <Rimverse_RetrofitNoGravship>Não há subestrutura de gravship neste mapa.</Rimverse_RetrofitNoGravship>
+  <Rimverse_RetrofitNoOdyssey>Requer o Odyssey.</Rimverse_RetrofitNoOdyssey>
   <Rimverse_RuinResearch>As ruínas precursoras avançaram a pesquisa rara {0}.</Rimverse_RuinResearch>
   <Rimverse_SectorSizeClass>Classe de tamanho do setor: {0}</Rimverse_SectorSizeClass>
   <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>

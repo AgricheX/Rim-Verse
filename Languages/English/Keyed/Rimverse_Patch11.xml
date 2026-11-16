@@ -48,6 +48,10 @@
   <Rimverse_RaiderKind_Pirates>pirates</Rimverse_RaiderKind_Pirates>
   <Rimverse_RareFind>The sensors locked onto {0}, a size class {1} object. Things this large are found once in a lifetime. The data alone is worth a fortune, and the research team is already busy.</Rimverse_RareFind>
   <Rimverse_RareFindLabel>Rare find</Rimverse_RareFindLabel>
+  <Rimverse_RetrofitDoneLabel>Gravship retrofitted</Rimverse_RetrofitDoneLabel>
+  <Rimverse_RetrofitDoneText>{0} cells of gravship substructure are now Rimverse hull. Install the delivered bridge on the ship to command it as a Rimverse vessel. The grav engine still works.</Rimverse_RetrofitDoneText>
+  <Rimverse_RetrofitNoGravship>There is no gravship substructure on this map.</Rimverse_RetrofitNoGravship>
+  <Rimverse_RetrofitNoOdyssey>Requires Odyssey.</Rimverse_RetrofitNoOdyssey>
   <Rimverse_RuinResearch>The precursor ruins advanced the rare research {0}.</Rimverse_RuinResearch>
   <Rimverse_SectorSizeClass>Sector size class: {0}</Rimverse_SectorSizeClass>
   <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>

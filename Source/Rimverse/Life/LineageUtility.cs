@@ -66,7 +66,12 @@ namespace Rimverse
             GameComponent_Civilizations gc = GameComponent_Civilizations.Instance;
             if (gc?.civilizations == null) return;
             Civilization civ = gc.civilizations.FirstOrDefault(c => c.faction == pawn.Faction);
-            if (civ == null || civ.lineage.NullOrEmpty()) return;
+            if (civ == null) return;
+            if (civ.lineage.NullOrEmpty())
+            {
+                CivXenotypes.TryApply(pawn, civ);
+                return;
+            }
             if (!Rand.Chance(0.7f)) return;
             HediffDef def = DefDatabase<HediffDef>.GetNamedSilentFail(civ.lineage);
             if (BiotechCompat.TryXenotype(pawn, civ.lineage))

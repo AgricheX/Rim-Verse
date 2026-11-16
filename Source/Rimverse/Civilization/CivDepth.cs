@@ -185,6 +185,15 @@ namespace Rimverse
             else if (ideo.Contains("Traditionalism") || ideo.Contains("ReligiousZeal")) Add("FleshPurity");
             if (c.lore == LoreKind.Pirates || ideo.Contains("Militarism") && (c.government?.profile == AiProfile.Warmonger)) Add("Raider");
             if (c.lore == LoreKind.Pirates && Mathf.Abs(c.id) % 4 == 0) Add("Cannibal");
+            if (ideo.Contains("VoidFaith")) Add("Rimverse_VoidFaith");
+            if (ideo.Contains("Cosmism") || ideo.Contains("GreatFlux")) Add("Rimverse_Cosmism");
+            if (c.HasCivic("Rimverse_Policy_CivicTraders") || c.HasCivic("Rimverse_Policy_CivicBeltMiners") || (c.origin?.defName ?? "").Contains("Voidborn")) Add("Rimverse_EternalTravelers");
+            if (ideo.Contains("Nationalism") || ideo.Contains("Traditionalism")) Add("Rimverse_HomeworldGuardians");
+            else if (ideo.Contains("TechProgressivism") || c.stage >= 12) Add("Rimverse_StellarAscension");
+            if (c.HasCivic("Rimverse_Policy_CivicColonizers") || (c.planets != null && c.planets.Count >= 6 && list.Count < 4)) Add("Rimverse_Frontier");
+            if (c.HasCivic("Rimverse_Policy_CivicGateKeepers")) Add("Rimverse_GateCult");
+            if (c.lineage == "Rimverse_Lineage_VoidBorn" || (c.origin?.defName ?? "").Contains("Voidborn")) Add("Rimverse_VoidBorn");
+            if (list.Count > 5) list.RemoveRange(5, list.Count - 5);
             return list;
         }
 
