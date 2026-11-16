@@ -3,6 +3,12 @@
   <Rimverse_BodyEccentric>Eccentric orbit ({0}): seasons swing hard between near and far.</Rimverse_BodyEccentric>
   <Rimverse_BodyEqTemperature>Equilibrium temperature: {0}</Rimverse_BodyEqTemperature>
   <Rimverse_BodyTidalLocked>Tidally locked: one side always faces the star.</Rimverse_BodyTidalLocked>
+  <Rimverse_ContractDeadline>Time left: {0}</Rimverse_ContractDeadline>
+  <Rimverse_ContractGoTo>Go to {0}.</Rimverse_ContractGoTo>
+  <Rimverse_ContractReturn>Bring the cargo back to {0}.</Rimverse_ContractReturn>
+  <Rimverse_ContractRouteProgress>Systems charted: {0} of {1}.</Rimverse_ContractRouteProgress>
+  <Rimverse_ContractSmuggleCaught>{0} caught the smuggled cargo. The contract failed.</Rimverse_ContractSmuggleCaught>
+  <Rimverse_ContractSpyCaught>{0} caught your spies. The contract failed.</Rimverse_ContractSpyCaught>
   <Rimverse_CosmicRegion>Region of the web: a looser grouping of clusters between walls.</Rimverse_CosmicRegion>
   <Rimverse_CosmicWebCounts>{0} voids, {1} walls, {2} superclusters and {3} regions in this chunk.</Rimverse_CosmicWebCounts>
   <Rimverse_DistrictSizeClass>District size class: {0}</Rimverse_DistrictSizeClass>

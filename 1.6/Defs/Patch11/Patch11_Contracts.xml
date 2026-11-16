@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_UrgentDelivery</defName>
+    <label>urgent delivery</label>
+    <rootSelectionWeight>0.5</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Urgent delivery to [system]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[giver] needs [count] [item] delivered to [system] within [days] days. The cargo is dropped next to your ship when you accept. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>UrgentDelivery</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_Passenger</defName>
+    <label>passenger transport</label>
+    <rootSelectionWeight>0.5</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Passenger to [system]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->A passenger from [giver] needs a ride to [system] within [days] days. Keep them alive and bring them on the ship. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>Passenger</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_ConvoyEscort</defName>
+    <label>convoy escort</label>
+    <rootSelectionWeight>0.4</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Escort a convoy to [system]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[giver] asks you to meet a convoy at [system] and guard it for a day. Pirates may show up. Deadline: [days] days. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>ConvoyEscort</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_PirateHunt</defName>
+    <label>pirate hunt</label>
+    <rootSelectionWeight>0.4</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Hunt pirates at [system]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->Pirates are raiding near [system]. [giver] pays [reward] silver if you find and beat them within [days] days.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>PirateHunt</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_CrewRescue</defName>
+    <label>crew rescue</label>
+    <rootSelectionWeight>0.35</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Rescue a crew at [system]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->A crew from [giver] is stranded at [system]. Reach them within [days] days. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>CrewRescue</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_CargoRecovery</defName>
+    <label>cargo recovery</label>
+    <rootSelectionWeight>0.35</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Recover lost cargo from [system]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[giver] lost [count] [item] at [system]. Pick them up and bring them back here within [days] days. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>CargoRecovery</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_PlanetSurvey</defName>
+    <label>planet survey</label>
+    <rootSelectionWeight>0.45</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Survey [body]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[giver] wants a full survey of [body] in [system] within [days] days. Use sensors or probes. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>PlanetSurvey</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_SampleCollection</defName>
+    <label>sample collection</label>
+    <rootSelectionWeight>0.35</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Collect samples on [body]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->Land on [body] in [system] within [days] days to collect samples for [giver]. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>SampleCollection</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_RouteMap</defName>
+    <label>route mapping</label>
+    <rootSelectionWeight>0.3</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Map a route through [route]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[giver] wants a charted route through [route]. Visit all three within [days] days. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>RouteMap</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_Smuggling</defName>
+    <label>smuggling</label>
+    <rootSelectionWeight>0.25</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Smuggle [item] to [system]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->A contact from [giver] wants [count] [item] taken to [system] within [days] days, no questions asked. If the local authorities catch you, the deal is off. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>Smuggling</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_Espionage</defName>
+    <label>espionage</label>
+    <rootSelectionWeight>0.25</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Spy on [target]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[giver] wants intelligence on [target]. Stay at [system] for two days without being caught. Deadline: [days] days. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>Espionage</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_BlockadeBreak</defName>
+    <label>blockade run</label>
+    <rootSelectionWeight>0.3</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Break the blockade at [colony]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->Hostile ships are blockading [colony]. Production is halted until you go to [system] and drive them off. Deadline: [days] days. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>BlockadeBreak</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_ColonyDefense</defName>
+    <label>colony defense</label>
+    <rootSelectionWeight>0.3</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Defend [colony]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->An attack on [colony] is expected halfway through the next [days] days. Be at [system] when it comes, or the colony suffers. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>ColonyDefense</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_RuinExpedition</defName>
+    <label>ruin expedition</label>
+    <rootSelectionWeight>0.3</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Expedition to ruins on [body]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[giver] found precursor ruins on [body] in [system]. Land there within [days] days. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>RuinExpedition</kind>
+    </root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>Rimverse_Contract_Diplomatic</defName>
+    <label>diplomatic mission</label>
+    <rootSelectionWeight>0.3</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>3~6</expireDaysRange>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <minRefireDays>10</minRefireDays>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Carry an envoy to [target]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[giver] wants an envoy taken to [target] at [system] within [days] days. Keep the envoy safe. Reward: [reward] silver.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Rimverse.QuestNode_Root_RimverseContract">
+      <kind>Diplomatic</kind>
+    </root>
+  </QuestScriptDef>
+</Defs>
