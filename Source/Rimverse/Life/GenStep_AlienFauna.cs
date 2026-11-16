@@ -61,6 +61,7 @@ namespace Rimverse
         public override void Generate(Map map, GenStepParams parms)
         {
             BodyData body = BodyGenContext.current;
+            FlowShrines.TryPlace(map, body);
             List<PawnKindDef> species = SpeciesFor(body);
             if (species.Count == 0) return;
             float areaFactor = map.Area / 62500f;

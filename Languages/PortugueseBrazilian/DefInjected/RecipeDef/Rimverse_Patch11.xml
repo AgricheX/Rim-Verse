@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <Make_Rimverse_BeamBladeDouble.label>fabricar lâmina de feixe dupla</Make_Rimverse_BeamBladeDouble.label>
+  <Make_Rimverse_BeamBladeDouble.jobString>Fabricando lâmina de feixe dupla.</Make_Rimverse_BeamBladeDouble.jobString>
+  <Make_Rimverse_BeamBladeShort.label>fabricar lâmina de feixe curta</Make_Rimverse_BeamBladeShort.label>
+  <Make_Rimverse_BeamBladeShort.jobString>Fabricando lâmina de feixe curta.</Make_Rimverse_BeamBladeShort.jobString>
   <Rimverse_SpaceFuneral.label>funeral espacial</Rimverse_SpaceFuneral.label>
   <Rimverse_SpaceFuneral.description>Mandar um corpo ao vácuo com honras.</Rimverse_SpaceFuneral.description>
   <Rimverse_SpaceFuneral.jobString>Fazendo um funeral espacial.</Rimverse_SpaceFuneral.jobString>

@@ -3,7 +3,7 @@
 
   <HediffDef>
     <defName>Rimverse_FlowSensitive</defName>
-    <label>Great Flow sensitive</label>
+    <label>Great Flow</label>
     <description>This person feels the Great Flow, the current that runs through every living thing. With training they can push, sense and shape it.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(150,200,255)</defaultLabelColor>
@@ -17,10 +17,15 @@
       </li>
     </stages>
     <comps>
+      <li Class="Rimverse.HediffCompProperties_Flow" />
       <li Class="HediffCompProperties_GiveAbility">
         <abilityDefs>
           <li>Rimverse_FlowPush</li>
           <li>Rimverse_FlowSense</li>
+          <li>Rimverse_FlowPull</li>
+          <li>Rimverse_FlowLeap</li>
+          <li>Rimverse_FlowSpeed</li>
+          <li>Rimverse_FlowMastery</li>
         </abilityDefs>
       </li>
     </comps>
@@ -47,6 +52,9 @@
         <abilityDefs>
           <li>Rimverse_FlowHeal</li>
           <li>Rimverse_FlowCalm</li>
+          <li>Rimverse_FlowBarrier</li>
+          <li>Rimverse_FlowVision</li>
+          <li>Rimverse_FlowUnion</li>
         </abilityDefs>
       </li>
     </comps>
@@ -73,6 +81,9 @@
         <abilityDefs>
           <li>Rimverse_FlowChoke</li>
           <li>Rimverse_FlowStorm</li>
+          <li>Rimverse_FlowFear</li>
+          <li>Rimverse_FlowDrain</li>
+          <li>Rimverse_FlowDominate</li>
         </abilityDefs>
       </li>
     </comps>
@@ -103,7 +114,9 @@
     <comps>
       <li Class="Rimverse.CompProperties_FlowEffect">
         <mode>Push</mode>
-        <amount>3</amount>
+        <amount>4</amount>
+        <energy>10</energy>
+        <level>1</level>
       </li>
     </comps>
   </AbilityDef>
@@ -134,6 +147,8 @@
       <li Class="Rimverse.CompProperties_FlowEffect">
         <mode>Sense</mode>
         <amount>14</amount>
+        <energy>5</energy>
+        <level>1</level>
       </li>
     </comps>
   </AbilityDef>
@@ -163,7 +178,9 @@
     <comps>
       <li Class="Rimverse.CompProperties_FlowEffect">
         <mode>Heal</mode>
-        <amount>12</amount>
+        <amount>15</amount>
+        <energy>20</energy>
+        <level>2</level>
       </li>
     </comps>
   </AbilityDef>
@@ -194,6 +211,8 @@
       <li Class="Rimverse.CompProperties_FlowEffect">
         <mode>Calm</mode>
         <amount>1</amount>
+        <energy>15</energy>
+        <level>3</level>
       </li>
     </comps>
   </AbilityDef>
@@ -224,6 +243,8 @@
       <li Class="Rimverse.CompProperties_FlowEffect">
         <mode>Choke</mode>
         <amount>12</amount>
+        <energy>20</energy>
+        <level>3</level>
       </li>
     </comps>
   </AbilityDef>
@@ -253,7 +274,9 @@
     <comps>
       <li Class="Rimverse.CompProperties_FlowEffect">
         <mode>Storm</mode>
-        <amount>10</amount>
+        <amount>30</amount>
+        <energy>25</energy>
+        <level>4</level>
       </li>
     </comps>
   </AbilityDef>
@@ -343,7 +366,7 @@
         </capacities>
         <power>26</power>
         <cooldownTime>1.5</cooldownTime>
-        <armorPenetration>0.85</armorPenetration>
+        <armorPenetration>0.75</armorPenetration>
       </li>
       <li>
         <label>point</label>

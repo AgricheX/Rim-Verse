@@ -25,6 +25,29 @@
   <Rimverse_EnemyClass_6>encouraçado</Rimverse_EnemyClass_6>
   <Rimverse_EnemyClass_7>dreadnought</Rimverse_EnemyClass_7>
   <Rimverse_EnemyClass_8>estação de guerra</Rimverse_EnemyClass_8>
+  <Rimverse_FlowApprenticeIs>Aprendiz: {0}</Rimverse_FlowApprenticeIs>
+  <Rimverse_FlowAwakenDanger>Perto da morte, {0} sentiu o Grande Fluxo despertar por dentro.</Rimverse_FlowAwakenDanger>
+  <Rimverse_FlowAwakenMaster>Perto de um mestre do Fluxo, {0} despertou para o Grande Fluxo.</Rimverse_FlowAwakenMaster>
+  <Rimverse_FlowAwakenMeditation>Meditando ao lado do cristal, {0} despertou para o Grande Fluxo.</Rimverse_FlowAwakenMeditation>
+  <Rimverse_FlowBound>{0} aceitou {1} como aprendiz.</Rimverse_FlowBound>
+  <Rimverse_FlowBracket>nível {0}, {1}/{2} de energia</Rimverse_FlowBracket>
+  <Rimverse_FlowDeflected>Desviado</Rimverse_FlowDeflected>
+  <Rimverse_FlowLevelUp>{0} chegou ao nível {1} no Grande Fluxo.</Rimverse_FlowLevelUp>
+  <Rimverse_FlowMasterIs>Mestre: {0}</Rimverse_FlowMasterIs>
+  <Rimverse_FlowNeedEnergy>Precisa de {0} de energia do Fluxo (tem {1}).</Rimverse_FlowNeedEnergy>
+  <Rimverse_FlowNeedLevel>Exige nível {0} no Grande Fluxo.</Rimverse_FlowNeedLevel>
+  <Rimverse_FlowNoApprentice>Nenhum usuário do Fluxo aqui pode ser ensinado.</Rimverse_FlowNoApprentice>
+  <Rimverse_FlowNotSensitive>{PAWN_nameDef} não sente o Grande Fluxo.</Rimverse_FlowNotSensitive>
+  <Rimverse_FlowSideChanged>{0} agora segue o caminho da {1}.</Rimverse_FlowSideChanged>
+  <Rimverse_FlowTakeApprentice>Aceitar aprendiz</Rimverse_FlowTakeApprentice>
+  <Rimverse_FlowTakeApprenticeDesc>Ensinar um usuário do Fluxo menos experiente. Um aprendiz perto do mestre aprende três vezes mais rápido. Um mestre tem um aprendiz por vez.</Rimverse_FlowTakeApprenticeDesc>
+  <Rimverse_FlowTip>Sensibilidade: {0}
+Nível: {1} (máx. {2})
+Experiência: {3}/{4}
+Alinhamento: {5} (Ruptura -100 a Harmonia +100)</Rimverse_FlowTip>
+  <Rimverse_FlowVisionDone>{0} abriu a mente para todo o sistema. Todos os corpos daqui foram revelados.</Rimverse_FlowVisionDone>
+  <Rimverse_FlowWandererText>Um andarilho do Grande Fluxo passou por aqui e compartilhou seus ensinamentos com {0}.</Rimverse_FlowWandererText>
+  <Rimverse_FlowWeaponLevel>precisa do nível {0} no Grande Fluxo</Rimverse_FlowWeaponLevel>
   <Rimverse_LetterBombard>{0} reivindica o sistema de {1} e mandou uma frota bombardear a colônia.</Rimverse_LetterBombard>
   <Rimverse_LetterBombardLabel>Expedição de bombardeio</Rimverse_LetterBombardLabel>
   <Rimverse_LetterLegitimacy>O governo de {0} perdeu toda a legitimidade e foi trocado por: {1}.</Rimverse_LetterLegitimacy>
@@ -39,6 +62,17 @@
   <Rimverse_MsgFreighterHere>Um {1} de {0} chegou neste sistema e está aberto pra negócio.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Piratas saquearam um cargueiro de {0} perto de {1}.</Rimverse_MsgFreighterRaided>
   <Rimverse_MsgPrisonerSabotage>{0} sabotou o {1} durante a fuga!</Rimverse_MsgPrisonerSabotage>
+  <Rimverse_QolContinue>Continuar</Rimverse_QolContinue>
+  <Rimverse_QolDateTip>{0}
+Dia do ano: {1}
+Dias desde o pouso: {2}
+Ticks de jogo: {3}</Rimverse_QolDateTip>
+  <Rimverse_QolDaysToRot>Dias até estragar</Rimverse_QolDaysToRot>
+  <Rimverse_QolDaysToRotDesc>Quantos dias este item dura na temperatura atual.</Rimverse_QolDaysToRotDesc>
+  <Rimverse_QolFollow>Seguir</Rimverse_QolFollow>
+  <Rimverse_QolFollowDesc>Mantém a câmera neste colono até você desligar.</Rimverse_QolFollowDesc>
+  <Rimverse_QolGaugeInspect>Temperatura do cômodo: {0}</Rimverse_QolGaugeInspect>
+  <Rimverse_QolNeverRots>não estraga aqui</Rimverse_QolNeverRots>
   <Rimverse_RaiderKind_BountyHunters>caçadores de recompensa</Rimverse_RaiderKind_BountyHunters>
   <Rimverse_RaiderKind_Corporate>segurança corporativa</Rimverse_RaiderKind_Corporate>
   <Rimverse_RaiderKind_Fanatics>fanáticos</Rimverse_RaiderKind_Fanatics>

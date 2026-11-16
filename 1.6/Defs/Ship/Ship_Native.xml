@@ -1037,7 +1037,7 @@
       <isEdifice>false</isEdifice>
     </building>
     <designationCategory>Misc</designationCategory>
-      <researchPrerequisites>
+    <researchPrerequisites>
       <li>Rimverse_ShipBasics</li>
     </researchPrerequisites>
   </ThingDef>

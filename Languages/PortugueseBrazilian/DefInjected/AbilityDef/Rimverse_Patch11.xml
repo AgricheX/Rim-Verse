@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_FlowBarrier.label>barreira do Fluxo</Rimverse_FlowBarrier.label>
+  <Rimverse_FlowBarrier.description>Ergue uma barreira que absorve 150 de dano em você e nos aliados próximos por vinte segundos.</Rimverse_FlowBarrier.description>
+  <Rimverse_FlowDominate.label>dominação do Fluxo</Rimverse_FlowDominate.label>
+  <Rimverse_FlowDominate.description>Toma a mente de uma pessoa e a controla por um minuto.</Rimverse_FlowDominate.description>
+  <Rimverse_FlowDrain.label>drenar do Fluxo</Rimverse_FlowDrain.label>
+  <Rimverse_FlowDrain.description>Tira 20 de energia do Fluxo, ou de vida, de um alvo e passa para você.</Rimverse_FlowDrain.description>
+  <Rimverse_FlowFear.label>medo do Fluxo</Rimverse_FlowFear.label>
+  <Rimverse_FlowFear.description>Enche de pavor os inimigos num raio de cinco células, e eles fogem.</Rimverse_FlowFear.description>
+  <Rimverse_FlowLeap.label>salto do Fluxo</Rimverse_FlowLeap.label>
+  <Rimverse_FlowLeap.description>Salta até oito células num instante.</Rimverse_FlowLeap.description>
+  <Rimverse_FlowMastery.label>maestria do Fluxo</Rimverse_FlowMastery.label>
+  <Rimverse_FlowMastery.description>A arte mais profunda do Fluxo. A Harmonia traz um aliado de volta da morte. A Ruptura arranca um módulo de uma nave inimiga.</Rimverse_FlowMastery.description>
+  <Rimverse_FlowPull.label>puxar do Fluxo</Rimverse_FlowPull.label>
+  <Rimverse_FlowPull.description>Puxa um alvo até você ou arranca a arma da mão dele.</Rimverse_FlowPull.description>
+  <Rimverse_FlowSpeed.label>aceleração do Fluxo</Rimverse_FlowSpeed.label>
+  <Rimverse_FlowSpeed.description>Move-se 50% mais rápido por trinta segundos.</Rimverse_FlowSpeed.description>
+  <Rimverse_FlowUnion.label>união do Fluxo</Rimverse_FlowUnion.label>
+  <Rimverse_FlowUnion.description>Une os aliados próximos no Fluxo. Todos trabalham, se movem e lutam 20% melhor por uma hora.</Rimverse_FlowUnion.description>
+  <Rimverse_FlowVision.label>visão do Fluxo</Rimverse_FlowVision.label>
+  <Rimverse_FlowVision.description>Abre a mente para todo o sistema estelar. Todos os corpos daqui são revelados, como um escâner avançado.</Rimverse_FlowVision.description>
+</LanguageData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Qol_Continue.label>botão continuar</Rimverse_Qol_Continue.label>
+  <Rimverse_Qol_Continue.description>Adiciona ao menu principal um botão Continuar que carrega o seu save mais recente.</Rimverse_Qol_Continue.description>
+  <Rimverse_Qol_DetailedDate.label>data detalhada e dias até estragar</Rimverse_Qol_DetailedDate.label>
+  <Rimverse_Qol_DetailedDate.description>Passar o mouse na data mostra a data completa com a hora, o dia do ano e os dias desde o pouso. Itens que estragam mostram quantos dias faltam no cartão de informações.</Rimverse_Qol_DetailedDate.description>
+  <Rimverse_Qol_ExtraSpeed.label>velocidade extra</Rimverse_Qol_ExtraSpeed.label>
+  <Rimverse_Qol_ExtraSpeed.description>Uma tecla (Shift+4 por padrão) liga uma quarta velocidade, mais rápida, para viagens longas entre estrelas.</Rimverse_Qol_ExtraSpeed.description>
+  <Rimverse_Qol_FollowPawn.label>seguir um colono</Rimverse_Qol_FollowPawn.label>
+  <Rimverse_Qol_FollowPawn.description>Um botão nos colonos faz a câmera segui-los pelo mapa até você desligar.</Rimverse_Qol_FollowPawn.description>
+  <Rimverse_Qol_TempGauge.label>medidor de temperatura</Rimverse_Qol_TempGauge.label>
+  <Rimverse_Qol_TempGauge.description>Um pequeno medidor que você pode construir e que mostra a temperatura do cômodo direto no mapa.</Rimverse_Qol_TempGauge.description>
+</LanguageData>

@@ -123,4 +123,7 @@
   <Rimverse_Event_WarpDeviation.label>desvio de rota na dobra</Rimverse_Event_WarpDeviation.label>
   <Rimverse_Event_WarpDeviation.letterLabel>Desvio na dobra</Rimverse_Event_WarpDeviation.letterLabel>
   <Rimverse_Event_WarpDeviation.letterText>Um redemoinho na dobra tirou a nave da rota. A chegada atrasou {0} dias.</Rimverse_Event_WarpDeviation.letterText>
+  <Rimverse_FlowHunters.label>caçadores do Fluxo</Rimverse_FlowHunters.label>
+  <Rimverse_FlowWanderer.label>andarilho do Fluxo</Rimverse_FlowWanderer.label>
+  <Rimverse_FlowWanderer.letterLabel>Andarilho do Fluxo</Rimverse_FlowWanderer.letterLabel>
 </LanguageData>

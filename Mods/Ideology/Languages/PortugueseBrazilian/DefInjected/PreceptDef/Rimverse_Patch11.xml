@@ -6,6 +6,12 @@
   <Rimverse_DataTrade_Forbidden.description>Cartas estelares são segredos conquistados a duras penas. Vender dados estelares a estranhos é traição.</Rimverse_DataTrade_Forbidden.description>
   <Rimverse_DataTrade_Neutral.label>neutro</Rimverse_DataTrade_Neutral.label>
   <Rimverse_DataTrade_Neutral.description>Dados estelares são mercadoria como qualquer outra.</Rimverse_DataTrade_Neutral.description>
+  <Rimverse_FlowPath_Balance.label>equilíbrio</Rimverse_FlowPath_Balance.label>
+  <Rimverse_FlowPath_Balance.description>Harmonia e Ruptura são duas metades da mesma correnteza. Nenhuma é melhor.</Rimverse_FlowPath_Balance.description>
+  <Rimverse_FlowPath_Harmony.label>Harmonia venerada</Rimverse_FlowPath_Harmony.label>
+  <Rimverse_FlowPath_Harmony.description>O Fluxo deve curar e proteger. Os fiéis ficam contentes quando alguém da Harmonia vive entre eles.</Rimverse_FlowPath_Harmony.description>
+  <Rimverse_FlowPath_Rupture.label>Ruptura venerada</Rimverse_FlowPath_Rupture.label>
+  <Rimverse_FlowPath_Rupture.description>O Fluxo é poder e deve ser usado. Os fiéis ficam contentes quando alguém da Ruptura vive entre eles.</Rimverse_FlowPath_Rupture.description>
   <Rimverse_ShipAI_Abhorrent.label>abominável</Rimverse_ShipAI_Abhorrent.label>
   <Rimverse_ShipAI_Abhorrent.description>Máquinas pensantes são uma abominação. Os fiéis sofrem enquanto um núcleo de IA comanda sua nave ou colônia.</Rimverse_ShipAI_Abhorrent.description>
   <Rimverse_ShipAI_Acceptable.label>aceitável</Rimverse_ShipAI_Acceptable.label>

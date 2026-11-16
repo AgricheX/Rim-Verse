@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GeneDef>
+    <defName>Rimverse_Gene_FlowSensitive</defName>
+    <label>Flow sensitive</label>
+    <labelShortAdj>Flow-touched</labelShortAdj>
+    <description>Carriers of this gene feel the Great Flow from birth. A dormant carrier wakes more easily, and an awakened one gains thirty sensitivity.</description>
+    <geneClass>Rimverse.Gene_FlowSensitive</geneClass>
+    <iconPath>Rimverse/UI/Flow/Sense</iconPath>
+    <iconColor>(0.6,0.75,1)</iconColor>
+    <displayCategory>Rimverse_Lineages</displayCategory>
+    <displayOrderInCategory>200</displayOrderInCategory>
+    <statOffsets>
+      <PsychicSensitivity>0.1</PsychicSensitivity>
+    </statOffsets>
+    <biostatCpx>3</biostatCpx>
+    <biostatArc>1</biostatArc>
+  </GeneDef>
+
+</Defs>

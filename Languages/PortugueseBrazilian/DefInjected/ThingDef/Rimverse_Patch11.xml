@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <Rimverse_BeamBladeDouble.label>lâmina de feixe dupla</Rimverse_BeamBladeDouble.label>
+  <Rimverse_BeamBladeDouble.description>Um cabo com uma lâmina de luz em cada ponta. Só um usuário do Fluxo de nível 4 ou mais consegue empunhá-la.</Rimverse_BeamBladeDouble.description>
+  <Rimverse_BeamBladeDouble.tools.0.label>feixe</Rimverse_BeamBladeDouble.tools.0.label>
+  <Rimverse_BeamBladeDouble.tools.1.label>segundo feixe</Rimverse_BeamBladeDouble.tools.1.label>
+  <Rimverse_BeamBladeShort.label>lâmina de feixe curta</Rimverse_BeamBladeShort.label>
+  <Rimverse_BeamBladeShort.description>Uma lâmina de feixe curta e rápida para combate próximo. Só um usuário do Fluxo de nível 4 ou mais consegue empunhá-la.</Rimverse_BeamBladeShort.description>
+  <Rimverse_BeamBladeShort.tools.0.label>feixe</Rimverse_BeamBladeShort.tools.0.label>
+  <Rimverse_BeamBladeShort.tools.1.label>ponta</Rimverse_BeamBladeShort.tools.1.label>
   <Rimverse_ContractChip.label>chip de contrato</Rimverse_ContractChip.label>
   <Rimverse_ContractChip.description>Um chip de dados lacrado de um corretor de contratos. Leia pra receber um contrato aleatório: entrega, escolta, levantamento, caçada e mais, cada um com prazo e recompensa.</Rimverse_ContractChip.description>
   <Rimverse_ContractChip.comps.0.useLabel>Ler contrato</Rimverse_ContractChip.comps.0.useLabel>
@@ -23,10 +31,17 @@
   <Rimverse_Fauna_TideSkimmer.description>Um pastador alienígena anfíbio de casco hidrodinâmico. Alimenta-se nas águas rasas de mundos oceânicos e se arrasta até a praia para descansar.</Rimverse_Fauna_TideSkimmer.description>
   <Rimverse_Fauna_TideSkimmer.tools.0.label>bico</Rimverse_Fauna_TideSkimmer.tools.0.label>
   <Rimverse_Fauna_TideSkimmer.tools.1.label>cabeça</Rimverse_Fauna_TideSkimmer.tools.1.label>
+  <Rimverse_FlowArchive.label>arquivo do Fluxo</Rimverse_FlowArchive.label>
+  <Rimverse_FlowArchive.description>Uma placa de cristal com os ensinamentos de uma ordem antiga. Um leitor sensível ao Fluxo aprende muito com ela, e um adormecido pode despertar.</Rimverse_FlowArchive.description>
+  <Rimverse_FlowArchive.comps.0.useLabel>Estudar o arquivo</Rimverse_FlowArchive.comps.0.useLabel>
+  <Rimverse_FlowShrine.label>santuário do Fluxo</Rimverse_FlowShrine.label>
+  <Rimverse_FlowShrine.description>Um monólito antigo deixado por uma ordem perdida do Fluxo. Meditar ao lado dele dobra o que uma mente sensível aprende, e mentes adormecidas podem despertar.</Rimverse_FlowShrine.description>
   <Rimverse_FuneralTube.label>tubo funerário</Rimverse_FuneralTube.label>
   <Rimverse_FuneralTube.description>Um pequeno tubo de lançamento selado. A tripulação pode dar um funeral espacial a quem caiu, mandando o corpo pro vácuo ou pra uma estrela. Funciona sem nenhuma ideologia.</Rimverse_FuneralTube.description>
   <Rimverse_ShipMorgue.label>necrotério de bordo</Rimverse_ShipMorgue.label>
   <Rimverse_ShipMorgue.description>Um armário frio que impede os corpos de apodrecer enquanto tem energia, pra tripulação levar os mortos de volta ao planeta natal.</Rimverse_ShipMorgue.description>
   <Rimverse_StellarData.label>registro de dados estelares</Rimverse_StellarData.label>
   <Rimverse_StellarData.description>Um registro selado de um escaneamento exato: órbitas, massa, atmosfera e tudo de estranho que os sensores viram. Civilizações, cartógrafos e corretores de dados pagam por ele, e uma bancada de pesquisa pode transformá-lo em conhecimento.</Rimverse_StellarData.description>
+  <Rimverse_TemperatureGauge.label>medidor de temperatura</Rimverse_TemperatureGauge.label>
+  <Rimverse_TemperatureGauge.description>Um pequeno termômetro num poste. Mostra a temperatura do cômodo direto no mapa.</Rimverse_TemperatureGauge.description>
 </LanguageData>

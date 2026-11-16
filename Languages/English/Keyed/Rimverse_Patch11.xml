@@ -25,6 +25,29 @@
   <Rimverse_EnemyClass_6>battleship</Rimverse_EnemyClass_6>
   <Rimverse_EnemyClass_7>dreadnought</Rimverse_EnemyClass_7>
   <Rimverse_EnemyClass_8>war station</Rimverse_EnemyClass_8>
+  <Rimverse_FlowApprenticeIs>Apprentice: {0}</Rimverse_FlowApprenticeIs>
+  <Rimverse_FlowAwakenDanger>Close to death, {0} felt the Great Flow wake inside.</Rimverse_FlowAwakenDanger>
+  <Rimverse_FlowAwakenMaster>Near a master of the Flow, {0} woke to the Great Flow.</Rimverse_FlowAwakenMaster>
+  <Rimverse_FlowAwakenMeditation>Meditating beside the crystal, {0} woke to the Great Flow.</Rimverse_FlowAwakenMeditation>
+  <Rimverse_FlowBound>{0} took {1} as an apprentice.</Rimverse_FlowBound>
+  <Rimverse_FlowBracket>level {0}, {1}/{2} energy</Rimverse_FlowBracket>
+  <Rimverse_FlowDeflected>Deflected</Rimverse_FlowDeflected>
+  <Rimverse_FlowLevelUp>{0} reached level {1} in the Great Flow.</Rimverse_FlowLevelUp>
+  <Rimverse_FlowMasterIs>Master: {0}</Rimverse_FlowMasterIs>
+  <Rimverse_FlowNeedEnergy>Needs {0} Flow energy (has {1}).</Rimverse_FlowNeedEnergy>
+  <Rimverse_FlowNeedLevel>Requires Great Flow level {0}.</Rimverse_FlowNeedLevel>
+  <Rimverse_FlowNoApprentice>No Flow user here can be taught.</Rimverse_FlowNoApprentice>
+  <Rimverse_FlowNotSensitive>{PAWN_nameDef} does not feel the Great Flow.</Rimverse_FlowNotSensitive>
+  <Rimverse_FlowSideChanged>{0} now walks the path of {1}.</Rimverse_FlowSideChanged>
+  <Rimverse_FlowTakeApprentice>Take apprentice</Rimverse_FlowTakeApprentice>
+  <Rimverse_FlowTakeApprenticeDesc>Teach a less experienced Flow user. An apprentice near their master learns three times faster. A master has one apprentice at a time.</Rimverse_FlowTakeApprenticeDesc>
+  <Rimverse_FlowTip>Sensitivity: {0}
+Level: {1} (max {2})
+Experience: {3}/{4}
+Alignment: {5} (Rupture -100 to Harmony +100)</Rimverse_FlowTip>
+  <Rimverse_FlowVisionDone>{0} opened their mind to the whole system. Every body here is revealed.</Rimverse_FlowVisionDone>
+  <Rimverse_FlowWandererText>A wanderer of the Great Flow passed by and shared their teachings with {0}.</Rimverse_FlowWandererText>
+  <Rimverse_FlowWeaponLevel>needs Great Flow level {0}</Rimverse_FlowWeaponLevel>
   <Rimverse_LetterBombard>{0} claims the system of {1} and sent a fleet to bombard the colony.</Rimverse_LetterBombard>
   <Rimverse_LetterBombardLabel>Bombardment expedition</Rimverse_LetterBombardLabel>
   <Rimverse_LetterLegitimacy>The government of {0} lost all legitimacy and was replaced by: {1}.</Rimverse_LetterLegitimacy>
@@ -39,6 +62,17 @@
   <Rimverse_MsgFreighterHere>A {1} of {0} arrived in this system and is open for trade.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Pirates raided a freighter of {0} near {1}.</Rimverse_MsgFreighterRaided>
   <Rimverse_MsgPrisonerSabotage>{0} sabotaged the {1} while escaping!</Rimverse_MsgPrisonerSabotage>
+  <Rimverse_QolContinue>Continue</Rimverse_QolContinue>
+  <Rimverse_QolDateTip>{0}
+Day of the year: {1}
+Days since landing: {2}
+Game ticks: {3}</Rimverse_QolDateTip>
+  <Rimverse_QolDaysToRot>Days until rotten</Rimverse_QolDaysToRot>
+  <Rimverse_QolDaysToRotDesc>How many days this item lasts at the current temperature.</Rimverse_QolDaysToRotDesc>
+  <Rimverse_QolFollow>Follow</Rimverse_QolFollow>
+  <Rimverse_QolFollowDesc>Keep the camera on this colonist until you turn it off.</Rimverse_QolFollowDesc>
+  <Rimverse_QolGaugeInspect>Room temperature: {0}</Rimverse_QolGaugeInspect>
+  <Rimverse_QolNeverRots>does not rot here</Rimverse_QolNeverRots>
   <Rimverse_RaiderKind_BountyHunters>bounty hunters</Rimverse_RaiderKind_BountyHunters>
   <Rimverse_RaiderKind_Corporate>corporate security</Rimverse_RaiderKind_Corporate>
   <Rimverse_RaiderKind_Fanatics>fanatics</Rimverse_RaiderKind_Fanatics>
