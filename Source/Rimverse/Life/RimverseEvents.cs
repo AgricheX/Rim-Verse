@@ -26,6 +26,7 @@ namespace Rimverse
         public int sensorBlindUntil = -1;
         public Dictionary<int, int> colonyHaltUntil = new Dictionary<int, int>();
         public Dictionary<int, int> embargoUntil = new Dictionary<int, int>();
+        public Dictionary<int, int> techSaleUntil = new Dictionary<int, int>();
 
         public static GameComponent_RimverseEvents Instance => Current.Game?.GetComponent<GameComponent_RimverseEvents>();
 
@@ -44,10 +45,12 @@ namespace Rimverse
             Scribe_Values.Look(ref sensorBlindUntil, "sensorBlindUntil", -1);
             Scribe_Collections.Look(ref colonyHaltUntil, "colonyHaltUntil", LookMode.Value, LookMode.Value);
             Scribe_Collections.Look(ref embargoUntil, "embargoUntil", LookMode.Value, LookMode.Value);
+            Scribe_Collections.Look(ref techSaleUntil, "techSaleUntil", LookMode.Value, LookMode.Value);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 if (colonyHaltUntil == null) colonyHaltUntil = new Dictionary<int, int>();
                 if (embargoUntil == null) embargoUntil = new Dictionary<int, int>();
+                if (techSaleUntil == null) techSaleUntil = new Dictionary<int, int>();
             }
         }
     }
@@ -327,6 +330,7 @@ namespace Rimverse
                     return def.letterText.Formatted(body.name);
                 case "PrecursorRuin":
                     AddAnomaly(id.Key, body.index, "Rimverse_Anomaly_PrecursorRuins");
+                    CivTechTrade.RareFromRuins(300f);
                     return def.letterText.Formatted(body.name);
                 case "AncientSignal":
                     AddAnomaly(id.Key, body.index, "Rimverse_Anomaly_AncientBeacon");

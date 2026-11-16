@@ -30,6 +30,12 @@ namespace Rimverse
             foreach (Pawn p in ship.map.mapPawns.FreeColonistsSpawned.ToList()) if (ship.cells.Contains(p.Position)) Give(p, key);
         }
 
+        public static void Tale(string key, Pawn p)
+        {
+            TaleDef d = DefDatabase<TaleDef>.GetNamedSilentFail("Rimverse_Tale_" + key);
+            if (d != null && p != null) TaleRecorder.RecordTale(d, p);
+        }
+
         public static RimverseShip ShipOf(Pawn p)
         {
             if (p?.MapHeld == null) return null;
@@ -84,9 +90,17 @@ namespace Rimverse
                     if (loc.OnSurface)
                     {
                         string key = id + "|" + loc.systemKey + ":" + loc.bodyIndex;
-                        if (!home && worlds.Add(key)) ShipThoughts.Give(p, "NewWorld");
+                        if (!home && worlds.Add(key))
+                        {
+                            ShipThoughts.Give(p, "NewWorld");
+                            ShipThoughts.Tale("NewWorld", p);
+                        }
                     }
-                    else if (SpaceMapUtility.IsSpace(map) && orbited.Add(id)) ShipThoughts.Give(p, "FirstOrbit");
+                    else if (SpaceMapUtility.IsSpace(map) && orbited.Add(id))
+                    {
+                        ShipThoughts.Give(p, "FirstOrbit");
+                        ShipThoughts.Tale("FirstOrbit", p);
+                    }
                     if (home)
                     {
                         if (awayFromHome.TryGetValue(id, out int since) && now - since > 30 * GenDate.TicksPerDay) ShipThoughts.Give(p, "HomeworldReturn");
@@ -222,6 +236,8 @@ namespace Rimverse
             base.ConsumeIngredient(ingredient, recipe, map);
             if (dead == null || !dead.RaceProps.Humanlike) return;
             foreach (Pawn p in map.mapPawns.FreeColonistsSpawned) ShipThoughts.Give(p, "SpaceFuneral");
+            Pawn host = map.mapPawns.FreeColonistsSpawned.FirstOrDefault();
+            if (host != null) ShipThoughts.Tale("SpaceFuneral", host);
         }
     }
 
@@ -247,6 +263,20 @@ namespace Rimverse
                     CompRottable rot = (t as Corpse)?.GetComp<CompRottable>();
                     if (rot != null) rot.RotProgress = Mathf.Max(0f, rot.RotProgress - 250f);
                 }
+        }
+    }
+
+    [HarmonyPatch(typeof(Verb_Shoot), "TryCastShot")]
+    public static class Patch_ZeroGRecoil
+    {
+        public static void Postfix(Verb_Shoot __instance, bool __result)
+        {
+            if (!__result || !(__instance.CasterPawn is Pawn p) || !p.Spawned || p.stances?.stagger == null) return;
+            string proj = __instance.verbProps?.defaultProjectile?.defName ?? "";
+            if (proj.Contains("Laser") || proj.Contains("Plasma") || proj.Contains("Ion") || proj.Contains("Beam")) return;
+            if (GravityUtility.GravityAt(p) >= LifeAboard.ZeroG) return;
+            if (p.apparel != null && p.apparel.WornApparel.Any(a => a.def.defName == "Rimverse_Gear_MagBoots")) return;
+            if (Rand.Chance(0.12f)) p.stances.stagger.StaggerFor(45);
         }
     }
 

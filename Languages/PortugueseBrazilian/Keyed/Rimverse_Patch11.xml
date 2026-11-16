@@ -18,10 +18,21 @@
   <Rimverse_MsgEmbargoed>{0} tem um embargo contra você e não vai negociar.</Rimverse_MsgEmbargoed>
   <Rimverse_MsgFreighterHere>Um {1} de {0} chegou neste sistema e está aberto pra negócio.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Piratas saquearam um cargueiro de {0} perto de {1}.</Rimverse_MsgFreighterRaided>
+  <Rimverse_MsgPrisonerSabotage>{0} sabotou o {1} durante a fuga!</Rimverse_MsgPrisonerSabotage>
   <Rimverse_RareFind>Os sensores travaram em {0}, um objeto de classe de tamanho {1}. Coisas desse tamanho aparecem uma vez na vida. Só os dados já valem uma fortuna, e a equipe de pesquisa já está trabalhando.</Rimverse_RareFind>
   <Rimverse_RareFindLabel>Achado raro</Rimverse_RareFindLabel>
+  <Rimverse_RuinResearch>As ruínas precursoras avançaram a pesquisa rara {0}.</Rimverse_RuinResearch>
   <Rimverse_SectorSizeClass>Classe de tamanho do setor: {0}</Rimverse_SectorSizeClass>
   <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>
   <Rimverse_SurfaceCut>Recorte do mapa: {0}, {1} num mundo de {2} km de circunferência</Rimverse_SurfaceCut>
+  <Rimverse_TechSaleBlocked>Venda de tecnologia: {0}</Rimverse_TechSaleBlocked>
+  <Rimverse_TechSaleButton>Comprar tecnologia</Rimverse_TechSaleButton>
+  <Rimverse_TechSaleCooldown>próxima oferta em {0} dias</Rimverse_TechSaleCooldown>
+  <Rimverse_TechSaleDone>Você comprou {0} de {1}.</Rimverse_TechSaleDone>
+  <Rimverse_TechSaleNoSilver>prata insuficiente perto de um sinalizador</Rimverse_TechSaleNoSilver>
+  <Rimverse_TechSaleNothing>eles não sabem nada que você não saiba</Rimverse_TechSaleNothing>
+  <Rimverse_TechSaleOpinion>eles não confiam em você o bastante</Rimverse_TechSaleOpinion>
+  <Rimverse_TechSaleOption>{0} ({1} prata)</Rimverse_TechSaleOption>
+  <Rimverse_TechStolen>Seus espiões trouxeram dados sobre {0} de {1}.</Rimverse_TechStolen>
   <Rimverse_ZoneSizeClass>Classe de tamanho da zona: {0}</Rimverse_ZoneSizeClass>
 </LanguageData>

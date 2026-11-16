@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TaleDef>
+    <defName>Rimverse_Tale_FirstOrbit</defName>
+    <label>first orbit</label>
+    <taleClass>Tale_SinglePawn</taleClass>
+    <type>PermanentHistorical</type>
+    <baseInterest>3</baseInterest>
+    <rulePack>
+      <rulesStrings>
+        <li>tale_noun-&gt;[PAWN_nameDef] seeing a world from orbit</li>
+        <li>image-&gt;[PAWN_nameFull] floating at a ship window, a whole planet curving below</li>
+        <li>circumstance_phrase-&gt;as the terminator line crawls across the clouds</li>
+        <li>desc_sentence-&gt;Stars fill every corner of the scene.</li>
+      </rulesStrings>
+    </rulePack>
+  </TaleDef>
+  <TaleDef>
+    <defName>Rimverse_Tale_NewWorld</defName>
+    <label>new world landing</label>
+    <taleClass>Tale_SinglePawn</taleClass>
+    <type>PermanentHistorical</type>
+    <baseInterest>4</baseInterest>
+    <rulePack>
+      <rulesStrings>
+        <li>tale_noun-&gt;[PAWN_nameDef] stepping onto a new world</li>
+        <li>image-&gt;[PAWN_nameFull] leaving the first bootprint on alien ground</li>
+        <li>circumstance_phrase-&gt;under a sky of the wrong color</li>
+        <li>desc_sentence-&gt;A strange sun hangs low on the horizon.</li>
+      </rulesStrings>
+    </rulePack>
+  </TaleDef>
+  <TaleDef>
+    <defName>Rimverse_Tale_ShipVictory</defName>
+    <label>ship battle victory</label>
+    <taleClass>Tale_SinglePawn</taleClass>
+    <type>PermanentHistorical</type>
+    <baseInterest>6</baseInterest>
+    <rulePack>
+      <rulesStrings>
+        <li>tale_noun-&gt;[PAWN_nameDef] winning a battle among the stars</li>
+        <li>image-&gt;[PAWN_nameFull] on the bridge as an enemy ship breaks apart</li>
+        <li>circumstance_phrase-&gt;while warning lights flash red</li>
+        <li>desc_sentence-&gt;Debris glitters against the dark.</li>
+      </rulesStrings>
+    </rulePack>
+  </TaleDef>
+  <TaleDef>
+    <defName>Rimverse_Tale_SpaceFuneral</defName>
+    <label>space funeral</label>
+    <taleClass>Tale_SinglePawn</taleClass>
+    <type>PermanentHistorical</type>
+    <baseInterest>3</baseInterest>
+    <rulePack>
+      <rulesStrings>
+        <li>tale_noun-&gt;[PAWN_nameDef] sending a fallen friend to the stars</li>
+        <li>image-&gt;[PAWN_nameFull] watching a sealed pod drift toward a distant sun</li>
+        <li>circumstance_phrase-&gt;in total silence</li>
+        <li>desc_sentence-&gt;The crew stands in a line behind the glass.</li>
+      </rulesStrings>
+    </rulePack>
+  </TaleDef>
+</Defs>

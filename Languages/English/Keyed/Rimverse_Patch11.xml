@@ -18,10 +18,21 @@
   <Rimverse_MsgEmbargoed>{0} has an embargo against you and will not trade.</Rimverse_MsgEmbargoed>
   <Rimverse_MsgFreighterHere>A {1} of {0} arrived in this system and is open for trade.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Pirates raided a freighter of {0} near {1}.</Rimverse_MsgFreighterRaided>
+  <Rimverse_MsgPrisonerSabotage>{0} sabotaged the {1} while escaping!</Rimverse_MsgPrisonerSabotage>
   <Rimverse_RareFind>The sensors locked onto {0}, a size class {1} object. Things this large are found once in a lifetime. The data alone is worth a fortune, and the research team is already busy.</Rimverse_RareFind>
   <Rimverse_RareFindLabel>Rare find</Rimverse_RareFindLabel>
+  <Rimverse_RuinResearch>The precursor ruins advanced the rare research {0}.</Rimverse_RuinResearch>
   <Rimverse_SectorSizeClass>Sector size class: {0}</Rimverse_SectorSizeClass>
   <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>
   <Rimverse_SurfaceCut>Map cut: {0}, {1} on a world {2} km around</Rimverse_SurfaceCut>
+  <Rimverse_TechSaleBlocked>Technology sale: {0}</Rimverse_TechSaleBlocked>
+  <Rimverse_TechSaleButton>Buy technology</Rimverse_TechSaleButton>
+  <Rimverse_TechSaleCooldown>next offer in {0} days</Rimverse_TechSaleCooldown>
+  <Rimverse_TechSaleDone>You bought {0} from {1}.</Rimverse_TechSaleDone>
+  <Rimverse_TechSaleNoSilver>not enough silver near a beacon</Rimverse_TechSaleNoSilver>
+  <Rimverse_TechSaleNothing>they know nothing you don't</Rimverse_TechSaleNothing>
+  <Rimverse_TechSaleOpinion>they do not trust you enough</Rimverse_TechSaleOpinion>
+  <Rimverse_TechSaleOption>{0} ({1} silver)</Rimverse_TechSaleOption>
+  <Rimverse_TechStolen>Your spies brought back data on {0} from {1}.</Rimverse_TechStolen>
   <Rimverse_ZoneSizeClass>Zone size class: {0}</Rimverse_ZoneSizeClass>
 </LanguageData>

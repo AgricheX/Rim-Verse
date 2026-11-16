@@ -469,8 +469,11 @@ namespace Rimverse
                 case ContractKind.PlanetSurvey:
                     return u != null && u.GetScan(StarSystemId.FromKey(targetKey), body) >= ScanLevel.Exact;
                 case ContractKind.SampleCollection:
-                case ContractKind.RuinExpedition:
                     return atTarget && loc.OnSurface && loc.bodyIndex == body;
+                case ContractKind.RuinExpedition:
+                    if (!(atTarget && loc.OnSurface && loc.bodyIndex == body)) return false;
+                    CivTechTrade.RareFromRuins(1500f);
+                    return true;
                 case ContractKind.RouteMap:
                     if (loc != null && !loc.Traveling && route != null && route.Contains(loc.systemKey) && !visited.Contains(loc.systemKey))
                     {
@@ -497,6 +500,7 @@ namespace Rimverse
                         Civilization t = TargetCiv;
                         if (t != null) t.known = true;
                         if (t != null && !t.capitalKey.NullOrEmpty()) u?.SetSystemScan(t.Capital, ScanLevel.Exact);
+                        CivTechTrade.Steal(t);
                         return true;
                     }
             }

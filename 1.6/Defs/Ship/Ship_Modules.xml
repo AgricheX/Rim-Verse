@@ -258,7 +258,7 @@
         <mass>2</mass>
       </li>
       <li Class="CompProperties_Power">
-        <compClass>CompPowerPlant</compClass>
+        <compClass>Rimverse.CompPowerPlantShipSolar</compClass>
         <basePowerConsumption>-800</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>

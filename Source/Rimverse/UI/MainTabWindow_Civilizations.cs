@@ -142,6 +142,17 @@ namespace Rimverse
                 if (trade.Accepted)
                 {
                     if (l.ButtonText("Rimverse_CivHail".Translate())) CivDiplomacy.Hail(c, map);
+                    AcceptanceReport tech = CivTechTrade.CanBuy(c, map);
+                    if (tech.Accepted)
+                    {
+                        if (l.ButtonText("Rimverse_TechSaleButton".Translate())) CivTechTrade.OpenMenu(c, map);
+                    }
+                    else if (!tech.Reason.NullOrEmpty())
+                    {
+                        GUI.color = Color.gray;
+                        l.Label("Rimverse_TechSaleBlocked".Translate(tech.Reason));
+                        GUI.color = Color.white;
+                    }
                 }
                 else
                 {
