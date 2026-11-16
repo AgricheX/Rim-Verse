@@ -20,6 +20,12 @@ namespace Rimverse
             if (roomCells.TryGetValue(role, out List<IntVec3> cells) && cells.Count > 0) return cells.RandomElement();
             return freeCells.Count > 0 ? freeCells.RandomElement() : fallback;
         }
+
+        public List<IntVec3> RandomCellsIn(RoomRole role, int count)
+        {
+            List<IntVec3> pool = roomCells.TryGetValue(role, out List<IntVec3> cells) && cells.Count > 0 ? cells : freeCells;
+            return pool.InRandomOrder().Take(count).ToList();
+        }
     }
 
     public class BlueprintBuildOptions

@@ -32,6 +32,8 @@ namespace Rimverse
                 case MegastructureKind.DeepObservatory: return Tex("i_dish", () => MegastructureArt.Dish(96, 4));
                 case MegastructureKind.Citadel: return Tex("i_cit", () => MegastructureArt.Citadel(96, 5));
                 case MegastructureKind.WormholeStabilizer: return Tex("i_stab", () => MegastructureArt.Stabilizer(96, 6));
+                case MegastructureKind.PirateBase: return Tex("i_pir", () => MegastructureArt.Citadel(96, 11));
+                case MegastructureKind.CivStation: return Tex("i_sta", () => MegastructureArt.Cylinder(96, 1f, 12));
                 default: return Tex("i_gate", () => MegastructureArt.Gate(96, true, false, 7));
             }
         }
@@ -115,6 +117,17 @@ namespace Rimverse
                         Vector2 off = here ? new Vector2(0f, mapW * 0.45f) : body != null ? planetOff + dir * disk * 0.9f : dir * mapW * 0.35f;
                         bg.AddSprite(bg.NewMat(glow, ShaderDatabase.MoteGlow, new Color(0.7f, 0.4f, 1f, 0.5f), 1003), off, here ? mapW * 1.2f : mapW * 0.3f, 0f, 0.12f);
                         bg.AddSprite(bg.NewMat(t, ShaderDatabase.Transparent, Color.white, 1003), off, here ? mapW * 1.4f : mapW * 0.22f, m.angle, 0.12f);
+                        break;
+                    }
+                    case MegastructureKind.PirateBase:
+                    case MegastructureKind.CivStation:
+                    {
+                        if (here) break;
+                        bool pirate = m.kind == MegastructureKind.PirateBase;
+                        Texture2D t = Tex("base" + m.seed, () => MegastructureArt.Cylinder(256, 1f, m.seed));
+                        Vector2 off = body != null ? planetOff + dir * disk * 0.62f : dir * mapW * 0.3f;
+                        Color tint = m.ruin ? new Color(0.55f, 0.5f, 0.48f) : pirate ? new Color(1f, 0.72f, 0.66f) : Color.white;
+                        bg.AddSprite(bg.NewMat(t, ShaderDatabase.Transparent, tint, Mathf.Sin(rad) > 0f ? 1003 : 1005), off, mapW * 0.07f, m.angle, 0.14f);
                         break;
                     }
                     case MegastructureKind.Gate:

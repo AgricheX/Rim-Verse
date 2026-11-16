@@ -27,6 +27,8 @@
   <Rimverse_CosmicLevel_Zone>zona</Rimverse_CosmicLevel_Zone>
   <Rimverse_GalaxyAttr_Barred>{0} barrada</Rimverse_GalaxyAttr_Barred>
   <Rimverse_GalaxyAttr_Ringed>{0} com anel</Rimverse_GalaxyAttr_Ringed>
+  <Rimverse_LetterBaseCleared>Base pirata tomada</Rimverse_LetterBaseCleared>
+  <Rimverse_LetterBaseClearedDesc>Os últimos defensores de {0} caíram. A base é sua para saquear: o que sobrou nos porões pode ser levado para a sua nave.</Rimverse_LetterBaseClearedDesc>
   <Rimverse_LetterMegaStage>{0}: etapa concluída</Rimverse_LetterMegaStage>
   <Rimverse_LetterMegaStageDesc>{0} chegou a uma nova etapa: {1} ({2}/{3}). A obra segue lá fora na órbita, e a estrutura agora rende mais do que foi feita para dar.</Rimverse_LetterMegaStageDesc>
   <Rimverse_MegaAlreadySupplied>Esta etapa já foi abastecida.</Rimverse_MegaAlreadySupplied>
@@ -44,18 +46,25 @@
   <Rimverse_MegaStage_4>concluída</Rimverse_MegaStage_4>
   <Rimverse_MegaTip>Dono: {0}\nEtapa: {1} ({2} construída)</Rimverse_MegaTip>
   <Rimverse_Mega_Citadel>cidadela</Rimverse_Mega_Citadel>
+  <Rimverse_Mega_CivStation>estação</Rimverse_Mega_CivStation>
   <Rimverse_Mega_DeepObservatory>observatório profundo</Rimverse_Mega_DeepObservatory>
   <Rimverse_Mega_Gate>portão</Rimverse_Mega_Gate>
   <Rimverse_Mega_GiantHabitat>habitat gigante</Rimverse_Mega_GiantHabitat>
   <Rimverse_Mega_OrbitalRing>anel orbital</Rimverse_Mega_OrbitalRing>
+  <Rimverse_Mega_PirateBase>base pirata</Rimverse_Mega_PirateBase>
   <Rimverse_Mega_RingHabitat>habitat em anel</Rimverse_Mega_RingHabitat>
   <Rimverse_Mega_StellarCollector>coletor estelar</Rimverse_Mega_StellarCollector>
   <Rimverse_Mega_WormholeStabilizer>estabilizador de buraco de minhoca</Rimverse_Mega_WormholeStabilizer>
   <Rimverse_MsgMegaDocked>Atracado em {0}. Uma passarela leva até a eclusa mais próxima.</Rimverse_MsgMegaDocked>
   <Rimverse_MsgMegaSection>{0} passou para a seção {2} de {3} de {1}.</Rimverse_MsgMegaSection>
   <Rimverse_MsgMegaSupplied>Materiais enviados: a obra de {0} continua.</Rimverse_MsgMegaSupplied>
+  <Rimverse_MsgTraderDocked>{0} encostou ao lado. Vá até o terminal de comércio para negociar pessoalmente, ou chame pelo console de comunicação.</Rimverse_MsgTraderDocked>
+  <Rimverse_MsgTraderLeft>O comerciante soltou as amarras e partiu.</Rimverse_MsgTraderLeft>
   <Rimverse_RG_MegaStage>{0} acabou de concluir uma nova etapa de {1}: {2}. Dá para ver da órbita.</Rimverse_RG_MegaStage>
   <Rimverse_ScannedVolume>Varreduras de sensor: {0} ({1} anos-luz cúbicos)</Rimverse_ScannedVolume>
   <Rimverse_SystemAddress>Endereço: {0}</Rimverse_SystemAddress>
+  <Rimverse_TerminalLinked>Ligado a: {0}</Rimverse_TerminalLinked>
+  <Rimverse_TerminalNoTrader>Nenhum comerciante ligado a este terminal agora.</Rimverse_TerminalNoTrader>
+  <Rimverse_TerminalTrade>Negociar com {0}</Rimverse_TerminalTrade>
   <Rimverse_UniverseAge>Idade do universo: {0} bilhões de anos</Rimverse_UniverseAge>
 </LanguageData>

@@ -175,11 +175,11 @@ namespace Rimverse
             return crew;
         }
 
-        internal static bool TryFindRect(Map map, RimverseShip player, int w, int h, out CellRect result)
+        internal static bool TryFindRect(Map map, RimverseShip player, int w, int h, out CellRect result, int[] gaps = null)
         {
             CellRect pb = ShipMover.Bounds(player);
             IntVec3 pc = pb.CenterCell;
-            foreach (int gap in new[] { 35, 25, 18, 12 })
+            foreach (int gap in gaps ?? new[] { 35, 25, 18, 12 })
             {
                 List<IntVec3> origins = new List<IntVec3>
                 {

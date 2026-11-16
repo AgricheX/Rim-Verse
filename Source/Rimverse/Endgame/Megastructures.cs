@@ -15,7 +15,9 @@ namespace Rimverse
         WormholeStabilizer,
         Gate,
         RingHabitat,
-        Citadel
+        Citadel,
+        PirateBase,
+        CivStation
     }
 
     public class MegastructureData : IExposable
@@ -46,6 +48,8 @@ namespace Rimverse
         public float Output => Mathf.Clamp01((float)stage / Stages);
 
         public bool Visitable => stage >= 1;
+
+        public bool IsBase => kind == MegastructureKind.PirateBase || kind == MegastructureKind.CivStation;
 
         public bool AroundStar => kind == MegastructureKind.StellarCollector || kind == MegastructureKind.Gate && body < 0;
 
@@ -88,6 +92,8 @@ namespace Rimverse
                     case MegastructureKind.GiantHabitat: return 512;
                     case MegastructureKind.Citadel: return 64;
                     case MegastructureKind.Gate: return 96;
+                    case MegastructureKind.PirateBase:
+                    case MegastructureKind.CivStation: return 1;
                     default: return 24;
                 }
             }
@@ -194,6 +200,7 @@ namespace Rimverse
                 g.ruin = true;
                 g.angle = (systemKey.GetHashCode() & 0xffff) / 65535f * 360f;
             }
+            SpaceBases.Seed(this, id, systemKey);
             GameComponent_Civilizations civs = GameComponent_Civilizations.Instance;
             if (civs == null) return;
             foreach (Civilization c in civs.civilizations)
@@ -222,7 +229,7 @@ namespace Rimverse
             if (tick % TickInterval != 123) return;
             foreach (MegastructureData m in all)
             {
-                if (m.player || m.Complete || m.ruin) continue;
+                if (m.player || m.Complete || m.ruin || m.IsBase) continue;
                 if (m.colonyId >= 0) continue;
                 Civilization c = m.Civ;
                 if (c == null || c.dead) continue;

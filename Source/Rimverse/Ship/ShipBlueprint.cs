@@ -177,6 +177,7 @@ namespace Rimverse
             if (n.Contains("Bench") || n.Contains("Fabricator") || n.Contains("Lab") || n.Contains("Foundry") || n.Contains("Workshop") || n.Contains("Maintenance")) return RoomRole.Workshop;
             if (n.Contains("Armory") || n.Contains("Weapon")) return RoomRole.Armory;
             if (n.Contains("AICore") || n.Contains("Security") || n.Contains("Climate")) return RoomRole.Reactor;
+            if (n.Contains("TradeTerminal") || n.Contains("HoldContainer") || n.Contains("Shelf")) return RoomRole.Cargo;
             return RoomRole.None;
         }
 

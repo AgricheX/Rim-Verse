@@ -59,7 +59,7 @@ namespace Rimverse
         private void CheckEdges()
         {
             MegastructureData m = Mega;
-            if (m == null) return;
+            if (m == null || m.SectionCount <= 1) return;
             foreach (Pawn p in map.mapPawns.FreeColonistsSpawned.ToList())
             {
                 if (p.Downed || !p.Spawned) continue;
@@ -234,6 +234,7 @@ namespace Rimverse
             ShipMover.Move(ship, target, offset);
             RimverseShip moved = target.GetComponent<MapComponent_RimverseShips>().ShipById(bridge.thingIDNumber);
             if (moved != null) Gangway(target, moved);
+            if (m.IsBase) SpaceBases.OnDocked(target, m);
             BodyMapUtility.CleanupIfEmpty(source);
             Messages.Message("Rimverse_MsgMegaDocked".Translate(m.Label), bridge, MessageTypeDefOf.PositiveEvent, false);
             CameraJumper.TryJump(bridge);
@@ -367,6 +368,12 @@ namespace Rimverse
             MapComponent_MegaSection comp = MapComponent_MegaSection.For(map);
             comp.megaId = mega.id;
             comp.section = section;
+            if (mega.IsBase)
+            {
+                SpaceBases.Generate(map, mega, comp);
+                comp.genBuildings = map.listerBuildings.allBuildingsColonist.Count;
+                return;
+            }
             int z0, z1;
             switch (mega.kind)
             {

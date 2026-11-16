@@ -27,6 +27,8 @@
   <Rimverse_CosmicLevel_Zone>zone</Rimverse_CosmicLevel_Zone>
   <Rimverse_GalaxyAttr_Barred>barred {0}</Rimverse_GalaxyAttr_Barred>
   <Rimverse_GalaxyAttr_Ringed>{0} with a ring</Rimverse_GalaxyAttr_Ringed>
+  <Rimverse_LetterBaseCleared>Pirate base taken</Rimverse_LetterBaseCleared>
+  <Rimverse_LetterBaseClearedDesc>The last defenders of the {0} are down. The base is yours to strip: whatever is left in its holds can be carried back to your ship.</Rimverse_LetterBaseClearedDesc>
   <Rimverse_LetterMegaStage>{0}: stage finished</Rimverse_LetterMegaStage>
   <Rimverse_LetterMegaStageDesc>The {0} has reached a new stage: {1} ({2}/{3}). The work goes on far out in orbit, and the structure now gives more of what it was built for.</Rimverse_LetterMegaStageDesc>
   <Rimverse_MegaAlreadySupplied>This stage is already supplied.</Rimverse_MegaAlreadySupplied>
@@ -44,18 +46,25 @@
   <Rimverse_MegaStage_4>complete</Rimverse_MegaStage_4>
   <Rimverse_MegaTip>Owner: {0}\nStage: {1} ({2} built)</Rimverse_MegaTip>
   <Rimverse_Mega_Citadel>citadel</Rimverse_Mega_Citadel>
+  <Rimverse_Mega_CivStation>station</Rimverse_Mega_CivStation>
   <Rimverse_Mega_DeepObservatory>deep observatory</Rimverse_Mega_DeepObservatory>
   <Rimverse_Mega_Gate>gate</Rimverse_Mega_Gate>
   <Rimverse_Mega_GiantHabitat>giant habitat</Rimverse_Mega_GiantHabitat>
   <Rimverse_Mega_OrbitalRing>orbital ring</Rimverse_Mega_OrbitalRing>
+  <Rimverse_Mega_PirateBase>pirate base</Rimverse_Mega_PirateBase>
   <Rimverse_Mega_RingHabitat>ring habitat</Rimverse_Mega_RingHabitat>
   <Rimverse_Mega_StellarCollector>stellar collector</Rimverse_Mega_StellarCollector>
   <Rimverse_Mega_WormholeStabilizer>wormhole stabilizer</Rimverse_Mega_WormholeStabilizer>
   <Rimverse_MsgMegaDocked>Docked at the {0}. A gangway leads to the nearest airlock.</Rimverse_MsgMegaDocked>
   <Rimverse_MsgMegaSection>{0} crossed into section {2} of {3} of the {1}.</Rimverse_MsgMegaSection>
   <Rimverse_MsgMegaSupplied>Materials sent: work on the {0} continues.</Rimverse_MsgMegaSupplied>
+  <Rimverse_MsgTraderDocked>{0} has come alongside. Walk to its trade terminal to trade in person, or call it on the comms console.</Rimverse_MsgTraderDocked>
+  <Rimverse_MsgTraderLeft>The trader has cast off and left.</Rimverse_MsgTraderLeft>
   <Rimverse_RG_MegaStage>{0} just finished a new stage of the {1}: {2}. You can see it from orbit.</Rimverse_RG_MegaStage>
   <Rimverse_ScannedVolume>Sensor sweeps: {0} ({1} cubic light-years)</Rimverse_ScannedVolume>
   <Rimverse_SystemAddress>Address: {0}</Rimverse_SystemAddress>
+  <Rimverse_TerminalLinked>Linked to: {0}</Rimverse_TerminalLinked>
+  <Rimverse_TerminalNoTrader>No trader linked to this terminal right now.</Rimverse_TerminalNoTrader>
+  <Rimverse_TerminalTrade>Trade with {0}</Rimverse_TerminalTrade>
   <Rimverse_UniverseAge>Universe age: {0} billion years</Rimverse_UniverseAge>
 </LanguageData>
