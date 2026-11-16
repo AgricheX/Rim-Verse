@@ -56,7 +56,7 @@ namespace Rimverse
                         adapt = p.health.AddHediff(LifeDefOf.Rimverse_ZeroGAdaptation);
                     }
                     adapt.Severity = 1f;
-                    float boneFactor = CatalogTraits.BoneLossFactor(p);
+                    float boneFactor = CatalogTraits.BoneLossFactor(p) * GameComponent_ShipGym.BoneLossFactor(p);
                     if (boneFactor > 0f)
                     {
                         HealthUtility.AdjustSeverity(p, LifeDefOf.Rimverse_BoneLoss, BoneLossPerHour * boneFactor);

@@ -20,6 +20,8 @@
   <Rimverse_CmdMegaSupplyDesc>Envia os materiais da próxima etapa para as equipes na órbita. Precisa de: {0}. A etapa leva cerca de {1} dias enquanto este nó tiver energia.</Rimverse_CmdMegaSupplyDesc>
   <Rimverse_CmdMegaUndock>Desatracar</Rimverse_CmdMegaUndock>
   <Rimverse_CmdMegaUndockDesc>Sai da megaestrutura e volta para a órbita aberta.</Rimverse_CmdMegaUndockDesc>
+  <Rimverse_ColonyAIAdmin>Administrada por um núcleo de persona de IA: mais estável, mais discreta, melhor com a papelada.</Rimverse_ColonyAIAdmin>
+  <Rimverse_ColonyInstallAI>Instalar um núcleo de persona de IA como administrador</Rimverse_ColonyInstallAI>
   <Rimverse_CosmicChildren>Contém: {0} × {1}</Rimverse_CosmicChildren>
   <Rimverse_CosmicChunk>Pedaço do universo: {0}</Rimverse_CosmicChunk>
   <Rimverse_CosmicDesc_Cluster>Um aglomerado: centenas de galáxias presas pela própria gravidade, banhadas em gás quente.</Rimverse_CosmicDesc_Cluster>
@@ -99,13 +101,17 @@
   <Rimverse_Mega_RingHabitat>habitat em anel</Rimverse_Mega_RingHabitat>
   <Rimverse_Mega_StellarCollector>coletor estelar</Rimverse_Mega_StellarCollector>
   <Rimverse_Mega_WormholeStabilizer>estabilizador de buraco de minhoca</Rimverse_Mega_WormholeStabilizer>
+  <Rimverse_MsgAIAdmin>Um núcleo de persona de IA agora administra {0}.</Rimverse_MsgAIAdmin>
   <Rimverse_MsgCryoStarted>{0} está à deriva rumo a {1}. A tripulação dorme pelos próximos {2} anos.</Rimverse_MsgCryoStarted>
   <Rimverse_MsgLaneStarted>{0} entrou na hiperrota para {1}. Chegada em cerca de {2} dias.</Rimverse_MsgLaneStarted>
   <Rimverse_MsgMegaDocked>Atracado em {0}. Uma passarela leva até a eclusa mais próxima.</Rimverse_MsgMegaDocked>
   <Rimverse_MsgMegaSection>{0} passou para a seção {2} de {3} de {1}.</Rimverse_MsgMegaSection>
   <Rimverse_MsgMegaSupplied>Materiais enviados: a obra de {0} continua.</Rimverse_MsgMegaSupplied>
+  <Rimverse_MsgMineHit>{0} entrou num campo minado.</Rimverse_MsgMineHit>
   <Rimverse_MsgTraderDocked>{0} encostou ao lado. Vá até o terminal de comércio para negociar pessoalmente, ou chame pelo console de comunicação.</Rimverse_MsgTraderDocked>
   <Rimverse_MsgTraderLeft>O comerciante soltou as amarras e partiu.</Rimverse_MsgTraderLeft>
+  <Rimverse_MsgWreckSalvage>Os destroços de {0} estão abertos para saque: aço, plastaço, peças e o que havia nos porões.</Rimverse_MsgWreckSalvage>
+  <Rimverse_PlayerStage>Seu estágio: {0} ({1})</Rimverse_PlayerStage>
   <Rimverse_ProblemCryoAwake>{0} colonos ainda estão acordados. A travessia leva cerca de {1} anos: coloque todo mundo em cápsulas de criossono antes.</Rimverse_ProblemCryoAwake>
   <Rimverse_ProblemCryoRange>Longe demais para uma travessia dormindo ({0} al, no máximo {1} al).</Rimverse_ProblemCryoRange>
   <Rimverse_ProblemLaneClass>Só naves capitais conseguem entrar numa hiperrota (esta nave é {0}).</Rimverse_ProblemLaneClass>

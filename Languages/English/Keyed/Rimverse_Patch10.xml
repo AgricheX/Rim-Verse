@@ -20,6 +20,8 @@
   <Rimverse_CmdMegaSupplyDesc>Send the materials for the next stage to the work crews in orbit. Needs: {0}. The stage then takes about {1} days while this node has power.</Rimverse_CmdMegaSupplyDesc>
   <Rimverse_CmdMegaUndock>Undock</Rimverse_CmdMegaUndock>
   <Rimverse_CmdMegaUndockDesc>Leave the megastructure and return to open orbit.</Rimverse_CmdMegaUndockDesc>
+  <Rimverse_ColonyAIAdmin>Run by an AI persona core: steadier, quieter, better at paperwork.</Rimverse_ColonyAIAdmin>
+  <Rimverse_ColonyInstallAI>Install an AI persona core as administrator</Rimverse_ColonyInstallAI>
   <Rimverse_CosmicChildren>Contains: {0} × {1}</Rimverse_CosmicChildren>
   <Rimverse_CosmicChunk>Universe chunk: {0}</Rimverse_CosmicChunk>
   <Rimverse_CosmicDesc_Cluster>A cluster: hundreds of galaxies held together by their own gravity, bathed in hot gas.</Rimverse_CosmicDesc_Cluster>
@@ -99,13 +101,17 @@
   <Rimverse_Mega_RingHabitat>ring habitat</Rimverse_Mega_RingHabitat>
   <Rimverse_Mega_StellarCollector>stellar collector</Rimverse_Mega_StellarCollector>
   <Rimverse_Mega_WormholeStabilizer>wormhole stabilizer</Rimverse_Mega_WormholeStabilizer>
+  <Rimverse_MsgAIAdmin>An AI persona core now runs {0}.</Rimverse_MsgAIAdmin>
   <Rimverse_MsgCryoStarted>{0} is drifting toward {1}. The crew sleeps through the next {2} years.</Rimverse_MsgCryoStarted>
   <Rimverse_MsgLaneStarted>{0} entered the hyperlane to {1}. Arrival in about {2} days.</Rimverse_MsgLaneStarted>
   <Rimverse_MsgMegaDocked>Docked at the {0}. A gangway leads to the nearest airlock.</Rimverse_MsgMegaDocked>
   <Rimverse_MsgMegaSection>{0} crossed into section {2} of {3} of the {1}.</Rimverse_MsgMegaSection>
   <Rimverse_MsgMegaSupplied>Materials sent: work on the {0} continues.</Rimverse_MsgMegaSupplied>
+  <Rimverse_MsgMineHit>{0} flew into a mine field.</Rimverse_MsgMineHit>
   <Rimverse_MsgTraderDocked>{0} has come alongside. Walk to its trade terminal to trade in person, or call it on the comms console.</Rimverse_MsgTraderDocked>
   <Rimverse_MsgTraderLeft>The trader has cast off and left.</Rimverse_MsgTraderLeft>
+  <Rimverse_MsgWreckSalvage>The wreck of {0} is open for salvage: steel, plasteel, parts and whatever was in its holds.</Rimverse_MsgWreckSalvage>
+  <Rimverse_PlayerStage>Your stage: {0} ({1})</Rimverse_PlayerStage>
   <Rimverse_ProblemCryoAwake>{0} colonists are still awake. The crossing takes about {1} years: put everyone in cryptosleep caskets first.</Rimverse_ProblemCryoAwake>
   <Rimverse_ProblemCryoRange>Too far for a sleeper crossing ({0} ly, at most {1} ly).</Rimverse_ProblemCryoRange>
   <Rimverse_ProblemLaneClass>Only capital ships can force their way into a hyperlane (this ship is {0}).</Rimverse_ProblemLaneClass>

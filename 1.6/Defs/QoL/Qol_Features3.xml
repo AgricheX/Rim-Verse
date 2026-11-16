@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_BigMaps</defName>
+    <label>bigger map sizes</label>
+    <description>Adds 350, 400, 450 and 500 to the map sizes you can pick when starting a game. Big maps are slow on weak computers.</description>
+    <category>Interface</category>
+    <requiresRestart>true</requiresRestart>
+    <disableIfModActive>
+      <li>Mlie.MapSizes</li>
+      <li>Kyrun.MapReroll</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_CremateStrip</defName>
+    <label>strip before cremating</label>
+    <description>Cremating a corpse first drops its clothes and weapons next to the crematorium, so nothing useful burns with it.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>Haplo.Cremate</li>
+      <li>Mlie.StripBeforeCremate</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+</Defs>

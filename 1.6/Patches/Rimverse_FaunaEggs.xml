@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Rimverse_Fauna_Skyfin"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizedDef</xpath>
+    <value>
+      <eggFertilizedDef>Rimverse_Egg_Skyfin</eggFertilizedDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Rimverse_Fauna_Duskwing"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizedDef</xpath>
+    <value>
+      <eggFertilizedDef>Rimverse_Egg_Duskwing</eggFertilizedDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Rimverse_Fauna_Shellback"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizedDef</xpath>
+    <value>
+      <eggFertilizedDef>Rimverse_Egg_Shellback</eggFertilizedDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Rimverse_Fauna_Plated"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizedDef</xpath>
+    <value>
+      <eggFertilizedDef>Rimverse_Egg_Plated</eggFertilizedDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Rimverse_Fauna_SolarLizard"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizedDef</xpath>
+    <value>
+      <eggFertilizedDef>Rimverse_Egg_SolarLizard</eggFertilizedDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Rimverse_Fauna_MessengerBird"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizedDef</xpath>
+    <value>
+      <eggFertilizedDef>Rimverse_Egg_MessengerBird</eggFertilizedDef>
+    </value>
+  </Operation>
+</Patch>

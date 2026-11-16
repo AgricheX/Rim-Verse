@@ -63,6 +63,8 @@ namespace Rimverse
             l.Label("Rimverse_ColonyLine1".Translate(c.System?.name ?? "?", c.population.ToString("0"), c.Capacity.ToString("0"), c.Hazard.ToStringPercent()));
             l.Label("Rimverse_ColonyLine2".Translate(c.stability.ToString("0"), c.lastIncome.ToString("N0"), c.attention.ToString("0"), ColonyUtility.AttackAttention.ToString("0")));
             l.Label("Rimverse_ColonyAdmin".Translate(admin != null ? admin.LabelShortCap : "-", c.settlers.Count));
+            if (GameComponent_ColonyExtras.HasAI(c)) l.Label("Rimverse_ColonyAIAdmin".Translate());
+            else if (GameComponent_ColonyExtras.FindCore(Find.CurrentMap) != null && l.ButtonText("Rimverse_ColonyInstallAI".Translate())) GameComponent_ColonyExtras.TryInstallAI(c, Find.CurrentMap);
             l.Label("Rimverse_ColonyNextStep".Translate(RimverseUnits.DaysFromTicks(c.nextStepTick - Find.TickManager.TicksGame).ToString("0")));
             l.GapLine();
             l.Label("Rimverse_ColonyIndustries".Translate());

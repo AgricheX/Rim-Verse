@@ -41,6 +41,7 @@ namespace Rimverse
             float hazard = c.Hazard;
             Pawn admin = c.Administrator;
             int social = admin?.skills.GetSkill(SkillDefOf.Social).Level ?? 0;
+            if (GameComponent_ColonyExtras.HasAI(c)) social = Mathf.Max(social, 16);
             StationBonus sb = StationLinkUtility.For(c.systemKey);
             GameComponent_PlayerEmpire emp = GameComponent_PlayerEmpire.Instance;
             EmpireEffects ef = emp != null ? emp.ColonyEffects(c) : new EmpireEffects();
