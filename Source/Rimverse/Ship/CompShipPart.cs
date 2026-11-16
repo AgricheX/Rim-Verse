@@ -120,6 +120,7 @@ namespace Rimverse
             };
             foreach (Gizmo g in ShipCombatUtility.Gizmos(ship)) yield return g;
             foreach (Gizmo g in GateUtility.Gizmos(ship)) yield return g;
+            foreach (Gizmo g in MegaSectionUtility.Gizmos(ship)) yield return g;
             foreach (Gizmo g in AnomalyContent.BridgeGizmos(ship)) yield return g;
             foreach (Gizmo g in OdysseyCompat.BridgeGizmos(ship)) yield return g;
             if (SpaceMapUtility.IsOrbit(parent.Map))

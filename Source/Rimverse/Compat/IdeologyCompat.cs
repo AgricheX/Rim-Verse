@@ -53,6 +53,20 @@ namespace Rimverse
             Give(map, "Rimverse_GateUse_Feared", "Rimverse_GateUse_Dread");
         }
 
+        public static void OnMegastructureStage(Map map, MegastructureData d)
+        {
+            if (map == null || d == null) return;
+            if (d.Complete)
+            {
+                ThoughtDef td = DefDatabase<ThoughtDef>.GetNamedSilentFail("Rimverse_MegastructureComplete");
+                if (td != null)
+                {
+                    foreach (Pawn p in map.mapPawns.FreeColonistsSpawned) p.needs?.mood?.thoughts?.memories?.TryGainMemory(td);
+                }
+            }
+            if (RimGramBridge.Ready) RimGramBridge.Official("RvScience", "Rimverse_RG_MegaStage".Translate(Faction.OfPlayer.Name, d.Label, d.StageLabel).ToString());
+        }
+
         public static void OnShipVictory(Map map, bool captured)
         {
             Give(map, "Rimverse_Salvage_Honorable", "Rimverse_Salvage_Spoils");

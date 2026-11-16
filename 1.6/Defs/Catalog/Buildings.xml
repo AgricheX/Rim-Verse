@@ -1717,8 +1717,8 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_OrbitalRing</defName>
-    <label>orbital ring segment</label>
-    <description>A segment of a ring around the planet. Vast room to build and a constant trade flow. Supports your colonies in the same star system.</description>
+    <label>orbital ring control node</label>
+    <description>The control node of an orbital ring. The ring itself is built in orbit, stage by stage, as you supply each stage from here; its output grows with every finished stage. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Rimverse/Things/Building/Mega/OrbitalRing</texPath>
@@ -1757,6 +1757,8 @@
         <basePowerConsumption>5000</basePowerConsumption>
       </li>
       <li Class="Rimverse.CompProperties_Megastructure">
+        <megastructure>true</megastructure>
+        <kind>OrbitalRing</kind>
         <silverPerDay>300</silverPerDay>
         <traderMtbDays>6</traderMtbDays>
       </li>
@@ -1771,8 +1773,8 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_StellarCollector</defName>
-    <label>stellar collector</label>
-    <description>A swarm of collectors around the star, beamed down as nearly limitless power. Supports your colonies in the same star system.</description>
+    <label>stellar collector control node</label>
+    <description>The control node of a swarm of collectors around the star. Each finished stage beams down more power, up to nearly limitless. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Rimverse/Things/Building/Mega/StellarCollector</texPath>
@@ -1807,9 +1809,13 @@
     </building>
     <comps>
       <li Class="CompProperties_Power">
-        <compClass>CompPowerPlant</compClass>
+        <compClass>Rimverse.CompPowerPlantMegastructure</compClass>
         <basePowerConsumption>-100000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="Rimverse.CompProperties_Megastructure">
+        <megastructure>true</megastructure>
+        <kind>StellarCollector</kind>
       </li>
       <li Class="Rimverse.CompProperties_StationLink">
         <colonyComponents>10</colonyComponents>
@@ -1820,8 +1826,8 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_GiantHabitat</defName>
-    <label>giant habitat core</label>
-    <description>The heart of a habitat for millions. Produces food and silver from its population. Supports your colonies in the same star system.</description>
+    <label>giant habitat control node</label>
+    <description>The control node of a habitat for millions, built in orbit stage by stage. Its food and silver grow with every finished stage. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Rimverse/Things/Building/Mega/GiantHabitat</texPath>
@@ -1860,6 +1866,8 @@
         <basePowerConsumption>5000</basePowerConsumption>
       </li>
       <li Class="Rimverse.CompProperties_Megastructure">
+        <megastructure>true</megastructure>
+        <kind>GiantHabitat</kind>
         <silverPerDay>200</silverPerDay>
         <producedThing>Rimverse_ShipMeal</producedThing>
         <producedPerDay>20</producedPerDay>
@@ -1874,8 +1882,8 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_DeepObservatory</defName>
-    <label>deep observatory</label>
-    <description>An observatory that charts a whole sector. A torrent of research. Supports your colonies in the same star system.</description>
+    <label>deep observatory control node</label>
+    <description>The control node of an observatory that charts a whole sector. Research grows with every finished stage. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Rimverse/Things/Building/Mega/DeepObservatory</texPath>
@@ -1914,6 +1922,8 @@
         <basePowerConsumption>5000</basePowerConsumption>
       </li>
       <li Class="Rimverse.CompProperties_Megastructure">
+        <megastructure>true</megastructure>
+        <kind>DeepObservatory</kind>
         <researchPerDay>2000</researchPerDay>
       </li>
       <li Class="Rimverse.CompProperties_StationLink">
@@ -1925,8 +1935,8 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_WormholeStabilizer</defName>
-    <label>wormhole stabilizer</label>
-    <description>Anchors an unstable wormhole in place and draws exotic matter from its throat. Supports your colonies in the same star system.</description>
+    <label>wormhole stabilizer control node</label>
+    <description>The control node of a stabilizer built around a wormhole throat. Once its stages are done it anchors the wormhole and draws exotic matter from it. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Rimverse/Things/Building/Mega/WormholeStabilizer</texPath>
@@ -1965,6 +1975,8 @@
         <basePowerConsumption>5000</basePowerConsumption>
       </li>
       <li Class="Rimverse.CompProperties_Megastructure">
+        <megastructure>true</megastructure>
+        <kind>WormholeStabilizer</kind>
         <producedThing>Rimverse_ExoticMatter</producedThing>
         <producedPerDay>1</producedPerDay>
       </li>

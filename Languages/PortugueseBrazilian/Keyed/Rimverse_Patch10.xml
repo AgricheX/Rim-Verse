@@ -5,6 +5,12 @@
   <Rimverse_BodyKm>Raio: {0} km</Rimverse_BodyKm>
   <Rimverse_BodyPeriod>Período orbital: {0} dias</Rimverse_BodyPeriod>
   <Rimverse_BodyPeriodYears>Período orbital: {0} anos</Rimverse_BodyPeriodYears>
+  <Rimverse_CmdMegaDock>Atracar na megaestrutura</Rimverse_CmdMegaDock>
+  <Rimverse_CmdMegaDockDesc>Atraca em uma das megaestruturas daqui. Você chega a uma seção dela; atravesse as portas das anteparas nas pontas de um convés para chegar à próxima seção.</Rimverse_CmdMegaDockDesc>
+  <Rimverse_CmdMegaSupply>Abastecer etapa: {0}</Rimverse_CmdMegaSupply>
+  <Rimverse_CmdMegaSupplyDesc>Envia os materiais da próxima etapa para as equipes na órbita. Precisa de: {0}. A etapa leva cerca de {1} dias enquanto este nó tiver energia.</Rimverse_CmdMegaSupplyDesc>
+  <Rimverse_CmdMegaUndock>Desatracar</Rimverse_CmdMegaUndock>
+  <Rimverse_CmdMegaUndockDesc>Sai da megaestrutura e volta para a órbita aberta.</Rimverse_CmdMegaUndockDesc>
   <Rimverse_CosmicLevel_Body>corpo</Rimverse_CosmicLevel_Body>
   <Rimverse_CosmicLevel_Chunk>chunk do universo</Rimverse_CosmicLevel_Chunk>
   <Rimverse_CosmicLevel_Cluster>aglomerado</Rimverse_CosmicLevel_Cluster>
@@ -21,6 +27,34 @@
   <Rimverse_CosmicLevel_Zone>zona</Rimverse_CosmicLevel_Zone>
   <Rimverse_GalaxyAttr_Barred>{0} barrada</Rimverse_GalaxyAttr_Barred>
   <Rimverse_GalaxyAttr_Ringed>{0} com anel</Rimverse_GalaxyAttr_Ringed>
+  <Rimverse_LetterMegaStage>{0}: etapa concluída</Rimverse_LetterMegaStage>
+  <Rimverse_LetterMegaStageDesc>{0} chegou a uma nova etapa: {1} ({2}/{3}). A obra segue lá fora na órbita, e a estrutura agora rende mais do que foi feita para dar.</Rimverse_LetterMegaStageDesc>
+  <Rimverse_MegaAlreadySupplied>Esta etapa já foi abastecida.</Rimverse_MegaAlreadySupplied>
+  <Rimverse_MegaInspectNeedsSupply>Esperando o abastecimento da próxima etapa.</Rimverse_MegaInspectNeedsSupply>
+  <Rimverse_MegaInspectStage>Etapa da megaestrutura: {0} ({1}/{2}), {3} construída</Rimverse_MegaInspectStage>
+  <Rimverse_MegaInspectWorking>Obra da etapa: {0} de cerca de {1} dias</Rimverse_MegaInspectWorking>
+  <Rimverse_MegaLabel>{0} de {1}</Rimverse_MegaLabel>
+  <Rimverse_MegaMissing>Falta: {0}</Rimverse_MegaMissing>
+  <Rimverse_MegaOwnerNone>ninguém</Rimverse_MegaOwnerNone>
+  <Rimverse_MegaOwnerPrecursor>precursores</Rimverse_MegaOwnerPrecursor>
+  <Rimverse_MegaStage_0>planejada</Rimverse_MegaStage_0>
+  <Rimverse_MegaStage_1>andaime</Rimverse_MegaStage_1>
+  <Rimverse_MegaStage_2>estrutura</Rimverse_MegaStage_2>
+  <Rimverse_MegaStage_3>segmentos</Rimverse_MegaStage_3>
+  <Rimverse_MegaStage_4>concluída</Rimverse_MegaStage_4>
+  <Rimverse_MegaTip>Dono: {0}\nEtapa: {1} ({2} construída)</Rimverse_MegaTip>
+  <Rimverse_Mega_Citadel>cidadela</Rimverse_Mega_Citadel>
+  <Rimverse_Mega_DeepObservatory>observatório profundo</Rimverse_Mega_DeepObservatory>
+  <Rimverse_Mega_Gate>portão</Rimverse_Mega_Gate>
+  <Rimverse_Mega_GiantHabitat>habitat gigante</Rimverse_Mega_GiantHabitat>
+  <Rimverse_Mega_OrbitalRing>anel orbital</Rimverse_Mega_OrbitalRing>
+  <Rimverse_Mega_RingHabitat>habitat em anel</Rimverse_Mega_RingHabitat>
+  <Rimverse_Mega_StellarCollector>coletor estelar</Rimverse_Mega_StellarCollector>
+  <Rimverse_Mega_WormholeStabilizer>estabilizador de buraco de minhoca</Rimverse_Mega_WormholeStabilizer>
+  <Rimverse_MsgMegaDocked>Atracado em {0}. Uma passarela leva até a eclusa mais próxima.</Rimverse_MsgMegaDocked>
+  <Rimverse_MsgMegaSection>{0} passou para a seção {2} de {3} de {1}.</Rimverse_MsgMegaSection>
+  <Rimverse_MsgMegaSupplied>Materiais enviados: a obra de {0} continua.</Rimverse_MsgMegaSupplied>
+  <Rimverse_RG_MegaStage>{0} acabou de concluir uma nova etapa de {1}: {2}. Dá para ver da órbita.</Rimverse_RG_MegaStage>
   <Rimverse_ScannedVolume>Varreduras de sensor: {0} ({1} anos-luz cúbicos)</Rimverse_ScannedVolume>
   <Rimverse_SystemAddress>Endereço: {0}</Rimverse_SystemAddress>
   <Rimverse_UniverseAge>Idade do universo: {0} bilhões de anos</Rimverse_UniverseAge>

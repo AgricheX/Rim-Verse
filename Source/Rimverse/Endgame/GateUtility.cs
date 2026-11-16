@@ -4,6 +4,7 @@ using System.Linq;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.Sound;
 
 namespace Rimverse
 {
@@ -111,6 +112,9 @@ namespace Rimverse
             MapComponent_ShipLocation loc = MapComponent_ShipLocation.For(map);
             if (loc == null || ship == null) return;
             IdeoEvents.OnGateUsed(map);
+            ScreenFader.SetColor(new UnityEngine.Color(0.75f, 0.9f, 1f, 1f));
+            ScreenFader.StartFade(UnityEngine.Color.clear, 1.6f, 0.2f);
+            SoundDefOf.PsychicPulseGlobal?.PlayOneShotOnCamera();
             int cooldown = ship.state.lastWarpTick;
             loc.destinationSystemKey = dest.Key;
             loc.travelingShipId = ship.id;
@@ -142,6 +146,7 @@ namespace Rimverse
                             if (RoyalPermits.HasGatePass(map) || ColonyUtility.Consume(map, d => d.defName == "Rimverse_GatePart", ActivationParts))
                             {
                                 eg.activatedGates.Add(here.Key);
+                                MegastructureRender.Version++;
                                 Messages.Message("Rimverse_MsgGateActivated".Translate(Label(here)), MessageTypeDefOf.PositiveEvent, false);
                             }
                         }

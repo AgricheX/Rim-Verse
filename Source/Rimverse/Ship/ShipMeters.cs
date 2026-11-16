@@ -154,6 +154,7 @@ namespace Rimverse
                 float rate;
                 if (ship == null)
                 {
+                    if (MegaSectionUtility.Pressurized(map, room)) continue;
                     rate = vacuum ? HypoxiaPerSecondVacuum : HypoxiaPerSecondLowAir;
                     if (vacuum) CatalogHealth.VacuumExposure(pawn, seconds);
                 }

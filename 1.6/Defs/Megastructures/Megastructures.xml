@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>Rimverse_MegaFoundation</defName>
+    <label>megastructure deck</label>
+    <description>The load-bearing deck of a megastructure, kilometers of layered alloy. It belongs to the structure, not to any ship docked against it.</description>
+    <texturePath>Rimverse/Terrain/HullFloor</texturePath>
+    <color>(0.48, 0.50, 0.55)</color>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>397</renderPrecedence>
+    <isPaintable>true</isPaintable>
+    <isFoundation>true</isFoundation>
+    <preventCraters>true</preventCraters>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Rimverse_Hull</li>
+    </affordances>
+    <statBases>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.1</Cleanliness>
+    </statBases>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>Rimverse_HabitatSoil</defName>
+    <label>habitat soil</label>
+    <description>Engineered soil laid over a megastructure deck: parks, gardens and fields for the millions living inside.</description>
+    <texturePath>Terrain/Surfaces/Soil</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <layerable>true</layerable>
+    <pathCost>2</pathCost>
+    <fertility>1.0</fertility>
+    <takeFootprints>true</takeFootprints>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <statBases>
+      <Beauty>1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+  </TerrainDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_MegaLightPanel</defName>
+    <label>deck light</label>
+    <description>A light set flush into the deck, fed by the megastructure's own grid.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Rimverse/Things/Building/Mega/LightPanel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <building>
+      <isEdifice>false</isEdifice>
+      <deconstructible>false</deconstructible>
+      <isInert>true</isInert>
+    </building>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>9</glowRadius>
+        <glowColor>(255,244,226,0)</glowColor>
+        <overlightRadius>4</overlightRadius>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_MegaConsole</defName>
+    <label>megastructure console</label>
+    <description>A section terminal of the megastructure's control net. It shows the state of the section and the long work still ahead.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Rimverse/Things/Building/Mega/Console</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <size>(2,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <rotatable>false</rotatable>
+    <building>
+      <deconstructible>false</deconstructible>
+    </building>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(120,200,255,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <GenStepDef>
+    <defName>Rimverse_MegaSection</defName>
+    <order>200</order>
+    <genStep Class="Rimverse.GenStep_MegaSection" />
+  </GenStepDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_MegaSectionMap</defName>
+    <label>megastructure section</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <disableMapClippers>true</disableMapClippers>
+    <defaultUnderGridTerrain>Rimverse_Vacuum</defaultUnderGridTerrain>
+    <genSteps>
+      <li>Rimverse_SpaceTerrain</li>
+      <li>Rimverse_MegaSection</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_Orbit</biome>
+      <temperature>-75</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_MegastructureComplete</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>10</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>wonder of the age</label>
+        <description>We finished something that will outlive every one of us. People will see it from other stars.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

@@ -137,7 +137,28 @@ namespace Rimverse
                 }
                 if (Widgets.ButtonInvisible(click)) selected = b.index;
             }
+            DrawMegastructures(sys, center, positions);
             GUI.color = Color.white;
+        }
+
+        private void DrawMegastructures(StarSystemData sys, Vector2 center, Dictionary<int, Vector2> positions)
+        {
+            GameComponent_Megastructures gc = GameComponent_Megastructures.Instance;
+            if (gc == null) return;
+            int n = 0;
+            foreach (MegastructureData m in gc.In(sys.id.Key))
+            {
+                Vector2 anchor = m.body >= 0 && positions.TryGetValue(m.body, out Vector2 p) ? p : center;
+                float a = m.angle * Mathf.Deg2Rad + n * 0.9f;
+                float dist = m.body >= 0 ? 16f : 26f;
+                Vector2 pos = anchor + new Vector2(Mathf.Cos(a), Mathf.Sin(a)) * dist;
+                Rect r = new Rect(pos.x - 9f, pos.y - 9f, 18f, 18f);
+                GUI.color = m.stage <= 0 ? new Color(1f, 1f, 1f, 0.35f) : m.Complete ? Color.white : new Color(1f, 1f, 1f, 0.75f);
+                GUI.DrawTexture(r, MegastructureRender.Icon(m));
+                GUI.color = Color.white;
+                if (Mouse.IsOver(r.ExpandedBy(3f))) TooltipHandler.TipRegion(r.ExpandedBy(3f), m.Label + "\n" + "Rimverse_MegaTip".Translate(m.OwnerLabel, m.StageLabel, m.Completion.ToStringPercent()));
+                n++;
+            }
         }
 
         public static void DrawCircle(Vector2 c, float r, float width)

@@ -5,6 +5,12 @@
   <Rimverse_BodyKm>Radius: {0} km</Rimverse_BodyKm>
   <Rimverse_BodyPeriod>Orbital period: {0} days</Rimverse_BodyPeriod>
   <Rimverse_BodyPeriodYears>Orbital period: {0} years</Rimverse_BodyPeriodYears>
+  <Rimverse_CmdMegaDock>Dock at megastructure</Rimverse_CmdMegaDock>
+  <Rimverse_CmdMegaDockDesc>Dock at one of the megastructures here. You arrive at one section of it; walk through the bulkhead doors at either end of a deck to reach the next section.</Rimverse_CmdMegaDockDesc>
+  <Rimverse_CmdMegaSupply>Supply stage: {0}</Rimverse_CmdMegaSupply>
+  <Rimverse_CmdMegaSupplyDesc>Send the materials for the next stage to the work crews in orbit. Needs: {0}. The stage then takes about {1} days while this node has power.</Rimverse_CmdMegaSupplyDesc>
+  <Rimverse_CmdMegaUndock>Undock</Rimverse_CmdMegaUndock>
+  <Rimverse_CmdMegaUndockDesc>Leave the megastructure and return to open orbit.</Rimverse_CmdMegaUndockDesc>
   <Rimverse_CosmicLevel_Body>body</Rimverse_CosmicLevel_Body>
   <Rimverse_CosmicLevel_Chunk>universe chunk</Rimverse_CosmicLevel_Chunk>
   <Rimverse_CosmicLevel_Cluster>cluster</Rimverse_CosmicLevel_Cluster>
@@ -21,6 +27,34 @@
   <Rimverse_CosmicLevel_Zone>zone</Rimverse_CosmicLevel_Zone>
   <Rimverse_GalaxyAttr_Barred>barred {0}</Rimverse_GalaxyAttr_Barred>
   <Rimverse_GalaxyAttr_Ringed>{0} with a ring</Rimverse_GalaxyAttr_Ringed>
+  <Rimverse_LetterMegaStage>{0}: stage finished</Rimverse_LetterMegaStage>
+  <Rimverse_LetterMegaStageDesc>The {0} has reached a new stage: {1} ({2}/{3}). The work goes on far out in orbit, and the structure now gives more of what it was built for.</Rimverse_LetterMegaStageDesc>
+  <Rimverse_MegaAlreadySupplied>This stage is already supplied.</Rimverse_MegaAlreadySupplied>
+  <Rimverse_MegaInspectNeedsSupply>Waiting for the next stage to be supplied.</Rimverse_MegaInspectNeedsSupply>
+  <Rimverse_MegaInspectStage>Megastructure stage: {0} ({1}/{2}), {3} built</Rimverse_MegaInspectStage>
+  <Rimverse_MegaInspectWorking>Stage work: {0} of about {1} days</Rimverse_MegaInspectWorking>
+  <Rimverse_MegaLabel>{0} of {1}</Rimverse_MegaLabel>
+  <Rimverse_MegaMissing>Missing: {0}</Rimverse_MegaMissing>
+  <Rimverse_MegaOwnerNone>nobody</Rimverse_MegaOwnerNone>
+  <Rimverse_MegaOwnerPrecursor>precursors</Rimverse_MegaOwnerPrecursor>
+  <Rimverse_MegaStage_0>planned</Rimverse_MegaStage_0>
+  <Rimverse_MegaStage_1>scaffold</Rimverse_MegaStage_1>
+  <Rimverse_MegaStage_2>frame</Rimverse_MegaStage_2>
+  <Rimverse_MegaStage_3>segments</Rimverse_MegaStage_3>
+  <Rimverse_MegaStage_4>complete</Rimverse_MegaStage_4>
+  <Rimverse_MegaTip>Owner: {0}\nStage: {1} ({2} built)</Rimverse_MegaTip>
+  <Rimverse_Mega_Citadel>citadel</Rimverse_Mega_Citadel>
+  <Rimverse_Mega_DeepObservatory>deep observatory</Rimverse_Mega_DeepObservatory>
+  <Rimverse_Mega_Gate>gate</Rimverse_Mega_Gate>
+  <Rimverse_Mega_GiantHabitat>giant habitat</Rimverse_Mega_GiantHabitat>
+  <Rimverse_Mega_OrbitalRing>orbital ring</Rimverse_Mega_OrbitalRing>
+  <Rimverse_Mega_RingHabitat>ring habitat</Rimverse_Mega_RingHabitat>
+  <Rimverse_Mega_StellarCollector>stellar collector</Rimverse_Mega_StellarCollector>
+  <Rimverse_Mega_WormholeStabilizer>wormhole stabilizer</Rimverse_Mega_WormholeStabilizer>
+  <Rimverse_MsgMegaDocked>Docked at the {0}. A gangway leads to the nearest airlock.</Rimverse_MsgMegaDocked>
+  <Rimverse_MsgMegaSection>{0} crossed into section {2} of {3} of the {1}.</Rimverse_MsgMegaSection>
+  <Rimverse_MsgMegaSupplied>Materials sent: work on the {0} continues.</Rimverse_MsgMegaSupplied>
+  <Rimverse_RG_MegaStage>{0} just finished a new stage of the {1}: {2}. You can see it from orbit.</Rimverse_RG_MegaStage>
   <Rimverse_ScannedVolume>Sensor sweeps: {0} ({1} cubic light-years)</Rimverse_ScannedVolume>
   <Rimverse_SystemAddress>Address: {0}</Rimverse_SystemAddress>
   <Rimverse_UniverseAge>Universe age: {0} billion years</Rimverse_UniverseAge>

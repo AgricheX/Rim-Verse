@@ -300,7 +300,7 @@ namespace Rimverse
             }
         }
 
-        private static float PlanetScale(BodyData b, float baseScale)
+        public static float PlanetScale(BodyData b, float baseScale)
         {
             float r = Mathf.Max(0.05f, b.radiusEarth);
             return Mathf.Clamp(baseScale * (0.75f + 0.28f * Mathf.Log(r * 3f + 1f, 2f)), 0.35f, 1.6f);

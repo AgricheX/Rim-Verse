@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_MegaLightPanel.label>luz de convés</Rimverse_MegaLightPanel.label>
+  <Rimverse_MegaLightPanel.description>Uma luz embutida no convés, alimentada pela rede da própria megaestrutura.</Rimverse_MegaLightPanel.description>
+  <Rimverse_MegaConsole.label>console da megaestrutura</Rimverse_MegaConsole.label>
+  <Rimverse_MegaConsole.description>Um terminal de seção da rede de controle da megaestrutura. Mostra o estado da seção e a longa obra que ainda falta.</Rimverse_MegaConsole.description>
+</LanguageData>
