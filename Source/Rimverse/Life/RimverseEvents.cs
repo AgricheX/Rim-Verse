@@ -295,6 +295,7 @@ namespace Rimverse
                     {
                         int days = Rand.RangeInclusive(2, 5);
                         GameComponent_RimverseEvents.Instance.sensorBlindUntil = Find.TickManager.TicksGame + days * GenDate.TicksPerDay;
+                        ShipThoughts.GiveMap(map, "SawNebula");
                         return def.letterText.Formatted(days);
                     }
             }
@@ -318,6 +319,7 @@ namespace Rimverse
             StarSystemData sys = u?.GetSystem(id);
             if (sys == null || sys.bodies.Count == 0) return null;
             BodyData body = sys.bodies.RandomElement();
+            if (kind != "DriftingCryoPod" && kind != "UnknownProbe") ShipThoughts.GiveMap(map, "DiscoveredAnomaly");
             switch (kind)
             {
                 case "Anomaly":

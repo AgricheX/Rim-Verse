@@ -136,6 +136,7 @@ namespace Rimverse
         public static void OnArrived(Map map, float years)
         {
             if (years <= 0f) return;
+            ShipThoughts.OnCryoArrived(map, years);
             GameComponent_Universe u = GameComponent_Universe.Instance;
             if (u != null) u.yearsInCryo += years;
             long ageTicks = (long)(years * GenDate.TicksPerYear);

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_FirstOrbit</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>saw the planet from above</label>
+        <description>I saw a whole world from orbit. Nothing looks the same after that.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_NewWorld</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>set foot on a new world</label>
+        <description>I walked where nobody from my home ever walked.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_SawNebula</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>saw a nebula</label>
+        <description>Clouds of light the size of a thousand systems. I could look at it forever.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_DiscoveredAnomaly</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>discovered an anomaly</label>
+        <description>We found something nobody has explained yet.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_SawHullBreach</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>saw a hull breach</label>
+        <description>The wall just opened. Air screamed out. I still hear it.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_CrewmateSpaced</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>crewmate lost to the void</label>
+        <description>One of us died out there in the vacuum.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_LeftFamily</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>20</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>left family behind</label>
+        <description>Years passed while I slept. The people I loved are old now, or gone.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_WorldChanged</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>woke to a changed world</label>
+        <description>I closed my eyes and the galaxy moved on without me.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_WonShipBattle</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>won a ship battle</label>
+        <description>Our ship beat theirs. We are still breathing.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_LostShip</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>10</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>lost a ship</label>
+        <description>We lost the ship. Everything we built, gone.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_HomeworldReturn</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>8</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>back on the home world</label>
+        <description>I came home. The air smells like it should.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_VacuumFear</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>0.2</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>fear of the vacuum</label>
+        <description>Only a thin suit between me and nothing at all.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_BadAir</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>0.2</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>bad air</label>
+        <description>The air is thin and stale. Every breath tastes of metal.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_SpaceFuneral</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>space funeral</label>
+        <description>We gave them back to the stars. It felt right.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_ShipConfined</defName>
+    <workerClass>Rimverse.ThoughtWorker_ShipConfined</workerClass>
+    <stages>
+      <li>
+        <label>too confined</label>
+        <description>The ship is too small for this many people.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_ZeroGSleepNoBag</defName>
+    <workerClass>Rimverse.ThoughtWorker_ZeroGSleepNoBag</workerClass>
+    <stages>
+      <li>
+        <label>sleeping in zero-g without a bag</label>
+        <description>I keep drifting off the bed while I sleep.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_OwnCabinWindow</defName>
+    <workerClass>Rimverse.ThoughtWorker_OwnCabinWindow</workerClass>
+    <stages>
+      <li>
+        <label>own cabin with a window</label>
+        <description>My own cabin, and the stars outside.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_ShipTemperature</defName>
+    <workerClass>Rimverse.ThoughtWorker_ShipTemperature</workerClass>
+    <stages>
+      <li>
+        <label>ship overheating</label>
+        <description>The whole ship is too hot. The radiators can't keep up.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_BeautifulShip</defName>
+    <workerClass>Rimverse.ThoughtWorker_BeautifulShip</workerClass>
+    <stages>
+      <li>
+        <label>beautiful ship</label>
+        <description>Our ship is a nice place to live.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>stunning ship</label>
+        <description>Our ship is a work of art.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_CrewUnited</defName>
+    <workerClass>Rimverse.ThoughtWorker_CrewUnited</workerClass>
+    <stages>
+      <li>
+        <label>crew united</label>
+        <description>Months together out here. This crew is my family now.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_ShipUniform</defName>
+    <workerClass>Rimverse.ThoughtWorker_ShipUniform</workerClass>
+    <stages>
+      <li>
+        <label>ship uniform</label>
+        <description>Wearing the ship's colors makes me proud.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Rimverse_Thought_LongShift</defName>
+    <workerClass>Rimverse.ThoughtWorker_LongShift</workerClass>
+    <stages>
+      <li>
+        <label>long shift without rest</label>
+        <description>I've been on duty forever. My eyes won't stay open.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_FuneralTube</defName>
+    <label>funeral tube</label>
+    <description>A small sealed launch tube. The crew can give a fallen member a space funeral, sending the body into the void or toward a star. Works without any ideology.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Rimverse/Things/Building/Furniture/DecompressionChamber</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.55, 0.6, 0.75)</color>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <designationCategory>Misc</designationCategory>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+  </ThingDef>
+  <RecipeDef>
+    <defName>Rimverse_SpaceFuneral</defName>
+    <label>space funeral</label>
+    <description>Send a body into the void with honors.</description>
+    <jobString>Holding a space funeral.</jobString>
+    <workerClass>Rimverse.RecipeWorker_SpaceFuneral</workerClass>
+    <workAmount>400</workAmount>
+    <workSkill>Social</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CorpsesHumanlike</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>Rimverse_FuneralTube</li>
+    </recipeUsers>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_ShipMorgue</defName>
+    <label>ship morgue</label>
+    <description>A cold locker that keeps bodies from rotting while powered, so the crew can carry the dead back to their home world.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Rimverse/Things/Building/Furniture/CrewBunk</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.6, 0.75, 0.9)</color>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <tickerType>Rare</tickerType>
+    <designationCategory>Misc</designationCategory>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>30</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>80</basePowerConsumption>
+      </li>
+      <li Class="Rimverse.CompProperties_Morgue" />
+    </comps>
+  </ThingDef>
+  <HediffDef>
+    <defName>Rimverse_ZeroGFloating</defName>
+    <label>floating in zero-g</label>
+    <description>Without gravity, every step is a push off a wall. Moving is slower unless wearing magnetic boots.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.7, 0.85, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statFactors>
+          <MoveSpeed>0.8</MoveSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>Rimverse_AnimalZeroGFear</defName>
+    <label>zero-g fear</label>
+    <description>This animal never lived without gravity. It is terrified and may bolt in panic until it gets used to it.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.9, 0.7, 0.5)</defaultLabelColor>
+    <maxSeverity>1</maxSeverity>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

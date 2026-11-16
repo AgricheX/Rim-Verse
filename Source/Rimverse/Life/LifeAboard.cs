@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -27,7 +28,13 @@ namespace Rimverse
             tmp.AddRange(map.mapPawns.AllPawnsSpawned);
             foreach (Pawn p in tmp)
             {
-                if (p.Dead || !p.RaceProps.Humanlike || p.health?.hediffSet == null) continue;
+                if (p.Dead || p.health?.hediffSet == null) continue;
+                if (p.RaceProps.Animal)
+                {
+                    if (tracked) TickAnimal(p);
+                    continue;
+                }
+                if (!p.RaceProps.Humanlike) continue;
                 if (!tracked && !HasAny(p)) continue;
                 TickPawn(p, map, comp, confined);
             }
@@ -70,6 +77,8 @@ namespace Rimverse
                 Adjust(p, LifeDefOf.Rimverse_BoneLoss, -BoneRecoveryPerHour);
                 Adjust(p, CatalogDefOf.Rimverse_MuscleAtrophy, -BoneRecoveryPerHour);
             }
+            if (floating == null) floating = DefDatabase<HediffDef>.GetNamedSilentFail("Rimverse_ZeroGFloating");
+            if (floating != null) Toggle(p, floating, g < ZeroG && !MagBoots(p) && (lin == null || !lin.zeroGAdapted) && !GeneSpace.Any(p, e => e.zeroGAdapted));
             float limit = (lin?.crushLimit ?? 1.3f) + GeneSpace.Sum(p, e => e.crushBonus) + CatalogTraits.CrushBonus(p);
             if (g > limit)
             {
@@ -94,6 +103,34 @@ namespace Rimverse
                 Adjust(p, CatalogDefOf.Rimverse_SkyLonging, -CabinFeverRecoveryPerHour);
             }
         }
+
+        private static HediffDef floating;
+        private static HediffDef animalFear;
+
+        private static bool SpaceBorn(Pawn p) => p.def.defName.StartsWith("Rimverse_") || p.kindDef?.defName?.StartsWith("Rimverse_") == true || p.def.tradeTags != null && p.def.tradeTags.Contains("Rimverse_SpaceAnimal");
+
+        private static void TickAnimal(Pawn p)
+        {
+            if (animalFear == null) animalFear = DefDatabase<HediffDef>.GetNamedSilentFail("Rimverse_AnimalZeroGFear");
+            if (animalFear == null || SpaceBorn(p)) return;
+            Hediff h = p.health.hediffSet.GetFirstHediffOfDef(animalFear);
+            if (GravityUtility.GravityAt(p) < ZeroG)
+            {
+                if (h == null)
+                {
+                    if (p.health.hediffSet.HasHediff(LifeDefOf.Rimverse_ZeroGAdaptation)) return;
+                    h = p.health.AddHediff(animalFear);
+                    h.Severity = 1f;
+                    p.health.AddHediff(LifeDefOf.Rimverse_ZeroGAdaptation);
+                }
+                h.Severity -= 1f / 72f;
+                if (h.Severity <= 0.01f) p.health.RemoveHediff(h);
+                else if (h.Severity > 0.5f && !p.InMentalState && !p.Downed && Rand.Chance(0.15f)) p.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.PanicFlee);
+            }
+            else if (h != null) p.health.RemoveHediff(h);
+        }
+
+        private static bool MagBoots(Pawn p) => p.apparel != null && p.apparel.WornApparel.Any(a => a.def.defName == "Rimverse_Gear_MagBoots");
 
         private static void Adjust(Pawn p, HediffDef def, float amount)
         {

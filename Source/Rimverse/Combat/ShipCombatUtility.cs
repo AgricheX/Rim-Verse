@@ -124,6 +124,7 @@ namespace Rimverse
             {
                 comp.End(e);
                 Find.LetterStack.ReceiveLetter("Rimverse_LetterCombatLostLabel".Translate(), "Rimverse_LetterCombatLost".Translate(), LetterDefOf.NegativeEvent);
+                ShipThoughts.GiveMap(map, "LostShip");
                 return;
             }
             if (enemy.bridge.Faction == Faction.OfPlayer)

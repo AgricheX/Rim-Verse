@@ -3,6 +3,10 @@
   <Rimverse_ContractChip.label>chip de contrato</Rimverse_ContractChip.label>
   <Rimverse_ContractChip.description>Um chip de dados lacrado de um corretor de contratos. Leia pra receber um contrato aleatório: entrega, escolta, levantamento, caçada e mais, cada um com prazo e recompensa.</Rimverse_ContractChip.description>
   <Rimverse_ContractChip.comps.0.useLabel>Ler contrato</Rimverse_ContractChip.comps.0.useLabel>
+  <Rimverse_FuneralTube.label>tubo funerário</Rimverse_FuneralTube.label>
+  <Rimverse_FuneralTube.description>Um pequeno tubo de lançamento selado. A tripulação pode dar um funeral espacial a quem caiu, mandando o corpo pro vácuo ou pra uma estrela. Funciona sem nenhuma ideologia.</Rimverse_FuneralTube.description>
+  <Rimverse_ShipMorgue.label>necrotério de bordo</Rimverse_ShipMorgue.label>
+  <Rimverse_ShipMorgue.description>Um armário frio que impede os corpos de apodrecer enquanto tem energia, pra tripulação levar os mortos de volta ao planeta natal.</Rimverse_ShipMorgue.description>
   <Rimverse_StellarData.label>registro de dados estelares</Rimverse_StellarData.label>
   <Rimverse_StellarData.description>Um registro selado de um escaneamento exato: órbitas, massa, atmosfera e tudo de estranho que os sensores viram. Civilizações, cartógrafos e corretores de dados pagam por ele, e uma bancada de pesquisa pode transformá-lo em conhecimento.</Rimverse_StellarData.description>
 </LanguageData>

@@ -42,6 +42,7 @@ namespace Rimverse
             if (ext.breachChance <= 0f || !IsHull(hitThing) || hitThing.Destroyed) return;
             if (!Rand.Chance(ext.breachChance * RimverseMod.Settings.breachDrainMultiplier)) return;
             Messages.Message("Rimverse_MsgWeaponBreach".Translate(), new TargetInfo(hitThing.Position, hitThing.Map), MessageTypeDefOf.NegativeEvent, false);
+            ShipThoughts.GiveMap(hitThing.Map, "SawHullBreach");
             hitThing.TakeDamage(new DamageInfo(DamageDefOf.Blunt, hitThing.HitPoints + 1));
         }
     }

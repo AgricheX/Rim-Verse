@@ -69,7 +69,10 @@ namespace Rimverse
         public static float HypoxiaFactor(Pawn p)
         {
             Init();
-            return lung != null && p.health.hediffSet.HasHediff(lung) ? 0.4f : 1f;
+            float f = lung != null && p.health.hediffSet.HasHediff(lung) ? 0.4f : 1f;
+            foreach (Hediff h in p.health.hediffSet.hediffs)
+                if (h is Hediff_AddedPart && h.Part?.def == BodyPartDefOf.Lung && h.def.addedPartProps != null && h.def.addedPartProps.betterThanNatural && h.def != lung) f *= 0.75f;
+            return f;
         }
 
         public static void VacuumExposure(Pawn p, float seconds)
