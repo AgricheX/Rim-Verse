@@ -227,6 +227,7 @@ namespace Rimverse
             }
             if (e.enemyFlee >= FleeSeconds)
             {
+                EnemyRoster.Escaped(enemy);
                 RemoveShip(comp.map, enemy);
                 comp.End(e);
                 Messages.Message("Rimverse_MsgEnemyEscaped".Translate(enemy.Label), player.bridge, MessageTypeDefOf.NeutralEvent, false);
@@ -477,6 +478,7 @@ namespace Rimverse
 
         private static void Victory(MapComponent_ShipCombat comp, ShipEncounter e, RimverseShip enemy)
         {
+            EnemyRoster.Destroyed(enemy);
             comp.End(e);
             MakeWreck(comp.map, enemy);
             RimverseEvents.OnShipVictory(comp.map, comp.map.GetComponent<MapComponent_RimverseShips>()?.ShipById(e.playerShipId));

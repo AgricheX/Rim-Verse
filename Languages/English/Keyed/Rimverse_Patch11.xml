@@ -15,10 +15,21 @@
   <Rimverse_CosmicRegion>Region of the web: a looser grouping of clusters between walls.</Rimverse_CosmicRegion>
   <Rimverse_CosmicWebCounts>{0} voids, {1} walls, {2} superclusters and {3} regions in this chunk.</Rimverse_CosmicWebCounts>
   <Rimverse_DistrictSizeClass>District size class: {0}</Rimverse_DistrictSizeClass>
+  <Rimverse_EnemyClass_0>fighter</Rimverse_EnemyClass_0>
+  <Rimverse_EnemyClass_1>corvette</Rimverse_EnemyClass_1>
+  <Rimverse_EnemyClass_2>frigate</Rimverse_EnemyClass_2>
+  <Rimverse_EnemyClass_3>destroyer</Rimverse_EnemyClass_3>
+  <Rimverse_EnemyClass_4>cruiser</Rimverse_EnemyClass_4>
+  <Rimverse_EnemyClass_5>carrier</Rimverse_EnemyClass_5>
+  <Rimverse_EnemyClass_6>battleship</Rimverse_EnemyClass_6>
+  <Rimverse_EnemyClass_7>dreadnought</Rimverse_EnemyClass_7>
+  <Rimverse_EnemyClass_8>war station</Rimverse_EnemyClass_8>
   <Rimverse_LetterBombard>{0} claims the system of {1} and sent a fleet to bombard the colony.</Rimverse_LetterBombard>
   <Rimverse_LetterBombardLabel>Bombardment expedition</Rimverse_LetterBombardLabel>
   <Rimverse_LetterLegitimacy>The government of {0} lost all legitimacy and was replaced by: {1}.</Rimverse_LetterLegitimacy>
   <Rimverse_LetterLegitimacyLabel>Government falls</Rimverse_LetterLegitimacyLabel>
+  <Rimverse_LetterNemesis>The {0} is back. {1} commands it again, after escaping you {2} time(s).</Rimverse_LetterNemesis>
+  <Rimverse_LetterNemesisLabel>An old enemy returns</Rimverse_LetterNemesisLabel>
   <Rimverse_LetterTechRevolution>{0} went through a technological revolution and reached the {1} age. Its new government: {2}.</Rimverse_LetterTechRevolution>
   <Rimverse_LetterTechRevolutionLabel>Technological revolution</Rimverse_LetterTechRevolutionLabel>
   <Rimverse_LetterTradeWar>{0} sees {1} as a competitor and declared a trade embargo for 20 days.</Rimverse_LetterTradeWar>
@@ -27,6 +38,14 @@
   <Rimverse_MsgFreighterHere>A {1} of {0} arrived in this system and is open for trade.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Pirates raided a freighter of {0} near {1}.</Rimverse_MsgFreighterRaided>
   <Rimverse_MsgPrisonerSabotage>{0} sabotaged the {1} while escaping!</Rimverse_MsgPrisonerSabotage>
+  <Rimverse_RaiderKind_BountyHunters>bounty hunters</Rimverse_RaiderKind_BountyHunters>
+  <Rimverse_RaiderKind_Corporate>corporate security</Rimverse_RaiderKind_Corporate>
+  <Rimverse_RaiderKind_Fanatics>fanatics</Rimverse_RaiderKind_Fanatics>
+  <Rimverse_RaiderKind_Federation>federation</Rimverse_RaiderKind_Federation>
+  <Rimverse_RaiderKind_Guardians>precursor guardian</Rimverse_RaiderKind_Guardians>
+  <Rimverse_RaiderKind_Junta>junta wave</Rimverse_RaiderKind_Junta>
+  <Rimverse_RaiderKind_Mercenaries>mercenaries</Rimverse_RaiderKind_Mercenaries>
+  <Rimverse_RaiderKind_Pirates>pirates</Rimverse_RaiderKind_Pirates>
   <Rimverse_RareFind>The sensors locked onto {0}, a size class {1} object. Things this large are found once in a lifetime. The data alone is worth a fortune, and the research team is already busy.</Rimverse_RareFind>
   <Rimverse_RareFindLabel>Rare find</Rimverse_RareFindLabel>
   <Rimverse_RuinResearch>The precursor ruins advanced the rare research {0}.</Rimverse_RuinResearch>

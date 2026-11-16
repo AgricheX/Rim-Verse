@@ -15,10 +15,21 @@
   <Rimverse_CosmicRegion>Região da teia: um agrupamento mais solto de aglomerados entre as paredes.</Rimverse_CosmicRegion>
   <Rimverse_CosmicWebCounts>{0} vazios, {1} paredes, {2} superaglomerados e {3} regiões neste chunk.</Rimverse_CosmicWebCounts>
   <Rimverse_DistrictSizeClass>Classe de tamanho do distrito: {0}</Rimverse_DistrictSizeClass>
+  <Rimverse_EnemyClass_0>caça</Rimverse_EnemyClass_0>
+  <Rimverse_EnemyClass_1>corveta</Rimverse_EnemyClass_1>
+  <Rimverse_EnemyClass_2>fragata</Rimverse_EnemyClass_2>
+  <Rimverse_EnemyClass_3>destróier</Rimverse_EnemyClass_3>
+  <Rimverse_EnemyClass_4>cruzador</Rimverse_EnemyClass_4>
+  <Rimverse_EnemyClass_5>porta-naves</Rimverse_EnemyClass_5>
+  <Rimverse_EnemyClass_6>encouraçado</Rimverse_EnemyClass_6>
+  <Rimverse_EnemyClass_7>dreadnought</Rimverse_EnemyClass_7>
+  <Rimverse_EnemyClass_8>estação de guerra</Rimverse_EnemyClass_8>
   <Rimverse_LetterBombard>{0} reivindica o sistema de {1} e mandou uma frota bombardear a colônia.</Rimverse_LetterBombard>
   <Rimverse_LetterBombardLabel>Expedição de bombardeio</Rimverse_LetterBombardLabel>
   <Rimverse_LetterLegitimacy>O governo de {0} perdeu toda a legitimidade e foi trocado por: {1}.</Rimverse_LetterLegitimacy>
   <Rimverse_LetterLegitimacyLabel>Governo cai</Rimverse_LetterLegitimacyLabel>
+  <Rimverse_LetterNemesis>A {0} voltou. {1} comanda de novo, depois de escapar de você {2} vez(es).</Rimverse_LetterNemesis>
+  <Rimverse_LetterNemesisLabel>Um velho inimigo volta</Rimverse_LetterNemesisLabel>
   <Rimverse_LetterTechRevolution>{0} passou por uma revolução tecnológica e chegou à era {1}. Governo novo: {2}.</Rimverse_LetterTechRevolution>
   <Rimverse_LetterTechRevolutionLabel>Revolução tecnológica</Rimverse_LetterTechRevolutionLabel>
   <Rimverse_LetterTradeWar>{0} vê {1} como concorrente e declarou embargo comercial por 20 dias.</Rimverse_LetterTradeWar>
@@ -27,6 +38,14 @@
   <Rimverse_MsgFreighterHere>Um {1} de {0} chegou neste sistema e está aberto pra negócio.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Piratas saquearam um cargueiro de {0} perto de {1}.</Rimverse_MsgFreighterRaided>
   <Rimverse_MsgPrisonerSabotage>{0} sabotou o {1} durante a fuga!</Rimverse_MsgPrisonerSabotage>
+  <Rimverse_RaiderKind_BountyHunters>caçadores de recompensa</Rimverse_RaiderKind_BountyHunters>
+  <Rimverse_RaiderKind_Corporate>segurança corporativa</Rimverse_RaiderKind_Corporate>
+  <Rimverse_RaiderKind_Fanatics>fanáticos</Rimverse_RaiderKind_Fanatics>
+  <Rimverse_RaiderKind_Federation>federação</Rimverse_RaiderKind_Federation>
+  <Rimverse_RaiderKind_Guardians>guardião precursor</Rimverse_RaiderKind_Guardians>
+  <Rimverse_RaiderKind_Junta>onda da junta</Rimverse_RaiderKind_Junta>
+  <Rimverse_RaiderKind_Mercenaries>mercenários</Rimverse_RaiderKind_Mercenaries>
+  <Rimverse_RaiderKind_Pirates>piratas</Rimverse_RaiderKind_Pirates>
   <Rimverse_RareFind>Os sensores travaram em {0}, um objeto de classe de tamanho {1}. Coisas desse tamanho aparecem uma vez na vida. Só os dados já valem uma fortuna, e a equipe de pesquisa já está trabalhando.</Rimverse_RareFind>
   <Rimverse_RareFindLabel>Achado raro</Rimverse_RareFindLabel>
   <Rimverse_RuinResearch>As ruínas precursoras avançaram a pesquisa rara {0}.</Rimverse_RuinResearch>

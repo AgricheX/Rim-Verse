@@ -10,8 +10,10 @@ namespace Rimverse
 {
     public static class EnemyShipGenerator
     {
-        private static readonly int[] WeaponCounts = { 1, 2, 4, 6 };
-        private static readonly int[] CrewCaps = { 4, 6, 10, 16 };
+        private static readonly int[] WeaponCounts = { 1, 2, 3, 6, 6, 5, 14, 20, 18 };
+        private static readonly int[] CrewCaps = { 1, 4, 6, 20, 16, 40, 80, 120, 100 };
+        private static readonly int[] SizeClasses = { 1, 1, 2, 3, 3, 4, 4, 5, 5 };
+        private static readonly int[] Thrusters = { 1, 1, 2, 3, 3, 4, 5, 6, 0 };
 
         private static readonly string[] IndustrialWeapons = { "Rimverse_Autocannon", "Rimverse_HullCannon", "Rimverse_MissileLauncher", "Rimverse_FlakBattery", "Rimverse_MineLayer" };
         private static readonly string[] SpacerWeapons = { "Rimverse_Autocannon", "Rimverse_HullCannon", "Rimverse_MissileLauncher", "Rimverse_LaserLance", "Rimverse_Railgun", "Rimverse_IonCannon", "Rimverse_BeamLaser", "Rimverse_RailBattery", "Rimverse_PulseMissileLauncher" };
@@ -19,7 +21,25 @@ namespace Rimverse
 
         private static ThingDef Named(string defName) => DefDatabase<ThingDef>.GetNamedSilentFail(defName);
 
-        public static int TierFor(float power) => power < 25f ? 0 : power < 60f ? 1 : power < 150f ? 2 : 3;
+        public static int TierFor(float power) => power < 12f ? 0 : power < 25f ? 1 : power < 60f ? 2 : power < 100f ? 3 : power < 150f ? 4 : power < 400f ? 6 : 7;
+
+        public static int MaxTierFor(Civilization civ, Faction faction)
+        {
+            if (faction != null && (faction.def.permanentEnemy || faction.def.defName.Contains("Pirate"))) return 5;
+            if (civ == null) return 7;
+            if (civ.stage <= 9) return 3;
+            if (civ.stage == 10) return 4;
+            if (civ.stage == 11) return 6;
+            return 8;
+        }
+
+        public static int ClassFor(float power, Civilization civ, Faction faction)
+        {
+            int tier = TierFor(power);
+            if (tier == 6 && Rand.Chance(0.3f)) tier = 5;
+            if (tier >= 6 && faction != null && !faction.def.permanentEnemy && Rand.Chance(0.15f)) tier = 8;
+            return Mathf.Min(tier, MaxTierFor(civ, faction));
+        }
 
         public static BlueprintStyle StyleFor(Faction faction, TechLevel tech)
         {
@@ -37,32 +57,37 @@ namespace Rimverse
             BlueprintRequest req = new BlueprintRequest
             {
                 style = style,
-                sizeClass = tier + 1,
-                armored = tier >= 3 && tech >= TechLevel.Spacer,
+                sizeClass = SizeClasses[tier],
+                armored = tier >= 6 && tech >= TechLevel.Spacer || tier == 8,
                 seed = Rand.Int
             };
-            ThingDef bridgeDef = Named(tier >= 2 ? "Rimverse_BridgeCommand" : "Rimverse_BridgeSmall") ?? Named("Rimverse_BridgeSmall");
+            ThingDef bridgeDef = Named(tier >= 6 ? "Rimverse_BridgeCapital" : tier >= 3 ? "Rimverse_BridgeCommand" : "Rimverse_BridgeSmall") ?? Named("Rimverse_BridgeSmall");
             List<ThingDef> weapons = PickWeapons(tier, tech, faction);
             float powerNeed = Consumption(bridgeDef) + weapons.Sum(Consumption) + Consumption(Named("Rimverse_AirGenerator"));
-            bool shield = tier >= 2 && tech >= TechLevel.Spacer;
+            bool shield = tier >= 3 && tech >= TechLevel.Spacer;
             if (shield) powerNeed += Consumption(Named("Rimverse_ShieldGenerator"));
             int cells = Mathf.CeilToInt(powerNeed / 1000f) + 1;
             if (bridgeDef != null) req.Add(bridgeDef.defName);
-            req.Add("Rimverse_ChemThruster", tier + 1);
+            if (Thrusters[tier] > 0) req.Add(tier >= 6 && tech >= TechLevel.Spacer ? "Rimverse_FusionThruster" : "Rimverse_ChemThruster", Thrusters[tier]);
+            if (shield && (tier >= 7 || tier == 8)) req.Add("Rimverse_ShieldGenerator");
+            if (tier == 5) req.Add("Rimverse_Hangar", 2);
+            if ((tier == 6 || tier == 7) && tech >= TechLevel.Spacer) req.Add("Rimverse_SpinalCannon");
+            if (tier == 8) req.Add("Rimverse_SecurityCentral");
             req.Add("Rimverse_FuelCell", cells);
             req.Add("Rimverse_AirGenerator").Add("Rimverse_AirTank");
             if (shield) req.Add("Rimverse_ShieldGenerator");
             foreach (ThingDef w in weapons) req.Add(w.defName);
+            EnemyRoster.Flavor(req, tier, tech);
             if (tier >= 1) req.Add("Rimverse_ChemTank");
-            req.Add("Rimverse_RadiatorFixed", tier + 2);
-            req.Add("Rimverse_ManeuverThruster", Mathf.Min(4, tier + 1));
+            req.Add("Rimverse_RadiatorFixed", Mathf.Min(10, tier + 2));
+            if (tier != 8) req.Add("Rimverse_ManeuverThruster", Mathf.Clamp(tier + 1, 1, 6));
             if (tier >= 1) req.Add("Rimverse_Decoy");
             if (tier >= 2) req.Add("Rimverse_ReactiveArmor");
             if (tier >= 2 && tech >= TechLevel.Spacer) req.Add("Rimverse_EmergencyHeatSink");
             if (tier >= 3 && tech >= TechLevel.Spacer && Rand.Chance(0.5f)) req.Add("Rimverse_SignatureCloak");
             if (style != BlueprintStyle.Mechanoid)
             {
-                req.Add("Bed", Mathf.Max(2, CrewCaps[tier] / 2));
+                req.Add("Bed", Mathf.Clamp(CrewCaps[tier] / 2, 2, 20));
                 if (tier >= 1) req.Add("Rimverse_CargoBay");
             }
             return req;
@@ -72,10 +97,17 @@ namespace Rimverse
         {
             crewCount = 0;
             if (map == null || player == null || faction == null) return null;
-            int tier = TierFor(power);
-            ShipBlueprint bp = ShipBlueprintGenerator.Generate(RequestFor(tier, tech, faction, power));
+            Civilization civ = GameComponent_Civilizations.Instance?.generated == true ? Currencies.CivOf(faction) : null;
+            int tier = ClassFor(power, civ, faction);
+            ShipBlueprint bp = null;
+            CellRect rect = default;
+            for (; tier >= 0; tier = tier == 8 ? 6 : tier == 6 ? 4 : tier - 1)
+            {
+                bp = ShipBlueprintGenerator.Generate(RequestFor(tier, tech, faction, power));
+                if (bp != null && TryFindRect(map, player, bp.width, bp.height, out rect)) break;
+                bp = null;
+            }
             if (bp == null) return null;
-            if (!TryFindRect(map, player, bp.width, bp.height, out CellRect rect)) return null;
             BlueprintBuildResult res = ShipBlueprintBuilder.Build(map, rect, bp, new BlueprintBuildOptions { faction = faction, clearArea = false });
             if (res == null) return null;
             Building bridge = res.bridge;
@@ -93,8 +125,9 @@ namespace Rimverse
                 return null;
             }
             ship.state.airStock = ship.airCapacity;
-            ship.state.name = "Rimverse_EnemyShipName".Translate(faction.Name, ("Rimverse_EnemyTier_" + tier).Translate());
+            ship.state.name = "Rimverse_EnemyShipName".Translate(faction.Name, ("Rimverse_EnemyClass_" + tier).Translate());
             List<Pawn> crew = GenerateCrew(map, faction, power, tier, res.freeCells.Count);
+            EnemyRoster.Name(ship, faction, crew.FirstOrDefault(), tier);
             int i = 0;
             foreach (Pawn p in crew)
             {
@@ -151,7 +184,7 @@ namespace Rimverse
                 groupKind = PawnGroupKindDefOf.Combat,
                 tile = map.Tile,
                 faction = faction,
-                points = Mathf.Clamp(power * 6f, 150f, 4000f),
+                points = Mathf.Clamp(power * 6f, 150f, 12000f),
                 generateFightersOnly = true
             };
             try

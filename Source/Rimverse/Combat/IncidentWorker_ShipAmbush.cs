@@ -38,7 +38,16 @@ namespace Rimverse
                 return true;
             }
             TechLevel tech = f.def.techLevel < TechLevel.Industrial ? TechLevel.Industrial : f.def.techLevel;
-            return ShipCombatUtility.StartEncounter(map, ship, f, points / 8f, tech, -2);
+            EnemyRoster.current = EnemyRoster.Pick(map);
+            bool ok;
+            if (EnemyRoster.current == RaiderKind.Junta)
+            {
+                ok = ShipCombatUtility.StartEncounter(map, ship, f, points / 16f, tech, -2);
+                if (ok) ShipCombatUtility.StartEncounter(map, ship, f, points / 16f, tech, -2);
+            }
+            else ok = ShipCombatUtility.StartEncounter(map, ship, f, points / 8f, tech, -2);
+            EnemyRoster.current = RaiderKind.Pirates;
+            return ok;
         }
     }
 }

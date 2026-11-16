@@ -471,6 +471,17 @@ namespace Rimverse
                 case ContractKind.SampleCollection:
                     return atTarget && loc.OnSurface && loc.bodyIndex == body;
                 case ContractKind.RuinExpedition:
+                    if (phase == 0 && atTarget && !loc.OnSurface && Faction.OfMechanoids != null)
+                    {
+                        phase = 1;
+                        RimverseShip guard = ColonyUtility.PlayerShipOn(map);
+                        if (guard != null && Rand.Chance(0.35f))
+                        {
+                            EnemyRoster.current = RaiderKind.Guardians;
+                            ShipCombatUtility.StartEncounter(map, guard, Faction.OfMechanoids, 40f, TechLevel.Ultra, -2);
+                            EnemyRoster.current = RaiderKind.Pirates;
+                        }
+                    }
                     if (!(atTarget && loc.OnSurface && loc.bodyIndex == body)) return false;
                     CivTechTrade.RareFromRuins(1500f);
                     return true;
