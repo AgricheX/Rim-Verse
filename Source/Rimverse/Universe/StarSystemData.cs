@@ -68,6 +68,7 @@ namespace Rimverse
         public float equilibriumC;
         public bool tidalLocked;
         public float eccentricity;
+        public BodyFlavor flavor;
 
         public float RadiusKm => radiusEarth * 6371f;
 
@@ -90,7 +91,7 @@ namespace Rimverse
 
         public bool Landable => type != BodyType.GasGiant && type != BodyType.Belt;
 
-        public bool LandableNow => Landable;
+        public bool LandableNow => Landable || (type == BodyType.GasGiant && ResearchGate.Done("Rimverse_Stations"));
     }
 
     public class StarSystemData

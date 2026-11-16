@@ -66,6 +66,7 @@ namespace Rimverse
                 hw.equilibriumC = -18f;
                 hw.tidalLocked = false;
                 hw.eccentricity = 0.02f;
+                hw.flavor = BodyFlavor.None;
                 hw.atmosphere = AtmosphereType.Breathable;
                 hw.water = 0.7f;
                 hw.homeWorld = true;
@@ -223,6 +224,9 @@ namespace Rimverse
             b.equilibriumC = eq;
             UniverseRand orb = new UniverseRand(UniverseRand.Hash((long)(b.orbitAU * 1000000f), b.sizeClass, (int)b.type, 7781));
             b.eccentricity = (float)System.Math.Pow(orb.ValueDouble, 3.0) * 0.45f;
+            double fl = orb.ValueDouble;
+            bool life = b.atmosphere != AtmosphereType.None && b.type != BodyType.GasGiant;
+            b.flavor = !life ? BodyFlavor.None : fl < 0.07 ? BodyFlavor.Crystal : fl < 0.14 && b.water > 0.2f ? BodyFlavor.Fungal : fl < 0.24 && (b.atmosphere == AtmosphereType.Toxic || b.atmosphere == AtmosphereType.Thin) ? BodyFlavor.Irradiated : BodyFlavor.None;
             b.tidalLocked = b.type != BodyType.GasGiant && b.type != BodyType.Belt && b.orbitAU < 0.25f;
             b.temperatureC = eq + greenhouse;
             if (b.atmosphere == AtmosphereType.Breathable && (b.temperatureC < -30f || b.temperatureC > 45f)) b.atmosphere = AtmosphereType.Thin;

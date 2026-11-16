@@ -51,8 +51,8 @@ namespace Rimverse
                 {
                     AtmosphereType a = SpaceMapUtility.OutsideAtmosphere(map);
                     if (a == AtmosphereType.None) return AirlessPerHour * StarFactor(loc);
-                    if (a == AtmosphereType.Thin) return ThinPerHour * StarFactor(loc);
-                    return 0f;
+                    if (a == AtmosphereType.Thin) return ThinPerHour * StarFactor(loc) + BiomeFeatures.ExtraRadiationPerHour(map);
+                    return BiomeFeatures.ExtraRadiationPerHour(map);
                 }
                 return SpacePerHour * StarFactor(loc);
             }

@@ -126,7 +126,7 @@ namespace Rimverse
             if (SpaceMapUtility.IsOrbit(parent.Map))
             {
                 BodyData orbitBody = MapComponent_ShipLocation.For(parent.Map)?.Body;
-                if (orbitBody != null && !orbitBody.homeWorld && orbitBody.Landable)
+                if (orbitBody != null && !orbitBody.homeWorld && orbitBody.LandableNow)
                 {
                     Command_Action found = new Command_Action
                     {

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CloudSea.label>mar de nuvens</Rimverse_CloudSea.label>
+  <Rimverse_CloudSea.description>O topo de uma tempestade sem fim. Não há chão embaixo, só a longa queda.</Rimverse_CloudSea.description>
+  <Rimverse_CooledLava.label>lava resfriada</Rimverse_CooledLava.label>
+  <Rimverse_CooledLava.description>Crosta preta sobre fluxos antigos. Ainda quente por baixo.</Rimverse_CooledLava.description>
+  <Rimverse_CrystalGround.label>chão de cristal</Rimverse_CrystalGround.label>
+  <Rimverse_CrystalGround.description>Chão vítreo que cresceu de cristal lento. Ressoa sob as botas e corta mãos descuidadas.</Rimverse_CrystalGround.description>
+  <Rimverse_FungalMat.label>tapete fúngico</Rimverse_FungalMat.label>
+  <Rimverse_FungalMat.description>Um tapete esponjoso de fungos sobre solo podre. Guarda água e esporos.</Rimverse_FungalMat.description>
+  <Rimverse_GardenSoil.label>solo de jardim</Rimverse_GardenSoil.label>
+  <Rimverse_GardenSoil.description>Solo rico mantido perfeito por máquinas há séculos.</Rimverse_GardenSoil.description>
+  <Rimverse_GlacierIce.label>gelo de geleira</Rimverse_GlacierIce.label>
+  <Rimverse_GlacierIce.description>Gelo com centenas de metros de profundidade.</Rimverse_GlacierIce.description>
+  <Rimverse_LavaPool.label>poça de lava</Rimverse_LavaPool.label>
+  <Rimverse_LavaPool.description>Rocha derretida. Nada atravessa e sobrevive.</Rimverse_LavaPool.description>
+  <Rimverse_RadAsh.label>cinza radiante</Rimverse_RadAsh.label>
+  <Rimverse_RadAsh.description>Cinza fina que brilha de leve à noite. Nada saudável cresce aqui.</Rimverse_RadAsh.description>
+  <Rimverse_Rubble.label>entulho urbano</Rimverse_Rubble.label>
+  <Rimverse_Rubble.description>Plasconcreto quebrado, vidro e ferragem de uma cidade que caiu.</Rimverse_Rubble.description>
+  <Rimverse_ScorchedRock.label>rocha queimada</Rimverse_ScorchedRock.label>
+  <Rimverse_ScorchedRock.description>Rocha assada por um sol que nunca se põe.</Rimverse_ScorchedRock.description>
+</LanguageData>

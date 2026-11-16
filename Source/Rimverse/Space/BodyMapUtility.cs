@@ -60,6 +60,12 @@ namespace Rimverse
 
         public static MapGeneratorDef GeneratorFor(BodyData body)
         {
+            string special = BiomeFeatures.Pick(body, BodyGenContext.systemKey);
+            if (special != null)
+            {
+                MapGeneratorDef sp = DefDatabase<MapGeneratorDef>.GetNamedSilentFail("Rimverse_Surface_" + special);
+                if (sp != null) return sp;
+            }
             if (body.Airless) return RimverseDefOf.Rimverse_AirlessBodyMap;
             if (body.atmosphere == AtmosphereType.Breathable)
             {
