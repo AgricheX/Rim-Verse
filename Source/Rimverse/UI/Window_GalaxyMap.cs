@@ -258,6 +258,13 @@ namespace Rimverse
                     GUI.color = new Color(0.25f, 0.3f, 0.5f, 0.22f);
                     Window_SystemMap.DrawCircle(p, d / 2f, 1f);
                 }
+                if (chain.walls != null)
+                {
+                    foreach (CosmicNode w in chain.walls)
+                    {
+                        Widgets.DrawLine(P(w.positionMly), P(w.wallEnd), new Color(0.55f, 0.6f, 0.95f, 0.35f), Mathf.Max(2f, S(w.radiusMly)));
+                    }
+                }
                 GUI.color = GridStrong;
                 Widgets.DrawBox(new Rect(2f, 2f, rect.width - 4f, rect.height - 4f));
             }
@@ -309,6 +316,7 @@ namespace Rimverse
             Text.Font = GameFont.Small;
             ls.Label("Rimverse_UniverseAge".Translate(U.AgeGyr.ToString("0.0")));
             ls.Label("Rimverse_CosmicChunk".Translate(chain.chunk.name));
+            if (l == CosmicLevel.Web) ls.Label("Rimverse_CosmicWebCounts".Translate(chain.web.Count, chain.walls?.Count ?? 0, chain.superclusters.Count(x => !x.region), chain.superclusters.Count(x => x.region)));
             ls.Label(("Rimverse_CosmicDesc_" + l).Translate());
             ls.GapLine();
             CosmicNode home = l == CosmicLevel.Web ? chain.supercluster : chain.Node(l);
@@ -319,6 +327,7 @@ namespace Rimverse
                 ls.Label(n.name);
                 Text.Font = GameFont.Small;
                 ls.Label("Rimverse_CosmicRadius".Translate(n.radiusMly.ToString("0.##")));
+                if (n.region) ls.Label("Rimverse_CosmicRegion".Translate());
                 if (n.childCount > 0) ls.Label("Rimverse_CosmicChildren".Translate(n.childCount, CosmicScale.LevelLabel(ChildLevel(n.level))));
                 if (n.home)
                 {
@@ -437,6 +446,7 @@ namespace Rimverse
                 case StarType.Blue: return new Color(0.55f, 0.7f, 1f);
                 case StarType.WhiteDwarf: return new Color(0.85f, 0.9f, 1f);
                 case StarType.Neutron: return new Color(0.6f, 1f, 1f);
+                case StarType.Pulsar: return new Color(0.75f, 0.9f, 1f);
                 default: return new Color(0.6f, 0.3f, 0.8f);
             }
         }
@@ -448,6 +458,7 @@ namespace Rimverse
                 case StarType.RedDwarf: return 4f;
                 case StarType.WhiteDwarf:
                 case StarType.Neutron: return 3f;
+                case StarType.Pulsar: return 3.5f;
                 case StarType.Blue: return 8f;
                 case StarType.White: return 6.5f;
                 case StarType.BlackHole: return 6f;
@@ -708,6 +719,11 @@ namespace Rimverse
             else if (ownerCiv != null && scan >= ScanLevel.Range) l.Label("Rimverse_TerritoryUnknownCiv".Translate());
             l.Label("Rimverse_ScanLevelLine".Translate(("Rimverse_ScanLevel_" + scan).Translate()));
             l.Label("Rimverse_SystemAddress".Translate(selected.Address(U.PositionOf(selected))));
+            GalaxyData selGalaxy = U.Galaxy(selected.galaxy);
+            if (selGalaxy != null)
+            {
+                l.Label("Rimverse_DistrictSizeClass".Translate(selGalaxy.SizeClassAt(selected.District.Center)) + "   " + "Rimverse_ZoneSizeClass".Translate(selGalaxy.SizeClassAt(selected.Zone.Center)) + "   " + "Rimverse_SectorSizeClass".Translate(selGalaxy.SizeClassAt(new Vec3d((selected.sx + 0.5) * StarSystemId.SectorSizeLy, (selected.sy + 0.5) * StarSystemId.SectorSizeLy, (selected.sz + 0.5) * StarSystemId.SectorSizeLy))));
+            }
             if (scan == ScanLevel.Unknown)
             {
                 l.Label(("Rimverse_Star_" + StarSystemGenerator.PrimaryTypeFor(selected, U.universeSeed, U.IsHome(selected))).Translate());

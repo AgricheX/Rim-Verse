@@ -213,8 +213,31 @@ namespace Rimverse
             }
         }
 
+        public float surfaceLat = 999f;
+        public float surfaceLon;
+
+        public string SurfaceCutLabel
+        {
+            get
+            {
+                BodyData b = Body;
+                if (b == null || !OnSurface) return null;
+                if (surfaceLat > 900f)
+                {
+                    UniverseRand r = new UniverseRand(UniverseRand.Hash(map.Tile.tileId, map.uniqueID, bodyIndex, 5150));
+                    surfaceLat = (float)(global::System.Math.Asin(r.ValueDouble * 2.0 - 1.0) * 180.0 / global::System.Math.PI);
+                    surfaceLon = (float)(r.ValueDouble * 360.0 - 180.0);
+                }
+                string lat = Mathf.Abs(surfaceLat).ToString("0.0") + (surfaceLat >= 0f ? "N" : "S");
+                string lon = Mathf.Abs(surfaceLon).ToString("0.0") + (surfaceLon >= 0f ? "E" : "W");
+                return "Rimverse_SurfaceCut".Translate(lat, lon, (2f * Mathf.PI * b.RadiusKm).ToString("N0"));
+            }
+        }
+
         public override void ExposeData()
         {
+            Scribe_Values.Look(ref surfaceLat, "surfaceLat", 999f);
+            Scribe_Values.Look(ref surfaceLon, "surfaceLon");
             Scribe_Values.Look(ref systemKey, "systemKey");
             Scribe_Values.Look(ref bodyIndex, "bodyIndex", -1);
             Scribe_Values.Look(ref destinationBody, "destinationBody", -1);

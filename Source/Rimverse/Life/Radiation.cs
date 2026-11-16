@@ -35,7 +35,11 @@ namespace Rimverse
             BodyData b = loc.Body;
             float d = b == null ? 1f : Mathf.Max(0.05f, sys.OrbitOf(b));
             float flux = sys.TotalLuminosity / (d * d);
-            return Mathf.Clamp(Mathf.Sqrt(Mathf.Max(flux, 0f)), 0.2f, 4f);
+            float f = Mathf.Clamp(Mathf.Sqrt(Mathf.Max(flux, 0f)), 0.2f, 4f);
+            StarType t = sys.Primary?.type ?? StarType.Yellow;
+            if (t == StarType.Pulsar) f = Mathf.Max(f, 3f) * 1.5f;
+            else if (t == StarType.Neutron) f = Mathf.Max(f, 2f);
+            return f;
         }
 
         public static float MapDosePerHour(Map map)

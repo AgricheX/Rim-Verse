@@ -54,6 +54,13 @@ namespace Rimverse
             }
         }
 
+        public int SizeClassAt(Vec3d p)
+        {
+            double peak = baseDensity > 0 ? baseDensity : 1e-9;
+            double v = Math.Max(0.0, DensityAt(p) / peak);
+            return Math.Max(1, Math.Min(100, (int)Math.Round(100.0 * Math.Pow(v, 0.5))));
+        }
+
         public double DensityAt(Vec3d p)
         {
             double r = p.PlanarLength / radiusLy;

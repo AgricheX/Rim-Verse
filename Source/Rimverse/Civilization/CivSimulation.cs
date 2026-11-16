@@ -25,7 +25,7 @@ namespace Rimverse
         {
             float pop = Mathf.Max(0.01f, c.Population);
             float techFactor = c.tech >= TechLevel.Ultra ? 2f : c.tech >= TechLevel.Spacer ? 1f : 0.3f;
-            return Mathf.Sqrt(pop) * 10f * Mod(c, CivStat.Military) * techFactor;
+            return Mathf.Sqrt(pop) * 10f * Mod(c, CivStat.Military) * techFactor * (0.7f + 0.6f * c.sizeClass / 100f);
         }
 
         public static float FleetPower(GameComponent_Civilizations gc, Civilization c)

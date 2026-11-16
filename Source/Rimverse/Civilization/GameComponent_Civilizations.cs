@@ -13,6 +13,7 @@ namespace Rimverse
         public const double NearPlayerLy = 300.0;
         public const double RelationRangeLy = 500.0;
         public const int FleetTickInterval = 2500;
+        public const int CoarseYears = 5;
 
         public List<Civilization> civilizations = new List<Civilization>();
         public List<Fleet> fleets = new List<Fleet>();
@@ -342,17 +343,20 @@ namespace Rimverse
             if (tick % interval != 71) return;
             EnsureGenerated();
             CheckContacts();
+            HashSet<int> playerGalaxies = new HashSet<int>();
+            foreach (StarSystemId pid in PlayerSystems()) playerGalaxies.Add(pid.galaxy);
+            if (playerGalaxies.Count == 0) playerGalaxies.Add(0);
             for (int i = 0; i < civilizations.Count; i++)
             {
                 Civilization c = civilizations[i];
                 if (c.dead) continue;
-                int step = IsNearPlayer(c) ? RimverseUnits.TicksPerQuadrum : RimverseUnits.TicksPerYear;
+                int step = !playerGalaxies.Contains(c.galaxy) ? RimverseUnits.TicksPerYear * CoarseYears : IsNearPlayer(c) ? RimverseUnits.TicksPerQuadrum : RimverseUnits.TicksPerYear;
                 int elapsed = tick - c.lastSimTick;
                 if (elapsed < step) continue;
                 int guard = 0;
                 while (elapsed >= step && guard++ < 50)
                 {
-                    float years = Mathf.Min(elapsed, RimverseUnits.TicksPerYear) / (float)RimverseUnits.TicksPerYear;
+                    float years = Mathf.Min(elapsed, step) / (float)RimverseUnits.TicksPerYear;
                     CivSimulation.Step(this, c, years);
                     int used = Mathf.Min(elapsed, RimverseUnits.TicksPerYear);
                     c.lastSimTick += used;

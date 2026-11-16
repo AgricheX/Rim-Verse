@@ -24,9 +24,15 @@ namespace Rimverse
         public int dy;
         public int dz;
         public int index;
+        public int zx;
+        public int zy;
+        public int zz;
 
         public StarSystemId(int galaxy, int sx, int sy, int sz, int dx, int dy, int dz, int index)
         {
+            zx = Math.Max(0, Math.Min(ZonesPerSector - 1, dx / DistrictsPerZone));
+            zy = Math.Max(0, Math.Min(ZonesPerSector - 1, dy / DistrictsPerZone));
+            zz = Math.Max(0, Math.Min(ZonesPerSector - 1, dz / DistrictsPerZone));
             this.galaxy = galaxy;
             this.sx = sx;
             this.sy = sy;
@@ -43,7 +49,7 @@ namespace Rimverse
 
         public DistrictId District => new DistrictId(galaxy, sx, sy, sz, dx, dy, dz);
 
-        public ZoneId Zone => District.Zone;
+        public ZoneId Zone => new ZoneId(galaxy, sx, sy, sz, zx, zy, zz);
 
         public static int SubcellOf(Vec3d position, DistrictId d)
         {
@@ -207,6 +213,8 @@ namespace Rimverse
         public static Vec3d operator *(Vec3d a, double f) => new Vec3d(a.x * f, a.y * f, a.z * f);
 
         public double Length => Math.Sqrt(x * x + y * y + z * z);
+
+        public static double Dot(Vec3d a, Vec3d b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
         public double PlanarLength => Math.Sqrt(x * x + z * z);
 

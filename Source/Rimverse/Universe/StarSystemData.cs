@@ -11,7 +11,8 @@ namespace Rimverse
         Blue,
         WhiteDwarf,
         Neutron,
-        BlackHole
+        BlackHole,
+        Pulsar
     }
 
     public enum BodyType
@@ -64,6 +65,9 @@ namespace Rimverse
         public float phase;
         public float moonOrbitKm;
         public float densityRel = 1f;
+        public float equilibriumC;
+        public bool tidalLocked;
+        public float eccentricity;
 
         public float RadiusKm => radiusEarth * 6371f;
 

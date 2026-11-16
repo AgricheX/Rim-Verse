@@ -125,6 +125,8 @@ namespace Rimverse
             title = ship != null ? ship.Label : map.Parent?.LabelCap ?? map.ToString();
             MapComponent_ShipLocation loc = MapComponent_ShipLocation.For(map);
             subtitle = ship != null ? (loc != null && !loc.OnSurface ? "Rimverse_HudInSpace".Translate().ToString() : "Rimverse_HudLanded".Translate().ToString()) : "";
+            string cut = loc?.SurfaceCutLabel;
+            if (!cut.NullOrEmpty()) subtitle = subtitle.NullOrEmpty() ? cut : subtitle + " · " + cut;
             int colonists = Mathf.Max(1, map.mapPawns.FreeColonistsSpawnedCount);
             float days = map.resourceCounter.TotalHumanEdibleNutrition / (colonists * 1.6f);
             Add("Rimverse_HudFood".Translate(), "Rimverse_HudDays".Translate(days.ToString("0.#")), -1f, days < 2f ? 2 : days < 5f ? 1 : 0, "Rimverse_HudFoodTip".Translate(colonists));

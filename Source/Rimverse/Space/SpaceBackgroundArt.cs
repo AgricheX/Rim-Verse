@@ -17,6 +17,7 @@ namespace Rimverse
                 case StarType.Blue: return new Color(0.66f, 0.78f, 1f);
                 case StarType.WhiteDwarf: return new Color(0.85f, 0.9f, 1f);
                 case StarType.Neutron: return new Color(0.7f, 0.85f, 1f);
+                case StarType.Pulsar: return new Color(0.8f, 0.9f, 1f);
                 default: return new Color(1f, 0.6f, 0.3f);
             }
         }

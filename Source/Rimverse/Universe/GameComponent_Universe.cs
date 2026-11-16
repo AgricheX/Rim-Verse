@@ -165,6 +165,7 @@ namespace Rimverse
             if (catalog.TryGetValue(key, out int cur) && cur >= (int)level) return;
             catalog[key] = (int)level;
             if (level == ScanLevel.Exact) EmpireAnomalies.OnScanned(id, body);
+            GameComponent_RareFinds.OnBodyScanned(id, body, level);
         }
 
         public int CatalogCount => catalog.Count;
@@ -195,6 +196,7 @@ namespace Rimverse
             if (systemCatalog.TryGetValue(id.Key, out int cur) && cur >= (int)level) return;
             systemCatalog[id.Key] = (int)level;
             IdeoEvents.NoteNewScan();
+            GameComponent_RareFinds.OnSystemScanned(id, level);
         }
 
         public void AddScanBubble(int galaxy, Vec3d center, double radiusLy, ScanLevel level)

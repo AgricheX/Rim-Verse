@@ -584,6 +584,9 @@ namespace Rimverse
                 yield return "Rimverse_BodyGravity".Translate(b.gravity.ToString("0.##"));
                 yield return "Rimverse_BodyEscape".Translate(b.EscapeVelocityKms.ToString("0.##"));
                 yield return "Rimverse_BodyTemperature".Translate(b.temperatureC.ToStringTemperature("F0"));
+                yield return "Rimverse_BodyEqTemperature".Translate(b.equilibriumC.ToStringTemperature("F0"));
+                if (b.tidalLocked) yield return "Rimverse_BodyTidalLocked".Translate();
+                if (b.eccentricity >= 0.1f) yield return "Rimverse_BodyEccentric".Translate(b.eccentricity.ToString("0.00"));
                 yield return "Rimverse_BodyAtmosphere".Translate(("Rimverse_Atmosphere_" + b.atmosphere).Translate());
                 yield return "Rimverse_BodyWater".Translate(b.water.ToStringPercent());
                 if (b.atmosphere == AtmosphereType.Breathable && !b.homeWorld) yield return "Rimverse_BodyFauna".Translate(GenStep_AlienFauna.SpeciesFor(b).Count);

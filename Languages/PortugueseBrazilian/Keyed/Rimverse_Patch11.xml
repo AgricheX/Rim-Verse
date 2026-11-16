@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_BodyEccentric>Órbita excêntrica ({0}): as estações mudam muito entre perto e longe.</Rimverse_BodyEccentric>
+  <Rimverse_BodyEqTemperature>Temperatura de equilíbrio: {0}</Rimverse_BodyEqTemperature>
+  <Rimverse_BodyTidalLocked>Travado por maré: um lado sempre olha para a estrela.</Rimverse_BodyTidalLocked>
+  <Rimverse_CosmicRegion>Região da teia: um agrupamento mais solto de aglomerados entre as paredes.</Rimverse_CosmicRegion>
+  <Rimverse_CosmicWebCounts>{0} vazios, {1} paredes, {2} superaglomerados e {3} regiões neste chunk.</Rimverse_CosmicWebCounts>
+  <Rimverse_DistrictSizeClass>Classe de tamanho do distrito: {0}</Rimverse_DistrictSizeClass>
+  <Rimverse_RareFind>Os sensores travaram em {0}, um objeto de classe de tamanho {1}. Coisas desse tamanho aparecem uma vez na vida. Só os dados já valem uma fortuna, e a equipe de pesquisa já está trabalhando.</Rimverse_RareFind>
+  <Rimverse_RareFindLabel>Achado raro</Rimverse_RareFindLabel>
+  <Rimverse_SectorSizeClass>Classe de tamanho do setor: {0}</Rimverse_SectorSizeClass>
+  <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>
+  <Rimverse_SurfaceCut>Recorte do mapa: {0}, {1} num mundo de {2} km de circunferência</Rimverse_SurfaceCut>
+  <Rimverse_ZoneSizeClass>Classe de tamanho da zona: {0}</Rimverse_ZoneSizeClass>
+</LanguageData>

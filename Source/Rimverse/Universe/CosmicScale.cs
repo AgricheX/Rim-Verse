@@ -34,6 +34,9 @@ namespace Rimverse
         public bool isVoid;
         public ulong seed;
         public bool home;
+        public bool region;
+        public bool wall;
+        public Vec3d wallEnd;
     }
 
     public static class CosmicScale
@@ -42,7 +45,13 @@ namespace Rimverse
         public const double VoidCellMly = 500.0;
         public const double WallMaxMly = 700.0;
         public const double BaseAgeGyr = 7.1;
-        public const double AgeSpreadGyr = 6.7;
+        public const double AgeSpreadGyr = 0.1;
+        public const double CalibrationAgeGyr = 13.8;
+        public const float VoidMissingChance = 0.1f;
+        public const int SuperclustersPerChunkMax = 40;
+        public const int RegionsPerChunkMax = 48;
+        public const int ClustersPerRegionMax = 20;
+        public const int LargeGroupsPerClusterMax = 150;
         public const int GroupsPerLargeGroupMax = 16;
         public const int GalaxiesPerGroupMax = 32;
 
@@ -84,8 +93,11 @@ namespace Rimverse
         public static List<CosmicNode> Web(CosmicNode chunk)
         {
             List<CosmicNode> list = new List<CosmicNode>();
+            UniverseRand miss = new UniverseRand(UniverseRand.Hash((long)chunk.seed, 909));
+            int missing = miss.Chance(VoidMissingChance) ? miss.RangeInclusive(0, 7) : -1;
             for (int i = 0; i < 8; i++)
             {
+                if (i == missing) continue;
                 UniverseRand r = new UniverseRand(UniverseRand.Hash((long)chunk.seed, 910, i));
                 Vec3d cell = new Vec3d(((i & 1) - 0.5) * VoidCellMly, (((i >> 1) & 1) - 0.5) * VoidCellMly, (((i >> 2) & 1) - 0.5) * VoidCellMly);
                 Vec3d jitter = new Vec3d((r.ValueDouble - 0.5) * 80, (r.ValueDouble - 0.5) * 80, (r.ValueDouble - 0.5) * 80);
@@ -103,28 +115,78 @@ namespace Rimverse
             return list;
         }
 
+        public static List<CosmicNode> Walls(CosmicNode chunk, List<CosmicNode> voids)
+        {
+            List<CosmicNode> list = new List<CosmicNode>();
+            for (int a = 0; a < voids.Count; a++)
+            {
+                for (int b = a + 1; b < voids.Count; b++)
+                {
+                    int diff = voids[a].index ^ voids[b].index;
+                    if (diff != 1 && diff != 2 && diff != 4) continue;
+                    Vec3d pa = voids[a].positionMly;
+                    Vec3d pb = voids[b].positionMly;
+                    Vec3d mid = (pa + pb) * 0.5;
+                    Vec3d axis = pb - pa;
+                    UniverseRand r = new UniverseRand(UniverseRand.Hash((long)chunk.seed, 915, voids[a].index, voids[b].index));
+                    Vec3d side = RandomDirection(r);
+                    Vec3d perp = side - axis * (Vec3d.Dot(side, axis) / Math.Max(1e-6, Vec3d.Dot(axis, axis)));
+                    double plen = perp.Length;
+                    if (plen < 1e-6) continue;
+                    perp = perp * (1.0 / plen);
+                    double half = Math.Min(WallMaxMly, 300 + r.ValueDouble * 400) / 2;
+                    list.Add(new CosmicNode
+                    {
+                        level = CosmicLevel.Web,
+                        index = list.Count,
+                        wall = true,
+                        name = Name(r),
+                        radiusMly = 20 + r.ValueDouble * 30,
+                        positionMly = mid - perp * half,
+                        wallEnd = mid + perp * half,
+                        seed = r.NextULong()
+                    });
+                }
+            }
+            return list;
+        }
+
+        public static Vec3d PointOnWall(CosmicNode wall, double t) => wall.positionMly + (wall.wallEnd - wall.positionMly) * t;
+
         public static List<CosmicNode> Superclusters(CosmicNode chunk, List<CosmicNode> voids)
         {
+            List<CosmicNode> walls = Walls(chunk, voids);
             UniverseRand r = new UniverseRand(UniverseRand.Hash((long)chunk.seed, 920));
-            int count = r.RangeInclusive(3, 7);
+            int supers = r.RangeInclusive(SuperclustersPerChunkMax / 2, SuperclustersPerChunkMax);
+            int regions = r.RangeInclusive(RegionsPerChunkMax / 2, RegionsPerChunkMax);
             List<CosmicNode> list = new List<CosmicNode>();
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < supers + regions; i++)
             {
                 UniverseRand nr = new UniverseRand(UniverseRand.Hash((long)chunk.seed, 921, i));
+                bool region = i >= supers;
                 Vec3d pos = new Vec3d();
-                for (int tries = 0; tries < 30; tries++)
+                if (!region && walls.Count > 0)
                 {
-                    pos = new Vec3d((nr.ValueDouble - 0.5) * ChunkSizeMly, (nr.ValueDouble - 0.5) * ChunkSizeMly, (nr.ValueDouble - 0.5) * ChunkSizeMly);
-                    if (OnWall(pos, voids)) break;
+                    CosmicNode w = walls[nr.RangeInclusive(0, walls.Count - 1)];
+                    pos = PointOnWall(w, nr.ValueDouble) + RandomDirection(nr) * (nr.ValueDouble * w.radiusMly);
+                }
+                else
+                {
+                    for (int tries = 0; tries < 30; tries++)
+                    {
+                        pos = new Vec3d((nr.ValueDouble - 0.5) * ChunkSizeMly, (nr.ValueDouble - 0.5) * ChunkSizeMly, (nr.ValueDouble - 0.5) * ChunkSizeMly);
+                        if (OnWall(pos, voids)) break;
+                    }
                 }
                 list.Add(new CosmicNode
                 {
                     level = CosmicLevel.Supercluster,
                     index = i,
+                    region = region,
                     name = Name(nr),
                     radiusMly = 60 + nr.ValueDouble * 190,
                     positionMly = pos,
-                    childCount = nr.RangeInclusive(3, 12),
+                    childCount = nr.RangeInclusive(4, ClustersPerRegionMax),
                     seed = nr.NextULong()
                 });
             }
@@ -148,7 +210,7 @@ namespace Rimverse
             int kidsMin, kidsMax;
             switch (parent.level)
             {
-                case CosmicLevel.Supercluster: level = CosmicLevel.Cluster; rMin = 8; rMax = 25; kidsMin = 2; kidsMax = 8; break;
+                case CosmicLevel.Supercluster: level = CosmicLevel.Cluster; rMin = 8; rMax = 25; kidsMin = 10; kidsMax = LargeGroupsPerClusterMax; break;
                 case CosmicLevel.Cluster: level = CosmicLevel.LargeGroup; rMin = 2; rMax = 5; kidsMin = 1; kidsMax = GroupsPerLargeGroupMax; break;
                 case CosmicLevel.LargeGroup: level = CosmicLevel.Group; rMin = 0.5; rMax = 1.5; kidsMin = 1; kidsMax = GalaxiesPerGroupMax; break;
                 default: return list;
@@ -192,6 +254,7 @@ namespace Rimverse
         {
             public CosmicNode chunk;
             public List<CosmicNode> web;
+            public List<CosmicNode> walls;
             public List<CosmicNode> superclusters;
             public CosmicNode supercluster;
             public List<CosmicNode> clusters;
@@ -237,8 +300,9 @@ namespace Rimverse
             UniverseRand r = new UniverseRand(UniverseRand.Hash(seed, 940));
             c.chunk = Chunk(seed);
             c.web = Web(c.chunk);
+            c.walls = Walls(c.chunk, c.web);
             c.superclusters = Superclusters(c.chunk, c.web);
-            c.supercluster = Pick(c.superclusters, r);
+            c.supercluster = PickWhere(c.superclusters, r, n => !n.region);
             c.clusters = Children(c.supercluster);
             c.cluster = Pick(c.clusters, r);
             c.largeGroups = Children(c.cluster);
@@ -248,6 +312,12 @@ namespace Rimverse
             c.group.childCount = galaxyCount;
             chains[seed] = c;
             return c;
+        }
+
+        private static CosmicNode PickWhere(List<CosmicNode> list, UniverseRand r, Func<CosmicNode, bool> ok)
+        {
+            List<CosmicNode> pool = list.FindAll(n => ok(n));
+            return Pick(pool.Count > 0 ? pool : list, r);
         }
 
         private static CosmicNode Pick(List<CosmicNode> list, UniverseRand r)
