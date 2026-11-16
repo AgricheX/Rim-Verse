@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_AsyncExpedition.label>expedição assíncrona</Rimverse_AsyncExpedition.label>
+  <Rimverse_AsyncExpedition.letterLabel>Pedido de expedição</Rimverse_AsyncExpedition.letterLabel>
+  <Rimverse_AsyncRescue.label>pesquisador perdido</Rimverse_AsyncRescue.label>
+  <Rimverse_AsyncRescue.letterLabel>Pesquisador perdido</Rimverse_AsyncRescue.letterLabel>
+  <Rimverse_ImpossibleMap.label>mapa impossível</Rimverse_ImpossibleMap.label>
+  <Rimverse_ImpossibleMap.letterLabel>Mapa impossível</Rimverse_ImpossibleMap.letterLabel>
+  <Rimverse_RoomsDoor.label>porta que não deveria estar aqui</Rimverse_RoomsDoor.label>
+</LanguageData>

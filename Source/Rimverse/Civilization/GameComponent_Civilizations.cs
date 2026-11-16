@@ -58,6 +58,7 @@ namespace Rimverse
             if (generated) return;
             generated = true;
             CivilizationGenerator.GenerateAll(this);
+            GameComponent_RoomsBridge.EnsureAsyncCiv(this);
             RebuildIndex();
             InvalidateTerritory();
         }

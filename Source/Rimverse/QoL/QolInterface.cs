@@ -332,7 +332,7 @@ namespace Rimverse
             if (!QolFeatures.IsEnabled("Rimverse_Qol_DeepDrillAlert")) return false;
             foreach (Map m in Find.Maps)
             {
-                if (!m.IsPlayerHome) continue;
+                if (!m.IsPlayerHome || EndlessRoomsCompat.IsBackrooms(m)) continue;
                 foreach (Building b in m.listerBuildings.allBuildingsColonist)
                 {
                     CompDeepDrill d = b.TryGetComp<CompDeepDrill>();
@@ -360,7 +360,7 @@ namespace Rimverse
             if (!QolFeatures.IsEnabled("Rimverse_Qol_PowerAlerts")) return false;
             foreach (Map m in Find.Maps)
             {
-                if (!m.IsPlayerHome) continue;
+                if (!m.IsPlayerHome || EndlessRoomsCompat.IsBackrooms(m)) continue;
                 foreach (PowerNet net in m.powerNetManager.AllNetsListForReading)
                 {
                     if (net.batteryComps.Count == 0 || net.CurrentEnergyGainRate() >= 0f) continue;

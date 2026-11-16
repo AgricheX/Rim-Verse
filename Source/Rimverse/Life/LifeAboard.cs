@@ -94,6 +94,7 @@ namespace Rimverse
                 float rate = CabinFeverPerHour * (lin?.cabinFeverFactor ?? 1f) * GeneSpace.Factor(p, e => e.cabinFeverFactor) * CatalogTraits.CabinFeverFactor(p);
                 RimverseShip ship = comp?.ShipAt(p.Position);
                 if (ship != null && (ship.HasRole(ShipPartRole.Garden) || ship.HasRole(ShipPartRole.Hydroponics) || ship.HasRole(ShipPartRole.Window))) rate *= 0.5f;
+                if (EndlessRoomsCompat.IsBackrooms(map) && ModsConfig.IsActive("vanillaexpanded.vanomalyeinsanity")) rate = 0f;
                 if (rate > 0f) HealthUtility.AdjustSeverity(p, LifeDefOf.Rimverse_CabinFever, rate);
                 if (!CatalogTraits.Has(p, CatalogDefOf.Rimverse_VoidBorn)) HealthUtility.AdjustSeverity(p, CatalogDefOf.Rimverse_SkyLonging, SkyLongingPerHour * (CatalogTraits.Has(p, CatalogDefOf.Rimverse_Grounded) ? 3f : 1f));
             }

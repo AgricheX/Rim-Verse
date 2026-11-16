@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <Rimverse_AsyncExpedition>Os {0} pedem uma tripulação para atravessar as salas sem fim por eles. Mande um colono para as salas em até quinze dias e traga-o de volta para receber.</Rimverse_AsyncExpedition>
+  <Rimverse_AsyncExpeditionDone>{0} voltou das salas com os mapas que os viajantes assíncronos queriam. Eles pagaram bem.</Rimverse_AsyncExpeditionDone>
+  <Rimverse_AsyncExpeditionDoneLabel>Expedição concluída</Rimverse_AsyncExpeditionDoneLabel>
+  <Rimverse_AsyncExpeditionFailed>A expedição assíncrona expirou. Ninguém entrou nas salas a tempo.</Rimverse_AsyncExpeditionFailed>
+  <Rimverse_AsyncRescue>Vocês encontraram {0} nas salas. Ele está grato, e o povo dele também.</Rimverse_AsyncRescue>
+  <Rimverse_AsyncRescueAsk>{0}, pesquisador dos viajantes assíncronos, foi engolido pelas salas bem ao lado da nave. Entre atrás dele e ele se junta a vocês.</Rimverse_AsyncRescueAsk>
+  <Rimverse_AsyncRescueLabel>Pesquisador encontrado</Rimverse_AsyncRescueLabel>
   <Rimverse_BodyEccentric>Órbita excêntrica ({0}): as estações mudam muito entre perto e longe.</Rimverse_BodyEccentric>
   <Rimverse_BodyEqTemperature>Temperatura de equilíbrio: {0}</Rimverse_BodyEqTemperature>
   <Rimverse_BodyTidalLocked>Travado por maré: um lado sempre olha para a estrela.</Rimverse_BodyTidalLocked>
@@ -48,6 +55,7 @@ Alinhamento: {5} (Ruptura -100 a Harmonia +100)</Rimverse_FlowTip>
   <Rimverse_FlowVisionDone>{0} abriu a mente para todo o sistema. Todos os corpos daqui foram revelados.</Rimverse_FlowVisionDone>
   <Rimverse_FlowWandererText>Um andarilho do Grande Fluxo passou por aqui e compartilhou seus ensinamentos com {0}.</Rimverse_FlowWandererText>
   <Rimverse_FlowWeaponLevel>precisa do nível {0} no Grande Fluxo</Rimverse_FlowWeaponLevel>
+  <Rimverse_ImpossibleMap>Chegou um mapa que não deveria existir: uma porta desenhada numa nave perto de {0}. Leve a nave até lá e a porta estará esperando.</Rimverse_ImpossibleMap>
   <Rimverse_LetterBombard>{0} reivindica o sistema de {1} e mandou uma frota bombardear a colônia.</Rimverse_LetterBombard>
   <Rimverse_LetterBombardLabel>Expedição de bombardeio</Rimverse_LetterBombardLabel>
   <Rimverse_LetterLegitimacy>O governo de {0} perdeu toda a legitimidade e foi trocado por: {1}.</Rimverse_LetterLegitimacy>
@@ -87,6 +95,17 @@ Ticks de jogo: {3}</Rimverse_QolDateTip>
   <Rimverse_RetrofitDoneText>{0} células de subestrutura da gravship agora são casco do Rimverse. Instale a ponte entregue na nave para comandá-la como uma nave do Rimverse. O motor grav continua funcionando.</Rimverse_RetrofitDoneText>
   <Rimverse_RetrofitNoGravship>Não há subestrutura de gravship neste mapa.</Rimverse_RetrofitNoGravship>
   <Rimverse_RetrofitNoOdyssey>Requer o Odyssey.</Rimverse_RetrofitNoOdyssey>
+  <Rimverse_RoomsDoor>Uma porta amarela apareceu numa parede da nave. Ela não estava lá antes, e quem passar por ela vai parar nas salas sem fim.</Rimverse_RoomsDoor>
+  <Rimverse_RoomsDoorInspect>Some em {0}</Rimverse_RoomsDoorInspect>
+  <Rimverse_RoomsDoorLabel>Porta que não deveria estar aqui</Rimverse_RoomsDoorLabel>
+  <Rimverse_RoomsReturnedCoords>{0} voltou das salas lembrando as coordenadas exatas de {1}.</Rimverse_RoomsReturnedCoords>
+  <Rimverse_RoomsStowaway>Algo seguiu seu colono na volta das salas e estava escondido a bordo. Acabou de aparecer.</Rimverse_RoomsStowaway>
+  <Rimverse_RoomsStowawayLabel>Clandestino das salas</Rimverse_RoomsStowawayLabel>
+  <Rimverse_RoomsStrayFound>{0} estava esperando aqui desde que as salas o cuspiram. Voltou a bordo.</Rimverse_RoomsStrayFound>
+  <Rimverse_RoomsStrayFoundLabel>Colono perdido encontrado</Rimverse_RoomsStrayFoundLabel>
+  <Rimverse_RoomsWreck>{0} encontrou peças de uma nave destroçada espalhadas pelas salas.</Rimverse_RoomsWreck>
+  <Rimverse_RoomsWrongReturn>{0} saiu das salas no lugar errado, em algum ponto perto de {1}. Leve a nave até lá para buscá-lo.</Rimverse_RoomsWrongReturn>
+  <Rimverse_RoomsWrongReturnLabel>Saída errada</Rimverse_RoomsWrongReturnLabel>
   <Rimverse_RuinResearch>As ruínas precursoras avançaram a pesquisa rara {0}.</Rimverse_RuinResearch>
   <Rimverse_SectorSizeClass>Classe de tamanho do setor: {0}</Rimverse_SectorSizeClass>
   <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <Rimverse_AsyncExpedition>The {0} ask for a crew to cross the endless rooms on their behalf. Send a colonist into the rooms within fifteen days and bring them back to be paid.</Rimverse_AsyncExpedition>
+  <Rimverse_AsyncExpeditionDone>{0} came back from the rooms with the maps the asynchronous travelers wanted. They paid well.</Rimverse_AsyncExpeditionDone>
+  <Rimverse_AsyncExpeditionDoneLabel>Expedition complete</Rimverse_AsyncExpeditionDoneLabel>
+  <Rimverse_AsyncExpeditionFailed>The asynchronous expedition expired. Nobody went into the rooms in time.</Rimverse_AsyncExpeditionFailed>
+  <Rimverse_AsyncRescue>You found {0} in the rooms. They are grateful, and so are their people.</Rimverse_AsyncRescue>
+  <Rimverse_AsyncRescueAsk>{0}, a researcher from the asynchronous travelers, was swallowed by the rooms right next to your ship. Go in after them and they will join you.</Rimverse_AsyncRescueAsk>
+  <Rimverse_AsyncRescueLabel>Researcher found</Rimverse_AsyncRescueLabel>
   <Rimverse_BodyEccentric>Eccentric orbit ({0}): seasons swing hard between near and far.</Rimverse_BodyEccentric>
   <Rimverse_BodyEqTemperature>Equilibrium temperature: {0}</Rimverse_BodyEqTemperature>
   <Rimverse_BodyTidalLocked>Tidally locked: one side always faces the star.</Rimverse_BodyTidalLocked>
@@ -48,6 +55,7 @@ Alignment: {5} (Rupture -100 to Harmony +100)</Rimverse_FlowTip>
   <Rimverse_FlowVisionDone>{0} opened their mind to the whole system. Every body here is revealed.</Rimverse_FlowVisionDone>
   <Rimverse_FlowWandererText>A wanderer of the Great Flow passed by and shared their teachings with {0}.</Rimverse_FlowWandererText>
   <Rimverse_FlowWeaponLevel>needs Great Flow level {0}</Rimverse_FlowWeaponLevel>
+  <Rimverse_ImpossibleMap>A map arrived that should not exist: a door drawn into a ship near {0}. Take the ship there and the door will be waiting.</Rimverse_ImpossibleMap>
   <Rimverse_LetterBombard>{0} claims the system of {1} and sent a fleet to bombard the colony.</Rimverse_LetterBombard>
   <Rimverse_LetterBombardLabel>Bombardment expedition</Rimverse_LetterBombardLabel>
   <Rimverse_LetterLegitimacy>The government of {0} lost all legitimacy and was replaced by: {1}.</Rimverse_LetterLegitimacy>
@@ -87,6 +95,17 @@ Game ticks: {3}</Rimverse_QolDateTip>
   <Rimverse_RetrofitDoneText>{0} cells of gravship substructure are now Rimverse hull. Install the delivered bridge on the ship to command it as a Rimverse vessel. The grav engine still works.</Rimverse_RetrofitDoneText>
   <Rimverse_RetrofitNoGravship>There is no gravship substructure on this map.</Rimverse_RetrofitNoGravship>
   <Rimverse_RetrofitNoOdyssey>Requires Odyssey.</Rimverse_RetrofitNoOdyssey>
+  <Rimverse_RoomsDoor>A yellow door has appeared in a wall of the ship. It was not there before, and whoever walks through it will end up in the endless rooms.</Rimverse_RoomsDoor>
+  <Rimverse_RoomsDoorInspect>Fades in {0}</Rimverse_RoomsDoorInspect>
+  <Rimverse_RoomsDoorLabel>Door that should not be here</Rimverse_RoomsDoorLabel>
+  <Rimverse_RoomsReturnedCoords>{0} came back from the rooms remembering the exact coordinates of {1}.</Rimverse_RoomsReturnedCoords>
+  <Rimverse_RoomsStowaway>Something followed your colonist back from the rooms and has been hiding aboard. It just came out.</Rimverse_RoomsStowaway>
+  <Rimverse_RoomsStowawayLabel>Stowaway from the rooms</Rimverse_RoomsStowawayLabel>
+  <Rimverse_RoomsStrayFound>{0} has been waiting here since the rooms spat them out. They are back aboard.</Rimverse_RoomsStrayFound>
+  <Rimverse_RoomsStrayFoundLabel>Lost colonist found</Rimverse_RoomsStrayFoundLabel>
+  <Rimverse_RoomsWreck>{0} found pieces of a wrecked ship scattered in the rooms.</Rimverse_RoomsWreck>
+  <Rimverse_RoomsWrongReturn>{0} stepped out of the rooms in the wrong place, somewhere near {1}. Take the ship there to pick them up.</Rimverse_RoomsWrongReturn>
+  <Rimverse_RoomsWrongReturnLabel>Wrong exit</Rimverse_RoomsWrongReturnLabel>
   <Rimverse_RuinResearch>The precursor ruins advanced the rare research {0}.</Rimverse_RuinResearch>
   <Rimverse_SectorSizeClass>Sector size class: {0}</Rimverse_SectorSizeClass>
   <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>
