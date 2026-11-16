@@ -129,6 +129,7 @@ namespace Rimverse
         {
             float integrity = ship.Integrity;
             if (integrity >= 0.5f || tick % BreachCheckIntervalTicks != 0) return;
+            if (ShipFracture.TryFracture(ship, tick)) return;
             float chance = (0.5f - integrity) * 0.5f;
             if (!Rand.Chance(chance)) return;
             List<CompShipPart> walls = new List<CompShipPart>();
@@ -154,7 +155,7 @@ namespace Rimverse
                 float rate;
                 if (ship == null)
                 {
-                    if (MegaSectionUtility.Pressurized(map, room)) continue;
+                    if (HabitatAir.Pressurized(map, room)) continue;
                     rate = vacuum ? HypoxiaPerSecondVacuum : HypoxiaPerSecondLowAir;
                     if (vacuum) CatalogHealth.VacuumExposure(pawn, seconds);
                 }

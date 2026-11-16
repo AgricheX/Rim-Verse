@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraderKindDef[defName="Rimverse_CivSpaceTrader"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Rimverse_SectorCrown</thingDef>
+        <countRange>0~6</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Rimverse_GalacticStandard</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+    </value>
+  </Operation>
+</Patch>

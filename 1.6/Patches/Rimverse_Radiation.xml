@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="Rimverse_RadiationSickness"]/comps</xpath>
+    <value>
+      <comps>
+        <li Class="HediffCompProperties_SeverityPerDay">
+          <severityPerDay>-0.03</severityPerDay>
+          <showHoursToRecover>true</showHoursToRecover>
+        </li>
+      </comps>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="Rimverse_RadiationSickness"]/stages</xpath>
+    <value>
+      <stages>
+        <li>
+          <label>minor</label>
+          <capMods>
+            <li>
+              <capacity>BloodFiltration</capacity>
+              <offset>-0.05</offset>
+            </li>
+          </capMods>
+        </li>
+        <li>
+          <minSeverity>0.25</minSeverity>
+          <label>moderate</label>
+          <vomitMtbDays>2</vomitMtbDays>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>-0.1</offset>
+            </li>
+            <li>
+              <capacity>BloodFiltration</capacity>
+              <offset>-0.2</offset>
+            </li>
+          </capMods>
+        </li>
+        <li>
+          <minSeverity>0.5</minSeverity>
+          <label>serious</label>
+          <vomitMtbDays>0.5</vomitMtbDays>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>-0.2</offset>
+            </li>
+            <li>
+              <capacity>BloodFiltration</capacity>
+              <offset>-0.35</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>-0.15</offset>
+            </li>
+          </capMods>
+        </li>
+        <li>
+          <minSeverity>0.8</minSeverity>
+          <label>extreme</label>
+          <lifeThreatening>true</lifeThreatening>
+          <vomitMtbDays>0.25</vomitMtbDays>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>-0.35</offset>
+            </li>
+            <li>
+              <capacity>BloodFiltration</capacity>
+              <offset>-0.5</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>-0.3</offset>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="Rimverse_RadiationSickness"]</xpath>
+    <value>
+      <lethalSeverity>1</lethalSeverity>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="Rimverse_Lineage_Rad"]/stages/li/statOffsets/ToxicResistance</xpath>
+    <value>
+      <ToxicResistance>0.15</ToxicResistance>
+      <Rimverse_RadiationResistance>0.6</Rimverse_RadiationResistance>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="Rimverse_Lineage_Solar"]/stages/li/statOffsets/ToxicResistance</xpath>
+    <value>
+      <Rimverse_RadiationResistance>0.3</Rimverse_RadiationResistance>
+    </value>
+  </Operation>
+</Patch>

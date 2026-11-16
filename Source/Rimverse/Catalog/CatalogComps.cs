@@ -331,7 +331,7 @@ namespace Rimverse
             foreach (Pawn p in parent.Map.mapPawns.AllPawnsSpawned.ToList())
             {
                 if (p.Position.DistanceTo(parent.Position) > Props.radius || !p.RaceProps.IsFlesh) continue;
-                HealthUtility.AdjustSeverity(p, rad, sev);
+                HealthUtility.AdjustSeverity(p, rad, sev * (1f - GameComponent_Radiation.Resistance(p)));
             }
         }
 

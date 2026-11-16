@@ -33,6 +33,15 @@
           <li>Rimverse_MoonLayer</li>
         </value>
       </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Rimverse_AirGenerator"]/comps</xpath>
+        <value>
+          <li Class="CompProperties_OxygenPusher">
+            <requiresPower>true</requiresPower>
+            <airPerSecondPerHundredCells>0.25</airPerSecondPerHundredCells>
+          </li>
+        </value>
+      </li>
     </operations>
   </Operation>
 </Patch>

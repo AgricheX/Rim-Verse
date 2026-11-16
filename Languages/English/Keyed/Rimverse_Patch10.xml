@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <Rimverse_BankBalance>Your balance: {0} silver</Rimverse_BankBalance>
+  <Rimverse_BankDeposit>Deposit all</Rimverse_BankDeposit>
+  <Rimverse_BankFee>Exchange fee: {0}</Rimverse_BankFee>
+  <Rimverse_BankFrozen>Your account is frozen during the war.</Rimverse_BankFrozen>
+  <Rimverse_BankInterest>Interest: {0} per quadrum while you are not at war.</Rimverse_BankInterest>
+  <Rimverse_BankPreferred>House currency: {0} (no exchange fee).</Rimverse_BankPreferred>
+  <Rimverse_BankTitle>Bank of {0}</Rimverse_BankTitle>
+  <Rimverse_BankWithdraw>Withdraw {0}</Rimverse_BankWithdraw>
   <Rimverse_BarRouteBonus>Bar route: both stars sit in the galactic bar, so the jump costs half the matter, reaches twice as far and takes half the time.</Rimverse_BarRouteBonus>
   <Rimverse_BodyDensity>Density: {0} g/cm³</Rimverse_BodyDensity>
   <Rimverse_BodyEscape>Escape velocity: {0} km/s</Rimverse_BodyEscape>
@@ -63,6 +71,10 @@
   <Rimverse_LetterCryoWakeLabel>Waking up</Rimverse_LetterCryoWakeLabel>
   <Rimverse_LetterMegaStage>{0}: stage finished</Rimverse_LetterMegaStage>
   <Rimverse_LetterMegaStageDesc>The {0} has reached a new stage: {1} ({2}/{3}). The work goes on far out in orbit, and the structure now gives more of what it was built for.</Rimverse_LetterMegaStageDesc>
+  <Rimverse_LetterShipFracture>The frame of {0} gave way. A whole section has torn loose along a fracture line: anything cut off from the bridge is now drifting wreckage. Repair the hull before it happens again.</Rimverse_LetterShipFracture>
+  <Rimverse_LetterShipFractureLabel>Ship breaking apart</Rimverse_LetterShipFractureLabel>
+  <Rimverse_MarketFactor>{0}</Rimverse_MarketFactor>
+  <Rimverse_MarketTitle>Their market (what they pay compared with the usual price):</Rimverse_MarketTitle>
   <Rimverse_MegaAlreadySupplied>This stage is already supplied.</Rimverse_MegaAlreadySupplied>
   <Rimverse_MegaInspectNeedsSupply>Waiting for the next stage to be supplied.</Rimverse_MegaInspectNeedsSupply>
   <Rimverse_MegaInspectStage>Megastructure stage: {0} ({1}/{2}), {3} built</Rimverse_MegaInspectStage>
@@ -115,6 +127,7 @@
   <Rimverse_SysYourShip>Your ship</Rimverse_SysYourShip>
   <Rimverse_SysZoomHelp>Scroll to zoom, right-drag to pan.</Rimverse_SysZoomHelp>
   <Rimverse_SystemAddress>Address: {0}</Rimverse_SystemAddress>
+  <Rimverse_TerminalBank>Bank with {0}</Rimverse_TerminalBank>
   <Rimverse_TerminalLinked>Linked to: {0}</Rimverse_TerminalLinked>
   <Rimverse_TerminalNoTrader>No trader linked to this terminal right now.</Rimverse_TerminalNoTrader>
   <Rimverse_TerminalTrade>Trade with {0}</Rimverse_TerminalTrade>

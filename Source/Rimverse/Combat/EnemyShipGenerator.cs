@@ -166,6 +166,7 @@ namespace Rimverse
             {
                 for (int i = 0; i < tier + 2; i++) crew.Add(PawnGenerator.GeneratePawn(faction.def.basicMemberKind, faction));
             }
+            if (SpaceMapUtility.IsSpace(map)) foreach (Pawn cp in crew) if (Rand.Chance(0.6f)) SpaceSuits.Equip(cp);
             while (crew.Count > cap)
             {
                 Pawn extra = crew[crew.Count - 1];

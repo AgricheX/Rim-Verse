@@ -190,6 +190,12 @@ namespace Rimverse
                 Job job = JobMaker.MakeJob(RimverseTradeDefOf.Rimverse_UseTradeTerminal, this);
                 selPawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
             });
+            Civilization bankCiv = Currencies.CivOf(ts.Faction);
+            if (bankCiv != null && bankCiv.stage >= 7)
+            {
+                Building_TradeTerminal self = this;
+                yield return new FloatMenuOption("Rimverse_TerminalBank".Translate(bankCiv.ShownName), () => Find.WindowStack.Add(new Window_Bank(bankCiv, self.Map, self.Position)));
+            }
         }
 
         public override string GetInspectString()
@@ -205,6 +211,7 @@ namespace Rimverse
     public static class RimverseTradeDefOf
     {
         public static JobDef Rimverse_UseTradeTerminal;
+        public static ThingDef Rimverse_TradeTerminal;
 
         static RimverseTradeDefOf()
         {

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <Rimverse_BankBalance>Seu saldo: {0} de prata</Rimverse_BankBalance>
+  <Rimverse_BankDeposit>Depositar tudo</Rimverse_BankDeposit>
+  <Rimverse_BankFee>Taxa de câmbio: {0}</Rimverse_BankFee>
+  <Rimverse_BankFrozen>Sua conta está congelada durante a guerra.</Rimverse_BankFrozen>
+  <Rimverse_BankInterest>Juros: {0} por quadrum enquanto vocês não estão em guerra.</Rimverse_BankInterest>
+  <Rimverse_BankPreferred>Moeda da casa: {0} (sem taxa de câmbio).</Rimverse_BankPreferred>
+  <Rimverse_BankTitle>Banco de {0}</Rimverse_BankTitle>
+  <Rimverse_BankWithdraw>Sacar {0}</Rimverse_BankWithdraw>
   <Rimverse_BarRouteBonus>Rota da barra: as duas estrelas estão na barra galáctica, então o salto gasta metade da matéria, alcança o dobro e leva metade do tempo.</Rimverse_BarRouteBonus>
   <Rimverse_BodyDensity>Densidade: {0} g/cm³</Rimverse_BodyDensity>
   <Rimverse_BodyEscape>Velocidade de escape: {0} km/s</Rimverse_BodyEscape>
@@ -63,6 +71,10 @@
   <Rimverse_LetterCryoWakeLabel>Despertar</Rimverse_LetterCryoWakeLabel>
   <Rimverse_LetterMegaStage>{0}: etapa concluída</Rimverse_LetterMegaStage>
   <Rimverse_LetterMegaStageDesc>{0} chegou a uma nova etapa: {1} ({2}/{3}). A obra segue lá fora na órbita, e a estrutura agora rende mais do que foi feita para dar.</Rimverse_LetterMegaStageDesc>
+  <Rimverse_LetterShipFracture>A estrutura de {0} cedeu. Uma seção inteira se soltou ao longo de uma linha de fratura: tudo o que ficou separado da ponte agora é destroço à deriva. Conserte o casco antes que aconteça de novo.</Rimverse_LetterShipFracture>
+  <Rimverse_LetterShipFractureLabel>Nave se partindo</Rimverse_LetterShipFractureLabel>
+  <Rimverse_MarketFactor>{0}</Rimverse_MarketFactor>
+  <Rimverse_MarketTitle>O mercado deles (quanto pagam em relação ao preço normal):</Rimverse_MarketTitle>
   <Rimverse_MegaAlreadySupplied>Esta etapa já foi abastecida.</Rimverse_MegaAlreadySupplied>
   <Rimverse_MegaInspectNeedsSupply>Esperando o abastecimento da próxima etapa.</Rimverse_MegaInspectNeedsSupply>
   <Rimverse_MegaInspectStage>Etapa da megaestrutura: {0} ({1}/{2}), {3} construída</Rimverse_MegaInspectStage>
@@ -115,6 +127,7 @@
   <Rimverse_SysYourShip>Sua nave</Rimverse_SysYourShip>
   <Rimverse_SysZoomHelp>Role para aproximar, arraste com o botão direito para mover.</Rimverse_SysZoomHelp>
   <Rimverse_SystemAddress>Endereço: {0}</Rimverse_SystemAddress>
+  <Rimverse_TerminalBank>Banco de {0}</Rimverse_TerminalBank>
   <Rimverse_TerminalLinked>Ligado a: {0}</Rimverse_TerminalLinked>
   <Rimverse_TerminalNoTrader>Nenhum comerciante ligado a este terminal agora.</Rimverse_TerminalNoTrader>
   <Rimverse_TerminalTrade>Negociar com {0}</Rimverse_TerminalTrade>

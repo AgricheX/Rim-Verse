@@ -77,7 +77,9 @@ namespace Rimverse
 
         public static float Years(double ly) => (float)(ly / SpeedC);
 
-        public static float FuelCost(RimverseShip ship, double ly) => (float)(FuelPerLyPer100t * ly * ship.mass / 100.0) * RimverseMod.Settings.fuelConsumptionMultiplier;
+        public static float BaseFuelCost(RimverseShip ship, double ly) => (float)(FuelPerLyPer100t * ly * ship.mass / 100.0) * RimverseMod.Settings.fuelConsumptionMultiplier;
+
+        public static float FuelCost(RimverseShip ship, double ly) => BaseFuelCost(ship, ly) * ThrusterFuel.Factor(ship);
 
         public static List<Pawn> AwakeColonists(Map map) => map.mapPawns.FreeColonistsSpawned.Where(p => !p.Dead).ToList();
 
@@ -112,6 +114,7 @@ namespace Rimverse
                 Messages.Message("Rimverse_CannotTravel".Translate() + "\n- " + string.Join("\n- ", problems), ship.bridge, MessageTypeDefOf.RejectInput, false);
                 return false;
             }
+            ThrusterFuel.BurnFusionGas(ship, BaseFuelCost(ship, ly));
             ShipLaunchUtility.ConsumeFuel(ship, fuel);
             int now = Find.TickManager.TicksGame;
             loc.destinationSystemKey = dest.Key;
