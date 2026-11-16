@@ -118,6 +118,7 @@
       <li Class="StockGenerator_BuyExpensiveSimple" />
       <li Class="StockGenerator_BuyTradeTag"><tag>Rimverse_Currency</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Rimverse_StellarData</tag></li>
     </stockGenerators>
   </TraderKindDef>
 

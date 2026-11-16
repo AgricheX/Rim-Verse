@@ -317,6 +317,7 @@ namespace Rimverse
                 f.mission = PlayerFleetMission.Defend;
                 return;
             }
+            if (GameComponent_Civilizations.Instance != null) CivTrade.Disrupt(GameComponent_Civilizations.Instance, f.systemKey, 0.5f);
             target.treasury = Mathf.Max(0f, target.treasury * 0.99f);
             foreach (CivPlanet p in target.planets) if (p.systemKey == f.systemKey) p.loyalty = Mathf.Max(0f, p.loyalty - 0.5f);
             target.AddStock(CivResource.Food, -1f);

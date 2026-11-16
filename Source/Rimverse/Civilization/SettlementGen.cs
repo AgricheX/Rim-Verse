@@ -426,7 +426,7 @@ namespace Rimverse
             if (pawns.Count > 0) LordMaker.MakeNewLord(faction, new LordJob_DefendBase(faction, area.CenterCell, 60000), map, pawns);
             if (terminal != null && !faction.HostileTo(Faction.OfPlayer))
             {
-                TradeShip ts = new TradeShip(RimverseDefOf.Rimverse_CivSpaceTrader, faction) { name = civ.Name };
+                TradeShip ts = new TradeShip(RimverseTraders.Pick(civ), faction) { name = civ.Name };
                 map.passingShipManager.AddShip(ts);
                 terminal.traderLoadId = ts.GetUniqueLoadID();
             }

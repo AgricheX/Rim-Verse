@@ -130,7 +130,7 @@ namespace Rimverse
             TradeShip ts = map.passingShipManager.passingShips.OfType<TradeShip>().FirstOrDefault(s => s.Faction == f && !s.Departed);
             if (ts == null)
             {
-                ts = new TradeShip(RimverseDefOf.Rimverse_CivSpaceTrader, f) { name = m.Civ?.Name ?? f.Name };
+                ts = new TradeShip(RimverseTraders.Pick(m.Civ, true), f) { name = m.Civ?.Name ?? f.Name };
                 map.passingShipManager.AddShip(ts);
             }
             foreach (Building_TradeTerminal t in map.listerThings.AllThings.OfType<Building_TradeTerminal>()) t.traderLoadId = ts.GetUniqueLoadID();

@@ -5,6 +5,7 @@
   <Rimverse_BodyTidalLocked>Travado por maré: um lado sempre olha para a estrela.</Rimverse_BodyTidalLocked>
   <Rimverse_ContractDeadline>Tempo restante: {0}</Rimverse_ContractDeadline>
   <Rimverse_ContractGoTo>Vá até {0}.</Rimverse_ContractGoTo>
+  <Rimverse_ContractNone>Nenhum contrato serve pra sua situação agora.</Rimverse_ContractNone>
   <Rimverse_ContractReturn>Traga a carga de volta para {0}.</Rimverse_ContractReturn>
   <Rimverse_ContractRouteProgress>Sistemas mapeados: {0} de {1}.</Rimverse_ContractRouteProgress>
   <Rimverse_ContractSmuggleCaught>{0} pegou a carga contrabandeada. O contrato falhou.</Rimverse_ContractSmuggleCaught>
@@ -12,6 +13,11 @@
   <Rimverse_CosmicRegion>Região da teia: um agrupamento mais solto de aglomerados entre as paredes.</Rimverse_CosmicRegion>
   <Rimverse_CosmicWebCounts>{0} vazios, {1} paredes, {2} superaglomerados e {3} regiões neste chunk.</Rimverse_CosmicWebCounts>
   <Rimverse_DistrictSizeClass>Classe de tamanho do distrito: {0}</Rimverse_DistrictSizeClass>
+  <Rimverse_LetterTradeWar>{0} vê {1} como concorrente e declarou embargo comercial por 20 dias.</Rimverse_LetterTradeWar>
+  <Rimverse_LetterTradeWarLabel>Guerra comercial</Rimverse_LetterTradeWarLabel>
+  <Rimverse_MsgEmbargoed>{0} tem um embargo contra você e não vai negociar.</Rimverse_MsgEmbargoed>
+  <Rimverse_MsgFreighterHere>Um {1} de {0} chegou neste sistema e está aberto pra negócio.</Rimverse_MsgFreighterHere>
+  <Rimverse_MsgFreighterRaided>Piratas saquearam um cargueiro de {0} perto de {1}.</Rimverse_MsgFreighterRaided>
   <Rimverse_RareFind>Os sensores travaram em {0}, um objeto de classe de tamanho {1}. Coisas desse tamanho aparecem uma vez na vida. Só os dados já valem uma fortuna, e a equipe de pesquisa já está trabalhando.</Rimverse_RareFind>
   <Rimverse_RareFindLabel>Achado raro</Rimverse_RareFindLabel>
   <Rimverse_SectorSizeClass>Classe de tamanho do setor: {0}</Rimverse_SectorSizeClass>

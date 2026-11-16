@@ -37,6 +37,16 @@ namespace Rimverse
                 f.power = 0f;
                 return;
             }
+            if (f.returning && f.mission == FleetMission.Trade)
+            {
+                f.power = 0f;
+                return;
+            }
+            if (f.mission == FleetMission.Trade)
+            {
+                CivTrade.Arrive(gc, owner, f);
+                return;
+            }
             if (f.returning)
             {
                 f.returning = false;

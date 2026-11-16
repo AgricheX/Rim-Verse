@@ -228,6 +228,8 @@ namespace Rimverse
             if (c.goal == CivGoal.Expand || c.goal == CivGoal.Arm) ConsiderWar(gc, c, r);
             ConsiderPeace(gc, c, r);
             ConsiderPlayerRaid(gc, c, r, years);
+            CivTrade.Launch(gc, c, r, years);
+            CivTrade.Competition(gc, c, r, years);
         }
 
         private static void MergeOrAdd(GameComponent_Civilizations gc, Fleet f)

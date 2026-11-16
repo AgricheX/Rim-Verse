@@ -52,6 +52,11 @@ namespace Rimverse
                 Messages.Message(rep.Reason, MessageTypeDefOf.RejectInput, false);
                 return;
             }
+            if (GameComponent_RimverseEvents.Embargoed(c))
+            {
+                Messages.Message("Rimverse_MsgEmbargoed".Translate(c.ShownName), MessageTypeDefOf.RejectInput, false);
+                return;
+            }
             GameComponent_Civilizations gc = GameComponent_Civilizations.Instance;
             Faction f = gc.EnsureFaction(c);
             c.AddIntel(5f);
@@ -59,7 +64,7 @@ namespace Rimverse
             TradeShip existing = map.passingShipManager.passingShips.OfType<TradeShip>().FirstOrDefault(s => s.Faction == f && !s.Departed);
             if (existing == null)
             {
-                existing = new TradeShip(RimverseDefOf.Rimverse_CivSpaceTrader, f);
+                existing = new TradeShip(RimverseTraders.Pick(c), f);
                 existing.name = c.Name;
                 map.passingShipManager.AddShip(existing);
             }

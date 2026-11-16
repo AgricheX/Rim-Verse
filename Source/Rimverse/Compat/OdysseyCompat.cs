@@ -213,7 +213,7 @@ namespace Rimverse
             if (c == null) return false;
             Faction f = GameComponent_Civilizations.Instance.EnsureFaction(c);
             if (f == null) return false;
-            TradeShip ship = new TradeShip(RimverseDefOf.Rimverse_CivSpaceTrader, f) { name = c.Name };
+            TradeShip ship = new TradeShip(RimverseTraders.Pick(c), f) { name = c.Name };
             map.passingShipManager.AddShip(ship);
             SendStandardLetter("Rimverse_LetterOrbitTraderLabel".Translate(), "Rimverse_LetterOrbitTrader".Translate(c.Name), LetterDefOf.PositiveEvent, parms, LookTargets.Invalid);
             return true;

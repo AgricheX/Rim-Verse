@@ -649,7 +649,7 @@ namespace Rimverse
                     Vec3d b2 = U.PositionOf(StarSystemId.FromKey(f.destKey)) - a;
                     ang = Mathf.Atan2((float)b2.x, (float)b2.z) * Mathf.Rad2Deg;
                 }
-                MapIcons.Draw(r, MapIcons.Fleet, f.TargetsPlayer ? Color.red : c.color, ang);
+                MapIcons.Draw(f.mission == FleetMission.Trade ? r.ContractedBy(2f) : r, MapIcons.Fleet, f.TargetsPlayer ? Color.red : f.mission == FleetMission.Trade ? Color.Lerp(c.color, Color.white, 0.5f) : c.color, ang);
                 if (Mouse.IsOver(r.ExpandedBy(3f))) TooltipHandler.TipRegion(r.ExpandedBy(3f), "Rimverse_FleetTip".Translate(c.Name, ("Rimverse_Mission_" + f.mission).Translate(), f.power.ToString("0")));
             }
         }
