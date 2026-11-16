@@ -3,6 +3,8 @@
   <Rimverse_BodyEccentric>Eccentric orbit ({0}): seasons swing hard between near and far.</Rimverse_BodyEccentric>
   <Rimverse_BodyEqTemperature>Equilibrium temperature: {0}</Rimverse_BodyEqTemperature>
   <Rimverse_BodyTidalLocked>Tidally locked: one side always faces the star.</Rimverse_BodyTidalLocked>
+  <Rimverse_CivLegitimacy>Legitimacy: {0}</Rimverse_CivLegitimacy>
+  <Rimverse_CivPreSpace>A pre-space civilization: it cannot leave its world yet.</Rimverse_CivPreSpace>
   <Rimverse_ContractDeadline>Time left: {0}</Rimverse_ContractDeadline>
   <Rimverse_ContractGoTo>Go to {0}.</Rimverse_ContractGoTo>
   <Rimverse_ContractNone>No contract fits your situation right now.</Rimverse_ContractNone>
@@ -13,6 +15,12 @@
   <Rimverse_CosmicRegion>Region of the web: a looser grouping of clusters between walls.</Rimverse_CosmicRegion>
   <Rimverse_CosmicWebCounts>{0} voids, {1} walls, {2} superclusters and {3} regions in this chunk.</Rimverse_CosmicWebCounts>
   <Rimverse_DistrictSizeClass>District size class: {0}</Rimverse_DistrictSizeClass>
+  <Rimverse_LetterBombard>{0} claims the system of {1} and sent a fleet to bombard the colony.</Rimverse_LetterBombard>
+  <Rimverse_LetterBombardLabel>Bombardment expedition</Rimverse_LetterBombardLabel>
+  <Rimverse_LetterLegitimacy>The government of {0} lost all legitimacy and was replaced by: {1}.</Rimverse_LetterLegitimacy>
+  <Rimverse_LetterLegitimacyLabel>Government falls</Rimverse_LetterLegitimacyLabel>
+  <Rimverse_LetterTechRevolution>{0} went through a technological revolution and reached the {1} age. Its new government: {2}.</Rimverse_LetterTechRevolution>
+  <Rimverse_LetterTechRevolutionLabel>Technological revolution</Rimverse_LetterTechRevolutionLabel>
   <Rimverse_LetterTradeWar>{0} sees {1} as a competitor and declared a trade embargo for 20 days.</Rimverse_LetterTradeWar>
   <Rimverse_LetterTradeWarLabel>Trade war</Rimverse_LetterTradeWarLabel>
   <Rimverse_MsgEmbargoed>{0} has an embargo against you and will not trade.</Rimverse_MsgEmbargoed>

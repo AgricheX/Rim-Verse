@@ -115,6 +115,7 @@ namespace Rimverse
         public List<CivPlanet> planets = new List<CivPlanet>();
         public float frontierPopulation;
         public float stability = 50f;
+        public float legitimacy = 50f;
         public float warWeariness;
         public float treasury;
         public List<float> stock = new List<float>();
@@ -286,6 +287,7 @@ namespace Rimverse
             Scribe_Collections.Look(ref planets, "planets", LookMode.Deep);
             Scribe_Values.Look(ref frontierPopulation, "frontierPopulation");
             Scribe_Values.Look(ref stability, "stability", 50f);
+            Scribe_Values.Look(ref legitimacy, "legitimacy", 50f);
             Scribe_Values.Look(ref warWeariness, "warWeariness");
             Scribe_Values.Look(ref treasury, "treasury");
             Scribe_Collections.Look(ref stock, "stock", LookMode.Value);

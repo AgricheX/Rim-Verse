@@ -88,8 +88,10 @@ namespace Rimverse
                 Widgets.EndScrollView();
                 return;
             }
+            Rect flag = l.GetRect(36f);
+            CivFlag.Draw(new Rect(flag.x, flag.y, 54f, 36f), c);
             GUI.color = c.color;
-            l.Label(c.Name);
+            Widgets.Label(new Rect(flag.x + 62f, flag.y + 4f, flag.width - 62f, 32f), c.Name);
             GUI.color = Color.white;
             Text.Font = GameFont.Small;
             bool known = c.Reveals(CivKnowledge.Known);
@@ -98,6 +100,8 @@ namespace Rimverse
             l.Label("Rimverse_CivStageLine".Translate(("Rimverse_Stage_" + c.stage).Translate(), known ? c.sizeClass.ToString() : "?", known ? c.tech.ToStringHuman() : "?"));
             l.Label("Rimverse_CivPopulation".Translate(known ? PopText(c.Population) : "?", known ? c.planets.Count.ToString() : "?"));
             if (detailed) l.Label("Rimverse_CivStability".Translate(c.stability.ToString("0"), c.warWeariness.ToString("0")));
+            if (detailed) l.Label("Rimverse_CivLegitimacy".Translate(c.legitimacy.ToString("0")));
+            if (known && CivPreSpace.IsPreSpace(c)) l.Label("Rimverse_CivPreSpace".Translate());
             l.Label("Rimverse_CivFleetPower".Translate(detailed ? CivSimulation.FleetPower(gc, c).ToString("0") : known ? FleetGuess(CivSimulation.FleetPower(gc, c)) : "?"));
             StarSystemData cap = GameComponent_Universe.Instance.GetSystem(c.Capital);
             l.Label("Rimverse_CivCapital".Translate(cap?.name ?? "?", gc.DistanceToPlayer(c, out _).ToString("0")));

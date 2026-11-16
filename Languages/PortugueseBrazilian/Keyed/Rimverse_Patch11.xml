@@ -3,6 +3,8 @@
   <Rimverse_BodyEccentric>Órbita excêntrica ({0}): as estações mudam muito entre perto e longe.</Rimverse_BodyEccentric>
   <Rimverse_BodyEqTemperature>Temperatura de equilíbrio: {0}</Rimverse_BodyEqTemperature>
   <Rimverse_BodyTidalLocked>Travado por maré: um lado sempre olha para a estrela.</Rimverse_BodyTidalLocked>
+  <Rimverse_CivLegitimacy>Legitimidade: {0}</Rimverse_CivLegitimacy>
+  <Rimverse_CivPreSpace>Civilização pré-espacial: ainda não consegue sair do seu mundo.</Rimverse_CivPreSpace>
   <Rimverse_ContractDeadline>Tempo restante: {0}</Rimverse_ContractDeadline>
   <Rimverse_ContractGoTo>Vá até {0}.</Rimverse_ContractGoTo>
   <Rimverse_ContractNone>Nenhum contrato serve pra sua situação agora.</Rimverse_ContractNone>
@@ -13,6 +15,12 @@
   <Rimverse_CosmicRegion>Região da teia: um agrupamento mais solto de aglomerados entre as paredes.</Rimverse_CosmicRegion>
   <Rimverse_CosmicWebCounts>{0} vazios, {1} paredes, {2} superaglomerados e {3} regiões neste chunk.</Rimverse_CosmicWebCounts>
   <Rimverse_DistrictSizeClass>Classe de tamanho do distrito: {0}</Rimverse_DistrictSizeClass>
+  <Rimverse_LetterBombard>{0} reivindica o sistema de {1} e mandou uma frota bombardear a colônia.</Rimverse_LetterBombard>
+  <Rimverse_LetterBombardLabel>Expedição de bombardeio</Rimverse_LetterBombardLabel>
+  <Rimverse_LetterLegitimacy>O governo de {0} perdeu toda a legitimidade e foi trocado por: {1}.</Rimverse_LetterLegitimacy>
+  <Rimverse_LetterLegitimacyLabel>Governo cai</Rimverse_LetterLegitimacyLabel>
+  <Rimverse_LetterTechRevolution>{0} passou por uma revolução tecnológica e chegou à era {1}. Governo novo: {2}.</Rimverse_LetterTechRevolution>
+  <Rimverse_LetterTechRevolutionLabel>Revolução tecnológica</Rimverse_LetterTechRevolutionLabel>
   <Rimverse_LetterTradeWar>{0} vê {1} como concorrente e declarou embargo comercial por 20 dias.</Rimverse_LetterTradeWar>
   <Rimverse_LetterTradeWarLabel>Guerra comercial</Rimverse_LetterTradeWarLabel>
   <Rimverse_MsgEmbargoed>{0} tem um embargo contra você e não vai negociar.</Rimverse_MsgEmbargoed>

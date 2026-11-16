@@ -396,7 +396,7 @@ namespace Rimverse
                     {
                         Civilization c = gc.Alive.Where(x => !x.known && !x.NoDiplomacy).OrderBy(x => gc.DistanceToPlayer(x, out _)).FirstOrDefault();
                         if (c == null) return null;
-                        c.known = true;
+                        gc.MakeContact(c, false);
                         return def.letterText.Formatted(c.ShownName);
                     }
                 case "Asylum":

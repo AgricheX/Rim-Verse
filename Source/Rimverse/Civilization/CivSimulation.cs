@@ -65,6 +65,9 @@ namespace Rimverse
             ChooseGoal(c, r);
             Act(gc, c, r, years);
             PoliticalEvents(gc, c, r, years);
+            CivPreSpace.TechRevolution(gc, c, r, years);
+            CivLegitimacy.Tick(gc, c, r, years);
+            CivColonyReactions.Tick(gc, c, r, years);
             StageChange(gc, c, years);
         }
 
@@ -521,7 +524,7 @@ namespace Rimverse
                     return;
                 }
             }
-            if (c.stage > 8 && c.Population < CivilizationGenerator.StagePopMin[c.stage] * 0.3f)
+            if (c.stage > 1 && c.Population < CivilizationGenerator.StagePopMin[c.stage] * 0.3f)
             {
                 c.stage--;
                 gc.InvalidateTerritory();

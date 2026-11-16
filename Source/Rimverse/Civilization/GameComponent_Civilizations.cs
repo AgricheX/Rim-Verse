@@ -9,7 +9,7 @@ namespace Rimverse
 {
     public class GameComponent_Civilizations : GameComponent
     {
-        public const int MaxCivilizations = 200;
+        public const int MaxCivilizations = 320;
         public const double NearPlayerLy = 300.0;
         public const double RelationRangeLy = 500.0;
         public const int FleetTickInterval = 2500;
@@ -252,12 +252,13 @@ namespace Rimverse
                 c.playerStateSince = Find.TickManager.TicksGame;
                 return c.faction;
             }
-            FactionDef def = c.Hostile ? RimverseDefOf.Rimverse_SpacePirates : RimverseDefOf.Rimverse_SpaceCiv;
+            FactionDef def = CivPreSpace.FactionFor(c) ?? (c.Hostile ? RimverseDefOf.Rimverse_SpacePirates : RimverseDefOf.Rimverse_SpaceCiv);
             Faction f = FactionGenerator.NewGeneratedFaction(new FactionGeneratorParms(def));
             f.Name = c.Name;
             f.color = c.color;
             Find.FactionManager.Add(f);
             c.faction = f;
+            CivIdeo.Apply(c, f);
             ChangePlayerOpinion(c, 0f);
             SetPlayerState(c, c.playerState);
             return f;
