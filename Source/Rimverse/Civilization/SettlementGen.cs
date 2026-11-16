@@ -106,6 +106,7 @@ namespace Rimverse
             light = Named("Rimverse_MegaLightPanel");
             float density;
             bool capital = !colony && civ.capitalKey == key;
+            if (!colony) MapComponent_CityHorizon.Mark(map, civ.tech, capital);
             if (colony) density = Mathf.Clamp(0.25f + 0.04f * pc.facilities.Count, 0.25f, 0.7f);
             else
             {

@@ -38,6 +38,13 @@ namespace Rimverse
         private Vector2 infoScroll;
         private float infoHeight = 600f;
         private List<Civilization> starOwners;
+        private static bool showCivs = true;
+        private static bool showDanger;
+        private static bool showResources;
+        private static bool showTrade;
+        private static readonly Dictionary<string, int> resourceCache = new Dictionary<string, int>();
+        private int resourceBudgetFrame;
+        private int resourceBudget;
         private int ownersFrame;
 
         public Window_GalaxyMap(Map shipMap)
@@ -128,6 +135,107 @@ namespace Rimverse
                     DrawCosmic(mapRect, level);
                     DrawCosmicInfo(infoRect, level);
                     break;
+            }
+            if (GalaxySpace(level)) DrawFilters(new Rect(mapRect.x + 6f, mapRect.y + 4f, mapRect.width - 12f, 22f));
+        }
+
+        private static void DrawFilters(Rect r)
+        {
+            Text.Font = GameFont.Tiny;
+            float w = r.width / 4f;
+            Filter(new Rect(r.x, r.y, w, r.height), "Rimverse_MapFilterCivs", ref showCivs);
+            Filter(new Rect(r.x + w, r.y, w, r.height), "Rimverse_MapFilterDanger", ref showDanger);
+            Filter(new Rect(r.x + w * 2f, r.y, w, r.height), "Rimverse_MapFilterResources", ref showResources);
+            Filter(new Rect(r.x + w * 3f, r.y, w, r.height), "Rimverse_MapFilterTrade", ref showTrade);
+            Text.Font = GameFont.Small;
+            GUI.color = Color.white;
+        }
+
+        private static void Filter(Rect r, string key, ref bool v)
+        {
+            Rect box = r.ContractedBy(2f);
+            GUI.color = v ? new Color(0.3f, 0.6f, 0.9f, 0.55f) : new Color(0f, 0f, 0f, 0.45f);
+            GUI.DrawTexture(box, BaseContent.WhiteTex);
+            GUI.color = v ? Color.white : Color.gray;
+            Text.Anchor = TextAnchor.MiddleCenter;
+            Widgets.Label(box, key.Translate());
+            Text.Anchor = TextAnchor.UpperLeft;
+            if (Widgets.ButtonInvisible(box)) v = !v;
+        }
+
+        private static HashSet<string> DangerSystems()
+        {
+            HashSet<string> set = new HashSet<string>();
+            GameComponent_Megastructures mg = GameComponent_Megastructures.Instance;
+            if (mg != null) foreach (MegastructureData m in mg.all) if (m.kind == MegastructureKind.PirateBase && !m.ruin) set.Add(m.systemKey);
+            GameComponent_Civilizations gc = GameComponent_Civilizations.Instance;
+            if (gc != null)
+            {
+                foreach (Civilization c in gc.Alive)
+                {
+                    if (!c.known || !(c.Hostile || c.playerState == DiploState.War)) continue;
+                    foreach (CivPlanet p in c.planets) if (!p.systemKey.NullOrEmpty()) set.Add(p.systemKey);
+                }
+                foreach (Fleet f in gc.fleets) if ((f.mission == FleetMission.Raid || f.mission == FleetMission.War) && !f.systemKey.NullOrEmpty()) set.Add(f.systemKey);
+            }
+            return set;
+        }
+
+        private int ResourceFlags(StarSystemId id)
+        {
+            if (resourceCache.TryGetValue(id.Key, out int v)) return v;
+            if (resourceBudgetFrame != Time.frameCount)
+            {
+                resourceBudgetFrame = Time.frameCount;
+                resourceBudget = 30;
+            }
+            if (resourceBudget-- <= 0) return 0;
+            StarSystemData sys = U.GetSystem(id);
+            v = 0;
+            if (sys != null)
+            {
+                foreach (BodyData b in sys.bodies)
+                {
+                    if (b.type == BodyType.GasGiant) v |= 1;
+                    else if (b.type == BodyType.Belt || b.type == BodyType.Asteroid) v |= 2;
+                    else if (b.water > 0.3f || b.type == BodyType.Ocean) v |= 4;
+                }
+            }
+            if (resourceCache.Count > 20000) resourceCache.Clear();
+            resourceCache[id.Key] = v;
+            return v;
+        }
+
+        private static void DrawTerritory(List<StarEntry> list, List<Civilization> owners, Vector2 lc, Vec3d center, float scale)
+        {
+            float blob = Mathf.Max(10f, 3.2f * scale);
+            for (int i = 0; i < list.Count && i < owners.Count; i++)
+            {
+                Civilization o = owners[i];
+                if (o == null || !o.known) continue;
+                Vec3d d = list[i].position - center;
+                Vector2 pos = lc + new Vector2((float)d.x, (float)-d.z) * scale;
+                Color c = o.color;
+                c.a = 0.16f;
+                Glow(pos, blob * 2f, c);
+            }
+        }
+
+        private static void DrawTradeRoutes(Vector2 lc, Vec3d center, float scale, int galaxy)
+        {
+            GameComponent_Civilizations gc = GameComponent_Civilizations.Instance;
+            if (gc == null) return;
+            foreach (Fleet f in gc.fleets)
+            {
+                if (f.mission != FleetMission.Trade || f.systemKey.NullOrEmpty() || f.destKey.NullOrEmpty()) continue;
+                StarSystemId a = StarSystemId.FromKey(f.systemKey), b = StarSystemId.FromKey(f.destKey);
+                if (a.galaxy != galaxy || b.galaxy != galaxy) continue;
+                Civilization c = gc.Civ(f.civId);
+                if (c == null || !c.known) continue;
+                Vec3d da = U.PositionOf(a) - center, db = U.PositionOf(b) - center;
+                Color col = Color.Lerp(c.color, new Color(1f, 0.85f, 0.4f), 0.5f);
+                col.a = 0.6f;
+                Widgets.DrawLine(lc + new Vector2((float)da.x, (float)-da.z) * scale, lc + new Vector2((float)db.x, (float)-db.z) * scale, col, 1f);
             }
         }
 
@@ -513,6 +621,9 @@ namespace Rimverse
             if (GameComponent_Civilizations.Instance != null) foreach (Civilization cv in GameComponent_Civilizations.Instance.Alive) if (cv.known && !cv.capitalKey.NullOrEmpty()) capitals[cv.capitalKey] = cv;
             List<StarEntry> list = LocalStars(here.galaxy, center, radius);
             List<Civilization> owners = Owners(list);
+            if (showCivs && owners != null) DrawTerritory(list, owners, lc, center, scale);
+            if (showTrade) DrawTradeRoutes(lc, center, scale, here.galaxy);
+            HashSet<string> danger = showDanger ? DangerSystems() : null;
             if (Hyperlanes.GalaxyHasLanes(U, here.galaxy) && list.Count <= 600) DrawLanes(list, lc, center, scale, here);
             StarEntry hovered = null;
             bool dense = list.Count > 1500;
@@ -529,7 +640,7 @@ namespace Rimverse
                 else if (scan == ScanLevel.Word) col.a = 0.65f;
                 Rect dot = new Rect(pos.x - size / 2f, pos.y - size / 2f, size, size);
                 Civilization owner = owners != null && i < owners.Count ? owners[i] : null;
-                if (owner != null && owner.known)
+                if (showCivs && owner != null && owner.known)
                 {
                     Color oc = owner.color;
                     oc.a = 0.35f;
@@ -548,6 +659,19 @@ namespace Rimverse
                 {
                     GUI.color = new Color(0.4f, 0.9f, 0.4f, 0.7f);
                     Widgets.DrawBox(dot.ExpandedBy(4f));
+                }
+                if (danger != null && danger.Contains(e.id.Key))
+                {
+                    GUI.color = new Color(1f, 0.25f, 0.2f, 0.85f);
+                    Window_SystemMap.DrawCircle(pos, size + 5f, 1f);
+                }
+                if (showResources && scan >= ScanLevel.Range)
+                {
+                    int rf = ResourceFlags(e.id);
+                    float rx = dot.xMax + 1f;
+                    if ((rf & 1) != 0) { GUI.color = new Color(0.95f, 0.7f, 0.35f); GUI.DrawTexture(new Rect(rx, dot.yMax, 3f, 3f), BaseContent.WhiteTex); rx += 4f; }
+                    if ((rf & 2) != 0) { GUI.color = new Color(0.7f, 0.7f, 0.75f); GUI.DrawTexture(new Rect(rx, dot.yMax, 3f, 3f), BaseContent.WhiteTex); rx += 4f; }
+                    if ((rf & 4) != 0) { GUI.color = new Color(0.35f, 0.6f, 1f); GUI.DrawTexture(new Rect(rx, dot.yMax, 3f, 3f), BaseContent.WhiteTex); }
                 }
                 if (U.IsHome(e.id))
                 {
@@ -879,6 +1003,36 @@ namespace Rimverse
             GameComponent_Civilizations gc = GameComponent_Civilizations.Instance;
             if (gc != null && gc.generated)
             {
+                if (showCivs)
+                {
+                    foreach (Civilization c in gc.Known)
+                    {
+                        Color tc = c.color;
+                        tc.a = 0.14f;
+                        float blob = Mathf.Clamp((float)(Mathf.Max(c.InfluenceRadiusLy, 6f) / ext) * rect.width, 4f, rect.width * 0.3f);
+                        int n = 0;
+                        foreach (CivPlanet p in c.planets)
+                        {
+                            if (p.systemKey.NullOrEmpty() || ++n > 80) continue;
+                            StarSystemId sid = StarSystemId.FromKey(p.systemKey);
+                            if (sid.galaxy != viewedGalaxy) continue;
+                            Vector2 pp = Project(rect, U.PositionOf(sid));
+                            if (rect.ExpandedBy(blob).Contains(pp)) Glow(pp, blob, tc);
+                        }
+                    }
+                }
+                if (showDanger)
+                {
+                    foreach (string k in DangerSystems())
+                    {
+                        StarSystemId sid = StarSystemId.FromKey(k);
+                        if (sid.galaxy != viewedGalaxy) continue;
+                        Vector2 pp = Project(rect, U.PositionOf(sid));
+                        if (!rect.Contains(pp)) continue;
+                        GUI.color = new Color(1f, 0.25f, 0.2f, 0.8f);
+                        Widgets.DrawBox(new Rect(pp.x - 3f, pp.y - 3f, 6f, 6f));
+                    }
+                }
                 foreach (Civilization c in gc.Known)
                 {
                     StarSystemId cap = c.Capital;

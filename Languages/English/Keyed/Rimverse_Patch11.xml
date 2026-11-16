@@ -66,10 +66,29 @@ Alignment: {5} (Rupture -100 to Harmony +100)</Rimverse_FlowTip>
   <Rimverse_LetterTechRevolutionLabel>Technological revolution</Rimverse_LetterTechRevolutionLabel>
   <Rimverse_LetterTradeWar>{0} sees {1} as a competitor and declared a trade embargo for 20 days.</Rimverse_LetterTradeWar>
   <Rimverse_LetterTradeWarLabel>Trade war</Rimverse_LetterTradeWarLabel>
+  <Rimverse_MapFilterCivs>Civilizations</Rimverse_MapFilterCivs>
+  <Rimverse_MapFilterDanger>Danger</Rimverse_MapFilterDanger>
+  <Rimverse_MapFilterResources>Resources</Rimverse_MapFilterResources>
+  <Rimverse_MapFilterTrade>Trade routes</Rimverse_MapFilterTrade>
   <Rimverse_MsgEmbargoed>{0} has an embargo against you and will not trade.</Rimverse_MsgEmbargoed>
   <Rimverse_MsgFreighterHere>A {1} of {0} arrived in this system and is open for trade.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Pirates raided a freighter of {0} near {1}.</Rimverse_MsgFreighterRaided>
   <Rimverse_MsgPrisonerSabotage>{0} sabotaged the {1} while escaping!</Rimverse_MsgPrisonerSabotage>
+  <Rimverse_MsgSensorsEvaded>The sensors on {0} spotted the ambush early. The ship slipped away before it closed.</Rimverse_MsgSensorsEvaded>
+  <Rimverse_PerfBackground>Space background</Rimverse_PerfBackground>
+  <Rimverse_PerfBackground_Desc>Draw the star sky, planets and sun behind space maps. Turning it off saves the most.</Rimverse_PerfBackground_Desc>
+  <Rimverse_PerfCityHorizon>City beyond the map edge</Rimverse_PerfCityHorizon>
+  <Rimverse_PerfCityHorizon_Desc>On civilization city maps, show the rest of the city continuing past the edge of the map.</Rimverse_PerfCityHorizon_Desc>
+  <Rimverse_PerfMegastructures>Megastructures in the sky</Rimverse_PerfMegastructures>
+  <Rimverse_PerfMegastructures_Desc>Draw rings, swarms, habitats and gates in the background.</Rimverse_PerfMegastructures_Desc>
+  <Rimverse_PerfPauseMaps>Pause unseen maps</Rimverse_PerfPauseMaps>
+  <Rimverse_PerfPauseMaps_Desc>Maps you are not looking at, with none of your people on them and that are not your home, stop ticking until someone arrives. Saves a lot with many stations and derelicts open.</Rimverse_PerfPauseMaps_Desc>
+  <Rimverse_PerfStars>Background stars</Rimverse_PerfStars>
+  <Rimverse_PerfStars_Desc>How many stars the background draws.</Rimverse_PerfStars_Desc>
+  <Rimverse_PerfStreaks>Warp and travel streaks</Rimverse_PerfStreaks>
+  <Rimverse_PerfStreaks_Desc>Draw moving star streaks while the ship travels.</Rimverse_PerfStreaks_Desc>
+  <Rimverse_PerfTraffic>Orbital traffic</Rimverse_PerfTraffic>
+  <Rimverse_PerfTraffic_Desc>Draw stations and moving ships around inhabited worlds, busiest around a civilization's seat.</Rimverse_PerfTraffic_Desc>
   <Rimverse_QolContinue>Continue</Rimverse_QolContinue>
   <Rimverse_QolDateTip>{0}
 Day of the year: {1}
@@ -110,6 +129,7 @@ Game ticks: {3}</Rimverse_QolDateTip>
   <Rimverse_SectorSizeClass>Sector size class: {0}</Rimverse_SectorSizeClass>
   <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>
   <Rimverse_SurfaceCut>Map cut: {0}, {1} on a world {2} km around</Rimverse_SurfaceCut>
+  <Rimverse_Tab_Performance>Performance</Rimverse_Tab_Performance>
   <Rimverse_TechSaleBlocked>Technology sale: {0}</Rimverse_TechSaleBlocked>
   <Rimverse_TechSaleButton>Buy technology</Rimverse_TechSaleButton>
   <Rimverse_TechSaleCooldown>next offer in {0} days</Rimverse_TechSaleCooldown>
@@ -119,6 +139,11 @@ Game ticks: {3}</Rimverse_QolDateTip>
   <Rimverse_TechSaleOpinion>they do not trust you enough</Rimverse_TechSaleOpinion>
   <Rimverse_TechSaleOption>{0} ({1} silver)</Rimverse_TechSaleOption>
   <Rimverse_TechStolen>Your spies brought back data on {0} from {1}.</Rimverse_TechStolen>
+  <Rimverse_VisibilityThreat>Your heat, power, jumps and fame lit you up across the region. Someone came looking.</Rimverse_VisibilityThreat>
+  <Rimverse_VisibilityThreatLabel>Too visible</Rimverse_VisibilityThreatLabel>
+  <Rimverse_VisibilityTotal>Visibility in the region: {0} points (warnings at 400,000 and 600,000, trouble at 800,000)</Rimverse_VisibilityTotal>
+  <Rimverse_VisibilityWarn1>Your signature reached {0} points. Pirates and hunters are starting to notice you.</Rimverse_VisibilityWarn1>
+  <Rimverse_VisibilityWarn2>Your signature reached {0} points. You are easy to find now; expect company soon.</Rimverse_VisibilityWarn2>
   <Rimverse_WeaponCharge>Cell charge: {0}/{1} shots. Recharges near powered equipment.</Rimverse_WeaponCharge>
   <Rimverse_WeaponHeat>Heat: {0}</Rimverse_WeaponHeat>
   <Rimverse_WeaponOverheat>{0} carried by {1} overheated and must vent before firing again.</Rimverse_WeaponOverheat>

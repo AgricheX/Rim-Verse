@@ -595,7 +595,7 @@ namespace Rimverse
             if (!Rand.Chance(chance)) return;
             Faction pirates = PirateFaction(gc);
             if (pirates == null) return;
-            if (!Rand.Chance(Mathf.Lerp(0.3f, 1f, Mathf.Clamp01(ship.Signature))))
+            if (!Rand.Chance(SignatureUtility.DetectChance(ship, pirates.def.techLevel)))
             {
                 Messages.Message("Rimverse_MsgSignatureHid".Translate(ship.Label), ship.bridge, MessageTypeDefOf.PositiveEvent, false);
                 return;

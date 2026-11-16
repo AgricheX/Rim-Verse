@@ -247,6 +247,7 @@ namespace Rimverse
 
         private bool OutOfSignal()
         {
+            if (CommRelay.AnyOn()) return false;
             bool any = false;
             foreach (Map m in Find.Maps)
             {

@@ -57,6 +57,7 @@ namespace Rimverse
             ShipCrewUtility.PilotAndCopilot(ship, out Pawn pilot, out Pawn copilot);
             l.Label("Rimverse_ShipPilot".Translate(pilot != null ? pilot.LabelShort + " (" + ShipCrewUtility.PilotLevel(pilot).ToString("0.#") + ")" : ship.aiPilotLevel > 0f ? "Rimverse_AIHelm".Translate().ToString() : "-", copilot != null ? copilot.LabelShort : ship.aiPilotLevel > 0f ? "Rimverse_AIHelm".Translate().ToString() : "-"));
             l.Label("Rimverse_ShipSignature".Translate(ship.Signature.ToStringPercent()));
+            if (GameComponent_Visibility.Instance != null) l.Label("Rimverse_VisibilityTotal".Translate(GameComponent_Visibility.Instance.lastTotal.ToString("N0")));
             l.Label("Rimverse_ShipDodge".Translate(ShipCrewUtility.Dodge(ship, pilot).ToStringPercent()));
             if (ship.multipleBridges)
             {

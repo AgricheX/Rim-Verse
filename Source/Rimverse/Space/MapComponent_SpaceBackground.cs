@@ -32,6 +32,21 @@ namespace Rimverse
         private int nextCheckFrame;
         private float streakT;
         private readonly List<Material> owned = new List<Material>();
+        private readonly List<Mover> movers = new List<Mover>();
+        private float moverT;
+
+        private class Mover
+        {
+            public Material mat;
+            public Vector2 center;
+            public float radius;
+            public float speed;
+            public float phase;
+            public float size;
+            public float squash;
+            public float tilt;
+            public float parallax;
+        }
 
         private class Layer
         {
@@ -53,7 +68,7 @@ namespace Rimverse
         {
         }
 
-        private bool Active => SpaceMapUtility.IsRimverseSpace(map);
+        private bool Active => RimverseMod.Settings.spaceBackground && SpaceMapUtility.IsRimverseSpace(map);
 
         public override void MapComponentUpdate()
         {
@@ -86,7 +101,7 @@ namespace Rimverse
             MapComponent_ShipLocation loc = MapComponent_ShipLocation.For(map);
             if (loc == null) return "none";
             long day = StarSystemData.NowTicks / RimverseUnits.TicksPerDay;
-            return loc.systemKey + "|" + loc.bodyIndex + "|" + loc.Warping + "|" + loc.Traveling + "|" + day + "|" + MegastructureRender.Version;
+            return loc.systemKey + "|" + loc.bodyIndex + "|" + loc.Warping + "|" + loc.Traveling + "|" + day + "|" + MegastructureRender.Version + "|" + RimverseMod.Settings.PerfKey;
         }
 
         private static Vector3 MapCenter(Map m) => new Vector3(m.Size.x / 2f, 0f, m.Size.z / 2f);
@@ -97,6 +112,7 @@ namespace Rimverse
             owned.Clear();
             layers.Clear();
             sprites.Clear();
+            movers.Clear();
             streakMesh = null;
             GameComponent_Universe u = GameComponent_Universe.Instance;
             MapComponent_ShipLocation loc = MapComponent_ShipLocation.For(map);
@@ -144,8 +160,9 @@ namespace Rimverse
                 AddSprite(NewMat(glowTex, ShaderDatabase.MoteGlow, new Color(1f, 1f, 1f, 1f), QueueSun + 1), off, glow * 0.16f, 0f, 0.05f);
             }
             if (!loc.Warping && body != null && !loc.Traveling) BuildBodies(u, sys, body, now, sunDir, mapW, sysSeed);
-            if (loc.Warping || loc.Traveling) BuildStreaks(mapW, sysSeed, loc.Warping);
-            MegastructureRender.AddToBackground(this, sys, body, now, sunDir, mapW);
+            if (RimverseMod.Settings.warpStreaks && (loc.Warping || loc.Traveling)) BuildStreaks(mapW, sysSeed, loc.Warping);
+            if (RimverseMod.Settings.megastructureVisuals) MegastructureRender.AddToBackground(this, sys, body, now, sunDir, mapW);
+            if (RimverseMod.Settings.orbitalTraffic && !loc.Warping && !loc.Traveling) OrbitalTraffic.AddTo(this, sys, body, sunDir, mapW);
         }
 
         private SkyParams SkyFor(GameComponent_Universe u, GalaxyData g, Vec3d pos, ulong seed, bool warping)
@@ -225,7 +242,7 @@ namespace Rimverse
         private void BuildStars(GameComponent_Universe u, GalaxyData g, Vec3d pos, ulong seed, float mapW)
         {
             float local = (float)Math.Min(3.0, g.DensityAt(pos) / Math.Max(1e-9, g.baseDensity));
-            int n = Mathf.RoundToInt(Mathf.Lerp(700f, 3200f, Mathf.Clamp01(local / 1.5f)) * Mathf.Clamp(u.DensityFactor, 0.3f, 1f));
+            int n = Mathf.RoundToInt(Mathf.Lerp(700f, 3200f, Mathf.Clamp01(local / 1.5f)) * Mathf.Clamp(u.DensityFactor, 0.3f, 1f) * Mathf.Clamp(RimverseMod.Settings.backgroundStarFactor, 0.1f, 1f));
             UniverseRand r = new UniverseRand(UniverseRand.Hash((long)seed, 310));
             float span = mapW * 2.4f;
             float bandAngle = new UniverseRand(UniverseRand.Hash((long)seed, 300)).Range(0f, Mathf.PI);
@@ -406,6 +423,11 @@ namespace Rimverse
             return m;
         }
 
+        public void AddMover(Material mat, Vector2 center, float radius, float speed, float phase, float size, float squash, float tilt, float parallax)
+        {
+            movers.Add(new Mover { mat = mat, center = center, radius = radius, speed = speed, phase = phase, size = size, squash = squash, tilt = tilt, parallax = parallax });
+        }
+
         public void AddSprite(Material mat, Vector2 offset, float size, float angle, float parallax)
         {
             sprites.Add(new Sprite { mat = mat, offset = offset, size = size, angle = angle, parallax = parallax });
@@ -429,6 +451,19 @@ namespace Rimverse
                 Vector3 p = center + camOff * (1f - s.parallax) + new Vector3(s.offset.x, yy, s.offset.y);
                 Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(p, Quaternion.AngleAxis(-s.angle, Vector3.up), new Vector3(s.size, 1f, s.size)), s.mat, 0);
                 yy += 0.001f;
+            }
+            if (movers.Count > 0)
+            {
+                if (!Find.TickManager.Paused) moverT += Time.deltaTime * Mathf.Min(Find.TickManager.TickRateMultiplier, 3f);
+                foreach (Mover m in movers)
+                {
+                    float a = m.phase + moverT * m.speed;
+                    Vector2 local = new Vector2(Mathf.Cos(a) * m.radius, Mathf.Sin(a) * m.radius * m.squash);
+                    float tr = m.tilt * Mathf.Deg2Rad;
+                    Vector2 rot = new Vector2(local.x * Mathf.Cos(tr) - local.y * Mathf.Sin(tr), local.x * Mathf.Sin(tr) + local.y * Mathf.Cos(tr));
+                    Vector3 p = center + camOff * (1f - m.parallax) + new Vector3(m.center.x + rot.x, yy + (Mathf.Sin(a) < 0f ? 0.05f : -0.05f), m.center.y + rot.y);
+                    Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(p, Quaternion.identity, new Vector3(m.size, 1f, m.size)), m.mat, 0);
+                }
             }
             if (streakMesh != null)
             {

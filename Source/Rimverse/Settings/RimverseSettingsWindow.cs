@@ -14,6 +14,7 @@ namespace Rimverse
             Ship,
             Fluxo,
             Qol,
+            Performance,
             Compat
         }
 
@@ -31,6 +32,7 @@ namespace Rimverse
                 MakeTab(Tab.Ship, "Rimverse_Tab_Ship"),
                 MakeTab(Tab.Fluxo, "Rimverse_Tab_Fluxo"),
                 MakeTab(Tab.Qol, "Rimverse_Tab_Qol"),
+                MakeTab(Tab.Performance, "Rimverse_Tab_Performance"),
                 MakeTab(Tab.Compat, "Rimverse_Tab_Compat")
             };
             Widgets.DrawMenuSection(tabRect);
@@ -47,6 +49,7 @@ namespace Rimverse
                 case Tab.Ship: DrawShip(l, s); break;
                 case Tab.Fluxo: DrawFluxo(l, s); break;
                 case Tab.Qol: DrawQol(l, s); break;
+                case Tab.Performance: DrawPerformance(l, s); break;
                 case Tab.Compat: DrawCompat(l, s); break;
             }
             lastHeight = Mathf.Max(l.CurHeight + 24f, content.height);
@@ -189,6 +192,21 @@ namespace Rimverse
                     s.SetQolEnabled(def, value);
                 }
             }
+        }
+
+        private static void DrawPerformance(Listing_Standard l, RimverseSettings s)
+        {
+            Check(l, "Rimverse_PerfBackground", ref s.spaceBackground);
+            if (s.spaceBackground)
+            {
+                Slider(l, "Rimverse_PerfStars", ref s.backgroundStarFactor, 0.1f, 1f);
+                Check(l, "Rimverse_PerfMegastructures", ref s.megastructureVisuals);
+                Check(l, "Rimverse_PerfStreaks", ref s.warpStreaks);
+                Check(l, "Rimverse_PerfTraffic", ref s.orbitalTraffic);
+            }
+            Check(l, "Rimverse_PerfCityHorizon", ref s.cityHorizon);
+            l.GapLine();
+            Check(l, "Rimverse_PerfPauseMaps", ref s.pauseUnseenMaps);
         }
 
         private static void DrawCompat(Listing_Standard l, RimverseSettings s)

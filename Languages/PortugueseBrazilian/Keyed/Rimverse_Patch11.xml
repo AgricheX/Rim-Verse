@@ -66,10 +66,29 @@ Alinhamento: {5} (Ruptura -100 a Harmonia +100)</Rimverse_FlowTip>
   <Rimverse_LetterTechRevolutionLabel>Revolução tecnológica</Rimverse_LetterTechRevolutionLabel>
   <Rimverse_LetterTradeWar>{0} vê {1} como concorrente e declarou embargo comercial por 20 dias.</Rimverse_LetterTradeWar>
   <Rimverse_LetterTradeWarLabel>Guerra comercial</Rimverse_LetterTradeWarLabel>
+  <Rimverse_MapFilterCivs>Civilizações</Rimverse_MapFilterCivs>
+  <Rimverse_MapFilterDanger>Perigo</Rimverse_MapFilterDanger>
+  <Rimverse_MapFilterResources>Recursos</Rimverse_MapFilterResources>
+  <Rimverse_MapFilterTrade>Rotas comerciais</Rimverse_MapFilterTrade>
   <Rimverse_MsgEmbargoed>{0} tem um embargo contra você e não vai negociar.</Rimverse_MsgEmbargoed>
   <Rimverse_MsgFreighterHere>Um {1} de {0} chegou neste sistema e está aberto pra negócio.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Piratas saquearam um cargueiro de {0} perto de {1}.</Rimverse_MsgFreighterRaided>
   <Rimverse_MsgPrisonerSabotage>{0} sabotou o {1} durante a fuga!</Rimverse_MsgPrisonerSabotage>
+  <Rimverse_MsgSensorsEvaded>Os sensores da {0} viram a emboscada cedo. A nave escapou antes de ela fechar.</Rimverse_MsgSensorsEvaded>
+  <Rimverse_PerfBackground>Fundo do espaço</Rimverse_PerfBackground>
+  <Rimverse_PerfBackground_Desc>Desenha o céu estrelado, planetas e sol atrás dos mapas espaciais. Desligar economiza mais.</Rimverse_PerfBackground_Desc>
+  <Rimverse_PerfCityHorizon>Cidade além da borda do mapa</Rimverse_PerfCityHorizon>
+  <Rimverse_PerfCityHorizon_Desc>Nos mapas de cidade das civilizações, mostra o resto da cidade continuando além da borda do mapa.</Rimverse_PerfCityHorizon_Desc>
+  <Rimverse_PerfMegastructures>Megaestruturas no céu</Rimverse_PerfMegastructures>
+  <Rimverse_PerfMegastructures_Desc>Desenha anéis, enxames, habitats e portões no fundo.</Rimverse_PerfMegastructures_Desc>
+  <Rimverse_PerfPauseMaps>Pausar mapas não vistos</Rimverse_PerfPauseMaps>
+  <Rimverse_PerfPauseMaps_Desc>Mapas que você não está olhando, sem ninguém seu neles e que não são sua casa, param de rodar até alguém chegar. Economiza muito com várias estações e destroços abertos.</Rimverse_PerfPauseMaps_Desc>
+  <Rimverse_PerfStars>Estrelas do fundo</Rimverse_PerfStars>
+  <Rimverse_PerfStars_Desc>Quantas estrelas o fundo desenha.</Rimverse_PerfStars_Desc>
+  <Rimverse_PerfStreaks>Rastros de dobra e viagem</Rimverse_PerfStreaks>
+  <Rimverse_PerfStreaks_Desc>Desenha rastros de estrelas em movimento enquanto a nave viaja.</Rimverse_PerfStreaks_Desc>
+  <Rimverse_PerfTraffic>Tráfego orbital</Rimverse_PerfTraffic>
+  <Rimverse_PerfTraffic_Desc>Desenha estações e naves em movimento ao redor de mundos habitados, mais cheio na sede da civilização.</Rimverse_PerfTraffic_Desc>
   <Rimverse_QolContinue>Continuar</Rimverse_QolContinue>
   <Rimverse_QolDateTip>{0}
 Dia do ano: {1}
@@ -110,6 +129,7 @@ Ticks de jogo: {3}</Rimverse_QolDateTip>
   <Rimverse_SectorSizeClass>Classe de tamanho do setor: {0}</Rimverse_SectorSizeClass>
   <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>
   <Rimverse_SurfaceCut>Recorte do mapa: {0}, {1} num mundo de {2} km de circunferência</Rimverse_SurfaceCut>
+  <Rimverse_Tab_Performance>Desempenho</Rimverse_Tab_Performance>
   <Rimverse_TechSaleBlocked>Venda de tecnologia: {0}</Rimverse_TechSaleBlocked>
   <Rimverse_TechSaleButton>Comprar tecnologia</Rimverse_TechSaleButton>
   <Rimverse_TechSaleCooldown>próxima oferta em {0} dias</Rimverse_TechSaleCooldown>
@@ -119,6 +139,11 @@ Ticks de jogo: {3}</Rimverse_QolDateTip>
   <Rimverse_TechSaleOpinion>eles não confiam em você o bastante</Rimverse_TechSaleOpinion>
   <Rimverse_TechSaleOption>{0} ({1} prata)</Rimverse_TechSaleOption>
   <Rimverse_TechStolen>Seus espiões trouxeram dados sobre {0} de {1}.</Rimverse_TechStolen>
+  <Rimverse_VisibilityThreat>Calor, energia, saltos e fama acenderam vocês na região toda. Alguém veio procurar.</Rimverse_VisibilityThreat>
+  <Rimverse_VisibilityThreatLabel>Visíveis demais</Rimverse_VisibilityThreatLabel>
+  <Rimverse_VisibilityTotal>Visibilidade na região: {0} pontos (avisos em 400.000 e 600.000, problema em 800.000)</Rimverse_VisibilityTotal>
+  <Rimverse_VisibilityWarn1>Sua assinatura chegou a {0} pontos. Piratas e caçadores começam a notar vocês.</Rimverse_VisibilityWarn1>
+  <Rimverse_VisibilityWarn2>Sua assinatura chegou a {0} pontos. Agora vocês são fáceis de achar; esperem visitas em breve.</Rimverse_VisibilityWarn2>
   <Rimverse_WeaponCharge>Carga da célula: {0}/{1} disparos. Recarrega perto de equipamentos com energia.</Rimverse_WeaponCharge>
   <Rimverse_WeaponHeat>Calor: {0}</Rimverse_WeaponHeat>
   <Rimverse_WeaponOverheat>A {0} de {1} superaqueceu e precisa ventilar antes de disparar de novo.</Rimverse_WeaponOverheat>

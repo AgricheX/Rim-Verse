@@ -35,6 +35,16 @@ namespace Rimverse
         public HashSet<string> disabledQol = new HashSet<string>();
         public HashSet<string> enabledQol = new HashSet<string>();
 
+        public bool spaceBackground = true;
+        public float backgroundStarFactor = 1f;
+        public bool megastructureVisuals = true;
+        public bool warpStreaks = true;
+        public bool pauseUnseenMaps;
+        public bool orbitalTraffic = true;
+        public bool cityHorizon = true;
+
+        public string PerfKey => (spaceBackground ? 1 : 0) + ":" + backgroundStarFactor.ToString("0.00") + ":" + (megastructureVisuals ? 1 : 0) + ":" + (warpStreaks ? 1 : 0) + ":" + (orbitalTraffic ? 1 : 0) + ":" + (cityHorizon ? 1 : 0);
+
         public bool odysseyIntegration = true;
         public bool combatExtendedIntegration = true;
         public bool endlessRoomsEvents = true;
@@ -86,6 +96,13 @@ namespace Rimverse
             qolEnabled = true;
             disabledQol.Clear();
             enabledQol.Clear();
+            spaceBackground = true;
+            backgroundStarFactor = 1f;
+            megastructureVisuals = true;
+            warpStreaks = true;
+            pauseUnseenMaps = false;
+            orbitalTraffic = true;
+            cityHorizon = true;
             odysseyIntegration = true;
             combatExtendedIntegration = true;
             endlessRoomsEvents = true;
@@ -118,6 +135,13 @@ namespace Rimverse
             Scribe_Values.Look(ref qolEnabled, "qolEnabled", true);
             Scribe_Collections.Look(ref disabledQol, "disabledQol", LookMode.Value);
             Scribe_Collections.Look(ref enabledQol, "enabledQol", LookMode.Value);
+            Scribe_Values.Look(ref spaceBackground, "spaceBackground", true);
+            Scribe_Values.Look(ref backgroundStarFactor, "backgroundStarFactor", 1f);
+            Scribe_Values.Look(ref megastructureVisuals, "megastructureVisuals", true);
+            Scribe_Values.Look(ref warpStreaks, "warpStreaks", true);
+            Scribe_Values.Look(ref pauseUnseenMaps, "pauseUnseenMaps", false);
+            Scribe_Values.Look(ref orbitalTraffic, "orbitalTraffic", true);
+            Scribe_Values.Look(ref cityHorizon, "cityHorizon", true);
             Scribe_Values.Look(ref odysseyIntegration, "odysseyIntegration", true);
             Scribe_Values.Look(ref combatExtendedIntegration, "combatExtendedIntegration", true);
             Scribe_Values.Look(ref endlessRoomsEvents, "endlessRoomsEvents", true);

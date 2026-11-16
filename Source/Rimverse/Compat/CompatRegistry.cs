@@ -374,6 +374,11 @@ namespace Rimverse
         {
             try
             {
+                foreach (ModMetaData m in ModsConfig.ActiveModsInLoadOrder)
+                {
+                    string n = (m.Name ?? "").ToLowerInvariant();
+                    if (n.Contains("empire refactored") || n.Contains("world domination")) Log.Warning("[Rimverse] " + m.Name + " also simulates galactic empires and diplomacy. Rimverse runs its own civilizations, so the two will overlap. Use one of them.");
+                }
                 List<string> on = CompatRegistry.Known.Keys.Where(ModCompat.IsActive).ToList();
                 if (on.Count == 0) return;
                 RimverseLog.Message("Known mods active: " + on.Count + " (" + string.Join(", ", on.GroupBy(id => CompatRegistry.Known[id]).Select(g => g.Key + " " + g.Count())) + ")");

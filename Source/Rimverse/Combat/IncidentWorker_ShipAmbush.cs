@@ -32,7 +32,12 @@ namespace Rimverse
             if (f == null) return false;
             float points = parms.points > 0f ? parms.points : StorytellerUtility.DefaultThreatPointsNow(map);
             if (ExternalCompat.GravshipThreats) points *= 0.7f;
-            if (!Rand.Chance(UnityEngine.Mathf.Lerp(0.3f, 1f, UnityEngine.Mathf.Clamp01(ship.Signature))))
+            if (Rand.Chance(SignatureUtility.EarlyWarning(ship)))
+            {
+                Messages.Message("Rimverse_MsgSensorsEvaded".Translate(ship.Label), ship.bridge, MessageTypeDefOf.PositiveEvent, false);
+                return true;
+            }
+            if (!Rand.Chance(SignatureUtility.DetectChance(ship, f.def.techLevel)))
             {
                 Messages.Message("Rimverse_MsgSignatureHid".Translate(ship.Label), ship.bridge, MessageTypeDefOf.PositiveEvent, false);
                 return true;
