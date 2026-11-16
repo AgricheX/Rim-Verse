@@ -164,6 +164,12 @@ namespace Rimverse
         {
             foreach (FloatMenuOption o in base.GetFloatMenuOptions(selPawn)) yield return o;
             TradeShip ts = Trader;
+            if (ts == null && Faction != null && Faction != Faction.OfPlayer && !Faction.HostileTo(Faction.OfPlayer))
+            {
+                ts = new TradeShip(RimverseDefOf.Rimverse_CivSpaceTrader, Faction) { name = Faction.Name };
+                Map.passingShipManager.AddShip(ts);
+                traderLoadId = ts.GetUniqueLoadID();
+            }
             if (ts == null)
             {
                 yield return new FloatMenuOption("Rimverse_TerminalNoTrader".Translate(), null);

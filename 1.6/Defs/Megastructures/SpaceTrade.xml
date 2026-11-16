@@ -34,6 +34,12 @@
     </comps>
   </ThingDef>
 
+  <GenStepDef>
+    <defName>Rimverse_SurfaceSettlement</defName>
+    <order>950</order>
+    <genStep Class="Rimverse.GenStep_SurfaceSettlement" />
+  </GenStepDef>
+
   <JobDef>
     <defName>Rimverse_UseTradeTerminal</defName>
     <driverClass>Rimverse.JobDriver_UseTradeTerminal</driverClass>
