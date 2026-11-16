@@ -51,6 +51,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_MegaLightPanel</defName>
+    <techLevel>Spacer</techLevel>
     <label>deck light</label>
     <description>A light set flush into the deck, fed by the megastructure's own grid.</description>
     <thingClass>Building</thingClass>
@@ -86,6 +87,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_MegaConsole</defName>
+    <techLevel>Spacer</techLevel>
     <label>megastructure console</label>
     <description>A section terminal of the megastructure's control net. It shows the state of the section and the long work still ahead.</description>
     <thingClass>Building</thingClass>

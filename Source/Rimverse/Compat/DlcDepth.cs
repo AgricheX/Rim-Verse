@@ -179,3 +179,46 @@ namespace Rimverse
         }
     }
 }
+
+namespace Rimverse
+{
+    public class CompProperties_BulkheadAuto : CompProperties
+    {
+        public CompProperties_BulkheadAuto()
+        {
+            compClass = typeof(CompBulkheadAuto);
+        }
+    }
+
+    public class CompBulkheadAuto : ThingComp
+    {
+        private static readonly System.Reflection.MethodInfo TryClose = AccessTools.Method(typeof(Building_Door), "DoorTryClose");
+
+        public override void CompTick()
+        {
+            base.CompTick();
+            if (!parent.IsHashIntervalTick(60)) return;
+            Building_Door door = parent as Building_Door;
+            if (door == null || !door.Spawned || !door.Open) return;
+            CompPowerTrader power = parent.TryGetComp<CompPowerTrader>();
+            if (power != null && !power.PowerOn) return;
+            Map map = door.Map;
+            if (!SpaceMapUtility.IsSpace(map)) return;
+            MapComponent_RimverseShips ships = map.GetComponent<MapComponent_RimverseShips>();
+            bool airy = false, empty = false;
+            foreach (IntVec3 c in GenAdj.CellsAdjacentCardinal(door))
+            {
+                if (!c.InBounds(map)) continue;
+                Room r = c.GetRoom(map);
+                if (r == null) continue;
+                bool has = HabitatAir.Pressurized(map, r) || (ships != null && !r.TouchesMapEdge && ships.RoomAir(r) >= MapComponent_RimverseShips.HypoxiaAirThreshold);
+                if (has) airy = true;
+                else empty = true;
+            }
+            if (!(airy && empty)) return;
+            Traverse.Create(door).Field("holdOpenInt").SetValue(false);
+            object ok = TryClose?.Invoke(door, null);
+            if (ok is bool b && b) Messages.Message("Rimverse_BulkheadSealed".Translate(), door, MessageTypeDefOf.NeutralEvent, false);
+        }
+    }
+}

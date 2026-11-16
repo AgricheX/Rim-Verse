@@ -3,6 +3,7 @@
 
   <ThingDef ParentName="Wall">
     <defName>Rimverse_HullViewport</defName>
+    <techLevel>Industrial</techLevel>
     <label>hull viewport</label>
     <description>Pressure-tight transparent hull section. The crew can look out at the stars. Worth 30 hull points.</description>
     <stuffCategories Inherit="False" />

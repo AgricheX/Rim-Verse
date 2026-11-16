@@ -3,6 +3,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_GatePart</defName>
+    <techLevel>Spacer</techLevel>
     <label>gate component</label>
     <description>A dense lattice of plasteel and folded warp matter, tuned to the resonance of the ancient gates. Used to activate gates, stabilize wormholes and push the Great Gate further.</description>
     <graphicData>

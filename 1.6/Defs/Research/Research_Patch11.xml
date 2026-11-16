@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_Espionage</defName>
+    <label>espionage</label>
+    <description>Agents, dead drops and false identities among the star civilizations. Spies are caught far less often on espionage contracts, and stolen technology is more often complete.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_ColonyAdministration</li>
+    </prerequisites>
+    <researchViewX>6</researchViewX>
+    <researchViewY>12</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_Megaprojects</defName>
+    <label>megaprojects</label>
+    <description>Societies organized around works that take generations. Each megastructure stage costs a tenth less.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse</tab>
+    <prerequisites>
+      <li>Rimverse_Megastructures</li>
+      <li>Rimverse_ColonyAdministration</li>
+    </prerequisites>
+    <researchViewX>15</researchViewX>
+    <researchViewY>9</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

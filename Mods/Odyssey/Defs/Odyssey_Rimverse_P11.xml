@@ -3,6 +3,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_GravshipRetrofitKit</defName>
+    <techLevel>Industrial</techLevel>
     <label>gravship retrofit kit</label>
     <description>Couplings, hull plates and a command bridge packed for assembly. Using it converts the gravship substructure on this map into Rimverse hull and delivers a small bridge, so the gravship becomes a Rimverse ship that can warp between stars. The grav engine keeps working.</description>
     <graphicData>

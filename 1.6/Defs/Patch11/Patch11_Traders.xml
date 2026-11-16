@@ -271,6 +271,7 @@
   </TraderKindDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_ContractChip</defName>
+    <techLevel>Spacer</techLevel>
     <label>contract chip</label>
     <description>A sealed data chip from a contract broker. Read it to receive a random contract: delivery, escort, survey, hunt and more, each with a deadline and a reward.</description>
     <graphicData>

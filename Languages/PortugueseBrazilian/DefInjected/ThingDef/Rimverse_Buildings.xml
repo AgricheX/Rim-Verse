@@ -120,7 +120,7 @@
   <Rimverse_Airlock.label>porta de eclusa</Rimverse_Airlock.label>
   <Rimverse_Airlock.description>Uma porta motorizada pesada, feita para o vácuo.</Rimverse_Airlock.description>
   <Rimverse_BulkheadDoor.label>porta de antepara</Rimverse_BulkheadDoor.label>
-  <Rimverse_BulkheadDoor.description>Uma antepara grossa entre compartimentos.</Rimverse_BulkheadDoor.description>
+  <Rimverse_BulkheadDoor.description>Uma antepara grossa entre compartimentos. Com energia, fecha sozinha quando um dos lados perde o ar.</Rimverse_BulkheadDoor.description>
   <Rimverse_BlastDoor.label>porta blindada</Rimverse_BlastDoor.label>
   <Rimverse_BlastDoor.description>Uma porta blindada que demora muito mais para ser arrombada.</Rimverse_BlastDoor.description>
   <Rimverse_ContainmentField.label>campo de contenção</Rimverse_ContainmentField.label>

@@ -67,7 +67,7 @@
     <defName>Rimverse_Armor</defName>
     <label>hull armor</label>
     <description>Armored hull walls built from plasteel.</description>
-    <baseCost>3500</baseCost>
+    <baseCost>800</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Rimverse</tab>
     <prerequisites>

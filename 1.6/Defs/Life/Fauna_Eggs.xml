@@ -3,6 +3,7 @@
 
   <ThingDef ParentName="EggFertBase">
     <defName>Rimverse_Egg_Skyfin</defName>
+    <techLevel>Spacer</techLevel>
     <label>skyfin egg (fert.)</label>
     <description>A fertilized skyfin egg. If all goes well, it will hatch into a baby skyfin. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
@@ -23,6 +24,7 @@
 
   <ThingDef ParentName="EggFertBase">
     <defName>Rimverse_Egg_Duskwing</defName>
+    <techLevel>Spacer</techLevel>
     <label>duskwing egg (fert.)</label>
     <description>A fertilized duskwing egg. If all goes well, it will hatch into a baby duskwing. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
@@ -43,6 +45,7 @@
 
   <ThingDef ParentName="EggFertBase">
     <defName>Rimverse_Egg_Shellback</defName>
+    <techLevel>Spacer</techLevel>
     <label>shellback egg (fert.)</label>
     <description>A fertilized shellback egg. If all goes well, it will hatch into a baby shellback. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
@@ -63,6 +66,7 @@
 
   <ThingDef ParentName="EggFertBase">
     <defName>Rimverse_Egg_Plated</defName>
+    <techLevel>Spacer</techLevel>
     <label>plated crawler egg (fert.)</label>
     <description>A fertilized plated crawler egg. If all goes well, it will hatch into a baby plated crawler. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
@@ -83,6 +87,7 @@
 
   <ThingDef ParentName="EggFertBase">
     <defName>Rimverse_Egg_SolarLizard</defName>
+    <techLevel>Spacer</techLevel>
     <label>solar lizard egg (fert.)</label>
     <description>A fertilized solar lizard egg. If all goes well, it will hatch into a baby solar lizard. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
@@ -103,6 +108,7 @@
 
   <ThingDef ParentName="EggFertBase">
     <defName>Rimverse_Egg_MessengerBird</defName>
+    <techLevel>Spacer</techLevel>
     <label>messenger bird egg (fert.)</label>
     <description>A fertilized messenger bird egg. If all goes well, it will hatch into a baby messenger bird. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>

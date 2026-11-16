@@ -46,6 +46,7 @@
 
   <ThingDef ParentName="Rimverse_VacuumSuitBase">
     <defName>Rimverse_SuitEmergency</defName>
+    <techLevel>Industrial</techLevel>
     <label>emergency vacuum suit</label>
     <description>A thin, quick-to-don pressure suit kept in wall lockers. It holds 1 hour of air and gives almost no protection. Without a helmet the air lasts only a tenth as long.</description>
     <statBases>
@@ -79,6 +80,7 @@
 
   <ThingDef ParentName="Rimverse_VacuumSuitBase">
     <defName>Rimverse_SuitWork</defName>
+    <techLevel>Industrial</techLevel>
     <label>work vacuum suit</label>
     <description>The standard suit for outside repairs. It holds 8 hours of air.</description>
     <statBases>
@@ -113,6 +115,7 @@
 
   <ThingDef ParentName="Rimverse_VacuumSuitBase">
     <defName>Rimverse_SuitMining</defName>
+    <techLevel>Industrial</techLevel>
     <label>mining vacuum suit</label>
     <description>A reinforced suit for asteroid and moon mining, with powered tools in the gloves. It holds 10 hours of air and mines 15% faster.</description>
     <statBases>

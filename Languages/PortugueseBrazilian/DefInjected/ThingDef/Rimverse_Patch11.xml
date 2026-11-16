@@ -3,6 +3,26 @@
   <Rimverse_ContractChip.label>chip de contrato</Rimverse_ContractChip.label>
   <Rimverse_ContractChip.description>Um chip de dados lacrado de um corretor de contratos. Leia pra receber um contrato aleatório: entrega, escolta, levantamento, caçada e mais, cada um com prazo e recompensa.</Rimverse_ContractChip.description>
   <Rimverse_ContractChip.comps.0.useLabel>Ler contrato</Rimverse_ContractChip.comps.0.useLabel>
+  <Rimverse_Fauna_CrystalBack.label>dorso-de-cristal</Rimverse_Fauna_CrystalBack.label>
+  <Rimverse_Fauna_CrystalBack.description>Um pastador enorme cujas costas formam treliças de cristal vivo. Suas placas desviam lâminas e balas.</Rimverse_Fauna_CrystalBack.description>
+  <Rimverse_Fauna_CrystalBack.tools.0.label>garra esquerda</Rimverse_Fauna_CrystalBack.tools.0.label>
+  <Rimverse_Fauna_CrystalBack.tools.1.label>garra direita</Rimverse_Fauna_CrystalBack.tools.1.label>
+  <Rimverse_Fauna_CrystalBack.tools.3.label>cabeça</Rimverse_Fauna_CrystalBack.tools.3.label>
+  <Rimverse_Fauna_MagmaCrawler.label>rastejante de magma</Rimverse_Fauna_MagmaCrawler.label>
+  <Rimverse_Fauna_MagmaCrawler.description>Um rastejante blindado que se banha em poças de lava. Sua carapaça brilha com o calor que carrega.</Rimverse_Fauna_MagmaCrawler.description>
+  <Rimverse_Fauna_MagmaCrawler.tools.0.label>bico</Rimverse_Fauna_MagmaCrawler.tools.0.label>
+  <Rimverse_Fauna_MagmaCrawler.tools.1.label>cabeça</Rimverse_Fauna_MagmaCrawler.tools.1.label>
+  <Rimverse_Fauna_Mindmote.label>mentecisco</Rimverse_Fauna_Mindmote.label>
+  <Rimverse_Fauna_Mindmote.description>Um minúsculo simbionte que procura criaturas maiores e vive do calor delas. Domesticado, viaja com seu tratador e acalma os nervos.</Rimverse_Fauna_Mindmote.description>
+  <Rimverse_Fauna_SporeStalker.label>andarilho de esporos</Rimverse_Fauna_SporeStalker.label>
+  <Rimverse_Fauna_SporeStalker.description>Uma colônia de fungos que anda na forma de um pastador. Alimenta-se de matéria podre e deixa rastros de esporos.</Rimverse_Fauna_SporeStalker.description>
+  <Rimverse_Fauna_SporeStalker.tools.0.label>casco esquerdo</Rimverse_Fauna_SporeStalker.tools.0.label>
+  <Rimverse_Fauna_SporeStalker.tools.1.label>casco direito</Rimverse_Fauna_SporeStalker.tools.1.label>
+  <Rimverse_Fauna_SporeStalker.tools.3.label>cabeça</Rimverse_Fauna_SporeStalker.tools.3.label>
+  <Rimverse_Fauna_TideSkimmer.label>deslizador das marés</Rimverse_Fauna_TideSkimmer.label>
+  <Rimverse_Fauna_TideSkimmer.description>Um pastador alienígena anfíbio de casco hidrodinâmico. Alimenta-se nas águas rasas de mundos oceânicos e se arrasta até a praia para descansar.</Rimverse_Fauna_TideSkimmer.description>
+  <Rimverse_Fauna_TideSkimmer.tools.0.label>bico</Rimverse_Fauna_TideSkimmer.tools.0.label>
+  <Rimverse_Fauna_TideSkimmer.tools.1.label>cabeça</Rimverse_Fauna_TideSkimmer.tools.1.label>
   <Rimverse_FuneralTube.label>tubo funerário</Rimverse_FuneralTube.label>
   <Rimverse_FuneralTube.description>Um pequeno tubo de lançamento selado. A tripulação pode dar um funeral espacial a quem caiu, mandando o corpo pro vácuo ou pra uma estrela. Funciona sem nenhuma ideologia.</Rimverse_FuneralTube.description>
   <Rimverse_ShipMorgue.label>necrotério de bordo</Rimverse_ShipMorgue.label>

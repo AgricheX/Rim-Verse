@@ -499,7 +499,7 @@ namespace Rimverse
                         {
                             phase = 1;
                             phaseTick = now + 2 * GenDate.TicksPerDay;
-                            if (Rand.Chance(0.25f))
+                            if (Rand.Chance(ResearchGate.Done("Rimverse_Espionage") ? 0.1f : 0.25f))
                             {
                                 if (TargetCiv != null) Civs.ChangePlayerOpinion(TargetCiv, -15f);
                                 Messages.Message("Rimverse_ContractSpyCaught".Translate(TargetCiv?.ShownName ?? "?"), MessageTypeDefOf.NegativeEvent, false);

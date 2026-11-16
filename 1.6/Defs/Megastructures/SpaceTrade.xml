@@ -3,6 +3,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_TradeTerminal</defName>
+    <techLevel>Spacer</techLevel>
     <label>trade terminal</label>
     <description>A counter with a manifest screen, linked to the hold of the ship or station it stands in. Walk up to it to trade with whoever runs that hold.</description>
     <thingClass>Rimverse.Building_TradeTerminal</thingClass>

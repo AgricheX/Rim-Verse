@@ -645,6 +645,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_ShipClassroom</defName>
+    <techLevel>Industrial</techLevel>
     <label>onboard school</label>
     <description>A compact classroom for children aboard. Children in the same room learn and gain skills, faster with an adult around. Pick a subject: general, piloting, engineering or medicine.</description>
     <graphicData>
@@ -685,6 +686,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_ZeroGToys</defName>
+    <techLevel>Industrial</techLevel>
     <label>zero-g toys</label>
     <description>Floating toys tethered to a frame. Children in the room play, which lifts recreation and eases cabin fever.</description>
     <graphicData>
@@ -724,6 +726,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_WasteLauncher</defName>
+    <techLevel>Industrial</techLevel>
     <label>waste launcher</label>
     <description>A small mass driver that fires wastepacks into space. Only works in space or in orbit. Haulers bring wastepacks to it.</description><thingClass>Building_Storage</thingClass>
     <graphicData>
@@ -790,6 +793,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_WasteRecycler</defName>
+    <techLevel>Industrial</techLevel>
     <label>waste recycler</label>
     <description>Breaks wastepacks down into steel and chemfuel. Slow, power hungry, but it works anywhere.</description><thingClass>Building_Storage</thingClass>
     <graphicData>

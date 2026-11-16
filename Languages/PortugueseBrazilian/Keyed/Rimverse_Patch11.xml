@@ -3,6 +3,7 @@
   <Rimverse_BodyEccentric>Órbita excêntrica ({0}): as estações mudam muito entre perto e longe.</Rimverse_BodyEccentric>
   <Rimverse_BodyEqTemperature>Temperatura de equilíbrio: {0}</Rimverse_BodyEqTemperature>
   <Rimverse_BodyTidalLocked>Travado por maré: um lado sempre olha para a estrela.</Rimverse_BodyTidalLocked>
+  <Rimverse_BulkheadSealed>Uma antepara se fechou sozinha para impedir o vazamento de ar.</Rimverse_BulkheadSealed>
   <Rimverse_CivLegitimacy>Legitimidade: {0}</Rimverse_CivLegitimacy>
   <Rimverse_CivPreSpace>Civilização pré-espacial: ainda não consegue sair do seu mundo.</Rimverse_CivPreSpace>
   <Rimverse_ContractDeadline>Tempo restante: {0}</Rimverse_ContractDeadline>
@@ -65,5 +66,9 @@
   <Rimverse_TechSaleOpinion>eles não confiam em você o bastante</Rimverse_TechSaleOpinion>
   <Rimverse_TechSaleOption>{0} ({1} prata)</Rimverse_TechSaleOption>
   <Rimverse_TechStolen>Seus espiões trouxeram dados sobre {0} de {1}.</Rimverse_TechStolen>
+  <Rimverse_WeaponCharge>Carga da célula: {0}/{1} disparos. Recarrega perto de equipamentos com energia.</Rimverse_WeaponCharge>
+  <Rimverse_WeaponHeat>Calor: {0}</Rimverse_WeaponHeat>
+  <Rimverse_WeaponOverheat>A {0} de {1} superaqueceu e precisa ventilar antes de disparar de novo.</Rimverse_WeaponOverheat>
+  <Rimverse_WeaponVenting>ventilando</Rimverse_WeaponVenting>
   <Rimverse_ZoneSizeClass>Classe de tamanho da zona: {0}</Rimverse_ZoneSizeClass>
 </LanguageData>

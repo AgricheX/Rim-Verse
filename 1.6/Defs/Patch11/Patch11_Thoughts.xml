@@ -277,6 +277,7 @@
   </ThoughtDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_FuneralTube</defName>
+    <techLevel>Spacer</techLevel>
     <label>funeral tube</label>
     <description>A small sealed launch tube. The crew can give a fallen member a space funeral, sending the body into the void or toward a star. Works without any ideology.</description>
     <thingClass>Building_WorkTable</thingClass>
@@ -310,6 +311,9 @@
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
     </building>
+      <researchPrerequisites>
+      <li>Rimverse_LifeSupport</li>
+    </researchPrerequisites>
   </ThingDef>
   <RecipeDef>
     <defName>Rimverse_SpaceFuneral</defName>
@@ -340,6 +344,7 @@
   </RecipeDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_ShipMorgue</defName>
+    <techLevel>Spacer</techLevel>
     <label>ship morgue</label>
     <description>A cold locker that keeps bodies from rotting while powered, so the crew can carry the dead back to their home world.</description>
     <thingClass>Building_Storage</thingClass>
@@ -395,6 +400,9 @@
       </li>
       <li Class="Rimverse.CompProperties_Morgue" />
     </comps>
+      <researchPrerequisites>
+      <li>Rimverse_LifeSupport</li>
+    </researchPrerequisites>
   </ThingDef>
   <HediffDef>
     <defName>Rimverse_ZeroGFloating</defName>

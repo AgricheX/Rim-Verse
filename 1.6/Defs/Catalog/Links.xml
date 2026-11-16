@@ -3,6 +3,7 @@
 
   <ThingDef ParentName="RockBase">
     <defName>Rimverse_MineableIce</defName>
+    <techLevel>Spacer</techLevel>
     <label>ice vein</label>
     <description>A seam of old water ice frozen into the rock. Mine it for ice.</description>
     <graphicData>
@@ -27,6 +28,7 @@
 
   <ThingDef ParentName="RockBase">
     <defName>Rimverse_MineablePrecursorWreck</defName>
+    <techLevel>Spacer</techLevel>
     <label>precursor wreckage</label>
     <description>Fused wreckage of a machine older than humanity, buried in the rock. Mining it recovers precursor fragments.</description>
     <graphicData>

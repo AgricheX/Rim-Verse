@@ -3,6 +3,7 @@
   <Rimverse_BodyEccentric>Eccentric orbit ({0}): seasons swing hard between near and far.</Rimverse_BodyEccentric>
   <Rimverse_BodyEqTemperature>Equilibrium temperature: {0}</Rimverse_BodyEqTemperature>
   <Rimverse_BodyTidalLocked>Tidally locked: one side always faces the star.</Rimverse_BodyTidalLocked>
+  <Rimverse_BulkheadSealed>A bulkhead sealed itself to stop the air from escaping.</Rimverse_BulkheadSealed>
   <Rimverse_CivLegitimacy>Legitimacy: {0}</Rimverse_CivLegitimacy>
   <Rimverse_CivPreSpace>A pre-space civilization: it cannot leave its world yet.</Rimverse_CivPreSpace>
   <Rimverse_ContractDeadline>Time left: {0}</Rimverse_ContractDeadline>
@@ -65,5 +66,9 @@
   <Rimverse_TechSaleOpinion>they do not trust you enough</Rimverse_TechSaleOpinion>
   <Rimverse_TechSaleOption>{0} ({1} silver)</Rimverse_TechSaleOption>
   <Rimverse_TechStolen>Your spies brought back data on {0} from {1}.</Rimverse_TechStolen>
+  <Rimverse_WeaponCharge>Cell charge: {0}/{1} shots. Recharges near powered equipment.</Rimverse_WeaponCharge>
+  <Rimverse_WeaponHeat>Heat: {0}</Rimverse_WeaponHeat>
+  <Rimverse_WeaponOverheat>{0} carried by {1} overheated and must vent before firing again.</Rimverse_WeaponOverheat>
+  <Rimverse_WeaponVenting>venting</Rimverse_WeaponVenting>
   <Rimverse_ZoneSizeClass>Zone size class: {0}</Rimverse_ZoneSizeClass>
 </LanguageData>

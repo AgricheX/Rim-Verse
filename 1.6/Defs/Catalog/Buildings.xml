@@ -232,6 +232,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_AICore</defName>
+    <techLevel>Spacer</techLevel>
     <label>ship AI core</label>
     <description>An onboard AI that assists the helm. Adds dodge and lets the ship fly with fewer crew.</description>
     <graphicData>
@@ -274,6 +275,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_FissionReactor</defName>
+    <techLevel>Spacer</techLevel>
     <label>fission reactor</label>
     <description>A shielded fission reactor. 4,000 W. Burns one isotope every 20 days. Leaks radiation when badly damaged.</description>
     <graphicData>
@@ -328,6 +330,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_FusionReactor</defName>
+    <techLevel>Spacer</techLevel>
     <label>fusion reactor</label>
     <description>A compact fusion reactor. 10,000 W. Burns two units of light gas per day.</description>
     <graphicData>
@@ -380,6 +383,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_ExoticReactor</defName>
+    <techLevel>Ultra</techLevel>
     <label>exotic reactor</label>
     <description>A reactor that taps exotic matter. 30,000 W. One unit lasts 60 days.</description>
     <graphicData>
@@ -432,6 +436,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_CombatCapacitor</defName>
+    <techLevel>Spacer</techLevel>
     <label>combat capacitor</label>
     <description>Stores 500 Wd and releases it fast in combat.</description>
     <graphicData>
@@ -470,6 +475,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_IonThruster</defName>
+    <techLevel>Spacer</techLevel>
     <label>ion thruster</label>
     <description>An electric thruster. Thrust 40, no fuel, needs 1,500 W.</description>
     <graphicData>
@@ -510,6 +516,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_FusionThruster</defName>
+    <techLevel>Spacer</techLevel>
     <label>fusion thruster</label>
     <description>A fusion drive. Thrust 250.</description>
     <graphicData>
@@ -559,6 +566,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_SolarSail</defName>
+    <techLevel>Spacer</techLevel>
     <label>solar sail</label>
     <description>A huge reflective sail. Tiny thrust, no fuel, no heat.</description>
     <graphicData>
@@ -591,6 +599,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_GasCollector</defName>
+    <techLevel>Industrial</techLevel>
     <label>gas collector</label>
     <description>Skims light gas from a gas giant or nebula. Produces 3 light gas per day.</description>
     <graphicData>
@@ -635,6 +644,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_IceProcessor</defName>
+    <techLevel>Industrial</techLevel>
     <label>ice processor</label>
     <description>Melts ice into air and water. Each unit of ice is worth 20 APH.</description>
     <graphicData>
@@ -687,6 +697,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_WaterRecycler</defName>
+    <techLevel>Industrial</techLevel>
     <label>water recycler</label>
     <description>Recycles water and scrubs air. Adds a little air.</description>
     <graphicData>
@@ -726,6 +737,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_ClimateControl</defName>
+    <techLevel>Industrial</techLevel>
     <label>climate control</label>
     <description>Ship-wide climate control. Removes heat.</description>
     <graphicData>
@@ -764,6 +776,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_RetractableRadiator</defName>
+    <techLevel>Industrial</techLevel>
     <label>retractable radiator</label>
     <description>A radiator that folds into the hull in combat. Removes 4 UC/s when extended. Switch it off to retract.</description>
     <graphicData>
@@ -800,6 +813,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_EmergencyHeatSink</defName>
+    <techLevel>Industrial</techLevel>
     <label>emergency heat sink</label>
     <description>Dumps 50 UC of heat at once by boiling off 10 ice.</description>
     <graphicData>
@@ -846,6 +860,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_ProbeLauncher</defName>
+    <techLevel>Spacer</techLevel>
     <label>probe launcher</label>
     <description>Launches probes that extend sensor reach.</description>
     <graphicData>
@@ -896,6 +911,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_SignatureDetector</defName>
+    <techLevel>Spacer</techLevel>
     <label>signature detector</label>
     <description>Detects ships by their heat and emissions.</description>
     <graphicData>
@@ -935,6 +951,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_ReactiveArmor</defName>
+    <techLevel>Spacer</techLevel>
     <label>reactive armor</label>
     <description>Explosive plates that blunt incoming hits. Adds hull points.</description>
     <graphicData>
@@ -966,6 +983,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_SignatureCloak</defName>
+    <techLevel>Spacer</techLevel>
     <label>signature cloak</label>
     <description>Masks the ship's signature. Makes it much harder to hit.</description>
     <graphicData>
@@ -1006,6 +1024,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_Decoy</defName>
+    <techLevel>Spacer</techLevel>
     <label>decoy emitter</label>
     <description>Throws false echoes. A small dodge bonus.</description>
     <graphicData>
@@ -1043,6 +1062,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_Hangar</defName>
+    <techLevel>Industrial</techLevel>
     <label>hangar</label>
     <description>A pressurized hangar for two shuttles or four fighters. Vehicles parked on or next to it are refuelled and repaired slowly, crewed fighters and bombers parked here join ship combat, and shuttles parked here can fly to your other maps in this star system.</description>
     <graphicData>
@@ -1084,6 +1104,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_ShuttleBay</defName>
+    <techLevel>Industrial</techLevel>
     <label>shuttle bay</label>
     <description>A bay for one shuttle. Vehicles parked on or next to it are refuelled and repaired slowly, crewed fighters and bombers parked here join ship combat, and shuttles parked here can fly to your other maps in this star system.</description>
     <graphicData>
@@ -1125,6 +1146,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_IceHarvester</defName>
+    <techLevel>Industrial</techLevel>
     <label>ice harvester</label>
     <description>Grapples and drills ice from comets, rings and icy moons near the ship. Produces 20 ice per day.</description>
     <graphicData>
@@ -1170,6 +1192,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_MiningBay</defName>
+    <techLevel>Industrial</techLevel>
     <label>mining bay</label>
     <description>A bay with a mining laser. Produces a little rare metal and regolith each day.</description>
     <graphicData>
@@ -1214,6 +1237,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_SalvageBay</defName>
+    <techLevel>Industrial</techLevel>
     <label>salvage bay</label>
     <description>Recovers steel from debris drifting near the ship.</description>
     <graphicData>
@@ -1258,6 +1282,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_DockingPort</defName>
+    <techLevel>Industrial</techLevel>
     <label>docking port</label>
     <description>A port where passing freighters dock to trade, about every ten days while powered (talk to them from a comms console). Raises the hull cell limit.</description>
     <graphicData>
@@ -1298,6 +1323,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_TugModule</defName>
+    <techLevel>Industrial</techLevel>
     <label>tug module</label>
     <description>A tow rig with strong clamps. Adds thrust for towing.</description>
     <graphicData>
@@ -1346,6 +1372,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_SecurityCentral</defName>
+    <techLevel>Industrial</techLevel>
     <label>security central</label>
     <description>Shows hostiles aboard and can lock down every door.</description>
     <graphicData>
@@ -1383,6 +1410,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_OrbitalOutpost</defName>
+    <techLevel>Spacer</techLevel>
     <label>orbital outpost core</label>
     <description>The core of a first station off-world. Controls up to 600 cells. Supports your colonies in the same star system.</description>
     <graphicData>
@@ -1427,6 +1455,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_MiningStation</defName>
+    <techLevel>Spacer</techLevel>
     <label>mining station core</label>
     <description>A station core anchored to an asteroid. Produces ore every day. Supports your colonies in the same star system.</description>
     <graphicData>
@@ -1475,6 +1504,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_GasStation</defName>
+    <techLevel>Spacer</techLevel>
     <label>gas station core</label>
     <description>A station core floating in a gas giant. Produces light gas every day. Supports your colonies in the same star system.</description>
     <graphicData>
@@ -1523,6 +1553,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_TradeStation</defName>
+    <techLevel>Spacer</techLevel>
     <label>trade station core</label>
     <description>A station core with beacons that attract freighters and merchants. Supports your colonies in the same star system.</description>
     <graphicData>
@@ -1572,6 +1603,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_ShipyardStation</defName>
+    <techLevel>Spacer</techLevel>
     <label>shipyard station core</label>
     <description>A station core that builds and repairs large ships. Supports your colonies in the same star system.</description>
     <graphicData>
@@ -1623,6 +1655,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_FortressStation</defName>
+    <techLevel>Spacer</techLevel>
     <label>fortress core</label>
     <description>A heavily armored station core for system defense. Supports your colonies in the same star system.</description>
     <graphicData>
@@ -1669,6 +1702,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_ResearchStation</defName>
+    <techLevel>Spacer</techLevel>
     <label>research station core</label>
     <description>A station core packed with labs. Generates research. Supports your colonies in the same star system.</description>
     <graphicData>
@@ -1717,6 +1751,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_OrbitalRing</defName>
+    <techLevel>Ultra</techLevel>
     <label>orbital ring control node</label>
     <description>The control node of an orbital ring. The ring itself is built in orbit, stage by stage, as you supply each stage from here; its output grows with every finished stage. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
@@ -1773,6 +1808,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_StellarCollector</defName>
+    <techLevel>Ultra</techLevel>
     <label>stellar collector control node</label>
     <description>The control node of a swarm of collectors around the star. Each finished stage beams down more power, up to nearly limitless. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
@@ -1826,6 +1862,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_GiantHabitat</defName>
+    <techLevel>Ultra</techLevel>
     <label>giant habitat control node</label>
     <description>The control node of a habitat for millions, built in orbit stage by stage. Its food and silver grow with every finished stage. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
@@ -1882,6 +1919,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_DeepObservatory</defName>
+    <techLevel>Ultra</techLevel>
     <label>deep observatory control node</label>
     <description>The control node of an observatory that charts a whole sector. Research grows with every finished stage. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
@@ -1935,6 +1973,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_WormholeStabilizer</defName>
+    <techLevel>Ultra</techLevel>
     <label>wormhole stabilizer control node</label>
     <description>The control node of a stabilizer built around a wormhole throat. Once its stages are done it anchors the wormhole and draws exotic matter from it. Supports your colonies in the same star system.</description>
     <thingClass>Building</thingClass>
@@ -2320,6 +2359,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_BoardingTorpedoTube</defName>
+    <techLevel>Industrial</techLevel>
     <label>boarding torpedo tube</label>
     <description>Sends up to four drafted crew to board the enemy from close range, not only when docked.</description>
     <graphicData>
@@ -2378,6 +2418,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_Jammer</defName>
+    <techLevel>Spacer</techLevel>
     <label>jamming emitter</label>
     <description>Scrambles enemy targeting: -20% enemy accuracy while active.</description>
     <graphicData>
@@ -2481,6 +2522,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_TowHarpoon</defName>
+    <techLevel>Industrial</techLevel>
     <label>tow harpoon</label>
     <description>Pins the enemy ship so it cannot flee.</description>
     <graphicData>
@@ -2650,6 +2692,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>Rimverse_TurretGun_CorridorTurret</defName>
+    <techLevel>Spacer</techLevel>
     <label>corridor turret gun</label>
     <description>A small turret that fires frangible rounds. Will not breach the hull.</description>
     <graphicData>
@@ -2683,6 +2726,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_Turret_CorridorTurret</defName>
+    <techLevel>Industrial</techLevel>
     <label>corridor turret</label>
     <description>A small turret that fires frangible rounds. Will not breach the hull.</description>
     <thingClass>Building_TurretGun</thingClass>
@@ -2784,6 +2828,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>Rimverse_TurretGun_InternalLaser</defName>
+    <techLevel>Spacer</techLevel>
     <label>internal laser turret gun</label>
     <description>A laser turret with no ammunition. Draws power instead.</description>
     <graphicData>
@@ -2816,6 +2861,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_Turret_InternalLaser</defName>
+    <techLevel>Industrial</techLevel>
     <label>internal laser turret</label>
     <description>A laser turret with no ammunition. Draws power instead.</description>
     <thingClass>Building_TurretGun</thingClass>
@@ -2904,6 +2950,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>Rimverse_TurretGun_StunTurret</defName>
+    <techLevel>Spacer</techLevel>
     <label>stun turret gun</label>
     <description>Stuns intruders so they can be captured.</description>
     <graphicData>
@@ -2936,6 +2983,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_Turret_StunTurret</defName>
+    <techLevel>Industrial</techLevel>
     <label>stun turret</label>
     <description>Stuns intruders so they can be captured.</description>
     <thingClass>Building_TurretGun</thingClass>
@@ -3010,6 +3058,7 @@
 
   <ThingDef ParentName="DoorBase">
     <defName>Rimverse_Airlock</defName>
+    <techLevel>Industrial</techLevel>
     <label>airlock door</label>
     <description>A heavy powered door rated for vacuum.</description>
     <statBases>
@@ -3048,8 +3097,9 @@
 
   <ThingDef ParentName="DoorBase">
     <defName>Rimverse_BulkheadDoor</defName>
+    <techLevel>Industrial</techLevel>
     <label>bulkhead door</label>
-    <description>A thick bulkhead between compartments.</description>
+    <description>A thick bulkhead between compartments. While powered, it slams shut on its own when one side loses air.</description>
     <statBases>
       <WorkToBuild>2500</WorkToBuild>
       <MaxHitPoints>800</MaxHitPoints>
@@ -3074,6 +3124,7 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>50</basePowerConsumption>
       </li>
+      <li Class="Rimverse.CompProperties_BulkheadAuto"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
     <researchPrerequisites>
@@ -3087,6 +3138,7 @@
 
   <ThingDef ParentName="DoorBase">
     <defName>Rimverse_BlastDoor</defName>
+    <techLevel>Industrial</techLevel>
     <label>blast door</label>
     <description>An armored door that takes far longer to breach.</description>
     <statBases>
@@ -3125,6 +3177,7 @@
 
   <ThingDef ParentName="DoorBase">
     <defName>Rimverse_ContainmentField</defName>
+    <techLevel>Industrial</techLevel>
     <label>containment field</label>
     <description>An energy barrier across a doorway. Very hard to breach while powered.</description>
     <statBases>
@@ -3163,6 +3216,7 @@
 
   <ThingDef ParentName="BedWithQualityBase">
     <defName>Rimverse_CrewBunk</defName>
+    <techLevel>Industrial</techLevel>
     <label>crew bunk</label>
     <description>A stacked bunk that fits two sleepers in one cell.</description>
     <graphicData>
@@ -3200,6 +3254,7 @@
 
   <ThingDef ParentName="BedWithQualityBase">
     <defName>Rimverse_CabinBed</defName>
+    <techLevel>Industrial</techLevel>
     <label>cabin bed</label>
     <description>A comfortable bed for a private cabin.</description>
     <graphicData>
@@ -3236,6 +3291,7 @@
 
   <ThingDef ParentName="BedWithQualityBase">
     <defName>Rimverse_OfficerBed</defName>
+    <techLevel>Industrial</techLevel>
     <label>officer bed</label>
     <description>A wide, well-made bed for officers.</description>
     <graphicData>
@@ -3272,6 +3328,7 @@
 
   <ThingDef ParentName="BedWithQualityBase">
     <defName>Rimverse_CompactCabin</defName>
+    <techLevel>Industrial</techLevel>
     <label>compact cabin</label>
     <description>A sealed sleeping pod with its own light and air vent.</description>
     <graphicData>
@@ -3308,6 +3365,7 @@
 
   <ThingDef ParentName="BedWithQualityBase">
     <defName>Rimverse_ZeroGSleepingBag</defName>
+    <techLevel>Industrial</techLevel>
     <label>zero-g sleeping bag</label>
     <description>A strapped sleeping bag for zero gravity. Light and cheap.</description>
     <graphicData>
@@ -3343,6 +3401,7 @@
 
   <ThingDef ParentName="TableBase">
     <defName>Rimverse_MessTable</defName>
+    <techLevel>Industrial</techLevel>
     <label>fixed mess table</label>
     <description>A bolted-down table for the mess hall.</description>
     <graphicData>
@@ -3373,6 +3432,7 @@
 
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>Rimverse_MessBench</defName>
+    <techLevel>Industrial</techLevel>
     <label>mess bench</label>
     <description>A long bench that seats crew at a mess table.</description>
     <graphicData>
@@ -3406,6 +3466,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_PasteDispenser</defName>
+    <techLevel>Industrial</techLevel>
     <label>ship paste dispenser</label>
     <description>Turns raw food in nearby hoppers into paste meals. Compact and airtight.</description>
     <graphicData>
@@ -3452,6 +3513,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>Rimverse_CompactKitchen</defName>
+    <techLevel>Industrial</techLevel>
     <label>compact kitchen</label>
     <description>A small electric galley for ship meals and drinks.</description>
     <graphicData>
@@ -3505,6 +3567,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>Rimverse_NavalEngineeringBench</defName>
+    <techLevel>Industrial</techLevel>
     <label>naval engineering bench</label>
     <description>A bench for ship components and parts.</description>
     <graphicData>
@@ -3558,6 +3621,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>Rimverse_NavigationTable</defName>
+    <techLevel>Industrial</techLevel>
     <label>navigation table</label>
     <description>Plot courses and study star charts. Counts as a research bench.</description>
     <graphicData>
@@ -3611,6 +3675,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>Rimverse_AnalysisLab</defName>
+    <techLevel>Industrial</techLevel>
     <label>analysis lab</label>
     <description>A lab bench for samples, drugs and medicine.</description>
     <graphicData>
@@ -3664,6 +3729,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>Rimverse_AsteroidFoundry</defName>
+    <techLevel>Industrial</techLevel>
     <label>asteroid foundry</label>
     <description>Smelts asteroid ore into alloys, ceramics and glass.</description>
     <graphicData>
@@ -3717,6 +3783,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>Rimverse_PartFabricator</defName>
+    <techLevel>Industrial</techLevel>
     <label>part fabricator</label>
     <description>Fabricates naval components, cells and ammunition.</description>
     <graphicData>
@@ -3770,6 +3837,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>Rimverse_SuitBench</defName>
+    <techLevel>Industrial</techLevel>
     <label>suit bench</label>
     <description>Builds and repairs vacuum suits and armor.</description>
     <graphicData>
@@ -3823,6 +3891,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>Rimverse_AmmoBench</defName>
+    <techLevel>Industrial</techLevel>
     <label>ammunition bench</label>
     <description>Assembles ship missiles, torpedoes and slugs.</description>
     <graphicData>
@@ -3876,6 +3945,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>Rimverse_ShipWeaponWorkshop</defName>
+    <techLevel>Spacer</techLevel>
     <label>ship weapon workshop</label>
     <description>A heavy workshop for ship weapon parts.</description>
     <graphicData>
@@ -3929,6 +3999,7 @@
 
   <ThingDef ParentName="BedWithQualityBase">
     <defName>Rimverse_InfirmaryBed</defName>
+    <techLevel>Industrial</techLevel>
     <label>infirmary bed</label>
     <description>A medical bed with straps and monitors for zero gravity.</description>
     <graphicData>
@@ -3968,6 +4039,7 @@
 
   <ThingDef ParentName="BedWithQualityBase">
     <defName>Rimverse_QuarantineChamber</defName>
+    <techLevel>Industrial</techLevel>
     <label>quarantine chamber</label>
     <description>A sealed medical cell that speeds immunity to alien plagues.</description>
     <graphicData>
@@ -4011,6 +4083,7 @@
 
   <ThingDef ParentName="BedWithQualityBase">
     <defName>Rimverse_DecompressionChamber</defName>
+    <techLevel>Industrial</techLevel>
     <label>decompression chamber</label>
     <description>A pressure chamber that heals decompression injuries faster.</description>
     <graphicData>
@@ -4054,6 +4127,7 @@
 
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>Rimverse_ObservationWindow</defName>
+    <techLevel>Industrial</techLevel>
     <label>observation lounge window</label>
     <description>A wide window panel for watching the stars drift by.</description>
     <graphicData>
@@ -4092,6 +4166,7 @@
 
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>Rimverse_HoloGameTable</defName>
+    <techLevel>Industrial</techLevel>
     <label>holographic game table</label>
     <description>A table that projects strategy games. Needs adjacent seats.</description>
     <graphicData>
@@ -4137,6 +4212,7 @@
 
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>Rimverse_ShipGym</defName>
+    <techLevel>Industrial</techLevel>
     <label>ship gym</label>
     <description>Resistance machines that fight bone loss in zero gravity.</description>
     <graphicData>
@@ -4182,6 +4258,7 @@
 
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>Rimverse_FlightSimulator</defName>
+    <techLevel>Industrial</techLevel>
     <label>flight simulator</label>
     <description>A cockpit simulator. Fun, and trains pilots.</description>
     <graphicData>
@@ -4227,6 +4304,7 @@
 
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>Rimverse_DigitalLibrary</defName>
+    <techLevel>Industrial</techLevel>
     <label>digital library</label>
     <description>Terminals full of books, films and archives.</description>
     <graphicData>
@@ -4272,6 +4350,7 @@
 
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>Rimverse_ShipBar</defName>
+    <techLevel>Industrial</techLevel>
     <label>ship bar</label>
     <description>A bar counter where the crew gathers. Brews reactor brew and moss tea.</description>
     <graphicData>
@@ -4310,6 +4389,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_OnboardGarden</defName>
+    <techLevel>Industrial</techLevel>
     <label>onboard garden</label>
     <description>A planter for flowers and moss. Beauty and a little air.</description>
     <graphicData>
@@ -4347,6 +4427,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_SunLamp</defName>
+    <techLevel>Industrial</techLevel>
     <label>solar spectrum lamp</label>
     <description>A full-spectrum lamp strong enough to grow crops.</description>
     <graphicData>
@@ -4390,6 +4471,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_EmergencyLight</defName>
+    <techLevel>Industrial</techLevel>
     <label>emergency light</label>
     <description>A red light that runs on almost no power.</description>
     <graphicData>
@@ -4431,6 +4513,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_StatusPanel</defName>
+    <techLevel>Industrial</techLevel>
     <label>status panel</label>
     <description>A wall display with the ship's vital signs: hull, air, heat, fuel and crew.</description>
     <graphicData>
@@ -4474,6 +4557,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_NamePlate</defName>
+    <techLevel>Industrial</techLevel>
     <label>ship name plate</label>
     <description>A polished plate bearing the ship's name.</description>
     <graphicData>
@@ -4505,6 +4589,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_StarMap</defName>
+    <techLevel>Industrial</techLevel>
     <label>wall star map</label>
     <description>A glowing map of the known stars.</description>
     <graphicData>
@@ -4547,6 +4632,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_ShipPlanter</defName>
+    <techLevel>Industrial</techLevel>
     <label>ship pot</label>
     <description>A small sealed pot for one decorative or hydroponic plant.</description>
     <graphicData>
@@ -4583,6 +4669,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_SuitLocker</defName>
+    <techLevel>Industrial</techLevel>
     <label>wall suit locker</label>
     <description>A wall rack that holds two vacuum suits ready for use.</description>
     <graphicData>
@@ -4635,6 +4722,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_RepairDroneBay</defName>
+    <techLevel>Spacer</techLevel>
     <label>repair drone bay</label>
     <description>An upgrade of the maintenance drone bay. Its drones repair hull, modules and parked vehicles within 30 cells.</description>
     <graphicData>
@@ -4680,6 +4768,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_CleaningDroneBay</defName>
+    <techLevel>Spacer</techLevel>
     <label>cleaning drone bay</label>
     <description>Launches drones that clean filth within 20 cells.</description>
     <graphicData>
@@ -4724,6 +4813,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_CargoDroneBay</defName>
+    <techLevel>Spacer</techLevel>
     <label>cargo drone bay</label>
     <description>Launches drones that haul loose items to storage within 25 cells.</description>
     <graphicData>
@@ -4768,6 +4858,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_MiningDroneBay</defName>
+    <techLevel>Spacer</techLevel>
     <label>mining drone bay</label>
     <description>Launches drones that mine designated rock within 25 cells.</description>
     <graphicData>
@@ -4813,6 +4904,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_DroneWorkshop</defName>
+    <techLevel>Spacer</techLevel>
     <label>drone workshop</label>
     <description>Maintains the ship's drones. Every drone bay within 30 cells works 50% harder.</description>
     <graphicData>
@@ -4860,6 +4952,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_FoamEmitter</defName>
+    <techLevel>Industrial</techLevel>
     <label>foam emitter</label>
     <description>Floods the room with fire foam when it detects fire.</description>
     <graphicData>
@@ -4898,6 +4991,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_CombatVent</defName>
+    <techLevel>Industrial</techLevel>
     <label>combat vent</label>
     <description>On command, vents the air out of this room for an hour. For use against boarders.</description>
     <graphicData>
@@ -4931,6 +5025,7 @@
 
   <ThingDef ParentName="TrapIEDBase">
     <defName>Rimverse_ProximityMine</defName>
+    <techLevel>Spacer</techLevel>
     <label>internal proximity mine</label>
     <description>A frangible trap for corridors. It kills boarders without breaching the hull.</description>
     <graphicData>

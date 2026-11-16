@@ -88,7 +88,7 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>10</damageAmountBase>
-      <armorPenetrationBase>0.12</armorPenetrationBase>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
       <speed>55</speed>
     </projectile>
     <modExtensions>
@@ -116,7 +116,7 @@
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_ShipboardFirearms</researchPrerequisite>
@@ -144,7 +144,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_BoardPistol</defaultProjectile>
         <warmupTime>0.3</warmupTime>
-        <range>25.9</range>
+        <range>24.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_Autopistol</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -198,12 +198,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>19800</WorkToMake>
-      <Mass>2.6</Mass>
+      <Mass>2.4</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_ShipboardFirearms</researchPrerequisite>
@@ -230,9 +230,9 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_CompactSMG</defaultProjectile>
-        <warmupTime>0.6</warmupTime>
-        <range>20.9</range><ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <burstShotCount>4</burstShotCount>
+        <warmupTime>0.5</warmupTime>
+        <range>19.9</range><ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
         <soundCast>Shot_HeavySMG</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -290,7 +290,7 @@
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_ShipboardFirearms</researchPrerequisite>
@@ -317,8 +317,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_CrewCarbine</defaultProjectile>
-        <warmupTime>1.0</warmupTime>
-        <range>28.9</range><ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <warmupTime>0.9</warmupTime>
+        <range>27.9</range><ticksBetweenBurstShots>9</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>Shot_AssaultRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -349,7 +349,7 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>18</damageAmountBase>
-      <armorPenetrationBase>0.12</armorPenetrationBase>
+      <armorPenetrationBase>0.14</armorPenetrationBase>
       <speed>55</speed>
     </projectile>
     <modExtensions>
@@ -377,7 +377,7 @@
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_ShipboardFirearms</researchPrerequisite>
@@ -404,8 +404,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_BoardingShotgun</defaultProjectile>
-        <warmupTime>1.0</warmupTime>
-        <range>15.9</range>
+        <warmupTime>0.8</warmupTime>
+        <range>13.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_Shotgun</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -459,12 +459,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>27000</WorkToMake>
-      <Mass>5.0</Mass>
+      <Mass>4</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.6</AccuracyLong>
-      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_ShipboardFirearms</researchPrerequisite>
@@ -491,7 +491,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_PrecisionRifle</defaultProjectile>
-        <warmupTime>3.0</warmupTime>
+        <warmupTime>3.5</warmupTime>
         <range>44.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_SniperRifle</soundCast>
@@ -522,7 +522,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>11</damageAmountBase>
+      <damageAmountBase>12</damageAmountBase>
       <armorPenetrationBase>0.18</armorPenetrationBase>
       <speed>70</speed>
     </projectile>
@@ -551,7 +551,7 @@
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_ShipboardFirearms</researchPrerequisite>
@@ -578,9 +578,9 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_SupportMG</defaultProjectile>
-        <warmupTime>2.4</warmupTime>
+        <warmupTime>1.8</warmupTime>
         <range>25.9</range><ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <burstShotCount>10</burstShotCount>
+        <burstShotCount>6</burstShotCount>
         <soundCast>Shot_Minigun</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -638,7 +638,7 @@
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_ShipboardFirearms</researchPrerequisite>
@@ -666,7 +666,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_FrangPistol</defaultProjectile>
         <warmupTime>0.3</warmupTime>
-        <range>22.9</range>
+        <range>20.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_Autopistol</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -696,8 +696,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>10</damageAmountBase>
-      <armorPenetrationBase>0.06</armorPenetrationBase>
+      <damageAmountBase>9</damageAmountBase>
+      <armorPenetrationBase>0.05</armorPenetrationBase>
       <speed>60</speed>
     </projectile>
     <modExtensions>
@@ -720,12 +720,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>21000</WorkToMake>
-      <Mass>3.0</Mass>
+      <Mass>3</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_ShipboardFirearms</researchPrerequisite>
@@ -752,8 +752,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_FrangCarbine</defaultProjectile>
-        <warmupTime>1.0</warmupTime>
-        <range>26.9</range><ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <warmupTime>0.9</warmupTime>
+        <range>24.9</range><ticksBetweenBurstShots>9</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>Shot_AssaultRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -807,12 +807,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>16800</WorkToMake>
-      <Mass>1.6</Mass>
+      <Mass>1</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_BoardingGear</researchPrerequisite>
@@ -839,8 +839,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_Stunner</defaultProjectile>
-        <warmupTime>0.8</warmupTime>
-        <range>18.9</range>
+        <warmupTime>0.5</warmupTime>
+        <range>15.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_ChargeRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -900,12 +900,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>21000</WorkToMake>
-      <Mass>3.0</Mass>
+      <Mass>3</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_BoardingGear</researchPrerequisite>
@@ -933,8 +933,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_NetLauncher</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
-        <range>14.9</range>
+        <warmupTime>1</warmupTime>
+        <range>12.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_IncendiaryLauncher</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -992,12 +992,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <Mass>4.0</Mass>
+      <Mass>4</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_BoardingGear</researchPrerequisite>
@@ -1025,7 +1025,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_FoamLauncher</defaultProjectile>
         <warmupTime>1.5</warmupTime>
-        <range>14.9</range>
+        <range>11.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_IncendiaryLauncher</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -1056,7 +1056,7 @@
     <projectile>
       <damageDef>Burn</damageDef>
       <damageAmountBase>12</damageAmountBase>
-      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
       <speed>140</speed>
     </projectile>
     <modExtensions>
@@ -1079,12 +1079,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>15000</WorkToMake>
-      <Mass>1.0</Mass>
+      <Mass>1</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_LaserSmallArms</researchPrerequisite>
@@ -1129,6 +1129,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <comps>
+      <li Class="Rimverse.CompProperties_EnergyCell">
+        <shots>30</shots>
+      </li>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -1142,8 +1147,8 @@
     </graphicData>
     <projectile>
       <damageDef>Burn</damageDef>
-      <damageAmountBase>12</damageAmountBase>
-      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <damageAmountBase>13</damageAmountBase>
+      <armorPenetrationBase>0.3</armorPenetrationBase>
       <speed>140</speed>
     </projectile>
     <modExtensions>
@@ -1166,12 +1171,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>20400</WorkToMake>
-      <Mass>2.8</Mass>
+      <Mass>3.5</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_LaserSmallArms</researchPrerequisite>
@@ -1198,7 +1203,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_LaserCarbine</defaultProjectile>
-        <warmupTime>0.9</warmupTime>
+        <warmupTime>1</warmupTime>
         <range>29.9</range><ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>Shot_ChargeRifle</soundCast>
@@ -1216,6 +1221,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <comps>
+      <li Class="Rimverse.CompProperties_EnergyCell">
+        <shots>30</shots>
+      </li>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -1253,12 +1263,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <Mass>4.0</Mass>
+      <Mass>4.5</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.6</AccuracyLong>
-      <RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_LaserSmallArms</researchPrerequisite>
@@ -1285,8 +1295,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_LaserSniper</defaultProjectile>
-        <warmupTime>2.6</warmupTime>
-        <range>45.9</range>
+        <warmupTime>3</warmupTime>
+        <range>47.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_ChargeRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -1303,6 +1313,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <comps>
+      <li Class="Rimverse.CompProperties_EnergyCell">
+        <shots>30</shots>
+      </li>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -1316,7 +1331,7 @@
     </graphicData>
     <projectile>
       <damageDef>Burn</damageDef>
-      <damageAmountBase>9</damageAmountBase>
+      <damageAmountBase>8</damageAmountBase>
       <armorPenetrationBase>0.2</armorPenetrationBase>
       <speed>140</speed>
     </projectile>
@@ -1340,12 +1355,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>25800</WorkToMake>
-      <Mass>4.6</Mass>
+      <Mass>3</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_LaserSmallArms</researchPrerequisite>
@@ -1372,9 +1387,9 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_PulseLaser</defaultProjectile>
-        <warmupTime>1.4</warmupTime>
-        <range>24.9</range><ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-        <burstShotCount>8</burstShotCount>
+        <warmupTime>0.6</warmupTime>
+        <range>22.9</range><ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
         <soundCast>Shot_ChargeRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1390,6 +1405,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <comps>
+      <li Class="Rimverse.CompProperties_EnergyCell">
+        <shots>30</shots>
+      </li>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -1404,7 +1424,7 @@
     <projectile>
       <damageDef>Burn</damageDef>
       <damageAmountBase>20</damageAmountBase>
-      <armorPenetrationBase>0.5</armorPenetrationBase>
+      <armorPenetrationBase>0.6</armorPenetrationBase>
       <speed>140</speed>
     </projectile>
     <modExtensions>
@@ -1427,12 +1447,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>21000</WorkToMake>
-      <Mass>3.0</Mass>
+      <Mass>3</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_LaserSmallArms</researchPrerequisite>
@@ -1459,8 +1479,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_LaserCutter</defaultProjectile>
-        <warmupTime>0.6</warmupTime>
-        <range>8.9</range>
+        <warmupTime>1</warmupTime>
+        <range>4.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_ChargeRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -1477,6 +1497,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <comps>
+      <li Class="Rimverse.CompProperties_EnergyCell">
+        <shots>30</shots>
+      </li>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -1490,8 +1515,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bomb</damageDef>
-      <damageAmountBase>22</damageAmountBase>
-      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.4</armorPenetrationBase>
       <speed>45</speed>
     </projectile>
     <modExtensions>
@@ -1514,12 +1539,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>17400</WorkToMake>
-      <Mass>1.8</Mass>
+      <Mass>1.6</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_PlasmaSmallArms</researchPrerequisite>
@@ -1546,8 +1571,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_PlasmaPistol</defaultProjectile>
-        <warmupTime>0.6</warmupTime>
-        <range>16.9</range>
+        <warmupTime>0.5</warmupTime>
+        <range>17.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_ChargeRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -1564,6 +1589,12 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <comps>
+      <li Class="Rimverse.CompProperties_EnergyCell">
+        <shots>30</shots>
+        <heatPerShot>14</heatPerShot>
+      </li>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -1577,8 +1608,8 @@
     </graphicData>
     <projectile>
       <damageDef>Flame</damageDef>
-      <damageAmountBase>16</damageAmountBase>
-      <armorPenetrationBase>0.3</armorPenetrationBase>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
       <speed>35</speed><explosionRadius>1.4</explosionRadius>
     </projectile>
     <modExtensions>
@@ -1601,12 +1632,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>30000</WorkToMake>
-      <Mass>6.0</Mass>
+      <Mass>7</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_PlasmaSmallArms</researchPrerequisite>
@@ -1633,8 +1664,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_PlasmaThrower</defaultProjectile>
-        <warmupTime>1.6</warmupTime>
-        <range>13.9</range>
+        <warmupTime>1.5</warmupTime>
+        <range>12.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_IncendiaryLauncher</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -1651,6 +1682,12 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <comps>
+      <li Class="Rimverse.CompProperties_EnergyCell">
+        <shots>30</shots>
+        <heatPerShot>9</heatPerShot>
+      </li>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -1664,8 +1701,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bomb</damageDef>
-      <damageAmountBase>24</damageAmountBase>
-      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <damageAmountBase>20</damageAmountBase>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
       <speed>55</speed>
     </projectile>
     <modExtensions>
@@ -1688,12 +1725,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>24600</WorkToMake>
-      <Mass>4.2</Mass>
+      <Mass>4.8</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_PlasmaSmallArms</researchPrerequisite>
@@ -1720,9 +1757,9 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_PlasmaRifle</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
-        <range>30.9</range><ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-        <burstShotCount>2</burstShotCount>
+        <warmupTime>1.1</warmupTime>
+        <range>29.9</range><ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
         <soundCast>Shot_ChargeRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1738,6 +1775,12 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <comps>
+      <li Class="Rimverse.CompProperties_EnergyCell">
+        <shots>30</shots>
+        <heatPerShot>10</heatPerShot>
+      </li>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -1751,8 +1794,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bomb</damageDef>
-      <damageAmountBase>55</damageAmountBase>
-      <armorPenetrationBase>0.7</armorPenetrationBase>
+      <damageAmountBase>45</damageAmountBase>
+      <armorPenetrationBase>0.6</armorPenetrationBase>
       <speed>40</speed>
     </projectile>
     <modExtensions>
@@ -1775,12 +1818,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>48000</WorkToMake>
-      <Mass>12.0</Mass>
+      <Mass>12</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>3.6</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_PlasmaSmallArms</researchPrerequisite>
@@ -1807,7 +1850,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_PortablePlasmaCannon</defaultProjectile>
-        <warmupTime>3.0</warmupTime>
+        <warmupTime>2.5</warmupTime>
         <range>32.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_Autocannon</soundCast>
@@ -1825,6 +1868,12 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <comps>
+      <li Class="Rimverse.CompProperties_EnergyCell">
+        <shots>30</shots>
+        <heatPerShot>35</heatPerShot>
+      </li>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -1838,8 +1887,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>11</damageAmountBase>
-      <armorPenetrationBase>0.55</armorPenetrationBase>
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
       <speed>180</speed>
     </projectile>
     <modExtensions>
@@ -1862,12 +1911,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>15600</WorkToMake>
-      <Mass>1.2</Mass>
+      <Mass>1</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_RailSmallArms</researchPrerequisite>
@@ -1894,7 +1943,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_NeedlePistol</defaultProjectile>
-        <warmupTime>0.5</warmupTime>
+        <warmupTime>0.4</warmupTime>
         <range>26.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_Revolver</soundCast>
@@ -1925,8 +1974,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>22</damageAmountBase>
-      <armorPenetrationBase>0.75</armorPenetrationBase>
+      <damageAmountBase>32</damageAmountBase>
+      <armorPenetrationBase>0.7</armorPenetrationBase>
       <speed>200</speed>
     </projectile>
     <modExtensions>
@@ -1949,12 +1998,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>25800</WorkToMake>
-      <Mass>4.6</Mass>
+      <Mass>6</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_RailSmallArms</researchPrerequisite>
@@ -1981,8 +2030,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_RailRifle</defaultProjectile>
-        <warmupTime>1.4</warmupTime>
-        <range>38.9</range>
+        <warmupTime>2.5</warmupTime>
+        <range>49.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_SniperRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -2012,7 +2061,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>6</damageAmountBase>
+      <damageAmountBase>3</damageAmountBase>
       <armorPenetrationBase>0.2</armorPenetrationBase>
       <speed>120</speed>
       <extraDamages>
@@ -2042,12 +2091,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>18000</WorkToMake>
-      <Mass>2.0</Mass>
+      <Mass>2.5</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_RailSmallArms</researchPrerequisite>
@@ -2105,8 +2154,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>40</damageAmountBase>
-      <armorPenetrationBase>0.95</armorPenetrationBase>
+      <damageAmountBase>50</damageAmountBase>
+      <armorPenetrationBase>0.9</armorPenetrationBase>
       <speed>220</speed>
     </projectile>
     <modExtensions>
@@ -2129,12 +2178,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>39000</WorkToMake>
-      <Mass>9.0</Mass>
+      <Mass>11</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.6</AccuracyLong>
-      <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_RailSmallArms</researchPrerequisite>
@@ -2161,8 +2210,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_HeavyRailRifle</defaultProjectile>
-        <warmupTime>2.4</warmupTime>
-        <range>44.9</range>
+        <warmupTime>3.5</warmupTime>
+        <range>55.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_SniperRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -2216,12 +2265,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>25200</WorkToMake>
-      <Mass>4.4</Mass>
+      <Mass>3.4</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_BoardingGear</researchPrerequisite>
@@ -2248,8 +2297,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_ShipGrenadeLauncher</defaultProjectile>
-        <warmupTime>1.4</warmupTime>
-        <range>22.9</range>
+        <warmupTime>2.5</warmupTime>
+        <range>23.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_IncendiaryLauncher</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -2279,8 +2328,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bomb</damageDef>
-      <damageAmountBase>60</damageAmountBase>
-      <armorPenetrationBase>0.6</armorPenetrationBase>
+      <damageAmountBase>50</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
       <speed>40</speed><explosionRadius>2.9</explosionRadius>
     </projectile>
     <modExtensions>
@@ -2303,12 +2352,12 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>33000</WorkToMake>
-      <Mass>7.0</Mass>
+      <Mass>6</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.6</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>Rimverse_BoardingGear</researchPrerequisite>
@@ -2335,7 +2384,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Rimverse_Bullet_LightMissileLauncher</defaultProjectile>
-        <warmupTime>3.0</warmupTime>
+        <warmupTime>3</warmupTime>
         <range>34.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>InfernoCannon_Fire</soundCast>
@@ -2589,9 +2638,9 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>11</power>
-        <cooldownTime>1.6</cooldownTime>
-        <armorPenetration>0.18</armorPenetration>
+        <power>10</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.15</armorPenetration>
       </li>
       <li>
         <label>point</label>
@@ -2634,8 +2683,8 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>18</power>
-        <cooldownTime>2.2</cooldownTime>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
         <armorPenetration>0.2</armorPenetration>
       </li>
       <li>
@@ -2682,7 +2731,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>10</power>
+        <power>8</power>
         <cooldownTime>1.8</cooldownTime>
         <armorPenetration>0.1</armorPenetration>
         <extraMeleeDamages>
@@ -2727,9 +2776,9 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>16</power>
-        <cooldownTime>1.5</cooldownTime>
-        <armorPenetration>0.55</armorPenetration>
+        <power>14</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.45</armorPenetration>
       </li>
       <li>
         <label>point</label>
@@ -2775,9 +2824,9 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>26</power>
-        <cooldownTime>2.0</cooldownTime>
-        <armorPenetration>0.85</armorPenetration>
+        <power>22</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.8</armorPenetration>
       </li>
       <li>
         <label>point</label>
@@ -2823,9 +2872,9 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>18</power>
-        <cooldownTime>2.2</cooldownTime>
-        <armorPenetration>0.3</armorPenetration>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
         <extraMeleeDamages>
           <li>
             <def>Stun</def>

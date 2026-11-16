@@ -538,6 +538,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_GravityGenerator</defName>
+    <techLevel>Spacer</techLevel>
     <label>gravity generator</label>
     <description>Graviton plating control. Gives 1 g to a ship of up to 600 cells. More generators cover larger ships. Prevents zero-g sickness and bone loss aboard.</description>
     <graphicData>
@@ -605,6 +606,7 @@
 
   <ThingDef ParentName="MealBase">
     <defName>Rimverse_ShipRation</defName>
+    <techLevel>Spacer</techLevel>
     <label>ship ration</label>
     <description>A dense, vacuum-sealed ration made to last through long voyages. Never rots.</description>
     <graphicData>
@@ -671,6 +673,7 @@
 
   <ThingDef ParentName="MealBase">
     <defName>Rimverse_AlgaePaste</defName>
+    <techLevel>Spacer</techLevel>
     <label>algae paste</label>
     <description>Green paste made from ship algae vats. Nourishing and depressing to eat. Rots in 4 days.</description>
     <graphicData>
@@ -734,6 +737,7 @@
 
   <ThingDef ParentName="MealBase">
     <defName>Rimverse_CombatRation</defName>
+    <techLevel>Spacer</techLevel>
     <label>combat ration</label>
     <description>A light ration laced with mild stimulants. Gives 10% more movement for about 4 hours. Never rots.</description>
     <graphicData>
@@ -806,6 +810,7 @@
 
   <ThingDef ParentName="MealBase">
     <defName>Rimverse_ZeroGTube</defName>
+    <techLevel>Spacer</techLevel>
     <label>zero-g meal tube</label>
     <description>A squeeze tube of blended food that can be eaten anywhere, with no need for a table. Rots in 30 days.</description>
     <graphicData>

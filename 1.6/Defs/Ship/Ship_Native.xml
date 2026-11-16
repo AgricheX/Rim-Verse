@@ -75,6 +75,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_CargoCrate</defName>
+    <techLevel>Industrial</techLevel>
     <label>cargo crate</label>
     <description>A cheap steel crate bolted to the deck. Holds 4 stacks.</description>
     <thingClass>Building_Storage</thingClass>
@@ -145,6 +146,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_HoldContainer</defName>
+    <techLevel>Industrial</techLevel>
     <label>hold container</label>
     <description>A big container for bulk goods. Holds 6 stacks per cell.</description>
     <thingClass>Building_Storage</thingClass>
@@ -214,6 +216,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_SealedLocker</defName>
+    <techLevel>Industrial</techLevel>
     <label>sealed locker</label>
     <description>A sealed locker for medicine and drugs. It stays sealed even when the room loses air. Holds 5 stacks per cell.</description>
     <thingClass>Building_Storage</thingClass>
@@ -284,6 +287,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_ColdShelf</defName>
+    <techLevel>Industrial</techLevel>
     <label>refrigerated shelf</label>
     <description>A powered shelf that keeps food from spoiling. It adds a little heat to the ship. Holds 3 stacks per cell.</description>
     <thingClass>Building_Storage</thingClass>
@@ -358,6 +362,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_VacuumContainer</defName>
+    <techLevel>Industrial</techLevel>
     <label>vacuum container</label>
     <description>A sealed container that can sit outside the hull in vacuum without anything inside going bad. Holds 4 stacks.</description>
     <thingClass>Building_Storage</thingClass>
@@ -428,6 +433,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_Vault</defName>
+    <techLevel>Industrial</techLevel>
     <label>vault</label>
     <description>A heavy safe for silver, credit chips and valuables. Holds 8 stacks and is very hard to break.</description>
     <thingClass>Building_Storage</thingClass>
@@ -504,6 +510,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_WeaponRack</defName>
+    <techLevel>Industrial</techLevel>
     <label>wall weapon rack</label>
     <description>A decorative rack that holds and shows 2 weapons.</description>
     <thingClass>Building_Storage</thingClass>
@@ -571,6 +578,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_WeaponLocker</defName>
+    <techLevel>Industrial</techLevel>
     <label>weapon locker</label>
     <description>A locked cabinet for 6 weapons.</description>
     <thingClass>Building_Storage</thingClass>
@@ -638,6 +646,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_DefenseArmory</defName>
+    <techLevel>Industrial</techLevel>
     <label>defense armory</label>
     <description>Holds 12 weapons. When enemies are on the map, unarmed colonists nearby take a weapon on their own and drop it back when the danger is over.</description>
     <thingClass>Building_Storage</thingClass>
@@ -707,6 +716,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_RelicDisplay</defName>
+    <techLevel>Industrial</techLevel>
     <label>relic display</label>
     <description>A lit case that shows off a single weapon or relic. Very beautiful.</description>
     <thingClass>Building_Storage</thingClass>
@@ -776,6 +786,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_HydroSemi</defName>
+    <techLevel>Industrial</techLevel>
     <label>semi-automatic hydroponics bay</label>
     <description>Plants and tends its own crops. A colonist still has to harvest.</description>
     <thingClass>Rimverse.Building_RimverseHydroponics</thingClass>
@@ -830,6 +841,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_HydroAuto</defName>
+    <techLevel>Industrial</techLevel>
     <label>automatic hydroponics bay</label>
     <description>Plants, harvests and sends the crop to the nearest storage on its own.</description>
     <thingClass>Rimverse.Building_RimverseHydroponics</thingClass>
@@ -886,6 +898,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_ClosedGarden</defName>
+    <techLevel>Industrial</techLevel>
     <label>closed-cycle garden</label>
     <description>A sealed garden that runs on its own, grows in zero gravity, makes a little air and eases cabin fever.</description>
     <thingClass>Rimverse.Building_RimverseHydroponics</thingClass>
@@ -949,6 +962,7 @@
 
   <ThingDef ParentName="BedWithQualityBase">
     <defName>Rimverse_AutoMedPod</defName>
+    <techLevel>Industrial</techLevel>
     <label>automatic medical pod</label>
     <description>A sealed medical bed with surgical arms. It tends the wounds and illnesses of whoever lies in it every hour, without a doctor or medicine.</description>
     <graphicData>
@@ -1004,6 +1018,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_TradeDropSpot</defName>
+    <techLevel>Spacer</techLevel>
     <label>trade drop spot</label>
     <description>Orbital traders drop the goods you buy here.</description>
     <graphicData>
@@ -1022,10 +1037,14 @@
       <isEdifice>false</isEdifice>
     </building>
     <designationCategory>Misc</designationCategory>
+      <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_MaintenanceBay</defName>
+    <techLevel>Industrial</techLevel>
     <label>maintenance drone bay</label>
     <description>A rack of small repair drones. They fly out every hour and fix damaged hull, walls and modules of the ship they are on, without anyone lifting a tool.</description>
     <graphicData>
@@ -1068,6 +1087,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_AutoGalley</defName>
+    <techLevel>Industrial</techLevel>
     <label>automatic galley</label>
     <description>A sealed kitchen unit. Every half hour it takes raw food from the storage around it and cooks a ship meal by itself. Put shelves or the hydroponics output next to it.</description>
     <graphicData>

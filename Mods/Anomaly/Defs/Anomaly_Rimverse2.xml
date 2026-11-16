@@ -511,6 +511,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_VoidShard</defName>
+    <techLevel>Spacer</techLevel>
     <label>void shard</label>
     <description>A black splinter found where space bends around a black hole. It is cold to the touch and hums when entities are near. Collectors and researchers pay well for it.</description>
     <graphicData>
@@ -537,6 +538,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_MoonMonolith</defName>
+    <techLevel>Spacer</techLevel>
     <label>moon monolith</label>
     <description>A black pillar standing alone on a dead moon. Nobody built it. Studying it brings dark knowledge, and shadows gather around it.</description>
     <graphicData>
@@ -569,6 +571,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_ContainmentCell</defName>
+    <techLevel>Spacer</techLevel>
     <label>onboard containment cell</label>
     <description>Reinforced field plates for holding platforms aboard a ship. Each linked cell makes escapes harder.</description>
     <graphicData>
@@ -614,6 +617,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_PurgeAirlock</defName>
+    <techLevel>Spacer</techLevel>
     <label>purge airlock</label>
     <description>Blows a room's air out in one violent rush. Hostiles in the room are battered and stunned, and anyone unprotected starts to suffocate. Recharges in a day.</description>
     <graphicData>
@@ -652,6 +656,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_VoidSensor</defName>
+    <techLevel>Spacer</techLevel>
     <label>void sensor</label>
     <description>Listens for the hum of entities. Shows how many are on the map, awake or sleeping, and can send a pulse that wakes the sleepers on your terms.</description>
     <graphicData>
