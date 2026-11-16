@@ -24,11 +24,20 @@
   <Rimverse_ColonyInstallAI>Install an AI persona core as administrator</Rimverse_ColonyInstallAI>
   <Rimverse_CosmicChildren>Contains: {0} × {1}</Rimverse_CosmicChildren>
   <Rimverse_CosmicChunk>Universe chunk: {0}</Rimverse_CosmicChunk>
+  <Rimverse_CosmicDesc_Body>A body: a single planet, moon or asteroid, with its own sky and dangers.</Rimverse_CosmicDesc_Body>
+  <Rimverse_CosmicDesc_Chunk>A universe chunk: one finite slice of an endless cosmos, holding its own web of superclusters and voids.</Rimverse_CosmicDesc_Chunk>
   <Rimverse_CosmicDesc_Cluster>A cluster: hundreds of galaxies held together by their own gravity, bathed in hot gas.</Rimverse_CosmicDesc_Cluster>
+  <Rimverse_CosmicDesc_District>A district: a few hundred light years of stars charted by the same survey.</Rimverse_CosmicDesc_District>
+  <Rimverse_CosmicDesc_Galaxy>A galaxy: hundreds of billions of stars turning around a dark heart.</Rimverse_CosmicDesc_Galaxy>
   <Rimverse_CosmicDesc_Group>A galaxy group: a handful of galaxies sharing one neighbourhood.</Rimverse_CosmicDesc_Group>
   <Rimverse_CosmicDesc_LargeGroup>A large group: a few dozen galaxies falling slowly toward each other.</Rimverse_CosmicDesc_LargeGroup>
+  <Rimverse_CosmicDesc_Sector>A sector: a wide slice of the galaxy, usually claimed by one or two great powers.</Rimverse_CosmicDesc_Sector>
+  <Rimverse_CosmicDesc_Subcell>A subcell: a cube 16 light years wide, the neighbourhood a ship can cross in days.</Rimverse_CosmicDesc_Subcell>
   <Rimverse_CosmicDesc_Supercluster>A supercluster: thousands of galaxies bound loosely along one stretch of the web.</Rimverse_CosmicDesc_Supercluster>
+  <Rimverse_CosmicDesc_Surface>A surface: the ground you can actually stand on.</Rimverse_CosmicDesc_Surface>
+  <Rimverse_CosmicDesc_System>A star system: one or more stars with their planets, moons and belts.</Rimverse_CosmicDesc_System>
   <Rimverse_CosmicDesc_Web>The cosmic web: filaments of dark matter and gas, with superclusters strung along them and great voids between.</Rimverse_CosmicDesc_Web>
+  <Rimverse_CosmicDesc_Zone>A zone: a cube 1,024 light years wide, the reach of a single regional government.</Rimverse_CosmicDesc_Zone>
   <Rimverse_CosmicFar>Far beyond the reach of any drive you have.</Rimverse_CosmicFar>
   <Rimverse_CosmicHome>Your ship is somewhere inside this.</Rimverse_CosmicHome>
   <Rimverse_CosmicLevel_Body>body</Rimverse_CosmicLevel_Body>

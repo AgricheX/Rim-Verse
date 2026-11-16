@@ -24,11 +24,20 @@
   <Rimverse_ColonyInstallAI>Instalar um núcleo de persona de IA como administrador</Rimverse_ColonyInstallAI>
   <Rimverse_CosmicChildren>Contém: {0} × {1}</Rimverse_CosmicChildren>
   <Rimverse_CosmicChunk>Pedaço do universo: {0}</Rimverse_CosmicChunk>
+  <Rimverse_CosmicDesc_Body>Um corpo: um único planeta, lua ou asteroide, com seu próprio céu e seus perigos.</Rimverse_CosmicDesc_Body>
+  <Rimverse_CosmicDesc_Chunk>Um pedaço do universo: uma fatia finita de um cosmos sem fim, com a sua própria teia de superaglomerados e vazios.</Rimverse_CosmicDesc_Chunk>
   <Rimverse_CosmicDesc_Cluster>Um aglomerado: centenas de galáxias presas pela própria gravidade, banhadas em gás quente.</Rimverse_CosmicDesc_Cluster>
+  <Rimverse_CosmicDesc_District>Um distrito: algumas centenas de anos-luz de estrelas mapeadas pelo mesmo levantamento.</Rimverse_CosmicDesc_District>
+  <Rimverse_CosmicDesc_Galaxy>Uma galáxia: centenas de bilhões de estrelas girando em torno de um coração escuro.</Rimverse_CosmicDesc_Galaxy>
   <Rimverse_CosmicDesc_Group>Um grupo de galáxias: um punhado de galáxias que dividem a mesma vizinhança.</Rimverse_CosmicDesc_Group>
   <Rimverse_CosmicDesc_LargeGroup>Um grupo grande: algumas dezenas de galáxias caindo devagar umas em direção às outras.</Rimverse_CosmicDesc_LargeGroup>
+  <Rimverse_CosmicDesc_Sector>Um setor: uma fatia larga da galáxia, normalmente reivindicada por uma ou duas grandes potências.</Rimverse_CosmicDesc_Sector>
+  <Rimverse_CosmicDesc_Subcell>Uma subcélula: um cubo de 16 anos-luz de lado, a vizinhança que uma nave cruza em dias.</Rimverse_CosmicDesc_Subcell>
   <Rimverse_CosmicDesc_Supercluster>Um superaglomerado: milhares de galáxias ligadas de leve ao longo de um trecho da teia.</Rimverse_CosmicDesc_Supercluster>
+  <Rimverse_CosmicDesc_Surface>Uma superfície: o chão em que dá para pisar de verdade.</Rimverse_CosmicDesc_Surface>
+  <Rimverse_CosmicDesc_System>Um sistema estelar: uma ou mais estrelas com seus planetas, luas e cinturões.</Rimverse_CosmicDesc_System>
   <Rimverse_CosmicDesc_Web>A teia cósmica: filamentos de matéria escura e gás, com superaglomerados presos a eles e grandes vazios entre eles.</Rimverse_CosmicDesc_Web>
+  <Rimverse_CosmicDesc_Zone>Uma zona: um cubo de 1.024 anos-luz de lado, o alcance de um único governo regional.</Rimverse_CosmicDesc_Zone>
   <Rimverse_CosmicFar>Muito além do alcance de qualquer propulsor que você tem.</Rimverse_CosmicFar>
   <Rimverse_CosmicHome>Sua nave está em algum lugar aqui dentro.</Rimverse_CosmicHome>
   <Rimverse_CosmicLevel_Body>corpo</Rimverse_CosmicLevel_Body>
