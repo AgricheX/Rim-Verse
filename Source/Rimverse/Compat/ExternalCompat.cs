@@ -28,17 +28,17 @@ namespace Rimverse
         public static bool WorldDomination => Any("tsa.worlddomination", "tsa.worlddominationexperimental");
         public static bool VanillaPsycasts => Any("vanillaexpanded.vpsycastse");
 
-        public static readonly string[] MapGenMods =
+        public static readonly string[] MapGenMods = new[]
         {
             "cain.mineshaft", "chuiu.greenworld", "koth.realisticplanets1.6", "m00nl1ght.geologicallandforms", "m00nl1ght.mappreview",
             "oblitus.mylittleplanet", "sarg.alphaprefabs", "trigger.cellprefabs", "zal.prefabs", "park.sundial", "park.desrtstorm",
             "evileyeguy.custombaseframework", "we1tall.depths"
-        };
+        }.Concat(CompatRegistry.Known.Where(kv => kv.Value == CompatGroup.MapGen).Select(kv => kv.Key)).Distinct().ToArray();
 
-        public static readonly string[] OrbitalTraderMods =
+        public static readonly string[] OrbitalTraderMods = new[]
         {
             "veltaris.mechcrate", "teiwaz.gtgtradercore", "teiwaz.aot", "teiwaz.oot", "shunter.bettertradersguild", "arakos.callatrader.acat"
-        };
+        }.Concat(CompatRegistry.Known.Where(kv => kv.Value == CompatGroup.OrbitalTraders).Select(kv => kv.Key)).Distinct().ToArray();
 
         public static IEnumerable<string> ActiveIds(IEnumerable<string> ids) => ids.Where(ModCompat.IsActive);
     }

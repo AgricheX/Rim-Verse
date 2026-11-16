@@ -18,6 +18,7 @@
     <category>Interface</category>
     <disableIfModActive>
       <li>sarg.timecontrol</li>
+      <li>sarg.smartspeed</li>
       <li>Mlie.UltraSpeed</li>
     </disableIfModActive>
   </Rimverse.QolFeatureDef>

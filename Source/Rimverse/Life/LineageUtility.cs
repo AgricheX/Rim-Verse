@@ -63,6 +63,7 @@ namespace Rimverse
         public static void TryApplyFromFaction(Pawn pawn)
         {
             if (!RimverseMod.Settings.lineagesEnabled || pawn?.Faction == null || !pawn.RaceProps.Humanlike) return;
+            if (CompatActions.HarRace(pawn)) return;
             GameComponent_Civilizations gc = GameComponent_Civilizations.Instance;
             if (gc?.civilizations == null) return;
             Civilization civ = gc.civilizations.FirstOrDefault(c => c.faction == pawn.Faction);

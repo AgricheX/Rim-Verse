@@ -252,6 +252,11 @@ namespace Rimverse
                 c.playerStateSince = Find.TickManager.TicksGame;
                 return c.faction;
             }
+            if (CompatActions.TryLinkForeignFaction(c))
+            {
+                SetPlayerState(c, c.faction.HostileTo(Faction.OfPlayer) ? DiploState.War : c.playerState);
+                return c.faction;
+            }
             FactionDef def = CivPreSpace.FactionFor(c) ?? (c.Hostile ? RimverseDefOf.Rimverse_SpacePirates : RimverseDefOf.Rimverse_SpaceCiv);
             Faction f = FactionGenerator.NewGeneratedFaction(new FactionGeneratorParms(def));
             f.Name = c.Name;
