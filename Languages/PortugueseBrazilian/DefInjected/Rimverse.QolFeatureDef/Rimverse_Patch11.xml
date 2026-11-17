@@ -20,12 +20,18 @@
   <Rimverse_Qol_FairFriendlyFire.description>Tiros que passam por aliados de quem atira costumam errá-los, e erram mais quanto melhor o atirador. O alvo escolhido não muda.</Rimverse_Qol_FairFriendlyFire.description>
   <Rimverse_Qol_FollowPawn.label>seguir um colono</Rimverse_Qol_FollowPawn.label>
   <Rimverse_Qol_FollowPawn.description>Um botão nos colonos faz a câmera segui-los pelo mapa até você desligar.</Rimverse_Qol_FollowPawn.description>
+  <Rimverse_Qol_InstantCaravan.label>caravana instantânea quando é seguro</Rimverse_Qol_InstantCaravan.label>
+  <Rimverse_Qol_InstantCaravan.description>Quando nenhum inimigo ameaça o mapa, um botão na janela de caravana forma e envia a caravana na hora.</Rimverse_Qol_InstantCaravan.description>
   <Rimverse_Qol_LinkedPlanters.label>canteiros ligados</Rimverse_Qol_LinkedPlanters.label>
   <Rimverse_Qol_LinkedPlanters.description>Um botão na hidroponia e nos canteiros copia a planta escolhida para todos os canteiros ligados do mesmo tipo.</Rimverse_Qol_LinkedPlanters.description>
   <Rimverse_Qol_MovePatient.label>mover paciente</Rimverse_Qol_MovePatient.label>
   <Rimverse_Qol_MovePatient.description>Clique com o botão direito em uma cama livre com um médico selecionado para levar um paciente até ela.</Rimverse_Qol_MovePatient.description>
+  <Rimverse_Qol_MultiHaul.label>pegar e carregar</Rimverse_Qol_MultiHaul.label>
+  <Rimverse_Qol_MultiHaul.description>Quem carrega pega até seis itens próximos no inventário numa viagem só e deixa cada um no seu estoque.</Rimverse_Qol_MultiHaul.description>
   <Rimverse_Qol_NoMaxBills.label>sem limite de ordens</Rimverse_Qol_NoMaxBills.label>
   <Rimverse_Qol_NoMaxBills.description>As bancadas aceitam até 999 ordens em vez de 15.</Rimverse_Qol_NoMaxBills.description>
+  <Rimverse_Qol_PutHere.label>colocar ali mesmo</Rimverse_Qol_PutHere.label>
+  <Rimverse_Qol_PutHere.description>Clique com o botão direito em um item com um colono selecionado e depois em uma célula: o item é levado exatamente para lá.</Rimverse_Qol_PutHere.description>
   <Rimverse_Qol_QuickSave.label>salvamento rápido</Rimverse_Qol_QuickSave.label>
   <Rimverse_Qol_QuickSave.description>Uma tecla (F6 por padrão) salva o jogo na hora, com o nome da colônia e a data.</Rimverse_Qol_QuickSave.description>
   <Rimverse_Qol_QuickStockpile.label>estoque rápido de carga</Rimverse_Qol_QuickStockpile.label>

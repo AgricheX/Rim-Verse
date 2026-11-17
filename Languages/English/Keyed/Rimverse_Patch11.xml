@@ -113,11 +113,14 @@ Game ticks: {3}</Rimverse_QolDateTip>
   <Rimverse_QolFollowDesc>Keep the camera on this colonist until you turn it off.</Rimverse_QolFollowDesc>
   <Rimverse_QolGaugeInspect>Room temperature: {0}</Rimverse_QolGaugeInspect>
   <Rimverse_QolImportSettings>Import settings from the file</Rimverse_QolImportSettings>
+  <Rimverse_QolInstantCaravan>Send right away</Rimverse_QolInstantCaravan>
+  <Rimverse_QolInstantCaravanDesc>The map is safe: the caravan forms and leaves at once, without packing.</Rimverse_QolInstantCaravanDesc>
   <Rimverse_QolLinkPlanters>Link planters</Rimverse_QolLinkPlanters>
   <Rimverse_QolLinkPlantersDesc>Copy this plant to every connected planter of the same kind.</Rimverse_QolLinkPlantersDesc>
   <Rimverse_QolLinkPlantersDone>{0} planters now grow the same plant.</Rimverse_QolLinkPlantersDone>
   <Rimverse_QolMovePatient>Move {0} to {1} ({2})</Rimverse_QolMovePatient>
   <Rimverse_QolNeverRots>does not rot here</Rimverse_QolNeverRots>
+  <Rimverse_QolPutHere>Carry {0} to a chosen spot</Rimverse_QolPutHere>
   <Rimverse_QolQuickSaved>Game saved: {0}</Rimverse_QolQuickSaved>
   <Rimverse_QolQuickStockpile>Room stockpile</Rimverse_QolQuickStockpile>
   <Rimverse_QolQuickStockpileDesc>Turn every free cell of this room into a stockpile.</Rimverse_QolQuickStockpileDesc>

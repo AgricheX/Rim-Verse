@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_MultiHaul</defName>
+    <label>pick up and haul</label>
+    <description>Haulers pick up to six nearby items into their inventory in one trip and drop each one at its storage.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>mehni.pickupandhaul</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_PutHere</defName>
+    <label>put it there</label>
+    <description>Right-click an item with a colonist selected, then click a cell, and the item is carried to that exact spot.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>Mlie.PutItThere</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_InstantCaravan</defName>
+    <label>instant caravan when safe</label>
+    <description>When no enemy threatens the map, a button in the caravan window forms and sends the caravan at once.</description>
+    <category>Trade</category>
+    <disableIfModActive>
+      <li>Mlie.InstantCaravan</li>
+      <li>smashphil.dropoff</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <JobDef>
+    <defName>Rimverse_MultiHaul</defName>
+    <driverClass>Rimverse.JobDriver_RimverseMultiHaul</driverClass>
+    <reportString>hauling several things.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+</Defs>

@@ -113,11 +113,14 @@ Ticks de jogo: {3}</Rimverse_QolDateTip>
   <Rimverse_QolFollowDesc>Mantém a câmera neste colono até você desligar.</Rimverse_QolFollowDesc>
   <Rimverse_QolGaugeInspect>Temperatura do cômodo: {0}</Rimverse_QolGaugeInspect>
   <Rimverse_QolImportSettings>Importar opções do arquivo</Rimverse_QolImportSettings>
+  <Rimverse_QolInstantCaravan>Enviar agora</Rimverse_QolInstantCaravan>
+  <Rimverse_QolInstantCaravanDesc>O mapa está seguro: a caravana se forma e parte na hora, sem empacotar.</Rimverse_QolInstantCaravanDesc>
   <Rimverse_QolLinkPlanters>Ligar canteiros</Rimverse_QolLinkPlanters>
   <Rimverse_QolLinkPlantersDesc>Copia esta planta para todos os canteiros ligados do mesmo tipo.</Rimverse_QolLinkPlantersDesc>
   <Rimverse_QolLinkPlantersDone>{0} canteiros agora cultivam a mesma planta.</Rimverse_QolLinkPlantersDone>
   <Rimverse_QolMovePatient>Levar {0} para {1} ({2})</Rimverse_QolMovePatient>
   <Rimverse_QolNeverRots>não estraga aqui</Rimverse_QolNeverRots>
+  <Rimverse_QolPutHere>Levar {0} para um lugar escolhido</Rimverse_QolPutHere>
   <Rimverse_QolQuickSaved>Jogo salvo: {0}</Rimverse_QolQuickSaved>
   <Rimverse_QolQuickStockpile>Estoque da sala</Rimverse_QolQuickStockpile>
   <Rimverse_QolQuickStockpileDesc>Transforma todas as células livres desta sala em estoque.</Rimverse_QolQuickStockpileDesc>
