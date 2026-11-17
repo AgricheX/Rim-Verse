@@ -7,6 +7,12 @@
   <Rimverse_AsyncRescue>Vocês encontraram {0} nas salas. Ele está grato, e o povo dele também.</Rimverse_AsyncRescue>
   <Rimverse_AsyncRescueAsk>{0}, pesquisador dos viajantes assíncronos, foi engolido pelas salas bem ao lado da nave. Entre atrás dele e ele se junta a vocês.</Rimverse_AsyncRescueAsk>
   <Rimverse_AsyncRescueLabel>Pesquisador encontrado</Rimverse_AsyncRescueLabel>
+  <Rimverse_BladeCrystal0>cristal azul</Rimverse_BladeCrystal0>
+  <Rimverse_BladeCrystal1>cristal de jade</Rimverse_BladeCrystal1>
+  <Rimverse_BladeCrystal2>cristal de ametista</Rimverse_BladeCrystal2>
+  <Rimverse_BladeCrystal3>cristal de âmbar</Rimverse_BladeCrystal3>
+  <Rimverse_BladeCrystal4>cristal branco</Rimverse_BladeCrystal4>
+  <Rimverse_BladeCrystal5>cristal sangrado</Rimverse_BladeCrystal5>
   <Rimverse_BodyEccentric>Órbita excêntrica ({0}): as estações mudam muito entre perto e longe.</Rimverse_BodyEccentric>
   <Rimverse_BodyEqTemperature>Temperatura de equilíbrio: {0}</Rimverse_BodyEqTemperature>
   <Rimverse_BodyTidalLocked>Travado por maré: um lado sempre olha para a estrela.</Rimverse_BodyTidalLocked>

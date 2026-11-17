@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Rimverse_BeamBlade" or defName="Rimverse_BeamBladeShort" or defName="Rimverse_BeamBladeDouble"]</xpath>
+    <value>
+      <comps>
+        <li Class="CompProperties_Colorable" />
+        <li Class="Rimverse.CompProperties_BladeCrystal" />
+      </comps>
+    </value>
+  </Operation>
+</Patch>

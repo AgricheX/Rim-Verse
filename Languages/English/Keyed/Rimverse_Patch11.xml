@@ -7,6 +7,12 @@
   <Rimverse_AsyncRescue>You found {0} in the rooms. They are grateful, and so are their people.</Rimverse_AsyncRescue>
   <Rimverse_AsyncRescueAsk>{0}, a researcher from the asynchronous travelers, was swallowed by the rooms right next to your ship. Go in after them and they will join you.</Rimverse_AsyncRescueAsk>
   <Rimverse_AsyncRescueLabel>Researcher found</Rimverse_AsyncRescueLabel>
+  <Rimverse_BladeCrystal0>azure crystal</Rimverse_BladeCrystal0>
+  <Rimverse_BladeCrystal1>jade crystal</Rimverse_BladeCrystal1>
+  <Rimverse_BladeCrystal2>amethyst crystal</Rimverse_BladeCrystal2>
+  <Rimverse_BladeCrystal3>amber crystal</Rimverse_BladeCrystal3>
+  <Rimverse_BladeCrystal4>white crystal</Rimverse_BladeCrystal4>
+  <Rimverse_BladeCrystal5>bled crystal</Rimverse_BladeCrystal5>
   <Rimverse_BodyEccentric>Eccentric orbit ({0}): seasons swing hard between near and far.</Rimverse_BodyEccentric>
   <Rimverse_BodyEqTemperature>Equilibrium temperature: {0}</Rimverse_BodyEqTemperature>
   <Rimverse_BodyTidalLocked>Tidally locked: one side always faces the star.</Rimverse_BodyTidalLocked>
