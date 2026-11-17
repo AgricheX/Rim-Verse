@@ -20,10 +20,14 @@
   <Rimverse_Qol_FairFriendlyFire.description>Tiros que passam por aliados de quem atira costumam errá-los, e erram mais quanto melhor o atirador. O alvo escolhido não muda.</Rimverse_Qol_FairFriendlyFire.description>
   <Rimverse_Qol_FollowPawn.label>seguir um colono</Rimverse_Qol_FollowPawn.label>
   <Rimverse_Qol_FollowPawn.description>Um botão nos colonos faz a câmera segui-los pelo mapa até você desligar.</Rimverse_Qol_FollowPawn.description>
+  <Rimverse_Qol_HaulOnTheWay.label>carregar no caminho</Rimverse_Qol_HaulOnTheWay.label>
+  <Rimverse_Qol_HaulOnTheWay.description>Os colonos levam itens próximos para o estoque no caminho de mais tipos de trabalho: fabricar, construir, pesquisar, limpar, plantar, minerar e consertar. Precisa reiniciar.</Rimverse_Qol_HaulOnTheWay.description>
   <Rimverse_Qol_InstantCaravan.label>caravana instantânea quando é seguro</Rimverse_Qol_InstantCaravan.label>
   <Rimverse_Qol_InstantCaravan.description>Quando nenhum inimigo ameaça o mapa, um botão na janela de caravana forma e envia a caravana na hora.</Rimverse_Qol_InstantCaravan.description>
   <Rimverse_Qol_LinkedPlanters.label>canteiros ligados</Rimverse_Qol_LinkedPlanters.label>
   <Rimverse_Qol_LinkedPlanters.description>Um botão na hidroponia e nos canteiros copia a planta escolhida para todos os canteiros ligados do mesmo tipo.</Rimverse_Qol_LinkedPlanters.description>
+  <Rimverse_Qol_MoodColors.label>cores do humor</Rimverse_Qol_MoodColors.label>
+  <Rimverse_Qol_MoodColors.description>A palavra do humor fica vermelha perto de um colapso, amarela quando está baixa e verde quando está feliz.</Rimverse_Qol_MoodColors.description>
   <Rimverse_Qol_MovePatient.label>mover paciente</Rimverse_Qol_MovePatient.label>
   <Rimverse_Qol_MovePatient.description>Clique com o botão direito em uma cama livre com um médico selecionado para levar um paciente até ela.</Rimverse_Qol_MovePatient.description>
   <Rimverse_Qol_MultiHaul.label>pegar e carregar</Rimverse_Qol_MultiHaul.label>

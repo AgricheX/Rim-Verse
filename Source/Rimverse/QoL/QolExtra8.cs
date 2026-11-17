@@ -179,4 +179,24 @@ namespace Rimverse
             }
         }
     }
+
+    [StaticConstructorOnStartup]
+    public static class QolHaulOnTheWay
+    {
+        private static readonly string[] jobs = { "DoBill", "FinishFrame", "Research", "Clean", "Sow", "Harvest", "HarvestDesignated", "CutPlant", "Repair", "SmoothFloor", "SmoothWall", "Mine", "Deconstruct", "Uninstall", "BuildRoof", "RemoveRoof", "Refuel", "TendPatient", "FeedPatient" };
+
+        static QolHaulOnTheWay()
+        {
+            if (!QolFeatures.IsEnabled("Rimverse_Qol_HaulOnTheWay")) return;
+            int n = 0;
+            foreach (string j in jobs)
+            {
+                JobDef d = DefDatabase<JobDef>.GetNamedSilentFail(j);
+                if (d == null || d.allowOpportunisticPrefix) continue;
+                d.allowOpportunisticPrefix = true;
+                n++;
+            }
+            if (n > 0) RimverseLog.Message("Haul on the way enabled for " + n + " more kinds of work.");
+        }
+    }
 }

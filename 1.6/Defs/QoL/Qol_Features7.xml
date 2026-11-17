@@ -32,6 +32,33 @@
     </disableIfModActive>
   </Rimverse.QolFeatureDef>
 
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_HaulOnTheWay</defName>
+    <label>haul on the way</label>
+    <description>Colonists carry nearby items toward storage on their way to more kinds of work: crafting, building, research, cleaning, farming, mining and repairs. Needs a restart.</description>
+    <category>Work</category>
+    <requiresRestart>true</requiresRestart>
+    <disableIfModActive>
+      <li>CodeOptimist.JobsOfOpportunity</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_MoodColors</defName>
+    <label>mood colors</label>
+    <description>The mood word turns red near a break, yellow when low and green when happy.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Mlie.ColoredMoodBar</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <TransferableSorterDef>
+    <defName>Rimverse_ValuePerMass</defName>
+    <label>value per kg</label>
+    <comparerClass>Rimverse.TransferableComparer_ValuePerMass</comparerClass>
+  </TransferableSorterDef>
+
   <JobDef>
     <defName>Rimverse_MultiHaul</defName>
     <driverClass>Rimverse.JobDriver_RimverseMultiHaul</driverClass>
