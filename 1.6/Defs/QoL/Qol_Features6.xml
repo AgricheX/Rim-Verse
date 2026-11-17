@@ -82,6 +82,28 @@
     <category>Interface</category>
   </Rimverse.QolFeatureDef>
 
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_DeconstructFirst</defName>
+    <label>deconstruct first</label>
+    <description>Builders take down and uninstall what is marked before they build anything new. Needs a restart.</description>
+    <category>Work</category>
+    <requiresRestart>true</requiresRestart>
+    <disableIfModActive>
+      <li>dhultgren.smarterconstruction</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_TargetPriority</defName>
+    <label>turret target priority</label>
+    <description>Your turrets shoot first at enemies who are attacking your people or buildings, then at gunners, mechanoids and the most wounded.</description>
+    <category>Combat</category>
+    <disableIfModActive>
+      <li>Mlie.TargetPriority</li>
+      <li>ceteam.combatextended</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
   <KeyBindingDef>
     <defName>Rimverse_QuickSave</defName>
     <label>quick save</label>

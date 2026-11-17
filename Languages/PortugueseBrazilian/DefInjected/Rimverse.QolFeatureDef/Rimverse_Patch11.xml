@@ -8,6 +8,8 @@
   <Rimverse_Qol_CommonSense.description>Os cozinheiros limpam a cozinha suja antes de começar uma refeição.</Rimverse_Qol_CommonSense.description>
   <Rimverse_Qol_Continue.label>botão continuar</Rimverse_Qol_Continue.label>
   <Rimverse_Qol_Continue.description>Adiciona ao menu principal um botão Continuar que carrega o seu save mais recente.</Rimverse_Qol_Continue.description>
+  <Rimverse_Qol_DeconstructFirst.label>desconstruir primeiro</Rimverse_Qol_DeconstructFirst.label>
+  <Rimverse_Qol_DeconstructFirst.description>Os construtores derrubam e desinstalam o que está marcado antes de construir algo novo. Precisa reiniciar.</Rimverse_Qol_DeconstructFirst.description>
   <Rimverse_Qol_DetailedDate.label>data detalhada e dias até estragar</Rimverse_Qol_DetailedDate.label>
   <Rimverse_Qol_DetailedDate.description>Passar o mouse na data mostra a data completa com a hora, o dia do ano e os dias desde o pouso. Itens que estragam mostram quantos dias faltam no cartão de informações.</Rimverse_Qol_DetailedDate.description>
   <Rimverse_Qol_ExportSettings.label>exportar e importar opções</Rimverse_Qol_ExportSettings.label>
@@ -38,6 +40,8 @@
   <Rimverse_Qol_Sidearms.description>Colonos com uma arma branca no inventário trocam para ela quando um inimigo fica ao lado, e voltam para a arma de fogo quando a luta acaba.</Rimverse_Qol_Sidearms.description>
   <Rimverse_Qol_SmartConstruction.label>alisar paredes antes do piso</Rimverse_Qol_SmartConstruction.label>
   <Rimverse_Qol_SmartConstruction.description>O trabalho de alisar faz as paredes antes do piso, para ninguém ficar parado em piso que vai ser refeito.</Rimverse_Qol_SmartConstruction.description>
+  <Rimverse_Qol_TargetPriority.label>prioridade de alvo das torres</Rimverse_Qol_TargetPriority.label>
+  <Rimverse_Qol_TargetPriority.description>Suas torres atiram primeiro em inimigos que estão atacando sua gente ou suas construções, depois em atiradores, mecanoides e nos mais feridos.</Rimverse_Qol_TargetPriority.description>
   <Rimverse_Qol_TempGauge.label>medidor de temperatura</Rimverse_Qol_TempGauge.label>
   <Rimverse_Qol_TempGauge.description>Um pequeno medidor que você pode construir e que mostra a temperatura do cômodo direto no mapa.</Rimverse_Qol_TempGauge.description>
   <Rimverse_Qol_TreatFirst.label>tratar primeiro</Rimverse_Qol_TreatFirst.label>
