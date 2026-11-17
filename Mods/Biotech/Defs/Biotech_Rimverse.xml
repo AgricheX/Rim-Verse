@@ -22,6 +22,11 @@
     </statFactors>
     <biostatCpx>2</biostatCpx>
     <biostatMet>-1</biostatMet>
+    <modExtensions>
+      <li Class="Rimverse.GeneSpaceExtension">
+        <crushBonus>0.3</crushBonus>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -108,6 +113,12 @@
     </statOffsets>
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
+    <modExtensions>
+      <li Class="Rimverse.GeneSpaceExtension">
+        <cabinFeverFactor>0.5</cabinFeverFactor>
+        <zeroGAdapted>true</zeroGAdapted>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef>
