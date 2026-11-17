@@ -73,6 +73,19 @@ namespace Rimverse
             return list;
         }
 
+        public const double GateRangeMly = 5.0;
+
+        public static bool InGateRange(GameComponent_Universe u, int a, int b)
+        {
+            GalaxyData ga = u?.Galaxy(a);
+            GalaxyData gb = u?.Galaxy(b);
+            if (ga == null || gb == null) return false;
+            double dx = ga.groupPositionMly.x - gb.groupPositionMly.x;
+            double dz = ga.groupPositionMly.y - gb.groupPositionMly.y;
+            double dy = ga.groupHeightMly - gb.groupHeightMly;
+            return Math.Sqrt(dx * dx + dy * dy + dz * dz) <= GateRangeMly;
+        }
+
         public static bool IsGate(StarSystemId id) => GatesIn(id.galaxy).Contains(id);
 
         public static bool IsGreatGate(StarSystemId id)
@@ -89,7 +102,7 @@ namespace Rimverse
                 GameComponent_Universe u = GameComponent_Universe.Instance;
                 for (int i = 0; i < u.GalaxyCount; i++)
                 {
-                    if (i == origin.galaxy) continue;
+                    if (i == origin.galaxy || !InGateRange(u, origin.galaxy, i)) continue;
                     List<StarSystemId> other = GatesIn(i);
                     if (other.Count > 0) result.Add(other[0]);
                 }

@@ -25,6 +25,7 @@ namespace Rimverse
         public int gravityCells;
         public float sensorSensitivity;
         public float signatureFactor = 1f;
+        public float signatureAdd;
         public bool lifeSupport;
         public bool essential;
         public int warpRangeLy;
@@ -64,6 +65,7 @@ namespace Rimverse
             if (warpCapacity > 0f) yield return new StatDrawEntry(cat, "Rimverse_Stat_WarpCapacity".Translate(), warpCapacity.ToString("0"), "Rimverse_Stat_WarpCapacity_Desc".Translate(), 4845);
             if (aiPilotLevel > 0f) yield return new StatDrawEntry(cat, "Rimverse_Stat_AIPilot".Translate(), aiPilotLevel.ToString("0"), "Rimverse_Stat_AIPilot_Desc".Translate(), 4842);
             if (signatureFactor < 1f) yield return new StatDrawEntry(cat, "Rimverse_Stat_Signature".Translate(), "x" + signatureFactor.ToString("0.##"), "Rimverse_Stat_Signature_Desc".Translate(), 4841);
+            if (signatureAdd > 0f) yield return new StatDrawEntry(cat, "Rimverse_Stat_Signature".Translate(), "+" + signatureAdd.ToStringPercent(), "Rimverse_Stat_SignatureAdd_Desc".Translate(), 4840);
             if (dodgeBonus > 0f) yield return new StatDrawEntry(cat, "Rimverse_Stat_Dodge".Translate(), "+" + dodgeBonus.ToStringPercent(), "Rimverse_Stat_Dodge_Desc".Translate(), 4870);
         }
     }

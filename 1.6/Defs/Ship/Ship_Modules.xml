@@ -707,6 +707,7 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <comps>
       <li Class="Rimverse.CompProperties_ShipPart">
+        <signatureAdd>0.05</signatureAdd>
         <role>WarpDrive</role>
         <mass>15</mass>
         <warpRangeLy>6</warpRangeLy>
@@ -750,6 +751,7 @@
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <comps>
       <li Class="Rimverse.CompProperties_ShipPart">
+        <signatureAdd>0.1</signatureAdd>
         <role>WarpDrive</role>
         <mass>45</mass>
         <warpRangeLy>20</warpRangeLy>

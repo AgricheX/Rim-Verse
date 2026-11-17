@@ -300,6 +300,7 @@
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <comps>
       <li Class="Rimverse.CompProperties_ShipPart">
+        <signatureAdd>0.05</signatureAdd>
         <role>Reactor</role>
         <mass>20</mass>
         <heatPerSecond>2</heatPerSecond>
@@ -355,6 +356,7 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <comps>
       <li Class="Rimverse.CompProperties_ShipPart">
+        <signatureAdd>0.1</signatureAdd>
         <role>Reactor</role>
         <mass>30</mass>
         <heatPerSecond>4</heatPerSecond>
@@ -409,6 +411,7 @@
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <comps>
       <li Class="Rimverse.CompProperties_ShipPart">
+        <signatureAdd>0.15</signatureAdd>
         <role>Reactor</role>
         <mass>50</mass>
         <heatPerSecond>6</heatPerSecond>
