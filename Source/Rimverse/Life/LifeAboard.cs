@@ -86,7 +86,7 @@ namespace Rimverse
                 crush.Severity = Mathf.Max(0.01f, (g - limit) / 0.3f);
             }
             else Remove(p, LifeDefOf.Rimverse_GravityCrush);
-            Toggle(p, LifeDefOf.Rimverse_LowGravityClumsy, lin != null && lin.lowGravityClumsy && g < 0.8f && !GeneSpace.Any(p, e => e.noClumsy));
+            Toggle(p, LifeDefOf.Rimverse_LowGravityClumsy, (lin != null && lin.lowGravityClumsy || GeneSpace.Any(p, e => e.lowGravityClumsy)) && g < 0.8f && !GeneSpace.Any(p, e => e.noClumsy));
             Toggle(p, LifeDefOf.Rimverse_LowGravityStride, lin != null && lin.lowGravityStride && g < 0.6f);
             Toggle(p, LifeDefOf.Rimverse_DryClimate, (lin != null && lin.dryClimatePenalty || GeneSpace.Any(p, e => e.dryClimatePenalty)) && !confined && map.TileInfo != null && map.TileInfo.rainfall < 400f);
             if (confined)

@@ -11,6 +11,7 @@ namespace Rimverse
         public bool zeroGAdapted;
         public bool noClumsy;
         public bool fearOfSky;
+        public bool lowGravityClumsy;
         public bool dryClimatePenalty;
         public float waterSpeedFactor = 1f;
     }

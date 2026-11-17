@@ -11,7 +11,7 @@
     <defName>Rimverse_Gene_Gravitated</defName>
     <label>gravitated</label>
     <labelShortAdj>gravitated</labelShortAdj>
-    <description>Descendants of a heavy world. Dense muscle and thick bones let them carry much more and hit harder.</description>
+    <description>Descendants of a heavy world. Dense muscle and thick bones let them carry much more, hit harder and bear up to 1.6 g, but they move clumsily below 0.8 g.</description>
     <iconPath>Rimverse/UI/Gene/Gene_Gravitated</iconPath>
     <iconColor>(0.75,0.6,0.5)</iconColor>
     <displayCategory>Rimverse_Lineages</displayCategory>
@@ -25,6 +25,7 @@
     <modExtensions>
       <li Class="Rimverse.GeneSpaceExtension">
         <crushBonus>0.3</crushBonus>
+        <lowGravityClumsy>true</lowGravityClumsy>
       </li>
     </modExtensions>
   </GeneDef>
