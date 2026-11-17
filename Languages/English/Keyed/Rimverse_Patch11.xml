@@ -19,6 +19,9 @@
   <Rimverse_BulkheadSealed>A bulkhead sealed itself to stop the air from escaping.</Rimverse_BulkheadSealed>
   <Rimverse_CivLegitimacy>Legitimacy: {0}</Rimverse_CivLegitimacy>
   <Rimverse_CivPreSpace>A pre-space civilization: it cannot leave its world yet.</Rimverse_CivPreSpace>
+  <Rimverse_CmdMovePrisoner>Transfer to another ship</Rimverse_CmdMovePrisoner>
+  <Rimverse_CmdMovePrisonerDesc>Send this prisoner by shuttle to another of your ships or stations in the same star system. They go to a free prisoner bed if there is one.</Rimverse_CmdMovePrisonerDesc>
+  <Rimverse_CmdMovePrisonerNone>No other ship or station of yours is in this star system, or a ship is traveling.</Rimverse_CmdMovePrisonerNone>
   <Rimverse_ContractDeadline>Time left: {0}</Rimverse_ContractDeadline>
   <Rimverse_ContractGoTo>Go to {0}.</Rimverse_ContractGoTo>
   <Rimverse_ContractNone>No contract fits your situation right now.</Rimverse_ContractNone>
@@ -83,6 +86,7 @@ Alignment: {5} (Rupture -100 to Harmony +100)</Rimverse_FlowTip>
   <Rimverse_MsgEmbargoed>{0} has an embargo against you and will not trade.</Rimverse_MsgEmbargoed>
   <Rimverse_MsgFreighterHere>A {1} of {0} arrived in this system and is open for trade.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Pirates raided a freighter of {0} near {1}.</Rimverse_MsgFreighterRaided>
+  <Rimverse_MsgPrisonerMoved>{0} was transferred to {1}.</Rimverse_MsgPrisonerMoved>
   <Rimverse_MsgPrisonerSabotage>{0} sabotaged the {1} while escaping!</Rimverse_MsgPrisonerSabotage>
   <Rimverse_MsgSensorsEvaded>The sensors on {0} spotted the ambush early. The ship slipped away before it closed.</Rimverse_MsgSensorsEvaded>
   <Rimverse_PerfBackground>Space background</Rimverse_PerfBackground>

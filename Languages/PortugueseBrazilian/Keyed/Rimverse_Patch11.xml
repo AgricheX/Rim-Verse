@@ -19,6 +19,9 @@
   <Rimverse_BulkheadSealed>Uma antepara se fechou sozinha para impedir o vazamento de ar.</Rimverse_BulkheadSealed>
   <Rimverse_CivLegitimacy>Legitimidade: {0}</Rimverse_CivLegitimacy>
   <Rimverse_CivPreSpace>Civilização pré-espacial: ainda não consegue sair do seu mundo.</Rimverse_CivPreSpace>
+  <Rimverse_CmdMovePrisoner>Transferir para outra nave</Rimverse_CmdMovePrisoner>
+  <Rimverse_CmdMovePrisonerDesc>Leva este prisioneiro de lançadeira para outra nave ou estação sua no mesmo sistema estelar. Ele vai para uma cama de prisioneiro livre, se houver.</Rimverse_CmdMovePrisonerDesc>
+  <Rimverse_CmdMovePrisonerNone>Nenhuma outra nave ou estação sua está neste sistema estelar, ou uma nave está viajando.</Rimverse_CmdMovePrisonerNone>
   <Rimverse_ContractDeadline>Tempo restante: {0}</Rimverse_ContractDeadline>
   <Rimverse_ContractGoTo>Vá até {0}.</Rimverse_ContractGoTo>
   <Rimverse_ContractNone>Nenhum contrato serve pra sua situação agora.</Rimverse_ContractNone>
@@ -83,6 +86,7 @@ Alinhamento: {5} (Ruptura -100 a Harmonia +100)</Rimverse_FlowTip>
   <Rimverse_MsgEmbargoed>{0} tem um embargo contra você e não vai negociar.</Rimverse_MsgEmbargoed>
   <Rimverse_MsgFreighterHere>Um {1} de {0} chegou neste sistema e está aberto pra negócio.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Piratas saquearam um cargueiro de {0} perto de {1}.</Rimverse_MsgFreighterRaided>
+  <Rimverse_MsgPrisonerMoved>{0} foi transferido para {1}.</Rimverse_MsgPrisonerMoved>
   <Rimverse_MsgPrisonerSabotage>{0} sabotou o {1} durante a fuga!</Rimverse_MsgPrisonerSabotage>
   <Rimverse_MsgSensorsEvaded>Os sensores da {0} viram a emboscada cedo. A nave escapou antes de ela fechar.</Rimverse_MsgSensorsEvaded>
   <Rimverse_PerfBackground>Fundo do espaço</Rimverse_PerfBackground>
