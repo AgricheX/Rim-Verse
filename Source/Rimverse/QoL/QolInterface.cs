@@ -745,15 +745,14 @@ namespace Rimverse
         public static void Check()
         {
             if (Find.CurrentMap == null || Find.WindowStack == null) return;
-            if (!Event.current.control) return;
             KeyBindingDef search = DefDatabase<KeyBindingDef>.GetNamedSilentFail("Rimverse_Search");
             KeyBindingDef mini = DefDatabase<KeyBindingDef>.GetNamedSilentFail("Rimverse_Minimap");
-            if (search != null && search.KeyDownEvent && QolFeatures.IsEnabled("Rimverse_Qol_Search"))
+            if (QolKeyChords.Pressed(search) && QolFeatures.IsEnabled("Rimverse_Qol_Search"))
             {
                 if (!Find.WindowStack.IsOpen<Window_RimverseSearch>()) Find.WindowStack.Add(new Window_RimverseSearch());
                 Event.current.Use();
             }
-            if (mini != null && mini.KeyDownEvent && QolFeatures.IsEnabled("Rimverse_Qol_Minimap"))
+            if (QolKeyChords.Pressed(mini) && QolFeatures.IsEnabled("Rimverse_Qol_Minimap"))
             {
                 Window_RimverseMinimap w = Find.WindowStack.WindowOfType<Window_RimverseMinimap>();
                 if (w != null) w.Close();

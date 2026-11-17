@@ -60,7 +60,11 @@
     <label>toggle extra game speed</label>
     <category>Rimverse_Keys</category>
     <defaultKeyCodeA>Alpha4</defaultKeyCodeA>
-    <defaultModifierA>LeftShift</defaultModifierA>
+    <modExtensions>
+      <li Class="Rimverse.KeyChordExtension">
+        <modifier>Shift</modifier>
+      </li>
+    </modExtensions>
   </KeyBindingDef>
 
   <ThingDef ParentName="BuildingBase">

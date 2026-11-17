@@ -30,7 +30,7 @@ namespace Rimverse
         public override void GameComponentOnGUI()
         {
             KeyBindingDef k = DefDatabase<KeyBindingDef>.GetNamedSilentFail("Rimverse_UltraSpeed");
-            if (k == null || !k.KeyDownEvent || !QolFeatures.IsEnabled("Rimverse_Qol_ExtraSpeed")) return;
+            if (!QolKeyChords.Pressed(k) || !QolFeatures.IsEnabled("Rimverse_Qol_ExtraSpeed")) return;
             Find.TickManager.CurTimeSpeed = Find.TickManager.CurTimeSpeed == TimeSpeed.Ultrafast ? TimeSpeed.Superfast : TimeSpeed.Ultrafast;
             Event.current.Use();
         }

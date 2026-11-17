@@ -36,4 +36,35 @@ namespace Rimverse
             return Ratio(rhs).CompareTo(Ratio(lhs));
         }
     }
+
+    public enum KeyChordModifier
+    {
+        None,
+        Control,
+        Shift,
+        Alt
+    }
+
+    public class KeyChordExtension : DefModExtension
+    {
+        public KeyChordModifier modifier = KeyChordModifier.None;
+    }
+
+    public static class QolKeyChords
+    {
+        public static bool Pressed(KeyBindingDef def)
+        {
+            if (def == null || !def.KeyDownEvent) return false;
+            KeyChordExtension ext = def.GetModExtension<KeyChordExtension>();
+            if (ext == null || ext.modifier == KeyChordModifier.None) return true;
+            Event e = Event.current;
+            switch (ext.modifier)
+            {
+                case KeyChordModifier.Control: return e.control || e.command;
+                case KeyChordModifier.Shift: return e.shift;
+                case KeyChordModifier.Alt: return e.alt;
+            }
+            return true;
+        }
+    }
 }

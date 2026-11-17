@@ -270,7 +270,7 @@ namespace Rimverse
 
         public override void GameComponentOnGUI()
         {
-            if (Event.current.type == EventType.KeyDown && RimverseDefOf6.Rimverse_QuickSave != null && RimverseDefOf6.Rimverse_QuickSave.KeyDownEvent && QolFeatures.IsEnabled("Rimverse_Qol_QuickSave"))
+            if (Event.current.type == EventType.KeyDown && QolKeyChords.Pressed(RimverseDefOf6.Rimverse_QuickSave) && QolFeatures.IsEnabled("Rimverse_Qol_QuickSave"))
             {
                 Event.current.Use();
                 QolWork6.QuickSave();
