@@ -168,6 +168,7 @@ Game ticks: {3}</Rimverse_QolDateTip>
   <Rimverse_RuinResearch>The precursor ruins advanced the rare research {0}.</Rimverse_RuinResearch>
   <Rimverse_SectorSizeClass>Sector size class: {0}</Rimverse_SectorSizeClass>
   <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>
+  <Rimverse_SuitUpOnBreach>Hull breach: {0} colonists are putting on vacuum suits.</Rimverse_SuitUpOnBreach>
   <Rimverse_SurfaceCut>Map cut: {0}, {1} on a world {2} km around</Rimverse_SurfaceCut>
   <Rimverse_Tab_Performance>Performance</Rimverse_Tab_Performance>
   <Rimverse_TechSaleBlocked>Technology sale: {0}</Rimverse_TechSaleBlocked>

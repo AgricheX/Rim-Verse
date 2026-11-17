@@ -66,6 +66,13 @@
     <category>Work</category>
   </Rimverse.QolFeatureDef>
 
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_SuitUpOnBreach</defName>
+    <label>suit up on breach</label>
+    <description>When the hull is breached, colonists who are not drafted put on the nearest free vacuum suit and helmet at once.</description>
+    <category>Alerts</category>
+  </Rimverse.QolFeatureDef>
+
   <JobDef>
     <defName>Rimverse_DropForBuild</defName>
     <driverClass>Rimverse.JobDriver_RimverseDropForBuild</driverClass>

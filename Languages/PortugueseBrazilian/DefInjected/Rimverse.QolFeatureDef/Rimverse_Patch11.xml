@@ -52,6 +52,8 @@
   <Rimverse_Qol_Sidearms.description>Colonos com uma arma branca no inventário trocam para ela quando um inimigo fica ao lado, e voltam para a arma de fogo quando a luta acaba.</Rimverse_Qol_Sidearms.description>
   <Rimverse_Qol_SmartConstruction.label>alisar paredes antes do piso</Rimverse_Qol_SmartConstruction.label>
   <Rimverse_Qol_SmartConstruction.description>O trabalho de alisar faz as paredes antes do piso, para ninguém ficar parado em piso que vai ser refeito.</Rimverse_Qol_SmartConstruction.description>
+  <Rimverse_Qol_SuitUpOnBreach.label>vestir traje na brecha</Rimverse_Qol_SuitUpOnBreach.label>
+  <Rimverse_Qol_SuitUpOnBreach.description>Quando o casco é rompido, os colonos que não estão convocados vestem na hora o traje de vácuo e o capacete livres mais próximos.</Rimverse_Qol_SuitUpOnBreach.description>
   <Rimverse_Qol_TargetPriority.label>prioridade de alvo das torres</Rimverse_Qol_TargetPriority.label>
   <Rimverse_Qol_TargetPriority.description>Suas torres atiram primeiro em inimigos que estão atacando sua gente ou suas construções, depois em atiradores, mecanoides e nos mais feridos.</Rimverse_Qol_TargetPriority.description>
   <Rimverse_Qol_TempGauge.label>medidor de temperatura</Rimverse_Qol_TempGauge.label>
