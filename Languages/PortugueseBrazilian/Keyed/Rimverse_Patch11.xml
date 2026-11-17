@@ -89,6 +89,7 @@ Alinhamento: {5} (Ruptura -100 a Harmonia +100)</Rimverse_FlowTip>
   <Rimverse_PerfStreaks_Desc>Desenha rastros de estrelas em movimento enquanto a nave viaja.</Rimverse_PerfStreaks_Desc>
   <Rimverse_PerfTraffic>Tráfego orbital</Rimverse_PerfTraffic>
   <Rimverse_PerfTraffic_Desc>Desenha estações e naves em movimento ao redor de mundos habitados, mais cheio na sede da civilização.</Rimverse_PerfTraffic_Desc>
+  <Rimverse_QolAutoResearch>Os pesquisadores escolheram um novo projeto sozinhos: {0}.</Rimverse_QolAutoResearch>
   <Rimverse_QolContinue>Continuar</Rimverse_QolContinue>
   <Rimverse_QolDateTip>{0}
 Dia do ano: {1}
@@ -99,7 +100,17 @@ Ticks de jogo: {3}</Rimverse_QolDateTip>
   <Rimverse_QolFollow>Seguir</Rimverse_QolFollow>
   <Rimverse_QolFollowDesc>Mantém a câmera neste colono até você desligar.</Rimverse_QolFollowDesc>
   <Rimverse_QolGaugeInspect>Temperatura do cômodo: {0}</Rimverse_QolGaugeInspect>
+  <Rimverse_QolLinkPlanters>Ligar canteiros</Rimverse_QolLinkPlanters>
+  <Rimverse_QolLinkPlantersDesc>Copia esta planta para todos os canteiros ligados do mesmo tipo.</Rimverse_QolLinkPlantersDesc>
+  <Rimverse_QolLinkPlantersDone>{0} canteiros agora cultivam a mesma planta.</Rimverse_QolLinkPlantersDone>
+  <Rimverse_QolMovePatient>Levar {0} para {1} ({2})</Rimverse_QolMovePatient>
   <Rimverse_QolNeverRots>não estraga aqui</Rimverse_QolNeverRots>
+  <Rimverse_QolQuickStockpile>Estoque da sala</Rimverse_QolQuickStockpile>
+  <Rimverse_QolQuickStockpileDesc>Transforma todas as células livres desta sala em estoque.</Rimverse_QolQuickStockpileDesc>
+  <Rimverse_QolQuickStockpileDone>Estoque criado com {0} células.</Rimverse_QolQuickStockpileDone>
+  <Rimverse_QolQuickStockpileNoRoom>Este módulo não está dentro de uma sala fechada.</Rimverse_QolQuickStockpileNoRoom>
+  <Rimverse_QolTreatFirst>Tratar primeiro</Rimverse_QolTreatFirst>
+  <Rimverse_QolTreatFirstDesc>Os médicos tratam este colono antes de todos.</Rimverse_QolTreatFirstDesc>
   <Rimverse_RaiderKind_BountyHunters>caçadores de recompensa</Rimverse_RaiderKind_BountyHunters>
   <Rimverse_RaiderKind_Corporate>segurança corporativa</Rimverse_RaiderKind_Corporate>
   <Rimverse_RaiderKind_Fanatics>fanáticos</Rimverse_RaiderKind_Fanatics>

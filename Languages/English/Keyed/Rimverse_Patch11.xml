@@ -89,6 +89,7 @@ Alignment: {5} (Rupture -100 to Harmony +100)</Rimverse_FlowTip>
   <Rimverse_PerfStreaks_Desc>Draw moving star streaks while the ship travels.</Rimverse_PerfStreaks_Desc>
   <Rimverse_PerfTraffic>Orbital traffic</Rimverse_PerfTraffic>
   <Rimverse_PerfTraffic_Desc>Draw stations and moving ships around inhabited worlds, busiest around a civilization's seat.</Rimverse_PerfTraffic_Desc>
+  <Rimverse_QolAutoResearch>Researchers chose a new project by themselves: {0}.</Rimverse_QolAutoResearch>
   <Rimverse_QolContinue>Continue</Rimverse_QolContinue>
   <Rimverse_QolDateTip>{0}
 Day of the year: {1}
@@ -99,7 +100,17 @@ Game ticks: {3}</Rimverse_QolDateTip>
   <Rimverse_QolFollow>Follow</Rimverse_QolFollow>
   <Rimverse_QolFollowDesc>Keep the camera on this colonist until you turn it off.</Rimverse_QolFollowDesc>
   <Rimverse_QolGaugeInspect>Room temperature: {0}</Rimverse_QolGaugeInspect>
+  <Rimverse_QolLinkPlanters>Link planters</Rimverse_QolLinkPlanters>
+  <Rimverse_QolLinkPlantersDesc>Copy this plant to every connected planter of the same kind.</Rimverse_QolLinkPlantersDesc>
+  <Rimverse_QolLinkPlantersDone>{0} planters now grow the same plant.</Rimverse_QolLinkPlantersDone>
+  <Rimverse_QolMovePatient>Move {0} to {1} ({2})</Rimverse_QolMovePatient>
   <Rimverse_QolNeverRots>does not rot here</Rimverse_QolNeverRots>
+  <Rimverse_QolQuickStockpile>Room stockpile</Rimverse_QolQuickStockpile>
+  <Rimverse_QolQuickStockpileDesc>Turn every free cell of this room into a stockpile.</Rimverse_QolQuickStockpileDesc>
+  <Rimverse_QolQuickStockpileDone>Stockpile created with {0} cells.</Rimverse_QolQuickStockpileDone>
+  <Rimverse_QolQuickStockpileNoRoom>This module is not inside a closed room.</Rimverse_QolQuickStockpileNoRoom>
+  <Rimverse_QolTreatFirst>Treat first</Rimverse_QolTreatFirst>
+  <Rimverse_QolTreatFirstDesc>Doctors treat this colonist before anyone else.</Rimverse_QolTreatFirstDesc>
   <Rimverse_RaiderKind_BountyHunters>bounty hunters</Rimverse_RaiderKind_BountyHunters>
   <Rimverse_RaiderKind_Corporate>corporate security</Rimverse_RaiderKind_Corporate>
   <Rimverse_RaiderKind_Fanatics>fanatics</Rimverse_RaiderKind_Fanatics>

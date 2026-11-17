@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <Rimverse_Qol_AutoResearch.label>pesquisa automática</Rimverse_Qol_AutoResearch.label>
+  <Rimverse_Qol_AutoResearch.description>Quando nenhum projeto está escolhido, os pesquisadores escolhem sozinhos um dos três mais baratos disponíveis.</Rimverse_Qol_AutoResearch.description>
+  <Rimverse_Qol_CleaningPriority.label>prioridade de limpeza</Rimverse_Qol_CleaningPriority.label>
+  <Rimverse_Qol_CleaningPriority.description>Quem limpa começa pela cozinha e pela enfermaria, depois refeitório e sala de lazer, e só então o resto da nave.</Rimverse_Qol_CleaningPriority.description>
+  <Rimverse_Qol_CommonSense.label>limpar antes de cozinhar</Rimverse_Qol_CommonSense.label>
+  <Rimverse_Qol_CommonSense.description>Os cozinheiros limpam a cozinha suja antes de começar uma refeição.</Rimverse_Qol_CommonSense.description>
   <Rimverse_Qol_Continue.label>botão continuar</Rimverse_Qol_Continue.label>
   <Rimverse_Qol_Continue.description>Adiciona ao menu principal um botão Continuar que carrega o seu save mais recente.</Rimverse_Qol_Continue.description>
   <Rimverse_Qol_DetailedDate.label>data detalhada e dias até estragar</Rimverse_Qol_DetailedDate.label>
@@ -8,6 +14,18 @@
   <Rimverse_Qol_ExtraSpeed.description>Uma tecla (Shift+4 por padrão) liga uma quarta velocidade, mais rápida, para viagens longas entre estrelas.</Rimverse_Qol_ExtraSpeed.description>
   <Rimverse_Qol_FollowPawn.label>seguir um colono</Rimverse_Qol_FollowPawn.label>
   <Rimverse_Qol_FollowPawn.description>Um botão nos colonos faz a câmera segui-los pelo mapa até você desligar.</Rimverse_Qol_FollowPawn.description>
+  <Rimverse_Qol_LinkedPlanters.label>canteiros ligados</Rimverse_Qol_LinkedPlanters.label>
+  <Rimverse_Qol_LinkedPlanters.description>Um botão na hidroponia e nos canteiros copia a planta escolhida para todos os canteiros ligados do mesmo tipo.</Rimverse_Qol_LinkedPlanters.description>
+  <Rimverse_Qol_MovePatient.label>mover paciente</Rimverse_Qol_MovePatient.label>
+  <Rimverse_Qol_MovePatient.description>Clique com o botão direito em uma cama livre com um médico selecionado para levar um paciente até ela.</Rimverse_Qol_MovePatient.description>
+  <Rimverse_Qol_NoMaxBills.label>sem limite de ordens</Rimverse_Qol_NoMaxBills.label>
+  <Rimverse_Qol_NoMaxBills.description>As bancadas aceitam até 999 ordens em vez de 15.</Rimverse_Qol_NoMaxBills.description>
+  <Rimverse_Qol_QuickStockpile.label>estoque rápido de carga</Rimverse_Qol_QuickStockpile.label>
+  <Rimverse_Qol_QuickStockpile.description>Um botão nos módulos de carga transforma a sala inteira em estoque com um clique.</Rimverse_Qol_QuickStockpile.description>
+  <Rimverse_Qol_SmartConstruction.label>alisar paredes antes do piso</Rimverse_Qol_SmartConstruction.label>
+  <Rimverse_Qol_SmartConstruction.description>O trabalho de alisar faz as paredes antes do piso, para ninguém ficar parado em piso que vai ser refeito.</Rimverse_Qol_SmartConstruction.description>
   <Rimverse_Qol_TempGauge.label>medidor de temperatura</Rimverse_Qol_TempGauge.label>
   <Rimverse_Qol_TempGauge.description>Um pequeno medidor que você pode construir e que mostra a temperatura do cômodo direto no mapa.</Rimverse_Qol_TempGauge.description>
+  <Rimverse_Qol_TreatFirst.label>tratar primeiro</Rimverse_Qol_TreatFirst.label>
+  <Rimverse_Qol_TreatFirst.description>Um botão em cada colono marca quem deve ser tratado antes de todos.</Rimverse_Qol_TreatFirst.description>
 </LanguageData>
