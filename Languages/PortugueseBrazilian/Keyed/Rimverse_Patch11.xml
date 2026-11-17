@@ -90,6 +90,7 @@ Enquanto o cerco durar, nenhum mercador orbital chega até você, as rotas de co
   <Rimverse_MapFilterResources>Recursos</Rimverse_MapFilterResources>
   <Rimverse_MapFilterTrade>Rotas comerciais</Rimverse_MapFilterTrade>
   <Rimverse_MeterCargo>Carga</Rimverse_MeterCargo>
+  <Rimverse_Mission_Siege>cerco orbital</Rimverse_Mission_Siege>
   <Rimverse_MsgEmbargoed>{0} tem um embargo contra você e não vai negociar.</Rimverse_MsgEmbargoed>
   <Rimverse_MsgFreighterHere>Um {1} de {0} chegou neste sistema e está aberto pra negócio.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Piratas saquearam um cargueiro de {0} perto de {1}.</Rimverse_MsgFreighterRaided>
