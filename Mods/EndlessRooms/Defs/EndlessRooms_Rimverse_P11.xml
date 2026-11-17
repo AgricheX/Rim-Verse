@@ -64,9 +64,9 @@
     <description>Notes, measurements and nightmares brought back from the endless rooms. Everyone who returns adds a little to this project.</description>
     <baseCost>2500</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
-    <researchViewX>8</researchViewX>
-    <researchViewY>12</researchViewY>
+    <tab>Rimverse_SensorsTab</tab>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <Rimverse.PolicyDef>
