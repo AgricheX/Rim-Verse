@@ -4,6 +4,8 @@
   <Rimverse_Qol_AutoResearch.description>Quando nenhum projeto está escolhido, os pesquisadores escolhem sozinhos um dos três mais baratos disponíveis.</Rimverse_Qol_AutoResearch.description>
   <Rimverse_Qol_BuildFromInventory.label>construir com o inventário</Rimverse_Qol_BuildFromInventory.label>
   <Rimverse_Qol_BuildFromInventory.description>Clique com o botão direito numa planta de construção ou estrutura com um colono que carrega o material, e ele deixa tudo ali para os construtores.</Rimverse_Qol_BuildFromInventory.description>
+  <Rimverse_Qol_CallTrader.label>chamar comerciante</Rimverse_Qol_CallTrader.label>
+  <Rimverse_Qol_CallTrader.description>O console de comunicação ganha um botão para chamar um mercador orbital por 300 de prata, uma vez a cada 10 dias. Não dá durante um cerco orbital.</Rimverse_Qol_CallTrader.description>
   <Rimverse_Qol_CleaningPriority.label>prioridade de limpeza</Rimverse_Qol_CleaningPriority.label>
   <Rimverse_Qol_CleaningPriority.description>Quem limpa começa pela cozinha e pela enfermaria, depois refeitório e sala de lazer, e só então o resto da nave.</Rimverse_Qol_CleaningPriority.description>
   <Rimverse_Qol_CommonSense.label>limpar antes de cozinhar</Rimverse_Qol_CommonSense.label>
@@ -22,6 +24,8 @@
   <Rimverse_Qol_FairFriendlyFire.description>Tiros que passam por aliados de quem atira costumam errá-los, e erram mais quanto melhor o atirador. O alvo escolhido não muda.</Rimverse_Qol_FairFriendlyFire.description>
   <Rimverse_Qol_FollowPawn.label>seguir um colono</Rimverse_Qol_FollowPawn.label>
   <Rimverse_Qol_FollowPawn.description>Um botão nos colonos faz a câmera segui-los pelo mapa até você desligar.</Rimverse_Qol_FollowPawn.description>
+  <Rimverse_Qol_GoodwillPreview.label>prévia de boa vontade</Rimverse_Qol_GoodwillPreview.label>
+  <Rimverse_Qol_GoodwillPreview.description>A tela de comércio mostra sua boa vontade com a facção do mercador e, no modo presente, quanto ela vai ficar depois do presente.</Rimverse_Qol_GoodwillPreview.description>
   <Rimverse_Qol_HaulOnTheWay.label>carregar no caminho</Rimverse_Qol_HaulOnTheWay.label>
   <Rimverse_Qol_HaulOnTheWay.description>Os colonos levam itens próximos para o estoque no caminho de mais tipos de trabalho: fabricar, construir, pesquisar, limpar, plantar, minerar e consertar. Precisa reiniciar.</Rimverse_Qol_HaulOnTheWay.description>
   <Rimverse_Qol_InstantCaravan.label>caravana instantânea quando é seguro</Rimverse_Qol_InstantCaravan.label>

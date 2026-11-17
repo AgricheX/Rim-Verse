@@ -86,4 +86,21 @@
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
 
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_CallTrader</defName>
+    <label>call a trader</label>
+    <description>The comms console gets a button to call an orbital trader for 300 silver, once every 10 days. Not possible during an orbital siege.</description>
+    <category>Trade</category>
+    <disableIfModActive>
+      <li>arakos.callatrader.acat</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_GoodwillPreview</defName>
+    <label>goodwill preview</label>
+    <description>The trade screen shows your goodwill with the trader's faction, and in gift mode the goodwill you will have after the gift.</description>
+    <category>Trade</category>
+  </Rimverse.QolFeatureDef>
+
 </Defs>

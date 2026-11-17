@@ -129,8 +129,15 @@ Enquanto o cerco durar, nenhum mercador orbital chega até você, as rotas de co
   <Rimverse_PerfTraffic>Tráfego orbital</Rimverse_PerfTraffic>
   <Rimverse_PerfTraffic_Desc>Desenha estações e naves em movimento ao redor de mundos habitados, mais cheio na sede da civilização.</Rimverse_PerfTraffic_Desc>
   <Rimverse_PlagueSpread>{0} pegou a peste alienígena de {1}. Deixe os doentes em uma sala com câmara de quarentena.</Rimverse_PlagueSpread>
+  <Rimverse_PlagueStrain>cepa {0}</Rimverse_PlagueStrain>
   <Rimverse_QolAutoResearch>Os pesquisadores escolheram um novo projeto sozinhos: {0}.</Rimverse_QolAutoResearch>
   <Rimverse_QolBuildFromInventory>Trazer o material do inventário para cá</Rimverse_QolBuildFromInventory>
+  <Rimverse_QolCallTrader>Chamar comerciante</Rimverse_QolCallTrader>
+  <Rimverse_QolCallTraderDesc>Pague {0} de prata para chamar um mercador orbital. Dá para chamar um a cada {1} dias.</Rimverse_QolCallTraderDesc>
+  <Rimverse_QolCallTraderNoPower>O console de comunicação precisa de energia.</Rimverse_QolCallTraderNoPower>
+  <Rimverse_QolCallTraderNoSilver>Você precisa de {0} de prata neste mapa.</Rimverse_QolCallTraderNoSilver>
+  <Rimverse_QolCallTraderSiege>Nenhum mercador passa por um cerco orbital.</Rimverse_QolCallTraderSiege>
+  <Rimverse_QolCallTraderWait>Dá para chamar de novo em {0}.</Rimverse_QolCallTraderWait>
   <Rimverse_QolContinue>Continuar</Rimverse_QolContinue>
   <Rimverse_QolDateTip>{0}
 Dia do ano: {1}
@@ -142,6 +149,8 @@ Ticks de jogo: {3}</Rimverse_QolDateTip>
   <Rimverse_QolFollow>Seguir</Rimverse_QolFollow>
   <Rimverse_QolFollowDesc>Mantém a câmera neste colono até você desligar.</Rimverse_QolFollowDesc>
   <Rimverse_QolGaugeInspect>Temperatura do cômodo: {0}</Rimverse_QolGaugeInspect>
+  <Rimverse_QolGoodwillGift>Boa vontade: {0} → {1} ({2})</Rimverse_QolGoodwillGift>
+  <Rimverse_QolGoodwillNow>Boa vontade: {0} ({1})</Rimverse_QolGoodwillNow>
   <Rimverse_QolImportSettings>Importar opções do arquivo</Rimverse_QolImportSettings>
   <Rimverse_QolInstantCaravan>Enviar agora</Rimverse_QolInstantCaravan>
   <Rimverse_QolInstantCaravanDesc>O mapa está seguro: a caravana se forma e parte na hora, sem empacotar.</Rimverse_QolInstantCaravanDesc>

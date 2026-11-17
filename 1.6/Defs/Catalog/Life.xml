@@ -2631,6 +2631,7 @@
         <severityPerDayImmune>-0.3</severityPerDayImmune>
         <immunityPerDayNotSick>-0.06</immunityPerDayNotSick>
       </li>
+      <li Class="Rimverse.HediffCompProperties_PlanetStrain" />
       <li Class="HediffCompProperties_Discoverable">
         <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
       </li>

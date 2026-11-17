@@ -129,8 +129,15 @@ While the siege lasts, no orbital trader can reach you, trade routes through the
   <Rimverse_PerfTraffic>Orbital traffic</Rimverse_PerfTraffic>
   <Rimverse_PerfTraffic_Desc>Draw stations and moving ships around inhabited worlds, busiest around a civilization's seat.</Rimverse_PerfTraffic_Desc>
   <Rimverse_PlagueSpread>{0} caught the alien plague from {1}. Keep the sick in a room with a quarantine chamber.</Rimverse_PlagueSpread>
+  <Rimverse_PlagueStrain>strain {0}</Rimverse_PlagueStrain>
   <Rimverse_QolAutoResearch>Researchers chose a new project by themselves: {0}.</Rimverse_QolAutoResearch>
   <Rimverse_QolBuildFromInventory>Bring carried materials here</Rimverse_QolBuildFromInventory>
+  <Rimverse_QolCallTrader>Call trader</Rimverse_QolCallTrader>
+  <Rimverse_QolCallTraderDesc>Pay {0} silver to call an orbital trader. You can call one every {1} days.</Rimverse_QolCallTraderDesc>
+  <Rimverse_QolCallTraderNoPower>The comms console needs power.</Rimverse_QolCallTraderNoPower>
+  <Rimverse_QolCallTraderNoSilver>You need {0} silver on this map.</Rimverse_QolCallTraderNoSilver>
+  <Rimverse_QolCallTraderSiege>No trader comes through an orbital siege.</Rimverse_QolCallTraderSiege>
+  <Rimverse_QolCallTraderWait>You can call again in {0}.</Rimverse_QolCallTraderWait>
   <Rimverse_QolContinue>Continue</Rimverse_QolContinue>
   <Rimverse_QolDateTip>{0}
 Day of the year: {1}
@@ -142,6 +149,8 @@ Game ticks: {3}</Rimverse_QolDateTip>
   <Rimverse_QolFollow>Follow</Rimverse_QolFollow>
   <Rimverse_QolFollowDesc>Keep the camera on this colonist until you turn it off.</Rimverse_QolFollowDesc>
   <Rimverse_QolGaugeInspect>Room temperature: {0}</Rimverse_QolGaugeInspect>
+  <Rimverse_QolGoodwillGift>Goodwill: {0} → {1} ({2})</Rimverse_QolGoodwillGift>
+  <Rimverse_QolGoodwillNow>Goodwill: {0} ({1})</Rimverse_QolGoodwillNow>
   <Rimverse_QolImportSettings>Import settings from the file</Rimverse_QolImportSettings>
   <Rimverse_QolInstantCaravan>Send right away</Rimverse_QolInstantCaravan>
   <Rimverse_QolInstantCaravanDesc>The map is safe: the caravan forms and leaves at once, without packing.</Rimverse_QolInstantCaravanDesc>
