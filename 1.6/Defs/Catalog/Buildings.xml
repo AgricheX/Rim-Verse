@@ -4041,7 +4041,7 @@
     <defName>Rimverse_QuarantineChamber</defName>
     <techLevel>Industrial</techLevel>
     <label>quarantine chamber</label>
-    <description>A sealed medical cell that speeds immunity to alien plagues.</description>
+    <description>A sealed medical cell that speeds immunity to alien plagues. A room with one becomes a quarantine room: the alien plague does not spread out of it.</description>
     <graphicData>
       <texPath>Rimverse/Things/Building/Furniture/QuarantineChamber</texPath>
       <graphicClass>Graphic_Multi</graphicClass>

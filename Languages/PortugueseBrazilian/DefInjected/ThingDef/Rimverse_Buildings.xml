@@ -162,7 +162,7 @@
   <Rimverse_InfirmaryBed.label>leito de enfermaria</Rimverse_InfirmaryBed.label>
   <Rimverse_InfirmaryBed.description>Um leito médico com tiras e monitores para gravidade zero.</Rimverse_InfirmaryBed.description>
   <Rimverse_QuarantineChamber.label>câmara de quarentena</Rimverse_QuarantineChamber.label>
-  <Rimverse_QuarantineChamber.description>Uma cela médica selada que acelera a imunidade a pragas alienígenas.</Rimverse_QuarantineChamber.description>
+  <Rimverse_QuarantineChamber.description>Uma cela médica selada que acelera a imunidade a pragas alienígenas. A sala que tem uma vira sala de quarentena: a peste alienígena não se espalha para fora dela.</Rimverse_QuarantineChamber.description>
   <Rimverse_DecompressionChamber.label>câmara de descompressão</Rimverse_DecompressionChamber.label>
   <Rimverse_DecompressionChamber.description>Uma câmara de pressão que cura mais rápido as lesões de descompressão.</Rimverse_DecompressionChamber.description>
   <Rimverse_ObservationWindow.label>janela da sala de observação</Rimverse_ObservationWindow.label>

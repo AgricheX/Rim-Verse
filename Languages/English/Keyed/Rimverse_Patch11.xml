@@ -99,6 +99,7 @@ Alignment: {5} (Rupture -100 to Harmony +100)</Rimverse_FlowTip>
   <Rimverse_PerfStreaks_Desc>Draw moving star streaks while the ship travels.</Rimverse_PerfStreaks_Desc>
   <Rimverse_PerfTraffic>Orbital traffic</Rimverse_PerfTraffic>
   <Rimverse_PerfTraffic_Desc>Draw stations and moving ships around inhabited worlds, busiest around a civilization's seat.</Rimverse_PerfTraffic_Desc>
+  <Rimverse_PlagueSpread>{0} caught the alien plague from {1}. Keep the sick in a room with a quarantine chamber.</Rimverse_PlagueSpread>
   <Rimverse_QolAutoResearch>Researchers chose a new project by themselves: {0}.</Rimverse_QolAutoResearch>
   <Rimverse_QolContinue>Continue</Rimverse_QolContinue>
   <Rimverse_QolDateTip>{0}
