@@ -9,17 +9,21 @@ namespace Rimverse
     [StaticConstructorOnStartup]
     public static class CompatPatch13
     {
-        public static readonly bool Allies;
-        public static readonly bool NoForcedSlowdown;
+        private static readonly bool alliesActive;
+        private static readonly bool noForcedSlowdownActive;
+
+        public static bool Allies => alliesActive && (RimverseMod.Settings?.compatAlliesGoodwill ?? true);
+
+        public static bool NoForcedSlowdown => noForcedSlowdownActive && (RimverseMod.Settings?.compatNoForcedSlowdown ?? false);
         private static readonly string[] sealedWords = { "hazmat", "cbrn", "mopp", "gasmask", "respirator", "nbc" };
 
         static CompatPatch13()
         {
-            Allies = CompatRegistry.AnyActive(CompatGroup.Allies);
-            NoForcedSlowdown = ModCompat.IsActive("thegoosebehindtheslaughter.noforcedslowdown");
+            alliesActive = CompatRegistry.AnyActive(CompatGroup.Allies);
+            noForcedSlowdownActive = ModCompat.IsActive("thegoosebehindtheslaughter.noforcedslowdown");
             if (Allies) RimverseLog.Message("Allies mods: goodwill they spend on Rimverse civilizations now changes the civilization's opinion of you too.");
             if (NoForcedSlowdown) RimverseLog.Message("No Forced Slowdown: threats do not auto-pause while a ship is traveling.");
-            if (ModCompat.IsActive("cp.rimmunation.2.clothing")) RimmuNation();
+            if ((RimverseMod.Settings?.compatRimmuNation ?? true) && ModCompat.IsActive("cp.rimmunation.2.clothing")) RimmuNation();
         }
 
         private static void RimmuNation()

@@ -13,11 +13,13 @@ namespace Rimverse
 
         public static void Apply()
         {
-            if (CompatRegistry.AnyActive(CompatGroup.ShipVersions)) ShipVersions();
-            if (CompatRegistry.AnyActive(CompatGroup.Weapons)) Weapons();
-            if (CompatRegistry.AnyActive(CompatGroup.AnomalyExtras)) AnomalyExtras();
-            if (CompatRegistry.AnyActive(CompatGroup.Psycasts)) Psycasts();
-            if (ModCompat.IsActive("lucifer.realisticrooms"))
+            RimverseSettings s = RimverseMod.Settings;
+            if (s == null) return;
+            if (s.compatShipVersions && CompatRegistry.AnyActive(CompatGroup.ShipVersions)) ShipVersions();
+            if (s.compatWeapons && CompatRegistry.AnyActive(CompatGroup.Weapons)) Weapons();
+            if (s.compatAnomalyExtras && CompatRegistry.AnyActive(CompatGroup.AnomalyExtras)) AnomalyExtras();
+            if (s.compatPsycasts && CompatRegistry.AnyActive(CompatGroup.Psycasts)) Psycasts();
+            if (s.compatRealisticRooms && ModCompat.IsActive("lucifer.realisticrooms"))
             {
                 CrowdedCellsPerCrew = 10f;
                 RimverseLog.Message("Realistic Rooms: crowded ship threshold lowered to 10 cells per crew member.");

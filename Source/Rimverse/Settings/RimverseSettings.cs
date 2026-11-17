@@ -48,6 +48,14 @@ namespace Rimverse
         public bool odysseyIntegration = true;
         public bool combatExtendedIntegration = true;
         public bool endlessRoomsEvents = true;
+        public bool compatShipVersions = true;
+        public bool compatWeapons = true;
+        public bool compatAnomalyExtras = true;
+        public bool compatPsycasts = true;
+        public bool compatRealisticRooms = true;
+        public bool compatAlliesGoodwill = true;
+        public bool compatNoForcedSlowdown = false;
+        public bool compatRimmuNation = true;
 
         public bool IsQolEnabled(QolFeatureDef def)
         {
@@ -106,6 +114,14 @@ namespace Rimverse
             odysseyIntegration = true;
             combatExtendedIntegration = true;
             endlessRoomsEvents = true;
+            compatShipVersions = true;
+            compatWeapons = true;
+            compatAnomalyExtras = true;
+            compatPsycasts = true;
+            compatRealisticRooms = true;
+            compatAlliesGoodwill = true;
+            compatNoForcedSlowdown = false;
+            compatRimmuNation = true;
         }
 
         public override void ExposeData()
@@ -145,6 +161,14 @@ namespace Rimverse
             Scribe_Values.Look(ref odysseyIntegration, "odysseyIntegration", true);
             Scribe_Values.Look(ref combatExtendedIntegration, "combatExtendedIntegration", true);
             Scribe_Values.Look(ref endlessRoomsEvents, "endlessRoomsEvents", true);
+            Scribe_Values.Look(ref compatShipVersions, "compatShipVersions", true);
+            Scribe_Values.Look(ref compatWeapons, "compatWeapons", true);
+            Scribe_Values.Look(ref compatAnomalyExtras, "compatAnomalyExtras", true);
+            Scribe_Values.Look(ref compatPsycasts, "compatPsycasts", true);
+            Scribe_Values.Look(ref compatRealisticRooms, "compatRealisticRooms", true);
+            Scribe_Values.Look(ref compatAlliesGoodwill, "compatAlliesGoodwill", true);
+            Scribe_Values.Look(ref compatNoForcedSlowdown, "compatNoForcedSlowdown", false);
+            Scribe_Values.Look(ref compatRimmuNation, "compatRimmuNation", true);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 if (disabledQol == null) disabledQol = new HashSet<string>();

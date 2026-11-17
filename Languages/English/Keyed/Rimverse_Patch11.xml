@@ -22,6 +22,23 @@
   <Rimverse_CmdMovePrisoner>Transfer to another ship</Rimverse_CmdMovePrisoner>
   <Rimverse_CmdMovePrisonerDesc>Send this prisoner by shuttle to another of your ships or stations in the same star system. They go to a free prisoner bed if there is one.</Rimverse_CmdMovePrisonerDesc>
   <Rimverse_CmdMovePrisonerNone>No other ship or station of yours is in this star system, or a ship is traveling.</Rimverse_CmdMovePrisonerNone>
+  <Rimverse_CompatAlliesGoodwill>Allies mods: spent goodwill changes civilization opinion</Rimverse_CompatAlliesGoodwill>
+  <Rimverse_CompatAlliesGoodwill_Desc>With Allies are Helpful, Guards For Me or Raids For Me, the goodwill you spend asking a Rimverse civilization for help also lowers that civilization's opinion of you.</Rimverse_CompatAlliesGoodwill_Desc>
+  <Rimverse_CompatAnomalyExtras>Anomaly mods: entities survive vacuum</Rimverse_CompatAnomalyExtras>
+  <Rimverse_CompatAnomalyExtras_Desc>Entities from Anomaly mods survive vacuum like the base entities. Needs a restart.</Rimverse_CompatAnomalyExtras_Desc>
+  <Rimverse_CompatNoForcedSlowdown>No Forced Slowdown: no threat auto-pause while a ship travels</Rimverse_CompatNoForcedSlowdown>
+  <Rimverse_CompatNoForcedSlowdown_Desc>While one of your ships is traveling, the Rimverse pause on threats does not trigger. Off by default.</Rimverse_CompatNoForcedSlowdown_Desc>
+  <Rimverse_CompatPsycasts>Psycast mods: faster psyfocus for Flow-sensitive pawns</Rimverse_CompatPsycasts>
+  <Rimverse_CompatPsycasts_Desc>Flow-sensitive pawns regain psyfocus 10% faster. Needs a restart.</Rimverse_CompatPsycasts_Desc>
+  <Rimverse_CompatRealisticRooms>Realistic Rooms: lower crowded ship threshold</Rimverse_CompatRealisticRooms>
+  <Rimverse_CompatRealisticRooms_Desc>A ship counts as crowded below 10 cells per crew member instead of 16. Needs a restart.</Rimverse_CompatRealisticRooms_Desc>
+  <Rimverse_CompatRimmuNation>Rimmu-Nation clothing: hazmat gear seals a little</Rimverse_CompatRimmuNation>
+  <Rimverse_CompatRimmuNation_Desc>Gas masks and hazmat gear from Rimmu-Nation clothing give a small vacuum seal (+10%). Needs a restart.</Rimverse_CompatRimmuNation_Desc>
+  <Rimverse_CompatShipVersions>Ship mods: storage and hydroponics count as ship parts</Rimverse_CompatShipVersions>
+  <Rimverse_CompatShipVersions_Desc>Storage and hydroponics buildings from ship mods count as cargo and hydroponics on Rimverse ships. Needs a restart.</Rimverse_CompatShipVersions_Desc>
+  <Rimverse_CompatTweaksHeader>Adjustments for other mods (greyed out when the mod is not active; the ones that change items need a restart):</Rimverse_CompatTweaksHeader>
+  <Rimverse_CompatWeapons>Weapon mods: heavy rounds can breach the hull</Rimverse_CompatWeapons>
+  <Rimverse_CompatWeapons_Desc>Heavy and explosive rounds from weapon mods can breach the hull, like Rimverse weapons. Needs a restart.</Rimverse_CompatWeapons_Desc>
   <Rimverse_ContractDeadline>Time left: {0}</Rimverse_ContractDeadline>
   <Rimverse_ContractGoTo>Go to {0}.</Rimverse_ContractGoTo>
   <Rimverse_ContractNone>No contract fits your situation right now.</Rimverse_ContractNone>

@@ -221,6 +221,16 @@ namespace Rimverse
             Check(l, "Rimverse_OdysseyIntegration", ref s.odysseyIntegration, ModCompat.Odyssey);
             Check(l, "Rimverse_CEIntegration", ref s.combatExtendedIntegration, ModCompat.CombatExtended);
             Check(l, "Rimverse_EndlessRoomsEvents", ref s.endlessRoomsEvents, ModCompat.EndlessRooms);
+            l.GapLine();
+            l.Label("Rimverse_CompatTweaksHeader".Translate());
+            Check(l, "Rimverse_CompatShipVersions", ref s.compatShipVersions, CompatRegistry.AnyActive(CompatGroup.ShipVersions));
+            Check(l, "Rimverse_CompatWeapons", ref s.compatWeapons, CompatRegistry.AnyActive(CompatGroup.Weapons));
+            Check(l, "Rimverse_CompatAnomalyExtras", ref s.compatAnomalyExtras, CompatRegistry.AnyActive(CompatGroup.AnomalyExtras));
+            Check(l, "Rimverse_CompatPsycasts", ref s.compatPsycasts, CompatRegistry.AnyActive(CompatGroup.Psycasts));
+            Check(l, "Rimverse_CompatRealisticRooms", ref s.compatRealisticRooms, ModCompat.IsActive("lucifer.realisticrooms"));
+            Check(l, "Rimverse_CompatAlliesGoodwill", ref s.compatAlliesGoodwill, CompatRegistry.AnyActive(CompatGroup.Allies));
+            Check(l, "Rimverse_CompatNoForcedSlowdown", ref s.compatNoForcedSlowdown, ModCompat.IsActive("thegoosebehindtheslaughter.noforcedslowdown"));
+            Check(l, "Rimverse_CompatRimmuNation", ref s.compatRimmuNation, ModCompat.IsActive("cp.rimmunation.2.clothing"));
         }
     }
 }

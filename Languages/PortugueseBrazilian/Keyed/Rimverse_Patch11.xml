@@ -22,6 +22,23 @@
   <Rimverse_CmdMovePrisoner>Transferir para outra nave</Rimverse_CmdMovePrisoner>
   <Rimverse_CmdMovePrisonerDesc>Leva este prisioneiro de lançadeira para outra nave ou estação sua no mesmo sistema estelar. Ele vai para uma cama de prisioneiro livre, se houver.</Rimverse_CmdMovePrisonerDesc>
   <Rimverse_CmdMovePrisonerNone>Nenhuma outra nave ou estação sua está neste sistema estelar, ou uma nave está viajando.</Rimverse_CmdMovePrisonerNone>
+  <Rimverse_CompatAlliesGoodwill>Mods de aliados: boa vontade gasta muda a opinião da civilização</Rimverse_CompatAlliesGoodwill>
+  <Rimverse_CompatAlliesGoodwill_Desc>Com Allies are Helpful, Guards For Me ou Raids For Me, a boa vontade que você gasta pedindo ajuda a uma civilização do Rimverse também baixa a opinião dela sobre você.</Rimverse_CompatAlliesGoodwill_Desc>
+  <Rimverse_CompatAnomalyExtras>Mods do Anomaly: entidades sobrevivem ao vácuo</Rimverse_CompatAnomalyExtras>
+  <Rimverse_CompatAnomalyExtras_Desc>Entidades dos mods do Anomaly sobrevivem ao vácuo como as do jogo base. Precisa reiniciar o jogo.</Rimverse_CompatAnomalyExtras_Desc>
+  <Rimverse_CompatNoForcedSlowdown>No Forced Slowdown: sem pausa automática por ameaça com nave viajando</Rimverse_CompatNoForcedSlowdown>
+  <Rimverse_CompatNoForcedSlowdown_Desc>Enquanto uma nave sua viaja, a pausa do Rimverse por ameaça não acontece. Vem desligado.</Rimverse_CompatNoForcedSlowdown_Desc>
+  <Rimverse_CompatPsycasts>Mods de psycasts: psyfocus mais rápido para sensíveis ao Fluxo</Rimverse_CompatPsycasts>
+  <Rimverse_CompatPsycasts_Desc>Pawns sensíveis ao Fluxo recuperam psyfocus 10% mais rápido. Precisa reiniciar o jogo.</Rimverse_CompatPsycasts_Desc>
+  <Rimverse_CompatRealisticRooms>Realistic Rooms: limite menor de nave apertada</Rimverse_CompatRealisticRooms>
+  <Rimverse_CompatRealisticRooms_Desc>A nave conta como apertada abaixo de 10 células por tripulante, em vez de 16. Precisa reiniciar o jogo.</Rimverse_CompatRealisticRooms_Desc>
+  <Rimverse_CompatRimmuNation>Roupas Rimmu-Nation: hazmat veda um pouco</Rimverse_CompatRimmuNation>
+  <Rimverse_CompatRimmuNation_Desc>Máscaras de gás e roupas hazmat do Rimmu-Nation dão um pouco de vedação no vácuo (+10%). Precisa reiniciar o jogo.</Rimverse_CompatRimmuNation_Desc>
+  <Rimverse_CompatShipVersions>Mods de nave: armazenamento e hidroponia contam como peças de nave</Rimverse_CompatShipVersions>
+  <Rimverse_CompatShipVersions_Desc>Armazenamento e hidroponia dos mods de nave contam como carga e hidroponia nas naves do Rimverse. Precisa reiniciar o jogo.</Rimverse_CompatShipVersions_Desc>
+  <Rimverse_CompatTweaksHeader>Ajustes para outros mods (ficam cinza quando o mod não está ativo; os que mudam itens precisam reiniciar o jogo):</Rimverse_CompatTweaksHeader>
+  <Rimverse_CompatWeapons>Mods de armas: munição pesada pode furar o casco</Rimverse_CompatWeapons>
+  <Rimverse_CompatWeapons_Desc>Munição pesada e explosiva dos mods de armas pode furar o casco, como as armas do Rimverse. Precisa reiniciar o jogo.</Rimverse_CompatWeapons_Desc>
   <Rimverse_ContractDeadline>Tempo restante: {0}</Rimverse_ContractDeadline>
   <Rimverse_ContractGoTo>Vá até {0}.</Rimverse_ContractGoTo>
   <Rimverse_ContractNone>Nenhum contrato serve pra sua situação agora.</Rimverse_ContractNone>
