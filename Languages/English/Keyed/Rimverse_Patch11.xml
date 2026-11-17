@@ -79,6 +79,7 @@ Alignment: {5} (Rupture -100 to Harmony +100)</Rimverse_FlowTip>
   <Rimverse_MapFilterDanger>Danger</Rimverse_MapFilterDanger>
   <Rimverse_MapFilterResources>Resources</Rimverse_MapFilterResources>
   <Rimverse_MapFilterTrade>Trade routes</Rimverse_MapFilterTrade>
+  <Rimverse_MeterCargo>Cargo</Rimverse_MeterCargo>
   <Rimverse_MsgEmbargoed>{0} has an embargo against you and will not trade.</Rimverse_MsgEmbargoed>
   <Rimverse_MsgFreighterHere>A {1} of {0} arrived in this system and is open for trade.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Pirates raided a freighter of {0} near {1}.</Rimverse_MsgFreighterRaided>
@@ -182,5 +183,6 @@ Game ticks: {3}</Rimverse_QolDateTip>
   <Rimverse_WeaponHeat>Heat: {0}</Rimverse_WeaponHeat>
   <Rimverse_WeaponOverheat>{0} carried by {1} overheated and must vent before firing again.</Rimverse_WeaponOverheat>
   <Rimverse_WeaponVenting>venting</Rimverse_WeaponVenting>
+  <Rimverse_ZeroGPlantStopped>Not growing: in zero gravity only sealed hydroponics work.</Rimverse_ZeroGPlantStopped>
   <Rimverse_ZoneSizeClass>Zone size class: {0}</Rimverse_ZoneSizeClass>
 </LanguageData>

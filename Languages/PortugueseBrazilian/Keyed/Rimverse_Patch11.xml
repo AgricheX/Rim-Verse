@@ -79,6 +79,7 @@ Alinhamento: {5} (Ruptura -100 a Harmonia +100)</Rimverse_FlowTip>
   <Rimverse_MapFilterDanger>Perigo</Rimverse_MapFilterDanger>
   <Rimverse_MapFilterResources>Recursos</Rimverse_MapFilterResources>
   <Rimverse_MapFilterTrade>Rotas comerciais</Rimverse_MapFilterTrade>
+  <Rimverse_MeterCargo>Carga</Rimverse_MeterCargo>
   <Rimverse_MsgEmbargoed>{0} tem um embargo contra você e não vai negociar.</Rimverse_MsgEmbargoed>
   <Rimverse_MsgFreighterHere>Um {1} de {0} chegou neste sistema e está aberto pra negócio.</Rimverse_MsgFreighterHere>
   <Rimverse_MsgFreighterRaided>Piratas saquearam um cargueiro de {0} perto de {1}.</Rimverse_MsgFreighterRaided>
@@ -182,5 +183,6 @@ Ticks de jogo: {3}</Rimverse_QolDateTip>
   <Rimverse_WeaponHeat>Calor: {0}</Rimverse_WeaponHeat>
   <Rimverse_WeaponOverheat>A {0} de {1} superaqueceu e precisa ventilar antes de disparar de novo.</Rimverse_WeaponOverheat>
   <Rimverse_WeaponVenting>ventilando</Rimverse_WeaponVenting>
+  <Rimverse_ZeroGPlantStopped>Não cresce: em gravidade zero só a hidroponia selada funciona.</Rimverse_ZeroGPlantStopped>
   <Rimverse_ZoneSizeClass>Classe de tamanho da zona: {0}</Rimverse_ZoneSizeClass>
 </LanguageData>
