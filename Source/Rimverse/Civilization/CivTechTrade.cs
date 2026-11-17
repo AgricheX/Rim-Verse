@@ -62,7 +62,7 @@ namespace Rimverse
             ResearchProjectDef r = Offered(c).RandomElementWithFallback();
             if (r == null) return;
             if (Rand.Chance(ResearchGate.Done("Rimverse_Espionage") ? 0.75f : 0.5f)) Find.ResearchManager.FinishProject(r, false, null, false);
-            else Find.ResearchManager.AddProgress(r, r.baseCost * 0.5f);
+            else Find.ResearchManager.AddProgress(r, r.baseCost * 0.3f);
             Messages.Message("Rimverse_TechStolen".Translate(r.LabelCap, c.ShownName), MessageTypeDefOf.PositiveEvent, false);
         }
 

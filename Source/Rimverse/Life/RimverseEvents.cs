@@ -330,7 +330,7 @@ namespace Rimverse
                     return def.letterText.Formatted(body.name);
                 case "PrecursorRuin":
                     AddAnomaly(id.Key, body.index, "Rimverse_Anomaly_PrecursorRuins");
-                    CivTechTrade.RareFromRuins(300f);
+                    CivTechTrade.RareFromRuins(Rand.Range(1000f, 5000f));
                     return def.letterText.Formatted(body.name);
                 case "AncientSignal":
                     AddAnomaly(id.Key, body.index, "Rimverse_Anomaly_AncientBeacon");
