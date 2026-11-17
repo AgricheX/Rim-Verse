@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 using Verse;
 
 namespace Rimverse
@@ -14,7 +15,12 @@ namespace Rimverse
     public class GameComponent_Universe : GameComponent
     {
         public int universeSeed;
+        public float yearsInCryo;
         public string homeSystemKey;
+        public float densityFactor = -1f;
+        public int groupSize = -1;
+        public int scaleVersion;
+        private List<ScanBubble> scanBubbles = new List<ScanBubble>();
         private Dictionary<string, int> catalog = new Dictionary<string, int>();
         private Dictionary<string, string> renamedBodies = new Dictionary<string, string>();
         private Dictionary<string, int> systemCatalog = new Dictionary<string, int>();
@@ -47,12 +53,47 @@ namespace Rimverse
             return HomeSystemId.District.Equals(d);
         }
 
-        public int GalaxyCount => GalaxyGenerator.GroupSize(universeSeed);
+        public int GalaxyCount
+        {
+            get
+            {
+                EnsureScale();
+                return groupSize;
+            }
+        }
+
+        public float DensityFactor
+        {
+            get
+            {
+                EnsureScale();
+                return densityFactor;
+            }
+        }
+
+        public double AgeGyr => CosmicScale.UniverseAgeGyr(universeSeed);
+
+        public CosmicScale.HomeChain Cosmos => CosmicScale.Home(universeSeed, GalaxyCount);
+
+        private void EnsureScale()
+        {
+            if (densityFactor > 0f && groupSize > 0) return;
+            if (scaleVersion == 0 && !homeSystemKey.NullOrEmpty())
+            {
+                densityFactor = GalaxyGenerator.LegacyDensity;
+                groupSize = GalaxyGenerator.LegacyGroupSize;
+                return;
+            }
+            scaleVersion = 1;
+            densityFactor = GalaxyGenerator.SettingDensity;
+            groupSize = Mathf.Min(GalaxyGenerator.SeedGroupSize(universeSeed), GalaxyGenerator.SettingCap);
+        }
 
         public GalaxyData Galaxy(int index)
         {
             if (galaxies.TryGetValue(index, out GalaxyData g)) return g;
-            g = GalaxyGenerator.Generate(universeSeed, index);
+            double groupRadius = scaleVersion == 0 ? 1.5 : Cosmos.group.radiusMly;
+            g = GalaxyGenerator.Generate(universeSeed, index, DensityFactor, groupRadius);
             galaxies[index] = g;
             return g;
         }
@@ -71,6 +112,11 @@ namespace Rimverse
         {
             if (!homeSystemKey.NullOrEmpty()) return;
             universeSeed = Find.World?.info != null ? Find.World.info.Seed : Rand.Int;
+            scaleVersion = 1;
+            densityFactor = -1f;
+            groupSize = -1;
+            galaxies.Clear();
+            EnsureScale();
             UniverseRand rand = new UniverseRand(UniverseRand.Hash(universeSeed, 1));
             GalaxyData g = Galaxy(0);
             double angle = rand.ValueDouble * System.Math.PI * 2.0;
@@ -105,7 +151,13 @@ namespace Rimverse
 
         public static string BodyKey(StarSystemId id, int body) => id.Key + "#" + body;
 
-        public ScanLevel GetScan(StarSystemId id, int body) => catalog.TryGetValue(BodyKey(id, body), out int v) ? (ScanLevel)v : ScanLevel.Unknown;
+        public ScanLevel GetScan(StarSystemId id, int body)
+        {
+            ScanLevel own = catalog.TryGetValue(BodyKey(id, body), out int v) ? (ScanLevel)v : ScanLevel.Unknown;
+            if (own == ScanLevel.Exact) return own;
+            ScanLevel derived = BodyScanFromSystem(id);
+            return derived > own ? derived : own;
+        }
 
         public void SetScan(StarSystemId id, int body, ScanLevel level)
         {
@@ -113,6 +165,7 @@ namespace Rimverse
             if (catalog.TryGetValue(key, out int cur) && cur >= (int)level) return;
             catalog[key] = (int)level;
             if (level == ScanLevel.Exact) EmpireAnomalies.OnScanned(id, body);
+            GameComponent_RareFinds.OnBodyScanned(id, body, level);
         }
 
         public int CatalogCount => catalog.Count;
@@ -122,7 +175,20 @@ namespace Rimverse
         public ScanLevel GetSystemScan(StarSystemId id)
         {
             if (IsHome(id)) return ScanLevel.Exact;
-            return systemCatalog.TryGetValue(id.Key, out int v) ? (ScanLevel)v : ScanLevel.Unknown;
+            ScanLevel best = systemCatalog.TryGetValue(id.Key, out int v) ? (ScanLevel)v : ScanLevel.Unknown;
+            if (best == ScanLevel.Exact || scanBubbles.Count == 0) return best;
+            Vec3d pos = PositionOf(id);
+            foreach (ScanBubble b in scanBubbles)
+            {
+                if (b.galaxy == id.galaxy && b.level > best && Vec3d.Distance(b.Center, pos) <= b.radiusLy) best = b.level;
+            }
+            return best;
+        }
+
+        public ScanLevel BodyScanFromSystem(StarSystemId id)
+        {
+            ScanLevel sys = GetSystemScan(id);
+            return sys == ScanLevel.Exact ? ScanLevel.Range : sys == ScanLevel.Range ? ScanLevel.Word : ScanLevel.Unknown;
         }
 
         public void SetSystemScan(StarSystemId id, ScanLevel level)
@@ -130,11 +196,31 @@ namespace Rimverse
             if (systemCatalog.TryGetValue(id.Key, out int cur) && cur >= (int)level) return;
             systemCatalog[id.Key] = (int)level;
             IdeoEvents.NoteNewScan();
-            if (level >= ScanLevel.Range)
+            GameComponent_RareFinds.OnSystemScanned(id, level);
+        }
+
+        public void AddScanBubble(int galaxy, Vec3d center, double radiusLy, ScanLevel level)
+        {
+            if (radiusLy <= 0 || level == ScanLevel.Unknown) return;
+            foreach (ScanBubble b in scanBubbles)
             {
-                StarSystemData sys = GetSystem(id);
-                ScanLevel bodyLevel = level == ScanLevel.Exact ? ScanLevel.Range : ScanLevel.Word;
-                foreach (BodyData b in sys.bodies) SetScan(id, b.index, bodyLevel);
+                if (b.galaxy == galaxy && b.level >= level && Vec3d.Distance(b.Center, center) + radiusLy <= b.radiusLy) return;
+            }
+            scanBubbles.RemoveAll(b => b.galaxy == galaxy && b.level <= level && Vec3d.Distance(b.Center, center) + b.radiusLy <= radiusLy);
+            scanBubbles.Add(new ScanBubble { galaxy = galaxy, x = center.x, y = center.y, z = center.z, radiusLy = radiusLy, level = level });
+            IdeoEvents.NoteNewScan();
+        }
+
+        public int ScanBubbleCount => scanBubbles.Count;
+        public IReadOnlyList<ScanBubble> ScanBubbles => scanBubbles;
+
+        public double ScannedVolumeLy3
+        {
+            get
+            {
+                double v = 0;
+                foreach (ScanBubble b in scanBubbles) v += 4.0 / 3.0 * System.Math.PI * b.radiusLy * b.radiusLy * b.radiusLy;
+                return v;
             }
         }
 
@@ -170,11 +256,9 @@ namespace Rimverse
                 StarSystemId here = loc.SystemId;
                 SetSystemScan(here, ScanLevel.Range);
                 SensorReach(best, out double range, out ScanLevel level);
+                if (GameComponent_RimverseEvents.SensorsBlind) range *= 0.25;
                 if (range <= 0) continue;
-                foreach (StarEntry e in GalaxyQuery.StarsInRadius(this, here.galaxy, PositionOf(here), range))
-                {
-                    SetSystemScan(e.id, level);
-                }
+                AddScanBubble(here.galaxy, PositionOf(here), range, level);
             }
         }
 
@@ -197,16 +281,44 @@ namespace Rimverse
             Scribe_Collections.Look(ref catalog, "catalog", LookMode.Value, LookMode.Value);
             Scribe_Collections.Look(ref renamedBodies, "renamedBodies", LookMode.Value, LookMode.Value);
             Scribe_Collections.Look(ref systemCatalog, "systemCatalog", LookMode.Value, LookMode.Value);
+            Scribe_Values.Look(ref densityFactor, "densityFactor", -1f);
+            Scribe_Values.Look(ref groupSize, "groupSize", -1);
+            Scribe_Values.Look(ref scaleVersion, "scaleVersion", 0);
+            Scribe_Collections.Look(ref scanBubbles, "scanBubbles", LookMode.Deep);
+            Scribe_Values.Look(ref yearsInCryo, "yearsInCryo");
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 if (catalog == null) catalog = new Dictionary<string, int>();
                 if (renamedBodies == null) renamedBodies = new Dictionary<string, string>();
                 if (systemCatalog == null) systemCatalog = new Dictionary<string, int>();
+                if (scanBubbles == null) scanBubbles = new List<ScanBubble>();
                 cache.Clear();
                 galaxies.Clear();
                 homeIdCached = StarSystemId.Invalid;
                 GalaxyQuery.ClearCache();
             }
+        }
+    }
+
+    public class ScanBubble : IExposable
+    {
+        public int galaxy;
+        public double x;
+        public double y;
+        public double z;
+        public double radiusLy;
+        public ScanLevel level;
+
+        public Vec3d Center => new Vec3d(x, y, z);
+
+        public void ExposeData()
+        {
+            Scribe_Values.Look(ref galaxy, "galaxy");
+            Scribe_Values.Look(ref x, "x");
+            Scribe_Values.Look(ref y, "y");
+            Scribe_Values.Look(ref z, "z");
+            Scribe_Values.Look(ref radiusLy, "radiusLy");
+            Scribe_Values.Look(ref level, "level");
         }
     }
 }

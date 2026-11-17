@@ -12,7 +12,9 @@ namespace Rimverse
 
         public static float SpeedAUPerDay(RimverseShip ship) => ship.mass <= 0f ? MinSpeedAUPerDay : Mathf.Max(ship.thrust / ship.mass, MinSpeedAUPerDay);
 
-        public static float FuelCost(RimverseShip ship, float au) => FuelPerAUPer100t * au * ship.mass / 100f * RimverseMod.Settings.fuelConsumptionMultiplier;
+        public static float BaseFuelCost(RimverseShip ship, float au) => FuelPerAUPer100t * au * ship.mass / 100f * RimverseMod.Settings.fuelConsumptionMultiplier;
+
+        public static float FuelCost(RimverseShip ship, float au) => BaseFuelCost(ship, au) * ThrusterFuel.Factor(ship);
 
         public static float TravelDays(RimverseShip ship, float au) => au / SpeedAUPerDay(ship);
 
@@ -43,6 +45,7 @@ namespace Rimverse
                 Messages.Message("Rimverse_CannotTravel".Translate() + "\n- " + string.Join("\n- ", problems), ship.bridge, MessageTypeDefOf.RejectInput, false);
                 return false;
             }
+            ThrusterFuel.BurnFusionGas(ship, BaseFuelCost(ship, au));
             ShipLaunchUtility.ConsumeFuel(ship, fuel);
             int now = Find.TickManager.TicksGame;
             loc.destinationBody = dest;

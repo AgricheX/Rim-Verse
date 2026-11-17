@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Rimverse_Dropdown_Air</defName>
+    <label>air and water</label>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Rimverse_Dropdown_Cargo</defName>
+    <label>cargo and lockers</label>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Rimverse_Dropdown_Defense</defName>
+    <label>shields and cloak</label>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Rimverse_Dropdown_Heat</defName>
+    <label>heat</label>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Rimverse_Dropdown_Hull</defName>
+    <label>hull</label>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Rimverse_Dropdown_Power</defName>
+    <label>power</label>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Rimverse_Dropdown_Sensors</defName>
+    <label>sensors</label>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Rimverse_Dropdown_Thrusters</defName>
+    <label>thrusters</label>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Rimverse_Dropdown_Warp</defName>
+    <label>warp</label>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Rimverse_Dropdown_Weapons</defName>
+    <label>ship weapons</label>
+  </DesignatorDropdownGroupDef>
+
+</Defs>

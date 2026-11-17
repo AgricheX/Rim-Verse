@@ -56,8 +56,6 @@
   <Rimverse_Stat_WarpCapacity>Warp matter capacity</Rimverse_Stat_WarpCapacity>
   <Rimverse_Stat_WarpCapacity_Desc>How much warp matter this module holds.</Rimverse_Stat_WarpCapacity_Desc>
   <Rimverse_GalaxyType_Spiral>spiral</Rimverse_GalaxyType_Spiral>
-  <Rimverse_GalaxyType_BarredSpiral>barred spiral</Rimverse_GalaxyType_BarredSpiral>
-  <Rimverse_GalaxyType_Ringed>ring</Rimverse_GalaxyType_Ringed>
   <Rimverse_GalaxyType_Elliptical>elliptical</Rimverse_GalaxyType_Elliptical>
   <Rimverse_GalaxyType_DwarfSpheroidal>dwarf spheroidal</Rimverse_GalaxyType_DwarfSpheroidal>
   <Rimverse_GalaxyType_Irregular>irregular</Rimverse_GalaxyType_Irregular>

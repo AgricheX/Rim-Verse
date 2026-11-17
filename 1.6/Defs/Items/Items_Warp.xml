@@ -3,6 +3,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_WarpMatter</defName>
+    <techLevel>Spacer</techLevel>
     <label>warp matter</label>
     <description>Exotic matter refined from uranium and chemfuel. Warp drives burn it to fold space. Stored in warp tanks.</description>
     <graphicData>

@@ -22,6 +22,7 @@ namespace Rimverse
             if (defs.Count == 0) return;
             SpaceAnomalyDef pick = defs.RandomElementByWeight(d => d.commonality);
             e.anomalies.Add(new FoundAnomaly { def = pick, systemKey = key, body = body });
+            ShipThoughts.GiveMap(FleetLogic.PlayerMapIn(key), "DiscoveredAnomaly");
             BodyData b = GameComponent_Universe.Instance.GetSystem(id)?.Body(body);
             Find.LetterStack.ReceiveLetter("Rimverse_LetterAnomalyLabel".Translate(), "Rimverse_LetterAnomaly".Translate(pick.LabelCap, b?.name ?? EmpireFleetLogic.SystemName(key), pick.description), LetterDefOf.PositiveEvent);
         }

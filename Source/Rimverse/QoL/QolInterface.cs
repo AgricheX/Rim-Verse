@@ -125,6 +125,8 @@ namespace Rimverse
             title = ship != null ? ship.Label : map.Parent?.LabelCap ?? map.ToString();
             MapComponent_ShipLocation loc = MapComponent_ShipLocation.For(map);
             subtitle = ship != null ? (loc != null && !loc.OnSurface ? "Rimverse_HudInSpace".Translate().ToString() : "Rimverse_HudLanded".Translate().ToString()) : "";
+            string cut = loc?.SurfaceCutLabel;
+            if (!cut.NullOrEmpty()) subtitle = subtitle.NullOrEmpty() ? cut : subtitle + " · " + cut;
             int colonists = Mathf.Max(1, map.mapPawns.FreeColonistsSpawnedCount);
             float days = map.resourceCounter.TotalHumanEdibleNutrition / (colonists * 1.6f);
             Add("Rimverse_HudFood".Translate(), "Rimverse_HudDays".Translate(days.ToString("0.#")), -1f, days < 2f ? 2 : days < 5f ? 1 : 0, "Rimverse_HudFoodTip".Translate(colonists));
@@ -330,7 +332,7 @@ namespace Rimverse
             if (!QolFeatures.IsEnabled("Rimverse_Qol_DeepDrillAlert")) return false;
             foreach (Map m in Find.Maps)
             {
-                if (!m.IsPlayerHome) continue;
+                if (!m.IsPlayerHome || EndlessRoomsCompat.IsBackrooms(m)) continue;
                 foreach (Building b in m.listerBuildings.allBuildingsColonist)
                 {
                     CompDeepDrill d = b.TryGetComp<CompDeepDrill>();
@@ -358,7 +360,7 @@ namespace Rimverse
             if (!QolFeatures.IsEnabled("Rimverse_Qol_PowerAlerts")) return false;
             foreach (Map m in Find.Maps)
             {
-                if (!m.IsPlayerHome) continue;
+                if (!m.IsPlayerHome || EndlessRoomsCompat.IsBackrooms(m)) continue;
                 foreach (PowerNet net in m.powerNetManager.AllNetsListForReading)
                 {
                     if (net.batteryComps.Count == 0 || net.CurrentEnergyGainRate() >= 0f) continue;
@@ -743,15 +745,14 @@ namespace Rimverse
         public static void Check()
         {
             if (Find.CurrentMap == null || Find.WindowStack == null) return;
-            if (!Event.current.control) return;
             KeyBindingDef search = DefDatabase<KeyBindingDef>.GetNamedSilentFail("Rimverse_Search");
             KeyBindingDef mini = DefDatabase<KeyBindingDef>.GetNamedSilentFail("Rimverse_Minimap");
-            if (search != null && search.KeyDownEvent && QolFeatures.IsEnabled("Rimverse_Qol_Search"))
+            if (QolKeyChords.Pressed(search) && QolFeatures.IsEnabled("Rimverse_Qol_Search"))
             {
                 if (!Find.WindowStack.IsOpen<Window_RimverseSearch>()) Find.WindowStack.Add(new Window_RimverseSearch());
                 Event.current.Use();
             }
-            if (mini != null && mini.KeyDownEvent && QolFeatures.IsEnabled("Rimverse_Qol_Minimap"))
+            if (QolKeyChords.Pressed(mini) && QolFeatures.IsEnabled("Rimverse_Qol_Minimap"))
             {
                 Window_RimverseMinimap w = Find.WindowStack.WindowOfType<Window_RimverseMinimap>();
                 if (w != null) w.Close();

@@ -7,8 +7,8 @@ namespace Rimverse
 {
     public static class StarSystemGenerator
     {
-        private static readonly StarType[] StarTypes = { StarType.RedDwarf, StarType.Orange, StarType.Yellow, StarType.White, StarType.WhiteDwarf, StarType.Blue, StarType.Neutron, StarType.BlackHole };
-        private static readonly float[] StarWeights = { 75f, 12f, 7f, 3f, 2f, 0.6f, 0.3f, 0.1f };
+        private static readonly StarType[] StarTypes = { StarType.RedDwarf, StarType.Orange, StarType.Yellow, StarType.White, StarType.WhiteDwarf, StarType.Blue, StarType.Neutron, StarType.BlackHole, StarType.Pulsar };
+        private static readonly float[] StarWeights = { 75f, 12f, 7f, 3f, 2f, 0.6f, 0.2f, 0.1f, 0.1f };
         private static readonly string[] SyllA = { "ka", "ve", "or", "ta", "mi", "su", "ra", "el", "dor", "xa", "ny", "lo", "ze", "qui", "an", "be", "cy", "ith" };
         private static readonly string[] SyllB = { "ros", "nia", "lix", "tar", "mon", "dra", "vus", "phe", "rion", "sa", "ket", "lune", "gor", "bis", "tha", "ria" };
         private static readonly string[] Letters = { "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
@@ -29,7 +29,7 @@ namespace Rimverse
             float lum = Mathf.Max(0.0001f, sys.TotalLuminosity);
             sys.frostLineAU = 2.7f * Mathf.Sqrt(lum);
             int planetCount = Mathf.Clamp(Mathf.RoundToInt(1 + sys.sizeClass / 100f * 14f) + (sys.stars.Count - 1) * 2, 1, 18);
-            if (primaryType == StarType.BlackHole || primaryType == StarType.Neutron) planetCount = Mathf.Max(1, planetCount / 3);
+            if (primaryType == StarType.BlackHole || primaryType == StarType.Neutron || primaryType == StarType.Pulsar) planetCount = Mathf.Max(1, planetCount / 3);
             float orbit = rand.Range(0.15f, 0.4f) * Mathf.Sqrt(Mathf.Max(lum, 0.01f));
             List<BodyData> planets = new List<BodyData>();
             for (int i = 0; i < planetCount; i++)
@@ -61,13 +61,25 @@ namespace Rimverse
                 hw.radiusEarth = 1f;
                 hw.massEarth = 1f;
                 hw.gravity = 1f;
+                hw.densityRel = 1f;
                 hw.temperatureC = 15f;
+                hw.equilibriumC = -18f;
+                hw.tidalLocked = false;
+                hw.eccentricity = 0.02f;
+                hw.flavor = BodyFlavor.None;
                 hw.atmosphere = AtmosphereType.Breathable;
                 hw.water = 0.7f;
                 hw.homeWorld = true;
                 hw.name = homeWorldName;
             }
             planets.Sort((a, b) => a.orbitAU.CompareTo(b.orbitAU));
+            float massSun = sys.TotalMassSun;
+            UniverseRand orbitRand = new UniverseRand(UniverseRand.Hash((long)id.Seed(universeSeed), 8));
+            foreach (BodyData p in planets)
+            {
+                p.periodYears = KeplerYears(p.orbitAU, massSun);
+                p.phase = orbitRand.Range(0f, Mathf.PI * 2f);
+            }
             int letter = 0;
             foreach (BodyData p in planets)
             {
@@ -84,17 +96,47 @@ namespace Rimverse
                     FillPhysics(moon, rand, lum);
                     moon.index = sys.bodies.Count;
                     moon.name = p.name + " " + Roman[Math.Min(m, Roman.Length - 1)];
+                    moon.moonOrbitKm = p.RadiusKm * (12f + 18f * moon.moonOrbitFactor + orbitRand.Range(0f, 10f));
+                    moon.periodYears = MoonPeriodYears(moon.moonOrbitKm, p.massEarth);
+                    moon.phase = orbitRand.Range(0f, Mathf.PI * 2f);
                     sys.bodies.Add(moon);
                 }
             }
             return sys;
         }
 
+        public static float KeplerYears(float orbitAU, float massSun) => Mathf.Sqrt(Mathf.Pow(Mathf.Max(orbitAU, 0.001f), 3f) / Mathf.Max(massSun, 0.05f));
+
+        public static float MoonPeriodYears(float orbitKm, float parentMassEarth)
+        {
+            double a = orbitKm * 1000.0;
+            double gm = 3.986004418e14 * Math.Max(parentMassEarth, 0.0001f);
+            double seconds = 2.0 * Math.PI * Math.Sqrt(a * a * a / gm);
+            return (float)(seconds / 31557600.0);
+        }
+
+        private static readonly Dictionary<int, float[]> ageWeights = new Dictionary<int, float[]>();
+
+        public static float[] WeightsFor(int universeSeed)
+        {
+            if (ageWeights.TryGetValue(universeSeed, out float[] w)) return w;
+            float age = CosmicScale.AgeFactor(universeSeed);
+            w = (float[])StarWeights.Clone();
+            w[3] *= 1.2f - 0.4f * age;
+            w[4] *= 0.6f + 1.4f * age;
+            w[5] *= 1.5f - 1.0f * age;
+            w[6] *= 0.8f + 0.6f * age;
+            w[7] *= 0.8f + 0.6f * age;
+            w[8] *= 0.8f + 0.6f * age;
+            ageWeights[universeSeed] = w;
+            return w;
+        }
+
         public static StarType PrimaryTypeFor(StarSystemId id, int universeSeed, bool home)
         {
             UniverseRand r = new UniverseRand(UniverseRand.Hash((long)id.Seed(universeSeed), 7));
             if (home) return r.Chance(0.6f) ? StarType.Yellow : StarType.Orange;
-            return r.Weighted(StarTypes, StarWeights);
+            return r.Weighted(StarTypes, WeightsFor(universeSeed));
         }
 
         private static string MakeName(UniverseRand rand)
@@ -117,6 +159,7 @@ namespace Rimverse
                 case StarType.White: s.luminosity = rand.Range(1.5f, 25f); s.massSun = rand.Range(1.04f, 2.1f); s.sizeClass = rand.RangeInclusive(45, 70); break;
                 case StarType.Blue: s.luminosity = rand.Range(25f, 30000f); s.massSun = rand.Range(2.1f, 30f); s.sizeClass = rand.RangeInclusive(70, 100); break;
                 case StarType.WhiteDwarf: s.luminosity = rand.Range(0.0001f, 0.01f); s.massSun = rand.Range(0.5f, 1.2f); s.sizeClass = rand.RangeInclusive(1, 5); break;
+                case StarType.Pulsar: s.luminosity = rand.Range(0.0001f, 0.005f); s.massSun = rand.Range(1.4f, 2.1f); s.sizeClass = 2; break;
                 case StarType.Neutron: s.luminosity = rand.Range(0.00001f, 0.001f); s.massSun = rand.Range(1.4f, 2.1f); s.sizeClass = 1; break;
                 default: s.luminosity = 0f; s.massSun = rand.Range(5f, 30f); s.sizeClass = rand.RangeInclusive(1, 10); break;
             }
@@ -168,6 +211,7 @@ namespace Rimverse
             float t = sMax == sMin ? 0f : Mathf.Clamp01((b.sizeClass - sMin) / (float)(sMax - sMin));
             b.radiusEarth = Mathf.Lerp(rMin, rMax, t);
             b.massEarth = density * b.radiusEarth * b.radiusEarth * b.radiusEarth;
+            b.densityRel = density;
             b.gravity = b.type == BodyType.Belt ? 0f : density * b.radiusEarth;
             b.atmosphere = AtmosphereType.None;
             if (b.type == BodyType.GasGiant) b.atmosphere = AtmosphereType.Dense;
@@ -177,6 +221,13 @@ namespace Rimverse
             }
             float eq = 278f * Mathf.Pow(Mathf.Max(lum, 0f), 0.25f) / Mathf.Sqrt(Mathf.Max(b.orbitAU, 0.01f)) - 273f;
             float greenhouse = b.atmosphere == AtmosphereType.Dense ? 60f : b.atmosphere == AtmosphereType.Breathable ? 15f : b.atmosphere == AtmosphereType.Thin ? 5f : b.atmosphere == AtmosphereType.Toxic ? 30f : 0f;
+            b.equilibriumC = eq;
+            UniverseRand orb = new UniverseRand(UniverseRand.Hash((long)(b.orbitAU * 1000000f), b.sizeClass, (int)b.type, 7781));
+            b.eccentricity = (float)System.Math.Pow(orb.ValueDouble, 3.0) * 0.45f;
+            double fl = orb.ValueDouble;
+            bool life = b.atmosphere != AtmosphereType.None && b.type != BodyType.GasGiant;
+            b.flavor = !life ? BodyFlavor.None : fl < 0.07 ? BodyFlavor.Crystal : fl < 0.14 && b.water > 0.2f ? BodyFlavor.Fungal : fl < 0.24 && (b.atmosphere == AtmosphereType.Toxic || b.atmosphere == AtmosphereType.Thin) ? BodyFlavor.Irradiated : BodyFlavor.None;
+            b.tidalLocked = b.type != BodyType.GasGiant && b.type != BodyType.Belt && b.orbitAU < 0.25f;
             b.temperatureC = eq + greenhouse;
             if (b.atmosphere == AtmosphereType.Breathable && (b.temperatureC < -30f || b.temperatureC > 45f)) b.atmosphere = AtmosphereType.Thin;
             b.water = b.type == BodyType.Ocean ? rand.Range(0.8f, 1f) : (b.atmosphere != AtmosphereType.None && b.temperatureC > -10f && b.temperatureC < 60f ? rand.Range(0f, 0.7f) : 0f);

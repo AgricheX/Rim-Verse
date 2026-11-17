@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>Rimverse_Event_Micrometeors</defName>
+    <label>micrometeor shower</label>
+    <category>ThreatSmall</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.6</baseChance>
+    <minRefireDays>12</minRefireDays>
+    <letterLabel>Micrometeor shower</letterLabel>
+    <letterText>A swarm of micrometeors swept the hull. {0} impacts were recorded; check the damaged parts.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>Micrometeors</kind>
+        <scope>Ship</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_SolarStorm</defName>
+    <label>solar storm</label>
+    <category>ThreatSmall</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>20</minRefireDays>
+    <letterLabel>Solar storm</letterLabel>
+    <letterText>A burst of charged particles hit the ship. Electronics are disrupted and the crew took a dose of radiation. Shielding and distance help.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>SolarStorm</kind>
+        <scope>Ship</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_AirRecyclerFailure</defName>
+    <label>air recycler failure</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <letterLabel>Air recycler failure</letterLabel>
+    <letterText>The {0} broke down. Repair it before the air runs out.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>AirRecyclerFailure</kind>
+        <scope>Ship</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_FuelLeak</defName>
+    <label>fuel leak</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <letterLabel>Fuel leak</letterLabel>
+    <letterText>A fuel tank sprang a leak. Part of the fuel was lost and the area may catch fire.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>FuelLeak</kind>
+        <scope>Ship</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_HeatSpike</defName>
+    <label>heat spike</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>12</minRefireDays>
+    <letterLabel>Heat spike</letterLabel>
+    <letterText>A reactor surge pushed the ship's heat up sharply. Run the radiators or cut power before parts overheat.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>HeatSpike</kind>
+        <scope>Ship</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_GravityFailure</defName>
+    <label>gravity generator failure</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>20</minRefireDays>
+    <letterLabel>Gravity failure</letterLabel>
+    <letterText>The {0} failed. The crew is floating until it is repaired.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>GravityFailure</kind>
+        <scope>Ship</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_HoldPest</defName>
+    <label>hold pest</label>
+    <category>ThreatSmall</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>20</minRefireDays>
+    <letterLabel>Hold pests</letterLabel>
+    <letterText>{0} hold rats came out of the cargo. They chew wires and eat food.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>HoldPest</kind>
+        <scope>Ship</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_ElectricFire</defName>
+    <label>electrical fire</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>12</minRefireDays>
+    <letterLabel>Electrical fire</letterLabel>
+    <letterText>A short circuit started a fire next to the {0}.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>ElectricFire</kind>
+        <scope>Ship</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_Sabotage</defName>
+    <label>sabotage</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>25</minRefireDays>
+    <letterLabel>Sabotage</letterLabel>
+    <letterText>Someone sabotaged the {0}. Suspicion falls on {1}.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>Sabotage</kind>
+        <scope>Ship</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_DistressSignal</defName>
+    <label>distress signal</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.6</baseChance>
+    <minRefireDays>10</minRefireDays>
+    <letterLabel>Distress signal</letterLabel>
+    <letterText>A distress signal came in on the way. Survivors are dropping near the ship.</letterText>
+    <letterDef>NeutralEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>DistressSignal</kind>
+        <scope>Travel</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_DriftingShip</defName>
+    <label>drifting ship</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>12</minRefireDays>
+    <letterLabel>Drifting ship</letterLabel>
+    <letterText>The crew found a drifting hulk and pulled what could be salvaged.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>DriftingShip</kind>
+        <scope>Travel</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_DebrisField</defName>
+    <label>debris field</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>10</minRefireDays>
+    <letterLabel>Debris field</letterLabel>
+    <letterText>The ship crossed a debris field. The hull took some hits, but the crew grabbed scrap on the way.</letterText>
+    <letterDef>NeutralEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>DebrisField</kind>
+        <scope>Travel</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_WarpDeviation</defName>
+    <label>warp deviation</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <letterLabel>Warp deviation</letterLabel>
+    <letterText>A warp eddy threw the ship off course. Arrival is delayed by {0} days.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>WarpDeviation</kind>
+        <scope>Travel</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_ConvoyEscort</defName>
+    <label>convoy escort</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>20</minRefireDays>
+    <letterLabel>Convoy asks for escort</letterLabel>
+    <letterText>A merchant convoy asked for escort and paid upfront. Traders are open for business.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>ConvoyEscort</kind>
+        <scope>Travel</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_VoidWhale</defName>
+    <label>void whale</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>40</minRefireDays>
+    <letterLabel>Void whale</letterLabel>
+    <letterText>A void whale is passing by the ship. It is peaceful unless provoked.</letterText>
+    <letterDef>NeutralEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>VoidWhale</kind>
+        <scope>Travel</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_SensorNebula</defName>
+    <label>blinding nebula</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>20</minRefireDays>
+    <letterLabel>Blinding nebula</letterLabel>
+    <letterText>The ship entered a nebula that scrambles the sensors. Scan range is cut for {0} days.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>SensorNebula</kind>
+        <scope>Travel</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_Anomaly</defName>
+    <label>anomaly detected</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <letterLabel>Anomaly detected</letterLabel>
+    <letterText>Sensors picked up an anomaly near {0}. It is now in the anomaly list.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>Anomaly</kind>
+        <scope>Explore</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_PrecursorRuin</defName>
+    <label>precursor ruin</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Precursor ruin</letterLabel>
+    <letterText>Old structures were found on {0}. They are older than any known civilization.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>PrecursorRuin</kind>
+        <scope>Explore</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_AncientSignal</defName>
+    <label>ancient signal</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Ancient signal</letterLabel>
+    <letterText>A repeating signal comes from {0}. Nobody has answered it in a very long time.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>AncientSignal</kind>
+        <scope>Explore</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_AbandonedStation</defName>
+    <label>abandoned station</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>25</minRefireDays>
+    <letterLabel>Abandoned station</letterLabel>
+    <letterText>An abandoned station is orbiting {0}. It may still hold supplies.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>AbandonedStation</kind>
+        <scope>Explore</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_UncatalogedPlanet</defName>
+    <label>uncataloged planet</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>20</minRefireDays>
+    <letterLabel>Uncataloged planet</letterLabel>
+    <letterText>{0} was not in any catalog. The full survey is done and stellar data records were made.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>UncatalogedPlanet</kind>
+        <scope>Explore</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_DriftingCryoPod</defName>
+    <label>drifting cryo pod</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>25</minRefireDays>
+    <letterLabel>Drifting cryo pod</letterLabel>
+    <letterText>A cryo pod was drifting nearby. Its sleeper is coming down near the ship.</letterText>
+    <letterDef>NeutralEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>DriftingCryoPod</kind>
+        <scope>Explore</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_UnknownProbe</defName>
+    <label>unknown probe</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>25</minRefireDays>
+    <letterLabel>Unknown probe</letterLabel>
+    <letterText>An unknown probe was captured. Studying it advanced the current research.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>UnknownProbe</kind>
+        <scope>Explore</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_NewLifeWorld</defName>
+    <label>world with new life</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>40</minRefireDays>
+    <letterLabel>New life</letterLabel>
+    <letterText>{0} hosts life never seen before. Biologists will want to land.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>NewLifeWorld</kind>
+        <scope>Explore</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_DormantGate</defName>
+    <label>dormant gate</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.1</baseChance>
+    <minRefireDays>60</minRefireDays>
+    <letterLabel>Dormant gate</letterLabel>
+    <letterText>Fragments of a dormant gate were found near {0}. They were brought aboard.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>DormantGate</kind>
+        <scope>Explore</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_FirstContact</defName>
+    <label>first contact</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>20</minRefireDays>
+    <letterLabel>First contact</letterLabel>
+    <letterText>The ship made first contact with {0}.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>FirstContact</kind>
+        <scope>Civ</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_Asylum</defName>
+    <label>asylum request</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>20</minRefireDays>
+    <letterLabel>Asylum request</letterLabel>
+    <letterText>{0} fled from {1} and asked for asylum. They joined the crew; {1} is not pleased.</letterText>
+    <letterDef>NeutralEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>Asylum</kind>
+        <scope>Civ</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_VassalOffer</defName>
+    <label>vassal offer</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>40</minRefireDays>
+    <letterLabel>Vassal offer</letterLabel>
+    <letterText>{0} offers to become your vassal in exchange for protection.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>VassalOffer</kind>
+        <scope>Civ</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_Embargo</defName>
+    <label>embargo</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Embargo</letterLabel>
+    <letterText>{0} declared an embargo on you for 30 days. Their traders will not deal with you.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>Embargo</kind>
+        <scope>Civ</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_NeighborWar</defName>
+    <label>neighbor war</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>War among neighbors</letterLabel>
+    <letterText>{0} declared war on {1}.</letterText>
+    <letterDef>NeutralEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>NeighborWar</kind>
+        <scope>Civ</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_AllyCoup</defName>
+    <label>coup in an ally</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>40</minRefireDays>
+    <letterLabel>Coup</letterLabel>
+    <letterText>A coup took power in {0}. The new government is: {1}.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>AllyCoup</kind>
+        <scope>Civ</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_MassRefugees</defName>
+    <label>mass refugees</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>40</minRefireDays>
+    <letterLabel>Mass refugees</letterLabel>
+    <letterText>{0} refugees from {1} arrived and joined you.</letterText>
+    <letterDef>NeutralEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>MassRefugees</kind>
+        <scope>Civ</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_FederationInvite</defName>
+    <label>federation invite</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>40</minRefireDays>
+    <letterLabel>Federation invite</letterLabel>
+    <letterText>{0} invited you to a federation. Relations improved.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>FederationInvite</kind>
+        <scope>Civ</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_DynasticMarriage</defName>
+    <label>dynastic marriage</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.15</baseChance>
+    <minRefireDays>50</minRefireDays>
+    <letterLabel>Dynastic marriage</letterLabel>
+    <letterText>{0} came from {1} to seal a marriage alliance.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>DynasticMarriage</kind>
+        <scope>Civ</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_SpyCaught</defName>
+    <label>spy caught</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Spy caught</letterLabel>
+    <letterText>A spy from {0} was caught aboard and is now your prisoner.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>SpyCaught</kind>
+        <scope>Civ</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_Strike</defName>
+    <label>strike</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>25</minRefireDays>
+    <letterLabel>Strike</letterLabel>
+    <letterText>Workers at {0} went on strike. Production stops for some days.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>Strike</kind>
+        <scope>Colony</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_MiningBoom</defName>
+    <label>mining boom</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>25</minRefireDays>
+    <letterLabel>Mining boom</letterLabel>
+    <letterText>{0} struck a rich vein. Extra ore went to the stockpile.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>MiningBoom</kind>
+        <scope>Colony</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_Epidemic</defName>
+    <label>epidemic</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.25</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Epidemic</letterLabel>
+    <letterText>An epidemic hit {0}. The population dropped.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>Epidemic</kind>
+        <scope>Colony</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_Independence</defName>
+    <label>independence request</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>40</minRefireDays>
+    <letterLabel>Independence request</letterLabel>
+    <letterText>{0} is asking for independence. Stability dropped; keep it high or lose the colony.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>Independence</kind>
+        <scope>Colony</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_Blockade</defName>
+    <label>blockade</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>40</minRefireDays>
+    <letterLabel>Blockade</letterLabel>
+    <letterText>Hostile ships are blockading {0}. Trade and production are halted.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>Blockade</kind>
+        <scope>Colony</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>Rimverse_Event_AICoreInspection</defName>
+    <label>AI core inspection</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RimverseEvent</workerClass>
+    <baseChance>0.15</baseChance>
+    <minRefireDays>50</minRefireDays>
+    <letterLabel>AI core inspection</letterLabel>
+    <letterText>Inspectors found the AI core at {0}. Anti-AI civilizations are angry.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <modExtensions>
+      <li Class="Rimverse.RimverseEventExtension">
+        <kind>AICoreInspection</kind>
+        <scope>Colony</scope>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+</Defs>

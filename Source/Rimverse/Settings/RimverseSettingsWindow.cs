@@ -14,6 +14,7 @@ namespace Rimverse
             Ship,
             Fluxo,
             Qol,
+            Performance,
             Compat
         }
 
@@ -31,6 +32,7 @@ namespace Rimverse
                 MakeTab(Tab.Ship, "Rimverse_Tab_Ship"),
                 MakeTab(Tab.Fluxo, "Rimverse_Tab_Fluxo"),
                 MakeTab(Tab.Qol, "Rimverse_Tab_Qol"),
+                MakeTab(Tab.Performance, "Rimverse_Tab_Performance"),
                 MakeTab(Tab.Compat, "Rimverse_Tab_Compat")
             };
             Widgets.DrawMenuSection(tabRect);
@@ -47,6 +49,7 @@ namespace Rimverse
                 case Tab.Ship: DrawShip(l, s); break;
                 case Tab.Fluxo: DrawFluxo(l, s); break;
                 case Tab.Qol: DrawQol(l, s); break;
+                case Tab.Performance: DrawPerformance(l, s); break;
                 case Tab.Compat: DrawCompat(l, s); break;
             }
             lastHeight = Mathf.Max(l.CurHeight + 24f, content.height);
@@ -99,14 +102,19 @@ namespace Rimverse
             {
                 s.ResetToDefaults();
             }
+            if (QolFeatures.IsEnabled("Rimverse_Qol_ExportSettings"))
+            {
+                if (l.ButtonText("Rimverse_QolExportSettings".Translate())) QolWork6.ExportSettings();
+                if (l.ButtonText("Rimverse_QolImportSettings".Translate())) QolWork6.ImportSettings();
+            }
         }
 
         private static void DrawUniverse(Listing_Standard l, RimverseSettings s)
         {
             l.Label("Rimverse_NewGameOnly".Translate());
             l.GapLine();
-            IntSlider(l, "Rimverse_GalaxyCount", ref s.galaxyCount, 1, 20);
-            Slider(l, "Rimverse_StarDensity", ref s.starDensity, 0.02f, 1f);
+            IntSlider(l, "Rimverse_GalaxyCount", ref s.galaxyCap, 1, 32);
+            Slider(l, "Rimverse_StarDensity", ref s.starDensityFactor, 0.05f, 1f);
             l.GapLine();
             Check(l, "Rimverse_CivSimulation", ref s.civilizationSimulation);
             Slider(l, "Rimverse_CivDensity", ref s.civilizationDensity, 0.2f, 2f);
@@ -191,6 +199,21 @@ namespace Rimverse
             }
         }
 
+        private static void DrawPerformance(Listing_Standard l, RimverseSettings s)
+        {
+            Check(l, "Rimverse_PerfBackground", ref s.spaceBackground);
+            if (s.spaceBackground)
+            {
+                Slider(l, "Rimverse_PerfStars", ref s.backgroundStarFactor, 0.1f, 1f);
+                Check(l, "Rimverse_PerfMegastructures", ref s.megastructureVisuals);
+                Check(l, "Rimverse_PerfStreaks", ref s.warpStreaks);
+                Check(l, "Rimverse_PerfTraffic", ref s.orbitalTraffic);
+            }
+            Check(l, "Rimverse_PerfCityHorizon", ref s.cityHorizon);
+            l.GapLine();
+            Check(l, "Rimverse_PerfPauseMaps", ref s.pauseUnseenMaps);
+        }
+
         private static void DrawCompat(Listing_Standard l, RimverseSettings s)
         {
             l.Label(ModCompat.Summary(true));
@@ -198,6 +221,16 @@ namespace Rimverse
             Check(l, "Rimverse_OdysseyIntegration", ref s.odysseyIntegration, ModCompat.Odyssey);
             Check(l, "Rimverse_CEIntegration", ref s.combatExtendedIntegration, ModCompat.CombatExtended);
             Check(l, "Rimverse_EndlessRoomsEvents", ref s.endlessRoomsEvents, ModCompat.EndlessRooms);
+            l.GapLine();
+            l.Label("Rimverse_CompatTweaksHeader".Translate());
+            Check(l, "Rimverse_CompatShipVersions", ref s.compatShipVersions, CompatRegistry.AnyActive(CompatGroup.ShipVersions));
+            Check(l, "Rimverse_CompatWeapons", ref s.compatWeapons, CompatRegistry.AnyActive(CompatGroup.Weapons));
+            Check(l, "Rimverse_CompatAnomalyExtras", ref s.compatAnomalyExtras, CompatRegistry.AnyActive(CompatGroup.AnomalyExtras));
+            Check(l, "Rimverse_CompatPsycasts", ref s.compatPsycasts, CompatRegistry.AnyActive(CompatGroup.Psycasts));
+            Check(l, "Rimverse_CompatRealisticRooms", ref s.compatRealisticRooms, ModCompat.IsActive("lucifer.realisticrooms"));
+            Check(l, "Rimverse_CompatAlliesGoodwill", ref s.compatAlliesGoodwill, CompatRegistry.AnyActive(CompatGroup.Allies));
+            Check(l, "Rimverse_CompatNoForcedSlowdown", ref s.compatNoForcedSlowdown, ModCompat.IsActive("thegoosebehindtheslaughter.noforcedslowdown"));
+            Check(l, "Rimverse_CompatRimmuNation", ref s.compatRimmuNation, ModCompat.IsActive("cp.rimmunation.2.clothing"));
         }
     }
 }

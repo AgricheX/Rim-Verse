@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Tale_FirstOrbit.label>primeira órbita</Rimverse_Tale_FirstOrbit.label>
+  <Rimverse_Tale_FirstOrbit.rulePack.rulesStrings.0>tale_noun-&gt;[PAWN_nameDef] vendo um mundo da órbita</Rimverse_Tale_FirstOrbit.rulePack.rulesStrings.0>
+  <Rimverse_Tale_FirstOrbit.rulePack.rulesStrings.1>image-&gt;[PAWN_nameFull] flutuando numa janela da nave, um planeta inteiro curvando lá embaixo</Rimverse_Tale_FirstOrbit.rulePack.rulesStrings.1>
+  <Rimverse_Tale_FirstOrbit.rulePack.rulesStrings.2>circumstance_phrase-&gt;enquanto a linha do amanhecer atravessa as nuvens</Rimverse_Tale_FirstOrbit.rulePack.rulesStrings.2>
+  <Rimverse_Tale_FirstOrbit.rulePack.rulesStrings.3>desc_sentence-&gt;Estrelas enchem cada canto da cena.</Rimverse_Tale_FirstOrbit.rulePack.rulesStrings.3>
+  <Rimverse_Tale_NewWorld.label>pouso em mundo novo</Rimverse_Tale_NewWorld.label>
+  <Rimverse_Tale_NewWorld.rulePack.rulesStrings.0>tale_noun-&gt;[PAWN_nameDef] pisando num mundo novo</Rimverse_Tale_NewWorld.rulePack.rulesStrings.0>
+  <Rimverse_Tale_NewWorld.rulePack.rulesStrings.1>image-&gt;[PAWN_nameFull] deixando a primeira pegada em chão alienígena</Rimverse_Tale_NewWorld.rulePack.rulesStrings.1>
+  <Rimverse_Tale_NewWorld.rulePack.rulesStrings.2>circumstance_phrase-&gt;sob um céu da cor errada</Rimverse_Tale_NewWorld.rulePack.rulesStrings.2>
+  <Rimverse_Tale_NewWorld.rulePack.rulesStrings.3>desc_sentence-&gt;Um sol estranho paira baixo no horizonte.</Rimverse_Tale_NewWorld.rulePack.rulesStrings.3>
+  <Rimverse_Tale_ShipVictory.label>vitória em batalha de nave</Rimverse_Tale_ShipVictory.label>
+  <Rimverse_Tale_ShipVictory.rulePack.rulesStrings.0>tale_noun-&gt;[PAWN_nameDef] vencendo uma batalha entre as estrelas</Rimverse_Tale_ShipVictory.rulePack.rulesStrings.0>
+  <Rimverse_Tale_ShipVictory.rulePack.rulesStrings.1>image-&gt;[PAWN_nameFull] na ponte enquanto uma nave inimiga se parte</Rimverse_Tale_ShipVictory.rulePack.rulesStrings.1>
+  <Rimverse_Tale_ShipVictory.rulePack.rulesStrings.2>circumstance_phrase-&gt;enquanto as luzes de alerta piscam em vermelho</Rimverse_Tale_ShipVictory.rulePack.rulesStrings.2>
+  <Rimverse_Tale_ShipVictory.rulePack.rulesStrings.3>desc_sentence-&gt;Destroços brilham contra o escuro.</Rimverse_Tale_ShipVictory.rulePack.rulesStrings.3>
+  <Rimverse_Tale_SpaceFuneral.label>funeral espacial</Rimverse_Tale_SpaceFuneral.label>
+  <Rimverse_Tale_SpaceFuneral.rulePack.rulesStrings.0>tale_noun-&gt;[PAWN_nameDef] mandando um amigo caído às estrelas</Rimverse_Tale_SpaceFuneral.rulePack.rulesStrings.0>
+  <Rimverse_Tale_SpaceFuneral.rulePack.rulesStrings.1>image-&gt;[PAWN_nameFull] vendo uma cápsula lacrada seguir rumo a um sol distante</Rimverse_Tale_SpaceFuneral.rulePack.rulesStrings.1>
+  <Rimverse_Tale_SpaceFuneral.rulePack.rulesStrings.2>circumstance_phrase-&gt;em silêncio total</Rimverse_Tale_SpaceFuneral.rulePack.rulesStrings.2>
+  <Rimverse_Tale_SpaceFuneral.rulePack.rulesStrings.3>desc_sentence-&gt;A tripulação está em fila atrás do vidro.</Rimverse_Tale_SpaceFuneral.rulePack.rulesStrings.3>
+</LanguageData>

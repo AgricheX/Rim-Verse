@@ -420,6 +420,7 @@
 
   <ThingDef ParentName="ThroneBase">
     <defName>Rimverse_CommandThrone</defName>
+    <techLevel>Spacer</techLevel>
     <label>command throne</label>
     <description>A throne mounted on the bridge deck, with ship controls built into the armrests. Counts as a throne for nobles and dignified meditation.</description>
     <statBases>
@@ -450,6 +451,7 @@
 
   <ThingDef ParentName="BasicBedBase">
     <defName>Rimverse_NobleBunk</defName>
+    <techLevel>Industrial</techLevel>
     <label>noble cabin bed</label>
     <description>A compact but lavish bed built into the wall of a ship cabin. Very comfortable and beautiful, so a small cabin can still meet the demands of a noble.</description>
     <graphicData>
@@ -481,6 +483,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Rimverse_StarWindow</defName>
+    <techLevel>Industrial</techLevel>
     <label>stellar meditation window</label>
     <description>A reinforced viewport framed by a meditation bench. Psycasters with a natural focus can meditate looking at the stars, and it works much better in space.</description>
     <graphicData>

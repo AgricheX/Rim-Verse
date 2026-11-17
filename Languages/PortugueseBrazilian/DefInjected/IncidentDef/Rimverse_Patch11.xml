@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Event_AICoreInspection.label>inspeção de núcleo de IA</Rimverse_Event_AICoreInspection.label>
+  <Rimverse_Event_AICoreInspection.letterLabel>Inspeção de núcleo de IA</Rimverse_Event_AICoreInspection.letterLabel>
+  <Rimverse_Event_AICoreInspection.letterText>Inspetores acharam o núcleo de IA em {0}. Civilizações contra IA ficaram bravas.</Rimverse_Event_AICoreInspection.letterText>
+  <Rimverse_Event_AbandonedStation.label>estação abandonada</Rimverse_Event_AbandonedStation.label>
+  <Rimverse_Event_AbandonedStation.letterLabel>Estação abandonada</Rimverse_Event_AbandonedStation.letterLabel>
+  <Rimverse_Event_AbandonedStation.letterText>Uma estação abandonada orbita {0}. Ela ainda pode ter suprimentos.</Rimverse_Event_AbandonedStation.letterText>
+  <Rimverse_Event_AirRecyclerFailure.label>falha do reciclador de ar</Rimverse_Event_AirRecyclerFailure.label>
+  <Rimverse_Event_AirRecyclerFailure.letterLabel>Falha do reciclador de ar</Rimverse_Event_AirRecyclerFailure.letterLabel>
+  <Rimverse_Event_AirRecyclerFailure.letterText>O {0} quebrou. Conserte antes que o ar acabe.</Rimverse_Event_AirRecyclerFailure.letterText>
+  <Rimverse_Event_AllyCoup.label>golpe num aliado</Rimverse_Event_AllyCoup.label>
+  <Rimverse_Event_AllyCoup.letterLabel>Golpe</Rimverse_Event_AllyCoup.letterLabel>
+  <Rimverse_Event_AllyCoup.letterText>Um golpe tomou o poder em {0}. O novo governo é: {1}.</Rimverse_Event_AllyCoup.letterText>
+  <Rimverse_Event_AncientSignal.label>sinal antigo</Rimverse_Event_AncientSignal.label>
+  <Rimverse_Event_AncientSignal.letterLabel>Sinal antigo</Rimverse_Event_AncientSignal.letterLabel>
+  <Rimverse_Event_AncientSignal.letterText>Um sinal repetido vem de {0}. Ninguém responde a ele há muito tempo.</Rimverse_Event_AncientSignal.letterText>
+  <Rimverse_Event_Anomaly.label>anomalia</Rimverse_Event_Anomaly.label>
+  <Rimverse_Event_Anomaly.letterLabel>Anomalia detectada</Rimverse_Event_Anomaly.letterLabel>
+  <Rimverse_Event_Anomaly.letterText>Os sensores captaram uma anomalia perto de {0}. Ela entrou na lista de anomalias.</Rimverse_Event_Anomaly.letterText>
+  <Rimverse_Event_Asylum.label>pedido de asilo</Rimverse_Event_Asylum.label>
+  <Rimverse_Event_Asylum.letterLabel>Pedido de asilo</Rimverse_Event_Asylum.letterLabel>
+  <Rimverse_Event_Asylum.letterText>{0} fugiu de {1} e pediu asilo. Entrou na tripulação; {1} não gostou.</Rimverse_Event_Asylum.letterText>
+  <Rimverse_Event_Blockade.label>bloqueio</Rimverse_Event_Blockade.label>
+  <Rimverse_Event_Blockade.letterLabel>Bloqueio</Rimverse_Event_Blockade.letterLabel>
+  <Rimverse_Event_Blockade.letterText>Naves hostis bloqueiam {0}. Comércio e produção pararam.</Rimverse_Event_Blockade.letterText>
+  <Rimverse_Event_ConvoyEscort.label>comboio pedindo escolta</Rimverse_Event_ConvoyEscort.label>
+  <Rimverse_Event_ConvoyEscort.letterLabel>Comboio pede escolta</Rimverse_Event_ConvoyEscort.letterLabel>
+  <Rimverse_Event_ConvoyEscort.letterText>Um comboio de mercadores pediu escolta e pagou adiantado. Os mercadores estão abertos pra negócio.</Rimverse_Event_ConvoyEscort.letterText>
+  <Rimverse_Event_DebrisField.label>campo de destroços</Rimverse_Event_DebrisField.label>
+  <Rimverse_Event_DebrisField.letterLabel>Campo de destroços</Rimverse_Event_DebrisField.letterLabel>
+  <Rimverse_Event_DebrisField.letterText>A nave cruzou um campo de destroços. O casco levou alguns golpes, mas a tripulação pegou sucata no caminho.</Rimverse_Event_DebrisField.letterText>
+  <Rimverse_Event_DistressSignal.label>sinal de socorro</Rimverse_Event_DistressSignal.label>
+  <Rimverse_Event_DistressSignal.letterLabel>Sinal de socorro</Rimverse_Event_DistressSignal.letterLabel>
+  <Rimverse_Event_DistressSignal.letterText>Um sinal de socorro chegou no caminho. Sobreviventes estão caindo perto da nave.</Rimverse_Event_DistressSignal.letterText>
+  <Rimverse_Event_DormantGate.label>portão adormecido</Rimverse_Event_DormantGate.label>
+  <Rimverse_Event_DormantGate.letterLabel>Portão adormecido</Rimverse_Event_DormantGate.letterLabel>
+  <Rimverse_Event_DormantGate.letterText>Fragmentos de um portão adormecido foram achados perto de {0}. Eles foram trazidos a bordo.</Rimverse_Event_DormantGate.letterText>
+  <Rimverse_Event_DriftingCryoPod.label>cápsula de criossono à deriva</Rimverse_Event_DriftingCryoPod.label>
+  <Rimverse_Event_DriftingCryoPod.letterLabel>Cápsula de criossono</Rimverse_Event_DriftingCryoPod.letterLabel>
+  <Rimverse_Event_DriftingCryoPod.letterText>Uma cápsula de criossono estava à deriva por perto. Quem dorme nela está caindo perto da nave.</Rimverse_Event_DriftingCryoPod.letterText>
+  <Rimverse_Event_DriftingShip.label>nave à deriva</Rimverse_Event_DriftingShip.label>
+  <Rimverse_Event_DriftingShip.letterLabel>Nave à deriva</Rimverse_Event_DriftingShip.letterLabel>
+  <Rimverse_Event_DriftingShip.letterText>A tripulação achou um casco à deriva e puxou o que dava pra salvar.</Rimverse_Event_DriftingShip.letterText>
+  <Rimverse_Event_DynasticMarriage.label>casamento dinástico</Rimverse_Event_DynasticMarriage.label>
+  <Rimverse_Event_DynasticMarriage.letterLabel>Casamento dinástico</Rimverse_Event_DynasticMarriage.letterLabel>
+  <Rimverse_Event_DynasticMarriage.letterText>{0} veio de {1} pra selar uma aliança de casamento.</Rimverse_Event_DynasticMarriage.letterText>
+  <Rimverse_Event_ElectricFire.label>fogo elétrico</Rimverse_Event_ElectricFire.label>
+  <Rimverse_Event_ElectricFire.letterLabel>Fogo elétrico</Rimverse_Event_ElectricFire.letterLabel>
+  <Rimverse_Event_ElectricFire.letterText>Um curto-circuito começou um incêndio ao lado do {0}.</Rimverse_Event_ElectricFire.letterText>
+  <Rimverse_Event_Embargo.label>embargo</Rimverse_Event_Embargo.label>
+  <Rimverse_Event_Embargo.letterLabel>Embargo</Rimverse_Event_Embargo.letterLabel>
+  <Rimverse_Event_Embargo.letterText>{0} declarou embargo contra você por 30 dias. Os mercadores deles não vão negociar.</Rimverse_Event_Embargo.letterText>
+  <Rimverse_Event_Epidemic.label>epidemia</Rimverse_Event_Epidemic.label>
+  <Rimverse_Event_Epidemic.letterLabel>Epidemia</Rimverse_Event_Epidemic.letterLabel>
+  <Rimverse_Event_Epidemic.letterText>Uma epidemia atingiu {0}. A população caiu.</Rimverse_Event_Epidemic.letterText>
+  <Rimverse_Event_FederationInvite.label>convite para federação</Rimverse_Event_FederationInvite.label>
+  <Rimverse_Event_FederationInvite.letterLabel>Convite para federação</Rimverse_Event_FederationInvite.letterLabel>
+  <Rimverse_Event_FederationInvite.letterText>{0} convidou você pra uma federação. As relações melhoraram.</Rimverse_Event_FederationInvite.letterText>
+  <Rimverse_Event_FirstContact.label>primeiro contato</Rimverse_Event_FirstContact.label>
+  <Rimverse_Event_FirstContact.letterLabel>Primeiro contato</Rimverse_Event_FirstContact.letterLabel>
+  <Rimverse_Event_FirstContact.letterText>A nave fez o primeiro contato com {0}.</Rimverse_Event_FirstContact.letterText>
+  <Rimverse_Event_FuelLeak.label>vazamento de combustível</Rimverse_Event_FuelLeak.label>
+  <Rimverse_Event_FuelLeak.letterLabel>Vazamento de combustível</Rimverse_Event_FuelLeak.letterLabel>
+  <Rimverse_Event_FuelLeak.letterText>Um tanque de combustível vazou. Parte do combustível se perdeu e a área pode pegar fogo.</Rimverse_Event_FuelLeak.letterText>
+  <Rimverse_Event_GravityFailure.label>pane do gerador de gravidade</Rimverse_Event_GravityFailure.label>
+  <Rimverse_Event_GravityFailure.letterLabel>Pane de gravidade</Rimverse_Event_GravityFailure.letterLabel>
+  <Rimverse_Event_GravityFailure.letterText>O {0} falhou. A tripulação vai flutuar até o conserto.</Rimverse_Event_GravityFailure.letterText>
+  <Rimverse_Event_HeatSpike.label>pico de calor</Rimverse_Event_HeatSpike.label>
+  <Rimverse_Event_HeatSpike.letterLabel>Pico de calor</Rimverse_Event_HeatSpike.letterLabel>
+  <Rimverse_Event_HeatSpike.letterText>Um surto do reator elevou muito o calor da nave. Use os radiadores ou corte energia antes que as peças superaqueçam.</Rimverse_Event_HeatSpike.letterText>
+  <Rimverse_Event_HoldPest.label>praga no porão</Rimverse_Event_HoldPest.label>
+  <Rimverse_Event_HoldPest.letterLabel>Praga no porão</Rimverse_Event_HoldPest.letterLabel>
+  <Rimverse_Event_HoldPest.letterText>{0} ratos de porão saíram da carga. Eles roem fios e comem comida.</Rimverse_Event_HoldPest.letterText>
+  <Rimverse_Event_Independence.label>pedido de independência</Rimverse_Event_Independence.label>
+  <Rimverse_Event_Independence.letterLabel>Pedido de independência</Rimverse_Event_Independence.letterLabel>
+  <Rimverse_Event_Independence.letterText>{0} está pedindo independência. A estabilidade caiu; mantenha alta ou perca a colônia.</Rimverse_Event_Independence.letterText>
+  <Rimverse_Event_MassRefugees.label>refugiados em massa</Rimverse_Event_MassRefugees.label>
+  <Rimverse_Event_MassRefugees.letterLabel>Refugiados em massa</Rimverse_Event_MassRefugees.letterLabel>
+  <Rimverse_Event_MassRefugees.letterText>{0} refugiados de {1} chegaram e se juntaram a você.</Rimverse_Event_MassRefugees.letterText>
+  <Rimverse_Event_Micrometeors.label>chuva de micrometeoros</Rimverse_Event_Micrometeors.label>
+  <Rimverse_Event_Micrometeors.letterLabel>Chuva de micrometeoros</Rimverse_Event_Micrometeors.letterLabel>
+  <Rimverse_Event_Micrometeors.letterText>Um enxame de micrometeoros varreu o casco. Foram registrados {0} impactos; confira as peças danificadas.</Rimverse_Event_Micrometeors.letterText>
+  <Rimverse_Event_MiningBoom.label>boom de mineração</Rimverse_Event_MiningBoom.label>
+  <Rimverse_Event_MiningBoom.letterLabel>Boom de mineração</Rimverse_Event_MiningBoom.letterLabel>
+  <Rimverse_Event_MiningBoom.letterText>{0} achou um veio rico. Minério extra foi pro estoque.</Rimverse_Event_MiningBoom.letterText>
+  <Rimverse_Event_NeighborWar.label>guerra declarada entre vizinhos</Rimverse_Event_NeighborWar.label>
+  <Rimverse_Event_NeighborWar.letterLabel>Guerra entre vizinhos</Rimverse_Event_NeighborWar.letterLabel>
+  <Rimverse_Event_NeighborWar.letterText>{0} declarou guerra contra {1}.</Rimverse_Event_NeighborWar.letterText>
+  <Rimverse_Event_NewLifeWorld.label>mundo com vida inédita</Rimverse_Event_NewLifeWorld.label>
+  <Rimverse_Event_NewLifeWorld.letterLabel>Vida inédita</Rimverse_Event_NewLifeWorld.letterLabel>
+  <Rimverse_Event_NewLifeWorld.letterText>{0} abriga vida nunca vista antes. Os biólogos vão querer pousar.</Rimverse_Event_NewLifeWorld.letterText>
+  <Rimverse_Event_PrecursorRuin.label>ruína precursora</Rimverse_Event_PrecursorRuin.label>
+  <Rimverse_Event_PrecursorRuin.letterLabel>Ruína precursora</Rimverse_Event_PrecursorRuin.letterLabel>
+  <Rimverse_Event_PrecursorRuin.letterText>Estruturas antigas foram achadas em {0}. Elas são mais velhas que qualquer civilização conhecida.</Rimverse_Event_PrecursorRuin.letterText>
+  <Rimverse_Event_Sabotage.label>sabotagem</Rimverse_Event_Sabotage.label>
+  <Rimverse_Event_Sabotage.letterLabel>Sabotagem</Rimverse_Event_Sabotage.letterLabel>
+  <Rimverse_Event_Sabotage.letterText>Alguém sabotou o {0}. A suspeita cai sobre {1}.</Rimverse_Event_Sabotage.letterText>
+  <Rimverse_Event_SensorNebula.label>nebulosa que cega os sensores</Rimverse_Event_SensorNebula.label>
+  <Rimverse_Event_SensorNebula.letterLabel>Nebulosa cegante</Rimverse_Event_SensorNebula.letterLabel>
+  <Rimverse_Event_SensorNebula.letterText>A nave entrou numa nebulosa que embaralha os sensores. O alcance de varredura caiu por {0} dias.</Rimverse_Event_SensorNebula.letterText>
+  <Rimverse_Event_SolarStorm.label>tempestade solar</Rimverse_Event_SolarStorm.label>
+  <Rimverse_Event_SolarStorm.letterLabel>Tempestade solar</Rimverse_Event_SolarStorm.letterLabel>
+  <Rimverse_Event_SolarStorm.letterText>Uma rajada de partículas carregadas atingiu a nave. Os eletrônicos falharam e a tripulação levou uma dose de radiação. Blindagem e distância ajudam.</Rimverse_Event_SolarStorm.letterText>
+  <Rimverse_Event_SpyCaught.label>espião descoberto</Rimverse_Event_SpyCaught.label>
+  <Rimverse_Event_SpyCaught.letterLabel>Espião descoberto</Rimverse_Event_SpyCaught.letterLabel>
+  <Rimverse_Event_SpyCaught.letterText>Um espião de {0} foi pego a bordo e agora é seu prisioneiro.</Rimverse_Event_SpyCaught.letterText>
+  <Rimverse_Event_Strike.label>greve</Rimverse_Event_Strike.label>
+  <Rimverse_Event_Strike.letterLabel>Greve</Rimverse_Event_Strike.letterLabel>
+  <Rimverse_Event_Strike.letterText>Os trabalhadores de {0} entraram em greve. A produção para por alguns dias.</Rimverse_Event_Strike.letterText>
+  <Rimverse_Event_UncatalogedPlanet.label>planeta fora do catálogo</Rimverse_Event_UncatalogedPlanet.label>
+  <Rimverse_Event_UncatalogedPlanet.letterLabel>Planeta fora do catálogo</Rimverse_Event_UncatalogedPlanet.letterLabel>
+  <Rimverse_Event_UncatalogedPlanet.letterText>{0} não estava em nenhum catálogo. O levantamento completo foi feito e registros de dados estelares foram criados.</Rimverse_Event_UncatalogedPlanet.letterText>
+  <Rimverse_Event_UnknownProbe.label>sonda desconhecida</Rimverse_Event_UnknownProbe.label>
+  <Rimverse_Event_UnknownProbe.letterLabel>Sonda desconhecida</Rimverse_Event_UnknownProbe.letterLabel>
+  <Rimverse_Event_UnknownProbe.letterText>Uma sonda desconhecida foi capturada. Estudar ela avançou a pesquisa atual.</Rimverse_Event_UnknownProbe.letterText>
+  <Rimverse_Event_VassalOffer.label>oferta de vassalagem</Rimverse_Event_VassalOffer.label>
+  <Rimverse_Event_VassalOffer.letterLabel>Oferta de vassalagem</Rimverse_Event_VassalOffer.letterLabel>
+  <Rimverse_Event_VassalOffer.letterText>{0} se oferece como vassalo em troca de proteção.</Rimverse_Event_VassalOffer.letterText>
+  <Rimverse_Event_VoidWhale.label>baleia do vácuo</Rimverse_Event_VoidWhale.label>
+  <Rimverse_Event_VoidWhale.letterLabel>Baleia do vácuo</Rimverse_Event_VoidWhale.letterLabel>
+  <Rimverse_Event_VoidWhale.letterText>Uma baleia do vácuo está passando perto da nave. Ela é pacífica se não for provocada.</Rimverse_Event_VoidWhale.letterText>
+  <Rimverse_Event_WarpDeviation.label>desvio de rota na dobra</Rimverse_Event_WarpDeviation.label>
+  <Rimverse_Event_WarpDeviation.letterLabel>Desvio na dobra</Rimverse_Event_WarpDeviation.letterLabel>
+  <Rimverse_Event_WarpDeviation.letterText>Um redemoinho na dobra tirou a nave da rota. A chegada atrasou {0} dias.</Rimverse_Event_WarpDeviation.letterText>
+  <Rimverse_FlowHunters.label>caçadores do Fluxo</Rimverse_FlowHunters.label>
+  <Rimverse_FlowWanderer.label>andarilho do Fluxo</Rimverse_FlowWanderer.label>
+  <Rimverse_FlowWanderer.letterLabel>Andarilho do Fluxo</Rimverse_FlowWanderer.letterLabel>
+</LanguageData>

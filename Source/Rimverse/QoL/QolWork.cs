@@ -286,15 +286,15 @@ namespace Rimverse
     [HarmonyPatch(typeof(WorkGiver_GrowerHarvest), nameof(WorkGiver_GrowerHarvest.HasJobOnCell))]
     public static class Patch_HarvestPaused
     {
-        public static bool Prefix(Pawn pawn, IntVec3 c, ref bool __result)
+        public static void Postfix(Pawn pawn, IntVec3 c, ref bool __result)
         {
+            if (!__result) return;
             GameComponent_RimverseQolExtra ex = GameComponent_RimverseQolExtra.Instance;
-            if (ex == null || ex.pausedHarvest.Count == 0 || pawn?.Map == null) return true;
+            if (ex == null || ex.pausedHarvest.Count == 0 || pawn?.Map == null) return;
             Zone z = c.GetZone(pawn.Map);
-            if (z != null && ex.pausedHarvest.Contains(QolWork.ZoneKey(z))) { __result = false; return false; }
+            if (z != null && ex.pausedHarvest.Contains(QolWork.ZoneKey(z))) { __result = false; return; }
             Building_PlantGrower g = c.GetFirstThing<Building_PlantGrower>(pawn.Map);
-            if (g != null && ex.pausedHarvest.Contains(g.thingIDNumber)) { __result = false; return false; }
-            return true;
+            if (g != null && ex.pausedHarvest.Contains(g.thingIDNumber)) __result = false;
         }
     }
 
@@ -306,6 +306,7 @@ namespace Rimverse
             if (let == null || delayTicks > 0 || Find.TickManager == null || Find.TickManager.Paused) return;
             if (let.def != LetterDefOf.ThreatBig && let.def != LetterDefOf.ThreatSmall) return;
             if (!QolFeatures.IsEnabled("Rimverse_Qol_AutoPause")) return;
+            if (CompatPatch13.NoForcedSlowdown && CompatPatch13.AnyPlayerShipTraveling()) return;
             Find.TickManager.Pause();
         }
     }

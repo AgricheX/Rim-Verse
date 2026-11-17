@@ -89,34 +89,30 @@ namespace Rimverse
             Find.LetterStack.ReceiveLetter((key + "Label").Translate(), key.Translate(args), LetterDefOf.ThreatBig, look);
         }
 
-        public static CellRect? BuildDerelict(Map map, RimverseShip player, int w, int h)
+        public static BlueprintBuildResult BuildDerelict(Map map, RimverseShip player, int sizeClass, bool station)
         {
-            if (!EnemyShipGenerator.TryFindRect(map, player, w, h, out CellRect rect)) return null;
-            TerrainDef floor = DefDatabase<TerrainDef>.GetNamedSilentFail("Rimverse_HullFloorVacuum");
-            ThingDef wall = DefDatabase<ThingDef>.GetNamedSilentFail("Rimverse_HullWall");
-            if (floor == null || wall == null) return null;
-            foreach (IntVec3 c in rect) map.terrainGrid.SetFoundation(c, floor);
-            CellRect inner = rect.ContractedBy(1);
-            int doorZ = inner.minZ + inner.Height / 2;
-            foreach (IntVec3 c in rect.EdgeCells)
+            BlueprintRequest req = new BlueprintRequest
             {
-                if ((c.x == rect.minX || c.x == rect.maxX) && c.z == doorZ) continue;
-                Thing t = GenSpawn.Spawn(ThingMaker.MakeThing(wall), c, map);
-                t.HitPoints = Mathf.Max(1, Mathf.RoundToInt(t.MaxHitPoints * Rand.Range(0.3f, 0.9f)));
-            }
-            int mid = inner.minX + inner.Width / 2;
-            for (int z = inner.minZ; z <= inner.maxZ; z++)
-            {
-                if (z == doorZ || z == doorZ - 1 || z == doorZ + 1) continue;
-                IntVec3 c = new IntVec3(mid, 0, z);
-                if (Rand.Chance(0.8f)) GenSpawn.Spawn(ThingMaker.MakeThing(wall), c, map);
-            }
-            foreach (IntVec3 c in inner) map.roofGrid.SetRoof(c, RoofDefOf.RoofConstructed);
-            FilthMaker.TryMakeFilth(inner.RandomCell, map, ThingDefOf.Filth_Blood, 4);
-            return inner;
+                layout = station ? BlueprintLayout.Station : BlueprintLayout.Ship,
+                style = BlueprintStyle.Derelict,
+                sizeClass = sizeClass,
+                damage = 0.6f,
+                seed = Rand.Int
+            };
+            req.Add(station ? "Rimverse_BridgeCommand" : "Rimverse_BridgeSmall").Add("Rimverse_ChemThruster", station ? 0 : sizeClass + 1).Add("Rimverse_FuelCell", sizeClass).Add("Rimverse_AirGenerator").Add("Rimverse_AirTank").Add("Rimverse_CargoBay", sizeClass).Add("Bed", 2 + sizeClass * 2).Add("Rimverse_RadiatorFixed", sizeClass + 1);
+            ShipBlueprint bp = ShipBlueprintGenerator.Generate(req);
+            if (bp == null) return null;
+            if (!EnemyShipGenerator.TryFindRect(map, player, bp.width, bp.height, out CellRect rect)) return null;
+            BlueprintBuildResult res = ShipBlueprintBuilder.Build(map, rect, bp, new BlueprintBuildOptions { faction = null, fuel = Rand.Range(0f, 0.2f), hull = Rand.Range(0.3f, 0.8f), powerOn = false, clearArea = false });
+            if (res == null) return null;
+            if (res.freeCells.Count == 0) res.freeCells.AddRange(res.interior);
+            for (int i = 0; i < 4 && res.freeCells.Count > 0; i++) FilthMaker.TryMakeFilth(res.freeCells.RandomElement(), map, ThingDefOf.Filth_Blood, 2);
+            return res;
         }
 
-        public static void Loot(Map map, CellRect inner, float value)
+        public static void Loot(Map map, CellRect inner, float value) => Loot(map, inner.Cells.ToList(), value);
+
+        public static void Loot(Map map, List<IntVec3> cells, float value)
         {
             string[] pool = { "Steel", "Plasteel", "ComponentIndustrial", "ComponentSpacer", "MedicineIndustrial", "Bioferrite", "Rimverse_VoidShard", "Rimverse_WarpMatter", "Gold", "Uranium" };
             float left = value;
@@ -128,18 +124,20 @@ namespace Rimverse
                 int count = Mathf.Clamp(Mathf.RoundToInt(Rand.Range(150f, 400f) / Mathf.Max(1f, def.BaseMarketValue)), 1, def.stackLimit);
                 Thing t = ThingMaker.MakeThing(def);
                 t.stackCount = count;
-                IntVec3 c = inner.Cells.Where(x => x.Standable(map) && x.GetFirstItem(map) == null).RandomElementWithFallback(inner.CenterCell);
+                IntVec3 c = cells.Where(x => x.Standable(map) && x.GetFirstItem(map) == null).RandomElementWithFallback(cells.Count > 0 ? cells[0] : IntVec3.Invalid);
+                if (!c.IsValid) return;
                 GenPlace.TryPlaceThing(t, c, map, ThingPlaceMode.Near);
                 left -= count * def.BaseMarketValue;
             }
         }
 
-        public static void Corpses(Map map, CellRect inner, int count)
+        public static void Corpses(Map map, List<IntVec3> cells, int count)
         {
+            if (cells.Count == 0) return;
             for (int i = 0; i < count; i++)
             {
                 Pawn p = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDefOf.SpaceRefugee, null, PawnGenerationContext.NonPlayer, -1, true));
-                IntVec3 c = inner.Cells.Where(x => x.Standable(map)).RandomElementWithFallback(inner.CenterCell);
+                IntVec3 c = cells.Where(x => x.Standable(map)).RandomElementWithFallback(cells[0]);
                 GenSpawn.Spawn(p, c, map);
                 p.Kill(null);
                 p.Corpse?.GetComp<CompRottable>()?.RotImmediately();
@@ -252,13 +250,13 @@ namespace Rimverse
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             if (!AnomalyContent.SpaceTarget(parms, out Map map, out RimverseShip ship)) return false;
-            CellRect? r = AnomalyContent.BuildDerelict(map, ship, 21, 13);
+            BlueprintBuildResult r = AnomalyContent.BuildDerelict(map, ship, 2, false);
             if (r == null) return false;
-            CellRect inner = r.Value;
+            List<IntVec3> inner = r.freeCells;
             AnomalyContent.Loot(map, inner, 1800f);
-            AnomalyContent.SpawnGroup(map, "Rimverse_Entity_Sleeper", 1, inner.Cells, true);
-            AnomalyContent.SpawnGroup(map, "Rimverse_Entity_HullPassenger", Rand.RangeInclusive(2, 3), inner.Cells, true);
-            AnomalyContent.Letter("Rimverse_LetterGhostShip", parms, new LookTargets(new TargetInfo(inner.CenterCell, map)));
+            AnomalyContent.SpawnGroup(map, "Rimverse_Entity_Sleeper", 1, inner, true);
+            AnomalyContent.SpawnGroup(map, "Rimverse_Entity_HullPassenger", Rand.RangeInclusive(2, 3), inner, true);
+            AnomalyContent.Letter("Rimverse_LetterGhostShip", parms, new LookTargets(new TargetInfo(r.rect.CenterCell, map)));
             return true;
         }
     }
@@ -270,24 +268,24 @@ namespace Rimverse
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             if (!AnomalyContent.SpaceTarget(parms, out Map map, out RimverseShip ship)) return false;
-            CellRect? r = AnomalyContent.BuildDerelict(map, ship, 27, 15);
+            BlueprintBuildResult r = AnomalyContent.BuildDerelict(map, ship, 2, true);
             if (r == null) return false;
-            CellRect inner = r.Value;
+            List<IntVec3> inner = r.freeCells;
             AnomalyContent.Loot(map, inner, 3000f);
             AnomalyContent.Corpses(map, inner, Rand.RangeInclusive(3, 6));
-            AnomalyContent.SpawnGroup(map, "Rimverse_Entity_CrewEcho", Rand.RangeInclusive(2, 4), inner.Cells, true);
+            AnomalyContent.SpawnGroup(map, "Rimverse_Entity_CrewEcho", Rand.RangeInclusive(2, 4), inner, true);
             Pawn victim = map.mapPawns.FreeColonistsSpawned.Where(p => p.RaceProps.Humanlike).RandomElementWithFallback();
             if (victim != null)
             {
                 Pawn copy = CrewCopy.Make(victim);
                 if (copy != null)
                 {
-                    IntVec3 c = inner.Cells.Where(x => x.Standable(map)).RandomElementWithFallback(inner.CenterCell);
+                    IntVec3 c = inner.Where(x => x.Standable(map)).RandomElementWithFallback(r.rect.CenterCell);
                     GenSpawn.Spawn(copy, c, map);
                     LordMaker.MakeNewLord(copy.Faction, new LordJob_DefendPoint(c, 8f, 12f, false, false), map, new List<Pawn> { copy });
                 }
             }
-            AnomalyContent.Letter("Rimverse_LetterSilentStation", parms, new LookTargets(new TargetInfo(inner.CenterCell, map)));
+            AnomalyContent.Letter("Rimverse_LetterSilentStation", parms, new LookTargets(new TargetInfo(r.rect.CenterCell, map)));
             return true;
         }
     }

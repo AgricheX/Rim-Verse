@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_MegaFoundation.label>convés da megaestrutura</Rimverse_MegaFoundation.label>
+  <Rimverse_MegaFoundation.description>O convés estrutural de uma megaestrutura, quilômetros de liga em camadas. Pertence à estrutura, não a qualquer nave atracada nela.</Rimverse_MegaFoundation.description>
+  <Rimverse_HabitatSoil.label>solo de habitat</Rimverse_HabitatSoil.label>
+  <Rimverse_HabitatSoil.description>Solo projetado sobre o convés de uma megaestrutura: parques, jardins e campos para os milhões que vivem dentro dela.</Rimverse_HabitatSoil.description>
+</LanguageData>

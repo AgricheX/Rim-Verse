@@ -3,6 +3,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_GatePart</defName>
+    <techLevel>Spacer</techLevel>
     <label>gate component</label>
     <description>A dense lattice of plasteel and folded warp matter, tuned to the resonance of the ancient gates. Used to activate gates, stabilize wormholes and push the Great Gate further.</description>
     <graphicData>
@@ -88,13 +89,13 @@
     <description>How to wake the ancient gates scattered across the galaxy and steer them toward their linked destinations.</description>
     <baseCost>8000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_HeavyWarp</li>
       <li>Rimverse_AdvancedSensors</li>
     </prerequisites>
-    <researchViewX>5</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -103,12 +104,12 @@
     <description>Field projectors that hold a wandering wormhole open for good, turning it into a permanent route.</description>
     <baseCost>10000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_GateUse</li>
     </prerequisites>
-    <researchViewX>6</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -117,12 +118,12 @@
     <description>Fabrication of gate components and the knowledge needed to push the Great Gate beyond its known destinations.</description>
     <baseCost>12000</baseCost>
     <techLevel>Ultra</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_GateUse</li>
     </prerequisites>
-    <researchViewX>6</researchViewX>
-    <researchViewY>2</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -131,13 +132,13 @@
     <description>The final step: merging minds with an archotech intelligence. Completing this project ends the story of your people as they ascend.</description>
     <baseCost>30000</baseCost>
     <techLevel>Ultra</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SensorsTab</tab>
     <prerequisites>
       <li>Rimverse_GateConstruction</li>
       <li>Rimverse_ArtificialGravity</li>
     </prerequisites>
-    <researchViewX>7</researchViewX>
-    <researchViewY>2</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
 </Defs>

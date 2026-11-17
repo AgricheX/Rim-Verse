@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Rimverse_Trader_Arms" or defName="Rimverse_Trader_BlackMarket" or defName="Rimverse_Trader_Convoy"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Ammo</categoryDef>
+				<thingDefCountRange>4~8</thingDefCountRange>
+				<totalPriceRange>800~2400</totalPriceRange>
+			</li>
+		</value>
+	</Operation>
+</Patch>

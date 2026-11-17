@@ -1,14 +1,13 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Verse;
 
 namespace Rimverse
 {
     public enum GalaxyType
     {
         Spiral,
-        BarredSpiral,
-        Ringed,
         Elliptical,
         DwarfSpheroidal,
         Irregular
@@ -29,12 +28,38 @@ namespace Rimverse
         public int index;
         public string name;
         public GalaxyType type;
+        public bool hasBar;
+        public bool hasRing;
         public int sizeClass;
         public double radiusLy;
         public double thicknessLy;
         public TravelRule rule;
         public float baseDensity;
         public Vector2 groupPositionMly;
+        public double groupHeightMly;
+        public double armPitch = 5.0;
+        public double barLength = 0.4;
+        public double ringRadius = 0.65;
+
+        public bool IsDisk => type == GalaxyType.Spiral;
+
+        public string TypeLabel
+        {
+            get
+            {
+                string s = ("Rimverse_GalaxyType_" + type).Translate();
+                if (hasBar) s = "Rimverse_GalaxyAttr_Barred".Translate(s);
+                if (hasRing) s = "Rimverse_GalaxyAttr_Ringed".Translate(s);
+                return s;
+            }
+        }
+
+        public int SizeClassAt(Vec3d p)
+        {
+            double peak = baseDensity > 0 ? baseDensity : 1e-9;
+            double v = Math.Max(0.0, DensityAt(p) / peak);
+            return Math.Max(1, Math.Min(100, (int)Math.Round(100.0 * Math.Pow(v, 0.5))));
+        }
 
         public double DensityAt(Vec3d p)
         {
@@ -45,13 +70,14 @@ namespace Rimverse
             if (type == GalaxyType.Elliptical || type == GalaxyType.DwarfSpheroidal)
             {
                 double rr = p.Length / radiusLy;
+                if (rr > 1.15) return 0;
                 radial = Math.Exp(-3.0 * rr);
                 vertical = 0;
             }
-            if ((type == GalaxyType.Spiral || type == GalaxyType.BarredSpiral) && r > 0.08)
+            if (type == GalaxyType.Spiral && r > 0.08)
             {
                 double theta = Math.Atan2(p.z, p.x);
-                double phase = 2.0 * theta - 5.0 * Math.Log(r);
+                double phase = 2.0 * theta - armPitch * Math.Log(r);
                 double arm = Math.Pow(0.5 + 0.5 * Math.Cos(phase), 3.0);
                 radial *= 0.35 + 1.3 * arm;
             }
@@ -60,27 +86,48 @@ namespace Rimverse
                 double n = Math.Sin(p.x / radiusLy * 7.3 + index) * Math.Cos(p.z / radiusLy * 5.1 - index) * 0.5 + 0.5;
                 radial *= 0.4 + 1.2 * n;
             }
-            if (type == GalaxyType.Ringed && r > 0.55 && r < 0.75) radial *= 2.0;
-            if (type == GalaxyType.BarredSpiral && Math.Abs(p.z) < radiusLy * 0.08 && Math.Abs(p.x) < radiusLy * 0.4) radial *= 2.5;
+            if (hasRing && Math.Abs(r - ringRadius) < 0.1) radial *= 2.0;
+            if (hasBar && InBar(p)) radial *= 2.5;
             return baseDensity * radial * Math.Exp(-vertical * vertical);
         }
+
+        public bool InBar(Vec3d p) => hasBar && Math.Abs(p.z) < radiusLy * 0.08 && Math.Abs(p.x) < radiusLy * barLength;
+
+        public double MeanDensity(Vec3d center, double size)
+        {
+            double h = size * 0.35;
+            double sum = DensityAt(center);
+            sum += DensityAt(center + new Vec3d(h, 0, h));
+            sum += DensityAt(center + new Vec3d(-h, 0, h));
+            sum += DensityAt(center + new Vec3d(h, 0, -h));
+            sum += DensityAt(center + new Vec3d(-h, 0, -h));
+            return sum / 5.0;
+        }
+
+        public double ExpectedSystems(Vec3d center, double size) => MeanDensity(center, size) * size * size * size;
     }
 
     public static class GalaxyGenerator
     {
-        private static readonly GalaxyType[] Types = { GalaxyType.Spiral, GalaxyType.BarredSpiral, GalaxyType.Ringed, GalaxyType.Elliptical, GalaxyType.DwarfSpheroidal, GalaxyType.Irregular };
-        private static readonly float[] Weights = { 30f, 4f, 10f, 6f, 35f, 15f };
+        private static readonly GalaxyType[] Types = { GalaxyType.Spiral, GalaxyType.Elliptical, GalaxyType.DwarfSpheroidal, GalaxyType.Irregular };
+        private static readonly float[] Weights = { 44f, 6f, 35f, 15f };
         private static readonly string[] NameA = { "Vel", "Aster", "Cor", "Nym", "Tal", "Ery", "Mor", "Sel", "Var", "Oph", "Kal", "Dre" };
         private static readonly string[] NameB = { "ion", "ara", "eth", "os", "ume", "aris", "enne", "ox", "ira", "ados" };
 
-        public const int GroupSizeMax = 32;
+        public const int GroupSizeMax = CosmicScale.GalaxiesPerGroupMax;
+        public const float BarChance = 0.08f;
+        public const float RingChance = 0.30f;
+        public const float OrigemDensity = 0.004f;
+        public const int LegacyGroupSize = 3;
+        public const float LegacyDensity = 0.1f;
 
-        public static int GroupSize(int universeSeed)
+        public static int SeedGroupSize(int universeSeed)
         {
-            return Mathf.Clamp(RimverseMod.Settings?.galaxyCount ?? 3, 1, GroupSizeMax);
+            UniverseRand r = new UniverseRand(UniverseRand.Hash(universeSeed, 49));
+            return CosmicScale.GroupGalaxyCount(r);
         }
 
-        public static GalaxyData Generate(int universeSeed, int index)
+        public static GalaxyData Generate(int universeSeed, int index, float densityFactor, double groupRadiusMly)
         {
             UniverseRand rand = new UniverseRand(UniverseRand.Hash(universeSeed, 50, index));
             GalaxyData g = new GalaxyData { index = index };
@@ -88,27 +135,37 @@ namespace Rimverse
             g.sizeClass = index == 0 ? Math.Max(45, rand.SkewedSizeClass(1, 100, 1.6f)) : rand.SkewedSizeClass(1, 100, 2.2f);
             if (g.type == GalaxyType.DwarfSpheroidal) g.sizeClass = Math.Min(g.sizeClass, 25);
             if (g.type == GalaxyType.Elliptical) g.sizeClass = Math.Max(g.sizeClass, 50);
+            UniverseRand attr = new UniverseRand(UniverseRand.Hash(universeSeed, 51, index));
+            if (g.IsDisk)
+            {
+                g.hasBar = attr.Chance(BarChance);
+                g.hasRing = attr.Chance(RingChance);
+                g.armPitch = 4.0 + attr.ValueDouble * 2.5;
+                g.barLength = 0.25 + attr.ValueDouble * 0.2;
+                g.ringRadius = 0.5 + attr.ValueDouble * 0.3;
+            }
             float t = g.sizeClass / 100f;
             g.radiusLy = Mathf.Lerp(3000f, 262144f, t * t);
-            g.thicknessLy = g.type == GalaxyType.Spiral || g.type == GalaxyType.BarredSpiral || g.type == GalaxyType.Ringed ? Math.Max(300.0, g.radiusLy * 0.02) : g.radiusLy;
-            g.baseDensity = 0.004f * StarDensityFactor;
+            g.thicknessLy = g.IsDisk ? Math.Max(300.0, g.radiusLy * 0.02) : g.radiusLy;
+            g.baseDensity = OrigemDensity * densityFactor;
             switch (g.type)
             {
-                case GalaxyType.BarredSpiral: g.rule = TravelRule.WarpBarRoutes; break;
-                case GalaxyType.Ringed: g.rule = TravelRule.AncientGates; break;
                 case GalaxyType.Elliptical: g.rule = TravelRule.Hyperlanes; g.baseDensity *= 0.6f; break;
                 case GalaxyType.DwarfSpheroidal: g.rule = TravelRule.Sublight; g.baseDensity *= 0.5f; break;
                 case GalaxyType.Irregular: g.rule = TravelRule.Wormholes; break;
-                default: g.rule = TravelRule.Warp; break;
+                default: g.rule = g.hasBar ? TravelRule.WarpBarRoutes : g.hasRing ? TravelRule.AncientGates : TravelRule.Warp; break;
             }
             g.name = NameA[rand.RangeInclusive(0, NameA.Length - 1)] + NameB[rand.RangeInclusive(0, NameB.Length - 1)];
             float angle = rand.Range(0f, Mathf.PI * 2f);
-            float dist = index == 0 ? 0f : rand.Range(0.05f, 1.5f);
+            float dist = index == 0 ? 0f : rand.Range(0.05f, (float)Math.Max(0.1, groupRadiusMly));
             g.groupPositionMly = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * dist;
+            g.groupHeightMly = index == 0 ? 0 : (attr.ValueDouble - 0.5) * groupRadiusMly * 0.6;
             return g;
         }
 
-        public static float StarDensityFactor => RimverseMod.Settings?.starDensity ?? 0.1f;
+        public static float SettingDensity => Mathf.Clamp(RimverseMod.Settings?.starDensityFactor ?? 1f, 0.05f, 1f);
+
+        public static int SettingCap => Mathf.Clamp(RimverseMod.Settings?.galaxyCap ?? GroupSizeMax, 1, GroupSizeMax);
     }
 
     public class StarEntry
@@ -130,14 +187,7 @@ namespace Rimverse
             if (cache.TryGetValue(d, out List<StarEntry> list)) return list;
             if (cache.Count > CacheLimit) cache.Clear();
             list = new List<StarEntry>();
-            double density = g.DensityAt(d.Center);
-            double volume = StarSystemId.DistrictSizeLy * StarSystemId.DistrictSizeLy * StarSystemId.DistrictSizeLy;
-            UniverseRand rand = new UniverseRand(UniverseRand.Hash(u.universeSeed, 60, d.GetHashCode()));
-            double expected = density * volume;
-            int count = (int)Math.Floor(expected);
-            if (rand.Value < expected - count) count++;
-            count = Math.Min(count, 4095);
-            if (u.IsHomeDistrict(d)) count = Math.Max(count, 1);
+            int count = SystemCount(u, g, d);
             Vec3d origin = d.Origin;
             for (int i = 0; i < count; i++)
             {
@@ -149,6 +199,28 @@ namespace Rimverse
             cache[d] = list;
             return list;
         }
+
+        public static int SystemCount(GameComponent_Universe u, GalaxyData g, DistrictId d)
+        {
+            bool home = u.IsHomeDistrict(d);
+            if (!home && !SectorExists(g, d.SectorCenter)) return 0;
+            if (!home && !ZoneExists(g, d.Zone)) return 0;
+            double density = g.DensityAt(d.Center);
+            double volume = StarSystemId.DistrictSizeLy * StarSystemId.DistrictSizeLy * StarSystemId.DistrictSizeLy;
+            UniverseRand rand = new UniverseRand(UniverseRand.Hash(u.universeSeed, 60, d.GetHashCode()));
+            double expected = density * volume;
+            int count = (int)Math.Floor(expected);
+            if (rand.Value < expected - count) count++;
+            count = Math.Min(count, StarSystemId.MaxSystemsPerDistrict);
+            if (home) count = Math.Max(count, 1);
+            return count;
+        }
+
+        public static bool SectorExists(GalaxyData g, Vec3d sectorCenter) => g.ExpectedSystems(sectorCenter, StarSystemId.SectorSizeLy) >= StarSystemId.SectorMinSystems;
+
+        public static bool ZoneExists(GalaxyData g, ZoneId z) => g.ExpectedSystems(z.Center, StarSystemId.ZoneSizeLy) >= StarSystemId.ZoneMinSystems;
+
+        public static double ExpectedInZone(GalaxyData g, ZoneId z) => ZoneExists(g, z) ? g.ExpectedSystems(z.Center, StarSystemId.ZoneSizeLy) : 0;
 
         public static Vec3d PositionOf(GameComponent_Universe u, StarSystemId id)
         {

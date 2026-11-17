@@ -129,6 +129,7 @@ namespace Rimverse
         {
             float integrity = ship.Integrity;
             if (integrity >= 0.5f || tick % BreachCheckIntervalTicks != 0) return;
+            if (ShipFracture.TryFracture(ship, tick)) return;
             float chance = (0.5f - integrity) * 0.5f;
             if (!Rand.Chance(chance)) return;
             List<CompShipPart> walls = new List<CompShipPart>();
@@ -137,6 +138,7 @@ namespace Rimverse
             Thing wall = walls.RandomElement().parent;
             Messages.Message("Rimverse_MsgRandomBreach".Translate(ship.Label), new TargetInfo(wall.Position, ship.map), MessageTypeDefOf.NegativeEvent, false);
             wall.TakeDamage(new DamageInfo(DamageDefOf.Blunt, wall.HitPoints + 1));
+            ShipThoughts.GiveShip(ship, "SawHullBreach");
         }
 
         public static void TickPawns(Map map, MapComponent_RimverseShips comp, float seconds)
@@ -154,6 +156,7 @@ namespace Rimverse
                 float rate;
                 if (ship == null)
                 {
+                    if (HabitatAir.Pressurized(map, room)) continue;
                     rate = vacuum ? HypoxiaPerSecondVacuum : HypoxiaPerSecondLowAir;
                     if (vacuum) CatalogHealth.VacuumExposure(pawn, seconds);
                 }
@@ -162,13 +165,18 @@ namespace Rimverse
                     float air = comp.RoomAir(room);
                     if (air >= MapComponent_RimverseShips.HypoxiaAirThreshold)
                     {
-                        if (air < 0.5f && ship.airGeneration <= 0f) CatalogHealth.StaleAir(pawn, seconds);
+                        if (air < 0.5f && ship.airGeneration <= 0f)
+                        {
+                            CatalogHealth.StaleAir(pawn, seconds);
+                            ShipThoughts.Give(pawn, "BadAir");
+                        }
                         if (air >= 0.5f) VacuumSuitUtility.Refill(pawn, seconds, ship);
                         continue;
                     }
                     rate = Mathf.Lerp(HypoxiaPerSecondVacuum, HypoxiaPerSecondLowAir, air / MapComponent_RimverseShips.HypoxiaAirThreshold);
                     if (air < 0.05f) CatalogHealth.VacuumExposure(pawn, seconds);
                 }
+                if (pawn.IsColonist) ShipThoughts.VacuumFear(pawn);
                 if (SpaceMapUtility.VacuumProtection(pawn) >= 1f) continue;
                 if (VacuumSuitUtility.TryBreatheFromSuit(pawn, seconds)) continue;
                 HealthUtility.AdjustSeverity(pawn, RimverseDefOf.Rimverse_Hypoxia, rate * seconds * GeneSpace.Factor(pawn, e => e.hypoxiaFactor) * CatalogHealth.HypoxiaFactor(pawn));

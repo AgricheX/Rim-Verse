@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Qol_AutoResearch.label>pesquisa automática</Rimverse_Qol_AutoResearch.label>
+  <Rimverse_Qol_AutoResearch.description>Quando nenhum projeto está escolhido, os pesquisadores escolhem sozinhos um dos três mais baratos disponíveis.</Rimverse_Qol_AutoResearch.description>
+  <Rimverse_Qol_BuildFromInventory.label>construir com o inventário</Rimverse_Qol_BuildFromInventory.label>
+  <Rimverse_Qol_BuildFromInventory.description>Clique com o botão direito numa planta de construção ou estrutura com um colono que carrega o material, e ele deixa tudo ali para os construtores.</Rimverse_Qol_BuildFromInventory.description>
+  <Rimverse_Qol_CallTrader.label>chamar comerciante</Rimverse_Qol_CallTrader.label>
+  <Rimverse_Qol_CallTrader.description>O console de comunicação ganha um botão para chamar um mercador orbital por 300 de prata, uma vez a cada 10 dias. Não dá durante um cerco orbital.</Rimverse_Qol_CallTrader.description>
+  <Rimverse_Qol_CleaningPriority.label>prioridade de limpeza</Rimverse_Qol_CleaningPriority.label>
+  <Rimverse_Qol_CleaningPriority.description>Quem limpa começa pela cozinha e pela enfermaria, depois refeitório e sala de lazer, e só então o resto da nave.</Rimverse_Qol_CleaningPriority.description>
+  <Rimverse_Qol_CommonSense.label>limpar antes de cozinhar</Rimverse_Qol_CommonSense.label>
+  <Rimverse_Qol_CommonSense.description>Os cozinheiros limpam a cozinha suja antes de começar uma refeição.</Rimverse_Qol_CommonSense.description>
+  <Rimverse_Qol_Continue.label>botão continuar</Rimverse_Qol_Continue.label>
+  <Rimverse_Qol_Continue.description>Adiciona ao menu principal um botão Continuar que carrega o seu save mais recente.</Rimverse_Qol_Continue.description>
+  <Rimverse_Qol_DeconstructFirst.label>desconstruir primeiro</Rimverse_Qol_DeconstructFirst.label>
+  <Rimverse_Qol_DeconstructFirst.description>Os construtores derrubam e desinstalam o que está marcado antes de construir algo novo. Precisa reiniciar.</Rimverse_Qol_DeconstructFirst.description>
+  <Rimverse_Qol_DetailedDate.label>data detalhada e dias até estragar</Rimverse_Qol_DetailedDate.label>
+  <Rimverse_Qol_DetailedDate.description>Passar o mouse na data mostra a data completa com a hora, o dia do ano e os dias desde o pouso. Itens que estragam mostram quantos dias faltam no cartão de informações.</Rimverse_Qol_DetailedDate.description>
+  <Rimverse_Qol_ExportSettings.label>exportar e importar opções</Rimverse_Qol_ExportSettings.label>
+  <Rimverse_Qol_ExportSettings.description>Botões nas opções gerais salvam estas opções em um arquivo e carregam de volta, para levar a outro save ou computador.</Rimverse_Qol_ExportSettings.description>
+  <Rimverse_Qol_ExtraSpeed.label>velocidade extra</Rimverse_Qol_ExtraSpeed.label>
+  <Rimverse_Qol_ExtraSpeed.description>Uma tecla (Shift+4 por padrão) liga uma quarta velocidade, mais rápida, para viagens longas entre estrelas.</Rimverse_Qol_ExtraSpeed.description>
+  <Rimverse_Qol_FairFriendlyFire.label>fogo amigo mais justo</Rimverse_Qol_FairFriendlyFire.label>
+  <Rimverse_Qol_FairFriendlyFire.description>Tiros que passam por aliados de quem atira costumam errá-los, e erram mais quanto melhor o atirador. O alvo escolhido não muda.</Rimverse_Qol_FairFriendlyFire.description>
+  <Rimverse_Qol_FollowPawn.label>seguir um colono</Rimverse_Qol_FollowPawn.label>
+  <Rimverse_Qol_FollowPawn.description>Um botão nos colonos faz a câmera segui-los pelo mapa até você desligar.</Rimverse_Qol_FollowPawn.description>
+  <Rimverse_Qol_GoodwillPreview.label>prévia de boa vontade</Rimverse_Qol_GoodwillPreview.label>
+  <Rimverse_Qol_GoodwillPreview.description>A tela de comércio mostra sua boa vontade com a facção do mercador e, no modo presente, quanto ela vai ficar depois do presente.</Rimverse_Qol_GoodwillPreview.description>
+  <Rimverse_Qol_HaulOnTheWay.label>carregar no caminho</Rimverse_Qol_HaulOnTheWay.label>
+  <Rimverse_Qol_HaulOnTheWay.description>Os colonos levam itens próximos para o estoque no caminho de mais tipos de trabalho: fabricar, construir, pesquisar, limpar, plantar, minerar e consertar. Precisa reiniciar.</Rimverse_Qol_HaulOnTheWay.description>
+  <Rimverse_Qol_InstantCaravan.label>caravana instantânea quando é seguro</Rimverse_Qol_InstantCaravan.label>
+  <Rimverse_Qol_InstantCaravan.description>Quando nenhum inimigo ameaça o mapa, um botão na janela de caravana forma e envia a caravana na hora.</Rimverse_Qol_InstantCaravan.description>
+  <Rimverse_Qol_LinkedPlanters.label>canteiros ligados</Rimverse_Qol_LinkedPlanters.label>
+  <Rimverse_Qol_LinkedPlanters.description>Um botão na hidroponia e nos canteiros copia a planta escolhida para todos os canteiros ligados do mesmo tipo.</Rimverse_Qol_LinkedPlanters.description>
+  <Rimverse_Qol_MoodColors.label>cores do humor</Rimverse_Qol_MoodColors.label>
+  <Rimverse_Qol_MoodColors.description>A palavra do humor fica vermelha perto de um colapso, amarela quando está baixa e verde quando está feliz.</Rimverse_Qol_MoodColors.description>
+  <Rimverse_Qol_MovePatient.label>mover paciente</Rimverse_Qol_MovePatient.label>
+  <Rimverse_Qol_MovePatient.description>Clique com o botão direito em uma cama livre com um médico selecionado para levar um paciente até ela.</Rimverse_Qol_MovePatient.description>
+  <Rimverse_Qol_MultiHaul.label>pegar e carregar</Rimverse_Qol_MultiHaul.label>
+  <Rimverse_Qol_MultiHaul.description>Quem carrega pega até seis itens próximos no inventário numa viagem só e deixa cada um no seu estoque.</Rimverse_Qol_MultiHaul.description>
+  <Rimverse_Qol_NoMaxBills.label>sem limite de ordens</Rimverse_Qol_NoMaxBills.label>
+  <Rimverse_Qol_NoMaxBills.description>As bancadas aceitam até 999 ordens em vez de 15.</Rimverse_Qol_NoMaxBills.description>
+  <Rimverse_Qol_PutHere.label>colocar ali mesmo</Rimverse_Qol_PutHere.label>
+  <Rimverse_Qol_PutHere.description>Clique com o botão direito em um item com um colono selecionado e depois em uma célula: o item é levado exatamente para lá.</Rimverse_Qol_PutHere.description>
+  <Rimverse_Qol_QuickSave.label>salvamento rápido</Rimverse_Qol_QuickSave.label>
+  <Rimverse_Qol_QuickSave.description>Uma tecla (F6 por padrão) salva o jogo na hora, com o nome da colônia e a data.</Rimverse_Qol_QuickSave.description>
+  <Rimverse_Qol_QuickStockpile.label>estoque rápido de carga</Rimverse_Qol_QuickStockpile.label>
+  <Rimverse_Qol_QuickStockpile.description>Um botão nos módulos de carga transforma a sala inteira em estoque com um clique.</Rimverse_Qol_QuickStockpile.description>
+  <Rimverse_Qol_RandomScenario.label>cenário aleatório</Rimverse_Qol_RandomScenario.label>
+  <Rimverse_Qol_RandomScenario.description>Um botão na lista de cenários escolhe um cenário aleatório.</Rimverse_Qol_RandomScenario.description>
+  <Rimverse_Qol_RemoteStock.label>ver o que está à venda</Rimverse_Qol_RemoteStock.label>
+  <Rimverse_Qol_RemoteStock.description>Um botão nos povoados do mapa-múndi mostra o que os comerciantes vendem antes de você viajar.</Rimverse_Qol_RemoteStock.description>
+  <Rimverse_Qol_Rename.label>renomear construções</Rimverse_Qol_Rename.label>
+  <Rimverse_Qol_Rename.description>Um botão nas suas construções permite dar o nome que você quiser.</Rimverse_Qol_Rename.description>
+  <Rimverse_Qol_Sidearms.label>armas secundárias</Rimverse_Qol_Sidearms.label>
+  <Rimverse_Qol_Sidearms.description>Colonos com uma arma branca no inventário trocam para ela quando um inimigo fica ao lado, e voltam para a arma de fogo quando a luta acaba.</Rimverse_Qol_Sidearms.description>
+  <Rimverse_Qol_SmartConstruction.label>alisar paredes antes do piso</Rimverse_Qol_SmartConstruction.label>
+  <Rimverse_Qol_SmartConstruction.description>O trabalho de alisar faz as paredes antes do piso, para ninguém ficar parado em piso que vai ser refeito.</Rimverse_Qol_SmartConstruction.description>
+  <Rimverse_Qol_SuitUpOnBreach.label>vestir traje na brecha</Rimverse_Qol_SuitUpOnBreach.label>
+  <Rimverse_Qol_SuitUpOnBreach.description>Quando o casco é rompido, os colonos que não estão convocados vestem na hora o traje de vácuo e o capacete livres mais próximos.</Rimverse_Qol_SuitUpOnBreach.description>
+  <Rimverse_Qol_TargetPriority.label>prioridade de alvo das torres</Rimverse_Qol_TargetPriority.label>
+  <Rimverse_Qol_TargetPriority.description>Suas torres atiram primeiro em inimigos que estão atacando sua gente ou suas construções, depois em atiradores, mecanoides e nos mais feridos.</Rimverse_Qol_TargetPriority.description>
+  <Rimverse_Qol_TempGauge.label>medidor de temperatura</Rimverse_Qol_TempGauge.label>
+  <Rimverse_Qol_TempGauge.description>Um pequeno medidor que você pode construir e que mostra a temperatura do cômodo direto no mapa.</Rimverse_Qol_TempGauge.description>
+  <Rimverse_Qol_TreatFirst.label>tratar primeiro</Rimverse_Qol_TreatFirst.label>
+  <Rimverse_Qol_TreatFirst.description>Um botão em cada colono marca quem deve ser tratado antes de todos.</Rimverse_Qol_TreatFirst.description>
+  <Rimverse_Qol_TurretExclusion.label>área sem tiro de torres</Rimverse_Qol_TurretExclusion.label>
+  <Rimverse_Qol_TurretExclusion.description>Uma área no menu Ordens onde suas torres nunca atiram, para protegê-las da própria comporta ou do hangar.</Rimverse_Qol_TurretExclusion.description>
+</LanguageData>

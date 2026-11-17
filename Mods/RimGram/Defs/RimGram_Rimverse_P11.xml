@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="Rimverse_ShipModuleBase">
+    <defName>Rimverse_CommRelay</defName>
+    <techLevel>Spacer</techLevel>
+    <label>communication relay</label>
+    <description>A tight-beam relay that keeps the ship on the star network during warp jumps and in deep space. While it is powered, posts are never held in the queue.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Building/Ship/ScannerLongRange</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(0.75, 0.9, 1)</color>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Rimverse_NavalComponent>1</Rimverse_NavalComponent>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_Sensors</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+      <li Class="Rimverse.CompProperties_ShipPart">
+        <role>Other</role>
+        <mass>2</mass>
+        <heatPerSecond>0.5</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -15,12 +15,12 @@
     <description>Charters, supply plans and records that let you found and run colonies on other worlds from your ship.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>Rimverse_LifeSupport</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>11</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
 </Defs>

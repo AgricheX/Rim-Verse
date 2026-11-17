@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Contract_BlockadeBreak.label>quebra de bloqueio</Rimverse_Contract_BlockadeBreak.label>
+  <Rimverse_Contract_BlockadeBreak.questNameRules.rulesStrings.0>questName-&gt;Quebrar bloqueio em [colony]</Rimverse_Contract_BlockadeBreak.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_BlockadeBreak.questDescriptionRules.rulesStrings.0>questDescription-&gt;Naves hostis bloqueiam [colony]. A produção parou até você ir a [system] e expulsar elas. Prazo: [days] dias. Recompensa: [reward] prata.</Rimverse_Contract_BlockadeBreak.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_CargoRecovery.label>recuperação de carga</Rimverse_Contract_CargoRecovery.label>
+  <Rimverse_Contract_CargoRecovery.questNameRules.rulesStrings.0>questName-&gt;Recuperar carga em [system]</Rimverse_Contract_CargoRecovery.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_CargoRecovery.questDescriptionRules.rulesStrings.0>questDescription-&gt;[giver] perdeu [count] [item] em [system]. Pegue e traga de volta aqui em até [days] dias. Recompensa: [reward] prata.</Rimverse_Contract_CargoRecovery.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_ColonyDefense.label>defesa de colônia</Rimverse_Contract_ColonyDefense.label>
+  <Rimverse_Contract_ColonyDefense.questNameRules.rulesStrings.0>questName-&gt;Defender [colony]</Rimverse_Contract_ColonyDefense.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_ColonyDefense.questDescriptionRules.rulesStrings.0>questDescription-&gt;Um ataque a [colony] é esperado na metade dos próximos [days] dias. Esteja em [system] quando ele vier, ou a colônia sofre. Recompensa: [reward] prata.</Rimverse_Contract_ColonyDefense.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_ConvoyEscort.label>escolta de comboio</Rimverse_Contract_ConvoyEscort.label>
+  <Rimverse_Contract_ConvoyEscort.questNameRules.rulesStrings.0>questName-&gt;Escoltar comboio em [system]</Rimverse_Contract_ConvoyEscort.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_ConvoyEscort.questDescriptionRules.rulesStrings.0>questDescription-&gt;[giver] pede que você encontre um comboio em [system] e proteja ele por um dia. Piratas podem aparecer. Prazo: [days] dias. Recompensa: [reward] prata.</Rimverse_Contract_ConvoyEscort.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_CrewRescue.label>resgate de tripulação</Rimverse_Contract_CrewRescue.label>
+  <Rimverse_Contract_CrewRescue.questNameRules.rulesStrings.0>questName-&gt;Resgatar tripulação em [system]</Rimverse_Contract_CrewRescue.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_CrewRescue.questDescriptionRules.rulesStrings.0>questDescription-&gt;Uma tripulação de [giver] está presa em [system]. Chegue até eles em até [days] dias. Recompensa: [reward] prata.</Rimverse_Contract_CrewRescue.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_Diplomatic.label>missão diplomática</Rimverse_Contract_Diplomatic.label>
+  <Rimverse_Contract_Diplomatic.questNameRules.rulesStrings.0>questName-&gt;Levar embaixador a [target]</Rimverse_Contract_Diplomatic.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_Diplomatic.questDescriptionRules.rulesStrings.0>questDescription-&gt;[giver] quer que um embaixador chegue até [target] em [system] em até [days] dias. Mantenha ele seguro. Recompensa: [reward] prata.</Rimverse_Contract_Diplomatic.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_Espionage.label>espionagem</Rimverse_Contract_Espionage.label>
+  <Rimverse_Contract_Espionage.questNameRules.rulesStrings.0>questName-&gt;Espionar [target]</Rimverse_Contract_Espionage.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_Espionage.questDescriptionRules.rulesStrings.0>questDescription-&gt;[giver] quer informações sobre [target]. Fique em [system] por dois dias sem ser pego. Prazo: [days] dias. Recompensa: [reward] prata.</Rimverse_Contract_Espionage.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_Passenger.label>transporte de passageiro</Rimverse_Contract_Passenger.label>
+  <Rimverse_Contract_Passenger.questNameRules.rulesStrings.0>questName-&gt;Passageiro para [system]</Rimverse_Contract_Passenger.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_Passenger.questDescriptionRules.rulesStrings.0>questDescription-&gt;Um passageiro de [giver] precisa de carona até [system] em até [days] dias. Mantenha ele vivo e a bordo. Recompensa: [reward] prata.</Rimverse_Contract_Passenger.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_PirateHunt.label>caça a pirata</Rimverse_Contract_PirateHunt.label>
+  <Rimverse_Contract_PirateHunt.questNameRules.rulesStrings.0>questName-&gt;Caçar piratas em [system]</Rimverse_Contract_PirateHunt.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_PirateHunt.questDescriptionRules.rulesStrings.0>questDescription-&gt;Piratas estão atacando perto de [system]. [giver] paga [reward] prata se você achar e vencer eles em até [days] dias.</Rimverse_Contract_PirateHunt.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_PlanetSurvey.label>levantamento de planeta</Rimverse_Contract_PlanetSurvey.label>
+  <Rimverse_Contract_PlanetSurvey.questNameRules.rulesStrings.0>questName-&gt;Levantamento de [body]</Rimverse_Contract_PlanetSurvey.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_PlanetSurvey.questDescriptionRules.rulesStrings.0>questDescription-&gt;[giver] quer o levantamento completo de [body] em [system] em até [days] dias. Use sensores ou sondas. Recompensa: [reward] prata.</Rimverse_Contract_PlanetSurvey.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_RouteMap.label>mapa de rota</Rimverse_Contract_RouteMap.label>
+  <Rimverse_Contract_RouteMap.questNameRules.rulesStrings.0>questName-&gt;Mapear rota por [route]</Rimverse_Contract_RouteMap.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_RouteMap.questDescriptionRules.rulesStrings.0>questDescription-&gt;[giver] quer uma rota mapeada por [route]. Visite os três em até [days] dias. Recompensa: [reward] prata.</Rimverse_Contract_RouteMap.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_RuinExpedition.label>expedição a ruína</Rimverse_Contract_RuinExpedition.label>
+  <Rimverse_Contract_RuinExpedition.questNameRules.rulesStrings.0>questName-&gt;Expedição às ruínas de [body]</Rimverse_Contract_RuinExpedition.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_RuinExpedition.questDescriptionRules.rulesStrings.0>questDescription-&gt;[giver] achou ruínas precursoras em [body], em [system]. Pouse lá em até [days] dias. Recompensa: [reward] prata.</Rimverse_Contract_RuinExpedition.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_SampleCollection.label>coleta de amostra</Rimverse_Contract_SampleCollection.label>
+  <Rimverse_Contract_SampleCollection.questNameRules.rulesStrings.0>questName-&gt;Coletar amostras em [body]</Rimverse_Contract_SampleCollection.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_SampleCollection.questDescriptionRules.rulesStrings.0>questDescription-&gt;Pouse em [body] em [system] em até [days] dias pra coletar amostras para [giver]. Recompensa: [reward] prata.</Rimverse_Contract_SampleCollection.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_Smuggling.label>contrabando</Rimverse_Contract_Smuggling.label>
+  <Rimverse_Contract_Smuggling.questNameRules.rulesStrings.0>questName-&gt;Contrabando de [item] para [system]</Rimverse_Contract_Smuggling.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_Smuggling.questDescriptionRules.rulesStrings.0>questDescription-&gt;Um contato de [giver] quer [count] [item] levados até [system] em até [days] dias, sem perguntas. Se as autoridades locais pegarem, o acordo acaba. Recompensa: [reward] prata.</Rimverse_Contract_Smuggling.questDescriptionRules.rulesStrings.0>
+  <Rimverse_Contract_UrgentDelivery.label>entrega urgente</Rimverse_Contract_UrgentDelivery.label>
+  <Rimverse_Contract_UrgentDelivery.questNameRules.rulesStrings.0>questName-&gt;Entrega urgente para [system]</Rimverse_Contract_UrgentDelivery.questNameRules.rulesStrings.0>
+  <Rimverse_Contract_UrgentDelivery.questDescriptionRules.rulesStrings.0>questDescription-&gt;[giver] precisa que [count] [item] cheguem em [system] em até [days] dias. A carga cai ao lado da sua nave quando você aceita. Recompensa: [reward] prata.</Rimverse_Contract_UrgentDelivery.questDescriptionRules.rulesStrings.0>
+</LanguageData>

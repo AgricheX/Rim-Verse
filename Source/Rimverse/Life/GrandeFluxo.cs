@@ -20,7 +20,17 @@ namespace Rimverse
         Heal,
         Calm,
         Choke,
-        Storm
+        Storm,
+        Pull,
+        Leap,
+        Speed,
+        Barrier,
+        Vision,
+        Union,
+        Fear,
+        Drain,
+        Dominate,
+        Mastery
     }
 
     public static class FlowUtility
@@ -78,7 +88,12 @@ namespace Rimverse
         public static void OnGenerated(Pawn p)
         {
             if (!Enabled || p == null || !p.RaceProps.Humanlike || IsSensitive(p)) return;
-            if (FlowForceBridge.HasForceSensitivity(p) || Rand.Chance(RimverseMod.Settings.fluxoSensitiveChance)) Awaken(p, FlowSide.None, false);
+            if (FlowForceBridge.HasForceSensitivity(p)) Awaken(p, FlowSide.None, false);
+            else if (Rand.Chance(RimverseMod.Settings.fluxoSensitiveChance))
+            {
+                if (p.Faction == Faction.OfPlayer || Rand.Chance(0.5f)) FlowDepth.MakeLatent(p);
+                else Awaken(p, FlowSide.None, false);
+            }
         }
 
         public static float Power(Pawn caster)
@@ -95,6 +110,9 @@ namespace Rimverse
     {
         public FlowMode mode;
         public float amount = 10f;
+        public float energy = 10f;
+        public int level = 1;
+        public float alignmentShift;
 
         public CompProperties_FlowEffect()
         {
@@ -106,16 +124,160 @@ namespace Rimverse
     {
         public new CompProperties_FlowEffect Props => (CompProperties_FlowEffect)props;
 
+        public override bool GizmoDisabled(out string reason)
+        {
+            HediffComp_Flow d = FlowDepth.Data(parent.pawn);
+            if (d != null)
+            {
+                if (d.level < Props.level)
+                {
+                    reason = "Rimverse_FlowNeedLevel".Translate(Props.level);
+                    return true;
+                }
+                if (d.energy < Props.energy)
+                {
+                    reason = "Rimverse_FlowNeedEnergy".Translate(Mathf.CeilToInt(Props.energy), Mathf.FloorToInt(d.energy));
+                    return true;
+                }
+            }
+            return base.GizmoDisabled(out reason);
+        }
+
+        public override bool ShouldHideGizmo => FlowDepth.Data(parent.pawn) is HediffComp_Flow d && d.MaxLevel < Props.level;
+
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
             Pawn caster = parent.pawn;
             Map map = caster?.Map;
             if (map == null) return;
+            HediffComp_Flow fd = FlowDepth.Data(caster);
+            if (fd != null)
+            {
+                fd.energy = Mathf.Max(0f, fd.energy - Props.energy);
+                fd.GainXp(Props.energy * 2f);
+                float shift = Props.alignmentShift != 0f ? Props.alignmentShift : (Props.mode == FlowMode.Heal || Props.mode == FlowMode.Calm || Props.mode == FlowMode.Barrier || Props.mode == FlowMode.Union || Props.mode == FlowMode.Vision ? 2f : Props.mode == FlowMode.Choke || Props.mode == FlowMode.Storm || Props.mode == FlowMode.Fear || Props.mode == FlowMode.Drain || Props.mode == FlowMode.Dominate ? -3f : 0f);
+                fd.alignment = Mathf.Clamp(fd.alignment + shift, -100f, 100f);
+            }
             float power = FlowUtility.Power(caster) * Props.amount;
             Pawn tp = target.Pawn;
             switch (Props.mode)
             {
+                case FlowMode.Pull:
+                    if (tp == null) return;
+                    if (tp.equipment?.Primary != null && Rand.Chance(0.5f))
+                    {
+                        if (tp.equipment.TryDropEquipment(tp.equipment.Primary, out ThingWithComps dropped, tp.Position) && dropped != null)
+                        {
+                            dropped.Position = caster.Position;
+                            FleckMaker.ThrowDustPuff(caster.DrawPos, map, 1f);
+                        }
+                    }
+                    else
+                    {
+                        IntVec3 near = CellFinder.StandableCellNear(caster.Position, map, 1.9f);
+                        if (near.IsValid)
+                        {
+                            tp.Position = near;
+                            tp.Notify_Teleported(true, false);
+                            tp.stances?.stunner?.StunFor(60, caster, false);
+                        }
+                    }
+                    break;
+                case FlowMode.Leap:
+                    if (!target.Cell.IsValid || !target.Cell.Standable(map)) return;
+                    FleckMaker.ThrowDustPuff(caster.DrawPos, map, 1.5f);
+                    caster.Position = target.Cell;
+                    caster.Notify_Teleported(false, false);
+                    FleckMaker.ThrowDustPuff(caster.DrawPos, map, 1.5f);
+                    break;
+                case FlowMode.Speed:
+                    AddHediff(caster, "Rimverse_FlowSpeed");
+                    break;
+                case FlowMode.Barrier:
+                    foreach (Pawn ally in GenRadial.RadialDistinctThingsAround(caster.Position, map, 3f, true).OfType<Pawn>().Where(x => !x.HostileTo(caster)).ToList()) AddHediff(ally, "Rimverse_FlowBarrier");
+                    FleckMaker.Static(caster.Position, map, FleckDefOf.PsycastAreaEffect, 3f);
+                    break;
+                case FlowMode.Vision:
+                    {
+                        MapComponent_ShipLocation loc = MapComponent_ShipLocation.For(map);
+                        if (loc != null && !loc.Traveling) GameComponent_Universe.Instance?.SetSystemScan(loc.SystemId, ScanLevel.Exact);
+                        Messages.Message("Rimverse_FlowVisionDone".Translate(caster.LabelShort), caster, MessageTypeDefOf.PositiveEvent, false);
+                    }
+                    break;
+                case FlowMode.Union:
+                    foreach (Pawn ally in GenRadial.RadialDistinctThingsAround(caster.Position, map, 8f, true).OfType<Pawn>().Where(x => x.Faction == caster.Faction && x.RaceProps.Humanlike).ToList()) AddHediff(ally, "Rimverse_FlowUnion");
+                    FleckMaker.Static(caster.Position, map, FleckDefOf.PsycastAreaEffect, 8f);
+                    break;
+                case FlowMode.Fear:
+                    foreach (Pawn foe in GenRadial.RadialDistinctThingsAround(target.Cell, map, 5f, true).OfType<Pawn>().Where(x => x.HostileTo(caster) && !x.Downed).ToList())
+                    {
+                        if (foe.RaceProps.IsMechanoid) continue;
+                        foe.mindState?.mentalStateHandler?.TryStartMentalState(MentalStateDefOf.PanicFlee, null, true);
+                    }
+                    FleckMaker.Static(target.Cell, map, FleckDefOf.PsycastAreaEffect, 5f);
+                    break;
+                case FlowMode.Drain:
+                    {
+                        if (tp == null) return;
+                        HediffComp_Flow td = FlowDepth.Data(tp);
+                        float got;
+                        if (td != null && td.energy > 0f)
+                        {
+                            got = Mathf.Min(power, td.energy);
+                            td.energy -= got;
+                            if (fd != null) fd.energy = Mathf.Min(fd.MaxEnergy, fd.energy + got);
+                        }
+                        else
+                        {
+                            tp.TakeDamage(new DamageInfo(DamageDefOf.Blunt, power, 0f, -1f, caster));
+                            got = power;
+                            float rest = got;
+                            foreach (Hediff_Injury h in caster.health.hediffSet.hediffs.OfType<Hediff_Injury>().ToList())
+                            {
+                                if (rest <= 0f) break;
+                                float a = Mathf.Min(rest, h.Severity);
+                                h.Heal(a);
+                                rest -= a;
+                            }
+                        }
+                    }
+                    break;
+                case FlowMode.Dominate:
+                    {
+                        if (tp == null || tp.Faction == caster.Faction || !tp.RaceProps.Humanlike) return;
+                        HediffDef dd = DefDatabase<HediffDef>.GetNamedSilentFail("Rimverse_FlowDominated");
+                        if (dd == null) return;
+                        Faction orig = tp.Faction;
+                        Hediff h = tp.health.AddHediff(dd);
+                        HediffComp_FlowDominated dc = (h as HediffWithComps)?.TryGetComp<HediffComp_FlowDominated>();
+                        if (dc != null) dc.original = orig;
+                        tp.SetFaction(caster.Faction);
+                        tp.jobs?.EndCurrentJob(Verse.AI.JobCondition.InterruptForced);
+                    }
+                    break;
+                case FlowMode.Mastery:
+                    if (FlowUtility.Side(caster) == FlowSide.Rupture)
+                    {
+                        Thing b = target.Thing;
+                        if (b is Building && b.TryGetComp<CompShipPart>() != null && b.Faction != caster.Faction)
+                        {
+                            GenExplosion.DoExplosion(b.Position, map, 1.9f, DamageDefOf.Bomb, caster, 30);
+                            if (!b.Destroyed) b.Destroy(DestroyMode.KillFinalize);
+                        }
+                    }
+                    else
+                    {
+                        Pawn ally = tp ?? (target.Thing as Corpse)?.InnerPawn;
+                        if (ally == null) return;
+                        if (ally.Dead) ResurrectionUtility.TryResurrect(ally);
+                        else
+                        {
+                            foreach (Hediff_Injury h in ally.health.hediffSet.hediffs.OfType<Hediff_Injury>().ToList()) h.Heal(h.Severity);
+                        }
+                        FleckMaker.ThrowMetaIcon(ally.PositionHeld, map, FleckDefOf.HealingCross);
+                    }
+                    break;
                 case FlowMode.Push:
                     if (tp == null) return;
                     IntVec3 dir = tp.Position - caster.Position;
@@ -164,20 +326,35 @@ namespace Rimverse
                     tp.stances?.stunner?.StunFor(150, caster, false);
                     break;
                 case FlowMode.Storm:
-                    foreach (Pawn p in GenRadial.RadialDistinctThingsAround(target.Cell, map, 2.5f, true).OfType<Pawn>().ToList())
                     {
-                        if (p == caster) continue;
-                        p.TakeDamage(new DamageInfo(DamageDefOf.Burn, power, 0.3f, -1f, caster));
-                        p.stances?.stunner?.StunFor(90, caster, false);
+                        List<Pawn> hit = new List<Pawn>();
+                        Pawn cur = tp ?? GenRadial.RadialDistinctThingsAround(target.Cell, map, 2.5f, true).OfType<Pawn>().FirstOrDefault(x => x != caster);
+                        while (cur != null && hit.Count < 3)
+                        {
+                            hit.Add(cur);
+                            cur.TakeDamage(new DamageInfo(DamageDefOf.Burn, power, 0.3f, -1f, caster));
+                            cur.stances?.stunner?.StunFor(90, caster, false);
+                            FleckMaker.ThrowLightningGlow(cur.DrawPos, map, 1.5f);
+                            Pawn from = cur;
+                            cur = GenRadial.RadialDistinctThingsAround(from.Position, map, 4f, true).OfType<Pawn>().Where(x => x != caster && !hit.Contains(x) && x.HostileTo(caster)).OrderBy(x => x.Position.DistanceToSquared(from.Position)).FirstOrDefault();
+                        }
                     }
-                    FleckMaker.ThrowLightningGlow(target.CenterVector3, map, 2f);
                     break;
             }
         }
 
+        private static void AddHediff(Pawn p, string def)
+        {
+            HediffDef d = DefDatabase<HediffDef>.GetNamedSilentFail(def);
+            if (d == null || p?.health == null) return;
+            Hediff old = p.health.hediffSet.GetFirstHediffOfDef(d);
+            if (old != null) p.health.RemoveHediff(old);
+            p.health.AddHediff(d);
+        }
+
         public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
         {
-            if ((Props.mode == FlowMode.Heal || Props.mode == FlowMode.Calm || Props.mode == FlowMode.Push || Props.mode == FlowMode.Choke) && target.Pawn == null) return false;
+            if ((Props.mode == FlowMode.Heal || Props.mode == FlowMode.Calm || Props.mode == FlowMode.Push || Props.mode == FlowMode.Choke || Props.mode == FlowMode.Pull || Props.mode == FlowMode.Drain || Props.mode == FlowMode.Dominate) && target.Pawn == null) return false;
             return base.CanApplyOn(target, dest);
         }
     }

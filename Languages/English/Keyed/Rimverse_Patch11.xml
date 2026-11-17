@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_AsyncExpedition>The {0} ask for a crew to cross the endless rooms on their behalf. Send a colonist into the rooms within fifteen days and bring them back to be paid.</Rimverse_AsyncExpedition>
+  <Rimverse_AsyncExpeditionDone>{0} came back from the rooms with the maps the asynchronous travelers wanted. They paid well.</Rimverse_AsyncExpeditionDone>
+  <Rimverse_AsyncExpeditionDoneLabel>Expedition complete</Rimverse_AsyncExpeditionDoneLabel>
+  <Rimverse_AsyncExpeditionFailed>The asynchronous expedition expired. Nobody went into the rooms in time.</Rimverse_AsyncExpeditionFailed>
+  <Rimverse_AsyncRescue>You found {0} in the rooms. They are grateful, and so are their people.</Rimverse_AsyncRescue>
+  <Rimverse_AsyncRescueAsk>{0}, a researcher from the asynchronous travelers, was swallowed by the rooms right next to your ship. Go in after them and they will join you.</Rimverse_AsyncRescueAsk>
+  <Rimverse_AsyncRescueLabel>Researcher found</Rimverse_AsyncRescueLabel>
+  <Rimverse_BladeCrystal0>azure crystal</Rimverse_BladeCrystal0>
+  <Rimverse_BladeCrystal1>jade crystal</Rimverse_BladeCrystal1>
+  <Rimverse_BladeCrystal2>amethyst crystal</Rimverse_BladeCrystal2>
+  <Rimverse_BladeCrystal3>amber crystal</Rimverse_BladeCrystal3>
+  <Rimverse_BladeCrystal4>white crystal</Rimverse_BladeCrystal4>
+  <Rimverse_BladeCrystal5>bled crystal</Rimverse_BladeCrystal5>
+  <Rimverse_BodyEccentric>Eccentric orbit ({0}): seasons swing hard between near and far.</Rimverse_BodyEccentric>
+  <Rimverse_BodyEqTemperature>Equilibrium temperature: {0}</Rimverse_BodyEqTemperature>
+  <Rimverse_BodyTidalLocked>Tidally locked: one side always faces the star.</Rimverse_BodyTidalLocked>
+  <Rimverse_BulkheadSealed>A bulkhead sealed itself to stop the air from escaping.</Rimverse_BulkheadSealed>
+  <Rimverse_CivLegitimacy>Legitimacy: {0}</Rimverse_CivLegitimacy>
+  <Rimverse_CivPreSpace>A pre-space civilization: it cannot leave its world yet.</Rimverse_CivPreSpace>
+  <Rimverse_CmdMovePrisoner>Transfer to another ship</Rimverse_CmdMovePrisoner>
+  <Rimverse_CmdMovePrisonerDesc>Send this prisoner by shuttle to another of your ships or stations in the same star system. They go to a free prisoner bed if there is one.</Rimverse_CmdMovePrisonerDesc>
+  <Rimverse_CmdMovePrisonerNone>No other ship or station of yours is in this star system, or a ship is traveling.</Rimverse_CmdMovePrisonerNone>
+  <Rimverse_CompatAlliesGoodwill>Allies mods: spent goodwill changes civilization opinion</Rimverse_CompatAlliesGoodwill>
+  <Rimverse_CompatAlliesGoodwill_Desc>With Allies are Helpful, Guards For Me or Raids For Me, the goodwill you spend asking a Rimverse civilization for help also lowers that civilization's opinion of you.</Rimverse_CompatAlliesGoodwill_Desc>
+  <Rimverse_CompatAnomalyExtras>Anomaly mods: entities survive vacuum</Rimverse_CompatAnomalyExtras>
+  <Rimverse_CompatAnomalyExtras_Desc>Entities from Anomaly mods survive vacuum like the base entities. Needs a restart.</Rimverse_CompatAnomalyExtras_Desc>
+  <Rimverse_CompatNoForcedSlowdown>No Forced Slowdown: no threat auto-pause while a ship travels</Rimverse_CompatNoForcedSlowdown>
+  <Rimverse_CompatNoForcedSlowdown_Desc>While one of your ships is traveling, the Rimverse pause on threats does not trigger. Off by default.</Rimverse_CompatNoForcedSlowdown_Desc>
+  <Rimverse_CompatPsycasts>Psycast mods: faster psyfocus for Flow-sensitive pawns</Rimverse_CompatPsycasts>
+  <Rimverse_CompatPsycasts_Desc>Flow-sensitive pawns regain psyfocus 10% faster. Needs a restart.</Rimverse_CompatPsycasts_Desc>
+  <Rimverse_CompatRealisticRooms>Realistic Rooms: lower crowded ship threshold</Rimverse_CompatRealisticRooms>
+  <Rimverse_CompatRealisticRooms_Desc>A ship counts as crowded below 10 cells per crew member instead of 16. Needs a restart.</Rimverse_CompatRealisticRooms_Desc>
+  <Rimverse_CompatRimmuNation>Rimmu-Nation clothing: hazmat gear seals a little</Rimverse_CompatRimmuNation>
+  <Rimverse_CompatRimmuNation_Desc>Gas masks and hazmat gear from Rimmu-Nation clothing give a small vacuum seal (+10%). Needs a restart.</Rimverse_CompatRimmuNation_Desc>
+  <Rimverse_CompatShipVersions>Ship mods: storage and hydroponics count as ship parts</Rimverse_CompatShipVersions>
+  <Rimverse_CompatShipVersions_Desc>Storage and hydroponics buildings from ship mods count as cargo and hydroponics on Rimverse ships. Needs a restart.</Rimverse_CompatShipVersions_Desc>
+  <Rimverse_CompatTweaksHeader>Adjustments for other mods (greyed out when the mod is not active; the ones that change items need a restart):</Rimverse_CompatTweaksHeader>
+  <Rimverse_CompatWeapons>Weapon mods: heavy rounds can breach the hull</Rimverse_CompatWeapons>
+  <Rimverse_CompatWeapons_Desc>Heavy and explosive rounds from weapon mods can breach the hull, like Rimverse weapons. Needs a restart.</Rimverse_CompatWeapons_Desc>
+  <Rimverse_ContractDeadline>Time left: {0}</Rimverse_ContractDeadline>
+  <Rimverse_ContractGoTo>Go to {0}.</Rimverse_ContractGoTo>
+  <Rimverse_ContractNone>No contract fits your situation right now.</Rimverse_ContractNone>
+  <Rimverse_ContractReturn>Bring the cargo back to {0}.</Rimverse_ContractReturn>
+  <Rimverse_ContractRouteProgress>Systems charted: {0} of {1}.</Rimverse_ContractRouteProgress>
+  <Rimverse_ContractSmuggleCaught>{0} caught the smuggled cargo. The contract failed.</Rimverse_ContractSmuggleCaught>
+  <Rimverse_ContractSpyCaught>{0} caught your spies. The contract failed.</Rimverse_ContractSpyCaught>
+  <Rimverse_CosmicRegion>Region of the web: a looser grouping of clusters between walls.</Rimverse_CosmicRegion>
+  <Rimverse_CosmicWebCounts>{0} voids, {1} walls, {2} superclusters and {3} regions in this chunk.</Rimverse_CosmicWebCounts>
+  <Rimverse_DesNoTurretFire>No turret fire</Rimverse_DesNoTurretFire>
+  <Rimverse_DesNoTurretFireClear>Clear no turret fire</Rimverse_DesNoTurretFireClear>
+  <Rimverse_DesNoTurretFireDesc>Mark cells where your turrets never shoot at anything.</Rimverse_DesNoTurretFireDesc>
+  <Rimverse_DistrictSizeClass>District size class: {0}</Rimverse_DistrictSizeClass>
+  <Rimverse_EnemyClass_0>fighter</Rimverse_EnemyClass_0>
+  <Rimverse_EnemyClass_1>corvette</Rimverse_EnemyClass_1>
+  <Rimverse_EnemyClass_2>frigate</Rimverse_EnemyClass_2>
+  <Rimverse_EnemyClass_3>destroyer</Rimverse_EnemyClass_3>
+  <Rimverse_EnemyClass_4>cruiser</Rimverse_EnemyClass_4>
+  <Rimverse_EnemyClass_5>carrier</Rimverse_EnemyClass_5>
+  <Rimverse_EnemyClass_6>battleship</Rimverse_EnemyClass_6>
+  <Rimverse_EnemyClass_7>dreadnought</Rimverse_EnemyClass_7>
+  <Rimverse_EnemyClass_8>war station</Rimverse_EnemyClass_8>
+  <Rimverse_FlowApprenticeIs>Apprentice: {0}</Rimverse_FlowApprenticeIs>
+  <Rimverse_FlowAwakenDanger>Close to death, {0} felt the Great Flow wake inside.</Rimverse_FlowAwakenDanger>
+  <Rimverse_FlowAwakenMaster>Near a master of the Flow, {0} woke to the Great Flow.</Rimverse_FlowAwakenMaster>
+  <Rimverse_FlowAwakenMeditation>Meditating beside the crystal, {0} woke to the Great Flow.</Rimverse_FlowAwakenMeditation>
+  <Rimverse_FlowBound>{0} took {1} as an apprentice.</Rimverse_FlowBound>
+  <Rimverse_FlowBracket>level {0}, {1}/{2} energy</Rimverse_FlowBracket>
+  <Rimverse_FlowDeflected>Deflected</Rimverse_FlowDeflected>
+  <Rimverse_FlowLevelUp>{0} reached level {1} in the Great Flow.</Rimverse_FlowLevelUp>
+  <Rimverse_FlowMasterIs>Master: {0}</Rimverse_FlowMasterIs>
+  <Rimverse_FlowNeedEnergy>Needs {0} Flow energy (has {1}).</Rimverse_FlowNeedEnergy>
+  <Rimverse_FlowNeedLevel>Requires Great Flow level {0}.</Rimverse_FlowNeedLevel>
+  <Rimverse_FlowNoApprentice>No Flow user here can be taught.</Rimverse_FlowNoApprentice>
+  <Rimverse_FlowNotSensitive>{PAWN_nameDef} does not feel the Great Flow.</Rimverse_FlowNotSensitive>
+  <Rimverse_FlowSideChanged>{0} now walks the path of {1}.</Rimverse_FlowSideChanged>
+  <Rimverse_FlowTakeApprentice>Take apprentice</Rimverse_FlowTakeApprentice>
+  <Rimverse_FlowTakeApprenticeDesc>Teach a less experienced Flow user. An apprentice near their master learns three times faster. A master has one apprentice at a time.</Rimverse_FlowTakeApprenticeDesc>
+  <Rimverse_FlowTip>Sensitivity: {0}
+Level: {1} (max {2})
+Experience: {3}/{4}
+Alignment: {5} (Rupture -100 to Harmony +100)</Rimverse_FlowTip>
+  <Rimverse_FlowVisionDone>{0} opened their mind to the whole system. Every body here is revealed.</Rimverse_FlowVisionDone>
+  <Rimverse_FlowWandererText>A wanderer of the Great Flow passed by and shared their teachings with {0}.</Rimverse_FlowWandererText>
+  <Rimverse_FlowWeaponLevel>needs Great Flow level {0}</Rimverse_FlowWeaponLevel>
+  <Rimverse_ImpossibleMap>A map arrived that should not exist: a door drawn into a ship near {0}. Take the ship there and the door will be waiting.</Rimverse_ImpossibleMap>
+  <Rimverse_LetterBombard>{0} claims the system of {1} and sent a fleet to bombard the colony.</Rimverse_LetterBombard>
+  <Rimverse_LetterBombardLabel>Bombardment expedition</Rimverse_LetterBombardLabel>
+  <Rimverse_LetterLegitimacy>The government of {0} lost all legitimacy and was replaced by: {1}.</Rimverse_LetterLegitimacy>
+  <Rimverse_LetterLegitimacyLabel>Government falls</Rimverse_LetterLegitimacyLabel>
+  <Rimverse_LetterNemesis>The {0} is back. {1} commands it again, after escaping you {2} time(s).</Rimverse_LetterNemesis>
+  <Rimverse_LetterNemesisLabel>An old enemy returns</Rimverse_LetterNemesisLabel>
+  <Rimverse_LetterSiege>The fleet of {0} did not leave after its attack. It has taken orbit and is besieging this system for about {1} days.
+
+While the siege lasts, no orbital trader can reach you, trade routes through the system are cut, and the fleet may strike again any day. Park a fleet of your own here, stronger than theirs, to break the siege, or make peace.</Rimverse_LetterSiege>
+  <Rimverse_LetterSiegeBroken>Your fleet broke the siege. The fleet of {0} withdrew with heavy losses.</Rimverse_LetterSiegeBroken>
+  <Rimverse_LetterSiegeEndLabel>Siege over</Rimverse_LetterSiegeEndLabel>
+  <Rimverse_LetterSiegeLabel>Orbital siege</Rimverse_LetterSiegeLabel>
+  <Rimverse_LetterSiegeLifted>The fleet of {0} lifted the siege and is going home.</Rimverse_LetterSiegeLifted>
+  <Rimverse_LetterTechRevolution>{0} went through a technological revolution and reached the {1} age. Its new government: {2}.</Rimverse_LetterTechRevolution>
+  <Rimverse_LetterTechRevolutionLabel>Technological revolution</Rimverse_LetterTechRevolutionLabel>
+  <Rimverse_LetterTradeWar>{0} sees {1} as a competitor and declared a trade embargo for 20 days.</Rimverse_LetterTradeWar>
+  <Rimverse_LetterTradeWarLabel>Trade war</Rimverse_LetterTradeWarLabel>
+  <Rimverse_MapFilterCivs>Civilizations</Rimverse_MapFilterCivs>
+  <Rimverse_MapFilterDanger>Danger</Rimverse_MapFilterDanger>
+  <Rimverse_MapFilterResources>Resources</Rimverse_MapFilterResources>
+  <Rimverse_MapFilterTrade>Trade routes</Rimverse_MapFilterTrade>
+  <Rimverse_MarketShortage>In short supply here: {0}</Rimverse_MarketShortage>
+  <Rimverse_MeterCargo>Cargo</Rimverse_MeterCargo>
+  <Rimverse_Mission_Siege>orbital siege</Rimverse_Mission_Siege>
+  <Rimverse_MsgEmbargoed>{0} has an embargo against you and will not trade.</Rimverse_MsgEmbargoed>
+  <Rimverse_MsgFreighterHere>A {1} of {0} arrived in this system and is open for trade.</Rimverse_MsgFreighterHere>
+  <Rimverse_MsgFreighterRaided>Pirates raided a freighter of {0} near {1}.</Rimverse_MsgFreighterRaided>
+  <Rimverse_MsgPrisonerMoved>{0} was transferred to {1}.</Rimverse_MsgPrisonerMoved>
+  <Rimverse_MsgPrisonerSabotage>{0} sabotaged the {1} while escaping!</Rimverse_MsgPrisonerSabotage>
+  <Rimverse_MsgSensorsEvaded>The sensors on {0} spotted the ambush early. The ship slipped away before it closed.</Rimverse_MsgSensorsEvaded>
+  <Rimverse_PerfBackground>Space background</Rimverse_PerfBackground>
+  <Rimverse_PerfBackground_Desc>Draw the star sky, planets and sun behind space maps. Turning it off saves the most.</Rimverse_PerfBackground_Desc>
+  <Rimverse_PerfCityHorizon>City beyond the map edge</Rimverse_PerfCityHorizon>
+  <Rimverse_PerfCityHorizon_Desc>On civilization city maps, show the rest of the city continuing past the edge of the map.</Rimverse_PerfCityHorizon_Desc>
+  <Rimverse_PerfMegastructures>Megastructures in the sky</Rimverse_PerfMegastructures>
+  <Rimverse_PerfMegastructures_Desc>Draw rings, swarms, habitats and gates in the background.</Rimverse_PerfMegastructures_Desc>
+  <Rimverse_PerfPauseMaps>Pause unseen maps</Rimverse_PerfPauseMaps>
+  <Rimverse_PerfPauseMaps_Desc>Maps you are not looking at, with none of your people on them and that are not your home, stop ticking until someone arrives. Saves a lot with many stations and derelicts open.</Rimverse_PerfPauseMaps_Desc>
+  <Rimverse_PerfStars>Background stars</Rimverse_PerfStars>
+  <Rimverse_PerfStars_Desc>How many stars the background draws.</Rimverse_PerfStars_Desc>
+  <Rimverse_PerfStreaks>Warp and travel streaks</Rimverse_PerfStreaks>
+  <Rimverse_PerfStreaks_Desc>Draw moving star streaks while the ship travels.</Rimverse_PerfStreaks_Desc>
+  <Rimverse_PerfTraffic>Orbital traffic</Rimverse_PerfTraffic>
+  <Rimverse_PerfTraffic_Desc>Draw stations and moving ships around inhabited worlds, busiest around a civilization's seat.</Rimverse_PerfTraffic_Desc>
+  <Rimverse_PlagueSpread>{0} caught the alien plague from {1}. Keep the sick in a room with a quarantine chamber.</Rimverse_PlagueSpread>
+  <Rimverse_PlagueStrain>strain {0}</Rimverse_PlagueStrain>
+  <Rimverse_QolAutoResearch>Researchers chose a new project by themselves: {0}.</Rimverse_QolAutoResearch>
+  <Rimverse_QolBuildFromInventory>Bring carried materials here</Rimverse_QolBuildFromInventory>
+  <Rimverse_QolCallTrader>Call trader</Rimverse_QolCallTrader>
+  <Rimverse_QolCallTraderDesc>Pay {0} silver to call an orbital trader. You can call one every {1} days.</Rimverse_QolCallTraderDesc>
+  <Rimverse_QolCallTraderNoPower>The comms console needs power.</Rimverse_QolCallTraderNoPower>
+  <Rimverse_QolCallTraderNoSilver>You need {0} silver on this map.</Rimverse_QolCallTraderNoSilver>
+  <Rimverse_QolCallTraderSiege>No trader comes through an orbital siege.</Rimverse_QolCallTraderSiege>
+  <Rimverse_QolCallTraderWait>You can call again in {0}.</Rimverse_QolCallTraderWait>
+  <Rimverse_QolContinue>Continue</Rimverse_QolContinue>
+  <Rimverse_QolDateTip>{0}
+Day of the year: {1}
+Days since landing: {2}
+Game ticks: {3}</Rimverse_QolDateTip>
+  <Rimverse_QolDaysToRot>Days until rotten</Rimverse_QolDaysToRot>
+  <Rimverse_QolDaysToRotDesc>How many days this item lasts at the current temperature.</Rimverse_QolDaysToRotDesc>
+  <Rimverse_QolExportSettings>Export settings to a file</Rimverse_QolExportSettings>
+  <Rimverse_QolFollow>Follow</Rimverse_QolFollow>
+  <Rimverse_QolFollowDesc>Keep the camera on this colonist until you turn it off.</Rimverse_QolFollowDesc>
+  <Rimverse_QolGaugeInspect>Room temperature: {0}</Rimverse_QolGaugeInspect>
+  <Rimverse_QolGoodwillGift>Goodwill: {0} → {1} ({2})</Rimverse_QolGoodwillGift>
+  <Rimverse_QolGoodwillNow>Goodwill: {0} ({1})</Rimverse_QolGoodwillNow>
+  <Rimverse_QolImportSettings>Import settings from the file</Rimverse_QolImportSettings>
+  <Rimverse_QolInstantCaravan>Send right away</Rimverse_QolInstantCaravan>
+  <Rimverse_QolInstantCaravanDesc>The map is safe: the caravan forms and leaves at once, without packing.</Rimverse_QolInstantCaravanDesc>
+  <Rimverse_QolLinkPlanters>Link planters</Rimverse_QolLinkPlanters>
+  <Rimverse_QolLinkPlantersDesc>Copy this plant to every connected planter of the same kind.</Rimverse_QolLinkPlantersDesc>
+  <Rimverse_QolLinkPlantersDone>{0} planters now grow the same plant.</Rimverse_QolLinkPlantersDone>
+  <Rimverse_QolMovePatient>Move {0} to {1} ({2})</Rimverse_QolMovePatient>
+  <Rimverse_QolNeverRots>does not rot here</Rimverse_QolNeverRots>
+  <Rimverse_QolPutHere>Carry {0} to a chosen spot</Rimverse_QolPutHere>
+  <Rimverse_QolQuickSaved>Game saved: {0}</Rimverse_QolQuickSaved>
+  <Rimverse_QolQuickStockpile>Room stockpile</Rimverse_QolQuickStockpile>
+  <Rimverse_QolQuickStockpileDesc>Turn every free cell of this room into a stockpile.</Rimverse_QolQuickStockpileDesc>
+  <Rimverse_QolQuickStockpileDone>Stockpile created with {0} cells.</Rimverse_QolQuickStockpileDone>
+  <Rimverse_QolQuickStockpileNoRoom>This module is not inside a closed room.</Rimverse_QolQuickStockpileNoRoom>
+  <Rimverse_QolRandomScenario>Random scenario</Rimverse_QolRandomScenario>
+  <Rimverse_QolRemoteStock>What's for sale</Rimverse_QolRemoteStock>
+  <Rimverse_QolRemoteStockDesc>See what the traders of this settlement sell right now.</Rimverse_QolRemoteStockDesc>
+  <Rimverse_QolRemoteStockEmpty>Nothing for sale right now.</Rimverse_QolRemoteStockEmpty>
+  <Rimverse_QolRemoteStockTitle>{0} ({1}), goodwill {2}</Rimverse_QolRemoteStockTitle>
+  <Rimverse_QolRename>Rename</Rimverse_QolRename>
+  <Rimverse_QolRenameDesc>Give this building a name of your choice.</Rimverse_QolRenameDesc>
+  <Rimverse_QolRenameReset>Original name</Rimverse_QolRenameReset>
+  <Rimverse_QolSettingsExported>Settings exported to {0}.</Rimverse_QolSettingsExported>
+  <Rimverse_QolSettingsImported>Settings imported.</Rimverse_QolSettingsImported>
+  <Rimverse_QolSettingsNoFile>No exported settings found at {0}.</Rimverse_QolSettingsNoFile>
+  <Rimverse_QolTreatFirst>Treat first</Rimverse_QolTreatFirst>
+  <Rimverse_QolTreatFirstDesc>Doctors treat this colonist before anyone else.</Rimverse_QolTreatFirstDesc>
+  <Rimverse_RaiderKind_BountyHunters>bounty hunters</Rimverse_RaiderKind_BountyHunters>
+  <Rimverse_RaiderKind_Corporate>corporate security</Rimverse_RaiderKind_Corporate>
+  <Rimverse_RaiderKind_Fanatics>fanatics</Rimverse_RaiderKind_Fanatics>
+  <Rimverse_RaiderKind_Federation>federation</Rimverse_RaiderKind_Federation>
+  <Rimverse_RaiderKind_Guardians>precursor guardian</Rimverse_RaiderKind_Guardians>
+  <Rimverse_RaiderKind_Junta>junta wave</Rimverse_RaiderKind_Junta>
+  <Rimverse_RaiderKind_Mercenaries>mercenaries</Rimverse_RaiderKind_Mercenaries>
+  <Rimverse_RaiderKind_Pirates>pirates</Rimverse_RaiderKind_Pirates>
+  <Rimverse_RareFind>The sensors locked onto {0}, a size class {1} object. Things this large are found once in a lifetime. The data alone is worth a fortune, and the research team is already busy.</Rimverse_RareFind>
+  <Rimverse_RareFindLabel>Rare find</Rimverse_RareFindLabel>
+  <Rimverse_RetrofitDoneLabel>Gravship retrofitted</Rimverse_RetrofitDoneLabel>
+  <Rimverse_RetrofitDoneText>{0} cells of gravship substructure are now Rimverse hull. Install the delivered bridge on the ship to command it as a Rimverse vessel. The grav engine still works.</Rimverse_RetrofitDoneText>
+  <Rimverse_RetrofitNoGravship>There is no gravship substructure on this map.</Rimverse_RetrofitNoGravship>
+  <Rimverse_RetrofitNoOdyssey>Requires Odyssey.</Rimverse_RetrofitNoOdyssey>
+  <Rimverse_RoomsDoor>A yellow door has appeared in a wall of the ship. It was not there before, and whoever walks through it will end up in the endless rooms.</Rimverse_RoomsDoor>
+  <Rimverse_RoomsDoorInspect>Fades in {0}</Rimverse_RoomsDoorInspect>
+  <Rimverse_RoomsDoorLabel>Door that should not be here</Rimverse_RoomsDoorLabel>
+  <Rimverse_RoomsReturnedCoords>{0} came back from the rooms remembering the exact coordinates of {1}.</Rimverse_RoomsReturnedCoords>
+  <Rimverse_RoomsStowaway>Something followed your colonist back from the rooms and has been hiding aboard. It just came out.</Rimverse_RoomsStowaway>
+  <Rimverse_RoomsStowawayLabel>Stowaway from the rooms</Rimverse_RoomsStowawayLabel>
+  <Rimverse_RoomsStrayFound>{0} has been waiting here since the rooms spat them out. They are back aboard.</Rimverse_RoomsStrayFound>
+  <Rimverse_RoomsStrayFoundLabel>Lost colonist found</Rimverse_RoomsStrayFoundLabel>
+  <Rimverse_RoomsWreck>{0} found pieces of a wrecked ship scattered in the rooms.</Rimverse_RoomsWreck>
+  <Rimverse_RoomsWrongReturn>{0} stepped out of the rooms in the wrong place, somewhere near {1}. Take the ship there to pick them up.</Rimverse_RoomsWrongReturn>
+  <Rimverse_RoomsWrongReturnLabel>Wrong exit</Rimverse_RoomsWrongReturnLabel>
+  <Rimverse_RuinResearch>The precursor ruins advanced the rare research {0}.</Rimverse_RuinResearch>
+  <Rimverse_SectorSizeClass>Sector size class: {0}</Rimverse_SectorSizeClass>
+  <Rimverse_SensorVisorBody>{0} ({1}): size class {2}</Rimverse_SensorVisorBody>
+  <Rimverse_SensorVisorHere>(you are here)</Rimverse_SensorVisorHere>
+  <Rimverse_SensorVisorNothing>The visor finds nothing to measure.</Rimverse_SensorVisorNothing>
+  <Rimverse_SensorVisorScan>Scan size classes</Rimverse_SensorVisorScan>
+  <Rimverse_SensorVisorScanDesc>Read the size class of the star system and every body in it.</Rimverse_SensorVisorScanDesc>
+  <Rimverse_SensorVisorSystem>System {0}: size class {1}</Rimverse_SensorVisorSystem>
+  <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>
+  <Rimverse_Stat_SignatureAdd_Desc>While running, this part makes the ship easier to detect. Each parked vehicle also adds 2%.</Rimverse_Stat_SignatureAdd_Desc>
+  <Rimverse_SuitUpOnBreach>Hull breach: {0} colonists are putting on vacuum suits.</Rimverse_SuitUpOnBreach>
+  <Rimverse_SurfaceCut>Map cut: {0}, {1} on a world {2} km around</Rimverse_SurfaceCut>
+  <Rimverse_Tab_Performance>Performance</Rimverse_Tab_Performance>
+  <Rimverse_TechSaleBlocked>Technology sale: {0}</Rimverse_TechSaleBlocked>
+  <Rimverse_TechSaleButton>Buy technology</Rimverse_TechSaleButton>
+  <Rimverse_TechSaleCooldown>next offer in {0} days</Rimverse_TechSaleCooldown>
+  <Rimverse_TechSaleDone>You bought {0} from {1}.</Rimverse_TechSaleDone>
+  <Rimverse_TechSaleNoSilver>not enough silver near a beacon</Rimverse_TechSaleNoSilver>
+  <Rimverse_TechSaleNothing>they know nothing you don't</Rimverse_TechSaleNothing>
+  <Rimverse_TechSaleOpinion>they do not trust you enough</Rimverse_TechSaleOpinion>
+  <Rimverse_TechSaleOption>{0} ({1} silver)</Rimverse_TechSaleOption>
+  <Rimverse_TechStolen>Your spies brought back data on {0} from {1}.</Rimverse_TechStolen>
+  <Rimverse_VisibilityThreat>Your heat, power, jumps and fame lit you up across the region. Someone came looking.</Rimverse_VisibilityThreat>
+  <Rimverse_VisibilityThreatLabel>Too visible</Rimverse_VisibilityThreatLabel>
+  <Rimverse_VisibilityTotal>Visibility in the region: {0} points (warnings at 400,000 and 600,000, trouble at 800,000)</Rimverse_VisibilityTotal>
+  <Rimverse_VisibilityWarn1>Your signature reached {0} points. Pirates and hunters are starting to notice you.</Rimverse_VisibilityWarn1>
+  <Rimverse_VisibilityWarn2>Your signature reached {0} points. You are easy to find now; expect company soon.</Rimverse_VisibilityWarn2>
+  <Rimverse_WeaponCharge>Cell charge: {0}/{1} shots. Recharges near powered equipment.</Rimverse_WeaponCharge>
+  <Rimverse_WeaponHeat>Heat: {0}</Rimverse_WeaponHeat>
+  <Rimverse_WeaponOverheat>{0} carried by {1} overheated and must vent before firing again.</Rimverse_WeaponOverheat>
+  <Rimverse_WeaponVenting>venting</Rimverse_WeaponVenting>
+  <Rimverse_ZeroGPlantStopped>Not growing: in zero gravity only sealed hydroponics work.</Rimverse_ZeroGPlantStopped>
+  <Rimverse_ZoneSizeClass>Zone size class: {0}</Rimverse_ZoneSizeClass>
+</LanguageData>

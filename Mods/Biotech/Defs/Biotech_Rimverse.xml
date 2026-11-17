@@ -11,7 +11,7 @@
     <defName>Rimverse_Gene_Gravitated</defName>
     <label>gravitated</label>
     <labelShortAdj>gravitated</labelShortAdj>
-    <description>Descendants of a heavy world. Dense muscle and thick bones let them carry much more and hit harder.</description>
+    <description>Descendants of a heavy world. Dense muscle and thick bones let them carry much more, hit harder and bear up to 1.6 g, but they move clumsily below 0.8 g.</description>
     <iconPath>Rimverse/UI/Gene/Gene_Gravitated</iconPath>
     <iconColor>(0.75,0.6,0.5)</iconColor>
     <displayCategory>Rimverse_Lineages</displayCategory>
@@ -22,6 +22,12 @@
     </statFactors>
     <biostatCpx>2</biostatCpx>
     <biostatMet>-1</biostatMet>
+    <modExtensions>
+      <li Class="Rimverse.GeneSpaceExtension">
+        <crushBonus>0.3</crushBonus>
+        <lowGravityClumsy>true</lowGravityClumsy>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -34,7 +40,7 @@
     <displayCategory>Rimverse_Lineages</displayCategory>
     <displayOrderInCategory>10</displayOrderInCategory>
     <statFactors>
-      <IncomingDamageFactor>1.1</IncomingDamageFactor>
+      <IncomingDamageFactor>1.2</IncomingDamageFactor>
     </statFactors>
     <biostatCpx>1</biostatCpx>
     <biostatMet>1</biostatMet>
@@ -79,7 +85,7 @@
     <defName>Rimverse_Gene_Abyssal</defName>
     <label>abyssal</label>
     <labelShortAdj>abyssal</labelShortAdj>
-    <description>Descendants of an ocean world. Large lungs make them breathe better.</description>
+    <description>Descendants of an ocean world. Large lungs make them breathe better and they move 50% faster through water, but they tire in dry climates.</description>
     <iconPath>Rimverse/UI/Gene/Gene_Abyssal</iconPath>
     <iconColor>(0.55,0.75,0.85)</iconColor>
     <displayCategory>Rimverse_Lineages</displayCategory>
@@ -90,6 +96,12 @@
         <offset>0.1</offset>
       </li>
     </capMods>
+    <modExtensions>
+      <li Class="Rimverse.GeneSpaceExtension">
+        <waterSpeedFactor>1.5</waterSpeedFactor>
+        <dryClimatePenalty>true</dryClimatePenalty>
+      </li>
+    </modExtensions>
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
   </GeneDef>
@@ -98,7 +110,7 @@
     <defName>Rimverse_Gene_VoidBorn</defName>
     <label>void-born</label>
     <labelShortAdj>void-born</labelShortAdj>
-    <description>Descendants of people born on ships and stations. Used to cramped spaces and stale air, they rarely break under confinement.</description>
+    <description>Descendants of people born on ships and stations. Used to cramped spaces and stale air, they rarely break under confinement and are never sick in zero gravity, but open skies frighten them.</description>
     <iconPath>Rimverse/UI/Gene/Gene_VoidBorn</iconPath>
     <iconColor>(0.9,0.9,0.85)</iconColor>
     <displayCategory>Rimverse_Lineages</displayCategory>
@@ -108,6 +120,13 @@
     </statOffsets>
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
+    <modExtensions>
+      <li Class="Rimverse.GeneSpaceExtension">
+        <cabinFeverFactor>0.5</cabinFeverFactor>
+        <zeroGAdapted>true</zeroGAdapted>
+        <fearOfSky>true</fearOfSky>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -130,7 +149,7 @@
     <defName>Rimverse_Gene_Horned</defName>
     <label>horned</label>
     <labelShortAdj>horned</labelShortAdj>
-    <description>Descendants of hunters from a wild world. Fierce and strong in melee.</description>
+    <description>Descendants of hunters from a wild world. Fierce and strong in melee. Helmets take three times as long to put on, since they must be cut for the horns.</description>
     <iconPath>Rimverse/UI/Gene/Gene_Horned</iconPath>
     <iconColor>(0.8,0.6,0.55)</iconColor>
     <displayCategory>Rimverse_Lineages</displayCategory>
@@ -138,6 +157,11 @@
     <statFactors>
       <MeleeDamageFactor>1.15</MeleeDamageFactor>
     </statFactors>
+    <modExtensions>
+      <li Class="Rimverse.GeneSpaceExtension">
+        <helmetWorkFactor>3</helmetWorkFactor>
+      </li>
+    </modExtensions>
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
   </GeneDef>

@@ -56,6 +56,7 @@ namespace Rimverse
             Text.Font = GameFont.Medium;
             Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 34f), "Rimverse_EmpireTitle".Translate(e.influence.ToString("0"), GameComponent_PlayerEmpire.InfluenceCap.ToString("0"), e.InfluencePerDay.ToString("0.00"), PC.treasury.ToString("N0")));
             Text.Font = GameFont.Small;
+            Widgets.Label(new Rect(inRect.xMax - 360f, inRect.y + 6f, 360f, 26f), "Rimverse_PlayerStage".Translate(PlayerStage.Current, PlayerStage.Label));
             List<TabRecord> tabs = new List<TabRecord>();
             foreach (Tab t in System.Enum.GetValues(typeof(Tab)))
             {

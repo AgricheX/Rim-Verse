@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_AnimalZeroGFear.label>medo de gravidade zero</Rimverse_AnimalZeroGFear.label>
+  <Rimverse_AnimalZeroGFear.description>Este animal nunca viveu sem gravidade. Está apavorado e pode fugir em pânico até se acostumar.</Rimverse_AnimalZeroGFear.description>
+  <Rimverse_FlowAbyss.label>abismo da Ruptura</Rimverse_FlowAbyss.label>
+  <Rimverse_FlowAbyss.description>Mergulhado na Ruptura. Terrível em combate, e frio com todos os outros.</Rimverse_FlowAbyss.description>
+  <Rimverse_FlowBarrier.label>barreira do Fluxo</Rimverse_FlowBarrier.label>
+  <Rimverse_FlowBarrier.description>Uma barreira do Fluxo absorve o dano recebido.</Rimverse_FlowBarrier.description>
+  <Rimverse_FlowDominated.label>dominado</Rimverse_FlowDominated.label>
+  <Rimverse_FlowDominated.description>Esta mente pertence a outra pessoa, por enquanto.</Rimverse_FlowDominated.description>
+  <Rimverse_FlowLatent.label>Fluxo adormecido</Rimverse_FlowLatent.label>
+  <Rimverse_FlowLatent.description>Algo dorme nesta mente. Um roçar na morte, meditar perto de um cristal de ressonância ou um mestre do Fluxo podem despertá-lo.</Rimverse_FlowLatent.description>
+  <Rimverse_FlowSpeed.label>aceleração do Fluxo</Rimverse_FlowSpeed.label>
+  <Rimverse_FlowSpeed.description>Movendo-se com a correnteza do Fluxo.</Rimverse_FlowSpeed.description>
+  <Rimverse_FlowUnion.label>união do Fluxo</Rimverse_FlowUnion.label>
+  <Rimverse_FlowUnion.description>Ligado aos outros pelo Fluxo.</Rimverse_FlowUnion.description>
+  <Rimverse_FlowZenith.label>zênite da Harmonia</Rimverse_FlowZenith.label>
+  <Rimverse_FlowZenith.description>Mergulhado na Harmonia. Calmo em qualquer tempestade, e os outros se sentem seguros por perto.</Rimverse_FlowZenith.description>
+  <Rimverse_HibernaGroggy.label>torpor do hiberna</Rimverse_HibernaGroggy.label>
+  <Rimverse_HibernaGroggy.description>Membros duros depois de um sono longo de hiberna. Passa em um dia.</Rimverse_HibernaGroggy.description>
+  <Rimverse_PetCramped.label>apertado</Rimverse_PetCramped.label>
+  <Rimverse_PetCramped.description>Este animal vive num cômodo pequeno demais para o tamanho dele, numa nave ou base selada. Ele anda de um lado para o outro, come mais e se move rígido. Dê a ele um cômodo com pelo menos doze células por unidade de tamanho do corpo.</Rimverse_PetCramped.description>
+  <Rimverse_ZeroGFloating.label>flutuando em gravidade zero</Rimverse_ZeroGFloating.label>
+  <Rimverse_ZeroGFloating.description>Sem gravidade, cada passo é um empurrão na parede. Andar fica mais lento, a não ser com botas magnéticas.</Rimverse_ZeroGFloating.description>
+</LanguageData>

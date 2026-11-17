@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Rimverse_CrystalGround</defName>
+    <label>crystal ground</label>
+    <description>Glassy ground grown from slow crystal. It rings under boots and cuts careless hands.</description>
+    <texturePath>Terrain/Surfaces/Gravel</texturePath>
+    <color>(0.55, 0.85, 0.95)</color>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>4</pathCost>
+    <fertility>0</fertility>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Rimverse_FungalMat</defName>
+    <label>fungal mat</label>
+    <description>A spongy carpet of fungus over rotten soil. It holds water and spores.</description>
+    <texturePath>Terrain/Surfaces/Mossy</texturePath>
+    <color>(0.6, 0.45, 0.7)</color>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>4</pathCost>
+    <fertility>0.6</fertility>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Rimverse_RadAsh</defName>
+    <label>radiant ash</label>
+    <description>Fine ash that glows faintly at night. Nothing healthy grows here.</description>
+    <texturePath>Terrain/Surfaces/SoftSand</texturePath>
+    <color>(0.75, 0.8, 0.45)</color>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>4</pathCost>
+    <fertility>0.1</fertility>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Rimverse_ScorchedRock</defName>
+    <label>scorched rock</label>
+    <description>Rock baked by a sun that never sets.</description>
+    <texturePath>Terrain/Surfaces/Gravel</texturePath>
+    <color>(0.6, 0.38, 0.3)</color>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>4</pathCost>
+    <fertility>0</fertility>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Rimverse_CooledLava</defName>
+    <label>cooled lava</label>
+    <description>Black crust over old flows. Still warm underneath.</description>
+    <texturePath>Terrain/Surfaces/Gravel</texturePath>
+    <color>(0.2, 0.18, 0.18)</color>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>4</pathCost>
+    <fertility>0</fertility>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Rimverse_LavaPool</defName>
+    <label>lava pool</label>
+    <description>Molten rock. Nothing crosses it and lives.</description>
+    <texturePath>Terrain/Surfaces/Mud</texturePath>
+    <color>(1, 0.35, 0.1)</color>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>0</pathCost>
+    <fertility>0</fertility>
+    <passability>Impassable</passability>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Rimverse_CloudSea</defName>
+    <label>cloud sea</label>
+    <description>The top of an endless storm. There is no ground below, only the long fall.</description>
+    <texturePath>Terrain/Surfaces/Ice</texturePath>
+    <color>(0.95, 0.8, 0.6)</color>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>0</pathCost>
+    <fertility>0</fertility>
+    <passability>Impassable</passability>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Rimverse_Rubble</defName>
+    <label>city rubble</label>
+    <description>Broken plascrete, glass and rebar from a city that fell.</description>
+    <texturePath>Terrain/Surfaces/AncientConcrete</texturePath>
+    <color>(0.62, 0.6, 0.58)</color>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>4</pathCost>
+    <fertility>0.05</fertility>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Rimverse_GardenSoil</defName>
+    <label>garden soil</label>
+    <description>Rich soil kept perfect by machines for centuries.</description>
+    <texturePath>Terrain/Surfaces/SoilRich</texturePath>
+    <color>(0.85, 1, 0.85)</color>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>4</pathCost>
+    <fertility>1.4</fertility>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Rimverse_GlacierIce</defName>
+    <label>glacier ice</label>
+    <description>Ice hundreds of meters deep.</description>
+    <texturePath>Terrain/Surfaces/Ice</texturePath>
+    <color>(0.85, 0.95, 1)</color>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>4</pathCost>
+    <fertility>0</fertility>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+  </TerrainDef>
+
+  <BiomeDef>
+    <defName>Rimverse_TwilightBand</defName>
+    <label>twilight band</label>
+    <description>The thin ring between eternal day and eternal night on a tidally locked world. Life clings to it.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0.6</animalDensity>
+    <plantDensity>0.6</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <terrainsByFertility>
+      <li>
+        <terrain>Soil</terrain>
+        <min>-999</min>
+        <max>0.4</max>
+      </li>
+      <li>
+        <terrain>Rimverse_FungalMat</terrain>
+        <min>0.4</min>
+        <max>0.75</max>
+      </li>
+      <li>
+        <terrain>Gravel</terrain>
+        <min>0.75</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <wildPlants>
+      <Rimverse_Plant_AirMoss>2</Rimverse_Plant_AirMoss>
+      <Rimverse_Plant_AlienLocal>1</Rimverse_Plant_AlienLocal>
+      <Plant_Grass>2</Plant_Grass>
+    </wildPlants>
+    <baseWeatherCommonalities>
+      <Clear>2</Clear>
+      <Fog>1</Fog>
+      <Rain>1</Rain>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.BiomeFeatureExtension">
+        <feature>Twilight</feature>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_TwilightBand</defName>
+    <label>twilight band</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>Rimverse_BiomeFeatures</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_TwilightBand</biome>
+      <temperature>5</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <BiomeDef>
+    <defName>Rimverse_Dayside</defName>
+    <label>dayside</label>
+    <description>The face of a locked world that always looks at its star. Rock glows with heat.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0.05</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <terrainsByFertility>
+      <li>
+        <terrain>Rimverse_ScorchedRock</terrain>
+        <min>-999</min>
+        <max>0.6</max>
+      </li>
+      <li>
+        <terrain>Sand</terrain>
+        <min>0.6</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <wildPlants>
+      <Rimverse_Plant_LavaMushroom>1</Rimverse_Plant_LavaMushroom>
+    </wildPlants>
+    <baseWeatherCommonalities>
+      <Clear>3</Clear>
+      <DryThunderstorm>1</DryThunderstorm>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.BiomeFeatureExtension">
+        <feature>Dayside</feature>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_Dayside</defName>
+    <label>dayside</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>Rimverse_BiomeFeatures</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_Dayside</biome>
+      <temperature>70</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <BiomeDef>
+    <defName>Rimverse_Nightside</defName>
+    <label>nightside</label>
+    <description>The face of a locked world that never sees its star. Air freezes into frost.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0.05</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <terrainsByFertility>
+      <li>
+        <terrain>Rimverse_GlacierIce</terrain>
+        <min>-999</min>
+        <max>0.5</max>
+      </li>
+      <li>
+        <terrain>Ice</terrain>
+        <min>0.5</min>
+        <max>0.8</max>
+      </li>
+      <li>
+        <terrain>Gravel</terrain>
+        <min>0.8</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <wildPlants>
+      <Rimverse_Plant_IceCactus>1</Rimverse_Plant_IceCactus>
+    </wildPlants>
+    <baseWeatherCommonalities>
+      <Clear>2</Clear>
+      <SnowHard>1</SnowHard>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.BiomeFeatureExtension">
+        <feature>Nightside</feature>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_Nightside</defName>
+    <label>nightside</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>Rimverse_BiomeFeatures</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_Nightside</biome>
+      <temperature>-80</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <BiomeDef>
+    <defName>Rimverse_GlobalOcean</defName>
+    <label>global ocean</label>
+    <description>Water from pole to pole, broken only by a few islands and reefs.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0.6</animalDensity>
+    <plantDensity>0.4</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <terrainsByFertility>
+      <li>
+        <terrain>Sand</terrain>
+        <min>-999</min>
+        <max>0.5</max>
+      </li>
+      <li>
+        <terrain>Soil</terrain>
+        <min>0.5</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <wildPlants>
+      <Rimverse_Plant_OceanCoral>3</Rimverse_Plant_OceanCoral>
+      <Plant_Grass>1</Plant_Grass>
+    </wildPlants>
+    <baseWeatherCommonalities>
+      <Clear>2</Clear>
+      <Rain>2</Rain>
+      <RainyThunderstorm>1</RainyThunderstorm>
+      <FoggyRain>1</FoggyRain>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.BiomeFeatureExtension">
+        <feature>Ocean</feature>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_GlobalOcean</defName>
+    <label>global ocean</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>Rimverse_BiomeFeatures</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_GlobalOcean</biome>
+      <temperature>18</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <BiomeDef>
+    <defName>Rimverse_LavaPlains</defName>
+    <label>lava plains</label>
+    <description>Fresh crust over rivers of lava. Eruptions reshape the land every season.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0.6</animalDensity>
+    <plantDensity>0.1</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <terrainsByFertility>
+      <li>
+        <terrain>Rimverse_CooledLava</terrain>
+        <min>-999</min>
+        <max>0.7</max>
+      </li>
+      <li>
+        <terrain>Gravel</terrain>
+        <min>0.7</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <wildPlants>
+      <Rimverse_Plant_LavaMushroom>2</Rimverse_Plant_LavaMushroom>
+    </wildPlants>
+    <baseWeatherCommonalities>
+      <Clear>2</Clear>
+      <DryThunderstorm>2</DryThunderstorm>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.BiomeFeatureExtension">
+        <feature>Lava</feature>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_LavaPlains</defName>
+    <label>lava plains</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>Rimverse_BiomeFeatures</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_LavaPlains</biome>
+      <temperature>55</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <BiomeDef>
+    <defName>Rimverse_DeepGlacier</defName>
+    <label>deep glacier</label>
+    <description>An ice sheet so thick that the old ground is a legend. Little grows, and it grows slowly.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0.6</animalDensity>
+    <plantDensity>0.1</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <terrainsByFertility>
+      <li>
+        <terrain>Rimverse_GlacierIce</terrain>
+        <min>-999</min>
+        <max>0.7</max>
+      </li>
+      <li>
+        <terrain>Ice</terrain>
+        <min>0.7</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <wildPlants>
+      <Rimverse_Plant_IceCactus>2</Rimverse_Plant_IceCactus>
+    </wildPlants>
+    <baseWeatherCommonalities>
+      <Clear>2</Clear>
+      <SnowGentle>2</SnowGentle>
+      <SnowHard>1</SnowHard>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.BiomeFeatureExtension">
+        <feature>Glacier</feature>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_DeepGlacier</defName>
+    <label>deep glacier</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>Rimverse_BiomeFeatures</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_DeepGlacier</biome>
+      <temperature>-45</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <BiomeDef>
+    <defName>Rimverse_CrystalForest</defName>
+    <label>crystal forest</label>
+    <description>Forests of living crystal that sing in the wind. There is almost no soil.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0.6</animalDensity>
+    <plantDensity>0.5</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <terrainsByFertility>
+      <li>
+        <terrain>Rimverse_CrystalGround</terrain>
+        <min>-999</min>
+        <max>0.8</max>
+      </li>
+      <li>
+        <terrain>Gravel</terrain>
+        <min>0.8</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <wildPlants>
+      <Rimverse_Plant_LivingCrystal>3</Rimverse_Plant_LivingCrystal>
+    </wildPlants>
+    <baseWeatherCommonalities>
+      <Clear>3</Clear>
+      <Fog>1</Fog>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.BiomeFeatureExtension">
+        <feature>Crystal</feature>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_CrystalForest</defName>
+    <label>crystal forest</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>Rimverse_BiomeFeatures</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_CrystalForest</biome>
+      <temperature>10</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <BiomeDef>
+    <defName>Rimverse_FungalJungle</defName>
+    <label>fungal jungle</label>
+    <description>Giant fungi under a humid haze. Spores fill the air.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0.6</animalDensity>
+    <plantDensity>0.9</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <terrainsByFertility>
+      <li>
+        <terrain>Rimverse_FungalMat</terrain>
+        <min>-999</min>
+        <max>0.7</max>
+      </li>
+      <li>
+        <terrain>Mud</terrain>
+        <min>0.7</min>
+        <max>0.85</max>
+      </li>
+      <li>
+        <terrain>Soil</terrain>
+        <min>0.85</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <wildPlants>
+      <Rimverse_Plant_HoldFungus>2</Rimverse_Plant_HoldFungus>
+      <Rimverse_Plant_AlienLocal>2</Rimverse_Plant_AlienLocal>
+    </wildPlants>
+    <baseWeatherCommonalities>
+      <Fog>2</Fog>
+      <FoggyRain>2</FoggyRain>
+      <Rain>1</Rain>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.BiomeFeatureExtension">
+        <feature>Fungal</feature>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_FungalJungle</defName>
+    <label>fungal jungle</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>Rimverse_BiomeFeatures</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_FungalJungle</biome>
+      <temperature>24</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <BiomeDef>
+    <defName>Rimverse_RadiationDesert</defName>
+    <label>radiation desert</label>
+    <description>Glowing dunes under a harsh sky. Only lichen survives the dose.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0.6</animalDensity>
+    <plantDensity>0.15</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <terrainsByFertility>
+      <li>
+        <terrain>Rimverse_RadAsh</terrain>
+        <min>-999</min>
+        <max>0.7</max>
+      </li>
+      <li>
+        <terrain>Sand</terrain>
+        <min>0.7</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <wildPlants>
+      <Rimverse_Plant_RadLichen>2</Rimverse_Plant_RadLichen>
+    </wildPlants>
+    <baseWeatherCommonalities>
+      <Clear>3</Clear>
+      <DryThunderstorm>1</DryThunderstorm>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.BiomeFeatureExtension">
+        <feature>Radiation</feature>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_RadiationDesert</defName>
+    <label>radiation desert</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>Rimverse_BiomeFeatures</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_RadiationDesert</biome>
+      <temperature>30</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <BiomeDef>
+    <defName>Rimverse_HighClouds</defName>
+    <label>high clouds</label>
+    <description>Floating platforms above the cloud tops of a gas giant. There is no ground, only what was built.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0.05</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <terrainsByFertility>
+      <li>
+        <terrain>Rimverse_CloudSea</terrain>
+        <min>-999</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <wildPlants>
+      <Rimverse_Plant_FloatVine>1</Rimverse_Plant_FloatVine>
+    </wildPlants>
+    <baseWeatherCommonalities>
+      <Clear>2</Clear>
+      <Fog>1</Fog>
+      <RainyThunderstorm>1</RainyThunderstorm>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.BiomeFeatureExtension">
+        <feature>Clouds</feature>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_HighClouds</defName>
+    <label>high clouds</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>Rimverse_BiomeFeatures</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_HighClouds</biome>
+      <temperature>-10</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <BiomeDef>
+    <defName>Rimverse_UrbanRuin</defName>
+    <label>urban ruin</label>
+    <description>The broken streets of a fallen urbworld. Scrap everywhere, and danger in every tower.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0.6</animalDensity>
+    <plantDensity>0.25</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <terrainsByFertility>
+      <li>
+        <terrain>Rimverse_Rubble</terrain>
+        <min>-999</min>
+        <max>0.6</max>
+      </li>
+      <li>
+        <terrain>Gravel</terrain>
+        <min>0.6</min>
+        <max>0.8</max>
+      </li>
+      <li>
+        <terrain>Soil</terrain>
+        <min>0.8</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <wildPlants>
+      <Plant_Grass>2</Plant_Grass>
+      <Plant_Brambles>1</Plant_Brambles>
+    </wildPlants>
+    <baseWeatherCommonalities>
+      <Clear>2</Clear>
+      <Fog>1</Fog>
+      <Rain>1</Rain>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.BiomeFeatureExtension">
+        <feature>Ruins</feature>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_UrbanRuin</defName>
+    <label>urban ruin</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>Rimverse_BiomeFeatures</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_UrbanRuin</biome>
+      <temperature>12</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <BiomeDef>
+    <defName>Rimverse_GlitterGarden</defName>
+    <label>glitterworld garden</label>
+    <description>A tended paradise of a glitterworld. Rich, beautiful and always watched.</description>
+    <workerClass>Rimverse.BiomeWorker_RimverseSpace</workerClass>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0.6</animalDensity>
+    <plantDensity>1.1</plantDensity>
+    <inVacuum>false</inVacuum>
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <hasBedrock>true</hasBedrock>
+    <canExitMap>false</canExitMap>
+    <terrainsByFertility>
+      <li>
+        <terrain>Rimverse_GardenSoil</terrain>
+        <min>-999</min>
+        <max>0.8</max>
+      </li>
+      <li>
+        <terrain>Soil</terrain>
+        <min>0.8</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <wildPlants>
+      <Rimverse_Plant_LightFlower>2</Rimverse_Plant_LightFlower>
+      <Rimverse_Plant_BiosphereTree>1</Rimverse_Plant_BiosphereTree>
+      <Plant_Grass>2</Plant_Grass>
+    </wildPlants>
+    <baseWeatherCommonalities>
+      <Clear>4</Clear>
+      <Rain>1</Rain>
+    </baseWeatherCommonalities>
+    <modExtensions>
+      <li Class="Rimverse.BiomeFeatureExtension">
+        <feature>Glitter</feature>
+      </li>
+    </modExtensions>
+  </BiomeDef>
+
+  <MapGeneratorDef>
+    <defName>Rimverse_Surface_GlitterGarden</defName>
+    <label>glitterworld garden</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <renderWorld>true</renderWorld>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Terrain</li>
+      <li>Rimverse_OceanWorldWater</li>
+      <li>RocksFromGrid</li>
+      <li>RockChunks</li>
+      <li>Rimverse_BiomeFeatures</li>
+      <li>Rimverse_SurfaceStart</li>
+      <li>Plants</li>
+      <li>Snow</li>
+      <li>Rimverse_AlienFauna</li>
+      <li>Rimverse_Fog</li>
+    </genSteps>
+    <pocketMapProperties>
+      <biome>Rimverse_GlitterGarden</biome>
+      <temperature>20</temperature>
+      <destroyOnParentMapAbandoned>false</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+  </MapGeneratorDef>
+
+  <GenStepDef>
+    <defName>Rimverse_BiomeFeatures</defName>
+    <order>260</order>
+    <genStep Class="Rimverse.GenStep_BiomeFeatures" />
+  </GenStepDef>
+
+</Defs>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>Rimverse_LifeSupportTab</defName>
+    <label>Rimverse: life support</label>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>Rimverse_TravelTab</defName>
+    <label>Rimverse: propulsion and travel</label>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>Rimverse_SensorsTab</defName>
+    <label>Rimverse: sensors and exploration</label>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>Rimverse_CombatTab</defName>
+    <label>Rimverse: combat</label>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>Rimverse_SocietyTab</defName>
+    <label>Rimverse: society</label>
+  </ResearchTabDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_FirstContact</defName>
+    <label>first contact protocol</label>
+    <description>Translation software and greeting rituals for meeting unknown peoples. Every new civilization you meet starts with a better opinion of you and you learn more about them at once.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Rimverse_SocietyTab</tab>
+    <prerequisites>
+      <li>Rimverse_Sensors</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

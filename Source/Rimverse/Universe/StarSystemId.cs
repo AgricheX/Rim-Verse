@@ -7,6 +7,14 @@ namespace Rimverse
         public const double SectorSizeLy = 8192.0;
         public const double DistrictSizeLy = 64.0;
         public const int DistrictsPerSector = 128;
+        public const double ZoneSizeLy = 1024.0;
+        public const int ZonesPerSector = 8;
+        public const int DistrictsPerZone = 16;
+        public const double SubcellSizeLy = 16.0;
+        public const int SubcellsPerDistrictAxis = 4;
+        public const int MaxSystemsPerDistrict = 4095;
+        public const int SectorMinSystems = 100;
+        public const int ZoneMinSystems = 2;
 
         public int galaxy;
         public int sx;
@@ -16,9 +24,15 @@ namespace Rimverse
         public int dy;
         public int dz;
         public int index;
+        public int zx;
+        public int zy;
+        public int zz;
 
         public StarSystemId(int galaxy, int sx, int sy, int sz, int dx, int dy, int dz, int index)
         {
+            zx = Math.Max(0, Math.Min(ZonesPerSector - 1, dx / DistrictsPerZone));
+            zy = Math.Max(0, Math.Min(ZonesPerSector - 1, dy / DistrictsPerZone));
+            zz = Math.Max(0, Math.Min(ZonesPerSector - 1, dz / DistrictsPerZone));
             this.galaxy = galaxy;
             this.sx = sx;
             this.sy = sy;
@@ -34,6 +48,26 @@ namespace Rimverse
         public bool Valid => galaxy >= 0 && index >= 0;
 
         public DistrictId District => new DistrictId(galaxy, sx, sy, sz, dx, dy, dz);
+
+        public ZoneId Zone => new ZoneId(galaxy, sx, sy, sz, zx, zy, zz);
+
+        public static int SubcellOf(Vec3d position, DistrictId d)
+        {
+            Vec3d o = d.Origin;
+            int ax = Clamp((int)Math.Floor((position.x - o.x) / SubcellSizeLy));
+            int ay = Clamp((int)Math.Floor((position.y - o.y) / SubcellSizeLy));
+            int az = Clamp((int)Math.Floor((position.z - o.z) / SubcellSizeLy));
+            return ax + ay * SubcellsPerDistrictAxis + az * SubcellsPerDistrictAxis * SubcellsPerDistrictAxis;
+        }
+
+        private static int Clamp(int v) => v < 0 ? 0 : v >= SubcellsPerDistrictAxis ? SubcellsPerDistrictAxis - 1 : v;
+
+        public string Address(Vec3d position)
+        {
+            DistrictId d = District;
+            ZoneId z = d.Zone;
+            return "S(" + sx + "," + sy + "," + sz + ") Z(" + z.zx + "," + z.zy + "," + z.zz + ") D(" + d.LocalX + "," + d.LocalY + "," + d.LocalZ + ") C" + SubcellOf(position, d) + " #" + index;
+        }
 
         public ulong Seed(int universeSeed) => UniverseRand.Hash(universeSeed, galaxy, sx, sy, sz, dx, dy, dz, index);
 
@@ -108,11 +142,55 @@ namespace Rimverse
 
         public Vec3d Center => Origin + new Vec3d(StarSystemId.DistrictSizeLy / 2, StarSystemId.DistrictSizeLy / 2, StarSystemId.DistrictSizeLy / 2);
 
+        public ZoneId Zone => new ZoneId(galaxy, sx, sy, sz, dx / StarSystemId.DistrictsPerZone, dy / StarSystemId.DistrictsPerZone, dz / StarSystemId.DistrictsPerZone);
+
+        public int LocalX => dx % StarSystemId.DistrictsPerZone;
+
+        public int LocalY => dy % StarSystemId.DistrictsPerZone;
+
+        public int LocalZ => dz % StarSystemId.DistrictsPerZone;
+
+        public Vec3d SectorCenter => new Vec3d((sx + 0.5) * StarSystemId.SectorSizeLy, (sy + 0.5) * StarSystemId.SectorSizeLy, (sz + 0.5) * StarSystemId.SectorSizeLy);
+
         public bool Equals(DistrictId o) => galaxy == o.galaxy && sx == o.sx && sy == o.sy && sz == o.sz && dx == o.dx && dy == o.dy && dz == o.dz;
 
         public override bool Equals(object obj) => obj is DistrictId o && Equals(o);
 
         public override int GetHashCode() => (int)UniverseRand.Hash(galaxy, sx, sy, sz, dx, dy, dz);
+    }
+
+    public struct ZoneId : IEquatable<ZoneId>
+    {
+        public int galaxy;
+        public int sx;
+        public int sy;
+        public int sz;
+        public int zx;
+        public int zy;
+        public int zz;
+
+        public ZoneId(int galaxy, int sx, int sy, int sz, int zx, int zy, int zz)
+        {
+            this.galaxy = galaxy;
+            this.sx = sx;
+            this.sy = sy;
+            this.sz = sz;
+            this.zx = zx;
+            this.zy = zy;
+            this.zz = zz;
+        }
+
+        public static ZoneId FromPosition(int galaxy, Vec3d pos) => DistrictId.FromPosition(galaxy, pos).Zone;
+
+        public Vec3d Origin => new Vec3d(sx * StarSystemId.SectorSizeLy + zx * StarSystemId.ZoneSizeLy, sy * StarSystemId.SectorSizeLy + zy * StarSystemId.ZoneSizeLy, sz * StarSystemId.SectorSizeLy + zz * StarSystemId.ZoneSizeLy);
+
+        public Vec3d Center => Origin + new Vec3d(StarSystemId.ZoneSizeLy / 2, StarSystemId.ZoneSizeLy / 2, StarSystemId.ZoneSizeLy / 2);
+
+        public bool Equals(ZoneId o) => galaxy == o.galaxy && sx == o.sx && sy == o.sy && sz == o.sz && zx == o.zx && zy == o.zy && zz == o.zz;
+
+        public override bool Equals(object obj) => obj is ZoneId o && Equals(o);
+
+        public override int GetHashCode() => (int)UniverseRand.Hash(galaxy, sx, sy, sz, zx, zy, zz, 77);
     }
 
     public struct Vec3d
@@ -135,6 +213,8 @@ namespace Rimverse
         public static Vec3d operator *(Vec3d a, double f) => new Vec3d(a.x * f, a.y * f, a.z * f);
 
         public double Length => Math.Sqrt(x * x + y * y + z * z);
+
+        public static double Dot(Vec3d a, Vec3d b) => a.x * b.x + a.y * b.y + a.z * b.z;
 
         public double PlanarLength => Math.Sqrt(x * x + z * z);
 

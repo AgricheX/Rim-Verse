@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef>
+    <defName>Rimverse_RoomsGhost</defName>
+    <label>rooms afterglow</label>
+    <description>This person came back from the endless rooms only partly. Sensors slide off them, and the ship around them reads as quieter than it is.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.95, 0.85, 0.4)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>60000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <PsychicSensitivity>0.2</PsychicSensitivity>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Rimverse_Lineage_Wanderer</defName>
+    <label>wanderer lineage</label>
+    <description>Descendant of a people who learned to live between the rooms. Pale, quiet and used to dim light, they find cramped corridors comforting.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.6, 0.8, 0.95)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <PsychicSensitivity>0.15</PsychicSensitivity>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>1.05</MoveSpeed>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="Rimverse.LineageExtension">
+        <skinColor>(0.92, 0.9, 0.86)</skinColor>
+        <cabinFeverFactor>0.4</cabinFeverFactor>
+      </li>
+    </modExtensions>
+    <everCurableByItem>false</everCurableByItem>
+  </HediffDef>
+
+  <ResearchProjectDef>
+    <defName>Rimverse_BackroomsStudies</defName>
+    <label>backrooms studies</label>
+    <description>Notes, measurements and nightmares brought back from the endless rooms. Everyone who returns adds a little to this project.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>Rimverse_SensorsTab</tab>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
+  </ResearchProjectDef>
+
+  <Rimverse.PolicyDef>
+    <defName>Rimverse_Policy_CivicAsync</defName>
+    <label>asynchronous</label>
+    <description>A people who travel through the rooms instead of between the stars. They trade in maps of places that should not exist.</description>
+    <group>Civic</group>
+    <minTech>Industrial</minTech>
+    <minStage>1</minStage>
+    <maxStage>14</maxStage>
+    <profile>Cautious</profile>
+    <research>15</research>
+    <trade>10</trade>
+    <military>-10</military>
+    <loreOnly>true</loreOnly>
+  </Rimverse.PolicyDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_RoomsDoor</defName>
+    <label>door that should not be here</label>
+    <description>A plain yellow door set into a wall where there was no door yesterday. Whoever steps through ends up somewhere else. It will be gone in a couple of days.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Rimverse/Things/Building/Door/BulkheadDoor_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(0.95, 0.85, 0.35)</color>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <useHitPoints>false</useHitPoints>
+    <destroyable>false</destroyable>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <building>
+      <isInert>true</isInert>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+    </building>
+    <comps>
+      <li Class="Rimverse.CompProperties_RoomsDoor">
+        <lifeTicks>120000</lifeTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <IncidentDef>
+    <defName>Rimverse_RoomsDoor</defName>
+    <label>door that should not be here</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_RoomsDoor</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>30</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Rimverse_AsyncExpedition</defName>
+    <label>asynchronous expedition</label>
+    <letterLabel>Expedition request</letterLabel>
+    <letterDef>NeutralEvent</letterDef>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_AsyncExpedition</workerClass>
+    <baseChance>0.25</baseChance>
+    <minRefireDays>40</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Rimverse_AsyncRescue</defName>
+    <label>lost researcher</label>
+    <letterLabel>Lost researcher</letterLabel>
+    <letterDef>NeutralEvent</letterDef>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_AsyncRescue</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>50</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Rimverse_ImpossibleMap</defName>
+    <label>impossible map</label>
+    <letterLabel>Impossible map</letterLabel>
+    <letterDef>NeutralEvent</letterDef>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Rimverse.IncidentWorker_ImpossibleMap</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>45</minRefireDays>
+  </IncidentDef>
+
+</Defs>

@@ -63,18 +63,38 @@ namespace Rimverse
         public static void TryApplyFromFaction(Pawn pawn)
         {
             if (!RimverseMod.Settings.lineagesEnabled || pawn?.Faction == null || !pawn.RaceProps.Humanlike) return;
+            if (CompatActions.HarRace(pawn)) return;
             GameComponent_Civilizations gc = GameComponent_Civilizations.Instance;
             if (gc?.civilizations == null) return;
             Civilization civ = gc.civilizations.FirstOrDefault(c => c.faction == pawn.Faction);
-            if (civ == null || civ.lineage.NullOrEmpty()) return;
+            if (civ == null) return;
+            if (civ.lineage.NullOrEmpty())
+            {
+                CivXenotypes.TryApply(pawn, civ);
+                return;
+            }
             if (!Rand.Chance(0.7f)) return;
             HediffDef def = DefDatabase<HediffDef>.GetNamedSilentFail(civ.lineage);
             if (BiotechCompat.TryXenotype(pawn, civ.lineage))
             {
                 ApplyLooks(pawn, def);
-                return;
             }
-            Apply(pawn, def);
+            else
+            {
+                Apply(pawn, def);
+            }
+            WearGarb(pawn, def);
+        }
+
+        public static void WearGarb(Pawn pawn, HediffDef def)
+        {
+            ThingDef garb = def?.GetModExtension<LineageExtension>()?.apparel;
+            if (garb == null || pawn.apparel == null || !pawn.DevelopmentalStage.Adult() || !Rand.Chance(0.5f)) return;
+            if (!ApparelUtility.HasPartsToWear(pawn, garb)) return;
+            ThingDef stuff = GenStuff.RandomStuffFor(garb);
+            Apparel a = (Apparel)ThingMaker.MakeThing(garb, stuff);
+            PawnGenerator.PostProcessGeneratedGear(a, pawn);
+            pawn.apparel.Wear(a, false);
         }
     }
 }

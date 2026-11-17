@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_AsyncExpedition>Os {0} pedem uma tripulação para atravessar as salas sem fim por eles. Mande um colono para as salas em até quinze dias e traga-o de volta para receber.</Rimverse_AsyncExpedition>
+  <Rimverse_AsyncExpeditionDone>{0} voltou das salas com os mapas que os viajantes assíncronos queriam. Eles pagaram bem.</Rimverse_AsyncExpeditionDone>
+  <Rimverse_AsyncExpeditionDoneLabel>Expedição concluída</Rimverse_AsyncExpeditionDoneLabel>
+  <Rimverse_AsyncExpeditionFailed>A expedição assíncrona expirou. Ninguém entrou nas salas a tempo.</Rimverse_AsyncExpeditionFailed>
+  <Rimverse_AsyncRescue>Vocês encontraram {0} nas salas. Ele está grato, e o povo dele também.</Rimverse_AsyncRescue>
+  <Rimverse_AsyncRescueAsk>{0}, pesquisador dos viajantes assíncronos, foi engolido pelas salas bem ao lado da nave. Entre atrás dele e ele se junta a vocês.</Rimverse_AsyncRescueAsk>
+  <Rimverse_AsyncRescueLabel>Pesquisador encontrado</Rimverse_AsyncRescueLabel>
+  <Rimverse_BladeCrystal0>cristal azul</Rimverse_BladeCrystal0>
+  <Rimverse_BladeCrystal1>cristal de jade</Rimverse_BladeCrystal1>
+  <Rimverse_BladeCrystal2>cristal de ametista</Rimverse_BladeCrystal2>
+  <Rimverse_BladeCrystal3>cristal de âmbar</Rimverse_BladeCrystal3>
+  <Rimverse_BladeCrystal4>cristal branco</Rimverse_BladeCrystal4>
+  <Rimverse_BladeCrystal5>cristal sangrado</Rimverse_BladeCrystal5>
+  <Rimverse_BodyEccentric>Órbita excêntrica ({0}): as estações mudam muito entre perto e longe.</Rimverse_BodyEccentric>
+  <Rimverse_BodyEqTemperature>Temperatura de equilíbrio: {0}</Rimverse_BodyEqTemperature>
+  <Rimverse_BodyTidalLocked>Travado por maré: um lado sempre olha para a estrela.</Rimverse_BodyTidalLocked>
+  <Rimverse_BulkheadSealed>Uma antepara se fechou sozinha para impedir o vazamento de ar.</Rimverse_BulkheadSealed>
+  <Rimverse_CivLegitimacy>Legitimidade: {0}</Rimverse_CivLegitimacy>
+  <Rimverse_CivPreSpace>Civilização pré-espacial: ainda não consegue sair do seu mundo.</Rimverse_CivPreSpace>
+  <Rimverse_CmdMovePrisoner>Transferir para outra nave</Rimverse_CmdMovePrisoner>
+  <Rimverse_CmdMovePrisonerDesc>Leva este prisioneiro de lançadeira para outra nave ou estação sua no mesmo sistema estelar. Ele vai para uma cama de prisioneiro livre, se houver.</Rimverse_CmdMovePrisonerDesc>
+  <Rimverse_CmdMovePrisonerNone>Nenhuma outra nave ou estação sua está neste sistema estelar, ou uma nave está viajando.</Rimverse_CmdMovePrisonerNone>
+  <Rimverse_CompatAlliesGoodwill>Mods de aliados: boa vontade gasta muda a opinião da civilização</Rimverse_CompatAlliesGoodwill>
+  <Rimverse_CompatAlliesGoodwill_Desc>Com Allies are Helpful, Guards For Me ou Raids For Me, a boa vontade que você gasta pedindo ajuda a uma civilização do Rimverse também baixa a opinião dela sobre você.</Rimverse_CompatAlliesGoodwill_Desc>
+  <Rimverse_CompatAnomalyExtras>Mods do Anomaly: entidades sobrevivem ao vácuo</Rimverse_CompatAnomalyExtras>
+  <Rimverse_CompatAnomalyExtras_Desc>Entidades dos mods do Anomaly sobrevivem ao vácuo como as do jogo base. Precisa reiniciar o jogo.</Rimverse_CompatAnomalyExtras_Desc>
+  <Rimverse_CompatNoForcedSlowdown>No Forced Slowdown: sem pausa automática por ameaça com nave viajando</Rimverse_CompatNoForcedSlowdown>
+  <Rimverse_CompatNoForcedSlowdown_Desc>Enquanto uma nave sua viaja, a pausa do Rimverse por ameaça não acontece. Vem desligado.</Rimverse_CompatNoForcedSlowdown_Desc>
+  <Rimverse_CompatPsycasts>Mods de psycasts: psyfocus mais rápido para sensíveis ao Fluxo</Rimverse_CompatPsycasts>
+  <Rimverse_CompatPsycasts_Desc>Pawns sensíveis ao Fluxo recuperam psyfocus 10% mais rápido. Precisa reiniciar o jogo.</Rimverse_CompatPsycasts_Desc>
+  <Rimverse_CompatRealisticRooms>Realistic Rooms: limite menor de nave apertada</Rimverse_CompatRealisticRooms>
+  <Rimverse_CompatRealisticRooms_Desc>A nave conta como apertada abaixo de 10 células por tripulante, em vez de 16. Precisa reiniciar o jogo.</Rimverse_CompatRealisticRooms_Desc>
+  <Rimverse_CompatRimmuNation>Roupas Rimmu-Nation: hazmat veda um pouco</Rimverse_CompatRimmuNation>
+  <Rimverse_CompatRimmuNation_Desc>Máscaras de gás e roupas hazmat do Rimmu-Nation dão um pouco de vedação no vácuo (+10%). Precisa reiniciar o jogo.</Rimverse_CompatRimmuNation_Desc>
+  <Rimverse_CompatShipVersions>Mods de nave: armazenamento e hidroponia contam como peças de nave</Rimverse_CompatShipVersions>
+  <Rimverse_CompatShipVersions_Desc>Armazenamento e hidroponia dos mods de nave contam como carga e hidroponia nas naves do Rimverse. Precisa reiniciar o jogo.</Rimverse_CompatShipVersions_Desc>
+  <Rimverse_CompatTweaksHeader>Ajustes para outros mods (ficam cinza quando o mod não está ativo; os que mudam itens precisam reiniciar o jogo):</Rimverse_CompatTweaksHeader>
+  <Rimverse_CompatWeapons>Mods de armas: munição pesada pode furar o casco</Rimverse_CompatWeapons>
+  <Rimverse_CompatWeapons_Desc>Munição pesada e explosiva dos mods de armas pode furar o casco, como as armas do Rimverse. Precisa reiniciar o jogo.</Rimverse_CompatWeapons_Desc>
+  <Rimverse_ContractDeadline>Tempo restante: {0}</Rimverse_ContractDeadline>
+  <Rimverse_ContractGoTo>Vá até {0}.</Rimverse_ContractGoTo>
+  <Rimverse_ContractNone>Nenhum contrato serve pra sua situação agora.</Rimverse_ContractNone>
+  <Rimverse_ContractReturn>Traga a carga de volta para {0}.</Rimverse_ContractReturn>
+  <Rimverse_ContractRouteProgress>Sistemas mapeados: {0} de {1}.</Rimverse_ContractRouteProgress>
+  <Rimverse_ContractSmuggleCaught>{0} pegou a carga contrabandeada. O contrato falhou.</Rimverse_ContractSmuggleCaught>
+  <Rimverse_ContractSpyCaught>{0} pegou seus espiões. O contrato falhou.</Rimverse_ContractSpyCaught>
+  <Rimverse_CosmicRegion>Região da teia: um agrupamento mais solto de aglomerados entre as paredes.</Rimverse_CosmicRegion>
+  <Rimverse_CosmicWebCounts>{0} vazios, {1} paredes, {2} superaglomerados e {3} regiões neste chunk.</Rimverse_CosmicWebCounts>
+  <Rimverse_DesNoTurretFire>Sem tiro de torres</Rimverse_DesNoTurretFire>
+  <Rimverse_DesNoTurretFireClear>Limpar sem tiro de torres</Rimverse_DesNoTurretFireClear>
+  <Rimverse_DesNoTurretFireDesc>Marca células onde suas torres nunca atiram em nada.</Rimverse_DesNoTurretFireDesc>
+  <Rimverse_DistrictSizeClass>Classe de tamanho do distrito: {0}</Rimverse_DistrictSizeClass>
+  <Rimverse_EnemyClass_0>caça</Rimverse_EnemyClass_0>
+  <Rimverse_EnemyClass_1>corveta</Rimverse_EnemyClass_1>
+  <Rimverse_EnemyClass_2>fragata</Rimverse_EnemyClass_2>
+  <Rimverse_EnemyClass_3>destróier</Rimverse_EnemyClass_3>
+  <Rimverse_EnemyClass_4>cruzador</Rimverse_EnemyClass_4>
+  <Rimverse_EnemyClass_5>porta-naves</Rimverse_EnemyClass_5>
+  <Rimverse_EnemyClass_6>encouraçado</Rimverse_EnemyClass_6>
+  <Rimverse_EnemyClass_7>dreadnought</Rimverse_EnemyClass_7>
+  <Rimverse_EnemyClass_8>estação de guerra</Rimverse_EnemyClass_8>
+  <Rimverse_FlowApprenticeIs>Aprendiz: {0}</Rimverse_FlowApprenticeIs>
+  <Rimverse_FlowAwakenDanger>Perto da morte, {0} sentiu o Grande Fluxo despertar por dentro.</Rimverse_FlowAwakenDanger>
+  <Rimverse_FlowAwakenMaster>Perto de um mestre do Fluxo, {0} despertou para o Grande Fluxo.</Rimverse_FlowAwakenMaster>
+  <Rimverse_FlowAwakenMeditation>Meditando ao lado do cristal, {0} despertou para o Grande Fluxo.</Rimverse_FlowAwakenMeditation>
+  <Rimverse_FlowBound>{0} aceitou {1} como aprendiz.</Rimverse_FlowBound>
+  <Rimverse_FlowBracket>nível {0}, {1}/{2} de energia</Rimverse_FlowBracket>
+  <Rimverse_FlowDeflected>Desviado</Rimverse_FlowDeflected>
+  <Rimverse_FlowLevelUp>{0} chegou ao nível {1} no Grande Fluxo.</Rimverse_FlowLevelUp>
+  <Rimverse_FlowMasterIs>Mestre: {0}</Rimverse_FlowMasterIs>
+  <Rimverse_FlowNeedEnergy>Precisa de {0} de energia do Fluxo (tem {1}).</Rimverse_FlowNeedEnergy>
+  <Rimverse_FlowNeedLevel>Exige nível {0} no Grande Fluxo.</Rimverse_FlowNeedLevel>
+  <Rimverse_FlowNoApprentice>Nenhum usuário do Fluxo aqui pode ser ensinado.</Rimverse_FlowNoApprentice>
+  <Rimverse_FlowNotSensitive>{PAWN_nameDef} não sente o Grande Fluxo.</Rimverse_FlowNotSensitive>
+  <Rimverse_FlowSideChanged>{0} agora segue o caminho da {1}.</Rimverse_FlowSideChanged>
+  <Rimverse_FlowTakeApprentice>Aceitar aprendiz</Rimverse_FlowTakeApprentice>
+  <Rimverse_FlowTakeApprenticeDesc>Ensinar um usuário do Fluxo menos experiente. Um aprendiz perto do mestre aprende três vezes mais rápido. Um mestre tem um aprendiz por vez.</Rimverse_FlowTakeApprenticeDesc>
+  <Rimverse_FlowTip>Sensibilidade: {0}
+Nível: {1} (máx. {2})
+Experiência: {3}/{4}
+Alinhamento: {5} (Ruptura -100 a Harmonia +100)</Rimverse_FlowTip>
+  <Rimverse_FlowVisionDone>{0} abriu a mente para todo o sistema. Todos os corpos daqui foram revelados.</Rimverse_FlowVisionDone>
+  <Rimverse_FlowWandererText>Um andarilho do Grande Fluxo passou por aqui e compartilhou seus ensinamentos com {0}.</Rimverse_FlowWandererText>
+  <Rimverse_FlowWeaponLevel>precisa do nível {0} no Grande Fluxo</Rimverse_FlowWeaponLevel>
+  <Rimverse_ImpossibleMap>Chegou um mapa que não deveria existir: uma porta desenhada numa nave perto de {0}. Leve a nave até lá e a porta estará esperando.</Rimverse_ImpossibleMap>
+  <Rimverse_LetterBombard>{0} reivindica o sistema de {1} e mandou uma frota bombardear a colônia.</Rimverse_LetterBombard>
+  <Rimverse_LetterBombardLabel>Expedição de bombardeio</Rimverse_LetterBombardLabel>
+  <Rimverse_LetterLegitimacy>O governo de {0} perdeu toda a legitimidade e foi trocado por: {1}.</Rimverse_LetterLegitimacy>
+  <Rimverse_LetterLegitimacyLabel>Governo cai</Rimverse_LetterLegitimacyLabel>
+  <Rimverse_LetterNemesis>A {0} voltou. {1} comanda de novo, depois de escapar de você {2} vez(es).</Rimverse_LetterNemesis>
+  <Rimverse_LetterNemesisLabel>Um velho inimigo volta</Rimverse_LetterNemesisLabel>
+  <Rimverse_LetterSiege>A frota de {0} não foi embora depois do ataque. Ela tomou a órbita e está cercando este sistema por cerca de {1} dias.
+
+Enquanto o cerco durar, nenhum mercador orbital chega até você, as rotas de comércio do sistema ficam cortadas e a frota pode atacar de novo a qualquer dia. Deixe aqui uma frota sua mais forte que a deles para quebrar o cerco, ou faça as pazes.</Rimverse_LetterSiege>
+  <Rimverse_LetterSiegeBroken>Sua frota quebrou o cerco. A frota de {0} recuou com muitas perdas.</Rimverse_LetterSiegeBroken>
+  <Rimverse_LetterSiegeEndLabel>Fim do cerco</Rimverse_LetterSiegeEndLabel>
+  <Rimverse_LetterSiegeLabel>Cerco orbital</Rimverse_LetterSiegeLabel>
+  <Rimverse_LetterSiegeLifted>A frota de {0} levantou o cerco e está voltando para casa.</Rimverse_LetterSiegeLifted>
+  <Rimverse_LetterTechRevolution>{0} passou por uma revolução tecnológica e chegou à era {1}. Governo novo: {2}.</Rimverse_LetterTechRevolution>
+  <Rimverse_LetterTechRevolutionLabel>Revolução tecnológica</Rimverse_LetterTechRevolutionLabel>
+  <Rimverse_LetterTradeWar>{0} vê {1} como concorrente e declarou embargo comercial por 20 dias.</Rimverse_LetterTradeWar>
+  <Rimverse_LetterTradeWarLabel>Guerra comercial</Rimverse_LetterTradeWarLabel>
+  <Rimverse_MapFilterCivs>Civilizações</Rimverse_MapFilterCivs>
+  <Rimverse_MapFilterDanger>Perigo</Rimverse_MapFilterDanger>
+  <Rimverse_MapFilterResources>Recursos</Rimverse_MapFilterResources>
+  <Rimverse_MapFilterTrade>Rotas comerciais</Rimverse_MapFilterTrade>
+  <Rimverse_MarketShortage>Em falta neste mercado: {0}</Rimverse_MarketShortage>
+  <Rimverse_MeterCargo>Carga</Rimverse_MeterCargo>
+  <Rimverse_Mission_Siege>cerco orbital</Rimverse_Mission_Siege>
+  <Rimverse_MsgEmbargoed>{0} tem um embargo contra você e não vai negociar.</Rimverse_MsgEmbargoed>
+  <Rimverse_MsgFreighterHere>Um {1} de {0} chegou neste sistema e está aberto pra negócio.</Rimverse_MsgFreighterHere>
+  <Rimverse_MsgFreighterRaided>Piratas saquearam um cargueiro de {0} perto de {1}.</Rimverse_MsgFreighterRaided>
+  <Rimverse_MsgPrisonerMoved>{0} foi transferido para {1}.</Rimverse_MsgPrisonerMoved>
+  <Rimverse_MsgPrisonerSabotage>{0} sabotou o {1} durante a fuga!</Rimverse_MsgPrisonerSabotage>
+  <Rimverse_MsgSensorsEvaded>Os sensores da {0} viram a emboscada cedo. A nave escapou antes de ela fechar.</Rimverse_MsgSensorsEvaded>
+  <Rimverse_PerfBackground>Fundo do espaço</Rimverse_PerfBackground>
+  <Rimverse_PerfBackground_Desc>Desenha o céu estrelado, planetas e sol atrás dos mapas espaciais. Desligar economiza mais.</Rimverse_PerfBackground_Desc>
+  <Rimverse_PerfCityHorizon>Cidade além da borda do mapa</Rimverse_PerfCityHorizon>
+  <Rimverse_PerfCityHorizon_Desc>Nos mapas de cidade das civilizações, mostra o resto da cidade continuando além da borda do mapa.</Rimverse_PerfCityHorizon_Desc>
+  <Rimverse_PerfMegastructures>Megaestruturas no céu</Rimverse_PerfMegastructures>
+  <Rimverse_PerfMegastructures_Desc>Desenha anéis, enxames, habitats e portões no fundo.</Rimverse_PerfMegastructures_Desc>
+  <Rimverse_PerfPauseMaps>Pausar mapas não vistos</Rimverse_PerfPauseMaps>
+  <Rimverse_PerfPauseMaps_Desc>Mapas que você não está olhando, sem ninguém seu neles e que não são sua casa, param de rodar até alguém chegar. Economiza muito com várias estações e destroços abertos.</Rimverse_PerfPauseMaps_Desc>
+  <Rimverse_PerfStars>Estrelas do fundo</Rimverse_PerfStars>
+  <Rimverse_PerfStars_Desc>Quantas estrelas o fundo desenha.</Rimverse_PerfStars_Desc>
+  <Rimverse_PerfStreaks>Rastros de dobra e viagem</Rimverse_PerfStreaks>
+  <Rimverse_PerfStreaks_Desc>Desenha rastros de estrelas em movimento enquanto a nave viaja.</Rimverse_PerfStreaks_Desc>
+  <Rimverse_PerfTraffic>Tráfego orbital</Rimverse_PerfTraffic>
+  <Rimverse_PerfTraffic_Desc>Desenha estações e naves em movimento ao redor de mundos habitados, mais cheio na sede da civilização.</Rimverse_PerfTraffic_Desc>
+  <Rimverse_PlagueSpread>{0} pegou a peste alienígena de {1}. Deixe os doentes em uma sala com câmara de quarentena.</Rimverse_PlagueSpread>
+  <Rimverse_PlagueStrain>cepa {0}</Rimverse_PlagueStrain>
+  <Rimverse_QolAutoResearch>Os pesquisadores escolheram um novo projeto sozinhos: {0}.</Rimverse_QolAutoResearch>
+  <Rimverse_QolBuildFromInventory>Trazer o material do inventário para cá</Rimverse_QolBuildFromInventory>
+  <Rimverse_QolCallTrader>Chamar comerciante</Rimverse_QolCallTrader>
+  <Rimverse_QolCallTraderDesc>Pague {0} de prata para chamar um mercador orbital. Dá para chamar um a cada {1} dias.</Rimverse_QolCallTraderDesc>
+  <Rimverse_QolCallTraderNoPower>O console de comunicação precisa de energia.</Rimverse_QolCallTraderNoPower>
+  <Rimverse_QolCallTraderNoSilver>Você precisa de {0} de prata neste mapa.</Rimverse_QolCallTraderNoSilver>
+  <Rimverse_QolCallTraderSiege>Nenhum mercador passa por um cerco orbital.</Rimverse_QolCallTraderSiege>
+  <Rimverse_QolCallTraderWait>Dá para chamar de novo em {0}.</Rimverse_QolCallTraderWait>
+  <Rimverse_QolContinue>Continuar</Rimverse_QolContinue>
+  <Rimverse_QolDateTip>{0}
+Dia do ano: {1}
+Dias desde o pouso: {2}
+Ticks de jogo: {3}</Rimverse_QolDateTip>
+  <Rimverse_QolDaysToRot>Dias até estragar</Rimverse_QolDaysToRot>
+  <Rimverse_QolDaysToRotDesc>Quantos dias este item dura na temperatura atual.</Rimverse_QolDaysToRotDesc>
+  <Rimverse_QolExportSettings>Exportar opções para um arquivo</Rimverse_QolExportSettings>
+  <Rimverse_QolFollow>Seguir</Rimverse_QolFollow>
+  <Rimverse_QolFollowDesc>Mantém a câmera neste colono até você desligar.</Rimverse_QolFollowDesc>
+  <Rimverse_QolGaugeInspect>Temperatura do cômodo: {0}</Rimverse_QolGaugeInspect>
+  <Rimverse_QolGoodwillGift>Boa vontade: {0} → {1} ({2})</Rimverse_QolGoodwillGift>
+  <Rimverse_QolGoodwillNow>Boa vontade: {0} ({1})</Rimverse_QolGoodwillNow>
+  <Rimverse_QolImportSettings>Importar opções do arquivo</Rimverse_QolImportSettings>
+  <Rimverse_QolInstantCaravan>Enviar agora</Rimverse_QolInstantCaravan>
+  <Rimverse_QolInstantCaravanDesc>O mapa está seguro: a caravana se forma e parte na hora, sem empacotar.</Rimverse_QolInstantCaravanDesc>
+  <Rimverse_QolLinkPlanters>Ligar canteiros</Rimverse_QolLinkPlanters>
+  <Rimverse_QolLinkPlantersDesc>Copia esta planta para todos os canteiros ligados do mesmo tipo.</Rimverse_QolLinkPlantersDesc>
+  <Rimverse_QolLinkPlantersDone>{0} canteiros agora cultivam a mesma planta.</Rimverse_QolLinkPlantersDone>
+  <Rimverse_QolMovePatient>Levar {0} para {1} ({2})</Rimverse_QolMovePatient>
+  <Rimverse_QolNeverRots>não estraga aqui</Rimverse_QolNeverRots>
+  <Rimverse_QolPutHere>Levar {0} para um lugar escolhido</Rimverse_QolPutHere>
+  <Rimverse_QolQuickSaved>Jogo salvo: {0}</Rimverse_QolQuickSaved>
+  <Rimverse_QolQuickStockpile>Estoque da sala</Rimverse_QolQuickStockpile>
+  <Rimverse_QolQuickStockpileDesc>Transforma todas as células livres desta sala em estoque.</Rimverse_QolQuickStockpileDesc>
+  <Rimverse_QolQuickStockpileDone>Estoque criado com {0} células.</Rimverse_QolQuickStockpileDone>
+  <Rimverse_QolQuickStockpileNoRoom>Este módulo não está dentro de uma sala fechada.</Rimverse_QolQuickStockpileNoRoom>
+  <Rimverse_QolRandomScenario>Cenário aleatório</Rimverse_QolRandomScenario>
+  <Rimverse_QolRemoteStock>O que está à venda</Rimverse_QolRemoteStock>
+  <Rimverse_QolRemoteStockDesc>Veja o que os comerciantes deste povoado vendem agora.</Rimverse_QolRemoteStockDesc>
+  <Rimverse_QolRemoteStockEmpty>Nada à venda agora.</Rimverse_QolRemoteStockEmpty>
+  <Rimverse_QolRemoteStockTitle>{0} ({1}), relação {2}</Rimverse_QolRemoteStockTitle>
+  <Rimverse_QolRename>Renomear</Rimverse_QolRename>
+  <Rimverse_QolRenameDesc>Dá a esta construção o nome que você quiser.</Rimverse_QolRenameDesc>
+  <Rimverse_QolRenameReset>Nome original</Rimverse_QolRenameReset>
+  <Rimverse_QolSettingsExported>Opções exportadas para {0}.</Rimverse_QolSettingsExported>
+  <Rimverse_QolSettingsImported>Opções importadas.</Rimverse_QolSettingsImported>
+  <Rimverse_QolSettingsNoFile>Nenhuma opção exportada encontrada em {0}.</Rimverse_QolSettingsNoFile>
+  <Rimverse_QolTreatFirst>Tratar primeiro</Rimverse_QolTreatFirst>
+  <Rimverse_QolTreatFirstDesc>Os médicos tratam este colono antes de todos.</Rimverse_QolTreatFirstDesc>
+  <Rimverse_RaiderKind_BountyHunters>caçadores de recompensa</Rimverse_RaiderKind_BountyHunters>
+  <Rimverse_RaiderKind_Corporate>segurança corporativa</Rimverse_RaiderKind_Corporate>
+  <Rimverse_RaiderKind_Fanatics>fanáticos</Rimverse_RaiderKind_Fanatics>
+  <Rimverse_RaiderKind_Federation>federação</Rimverse_RaiderKind_Federation>
+  <Rimverse_RaiderKind_Guardians>guardião precursor</Rimverse_RaiderKind_Guardians>
+  <Rimverse_RaiderKind_Junta>onda da junta</Rimverse_RaiderKind_Junta>
+  <Rimverse_RaiderKind_Mercenaries>mercenários</Rimverse_RaiderKind_Mercenaries>
+  <Rimverse_RaiderKind_Pirates>piratas</Rimverse_RaiderKind_Pirates>
+  <Rimverse_RareFind>Os sensores travaram em {0}, um objeto de classe de tamanho {1}. Coisas desse tamanho aparecem uma vez na vida. Só os dados já valem uma fortuna, e a equipe de pesquisa já está trabalhando.</Rimverse_RareFind>
+  <Rimverse_RareFindLabel>Achado raro</Rimverse_RareFindLabel>
+  <Rimverse_RetrofitDoneLabel>Gravship convertida</Rimverse_RetrofitDoneLabel>
+  <Rimverse_RetrofitDoneText>{0} células de subestrutura da gravship agora são casco do Rimverse. Instale a ponte entregue na nave para comandá-la como uma nave do Rimverse. O motor grav continua funcionando.</Rimverse_RetrofitDoneText>
+  <Rimverse_RetrofitNoGravship>Não há subestrutura de gravship neste mapa.</Rimverse_RetrofitNoGravship>
+  <Rimverse_RetrofitNoOdyssey>Requer o Odyssey.</Rimverse_RetrofitNoOdyssey>
+  <Rimverse_RoomsDoor>Uma porta amarela apareceu numa parede da nave. Ela não estava lá antes, e quem passar por ela vai parar nas salas sem fim.</Rimverse_RoomsDoor>
+  <Rimverse_RoomsDoorInspect>Some em {0}</Rimverse_RoomsDoorInspect>
+  <Rimverse_RoomsDoorLabel>Porta que não deveria estar aqui</Rimverse_RoomsDoorLabel>
+  <Rimverse_RoomsReturnedCoords>{0} voltou das salas lembrando as coordenadas exatas de {1}.</Rimverse_RoomsReturnedCoords>
+  <Rimverse_RoomsStowaway>Algo seguiu seu colono na volta das salas e estava escondido a bordo. Acabou de aparecer.</Rimverse_RoomsStowaway>
+  <Rimverse_RoomsStowawayLabel>Clandestino das salas</Rimverse_RoomsStowawayLabel>
+  <Rimverse_RoomsStrayFound>{0} estava esperando aqui desde que as salas o cuspiram. Voltou a bordo.</Rimverse_RoomsStrayFound>
+  <Rimverse_RoomsStrayFoundLabel>Colono perdido encontrado</Rimverse_RoomsStrayFoundLabel>
+  <Rimverse_RoomsWreck>{0} encontrou peças de uma nave destroçada espalhadas pelas salas.</Rimverse_RoomsWreck>
+  <Rimverse_RoomsWrongReturn>{0} saiu das salas no lugar errado, em algum ponto perto de {1}. Leve a nave até lá para buscá-lo.</Rimverse_RoomsWrongReturn>
+  <Rimverse_RoomsWrongReturnLabel>Saída errada</Rimverse_RoomsWrongReturnLabel>
+  <Rimverse_RuinResearch>As ruínas precursoras avançaram a pesquisa rara {0}.</Rimverse_RuinResearch>
+  <Rimverse_SectorSizeClass>Classe de tamanho do setor: {0}</Rimverse_SectorSizeClass>
+  <Rimverse_SensorVisorBody>{0} ({1}): classe de tamanho {2}</Rimverse_SensorVisorBody>
+  <Rimverse_SensorVisorHere>(você está aqui)</Rimverse_SensorVisorHere>
+  <Rimverse_SensorVisorNothing>O visor não encontra nada para medir.</Rimverse_SensorVisorNothing>
+  <Rimverse_SensorVisorScan>Medir classes de tamanho</Rimverse_SensorVisorScan>
+  <Rimverse_SensorVisorScanDesc>Lê a classe de tamanho do sistema estelar e de cada corpo nele.</Rimverse_SensorVisorScanDesc>
+  <Rimverse_SensorVisorSystem>Sistema {0}: classe de tamanho {1}</Rimverse_SensorVisorSystem>
+  <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>
+  <Rimverse_Stat_SignatureAdd_Desc>Enquanto funciona, esta peça deixa a nave mais fácil de detectar. Cada veículo estacionado também soma 2%.</Rimverse_Stat_SignatureAdd_Desc>
+  <Rimverse_SuitUpOnBreach>Brecha no casco: {0} colonos estão vestindo trajes de vácuo.</Rimverse_SuitUpOnBreach>
+  <Rimverse_SurfaceCut>Recorte do mapa: {0}, {1} num mundo de {2} km de circunferência</Rimverse_SurfaceCut>
+  <Rimverse_Tab_Performance>Desempenho</Rimverse_Tab_Performance>
+  <Rimverse_TechSaleBlocked>Venda de tecnologia: {0}</Rimverse_TechSaleBlocked>
+  <Rimverse_TechSaleButton>Comprar tecnologia</Rimverse_TechSaleButton>
+  <Rimverse_TechSaleCooldown>próxima oferta em {0} dias</Rimverse_TechSaleCooldown>
+  <Rimverse_TechSaleDone>Você comprou {0} de {1}.</Rimverse_TechSaleDone>
+  <Rimverse_TechSaleNoSilver>prata insuficiente perto de um sinalizador</Rimverse_TechSaleNoSilver>
+  <Rimverse_TechSaleNothing>eles não sabem nada que você não saiba</Rimverse_TechSaleNothing>
+  <Rimverse_TechSaleOpinion>eles não confiam em você o bastante</Rimverse_TechSaleOpinion>
+  <Rimverse_TechSaleOption>{0} ({1} prata)</Rimverse_TechSaleOption>
+  <Rimverse_TechStolen>Seus espiões trouxeram dados sobre {0} de {1}.</Rimverse_TechStolen>
+  <Rimverse_VisibilityThreat>Calor, energia, saltos e fama acenderam vocês na região toda. Alguém veio procurar.</Rimverse_VisibilityThreat>
+  <Rimverse_VisibilityThreatLabel>Visíveis demais</Rimverse_VisibilityThreatLabel>
+  <Rimverse_VisibilityTotal>Visibilidade na região: {0} pontos (avisos em 400.000 e 600.000, problema em 800.000)</Rimverse_VisibilityTotal>
+  <Rimverse_VisibilityWarn1>Sua assinatura chegou a {0} pontos. Piratas e caçadores começam a notar vocês.</Rimverse_VisibilityWarn1>
+  <Rimverse_VisibilityWarn2>Sua assinatura chegou a {0} pontos. Agora vocês são fáceis de achar; esperem visitas em breve.</Rimverse_VisibilityWarn2>
+  <Rimverse_WeaponCharge>Carga da célula: {0}/{1} disparos. Recarrega perto de equipamentos com energia.</Rimverse_WeaponCharge>
+  <Rimverse_WeaponHeat>Calor: {0}</Rimverse_WeaponHeat>
+  <Rimverse_WeaponOverheat>A {0} de {1} superaqueceu e precisa ventilar antes de disparar de novo.</Rimverse_WeaponOverheat>
+  <Rimverse_WeaponVenting>ventilando</Rimverse_WeaponVenting>
+  <Rimverse_ZeroGPlantStopped>Não cresce: em gravidade zero só a hidroponia selada funciona.</Rimverse_ZeroGPlantStopped>
+  <Rimverse_ZoneSizeClass>Classe de tamanho da zona: {0}</Rimverse_ZoneSizeClass>
+</LanguageData>

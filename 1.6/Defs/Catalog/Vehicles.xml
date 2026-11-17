@@ -7,12 +7,12 @@
     <description>Bikes, quads, rovers, trucks and tractors for planet surfaces.</description>
     <baseCost>1200</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SensorsTab</tab>
     <prerequisites>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>8</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -21,13 +21,13 @@
     <description>Troop carriers and light tanks with mounted weapons.</description>
     <baseCost>2500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_CombatTab</tab>
     <prerequisites>
       <li>Rimverse_GroundVehicles</li>
       <li>Rimverse_KineticWeapons</li>
     </prerequisites>
-    <researchViewX>9</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -36,12 +36,12 @@
     <description>Hovercraft, amphibians, combat walkers and plasma tanks powered by power cells.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_ArmoredVehicles</li>
     </prerequisites>
-    <researchViewX>10</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -50,27 +50,27 @@
     <description>VTOLs, fighters, troop transports, cloud airships and bombers.</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SensorsTab</tab>
     <prerequisites>
       <li>Rimverse_GroundVehicles</li>
     </prerequisites>
-    <researchViewX>9</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>Rimverse_Shuttles</defName>
     <label>shuttles</label>
     <description>Landing, cargo and assault shuttles and escape pods that fly between surface and orbit.</description>
-    <baseCost>3500</baseCost>
+    <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_Aircraft</li>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>10</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -79,12 +79,12 @@
     <description>Space fighters, bombers, tugs, asteroid miners and scouts launched from the ship.</description>
     <baseCost>5000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_Shuttles</li>
     </prerequisites>
-    <researchViewX>11</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ThingDef ParentName="BaseBullet">

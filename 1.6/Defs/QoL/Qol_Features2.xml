@@ -135,6 +135,7 @@
     <category>Combat</category>
     <disableIfModActive>
       <li>RER.AccuracyOverlay</li>
+      <li>ceteam.combatextended</li>
       <li>Mlie.ExplosiveRadius</li>
     </disableIfModActive>
   </Rimverse.QolFeatureDef>
@@ -364,6 +365,11 @@
     <label>search the map (with Ctrl)</label>
     <category>Rimverse_Keys</category>
     <defaultKeyCodeA>F</defaultKeyCodeA>
+    <modExtensions>
+      <li Class="Rimverse.KeyChordExtension">
+        <modifier>Control</modifier>
+      </li>
+    </modExtensions>
   </KeyBindingDef>
 
   <KeyBindingDef>
@@ -371,6 +377,11 @@
     <label>minimap (with Ctrl)</label>
     <category>Rimverse_Keys</category>
     <defaultKeyCodeA>M</defaultKeyCodeA>
+    <modExtensions>
+      <li Class="Rimverse.KeyChordExtension">
+        <modifier>Control</modifier>
+      </li>
+    </modExtensions>
   </KeyBindingDef>
 
 </Defs>

@@ -5,14 +5,14 @@
     <defName>Rimverse_SpaceBotany</defName>
     <label>space botany</label>
     <description>Cultivars bred for tanks, hydroponics and alien soil.</description>
-    <baseCost>1200</baseCost>
+    <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_AdvancedHydroponics</li>
     </prerequisites>
-    <researchViewX>8</researchViewX>
-    <researchViewY>7</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -21,12 +21,12 @@
     <description>Proper meals, cultured protein and crew drinks for long voyages.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>Rimverse_ShipGalley</li>
     </prerequisites>
-    <researchViewX>9</researchViewX>
-    <researchViewY>7</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -35,12 +35,12 @@
     <description>Drugs for shifts, gravity and the void.</description>
     <baseCost>1600</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_SpaceBotany</li>
     </prerequisites>
-    <researchViewX>10</researchViewX>
-    <researchViewY>7</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -49,12 +49,12 @@
     <description>Medicine for vacuum wounds, radiation and alien plagues.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_LifeSupport</li>
     </prerequisites>
-    <researchViewX>8</researchViewX>
-    <researchViewY>8</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -63,12 +63,12 @@
     <description>Implants made for life in the void.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_SpaceMedicine</li>
     </prerequisites>
-    <researchViewX>9</researchViewX>
-    <researchViewY>8</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -81,8 +81,8 @@
     <prerequisites>
       <li>Rimverse_SpaceMining</li>
     </prerequisites>
-    <researchViewX>8</researchViewX>
-    <researchViewY>9</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -96,12 +96,13 @@
       <li>Rimverse_Metallurgy</li>
       <li>Rimverse_WarpTheory</li>
     </prerequisites>
-    <researchViewX>9</researchViewX>
-    <researchViewY>9</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_PowerCell</defName>
+    <techLevel>Industrial</techLevel>
     <label>power cell</label>
     <description>A dense rechargeable cell that powers vehicles and spacer gear.</description>
     <graphicData>
@@ -146,6 +147,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_HullAlloy</defName>
+    <techLevel>Industrial</techLevel>
     <label>hull alloy</label>
     <description>Rolled steel and plasteel layered into standard hull plating.</description>
     <graphicData>
@@ -215,6 +217,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_ArmorAlloy</defName>
+    <techLevel>Spacer</techLevel>
     <label>armor alloy</label>
     <description>A heavy laminated alloy used in armored walls and suits.</description>
     <graphicData>
@@ -284,6 +287,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_ThermalCeramic</defName>
+    <techLevel>Industrial</techLevel>
     <label>thermal ceramic</label>
     <description>Heat-resistant ceramic tiles for radiators and heat shields.</description>
     <graphicData>
@@ -345,6 +349,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_HullGlass</defName>
+    <techLevel>Industrial</techLevel>
     <label>hull glass</label>
     <description>Pressure-rated glass melted from asteroid sand.</description>
     <graphicData>
@@ -387,6 +392,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_Ice</defName>
+    <techLevel>Spacer</techLevel>
     <label>ice</label>
     <description>Water ice mined from comets and moons. Becomes water, air and fuel.</description>
     <graphicData>
@@ -414,6 +420,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_LightGas</defName>
+    <techLevel>Spacer</techLevel>
     <label>light gas</label>
     <description>Pressurized hydrogen and helium skimmed from gas giants. Fusion fuel.</description>
     <graphicData>
@@ -441,6 +448,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_SensorCrystal</defName>
+    <techLevel>Spacer</techLevel>
     <label>sensor crystal</label>
     <description>A living crystal that resonates with faint signals. Used in advanced sensors.</description>
     <graphicData>
@@ -468,6 +476,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_RareMetal</defName>
+    <techLevel>Spacer</techLevel>
     <label>rare metal</label>
     <description>Platinum-group metals from metallic asteroids, used in spacer components.</description>
     <graphicData>
@@ -495,6 +504,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_Isotope</defName>
+    <techLevel>Spacer</techLevel>
     <label>isotope</label>
     <description>Shielded fissile isotope pellets. Fuel for fission reactors.</description>
     <graphicData>
@@ -522,6 +532,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_ExoticMatter</defName>
+    <techLevel>Spacer</techLevel>
     <label>exotic matter</label>
     <description>Negative-energy matter held in a magnetic bottle. Powers exotic reactors and gates.</description>
     <graphicData>
@@ -549,6 +560,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_Biomass</defName>
+    <techLevel>Spacer</techLevel>
     <label>biomass</label>
     <description>Processed living matter from fertile worlds. Becomes food, medicine and cloth.</description>
     <graphicData>
@@ -576,6 +588,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_NavalComponent</defName>
+    <techLevel>Industrial</techLevel>
     <label>naval component</label>
     <description>A ruggedized component rated for vacuum and heat cycles.</description>
     <graphicData>
@@ -620,6 +633,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_WarpCore</defName>
+    <techLevel>Spacer</techLevel>
     <label>warp core</label>
     <description>The heart of a warp drive: a sealed lattice that folds space around itself.</description>
     <graphicData>
@@ -665,6 +679,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_PrecursorFragment</defName>
+    <techLevel>Spacer</techLevel>
     <label>precursor fragment</label>
     <description>A shard of a machine older than humanity. Valuable for research.</description>
     <graphicData>
@@ -692,6 +707,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_Coral</defName>
+    <techLevel>Spacer</techLevel>
     <label>ocean coral</label>
     <description>Bright coral grown on ocean worlds, prized as a luxury building material.</description>
     <graphicData>
@@ -737,6 +753,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_ShipFiber</defName>
+    <techLevel>Spacer</techLevel>
     <label>ship fiber</label>
     <description>Soft fiber grown in hydroponics and spun into crew cloth.</description>
     <graphicData>
@@ -783,6 +800,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_ShipTorpedo</defName>
+    <techLevel>Industrial</techLevel>
     <label>heavy torpedo</label>
     <description>Ammunition for heavy torpedo tubes.</description>
     <graphicData>
@@ -826,6 +844,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_PulseMissile</defName>
+    <techLevel>Industrial</techLevel>
     <label>pulse missile</label>
     <description>A missile whose EMP warhead drains shields and stuns modules.</description>
     <graphicData>
@@ -869,6 +888,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_BoardingTorpedo</defName>
+    <techLevel>Industrial</techLevel>
     <label>boarding torpedo</label>
     <description>A torpedo with a pressurized cabin for four boarders.</description>
     <graphicData>
@@ -912,6 +932,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_SpaceMine</defName>
+    <techLevel>Industrial</techLevel>
     <label>space mine</label>
     <description>A proximity mine laid behind a retreating ship.</description>
     <graphicData>
@@ -954,6 +975,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_RailSlug</defName>
+    <techLevel>Spacer</techLevel>
     <label>rail slug</label>
     <description>A dense plasteel slug for railguns.</description>
     <graphicData>
@@ -996,6 +1018,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_SpinalSlug</defName>
+    <techLevel>Spacer</techLevel>
     <label>spinal slug</label>
     <description>A massive slug for a spinal mount.</description>
     <graphicData>
@@ -1038,6 +1061,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_Probe</defName>
+    <techLevel>Spacer</techLevel>
     <label>probe</label>
     <description>A small automated probe launched to scan distant systems.</description>
     <graphicData>
@@ -1081,6 +1105,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_AlienExtractRaw</defName>
+    <techLevel>Spacer</techLevel>
     <label>alien sap</label>
     <description>Raw sap from a local alien plant. Its effects depend on the world.</description>
     <graphicData>
@@ -1108,6 +1133,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_RadLichen</defName>
+    <techLevel>Spacer</techLevel>
     <label>radiation lichen</label>
     <description>Lichen that thrives on radiation. Base for anti-radiation medicine.</description>
     <graphicData>
@@ -1135,6 +1161,7 @@
 
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>Rimverse_RawAlgae</defName>
+    <techLevel>Spacer</techLevel>
     <label>tank algae</label>
     <description>Slimy green algae from a tank. Edible raw, barely.</description>
     <graphicData>
@@ -1157,6 +1184,7 @@
 
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>Rimverse_RawDwarfWheat</defName>
+    <techLevel>Spacer</techLevel>
     <label>dwarf wheat</label>
     <description>Short-stemmed wheat bred for hydroponic racks.</description>
     <graphicData>
@@ -1179,6 +1207,7 @@
 
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>Rimverse_RawShipTuber</defName>
+    <techLevel>Spacer</techLevel>
     <label>ship tuber</label>
     <description>A dense, starchy tuber that yields a lot per cell.</description>
     <graphicData>
@@ -1201,6 +1230,7 @@
 
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>Rimverse_PodFruit</defName>
+    <techLevel>Spacer</techLevel>
     <label>pod fruit</label>
     <description>A sweet, juicy fruit grown in sealed hydroponics.</description>
     <graphicData>
@@ -1223,6 +1253,7 @@
 
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>Rimverse_RawProteinSoy</defName>
+    <techLevel>Spacer</techLevel>
     <label>protein soy</label>
     <description>Protein-rich beans that replace meat on long voyages.</description>
     <graphicData>
@@ -1245,6 +1276,7 @@
 
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>Rimverse_RawIceCactus</defName>
+    <techLevel>Spacer</techLevel>
     <label>ice cactus flesh</label>
     <description>Watery cactus flesh from frozen worlds.</description>
     <graphicData>
@@ -1267,6 +1299,7 @@
 
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>Rimverse_RawLavaMushroom</defName>
+    <techLevel>Spacer</techLevel>
     <label>lava mushroom</label>
     <description>A scorched, peppery mushroom that grows near magma.</description>
     <graphicData>
@@ -1289,6 +1322,7 @@
 
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>Rimverse_RawFloatVine</defName>
+    <techLevel>Spacer</techLevel>
     <label>float vine fruit</label>
     <description>Light, airy fruit from a vine that grows in every direction.</description>
     <graphicData>
@@ -1331,17 +1365,18 @@
       <maxMeshCount>4</maxMeshCount>
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>Rimverse_RawAlgae</harvestedThingDef>
-      <harvestYield>8</harvestYield>
+      <harvestYield>7</harvestYield>
       <sowTags>
         <li>Hydroponic</li>
         <li>Ground</li>
+        <li>Rimverse_AlgaeTank</li>
       </sowTags>
       <sowResearchPrerequisites>
         <li>Rimverse_SpaceBotany</li>
       </sowResearchPrerequisites>
-      <growMinGlow>0.1</growMinGlow>
+      <growMinGlow>0.3</growMinGlow>
       <topWindExposure>0.1</topWindExposure>
-      <growDays>2.2</growDays>
+      <growDays>2</growDays>
       <visualSizeRange>0.5~0.9</visualSizeRange>
       <purpose>Food</purpose>
       <humanFoodPlant>true</humanFoodPlant>
@@ -1370,7 +1405,7 @@
       <maxMeshCount>4</maxMeshCount>
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>RawFungus</harvestedThingDef>
-      <harvestYield>7</harvestYield>
+      <harvestYield>10</harvestYield>
       <sowTags>
         <li>Hydroponic</li>
         <li>Ground</li>
@@ -1380,7 +1415,7 @@
       </sowResearchPrerequisites>
       <growMinGlow>0</growMinGlow>
       <topWindExposure>0.1</topWindExposure>
-      <growDays>4</growDays>
+      <growDays>5</growDays>
       <visualSizeRange>0.5~0.9</visualSizeRange>
       <purpose>Food</purpose>
       <humanFoodPlant>true</humanFoodPlant>
@@ -1409,7 +1444,7 @@
       <maxMeshCount>4</maxMeshCount>
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>Rimverse_RawDwarfWheat</harvestedThingDef>
-      <harvestYield>9</harvestYield>
+      <harvestYield>7</harvestYield>
       <sowTags>
         <li>Hydroponic</li>
         <li>Ground</li>
@@ -1417,9 +1452,9 @@
       <sowResearchPrerequisites>
         <li>Rimverse_SpaceBotany</li>
       </sowResearchPrerequisites>
-      <growMinGlow>0.3</growMinGlow>
+      <growMinGlow>0.5</growMinGlow>
       <topWindExposure>0.1</topWindExposure>
-      <growDays>4.5</growDays>
+      <growDays>3.5</growDays>
       <visualSizeRange>0.5~0.9</visualSizeRange>
       <purpose>Food</purpose>
       <humanFoodPlant>true</humanFoodPlant>
@@ -1448,7 +1483,7 @@
       <maxMeshCount>4</maxMeshCount>
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>Rimverse_RawShipTuber</harvestedThingDef>
-      <harvestYield>14</harvestYield>
+      <harvestYield>13</harvestYield>
       <sowTags>
         <li>Hydroponic</li>
         <li>Ground</li>
@@ -1456,7 +1491,7 @@
       <sowResearchPrerequisites>
         <li>Rimverse_SpaceBotany</li>
       </sowResearchPrerequisites>
-      <growMinGlow>0.3</growMinGlow>
+      <growMinGlow>0.5</growMinGlow>
       <topWindExposure>0.1</topWindExposure>
       <growDays>6</growDays>
       <visualSizeRange>0.5~0.9</visualSizeRange>
@@ -1494,9 +1529,9 @@
       <sowResearchPrerequisites>
         <li>Rimverse_SpaceBotany</li>
       </sowResearchPrerequisites>
-      <growMinGlow>0.3</growMinGlow>
+      <growMinGlow>0.6</growMinGlow>
       <topWindExposure>0.1</topWindExposure>
-      <growDays>8</growDays>
+      <growDays>5</growDays>
       <visualSizeRange>0.5~0.9</visualSizeRange>
       <purpose>Food</purpose>
       <humanFoodPlant>true</humanFoodPlant>
@@ -1525,7 +1560,7 @@
       <maxMeshCount>4</maxMeshCount>
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>Rimverse_RawProteinSoy</harvestedThingDef>
-      <harvestYield>8</harvestYield>
+      <harvestYield>9</harvestYield>
       <sowTags>
         <li>Hydroponic</li>
         <li>Ground</li>
@@ -1533,9 +1568,9 @@
       <sowResearchPrerequisites>
         <li>Rimverse_SpaceBotany</li>
       </sowResearchPrerequisites>
-      <growMinGlow>0.3</growMinGlow>
+      <growMinGlow>0.5</growMinGlow>
       <topWindExposure>0.1</topWindExposure>
-      <growDays>5</growDays>
+      <growDays>6</growDays>
       <visualSizeRange>0.5~0.9</visualSizeRange>
       <purpose>Food</purpose>
       <humanFoodPlant>true</humanFoodPlant>
@@ -1610,7 +1645,7 @@
       <sowResearchPrerequisites>
         <li>Rimverse_SpaceBotany</li>
       </sowResearchPrerequisites>
-      <growMinGlow>0.3</growMinGlow>
+      <growMinGlow>0.5</growMinGlow>
       <topWindExposure>0.1</topWindExposure>
       <growDays>7</growDays>
       <visualSizeRange>0.5~0.9</visualSizeRange>
@@ -1648,9 +1683,9 @@
       <sowResearchPrerequisites>
         <li>Rimverse_SpaceBotany</li>
       </sowResearchPrerequisites>
-      <growMinGlow>0.1</growMinGlow>
+      <growMinGlow>0.2</growMinGlow>
       <topWindExposure>0.1</topWindExposure>
-      <growDays>6</growDays>
+      <growDays>10</growDays>
       <visualSizeRange>0.5~0.9</visualSizeRange>
       <purpose>Beauty</purpose>
       <humanFoodPlant>false</humanFoodPlant>
@@ -1679,7 +1714,7 @@
       <maxMeshCount>1</maxMeshCount>
       <harvestTag>Wood</harvestTag>
       <harvestedThingDef>WoodLog</harvestedThingDef>
-      <harvestYield>20</harvestYield>
+      <harvestYield>25</harvestYield>
       <sowTags>
         <li>Ground</li>
       </sowTags>
@@ -2001,6 +2036,7 @@
 
   <ThingDef ParentName="MealBase">
     <defName>Rimverse_ShipMeal</defName>
+    <techLevel>Spacer</techLevel>
     <label>ship meal</label>
     <description>A plain hot meal served in the mess hall.</description>
     <graphicData>
@@ -2068,6 +2104,7 @@
 
   <ThingDef ParentName="MealFineBase">
     <defName>Rimverse_CaptainMeal</defName>
+    <techLevel>Spacer</techLevel>
     <label>captain's meal</label>
     <description>A carefully plated meal for officers and guests.</description>
     <graphicData>
@@ -2081,6 +2118,7 @@
     </statBases>
     <ingestible>
       <preferability>MealFine</preferability>
+      <tasteThought>AteFineMeal</tasteThought>
     </ingestible>
   </ThingDef>
 
@@ -2135,6 +2173,7 @@
 
   <ThingDef ParentName="MealLavishBase">
     <defName>Rimverse_StellarFeast</defName>
+    <techLevel>Spacer</techLevel>
     <label>stellar feast</label>
     <description>A lavish spread for parties and diplomacy.</description>
     <graphicData>
@@ -2148,6 +2187,7 @@
     </statBases>
     <ingestible>
       <preferability>MealLavish</preferability>
+      <tasteThought>AteLavishMeal</tasteThought>
     </ingestible>
   </ThingDef>
 
@@ -2202,6 +2242,7 @@
 
   <ThingDef ParentName="MealBase">
     <defName>Rimverse_ExoticPreserve</defName>
+    <techLevel>Spacer</techLevel>
     <label>exotic preserve</label>
     <description>Preserved alien flora and fauna. Lasts long and sells high.</description>
     <graphicData>
@@ -2210,11 +2251,12 @@
     </graphicData>
     <statBases>
       <MarketValue>45</MarketValue>
-      <Nutrition>0.8</Nutrition>
+      <Nutrition>0.9</Nutrition>
       <WorkToMake>700</WorkToMake>
     </statBases>
     <ingestible>
       <preferability>MealFine</preferability>
+      <tasteThought>Rimverse_AteExoticPreserve</tasteThought>
     </ingestible>
     <comps Inherit="False">
       <li Class="CompProperties_Ingredients"/>
@@ -2273,6 +2315,7 @@
 
   <ThingDef ParentName="MealLavishBase">
     <defName>Rimverse_GlitterDelicacy</defName>
+    <techLevel>Spacer</techLevel>
     <label>glitterworld delicacy</label>
     <description>An imported delicacy from a glitterworld. Can only be bought.</description>
     <graphicData>
@@ -2291,6 +2334,7 @@
 
   <ThingDef ParentName="OrganicProductBase">
     <defName>Rimverse_CulturedProtein</defName>
+    <techLevel>Spacer</techLevel>
     <label>cultured protein</label>
     <description>Vat-grown meat. No animal was harmed.</description>
     <graphicData>
@@ -2587,6 +2631,7 @@
         <severityPerDayImmune>-0.3</severityPerDayImmune>
         <immunityPerDayNotSick>-0.06</immunityPerDayNotSick>
       </li>
+      <li Class="Rimverse.HediffCompProperties_PlanetStrain" />
       <li Class="HediffCompProperties_Discoverable">
         <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
       </li>
@@ -2889,7 +2934,7 @@
     <initialSeverity>1</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1</severityPerDay>
+        <severityPerDay>-1.5</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -2917,7 +2962,7 @@
     <initialSeverity>1</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1</severityPerDay>
+        <severityPerDay>-0.5</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -2947,7 +2992,7 @@
     <initialSeverity>1</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.5</severityPerDay>
+        <severityPerDay>-4</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -2961,8 +3006,11 @@
         </capMods>
         <statOffsets>
           <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
-          <Rimverse_PilotingOffset>3</Rimverse_PilotingOffset>
+          <Rimverse_PilotingOffset>2</Rimverse_PilotingOffset>
         </statOffsets>
+        <statFactors>
+          <AimingDelayFactor>0.9</AimingDelayFactor>
+        </statFactors>
       </li>
     </stages>
   </HediffDef>
@@ -2978,7 +3026,7 @@
     <initialSeverity>1</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.5</severityPerDay>
+        <severityPerDay>-3</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -3009,7 +3057,7 @@
     <initialSeverity>1</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-2</severityPerDay>
+        <severityPerDay>-3</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -3040,13 +3088,13 @@
     <initialSeverity>1</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.5</severityPerDay>
+        <severityPerDay>-6</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
     <stages>
       <li>
-        <painFactor>0.3</painFactor>
+        <painFactor>0</painFactor>
         <statOffsets>
           <MentalBreakThreshold>0.04</MentalBreakThreshold>
           <MeleeHitChance>2</MeleeHitChance>
@@ -3066,7 +3114,7 @@
     <initialSeverity>1</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1</severityPerDay>
+        <severityPerDay>-2</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -3093,8 +3141,11 @@
     <initialSeverity>1</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.5</severityPerDay>
+        <severityPerDay>-0.333</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
+      </li>
+      <li Class="Rimverse.HediffCompProperties_AddOnRemove">
+        <hediff>Rimverse_HibernaGroggy</hediff>
       </li>
     </comps>
     <stages>
@@ -3296,7 +3347,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>24</MarketValue>
+      <MarketValue>25</MarketValue>
       <Mass>0.005</Mass>
     </statBases>
     <techLevel>Spacer</techLevel>
@@ -3328,7 +3379,7 @@
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>Rimverse_Vigil</chemical>
-        <addictiveness>0.03</addictiveness>
+        <addictiveness>0.02</addictiveness>
         <needLevelOffset>0.9</needLevelOffset>
         <listOrder>1000</listOrder>
         <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
@@ -3426,6 +3477,7 @@
       <li Class="CompProperties_Drug">
         <listOrder>1000</listOrder>
         <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+        <addictiveness>0.01</addictiveness>
       </li>
     </comps>
   </ThingDef>
@@ -3441,7 +3493,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>15</MarketValue>
+      <MarketValue>12</MarketValue>
       <Mass>0.005</Mass>
     </statBases>
     <techLevel>Spacer</techLevel>
@@ -3579,7 +3631,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>40</MarketValue>
+      <MarketValue>60</MarketValue>
       <Mass>0.005</Mass>
     </statBases>
     <techLevel>Spacer</techLevel>
@@ -3609,7 +3661,7 @@
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>Rimverse_Stardust</chemical>
-        <addictiveness>0.05</addictiveness>
+        <addictiveness>0.08</addictiveness>
         <needLevelOffset>0.9</needLevelOffset>
         <listOrder>1000</listOrder>
         <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
@@ -3673,7 +3725,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>30</MarketValue>
+      <MarketValue>35</MarketValue>
       <Mass>0.005</Mass>
     </statBases>
     <techLevel>Spacer</techLevel>
@@ -3722,7 +3774,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>35</MarketValue>
+      <MarketValue>40</MarketValue>
       <Mass>0.005</Mass>
     </statBases>
     <techLevel>Spacer</techLevel>
@@ -3749,7 +3801,7 @@
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>Rimverse_ColdBlood</chemical>
-        <addictiveness>0.02</addictiveness>
+        <addictiveness>0.03</addictiveness>
         <needLevelOffset>0.9</needLevelOffset>
         <listOrder>1000</listOrder>
         <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
@@ -3813,7 +3865,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>60</MarketValue>
+      <MarketValue>120</MarketValue>
       <Mass>0.005</Mass>
     </statBases>
     <techLevel>Spacer</techLevel>
@@ -3907,7 +3959,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>28</MarketValue>
+      <MarketValue>30</MarketValue>
       <Mass>0.005</Mass>
     </statBases>
     <techLevel>Spacer</techLevel>
@@ -3990,6 +4042,7 @@
 
   <ThingDef ParentName="DrugBase">
     <defName>Rimverse_ReactorBrew</defName>
+    <techLevel>Industrial</techLevel>
     <label>reactor brew</label>
     <description>The crew's homemade drink, distilled in a corner of the engine room. Social recreation.</description>
     <graphicData>
@@ -4041,6 +4094,7 @@
   </ThingDef>
   <ThingDef ParentName="DrugBase">
     <defName>Rimverse_MossTea</defName>
+    <techLevel>Industrial</techLevel>
     <label>moss tea</label>
     <description>A mild, soothing tea brewed from air moss.</description>
     <graphicData>
@@ -4112,6 +4166,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Rimverse_VacuumLung</defName>
+    <techLevel>Spacer</techLevel>
     <label>vacuum lung</label>
     <description>A lung with an oxygen reserve that buys minutes without air.</description>
     <graphicData>
@@ -4187,6 +4242,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Rimverse_SealedSkin</defName>
+    <techLevel>Spacer</techLevel>
     <label>sealed skin</label>
     <description>A subdermal mesh that resists decompression.</description>
     <graphicData>
@@ -4264,6 +4320,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Rimverse_ReinforcedBones</defName>
+    <techLevel>Spacer</techLevel>
     <label>reinforced bones</label>
     <description>Laced bones immune to bone loss that endure high gravity.</description>
     <graphicData>
@@ -4346,6 +4403,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Rimverse_BalanceEar</defName>
+    <techLevel>Spacer</techLevel>
     <label>balance ear</label>
     <description>An inner ear that ignores zero-g and warp sickness.</description>
     <graphicData>
@@ -4431,6 +4489,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Rimverse_SensorEye</defName>
+    <techLevel>Spacer</techLevel>
     <label>sensor eye</label>
     <description>An eye that sees heat and signatures. Improves aim.</description>
     <graphicData>
@@ -4506,6 +4565,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Rimverse_PilotInterface</defName>
+    <techLevel>Spacer</techLevel>
     <label>pilot interface</label>
     <description>A neural link between pilot and ship.</description>
     <graphicData>
@@ -4580,6 +4640,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Rimverse_WeaponsInterface</defName>
+    <techLevel>Spacer</techLevel>
     <label>weapons interface</label>
     <description>A neural link to ship weapons.</description>
     <graphicData>
@@ -4666,6 +4727,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Rimverse_EngineerHand</defName>
+    <techLevel>Spacer</techLevel>
     <label>engineer hand</label>
     <description>A hand with built-in tools.</description>
     <graphicData>
@@ -4748,6 +4810,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Rimverse_MagneticFeet</defName>
+    <techLevel>Spacer</techLevel>
     <label>magnetic feet</label>
     <description>Feet with built-in magnetic boots.</description>
     <graphicData>
@@ -4834,6 +4897,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Rimverse_BloodFilter</defName>
+    <techLevel>Spacer</techLevel>
     <label>blood filter</label>
     <description>Filters toxins and plague agents.</description>
     <graphicData>
@@ -4908,6 +4972,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Rimverse_SleepRegulator</defName>
+    <techLevel>Spacer</techLevel>
     <label>sleep regulator</label>
     <description>Less sleep, for long shifts.</description>
     <graphicData>
@@ -4975,6 +5040,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Rimverse_CryoImplant</defName>
+    <techLevel>Spacer</techLevel>
     <label>cryo implant</label>
     <description>Wake from cryosleep without the syndrome.</description>
     <graphicData>
@@ -5060,6 +5126,7 @@
   </HediffDef>
   <ThingDef ParentName="BodyPartArchotechBase">
     <defName>Rimverse_PrecursorCore</defName>
+    <techLevel>Spacer</techLevel>
     <label>precursor core</label>
     <description>A rare implant recovered from ruins. Its builders are long gone.</description>
     <graphicData>

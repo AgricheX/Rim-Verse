@@ -183,6 +183,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -241,10 +242,12 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_PointLaser</defName>
+    <techLevel>Spacer</techLevel>
     <label>point defense laser</label>
     <description>Tracks and burns incoming missiles at close range. Each one has a 50% chance to shoot down a missile.</description>
     <graphicData>
@@ -284,6 +287,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -329,6 +333,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -374,6 +379,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -433,6 +439,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -492,6 +499,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -538,10 +546,12 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_TractorBeam</defName>
+    <techLevel>Industrial</techLevel>
     <label>tractor beam</label>
     <description>Graviton beam that holds an enemy ship at close range so it cannot flee or pull away.</description>
     <graphicData>
@@ -581,10 +591,12 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_ShieldGenerator</defName>
+    <techLevel>Spacer</techLevel>
     <label>shield generator</label>
     <description>Projects an energy shield around the whole ship. 300 shield points that recover 10 per second while powered.</description>
     <graphicData>
@@ -622,10 +634,12 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Defense</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_ShipMissile</defName>
+    <techLevel>Spacer</techLevel>
     <label>ship missile</label>
     <description>A guided missile loaded into ship missile launchers.</description>
     <graphicData>

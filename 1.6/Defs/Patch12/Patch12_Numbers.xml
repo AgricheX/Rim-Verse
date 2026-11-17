@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>Rimverse_AteExoticPreserve</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ate exotic preserve</label>
+        <description>A taste from a world I will probably never see. It made the day better.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_StardustHighThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Rimverse_StardustHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>stardust</label>
+        <description>Every light in the ship is a star, and every star is singing.</description>
+        <baseMoodEffect>25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_NebulaNectarThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Rimverse_NebulaNectarHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>nebula nectar</label>
+        <description>Warm, slow and colorful, like drifting through a nebula.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

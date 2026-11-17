@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_StellarData</defName>
+    <label>stellar data record</label>
+    <description>A sealed record of an exact scan: orbits, mass, atmosphere and anything odd the sensors saw. Civilizations, cartographers and data brokers pay for it, and a research bench can turn it into knowledge.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/OrbitalCredit</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(0.55, 1, 0.75)</color>
+    </graphicData>
+    <stackLimit>500</stackLimit>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>25</MarketValue>
+      <Mass>0.001</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Rimverse_StellarData</li>
+      <li>Rimverse_Exotic</li>
+    </tradeTags>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>Rimverse_StudyStellarData</defName>
+    <label>study stellar data</label>
+    <description>Turn stellar data records into research. Each record gives 40 research points to the current project.</description>
+    <jobString>Studying stellar data.</jobString>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <workAmount>600</workAmount>
+    <workerClass>Rimverse.RecipeWorker_Study</workerClass>
+    <modExtensions>
+      <li Class="Rimverse.StudyExtension">
+        <research>200</research>
+      </li>
+    </modExtensions>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rimverse_StellarData</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rimverse_StellarData</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>HiTechResearchBench</li>
+      <li>SimpleResearchBench</li>
+    </recipeUsers>
+  </RecipeDef>
+
+</Defs>

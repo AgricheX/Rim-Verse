@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_FollowPawn</defName>
+    <label>follow a colonist</label>
+    <description>A button on your colonists makes the camera follow them around the map until you turn it off.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>brrainz.followme</li>
+      <li>ferny.perspectiveshift</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_ExtraSpeed</defName>
+    <label>extra game speed</label>
+    <description>A key (Shift+4 by default) toggles a fourth, faster game speed for long trips between stars.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>sarg.timecontrol</li>
+      <li>sarg.smartspeed</li>
+      <li>Mlie.UltraSpeed</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_DetailedDate</defName>
+    <label>detailed date and days to rot</label>
+    <description>Hovering the date shows the full date and hour, the day of the year and days since landing. Items that rot show how many days they have left in their info card.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Mlie.ShowDetailedDates</li>
+      <li>Mlie.ShowDaysToRot</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_TempGauge</defName>
+    <label>temperature gauge</label>
+    <description>A small gauge you can build that shows the temperature of its room right on the map.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Mlie.TemperatureGauge</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_Continue</defName>
+    <label>continue button</label>
+    <description>Adds a Continue button to the main menu that loads your most recent save.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Mlie.ContinueMainMenu</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <KeyBindingDef>
+    <defName>Rimverse_UltraSpeed</defName>
+    <label>toggle extra game speed</label>
+    <category>Rimverse_Keys</category>
+    <defaultKeyCodeA>Alpha4</defaultKeyCodeA>
+    <modExtensions>
+      <li Class="Rimverse.KeyChordExtension">
+        <modifier>Shift</modifier>
+      </li>
+    </modExtensions>
+  </KeyBindingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_TemperatureGauge</defName>
+    <techLevel>Industrial</techLevel>
+    <label>temperature gauge</label>
+    <description>A small thermometer on a post. It shows the temperature of its room right on the map.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Building/Misc/VoidSensor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.1</fillPercent>
+    <rotatable>false</rotatable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>300</WorkToBuild>
+      <Mass>2</Mass>
+    </statBases>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <designationCategory>Misc</designationCategory>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_TempGauge" />
+    </comps>
+  </ThingDef>
+
+</Defs>

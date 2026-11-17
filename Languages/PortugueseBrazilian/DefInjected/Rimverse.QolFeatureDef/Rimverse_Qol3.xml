@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Qol_BigMaps.label>mapas maiores</Rimverse_Qol_BigMaps.label>
+  <Rimverse_Qol_BigMaps.description>Acrescenta 350, 400, 450 e 500 aos tamanhos de mapa que dá para escolher ao começar um jogo. Mapas grandes ficam lentos em computadores fracos.</Rimverse_Qol_BigMaps.description>
+  <Rimverse_Qol_CremateStrip.label>despir antes de cremar</Rimverse_Qol_CremateStrip.label>
+  <Rimverse_Qol_CremateStrip.description>Cremar um cadáver primeiro deixa as roupas e armas dele ao lado do crematório, para nada útil queimar junto.</Rimverse_Qol_CremateStrip.description>
+</LanguageData>

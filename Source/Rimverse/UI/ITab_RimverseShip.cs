@@ -13,6 +13,8 @@ namespace Rimverse
         private static Texture2D HullBar => hullBar ?? (hullBar = SolidColorMaterials.NewSolidColorTexture(new Color(0.6f, 0.6f, 0.65f)));
         private static Texture2D AirBar => airBar ?? (airBar = SolidColorMaterials.NewSolidColorTexture(new Color(0.4f, 0.7f, 1f)));
         private static Texture2D HeatBar => heatBar ?? (heatBar = SolidColorMaterials.NewSolidColorTexture(new Color(1f, 0.45f, 0.2f)));
+        private static Texture2D cargoBar;
+        private static Texture2D CargoBar => cargoBar ?? (cargoBar = SolidColorMaterials.NewSolidColorTexture(new Color(0.85f, 0.75f, 0.35f)));
 
         public ITab_RimverseShip()
         {
@@ -49,6 +51,8 @@ namespace Rimverse
             l.Label("Rimverse_MeterPower".Translate() + ": " + power);
             l.GapLine();
             l.Label("Rimverse_ShipMass".Translate() + ": " + ship.mass.ToString("0.#") + " t");
+            float cargo = ShipCargo.Tons(ship);
+            Bar(l, "Rimverse_MeterCargo".Translate(), ship.cargoTons > 0f ? Mathf.Clamp01(cargo / ship.cargoTons) : 0f, cargo.ToString("0.#") + " / " + ship.cargoTons.ToString("0") + " t", CargoBar);
             l.Label("Rimverse_ShipThrust".Translate() + ": " + ship.thrust.ToString("0"));
             l.Label("Rimverse_AirFlow".Translate(ship.airGeneration.ToString("0.#"), ShipMeters.CrewConsumptionPerHour(ship).ToString("0.#")));
             l.Label("Rimverse_HeatFlow".Translate(ship.heatGeneration.ToString("0.#"), ship.heatRemoval.ToString("0.#")));
@@ -57,6 +61,7 @@ namespace Rimverse
             ShipCrewUtility.PilotAndCopilot(ship, out Pawn pilot, out Pawn copilot);
             l.Label("Rimverse_ShipPilot".Translate(pilot != null ? pilot.LabelShort + " (" + ShipCrewUtility.PilotLevel(pilot).ToString("0.#") + ")" : ship.aiPilotLevel > 0f ? "Rimverse_AIHelm".Translate().ToString() : "-", copilot != null ? copilot.LabelShort : ship.aiPilotLevel > 0f ? "Rimverse_AIHelm".Translate().ToString() : "-"));
             l.Label("Rimverse_ShipSignature".Translate(ship.Signature.ToStringPercent()));
+            if (GameComponent_Visibility.Instance != null) l.Label("Rimverse_VisibilityTotal".Translate(GameComponent_Visibility.Instance.lastTotal.ToString("N0")));
             l.Label("Rimverse_ShipDodge".Translate(ShipCrewUtility.Dodge(ship, pilot).ToStringPercent()));
             if (ship.multipleBridges)
             {

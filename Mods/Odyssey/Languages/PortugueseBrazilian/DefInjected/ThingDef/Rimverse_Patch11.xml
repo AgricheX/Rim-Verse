@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_GravshipRetrofitKit.label>kit de conversão de gravship</Rimverse_GravshipRetrofitKit.label>
+  <Rimverse_GravshipRetrofitKit.description>Acoplamentos, placas de casco e uma ponte de comando embalados para montagem. Usá-lo converte a subestrutura da gravship neste mapa em casco do Rimverse e entrega uma ponte pequena, para que a gravship vire uma nave do Rimverse capaz de saltar entre estrelas. O motor grav continua funcionando.</Rimverse_GravshipRetrofitKit.description>
+  <Rimverse_GravshipRetrofitKit.comps.0.useLabel>Converter a gravship</Rimverse_GravshipRetrofitKit.comps.0.useLabel>
+</LanguageData>

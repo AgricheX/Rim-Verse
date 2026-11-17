@@ -124,6 +124,7 @@ namespace Rimverse
             {
                 comp.End(e);
                 Find.LetterStack.ReceiveLetter("Rimverse_LetterCombatLostLabel".Translate(), "Rimverse_LetterCombatLost".Translate(), LetterDefOf.NegativeEvent);
+                ShipThoughts.GiveMap(map, "LostShip");
                 return;
             }
             if (enemy.bridge.Faction == Faction.OfPlayer)
@@ -207,6 +208,8 @@ namespace Rimverse
                     {
                         e.bandProgress = 0f;
                         e.band = (CombatBand)next;
+                        if (dir > 0 && pd > 0 && dir == pd) MinesOnApproach(comp.map, enemy, player);
+                        else if (dir > 0 && ed > 0 && dir == ed) MinesOnApproach(comp.map, player, enemy);
                     }
                 }
             }
@@ -224,6 +227,7 @@ namespace Rimverse
             }
             if (e.enemyFlee >= FleeSeconds)
             {
+                EnemyRoster.Escaped(enemy);
                 RemoveShip(comp.map, enemy);
                 comp.End(e);
                 Messages.Message("Rimverse_MsgEnemyEscaped".Translate(enemy.Label), player.bridge, MessageTypeDefOf.NeutralEvent, false);
@@ -241,12 +245,29 @@ namespace Rimverse
                 CompProperties_ShipWeapon p = w.Props;
                 if (p.tractor || p.jamming > 0f || p.projectile == null) continue;
                 if (p.interceptChance > 0f && p.damage <= 0f) continue;
+                if (IsMineLayer(w)) continue;
                 if (!w.Ready) continue;
                 if (e.band == CombatBand.Boarding && p.band == CombatBand.Far) continue;
                 float acc = Accuracy(p.band, e.band) * (1f - dodge) * gunner * (1f - jam) * sig;
                 for (int i = 0; i < p.burst; i++) FireShot(map, w, shooter, target, Mathf.Clamp01(acc));
                 shooter.state.heat += p.heatPerShot * p.burst;
                 w.ConsumeShot();
+            }
+        }
+
+        public static bool IsMineLayer(CompShipWeapon w) => w.parent.def.defName == "Rimverse_MineLayer";
+
+        private static void MinesOnApproach(Map map, RimverseShip layer, RimverseShip victim)
+        {
+            if (map == null || layer == null || victim == null) return;
+            foreach (CompShipWeapon w in Weapons(layer).ToList())
+            {
+                if (!IsMineLayer(w) || !w.Ready || w.Props.projectile == null) continue;
+                IntVec3 aim = RandomCell(victim);
+                if (!aim.IsValid) continue;
+                Launch(map, w.Props.projectile, w.parent, layer, aim);
+                w.ConsumeShot();
+                Messages.Message("Rimverse_MsgMineHit".Translate(victim.Label), new TargetInfo(aim, map), MessageTypeDefOf.NeutralEvent, false);
             }
         }
 
@@ -368,6 +389,7 @@ namespace Rimverse
             List<IntVec3> interior = player.cells.Where(c => c.Standable(map) && c.GetRoof(map) != null).ToList();
             if (interior.Count == 0) return;
             IntVec3 spot = interior.RandomElement();
+            SpaceSuits.EquipAll(boarders);
             foreach (Pawn p in boarders)
             {
                 p.GetLord()?.RemovePawn(p);
@@ -456,9 +478,50 @@ namespace Rimverse
 
         private static void Victory(MapComponent_ShipCombat comp, ShipEncounter e, RimverseShip enemy)
         {
+            EnemyRoster.Destroyed(enemy);
             comp.End(e);
+            MakeWreck(comp.map, enemy);
             RimverseEvents.OnShipVictory(comp.map, comp.map.GetComponent<MapComponent_RimverseShips>()?.ShipById(e.playerShipId));
             Find.LetterStack.ReceiveLetter("Rimverse_LetterCombatWonLabel".Translate(), "Rimverse_LetterCombatWon".Translate(), LetterDefOf.PositiveEvent);
+        }
+
+        public static void MakeWreck(Map map, RimverseShip ship)
+        {
+            if (map == null || ship == null || ship.cells.Count == 0) return;
+            List<IntVec3> cells = ship.cells.ToList();
+            foreach (IntVec3 c in cells)
+            {
+                foreach (Thing t in c.GetThingList(map).ToList())
+                {
+                    if (t is Building b && !b.Destroyed && b.Faction != Faction.OfPlayer)
+                    {
+                        if (b.def.CanHaveFaction) b.SetFaction(null);
+                        if (b.def.useHitPoints && Rand.Chance(0.45f)) b.TakeDamage(new DamageInfo(DamageDefOf.Blunt, b.MaxHitPoints * Rand.Range(0.3f, 0.8f)));
+                    }
+                }
+                if (Rand.Chance(0.12f)) FilthMaker.TryMakeFilth(c, map, ThingDefOf.Filth_RubbleBuilding);
+            }
+            List<IntVec3> floor = cells.Where(c => c.Standable(map) && c.GetFirstItem(map) == null).ToList();
+            if (floor.Count == 0) return;
+            float mass = Mathf.Max(20f, ship.mass) * (ResearchGate.Done("Rimverse_SalvageOperations") && ship.bridge?.Faction != Faction.OfPlayer ? 1.5f : 1f);
+            Salvage(map, floor, ThingDefOf.Steel, Mathf.RoundToInt(mass * 1.5f));
+            Salvage(map, floor, ThingDefOf.Plasteel, Mathf.RoundToInt(mass * 0.2f));
+            Salvage(map, floor, ThingDefOf.ComponentIndustrial, Mathf.RoundToInt(mass * 0.04f));
+            ThingDef naval = DefDatabase<ThingDef>.GetNamedSilentFail("Rimverse_NavalComponent");
+            if (naval != null) Salvage(map, floor, naval, Mathf.RoundToInt(mass * 0.015f));
+            AnomalyContent.Loot(map, floor, mass * 6f);
+            Messages.Message("Rimverse_MsgWreckSalvage".Translate(ship.Label), new TargetInfo(floor.RandomElement(), map), MessageTypeDefOf.PositiveEvent, false);
+        }
+
+        private static void Salvage(Map map, List<IntVec3> cells, ThingDef def, int count)
+        {
+            while (count > 0)
+            {
+                Thing t = ThingMaker.MakeThing(def);
+                t.stackCount = Mathf.Min(count, def.stackLimit);
+                count -= t.stackCount;
+                GenPlace.TryPlaceThing(t, cells.RandomElement(), map, ThingPlaceMode.Near);
+            }
         }
 
         public static void RemoveShip(Map map, RimverseShip ship)
@@ -532,7 +595,7 @@ namespace Rimverse
             if (!Rand.Chance(chance)) return;
             Faction pirates = PirateFaction(gc);
             if (pirates == null) return;
-            if (!Rand.Chance(Mathf.Lerp(0.3f, 1f, Mathf.Clamp01(ship.Signature))))
+            if (!Rand.Chance(SignatureUtility.DetectChance(ship, pirates.def.techLevel)))
             {
                 Messages.Message("Rimverse_MsgSignatureHid".Translate(ship.Label), ship.bridge, MessageTypeDefOf.PositiveEvent, false);
                 return;

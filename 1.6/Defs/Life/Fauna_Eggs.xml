@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>Rimverse_Egg_Skyfin</defName>
+    <techLevel>Spacer</techLevel>
+    <label>skyfin egg (fert.)</label>
+    <description>A fertilized skyfin egg. If all goes well, it will hatch into a baby skyfin. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/AlienEgg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(0.75,0.85,1.0)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>Rimverse_Fauna_Skyfin</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>Rimverse_Egg_Duskwing</defName>
+    <techLevel>Spacer</techLevel>
+    <label>duskwing egg (fert.)</label>
+    <description>A fertilized duskwing egg. If all goes well, it will hatch into a baby duskwing. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/AlienEgg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(0.55,0.45,0.7)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>Rimverse_Fauna_Duskwing</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>Rimverse_Egg_Shellback</defName>
+    <techLevel>Spacer</techLevel>
+    <label>shellback egg (fert.)</label>
+    <description>A fertilized shellback egg. If all goes well, it will hatch into a baby shellback. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/AlienEgg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(0.6,0.65,0.5)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6</hatcherDaystoHatch>
+        <hatcherPawn>Rimverse_Fauna_Shellback</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>Rimverse_Egg_Plated</defName>
+    <techLevel>Spacer</techLevel>
+    <label>plated crawler egg (fert.)</label>
+    <description>A fertilized plated crawler egg. If all goes well, it will hatch into a baby plated crawler. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/AlienEgg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(0.5,0.5,0.55)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6</hatcherDaystoHatch>
+        <hatcherPawn>Rimverse_Fauna_Plated</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>Rimverse_Egg_SolarLizard</defName>
+    <techLevel>Spacer</techLevel>
+    <label>solar lizard egg (fert.)</label>
+    <description>A fertilized solar lizard egg. If all goes well, it will hatch into a baby solar lizard. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/AlienEgg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1.0,0.75,0.4)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+        <hatcherPawn>Rimverse_Fauna_SolarLizard</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>Rimverse_Egg_MessengerBird</defName>
+    <techLevel>Spacer</techLevel>
+    <label>messenger bird egg (fert.)</label>
+    <description>A fertilized messenger bird egg. If all goes well, it will hatch into a baby messenger bird. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/AlienEgg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(0.95,0.95,0.85)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3</hatcherDaystoHatch>
+        <hatcherPawn>Rimverse_Fauna_MessengerBird</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

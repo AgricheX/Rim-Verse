@@ -195,6 +195,19 @@ namespace Rimverse
             return ship;
         }
 
+        public const float SignaturePerVehicle = 0.02f;
+
+        private float VehicleSignature(RimverseShip ship)
+        {
+            int n = 0;
+            IReadOnlyList<Pawn> pawns = map.mapPawns.AllPawnsSpawned;
+            for (int i = 0; i < pawns.Count; i++)
+            {
+                if (pawns[i] is Vehicles.VehiclePawn && ship.cells.Contains(pawns[i].Position)) n++;
+            }
+            return n * SignaturePerVehicle;
+        }
+
         private bool IsShipCell(IntVec3 c)
         {
             if (HullUtility.IsHull(map, c)) return true;
@@ -220,6 +233,7 @@ namespace Rimverse
             ShipState state = ship.state;
             ship.heatCapacity = BaseHeatCapacity;
             int maneuvers = 0;
+            float sigAdd = 0f;
             foreach (IntVec3 c in ship.cells)
             {
                 HullTerrainExtension hull = HullUtility.HullAt(map, c);
@@ -244,6 +258,7 @@ namespace Rimverse
                 if (eff <= 0f) continue;
                 if (p.aiPilotLevel > ship.aiPilotLevel && part.Operating) ship.aiPilotLevel = p.aiPilotLevel;
                 if (p.signatureFactor < 1f && part.Operating) ship.signature *= p.signatureFactor;
+                if (p.signatureAdd > 0f && part.Operating) sigAdd += p.signatureAdd;
                 if (p.role == ShipPartRole.Thruster) ship.thrust += p.thrust * eff;
                 if (p.role == ShipPartRole.WarpDrive && part.Operating)
                 {
@@ -264,6 +279,8 @@ namespace Rimverse
                 if (p.sensorSensitivity > 0f && (ship.sensorSensitivity <= 0f || p.sensorSensitivity < ship.sensorSensitivity)) ship.sensorSensitivity = p.sensorSensitivity;
             }
             if (state.warping) ship.heatGeneration *= WarpTravel.HeatFactor;
+            sigAdd += VehicleSignature(ship);
+            if (sigAdd > 0f) ship.signature *= 1f + sigAdd;
             HashSet<Room> seen = new HashSet<Room>();
             foreach (IntVec3 c in ship.cells)
             {

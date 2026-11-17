@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_SectorCrown</defName>
+    <techLevel>Spacer</techLevel>
+    <label>sector crown</label>
+    <description>A hexagonal bond chip worth 500 silver, backed by the treasuries of a whole sector. Star empires and their banks prefer it.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/SectorCrown</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>200</stackLimit>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <Mass>0.002</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Rimverse_Currency</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_GalacticStandard</defName>
+    <techLevel>Spacer</techLevel>
+    <label>galactic standard</label>
+    <description>A crystal settlement bar worth 2,500 silver. Only the oldest civilizations of a galaxy agree on its value, and they all do.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/GalacticStandard</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>50</stackLimit>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Rimverse_Currency</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>

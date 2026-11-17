@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Rimverse_GravshipRetrofitKit</defName>
+    <techLevel>Industrial</techLevel>
+    <label>gravship retrofit kit</label>
+    <description>Couplings, hull plates and a command bridge packed for assembly. Using it converts the gravship substructure on this map into Rimverse hull and delivers a small bridge, so the gravship becomes a Rimverse ship that can warp between stars. The grav engine keeps working.</description>
+    <graphicData>
+      <texPath>Rimverse/Things/Item/Resource/OrbitalCredit</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(0.55, 0.8, 1)</color>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MarketValue>2400</MarketValue>
+      <Mass>40</Mass>
+      <WorkToMake>18000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>300</Steel>
+      <Plasteel>80</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Rimverse_ShipBasics</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Retrofit the gravship</useLabel>
+        <useDuration>600</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>Rimverse.CompUseEffect_GravshipRetrofit</compClass>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+
+</Defs>

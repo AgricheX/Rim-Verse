@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_NoMaxBills</defName>
+    <label>no bill limit</label>
+    <description>Workbenches accept up to 999 bills instead of 15.</description>
+    <category>Production</category>
+    <disableIfModActive>
+      <li>Mlie.NoMaxBills</li>
+      <li>Ariandel.NoMaxBills</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_CleaningPriority</defName>
+    <label>cleaning priority</label>
+    <description>Cleaners start with the kitchen and the infirmary, then the dining and recreation rooms, and only then the rest of the ship.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>Mlie.CleaningPriority</li>
+      <li>Ogliss.CleaningPriority</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_TreatFirst</defName>
+    <label>treat first</label>
+    <description>A button on each colonist marks them to be treated before anyone else.</description>
+    <category>Medicine</category>
+    <disableIfModActive>
+      <li>Mlie.TreatFirst</li>
+      <li>Mlie.MedicalTab</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_SmartConstruction</defName>
+    <label>smooth walls before floors</label>
+    <description>Smoothing work does the walls of a cell before the floor, so nobody stands on a floor that will be dug again.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>Mlie.SmarterConstruction</li>
+      <li>dhultgren.smarterconstruction</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_CommonSense</defName>
+    <label>clean before cooking</label>
+    <description>Cooks clean a dirty kitchen before they start a meal.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>avilmask.CommonSense</li>
+      <li>Mlie.CommonSense</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_AutoResearch</defName>
+    <label>automatic research</label>
+    <description>When no project is chosen, researchers pick one of the three cheapest available ones by themselves.</description>
+    <category>Research</category>
+    <disableIfModActive>
+      <li>Mlie.ResearchPal</li>
+      <li>Mlie.AutoResearch</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_MovePatient</defName>
+    <label>move a patient</label>
+    <description>Right-click a free bed with a doctor selected to carry a patient there.</description>
+    <category>Medicine</category>
+    <disableIfModActive>
+      <li>Mlie.MoveThePatient</li>
+      <li>Fluffy.MoveThePatient</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_LinkedPlanters</defName>
+    <label>linked planters</label>
+    <description>A button on hydroponics and planters copies the plant choice to every connected planter of the same kind.</description>
+    <category>Farming</category>
+    <disableIfModActive>
+      <li>Mlie.LinkedPlanters</li>
+      <li>AmCh.LinkedPlanters</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_QuickStockpile</defName>
+    <label>quick cargo stockpile</label>
+    <description>A button on cargo modules turns the whole room into a stockpile in one click.</description>
+    <category>Storage</category>
+    <disableIfModActive>
+      <li>Mlie.QuickStockpile</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+</Defs>

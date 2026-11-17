@@ -32,13 +32,27 @@ namespace Rimverse
             if (f == null) return false;
             float points = parms.points > 0f ? parms.points : StorytellerUtility.DefaultThreatPointsNow(map);
             if (ExternalCompat.GravshipThreats) points *= 0.7f;
-            if (!Rand.Chance(UnityEngine.Mathf.Lerp(0.3f, 1f, UnityEngine.Mathf.Clamp01(ship.Signature))))
+            if (Rand.Chance(SignatureUtility.EarlyWarning(ship)))
+            {
+                Messages.Message("Rimverse_MsgSensorsEvaded".Translate(ship.Label), ship.bridge, MessageTypeDefOf.PositiveEvent, false);
+                return true;
+            }
+            if (!Rand.Chance(SignatureUtility.DetectChance(ship, f.def.techLevel)))
             {
                 Messages.Message("Rimverse_MsgSignatureHid".Translate(ship.Label), ship.bridge, MessageTypeDefOf.PositiveEvent, false);
                 return true;
             }
             TechLevel tech = f.def.techLevel < TechLevel.Industrial ? TechLevel.Industrial : f.def.techLevel;
-            return ShipCombatUtility.StartEncounter(map, ship, f, points / 8f, tech, -2);
+            EnemyRoster.current = EnemyRoster.Pick(map);
+            bool ok;
+            if (EnemyRoster.current == RaiderKind.Junta)
+            {
+                ok = ShipCombatUtility.StartEncounter(map, ship, f, points / 16f, tech, -2);
+                if (ok) ShipCombatUtility.StartEncounter(map, ship, f, points / 16f, tech, -2);
+            }
+            else ok = ShipCombatUtility.StartEncounter(map, ship, f, points / 8f, tech, -2);
+            EnemyRoster.current = RaiderKind.Pirates;
+            return ok;
         }
     }
 }

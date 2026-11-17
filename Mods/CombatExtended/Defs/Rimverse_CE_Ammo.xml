@@ -13,6 +13,7 @@
 
 	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
 		<defName>Rimverse_CE_Laser_LaserPistol</defName>
+		<techLevel>Spacer</techLevel>
 		<label>laser pistol beam</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>CE_Laser</damageDef>
@@ -32,6 +33,7 @@
 
 	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
 		<defName>Rimverse_CE_Laser_LaserCarbine</defName>
+		<techLevel>Spacer</techLevel>
 		<label>laser carbine beam</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>CE_Laser</damageDef>
@@ -51,6 +53,7 @@
 
 	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
 		<defName>Rimverse_CE_Laser_LaserSniper</defName>
+		<techLevel>Spacer</techLevel>
 		<label>precision laser beam</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>CE_Laser</damageDef>
@@ -70,6 +73,7 @@
 
 	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
 		<defName>Rimverse_CE_Laser_PulseLaser</defName>
+		<techLevel>Spacer</techLevel>
 		<label>pulse laser beam</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>CE_Laser</damageDef>
@@ -89,6 +93,7 @@
 
 	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
 		<defName>Rimverse_CE_Laser_LaserCutter</defName>
+		<techLevel>Spacer</techLevel>
 		<label>cutting beam</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>CE_Laser</damageDef>
@@ -108,6 +113,7 @@
 
 	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
 		<defName>Rimverse_CE_Laser_InternalLaser</defName>
+		<techLevel>Spacer</techLevel>
 		<label>turret laser beam</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>CE_Laser</damageDef>
@@ -121,6 +127,7 @@
 
 	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletPurple">
 		<defName>Rimverse_CE_Laser_Precursor</defName>
+		<techLevel>Spacer</techLevel>
 		<label>precursor beam</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>CE_Laser</damageDef>
@@ -207,6 +214,7 @@
 
 	<ThingDef ParentName="BaseExplosiveBullet">
 		<defName>Rimverse_CE_Bullet_Foam</defName>
+		<techLevel>Spacer</techLevel>
 		<label>foam canister</label>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<graphicData>
@@ -230,6 +238,7 @@
 
 	<ThingDef ParentName="BaseExplosiveBullet">
 		<defName>Rimverse_CE_Bullet_PlasmaThrower</defName>
+		<techLevel>Spacer</techLevel>
 		<label>plasma jet</label>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<graphicData>
@@ -268,6 +277,7 @@
 
 	<ThingDef ParentName="BaseExplosiveBullet">
 		<defName>Rimverse_CE_Bullet_VPlasma</defName>
+		<techLevel>Spacer</techLevel>
 		<label>vehicle plasma bolt</label>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<graphicData>

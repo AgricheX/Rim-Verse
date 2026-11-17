@@ -24,6 +24,13 @@ namespace Rimverse
             List<PawnKindDef> pool = Pool;
             List<PawnKindDef> result = new List<PawnKindDef>();
             if (body == null || body.homeWorld || pool.Count == 0) return result;
+            string habitat = HabitatArchetype(body);
+            foreach (PawnKindDef k in pool.Where(k => Special(k) && Arch(k) == habitat).ToList())
+            {
+                result.Add(k);
+                pool.Remove(k);
+            }
+            pool.RemoveAll(k => Special(k) && Arch(k) != "Symbiont");
             float hab = CivilizationGenerator.Habitability(body);
             UniverseRand r = new UniverseRand(UniverseRand.Hash(GenText.StableStringHash(body.name ?? "body"), body.index, body.sizeClass, 7771));
             int count = hab < 0.3f ? r.RangeInclusive(1, 3) : hab < 0.6f ? r.RangeInclusive(3, 6) : r.RangeInclusive(6, 10);
@@ -36,9 +43,25 @@ namespace Rimverse
             return result;
         }
 
+        private static readonly string[] SpecialArch = { "Swimmer", "FungalWalker", "Crystal", "Lava", "Symbiont" };
+
+        private static string Arch(PawnKindDef k) => k.GetModExtension<AlienFaunaExtension>()?.archetype;
+
+        private static bool Special(PawnKindDef k) => SpecialArch.Contains(Arch(k));
+
+        public static string HabitatArchetype(BodyData body)
+        {
+            if (body.type == BodyType.Ocean || body.water > 0.6f) return "Swimmer";
+            if (body.temperatureC >= 80f) return "Lava";
+            if (body.flavor == BodyFlavor.Crystal) return "Crystal";
+            if (body.flavor == BodyFlavor.Fungal) return "FungalWalker";
+            return null;
+        }
+
         public override void Generate(Map map, GenStepParams parms)
         {
             BodyData body = BodyGenContext.current;
+            FlowShrines.TryPlace(map, body);
             List<PawnKindDef> species = SpeciesFor(body);
             if (species.Count == 0) return;
             float areaFactor = map.Area / 62500f;

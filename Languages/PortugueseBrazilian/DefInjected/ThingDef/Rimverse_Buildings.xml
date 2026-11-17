@@ -68,16 +68,16 @@
   <Rimverse_FortressStation.description>Um núcleo de estação muito blindado para defender um sistema. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_FortressStation.description>
   <Rimverse_ResearchStation.label>núcleo de estação de pesquisa</Rimverse_ResearchStation.label>
   <Rimverse_ResearchStation.description>Um núcleo de estação cheio de laboratórios. Gera pesquisa. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_ResearchStation.description>
-  <Rimverse_OrbitalRing.label>segmento de anel orbital</Rimverse_OrbitalRing.label>
-  <Rimverse_OrbitalRing.description>Um segmento de anel ao redor do planeta. Muito espaço para construir e um fluxo constante de comércio. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_OrbitalRing.description>
-  <Rimverse_StellarCollector.label>coletor estelar</Rimverse_StellarCollector.label>
-  <Rimverse_StellarCollector.description>Um enxame de coletores em volta da estrela, mandando energia quase sem limite. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_StellarCollector.description>
-  <Rimverse_GiantHabitat.label>núcleo de habitat gigante</Rimverse_GiantHabitat.label>
-  <Rimverse_GiantHabitat.description>O coração de um habitat para milhões. Produz comida e prata com a sua população. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_GiantHabitat.description>
-  <Rimverse_DeepObservatory.label>observatório profundo</Rimverse_DeepObservatory.label>
-  <Rimverse_DeepObservatory.description>Um observatório que mapeia um setor inteiro. Uma enxurrada de pesquisa. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_DeepObservatory.description>
-  <Rimverse_WormholeStabilizer.label>estabilizador de buraco de minhoca</Rimverse_WormholeStabilizer.label>
-  <Rimverse_WormholeStabilizer.description>Prende um buraco de minhoca instável no lugar e tira matéria exótica da sua garganta. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_WormholeStabilizer.description>
+  <Rimverse_OrbitalRing.label>nó de controle do anel orbital</Rimverse_OrbitalRing.label>
+  <Rimverse_OrbitalRing.description>O nó de controle de um anel orbital. O anel em si é construído na órbita, etapa por etapa, conforme você abastece cada etapa daqui; a produção cresce a cada etapa concluída. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_OrbitalRing.description>
+  <Rimverse_StellarCollector.label>nó de controle do coletor estelar</Rimverse_StellarCollector.label>
+  <Rimverse_StellarCollector.description>O nó de controle de um enxame de coletores em volta da estrela. Cada etapa concluída manda mais energia, até quase sem limite. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_StellarCollector.description>
+  <Rimverse_GiantHabitat.label>nó de controle do habitat gigante</Rimverse_GiantHabitat.label>
+  <Rimverse_GiantHabitat.description>O nó de controle de um habitat para milhões, construído na órbita etapa por etapa. A comida e a prata crescem a cada etapa concluída. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_GiantHabitat.description>
+  <Rimverse_DeepObservatory.label>nó de controle do observatório profundo</Rimverse_DeepObservatory.label>
+  <Rimverse_DeepObservatory.description>O nó de controle de um observatório que mapeia um setor inteiro. A pesquisa cresce a cada etapa concluída. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_DeepObservatory.description>
+  <Rimverse_WormholeStabilizer.label>nó de controle do estabilizador de buraco de minhoca</Rimverse_WormholeStabilizer.label>
+  <Rimverse_WormholeStabilizer.description>O nó de controle de um estabilizador construído em volta da garganta de um buraco de minhoca. Com as etapas prontas, ele prende o buraco no lugar e tira matéria exótica dele. Apoia as suas colônias no mesmo sistema estelar.</Rimverse_WormholeStabilizer.description>
   <Rimverse_FlakBattery.label>bateria de flak</Rimverse_FlakBattery.label>
   <Rimverse_FlakBattery.description>Dispara nuvens de estilhaços a curta distância. 10 × 8 de dano e 70% de chance de abater mísseis.</Rimverse_FlakBattery.description>
   <Rimverse_BeamLaser.label>laser de feixe</Rimverse_BeamLaser.label>
@@ -120,7 +120,7 @@
   <Rimverse_Airlock.label>porta de eclusa</Rimverse_Airlock.label>
   <Rimverse_Airlock.description>Uma porta motorizada pesada, feita para o vácuo.</Rimverse_Airlock.description>
   <Rimverse_BulkheadDoor.label>porta de antepara</Rimverse_BulkheadDoor.label>
-  <Rimverse_BulkheadDoor.description>Uma antepara grossa entre compartimentos.</Rimverse_BulkheadDoor.description>
+  <Rimverse_BulkheadDoor.description>Uma antepara grossa entre compartimentos. Com energia, fecha sozinha quando um dos lados perde o ar.</Rimverse_BulkheadDoor.description>
   <Rimverse_BlastDoor.label>porta blindada</Rimverse_BlastDoor.label>
   <Rimverse_BlastDoor.description>Uma porta blindada que demora muito mais para ser arrombada.</Rimverse_BlastDoor.description>
   <Rimverse_ContainmentField.label>campo de contenção</Rimverse_ContainmentField.label>
@@ -162,7 +162,7 @@
   <Rimverse_InfirmaryBed.label>leito de enfermaria</Rimverse_InfirmaryBed.label>
   <Rimverse_InfirmaryBed.description>Um leito médico com tiras e monitores para gravidade zero.</Rimverse_InfirmaryBed.description>
   <Rimverse_QuarantineChamber.label>câmara de quarentena</Rimverse_QuarantineChamber.label>
-  <Rimverse_QuarantineChamber.description>Uma cela médica selada que acelera a imunidade a pragas alienígenas.</Rimverse_QuarantineChamber.description>
+  <Rimverse_QuarantineChamber.description>Uma cela médica selada que acelera a imunidade a pragas alienígenas. A sala que tem uma vira sala de quarentena: a peste alienígena não se espalha para fora dela.</Rimverse_QuarantineChamber.description>
   <Rimverse_DecompressionChamber.label>câmara de descompressão</Rimverse_DecompressionChamber.label>
   <Rimverse_DecompressionChamber.description>Uma câmara de pressão que cura mais rápido as lesões de descompressão.</Rimverse_DecompressionChamber.description>
   <Rimverse_ObservationWindow.label>janela da sala de observação</Rimverse_ObservationWindow.label>

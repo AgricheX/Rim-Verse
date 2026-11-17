@@ -3,6 +3,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_OrbitalCredit</defName>
+    <techLevel>Spacer</techLevel>
     <label>orbital credit</label>
     <description>A light, encrypted chip worth 10 silver. Stations, orbital traders and star civilizations use it instead of heavy silver.</description>
     <graphicData>
@@ -29,6 +30,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>Rimverse_StellarMark</defName>
+    <techLevel>Spacer</techLevel>
     <label>stellar mark</label>
     <description>A sealed chip worth 100 silver, used for trade between stars.</description>
     <graphicData>
@@ -118,6 +120,7 @@
       <li Class="StockGenerator_BuyExpensiveSimple" />
       <li Class="StockGenerator_BuyTradeTag"><tag>Rimverse_Currency</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Rimverse_StellarData</tag></li>
     </stockGenerators>
   </TraderKindDef>
 

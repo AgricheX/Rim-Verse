@@ -20,6 +20,7 @@ namespace Rimverse
                     arrived.Add(f);
                 }
             }
+            OrbitalSiege.Tick(gc, now);
             if (arrived == null) return;
             foreach (Fleet f in arrived) Arrive(gc, f);
             gc.fleets.RemoveAll(f => f.power < 0.5f);
@@ -35,6 +36,16 @@ namespace Rimverse
             if (owner == null || owner.dead)
             {
                 f.power = 0f;
+                return;
+            }
+            if (f.returning && f.mission == FleetMission.Trade)
+            {
+                f.power = 0f;
+                return;
+            }
+            if (f.mission == FleetMission.Trade)
+            {
+                CivTrade.Arrive(gc, owner, f);
                 return;
             }
             if (f.returning)
@@ -56,6 +67,7 @@ namespace Rimverse
             if (f.mission == FleetMission.Raid && f.TargetsPlayer)
             {
                 RaidPlayer(gc, owner, f);
+                if (OrbitalSiege.TryBegin(gc, owner, f)) return;
                 SendHome(gc, owner, f);
                 return;
             }
@@ -123,6 +135,16 @@ namespace Rimverse
             }
         }
 
+        private static bool StartCivEncounter(Map map, RimverseShip target, Faction faction, float power, Civilization c)
+        {
+            string gov = c.government?.defName ?? "";
+            string ideo = c.ideology?.defName ?? "";
+            EnemyRoster.current = c.lore == LoreKind.Glitterworld ? RaiderKind.Federation : gov.Contains("Corporat") || gov.Contains("Merchant") ? RaiderKind.Corporate : ideo.Contains("ReligiousZeal") || ideo.Contains("VoidFaith") ? RaiderKind.Fanatics : gov.Contains("Junta") ? RaiderKind.Junta : RaiderKind.Pirates;
+            bool ok = ShipCombatUtility.StartEncounter(map, target, faction, power, c.tech, c.id);
+            EnemyRoster.current = RaiderKind.Pirates;
+            return ok;
+        }
+
         public static Map PlayerMapIn(string systemKey)
         {
             Map best = null;
@@ -148,7 +170,7 @@ namespace Rimverse
             {
                 MapComponent_ShipCombat combat = MapComponent_ShipCombat.For(map);
                 RimverseShip target = map.GetComponent<MapComponent_RimverseShips>()?.Ships.FirstOrDefault(s => s.bridge != null && s.bridge.Faction == Faction.OfPlayer);
-                if (combat != null && target != null && !combat.InCombat && ShipCombatUtility.StartEncounter(map, target, faction, f.power, c.tech, c.id))
+                if (combat != null && target != null && !combat.InCombat && StartCivEncounter(map, target, faction, f.power, c))
                 {
                     f.power *= 0.6f;
                     return;

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_CryoCrossings.label>travessias dormindo</Rimverse_CryoCrossings.label>
+  <Rimverse_CryoCrossings.description>Cápsulas de criossono adaptadas para décadas à deriva: uma nave barata consegue chegar a uma estrela a poucos anos-luz enquanto a tripulação dorme pelos anos.</Rimverse_CryoCrossings.description>
+  <Rimverse_BarRouteCharts.label>cartas das rotas da barra</Rimverse_BarRouteCharts.label>
+  <Rimverse_BarRouteCharts.description>Cartas das rotas densas e movimentadas dentro de uma barra galáctica. Saltos de dobra entre duas estrelas da barra gastam metade da matéria, alcançam o dobro e levam metade do tempo.</Rimverse_BarRouteCharts.description>
+  <Rimverse_HyperlaneNavigation.label>navegação de hiperrotas</Rimverse_HyperlaneNavigation.label>
+  <Rimverse_HyperlaneNavigation.description>Como forçar uma nave capital para dentro das hiperrotas fixas das raras galáxias que as têm, e seguir por elas sem combustível.</Rimverse_HyperlaneNavigation.description>
+  <Rimverse_FrameBracing.label>reforço da estrutura</Rimverse_FrameBracing.label>
+  <Rimverse_FrameBracing.description>Reforços internos que mantêm um casco despedaçado inteiro por mais tempo. A nave só começa a se partir com 5% de integridade, não 10%.</Rimverse_FrameBracing.description>
+  <Rimverse_DeepSensorAnalysis.label>análise profunda de sensores</Rimverse_DeepSensorAnalysis.label>
+  <Rimverse_DeepSensorAnalysis.description>Processamento melhor dos ecos fracos dos sensores. Seus sensores leem a classe de tamanho dos sistemas estelares no dobro do alcance normal.</Rimverse_DeepSensorAnalysis.description>
+  <Rimverse_SalvageOperations.label>operações de salvamento</Rimverse_SalvageOperations.label>
+  <Rimverse_SalvageOperations.description>Equipes de corte e drones de triagem para naves derrotadas. Os destroços de uma batalha espacial rendem metade a mais de material.</Rimverse_SalvageOperations.description>
+  <Rimverse_RadiationShielding.label>blindagem contra radiação</Rimverse_RadiationShielding.label>
+  <Rimverse_RadiationShielding.description>Blindagem em camadas nos trajes e o hábito de checar o dosímetro. Os colonos resistem a mais 20% da radiação.</Rimverse_RadiationShielding.description>
+  <Rimverse_HabitatSealing.label>vedação de habitats</Rimverse_HabitatSealing.label>
+  <Rimverse_HabitatSealing.description>Vedações, câmaras de ar e portas de pressão para construções em mundos hostis. Qualquer cômodo fechado e com teto e um gerador de ar funcionando segura ar respirável, não só os cômodos da nave.</Rimverse_HabitatSealing.description>
+  <Rimverse_AIGovernance.label>governo por IA</Rimverse_AIGovernance.label>
+  <Rimverse_AIGovernance.description>Protocolos que deixam um núcleo de persona de IA administrar uma colônia: estabilidade mais firme, menos atenção de invasores, papelada perfeita.</Rimverse_AIGovernance.description>
+  <Rimverse_MegaLogistics.label>logística de megaestruturas</Rimverse_MegaLogistics.label>
+  <Rimverse_MegaLogistics.description>Cadeias de suprimento medidas em milhões de toneladas. Cada etapa de megaestrutura custa um quarto a menos.</Rimverse_MegaLogistics.description>
+  <Rimverse_InterstellarBanking.label>bancos interestelares</Rimverse_InterstellarBanking.label>
+  <Rimverse_InterstellarBanking.description>Contas nos bancos das civilizações estelares, nos terminais de comércio delas. Depósitos rendem juros, e dá para trocar entre prata, créditos orbitais, marcos estelares, coroas de setor e o padrão galáctico.</Rimverse_InterstellarBanking.description>
+  <Rimverse_OrbitalTradeDocking.label>atracação comercial orbital</Rimverse_OrbitalTradeDocking.label>
+  <Rimverse_OrbitalTradeDocking.description>Regras de transferência de carga com mercadores atracados. Com uma doca ou um terminal de comércio, dá para vender o que está nos porões e estoques sem farol de comércio orbital.</Rimverse_OrbitalTradeDocking.description>
+  <Rimverse_MarketAnalytics.label>análise de mercado</Rimverse_MarketAnalytics.label>
+  <Rimverse_MarketAnalytics.description>Cotações dos mercados estelares. A janela do banco mostra pelo que cada civilização paga mais ou menos, para você saber onde vender.</Rimverse_MarketAnalytics.description>
+</LanguageData>

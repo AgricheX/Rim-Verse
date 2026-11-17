@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_BankBalance>Your balance: {0} silver</Rimverse_BankBalance>
+  <Rimverse_BankDeposit>Deposit all</Rimverse_BankDeposit>
+  <Rimverse_BankFee>Exchange fee: {0}</Rimverse_BankFee>
+  <Rimverse_BankFrozen>Your account is frozen during the war.</Rimverse_BankFrozen>
+  <Rimverse_BankInterest>Interest: {0} per quadrum while you are not at war.</Rimverse_BankInterest>
+  <Rimverse_BankPreferred>House currency: {0} (no exchange fee).</Rimverse_BankPreferred>
+  <Rimverse_BankTitle>Bank of {0}</Rimverse_BankTitle>
+  <Rimverse_BankWithdraw>Withdraw {0}</Rimverse_BankWithdraw>
+  <Rimverse_BarRouteBonus>Bar route: both stars sit in the galactic bar, so the jump costs half the matter, reaches twice as far and takes half the time.</Rimverse_BarRouteBonus>
+  <Rimverse_BodyDensity>Density: {0} g/cm³</Rimverse_BodyDensity>
+  <Rimverse_BodyEscape>Escape velocity: {0} km/s</Rimverse_BodyEscape>
+  <Rimverse_BodyKm>Radius: {0} km</Rimverse_BodyKm>
+  <Rimverse_BodyPeriod>Orbital period: {0} days</Rimverse_BodyPeriod>
+  <Rimverse_BodyPeriodYears>Orbital period: {0} years</Rimverse_BodyPeriodYears>
+  <Rimverse_CmdMegaDock>Dock at megastructure</Rimverse_CmdMegaDock>
+  <Rimverse_CmdMegaDockDesc>Dock at one of the megastructures here. You arrive at one section of it; walk through the bulkhead doors at either end of a deck to reach the next section.</Rimverse_CmdMegaDockDesc>
+  <Rimverse_CmdMegaSupply>Supply stage: {0}</Rimverse_CmdMegaSupply>
+  <Rimverse_CmdMegaSupplyDesc>Send the materials for the next stage to the work crews in orbit. Needs: {0}. The stage then takes about {1} days while this node has power.</Rimverse_CmdMegaSupplyDesc>
+  <Rimverse_CmdMegaUndock>Undock</Rimverse_CmdMegaUndock>
+  <Rimverse_CmdMegaUndockDesc>Leave the megastructure and return to open orbit.</Rimverse_CmdMegaUndockDesc>
+  <Rimverse_ColonyAIAdmin>Run by an AI persona core: steadier, quieter, better at paperwork.</Rimverse_ColonyAIAdmin>
+  <Rimverse_ColonyInstallAI>Install an AI persona core as administrator</Rimverse_ColonyInstallAI>
+  <Rimverse_CosmicChildren>Contains: {0} × {1}</Rimverse_CosmicChildren>
+  <Rimverse_CosmicChunk>Universe chunk: {0}</Rimverse_CosmicChunk>
+  <Rimverse_CosmicDesc_Body>A body: a single planet, moon or asteroid, with its own sky and dangers.</Rimverse_CosmicDesc_Body>
+  <Rimverse_CosmicDesc_Chunk>A universe chunk: one finite slice of an endless cosmos, holding its own web of superclusters and voids.</Rimverse_CosmicDesc_Chunk>
+  <Rimverse_CosmicDesc_Cluster>A cluster: hundreds of galaxies held together by their own gravity, bathed in hot gas.</Rimverse_CosmicDesc_Cluster>
+  <Rimverse_CosmicDesc_District>A district: a few hundred light years of stars charted by the same survey.</Rimverse_CosmicDesc_District>
+  <Rimverse_CosmicDesc_Galaxy>A galaxy: hundreds of billions of stars turning around a dark heart.</Rimverse_CosmicDesc_Galaxy>
+  <Rimverse_CosmicDesc_Group>A galaxy group: a handful of galaxies sharing one neighbourhood.</Rimverse_CosmicDesc_Group>
+  <Rimverse_CosmicDesc_LargeGroup>A large group: a few dozen galaxies falling slowly toward each other.</Rimverse_CosmicDesc_LargeGroup>
+  <Rimverse_CosmicDesc_Sector>A sector: a wide slice of the galaxy, usually claimed by one or two great powers.</Rimverse_CosmicDesc_Sector>
+  <Rimverse_CosmicDesc_Subcell>A subcell: a cube 16 light years wide, the neighbourhood a ship can cross in days.</Rimverse_CosmicDesc_Subcell>
+  <Rimverse_CosmicDesc_Supercluster>A supercluster: thousands of galaxies bound loosely along one stretch of the web.</Rimverse_CosmicDesc_Supercluster>
+  <Rimverse_CosmicDesc_Surface>A surface: the ground you can actually stand on.</Rimverse_CosmicDesc_Surface>
+  <Rimverse_CosmicDesc_System>A star system: one or more stars with their planets, moons and belts.</Rimverse_CosmicDesc_System>
+  <Rimverse_CosmicDesc_Web>The cosmic web: filaments of dark matter and gas, with superclusters strung along them and great voids between.</Rimverse_CosmicDesc_Web>
+  <Rimverse_CosmicDesc_Zone>A zone: a cube 1,024 light years wide, the reach of a single regional government.</Rimverse_CosmicDesc_Zone>
+  <Rimverse_CosmicFar>Far beyond the reach of any drive you have.</Rimverse_CosmicFar>
+  <Rimverse_CosmicHome>Your ship is somewhere inside this.</Rimverse_CosmicHome>
+  <Rimverse_CosmicLevel_Body>body</Rimverse_CosmicLevel_Body>
+  <Rimverse_CosmicLevel_Chunk>universe chunk</Rimverse_CosmicLevel_Chunk>
+  <Rimverse_CosmicLevel_Cluster>cluster</Rimverse_CosmicLevel_Cluster>
+  <Rimverse_CosmicLevel_District>district</Rimverse_CosmicLevel_District>
+  <Rimverse_CosmicLevel_Galaxy>galaxy</Rimverse_CosmicLevel_Galaxy>
+  <Rimverse_CosmicLevel_Group>galaxy group</Rimverse_CosmicLevel_Group>
+  <Rimverse_CosmicLevel_LargeGroup>large group</Rimverse_CosmicLevel_LargeGroup>
+  <Rimverse_CosmicLevel_Sector>sector</Rimverse_CosmicLevel_Sector>
+  <Rimverse_CosmicLevel_Subcell>subcell</Rimverse_CosmicLevel_Subcell>
+  <Rimverse_CosmicLevel_Supercluster>supercluster</Rimverse_CosmicLevel_Supercluster>
+  <Rimverse_CosmicLevel_Surface>surface</Rimverse_CosmicLevel_Surface>
+  <Rimverse_CosmicLevel_System>star system</Rimverse_CosmicLevel_System>
+  <Rimverse_CosmicLevel_Web>cosmic web</Rimverse_CosmicLevel_Web>
+  <Rimverse_CosmicLevel_Zone>zone</Rimverse_CosmicLevel_Zone>
+  <Rimverse_CosmicRadius>Radius: {0} million light-years</Rimverse_CosmicRadius>
+  <Rimverse_CosmicScaleLine>View width: {0} million light-years</Rimverse_CosmicScaleLine>
+  <Rimverse_CosmicZoomIn>Zoom in</Rimverse_CosmicZoomIn>
+  <Rimverse_CryoAdvanced>{0} climbed {1} stages of development.</Rimverse_CryoAdvanced>
+  <Rimverse_CryoEstimate>Cryosleep crossing: {0} ly at a tenth of light speed, about {1} years asleep, {2} chemfuel.</Rimverse_CryoEstimate>
+  <Rimverse_CryoExpanded>{0} settled {1} new worlds.</Rimverse_CryoExpanded>
+  <Rimverse_CryoFell>{0} is gone.</Rimverse_CryoFell>
+  <Rimverse_CryoHere>Cross in cryosleep</Rimverse_CryoHere>
+  <Rimverse_CryoNewCiv>{0} rose while you slept.</Rimverse_CryoNewCiv>
+  <Rimverse_CryoQuiet>Little changed among the peoples you know.</Rimverse_CryoQuiet>
+  <Rimverse_CryoRumours>Old signals speak of {0} peoples nobody has met yet.</Rimverse_CryoRumours>
+  <Rimverse_CryoShrank>{0} lost {1} worlds.</Rimverse_CryoShrank>
+  <Rimverse_GalaxyAttr_Barred>barred {0}</Rimverse_GalaxyAttr_Barred>
+  <Rimverse_GalaxyAttr_Ringed>{0} with a ring</Rimverse_GalaxyAttr_Ringed>
+  <Rimverse_GalaxyClickHelp>Click anywhere on the galaxy to open that sector.</Rimverse_GalaxyClickHelp>
+  <Rimverse_GridHelp>Click a cell to look closer. Scroll to zoom in or out.</Rimverse_GridHelp>
+  <Rimverse_GridScale>View: {0} ly across, cells of {1} ly</Rimverse_GridScale>
+  <Rimverse_GridSize>Size: {0} light-years across</Rimverse_GridSize>
+  <Rimverse_GridSystems>Expected star systems: {0}</Rimverse_GridSystems>
+  <Rimverse_InBar>Inside the galactic bar: denser stars and faster routes.</Rimverse_InBar>
+  <Rimverse_LaneEstimate>Hyperlane: {0} ly, about {1} days. No fuel once inside the lane.</Rimverse_LaneEstimate>
+  <Rimverse_LaneHere>Follow the hyperlane</Rimverse_LaneHere>
+  <Rimverse_LetterBaseCleared>Pirate base taken</Rimverse_LetterBaseCleared>
+  <Rimverse_LetterBaseClearedDesc>The last defenders of the {0} are down. The base is yours to strip: whatever is left in its holds can be carried back to your ship.</Rimverse_LetterBaseClearedDesc>
+  <Rimverse_LetterCryoWake>The caskets open after {0} years. The galaxy did not wait for you:</Rimverse_LetterCryoWake>
+  <Rimverse_LetterCryoWakeLabel>Waking up</Rimverse_LetterCryoWakeLabel>
+  <Rimverse_LetterMegaStage>{0}: stage finished</Rimverse_LetterMegaStage>
+  <Rimverse_LetterMegaStageDesc>The {0} has reached a new stage: {1} ({2}/{3}). The work goes on far out in orbit, and the structure now gives more of what it was built for.</Rimverse_LetterMegaStageDesc>
+  <Rimverse_LetterShipFracture>The frame of {0} gave way. A whole section has torn loose along a fracture line: anything cut off from the bridge is now drifting wreckage. Repair the hull before it happens again.</Rimverse_LetterShipFracture>
+  <Rimverse_LetterShipFractureLabel>Ship breaking apart</Rimverse_LetterShipFractureLabel>
+  <Rimverse_MarketFactor>{0}</Rimverse_MarketFactor>
+  <Rimverse_MarketTitle>Their market (what they pay compared with the usual price):</Rimverse_MarketTitle>
+  <Rimverse_MegaAlreadySupplied>This stage is already supplied.</Rimverse_MegaAlreadySupplied>
+  <Rimverse_MegaInspectNeedsSupply>Waiting for the next stage to be supplied.</Rimverse_MegaInspectNeedsSupply>
+  <Rimverse_MegaInspectStage>Megastructure stage: {0} ({1}/{2}), {3} built</Rimverse_MegaInspectStage>
+  <Rimverse_MegaInspectWorking>Stage work: {0} of about {1} days</Rimverse_MegaInspectWorking>
+  <Rimverse_MegaLabel>{0} of {1}</Rimverse_MegaLabel>
+  <Rimverse_MegaMissing>Missing: {0}</Rimverse_MegaMissing>
+  <Rimverse_MegaOwnerNone>nobody</Rimverse_MegaOwnerNone>
+  <Rimverse_MegaOwnerPrecursor>precursors</Rimverse_MegaOwnerPrecursor>
+  <Rimverse_MegaStage_0>planned</Rimverse_MegaStage_0>
+  <Rimverse_MegaStage_1>scaffold</Rimverse_MegaStage_1>
+  <Rimverse_MegaStage_2>frame</Rimverse_MegaStage_2>
+  <Rimverse_MegaStage_3>segments</Rimverse_MegaStage_3>
+  <Rimverse_MegaStage_4>complete</Rimverse_MegaStage_4>
+  <Rimverse_MegaTip>Owner: {0}\nStage: {1} ({2} built)</Rimverse_MegaTip>
+  <Rimverse_Mega_Citadel>citadel</Rimverse_Mega_Citadel>
+  <Rimverse_Mega_CivStation>station</Rimverse_Mega_CivStation>
+  <Rimverse_Mega_DeepObservatory>deep observatory</Rimverse_Mega_DeepObservatory>
+  <Rimverse_Mega_Gate>gate</Rimverse_Mega_Gate>
+  <Rimverse_Mega_GiantHabitat>giant habitat</Rimverse_Mega_GiantHabitat>
+  <Rimverse_Mega_OrbitalRing>orbital ring</Rimverse_Mega_OrbitalRing>
+  <Rimverse_Mega_PirateBase>pirate base</Rimverse_Mega_PirateBase>
+  <Rimverse_Mega_RingHabitat>ring habitat</Rimverse_Mega_RingHabitat>
+  <Rimverse_Mega_StellarCollector>stellar collector</Rimverse_Mega_StellarCollector>
+  <Rimverse_Mega_WormholeStabilizer>wormhole stabilizer</Rimverse_Mega_WormholeStabilizer>
+  <Rimverse_MsgAIAdmin>An AI persona core now runs {0}.</Rimverse_MsgAIAdmin>
+  <Rimverse_MsgCryoStarted>{0} is drifting toward {1}. The crew sleeps through the next {2} years.</Rimverse_MsgCryoStarted>
+  <Rimverse_MsgLaneStarted>{0} entered the hyperlane to {1}. Arrival in about {2} days.</Rimverse_MsgLaneStarted>
+  <Rimverse_MsgMegaDocked>Docked at the {0}. A gangway leads to the nearest airlock.</Rimverse_MsgMegaDocked>
+  <Rimverse_MsgMegaSection>{0} crossed into section {2} of {3} of the {1}.</Rimverse_MsgMegaSection>
+  <Rimverse_MsgMegaSupplied>Materials sent: work on the {0} continues.</Rimverse_MsgMegaSupplied>
+  <Rimverse_MsgMineHit>{0} flew into a mine field.</Rimverse_MsgMineHit>
+  <Rimverse_MsgTraderDocked>{0} has come alongside. Walk to its trade terminal to trade in person, or call it on the comms console.</Rimverse_MsgTraderDocked>
+  <Rimverse_MsgTraderLeft>The trader has cast off and left.</Rimverse_MsgTraderLeft>
+  <Rimverse_MsgWreckSalvage>The wreck of {0} is open for salvage: steel, plasteel, parts and whatever was in its holds.</Rimverse_MsgWreckSalvage>
+  <Rimverse_NeedsResearch>Needs research: {0}</Rimverse_NeedsResearch>
+  <Rimverse_PlayerStage>Your stage: {0} ({1})</Rimverse_PlayerStage>
+  <Rimverse_ProblemCryoAwake>{0} colonists are still awake. The crossing takes about {1} years: put everyone in cryptosleep caskets first.</Rimverse_ProblemCryoAwake>
+  <Rimverse_ProblemCryoRange>Too far for a sleeper crossing ({0} ly, at most {1} ly).</Rimverse_ProblemCryoRange>
+  <Rimverse_ProblemLaneClass>Only capital ships can force their way into a hyperlane (this ship is {0}).</Rimverse_ProblemLaneClass>
+  <Rimverse_ProblemNoLanes>This galaxy has no hyperlanes.</Rimverse_ProblemNoLanes>
+  <Rimverse_ProblemNotOnLane>No hyperlane links this star to the current system.</Rimverse_ProblemNotOnLane>
+  <Rimverse_ProblemWarpClass>A ship of class {0} can't hold a warp bubble between stars. Cross in cryosleep instead, or upgrade the ship.</Rimverse_ProblemWarpClass>
+  <Rimverse_RG_MegaStage>{0} just finished a new stage of the {1}: {2}. You can see it from orbit.</Rimverse_RG_MegaStage>
+  <Rimverse_ScannedVolume>Sensor sweeps: {0} ({1} cubic light-years)</Rimverse_ScannedVolume>
+  <Rimverse_SectorCharted>This sector has stars.</Rimverse_SectorCharted>
+  <Rimverse_SectorEmpty>Nearly empty: no star systems charted here.</Rimverse_SectorEmpty>
+  <Rimverse_SizeClassExact>Size class: {0}</Rimverse_SizeClassExact>
+  <Rimverse_SizeClassRange>Size class: between {0} and {1}</Rimverse_SizeClassRange>
+  <Rimverse_SizeClassUnknown>Size class: out of sensor reach</Rimverse_SizeClassUnknown>
+  <Rimverse_SysBeyondFrost>Beyond the frost line: ices stay frozen here.</Rimverse_SysBeyondFrost>
+  <Rimverse_SysInHabitable>Inside the habitable zone: liquid water is possible.</Rimverse_SysInHabitable>
+  <Rimverse_SysLegend>Green band: habitable zone. Dashed blue ring: frost line. Coloured halo: settled world.</Rimverse_SysLegend>
+  <Rimverse_SysOwnedBy>Settled by: {0}</Rimverse_SysOwnedBy>
+  <Rimverse_SysYourColony>Your colony: {0}</Rimverse_SysYourColony>
+  <Rimverse_SysYourShip>Your ship</Rimverse_SysYourShip>
+  <Rimverse_SysZoomHelp>Scroll to zoom, right-drag to pan.</Rimverse_SysZoomHelp>
+  <Rimverse_SystemAddress>Address: {0}</Rimverse_SystemAddress>
+  <Rimverse_TerminalBank>Bank with {0}</Rimverse_TerminalBank>
+  <Rimverse_TerminalLinked>Linked to: {0}</Rimverse_TerminalLinked>
+  <Rimverse_TerminalNoTrader>No trader linked to this terminal right now.</Rimverse_TerminalNoTrader>
+  <Rimverse_TerminalTrade>Trade with {0}</Rimverse_TerminalTrade>
+  <Rimverse_TravelRuleLine>Travel in this galaxy: {0}</Rimverse_TravelRuleLine>
+  <Rimverse_UniverseAge>Universe age: {0} billion years</Rimverse_UniverseAge>
+  <Rimverse_ViewHere>Go to current</Rimverse_ViewHere>
+</LanguageData>

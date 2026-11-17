@@ -4,6 +4,7 @@ using System.Linq;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.Sound;
 
 namespace Rimverse
 {
@@ -39,11 +40,11 @@ namespace Rimverse
                 double d = r.Range(25f, 60f);
                 anchors.Add(home + new Vec3d(Math.Cos(a) * d, 0, Math.Sin(a) * d));
             }
-            int count = 12 + (g.rule == TravelRule.AncientGates ? 24 : 0) + g.sizeClass / 10;
+            int count = 12 + (g.hasRing ? 24 : 0) + g.sizeClass / 10;
             for (int i = 0; i < count; i++)
             {
                 double a = r.ValueDouble * Math.PI * 2.0;
-                double d = g.radiusLy * (0.1 + 0.8 * r.ValueDouble);
+                double d = g.hasRing && i % 2 == 0 ? g.radiusLy * (g.ringRadius + (r.ValueDouble - 0.5) * 0.12) : g.radiusLy * (0.1 + 0.8 * r.ValueDouble);
                 anchors.Add(new Vec3d(Math.Cos(a) * d, 0, Math.Sin(a) * d));
             }
             foreach (Vec3d p in anchors)
@@ -72,6 +73,19 @@ namespace Rimverse
             return list;
         }
 
+        public const double GateRangeMly = 5.0;
+
+        public static bool InGateRange(GameComponent_Universe u, int a, int b)
+        {
+            GalaxyData ga = u?.Galaxy(a);
+            GalaxyData gb = u?.Galaxy(b);
+            if (ga == null || gb == null) return false;
+            double dx = ga.groupPositionMly.x - gb.groupPositionMly.x;
+            double dz = ga.groupPositionMly.y - gb.groupPositionMly.y;
+            double dy = ga.groupHeightMly - gb.groupHeightMly;
+            return Math.Sqrt(dx * dx + dy * dy + dz * dz) <= GateRangeMly;
+        }
+
         public static bool IsGate(StarSystemId id) => GatesIn(id.galaxy).Contains(id);
 
         public static bool IsGreatGate(StarSystemId id)
@@ -88,7 +102,7 @@ namespace Rimverse
                 GameComponent_Universe u = GameComponent_Universe.Instance;
                 for (int i = 0; i < u.GalaxyCount; i++)
                 {
-                    if (i == origin.galaxy) continue;
+                    if (i == origin.galaxy || !InGateRange(u, origin.galaxy, i)) continue;
                     List<StarSystemId> other = GatesIn(i);
                     if (other.Count > 0) result.Add(other[0]);
                 }
@@ -111,6 +125,9 @@ namespace Rimverse
             MapComponent_ShipLocation loc = MapComponent_ShipLocation.For(map);
             if (loc == null || ship == null) return;
             IdeoEvents.OnGateUsed(map);
+            ScreenFader.SetColor(new UnityEngine.Color(0.75f, 0.9f, 1f, 1f));
+            ScreenFader.StartFade(UnityEngine.Color.clear, 1.6f, 0.2f);
+            SoundDefOf.PsychicPulseGlobal?.PlayOneShotOnCamera();
             int cooldown = ship.state.lastWarpTick;
             loc.destinationSystemKey = dest.Key;
             loc.travelingShipId = ship.id;
@@ -142,6 +159,7 @@ namespace Rimverse
                             if (RoyalPermits.HasGatePass(map) || ColonyUtility.Consume(map, d => d.defName == "Rimverse_GatePart", ActivationParts))
                             {
                                 eg.activatedGates.Add(here.Key);
+                                MegastructureRender.Version++;
                                 Messages.Message("Rimverse_MsgGateActivated".Translate(Label(here)), MessageTypeDefOf.PositiveEvent, false);
                             }
                         }

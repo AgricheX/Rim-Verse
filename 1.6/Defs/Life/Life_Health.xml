@@ -338,6 +338,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Gravitated</apparel>
         <bodyTypeMale>Hulk</bodyTypeMale>
         <bodyTypeFemale>Hulk</bodyTypeFemale>
         <crushLimit>1.6</crushLimit>
@@ -359,12 +360,13 @@
     <stages>
       <li>
         <statFactors>
-          <IncomingDamageFactor>1.1</IncomingDamageFactor>
+          <IncomingDamageFactor>1.2</IncomingDamageFactor>
         </statFactors>
       </li>
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Slender</apparel>
         <bodyTypeMale>Thin</bodyTypeMale>
         <bodyTypeFemale>Thin</bodyTypeFemale>
         <lowGravityStride>true</lowGravityStride>
@@ -392,6 +394,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Boreal</apparel>
         <skinColor>(0.96, 0.92, 0.90)</skinColor>
       </li>
     </modExtensions>
@@ -418,6 +421,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Solar</apparel>
         <skinColor>(0.36, 0.26, 0.20)</skinColor>
       </li>
     </modExtensions>
@@ -445,8 +449,10 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Abyssal</apparel>
         <skinColor>(0.58, 0.74, 0.74)</skinColor>
         <dryClimatePenalty>true</dryClimatePenalty>
+        <waterSpeedFactor>1.5</waterSpeedFactor>
       </li>
     </modExtensions>
     <everCurableByItem>false</everCurableByItem>
@@ -467,6 +473,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_VoidBorn</apparel>
         <skinColor>(0.86, 0.86, 0.92)</skinColor>
         <zeroGAdapted>true</zeroGAdapted>
         <cabinFeverFactor>0.5</cabinFeverFactor>
@@ -494,6 +501,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Rad</apparel>
         <skinColor>(0.70, 0.58, 0.48)</skinColor>
       </li>
     </modExtensions>
@@ -503,7 +511,7 @@
   <HediffDef>
     <defName>Rimverse_Lineage_Horned</defName>
     <label>horned lineage</label>
-    <description>Descendant of hunters on a wild world. Small horns and a fierce look. Hits harder in close combat.</description>
+    <description>Descendant of hunters on a wild world. Small horns and a fierce look. Hits harder in close combat. Helmets take three times as long to put on, since they must be cut for the horns.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <scenarioCanAdd>true</scenarioCanAdd>
     <isBad>false</isBad>
@@ -518,6 +526,8 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Horned</apparel>
+        <helmetWorkFactor>3</helmetWorkFactor>
       </li>
     </modExtensions>
     <everCurableByItem>false</everCurableByItem>
@@ -538,6 +548,7 @@
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
     <defName>Rimverse_GravityGenerator</defName>
+    <techLevel>Spacer</techLevel>
     <label>gravity generator</label>
     <description>Graviton plating control. Gives 1 g to a ship of up to 600 cells. More generators cover larger ships. Prevents zero-g sickness and bone loss aboard.</description>
     <graphicData>
@@ -578,15 +589,15 @@
     <defName>Rimverse_ArtificialGravity</defName>
     <label>artificial gravity</label>
     <description>Graviton plating that gives a ship a steady 1 g, ending zero-g sickness and bone loss.</description>
-    <baseCost>5000</baseCost>
+    <baseCost>8000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_LifeSupport</li>
       <li>Rimverse_ThermalControl</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>10</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -595,16 +606,17 @@
     <description>Rations and pastes that keep well aboard a ship, including tubes made for eating in zero gravity.</description>
     <baseCost>800</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>Rimverse_LifeSupport</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>11</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
 
   <ThingDef ParentName="MealBase">
     <defName>Rimverse_ShipRation</defName>
+    <techLevel>Spacer</techLevel>
     <label>ship ration</label>
     <description>A dense, vacuum-sealed ration made to last through long voyages. Never rots.</description>
     <graphicData>
@@ -671,6 +683,7 @@
 
   <ThingDef ParentName="MealBase">
     <defName>Rimverse_AlgaePaste</defName>
+    <techLevel>Spacer</techLevel>
     <label>algae paste</label>
     <description>Green paste made from ship algae vats. Nourishing and depressing to eat. Rots in 4 days.</description>
     <graphicData>
@@ -734,6 +747,7 @@
 
   <ThingDef ParentName="MealBase">
     <defName>Rimverse_CombatRation</defName>
+    <techLevel>Spacer</techLevel>
     <label>combat ration</label>
     <description>A light ration laced with mild stimulants. Gives 10% more movement for about 4 hours. Never rots.</description>
     <graphicData>
@@ -806,6 +820,7 @@
 
   <ThingDef ParentName="MealBase">
     <defName>Rimverse_ZeroGTube</defName>
+    <techLevel>Spacer</techLevel>
     <label>zero-g meal tube</label>
     <description>A squeeze tube of blended food that can be eaten anywhere, with no need for a table. Rots in 30 days.</description>
     <graphicData>

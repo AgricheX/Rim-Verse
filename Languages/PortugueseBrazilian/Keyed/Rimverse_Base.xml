@@ -17,10 +17,10 @@
   <Rimverse_DebugLogging_Desc>Escreve mensagens extras no registro para ajudar a encontrar problemas.</Rimverse_DebugLogging_Desc>
   <Rimverse_ResetDefaults>Restaurar padrões</Rimverse_ResetDefaults>
   <Rimverse_NewGameOnly>As opções de geração só valem para universos novos.</Rimverse_NewGameOnly>
-  <Rimverse_GalaxyCount>Galáxias</Rimverse_GalaxyCount>
-  <Rimverse_GalaxyCount_Desc>Quantas galáxias o universo gera no início do jogo.</Rimverse_GalaxyCount_Desc>
+  <Rimverse_GalaxyCount>Limite de galáxias</Rimverse_GalaxyCount>
+  <Rimverse_GalaxyCount_Desc>A seed do universo decide quantas galáxias o seu grupo tem (até 32, como na escala do Origem). Isto só limita esse número para deixar jogos grandes mais leves.</Rimverse_GalaxyCount_Desc>
   <Rimverse_StarDensity>Densidade de estrelas</Rimverse_StarDensity>
-  <Rimverse_StarDensity_Desc>Quantas estrelas cada região da galáxia tem, comparado com a densidade real (0,004 estrelas por ano-luz cúbico). Valores menores deixam o mapa mais leve e o espaço mais vazio.</Rimverse_StarDensity_Desc>
+  <Rimverse_StarDensity_Desc>1,0 é a densidade real (0,004 sistemas estelares por ano-luz cúbico perto de uma órbita como a do Sol). Valores menores só deixam a galáxia mais rala para aliviar os mapas. Fica salvo em cada jogo novo.</Rimverse_StarDensity_Desc>
   <Rimverse_CivSimulation>Simulação de civilizações</Rimverse_CivSimulation>
   <Rimverse_CivSimulation_Desc>Civilizações crescem, negociam, entram em guerra e caem mesmo longe da sua colônia.</Rimverse_CivSimulation_Desc>
   <Rimverse_CivTickInterval>Intervalo da simulação (dias)</Rimverse_CivTickInterval>

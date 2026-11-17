@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="Rimverse_Lineage_Horned"]</xpath>
+    <value>
+      <renderNodeProperties>
+        <li>
+          <debugLabel>Rimverse lineage Horns</debugLabel>
+          <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+          <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+          <texPath>Rimverse/Things/Pawn/Lineage/Horns</texPath>
+          <colorType>Custom</colorType>
+          <color>(1,1,1,1)</color>
+          <parentTagDef>Head</parentTagDef>
+          <rotDrawMode>Fresh, Rotting</rotDrawMode>
+          <drawData>
+            <defaultData>
+              <layer>80</layer>
+            </defaultData>
+            <dataNorth>
+              <layer>-2</layer>
+            </dataNorth>
+          </drawData>
+        </li>
+      </renderNodeProperties>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="Rimverse_Lineage_Abyssal"]</xpath>
+    <value>
+      <renderNodeProperties>
+        <li>
+          <debugLabel>Rimverse lineage Gills</debugLabel>
+          <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+          <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+          <texPath>Rimverse/Things/Pawn/Lineage/Gills</texPath>
+          <colorType>Custom</colorType>
+          <color>(1,1,1,1)</color>
+          <parentTagDef>Head</parentTagDef>
+          <rotDrawMode>Fresh, Rotting</rotDrawMode>
+          <visibleFacing>
+            <li>East</li>
+            <li>South</li>
+            <li>West</li>
+          </visibleFacing>
+          <drawData>
+            <defaultData>
+              <layer>62</layer>
+            </defaultData>
+          </drawData>
+        </li>
+      </renderNodeProperties>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="Rimverse_Lineage_Rad"]</xpath>
+    <value>
+      <renderNodeProperties>
+        <li>
+          <debugLabel>Rimverse lineage Spots</debugLabel>
+          <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+          <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+          <texPath>Rimverse/Things/Pawn/Lineage/Spots</texPath>
+          <colorType>Custom</colorType>
+          <color>(1,1,1,1)</color>
+          <parentTagDef>Head</parentTagDef>
+          <rotDrawMode>Fresh, Rotting</rotDrawMode>
+          <drawData>
+            <defaultData>
+              <layer>56</layer>
+            </defaultData>
+          </drawData>
+        </li>
+      </renderNodeProperties>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="Rimverse_Lineage_VoidBorn"]</xpath>
+    <value>
+      <renderNodeProperties>
+        <li>
+          <debugLabel>Rimverse lineage VoidEyes</debugLabel>
+          <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+          <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+          <texPath>Rimverse/Things/Pawn/Lineage/VoidEyes</texPath>
+          <colorType>Custom</colorType>
+          <color>(1,1,1,1)</color>
+          <parentTagDef>Head</parentTagDef>
+          <rotDrawMode>Fresh, Rotting</rotDrawMode>
+          <visibleFacing>
+            <li>East</li>
+            <li>South</li>
+            <li>West</li>
+          </visibleFacing>
+          <drawData>
+            <defaultData>
+              <layer>58</layer>
+            </defaultData>
+          </drawData>
+        </li>
+      </renderNodeProperties>
+    </value>
+  </Operation>
+</Patch>

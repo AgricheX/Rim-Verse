@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>Rimverse_NobleShipDemands</defName>
+    <workerClass>Rimverse.ThoughtWorker_NobleShipDemands</workerClass>
+    <doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>ship beneath my station</label>
+        <description>No command throne, no proper cabin, no window to the stars. A noble of my rank should not travel like cargo.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>a ship worthy of my title</label>
+        <description>The command throne, a noble cabin and a view of the stars. This ship honors my rank.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

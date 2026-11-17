@@ -232,6 +232,7 @@ namespace Rimverse
                     total++;
                 }
             }
+            CivPreSpace.Generate(civs, u, r, taken);
             civs.InitRelations();
         }
 

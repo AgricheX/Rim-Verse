@@ -120,12 +120,13 @@ namespace Rimverse
             };
             foreach (Gizmo g in ShipCombatUtility.Gizmos(ship)) yield return g;
             foreach (Gizmo g in GateUtility.Gizmos(ship)) yield return g;
+            foreach (Gizmo g in MegaSectionUtility.Gizmos(ship)) yield return g;
             foreach (Gizmo g in AnomalyContent.BridgeGizmos(ship)) yield return g;
             foreach (Gizmo g in OdysseyCompat.BridgeGizmos(ship)) yield return g;
             if (SpaceMapUtility.IsOrbit(parent.Map))
             {
                 BodyData orbitBody = MapComponent_ShipLocation.For(parent.Map)?.Body;
-                if (orbitBody != null && !orbitBody.homeWorld && orbitBody.Landable)
+                if (orbitBody != null && !orbitBody.homeWorld && orbitBody.LandableNow)
                 {
                     Command_Action found = new Command_Action
                     {

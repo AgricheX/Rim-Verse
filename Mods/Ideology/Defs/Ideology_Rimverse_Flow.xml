@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <MemeDef>
+    <defName>Rimverse_GreatFlowMeme</defName>
+    <label>Great Flow</label>
+    <description>Everything living is joined by the Great Flow. Those who feel it are guides, and the struggle between Harmony and Rupture shapes the world.</description>
+    <iconPath>Rimverse/UI/Flow/Sense</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>2</impact>
+    <requireOne>
+      <li>
+        <li>Rimverse_FlowPath_Harmony</li>
+        <li>Rimverse_FlowPath_Rupture</li>
+        <li>Rimverse_FlowPath_Balance</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed->current</li>
+        <li>memeCreed->flow</li>
+        <li>memeAdjective->resonant</li>
+        <li>memeAdjective->flowing</li>
+        <li>memeHyphenPrefix->flow</li>
+        <li>memeConcept->flow</li>
+        <li>memeLeaderNoun->master</li>
+        <li>memeMoralist->keeper</li>
+      </rulesStrings>
+    </generalRules>
+  </MemeDef>
+
+  <IssueDef>
+    <defName>Rimverse_FlowPath</defName>
+    <label>path of the Flow</label>
+    <iconPath>Rimverse/UI/Issue/Lineage</iconPath>
+  </IssueDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_FlowPath_HarmonyNear</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_FlowSideNear</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>guided by Harmony</label>
+        <description>One of us walks the path of Harmony. We are in good hands.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rimverse_FlowPath_RuptureNear</defName>
+    <workerClass>Rimverse.ThoughtWorker_Precept_FlowSideNear</workerClass>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>strength of Rupture</label>
+        <description>One of us walks the path of Rupture. No one will dare stand against us.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <PreceptDef>
+    <defName>Rimverse_FlowPath_Harmony</defName>
+    <issue>Rimverse_FlowPath</issue>
+    <label>Harmony venerated</label>
+    <description>The Flow should heal and protect. Believers are glad when someone of Harmony lives among them.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_GreatFlowMeme</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_FlowPath_HarmonyNear</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_FlowPath_Rupture</defName>
+    <issue>Rimverse_FlowPath</issue>
+    <label>Rupture venerated</label>
+    <description>The Flow is power and should be used. Believers are glad when someone of Rupture lives among them.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <associatedMemes>
+      <li>Rimverse_GreatFlowMeme</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Rimverse_FlowPath_RuptureNear</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rimverse_FlowPath_Balance</defName>
+    <issue>Rimverse_FlowPath</issue>
+    <label>balance</label>
+    <description>Harmony and Rupture are two halves of one current. Neither is better.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+  </PreceptDef>
+
+</Defs>

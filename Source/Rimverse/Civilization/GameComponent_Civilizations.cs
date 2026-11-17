@@ -9,10 +9,11 @@ namespace Rimverse
 {
     public class GameComponent_Civilizations : GameComponent
     {
-        public const int MaxCivilizations = 200;
+        public const int MaxCivilizations = 320;
         public const double NearPlayerLy = 300.0;
         public const double RelationRangeLy = 500.0;
         public const int FleetTickInterval = 2500;
+        public const int CoarseYears = 5;
 
         public List<Civilization> civilizations = new List<Civilization>();
         public List<Fleet> fleets = new List<Fleet>();
@@ -57,6 +58,7 @@ namespace Rimverse
             if (generated) return;
             generated = true;
             CivilizationGenerator.GenerateAll(this);
+            GameComponent_RoomsBridge.EnsureAsyncCiv(this);
             RebuildIndex();
             InvalidateTerritory();
         }
@@ -120,7 +122,12 @@ namespace Rimverse
                 }
                 double d = Vec3d.Distance(CapitalPosition(c), pos);
                 float r = c.InfluenceRadiusLy;
-                if (!planetHere && d > r) continue;
+                if (!planetHere && d > r)
+                {
+                    double outpost = OutpostDistance(c, pos, id.galaxy);
+                    if (outpost > OutpostRadius(c)) continue;
+                    d = outpost * 2.0;
+                }
                 double score = (planetHere ? 1000.0 : 0.0) + (c.stage * 10 + c.sizeClass / 10.0) / (d + 1.0);
                 if (score > bestScore)
                 {
@@ -234,6 +241,10 @@ namespace Rimverse
             }
         }
 
+        private static ResearchProjectDef firstContact;
+
+        public static ResearchProjectDef FirstContactResearch => firstContact ?? (firstContact = DefDatabase<ResearchProjectDef>.GetNamedSilentFail("Rimverse_FirstContact"));
+
         public Faction EnsureFaction(Civilization c)
         {
             if (c.faction != null && Find.FactionManager.AllFactionsListForReading.Contains(c.faction)) return c.faction;
@@ -251,12 +262,18 @@ namespace Rimverse
                 c.playerStateSince = Find.TickManager.TicksGame;
                 return c.faction;
             }
-            FactionDef def = c.Hostile ? RimverseDefOf.Rimverse_SpacePirates : RimverseDefOf.Rimverse_SpaceCiv;
+            if (CompatActions.TryLinkForeignFaction(c))
+            {
+                SetPlayerState(c, c.faction.HostileTo(Faction.OfPlayer) ? DiploState.War : c.playerState);
+                return c.faction;
+            }
+            FactionDef def = CivPreSpace.FactionFor(c) ?? (c.Hostile ? RimverseDefOf.Rimverse_SpacePirates : RimverseDefOf.Rimverse_SpaceCiv);
             Faction f = FactionGenerator.NewGeneratedFaction(new FactionGeneratorParms(def));
             f.Name = c.Name;
             f.color = c.color;
             Find.FactionManager.Add(f);
             c.faction = f;
+            CivIdeo.Apply(c, f);
             ChangePlayerOpinion(c, 0f);
             SetPlayerState(c, c.playerState);
             return f;
@@ -269,6 +286,11 @@ namespace Rimverse
             c.rumored = true;
             c.AddIntel(Mathf.Max(0f, 20f - c.intel));
             EnsureFaction(c);
+            if (FirstContactResearch?.IsFinished == true)
+            {
+                c.AddIntel(20f);
+                ChangePlayerOpinion(c, 10f);
+            }
             if (letter)
             {
                 Find.LetterStack.ReceiveLetter("Rimverse_LetterFirstContactLabel".Translate(c.Name), "Rimverse_LetterFirstContact".Translate(c.Name, ("Rimverse_Stage_" + c.stage).Translate(), c.government?.LabelCap ?? "?", c.ideology?.LabelCap ?? "?", c.tech.ToStringHuman()), c.Hostile ? LetterDefOf.ThreatSmall : LetterDefOf.PositiveEvent);
@@ -326,6 +348,27 @@ namespace Rimverse
             }
         }
 
+        public const float OutpostRadiusShare = 0.3f;
+        public const float OutpostRadiusMin = 6f;
+
+        public static float OutpostRadius(Civilization c) => c.stage >= 10 ? Mathf.Max(OutpostRadiusMin, c.InfluenceRadiusLy * OutpostRadiusShare) : 0f;
+
+        public static double OutpostDistance(Civilization c, Vec3d pos, int galaxy)
+        {
+            double best = double.MaxValue;
+            GameComponent_Universe u = GameComponent_Universe.Instance;
+            if (u == null) return best;
+            foreach (CivPlanet p in c.planets)
+            {
+                if (p.systemKey.NullOrEmpty() || p.systemKey == c.capitalKey) continue;
+                StarSystemId sid = StarSystemId.FromKey(p.systemKey);
+                if (sid.galaxy != galaxy) continue;
+                double d = Vec3d.Distance(u.PositionOf(sid), pos);
+                if (d < best) best = d;
+            }
+            return best;
+        }
+
         public bool IsNearPlayer(Civilization c) => DistanceToPlayer(c, out _) <= NearPlayerLy + c.InfluenceRadiusLy;
 
         public override void GameComponentTick()
@@ -342,17 +385,20 @@ namespace Rimverse
             if (tick % interval != 71) return;
             EnsureGenerated();
             CheckContacts();
+            HashSet<int> playerGalaxies = new HashSet<int>();
+            foreach (StarSystemId pid in PlayerSystems()) playerGalaxies.Add(pid.galaxy);
+            if (playerGalaxies.Count == 0) playerGalaxies.Add(0);
             for (int i = 0; i < civilizations.Count; i++)
             {
                 Civilization c = civilizations[i];
                 if (c.dead) continue;
-                int step = IsNearPlayer(c) ? RimverseUnits.TicksPerQuadrum : RimverseUnits.TicksPerYear;
+                int step = !playerGalaxies.Contains(c.galaxy) ? RimverseUnits.TicksPerYear * CoarseYears : IsNearPlayer(c) ? RimverseUnits.TicksPerQuadrum : RimverseUnits.TicksPerYear;
                 int elapsed = tick - c.lastSimTick;
                 if (elapsed < step) continue;
                 int guard = 0;
                 while (elapsed >= step && guard++ < 50)
                 {
-                    float years = Mathf.Min(elapsed, RimverseUnits.TicksPerYear) / (float)RimverseUnits.TicksPerYear;
+                    float years = Mathf.Min(elapsed, step) / (float)RimverseUnits.TicksPerYear;
                     CivSimulation.Step(this, c, years);
                     int used = Mathf.Min(elapsed, RimverseUnits.TicksPerYear);
                     c.lastSimTick += used;

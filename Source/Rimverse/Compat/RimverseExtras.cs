@@ -97,6 +97,9 @@ namespace Rimverse
         public static void OnShipVictory(Map map, RimverseShip player, bool captured = false)
         {
             IdeoEvents.OnShipVictory(map, captured);
+            ShipThoughts.GiveMap(map, "WonShipBattle");
+            Pawn captain = map?.mapPawns.FreeColonistsSpawned.OrderByDescending(x => NavalRanks.Merit(x)).FirstOrDefault();
+            if (captain != null) ShipThoughts.Tale("ShipVictory", captain);
             NavalRanks.OnVictory(map, player);
             RoyalQuests.OnVictory(map);
             GameComponent_RimverseExtras.Instance?.Add("shipVictories");

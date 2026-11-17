@@ -60,6 +60,12 @@ namespace Rimverse
 
         public static MapGeneratorDef GeneratorFor(BodyData body)
         {
+            string special = BiomeFeatures.Pick(body, BodyGenContext.systemKey);
+            if (special != null)
+            {
+                MapGeneratorDef sp = DefDatabase<MapGeneratorDef>.GetNamedSilentFail("Rimverse_Surface_" + special);
+                if (sp != null) return sp;
+            }
             if (body.Airless) return RimverseDefOf.Rimverse_AirlessBodyMap;
             if (body.atmosphere == AtmosphereType.Breathable)
             {
@@ -75,14 +81,16 @@ namespace Rimverse
             if (existing != null) return existing;
             Map anchor = AnchorMap(from);
             BodyGenContext.current = body;
+            BodyGenContext.systemKey = system.Key;
             Map map;
             try
             {
-                map = TryGenerateOnLayer(system, body) ?? PocketMapUtility.GeneratePocketMap(SizeFor(body), GeneratorFor(body), null, anchor);
+                map = TryGenerateOnLayer(system, body) ?? PocketMapUtility.GeneratePocketMap(SizeFor(body), GeneratorFor(body), SettlementGen.ExtraFor(system, body), anchor);
             }
             finally
             {
                 BodyGenContext.current = null;
+                BodyGenContext.systemKey = null;
             }
             MapComponent_ShipLocation loc = MapComponent_ShipLocation.For(map);
             loc.SetLocation(system, body.index);
@@ -108,7 +116,7 @@ namespace Rimverse
             }
             if (!tile.Valid) return null;
             Settlement home = SettleUtility.AddNewHome(tile, Faction.OfPlayer);
-            return MapGenerator.GenerateMap(SizeFor(body), home, GeneratorFor(body), home.ExtraGenStepDefs, null, false);
+            return MapGenerator.GenerateMap(SizeFor(body), home, GeneratorFor(body), home.ExtraGenStepDefs.Concat(SettlementGen.ExtraFor(system, body)), null, false);
         }
 
         public static Map CreateOrbitPocket(Map from, IntVec3 size)
@@ -136,5 +144,6 @@ namespace Rimverse
     public static class BodyGenContext
     {
         public static BodyData current;
+        public static string systemKey;
     }
 }

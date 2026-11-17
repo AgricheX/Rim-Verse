@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_AlgaeTank</defName>
+    <techLevel>Industrial</techLevel>
+    <label>algae tank</label>
+    <description>A sealed tank of green water under weak lamps. It only grows tank algae, plants and tends it on its own, and needs little power. A colonist still has to harvest.</description>
+    <thingClass>Rimverse.Building_RimverseHydroponics</thingClass>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack>
+    <graphicData>
+      <texPath>Rimverse/Things/Building/Ship/HydroSemi</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,4)</drawSize>
+      <color>(0.45,0.8,0.5)</color>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <defaultPlacingRot>East</defaultPlacingRot>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>2400</WorkToBuild>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <size>(1,4)</size>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <fertility>2</fertility>
+    <building>
+      <defaultPlantToGrow>Rimverse_Plant_TankAlgae</defaultPlantToGrow>
+      <sowTag>Rimverse_AlgaeTank</sowTag>
+    </building>
+    <tickerType>Rare</tickerType>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <researchPrerequisites>
+      <li>Rimverse_SpaceBotany</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>60</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(120,240,140,0)</glowColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="Rimverse.AutoHydroExtension">
+        <autoSow>true</autoSow>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Rimverse_PetCramped</defName>
+    <label>cramped</label>
+    <description>This animal is kept in a room too small for its size aboard a ship or sealed base. It paces, eats more and moves stiffly. Give it a room of at least twelve cells per unit of body size.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.8,0.7,0.4)</defaultLabelColor>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+        <hungerRateFactor>1.15</hungerRateFactor>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

@@ -11,7 +11,7 @@ namespace Rimverse
             if (SpaceMapUtility.IsSpace(p.Map) || SpaceMapUtility.IsHostileSurface(p.Map)) return ThoughtState.Inactive;
             if (p.Position.Roofed(p.Map)) return ThoughtState.Inactive;
             LineageExtension ext = LineageUtility.ExtensionOf(p);
-            return ext != null && ext.fearOfSky ? ThoughtState.ActiveAtStage(0) : ThoughtState.Inactive;
+            return ext != null && ext.fearOfSky || GeneSpace.Any(p, e => e.fearOfSky) ? ThoughtState.ActiveAtStage(0) : ThoughtState.Inactive;
         }
     }
 }

@@ -40,8 +40,9 @@ namespace Rimverse
                 return;
             }
             if (ext.breachChance <= 0f || !IsHull(hitThing) || hitThing.Destroyed) return;
-            if (!Rand.Chance(ext.breachChance * RimverseMod.Settings.breachDrainMultiplier)) return;
+            if (!Rand.Chance(ext.breachChance * RimverseMod.Settings.breachDrainMultiplier * (hitThing.def.defName == "Rimverse_HullViewport" || hitThing.def.defName == "Rimverse_ObservationWindow" ? 2f : 1f))) return;
             Messages.Message("Rimverse_MsgWeaponBreach".Translate(), new TargetInfo(hitThing.Position, hitThing.Map), MessageTypeDefOf.NegativeEvent, false);
+            ShipThoughts.GiveMap(hitThing.Map, "SawHullBreach");
             hitThing.TakeDamage(new DamageInfo(DamageDefOf.Blunt, hitThing.HitPoints + 1));
         }
     }

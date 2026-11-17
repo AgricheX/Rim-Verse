@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_BS_BeltMinerKid.title>filho de mineiro de cinturão</Rimverse_BS_BeltMinerKid.title>
+  <Rimverse_BS_BeltMinerKid.titleShort>mineiro</Rimverse_BS_BeltMinerKid.titleShort>
+  <Rimverse_BS_BeltMinerKid.baseDesc>[PAWN_nameDef] cresceu num habitat pressurizado preso a um asteroide. Aprendeu a ler veios de minério antes de aprender a ler palavras.</Rimverse_BS_BeltMinerKid.baseDesc>
+  <Rimverse_BS_StationChild.title>criança de estação</Rimverse_BS_StationChild.title>
+  <Rimverse_BS_StationChild.titleShort>da estação</Rimverse_BS_StationChild.titleShort>
+  <Rimverse_BS_StationChild.baseDesc>Nascido a bordo de uma estação orbital, [PAWN_nameDef] nunca viu um céu que não estivesse pintado numa antepara. Conhece cada duto de ar de cor.</Rimverse_BS_StationChild.baseDesc>
+  <Rimverse_BS_ImperialCadetKid.title>cadete imperial</Rimverse_BS_ImperialCadetKid.title>
+  <Rimverse_BS_ImperialCadetKid.titleShort>cadete</Rimverse_BS_ImperialCadetKid.titleShort>
+  <Rimverse_BS_ImperialCadetKid.baseDesc>[PAWN_nameDef] foi matriculado numa academia de setor aos seis anos. Treinos, protocolo e combate em gravidade zero ocupavam cada hora acordado.</Rimverse_BS_ImperialCadetKid.baseDesc>
+  <Rimverse_BS_UrbworldUrchin.title>pivete de urbworld</Rimverse_BS_UrbworldUrchin.title>
+  <Rimverse_BS_UrbworldUrchin.titleShort>pivete</Rimverse_BS_UrbworldUrchin.titleShort>
+  <Rimverse_BS_UrbworldUrchin.baseDesc>Os níveis inferiores de uma arcologia de urbworld eram o parquinho de [PAWN_nameDef]. Aprendeu a roubar energia, comida e ar.</Rimverse_BS_UrbworldUrchin.baseDesc>
+  <Rimverse_BS_GlitterHeir.title>herdeiro de glitterworld</Rimverse_BS_GlitterHeir.title>
+  <Rimverse_BS_GlitterHeir.titleShort>herdeiro</Rimverse_BS_GlitterHeir.titleShort>
+  <Rimverse_BS_GlitterHeir.baseDesc>[PAWN_nameDef] foi criado por tutores e drones médicos numa propriedade de glitterworld. Toda vontade era atendida por uma máquina.</Rimverse_BS_GlitterHeir.baseDesc>
+  <Rimverse_BS_FreighterBrat.title>pirralho de cargueiro</Rimverse_BS_FreighterBrat.title>
+  <Rimverse_BS_FreighterBrat.titleShort>pirralho</Rimverse_BS_FreighterBrat.titleShort>
+  <Rimverse_BS_FreighterBrat.baseDesc>[PAWN_nameDef] cresceu entre contêineres num cargueiro de longa rota, dormindo em redes penduradas no porão.</Rimverse_BS_FreighterBrat.baseDesc>
+  <Rimverse_BS_PirateWhelp.title>cria de pirata</Rimverse_BS_PirateWhelp.title>
+  <Rimverse_BS_PirateWhelp.titleShort>cria</Rimverse_BS_PirateWhelp.titleShort>
+  <Rimverse_BS_PirateWhelp.baseDesc>Nascido numa tripulação de saqueadores, [PAWN_nameDef] aprendeu a carregar um rifle antes de aprender a dividir.</Rimverse_BS_PirateWhelp.baseDesc>
+  <Rimverse_BS_ToxicRefugee.title>refugiado de mundo tóxico</Rimverse_BS_ToxicRefugee.title>
+  <Rimverse_BS_ToxicRefugee.titleShort>refugiado</Rimverse_BS_ToxicRefugee.titleShort>
+  <Rimverse_BS_ToxicRefugee.baseDesc>O mundo natal de [PAWN_nameDef] sufocou na própria indústria. Passou a infância em campos de evacuação e máscaras de filtro.</Rimverse_BS_ToxicRefugee.baseDesc>
+  <Rimverse_BS_GateWardKid.title>pupilo do portão</Rimverse_BS_GateWardKid.title>
+  <Rimverse_BS_GateWardKid.titleShort>pupilo</Rimverse_BS_GateWardKid.titleShort>
+  <Rimverse_BS_GateWardKid.baseDesc>[PAWN_nameDef] cresceu à sombra de um portão antigo, fazendo recados para os técnicos que o mantinham funcionando.</Rimverse_BS_GateWardKid.baseDesc>
+  <Rimverse_BS_VoidNovice.title>noviço do vazio</Rimverse_BS_VoidNovice.title>
+  <Rimverse_BS_VoidNovice.titleShort>noviço</Rimverse_BS_VoidNovice.titleShort>
+  <Rimverse_BS_VoidNovice.baseDesc>Entregue a um mosteiro à deriva no espaço profundo, [PAWN_nameDef] passou anos em contemplação silenciosa da escuridão entre as estrelas.</Rimverse_BS_VoidNovice.baseDesc>
+  <Rimverse_BS_HydroponicsKid.title>criança da hidroponia</Rimverse_BS_HydroponicsKid.title>
+  <Rimverse_BS_HydroponicsKid.titleShort>cultivador</Rimverse_BS_HydroponicsKid.titleShort>
+  <Rimverse_BS_HydroponicsKid.baseDesc>[PAWN_nameDef] cuidava das estantes de cultivo de uma nave-colônia, tirando comida de água reciclada e luz artificial.</Rimverse_BS_HydroponicsKid.baseDesc>
+  <Rimverse_BS_CryoChild.title>nascido na criogenia</Rimverse_BS_CryoChild.title>
+  <Rimverse_BS_CryoChild.titleShort>criogênico</Rimverse_BS_CryoChild.titleShort>
+  <Rimverse_BS_CryoChild.baseDesc>[PAWN_nameDef] foi congelado ainda bebê numa nave-dormitório e acordou dois séculos depois num mundo que não reconhecia.</Rimverse_BS_CryoChild.baseDesc>
+  <Rimverse_BS_DockRat.title>rato de doca</Rimverse_BS_DockRat.title>
+  <Rimverse_BS_DockRat.titleShort>rato de doca</Rimverse_BS_DockRat.titleShort>
+  <Rimverse_BS_DockRat.baseDesc>[PAWN_nameDef] rondava os anéis de atracação de um entreposto, pechinchando restos e histórias com os viajantes.</Rimverse_BS_DockRat.baseDesc>
+  <Rimverse_BS_MegastructureKid.title>morador do anel</Rimverse_BS_MegastructureKid.title>
+  <Rimverse_BS_MegastructureKid.titleShort>do anel</Rimverse_BS_MegastructureKid.titleShort>
+  <Rimverse_BS_MegastructureKid.baseDesc>[PAWN_nameDef] cresceu na face interna de um anel orbital, onde o horizonte se curvava para cima até o céu.</Rimverse_BS_MegastructureKid.baseDesc>
+  <Rimverse_BS_FleetBorn.title>nascido na frota</Rimverse_BS_FleetBorn.title>
+  <Rimverse_BS_FleetBorn.titleShort>da frota</Rimverse_BS_FleetBorn.titleShort>
+  <Rimverse_BS_FleetBorn.baseDesc>Nascido numa frota migrante que nunca pousou, [PAWN_nameDef] conhece cem capitães de nave e nenhum planeta.</Rimverse_BS_FleetBorn.baseDesc>
+  <Rimverse_BS_HighGravKid.title>criança de alta gravidade</Rimverse_BS_HighGravKid.title>
+  <Rimverse_BS_HighGravKid.titleShort>pesado</Rimverse_BS_HighGravKid.titleShort>
+  <Rimverse_BS_HighGravKid.baseDesc>[PAWN_nameDef] cresceu sob gravidade esmagadora. Cada passo construiu músculos que mundos mais leves nunca exigem.</Rimverse_BS_HighGravKid.baseDesc>
+  <Rimverse_BS_MedbayOrphan.title>órfão da enfermaria</Rimverse_BS_MedbayOrphan.title>
+  <Rimverse_BS_MedbayOrphan.titleShort>órfão</Rimverse_BS_MedbayOrphan.titleShort>
+  <Rimverse_BS_MedbayOrphan.baseDesc>Deixado numa enfermaria de estação, [PAWN_nameDef] foi criado por médicos sobrecarregados e aprendeu triagem só de observar.</Rimverse_BS_MedbayOrphan.baseDesc>
+  <Rimverse_BS_SalvagerKid.title>aprendiz de sucateiro</Rimverse_BS_SalvagerKid.title>
+  <Rimverse_BS_SalvagerKid.titleShort>sucateiro</Rimverse_BS_SalvagerKid.titleShort>
+  <Rimverse_BS_SalvagerKid.baseDesc>[PAWN_nameDef] rastejava por cascos destruídos para uma equipe de resgate, pequeno o bastante para alcançar o que os adultos não alcançavam.</Rimverse_BS_SalvagerKid.baseDesc>
+  <Rimverse_BS_XenoPetKeeper.title>cuidador de xenofauna</Rimverse_BS_XenoPetKeeper.title>
+  <Rimverse_BS_XenoPetKeeper.titleShort>cuidador</Rimverse_BS_XenoPetKeeper.titleShort>
+  <Rimverse_BS_XenoPetKeeper.baseDesc>[PAWN_nameDef] cuidava das criaturas estranhas do viveiro de uma estação de pesquisa.</Rimverse_BS_XenoPetKeeper.baseDesc>
+  <Rimverse_BS_SignalChild.title>ouvinte de sinais</Rimverse_BS_SignalChild.title>
+  <Rimverse_BS_SignalChild.titleShort>ouvinte</Rimverse_BS_SignalChild.titleShort>
+  <Rimverse_BS_SignalChild.baseDesc>[PAWN_nameDef] passava noites num radiotelescópio de espaço profundo, ouvindo estática e sonhando com quem poderia responder.</Rimverse_BS_SignalChild.baseDesc>
+  <Rimverse_BS_BeltMiner.title>mineiro de cinturão</Rimverse_BS_BeltMiner.title>
+  <Rimverse_BS_BeltMiner.titleShort>mineiro</Rimverse_BS_BeltMiner.titleShort>
+  <Rimverse_BS_BeltMiner.baseDesc>[PAWN_nameDef] trabalhou anos nos cinturões de asteroides, cortando minério no vácuo com uma lança de plasma e uma prece.</Rimverse_BS_BeltMiner.baseDesc>
+  <Rimverse_BS_StationTech.title>técnico de estação</Rimverse_BS_StationTech.title>
+  <Rimverse_BS_StationTech.titleShort>técnico</Rimverse_BS_StationTech.titleShort>
+  <Rimverse_BS_StationTech.baseDesc>[PAWN_nameDef] mantinha uma estação orbital viva: filtros, reatores, vedações. Quando algo chiava, era quem chamavam.</Rimverse_BS_StationTech.baseDesc>
+  <Rimverse_BS_ImperialOfficer.title>oficial imperial</Rimverse_BS_ImperialOfficer.title>
+  <Rimverse_BS_ImperialOfficer.titleShort>oficial</Rimverse_BS_ImperialOfficer.titleShort>
+  <Rimverse_BS_ImperialOfficer.baseDesc>[PAWN_nameDef] comandou o convés de artilharia de um cruzador numa frota de setor até que a política encerrou sua carreira.</Rimverse_BS_ImperialOfficer.baseDesc>
+  <Rimverse_BS_UrbworldLaborer.title>operário de urbworld</Rimverse_BS_UrbworldLaborer.title>
+  <Rimverse_BS_UrbworldLaborer.titleShort>operário</Rimverse_BS_UrbworldLaborer.titleShort>
+  <Rimverse_BS_UrbworldLaborer.baseDesc>[PAWN_nameDef] passou anos numa linha de montagem de urbworld, turnos de doze horas sob ar reciclado.</Rimverse_BS_UrbworldLaborer.baseDesc>
+  <Rimverse_BS_GlitterSurgeon.title>cirurgião de glitterworld</Rimverse_BS_GlitterSurgeon.title>
+  <Rimverse_BS_GlitterSurgeon.titleShort>cirurgião</Rimverse_BS_GlitterSurgeon.titleShort>
+  <Rimverse_BS_GlitterSurgeon.baseDesc>[PAWN_nameDef] operava com ferramentas assistidas por nanitos num glitterworld. Instrumentos primitivos o horrorizam.</Rimverse_BS_GlitterSurgeon.baseDesc>
+  <Rimverse_BS_FreighterPilot.title>piloto de cargueiro</Rimverse_BS_FreighterPilot.title>
+  <Rimverse_BS_FreighterPilot.titleShort>piloto</Rimverse_BS_FreighterPilot.titleShort>
+  <Rimverse_BS_FreighterPilot.baseDesc>[PAWN_nameDef] levava carga entre sistemas, cruzando rotas de dobra e fugindo de patrulhas alfandegárias.</Rimverse_BS_FreighterPilot.baseDesc>
+  <Rimverse_BS_VoidPirate.title>pirata do vazio</Rimverse_BS_VoidPirate.title>
+  <Rimverse_BS_VoidPirate.titleShort>pirata</Rimverse_BS_VoidPirate.titleShort>
+  <Rimverse_BS_VoidPirate.baseDesc>[PAWN_nameDef] abordava naves para viver. Sabe romper um casco e fazer uma tripulação se render.</Rimverse_BS_VoidPirate.baseDesc>
+  <Rimverse_BS_ToxicSurvivor.title>sobrevivente de mundo tóxico</Rimverse_BS_ToxicSurvivor.title>
+  <Rimverse_BS_ToxicSurvivor.titleShort>sobrevivente</Rimverse_BS_ToxicSurvivor.titleShort>
+  <Rimverse_BS_ToxicSurvivor.baseDesc>Depois que seu mundo morreu, [PAWN_nameDef] vasculhou ruínas e aprendeu a viver onde nada deveria viver.</Rimverse_BS_ToxicSurvivor.baseDesc>
+  <Rimverse_BS_GateTechnician.title>técnico de portão</Rimverse_BS_GateTechnician.title>
+  <Rimverse_BS_GateTechnician.titleShort>técnico</Rimverse_BS_GateTechnician.titleShort>
+  <Rimverse_BS_GateTechnician.baseDesc>[PAWN_nameDef] calibrava as bobinas de ressonância de um portão antigo. Entende a tecnologia precursora melhor que qualquer um vivo.</Rimverse_BS_GateTechnician.baseDesc>
+  <Rimverse_BS_VoidMonk.title>monge do vazio</Rimverse_BS_VoidMonk.title>
+  <Rimverse_BS_VoidMonk.titleShort>monge</Rimverse_BS_VoidMonk.titleShort>
+  <Rimverse_BS_VoidMonk.baseDesc>[PAWN_nameDef] fez votos num mosteiro à deriva. Fala baixo e nunca tem medo do escuro.</Rimverse_BS_VoidMonk.baseDesc>
+  <Rimverse_BS_Terraformer.title>terraformador</Rimverse_BS_Terraformer.title>
+  <Rimverse_BS_Terraformer.titleShort>terraformador</Rimverse_BS_Terraformer.titleShort>
+  <Rimverse_BS_Terraformer.baseDesc>[PAWN_nameDef] semeava mundos mortos com micróbios e musgos projetados, um trabalho medido em séculos.</Rimverse_BS_Terraformer.baseDesc>
+  <Rimverse_BS_CryoCaretaker.title>zelador criogênico</Rimverse_BS_CryoCaretaker.title>
+  <Rimverse_BS_CryoCaretaker.titleShort>zelador</Rimverse_BS_CryoCaretaker.titleShort>
+  <Rimverse_BS_CryoCaretaker.baseDesc>[PAWN_nameDef] vigiava os casulos de uma nave-dormitório, sozinho por décadas entre milhares de adormecidos.</Rimverse_BS_CryoCaretaker.baseDesc>
+  <Rimverse_BS_SpaceTrader.title>comerciante orbital</Rimverse_BS_SpaceTrader.title>
+  <Rimverse_BS_SpaceTrader.titleShort>comerciante</Rimverse_BS_SpaceTrader.titleShort>
+  <Rimverse_BS_SpaceTrader.baseDesc>[PAWN_nameDef] tocava um posto de comércio num anel de atracação e consegue vender ar reciclado a um gigante gasoso.</Rimverse_BS_SpaceTrader.baseDesc>
+  <Rimverse_BS_MegaEngineer.title>engenheiro de megaestruturas</Rimverse_BS_MegaEngineer.title>
+  <Rimverse_BS_MegaEngineer.titleShort>engenheiro</Rimverse_BS_MegaEngineer.titleShort>
+  <Rimverse_BS_MegaEngineer.baseDesc>[PAWN_nameDef] ajudou a erguer um anel ao redor de um mundo. Pensa em quilômetros e décadas.</Rimverse_BS_MegaEngineer.baseDesc>
+  <Rimverse_BS_FleetMarine.title>fuzileiro da frota</Rimverse_BS_FleetMarine.title>
+  <Rimverse_BS_FleetMarine.titleShort>fuzileiro</Rimverse_BS_FleetMarine.titleShort>
+  <Rimverse_BS_FleetMarine.baseDesc>[PAWN_nameDef] serviu como fuzileiro de abordagem, lutando corredor por corredor em trajes de vácuo.</Rimverse_BS_FleetMarine.baseDesc>
+  <Rimverse_BS_RadiationWorker.title>operador de reator</Rimverse_BS_RadiationWorker.title>
+  <Rimverse_BS_RadiationWorker.titleShort>operador</Rimverse_BS_RadiationWorker.titleShort>
+  <Rimverse_BS_RadiationWorker.baseDesc>[PAWN_nameDef] cuidava de reatores de fusão num cargueiro de longa distância, aguentando doses que adoeceriam qualquer outro.</Rimverse_BS_RadiationWorker.baseDesc>
+  <Rimverse_BS_Xenobiologist.title>xenobiólogo</Rimverse_BS_Xenobiologist.title>
+  <Rimverse_BS_Xenobiologist.titleShort>xenobiólogo</Rimverse_BS_Xenobiologist.titleShort>
+  <Rimverse_BS_Xenobiologist.baseDesc>[PAWN_nameDef] catalogou vida alienígena em uma dúzia de mundos, de pastadores ovíparos a errantes cristalinos.</Rimverse_BS_Xenobiologist.baseDesc>
+  <Rimverse_BS_WreckSalvager.title>sucateiro de destroços</Rimverse_BS_WreckSalvager.title>
+  <Rimverse_BS_WreckSalvager.titleShort>sucateiro</Rimverse_BS_WreckSalvager.titleShort>
+  <Rimverse_BS_WreckSalvager.baseDesc>[PAWN_nameDef] desmontava naves mortas para vender peças. Distingue um destroço valioso de uma armadilha mortal num relance.</Rimverse_BS_WreckSalvager.baseDesc>
+  <Rimverse_BS_SectorBanker.title>banqueiro de setor</Rimverse_BS_SectorBanker.title>
+  <Rimverse_BS_SectorBanker.titleShort>banqueiro</Rimverse_BS_SectorBanker.titleShort>
+  <Rimverse_BS_SectorBanker.baseDesc>[PAWN_nameDef] administrava contas em três moedas para um banco de setor até que uma quebra de mercado o arruinou.</Rimverse_BS_SectorBanker.baseDesc>
+  <Rimverse_BS_Navigator.title>navegador de hiperrotas</Rimverse_BS_Navigator.title>
+  <Rimverse_BS_Navigator.titleShort>navegador</Rimverse_BS_Navigator.titleShort>
+  <Rimverse_BS_Navigator.baseDesc>[PAWN_nameDef] traçava cursos por hiperrotas e rotas de barra, lendo mapas estelares como outros leem rostos.</Rimverse_BS_Navigator.baseDesc>
+</LanguageData>

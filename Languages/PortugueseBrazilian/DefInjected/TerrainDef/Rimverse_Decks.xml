@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_DeckPlating.label>chapa de convés antiderrapante</Rimverse_DeckPlating.label>
+  <Rimverse_DeckPlating.description>Chapas antiderrapantes parafusadas sobre o casco. Padrão em corredores, porões de carga e hangares.</Rimverse_DeckPlating.description>
+  <Rimverse_DeckGrating.label>grade de engenharia</Rimverse_DeckGrating.label>
+  <Rimverse_DeckGrating.description>Grade de aço vazada sobre cabos e tubulações. Usada em salas de máquinas e reatores para a tripulação alcançar os sistemas de baixo.</Rimverse_DeckGrating.description>
+  <Rimverse_DeckCarpet.label>carpete de convés</Rimverse_DeckCarpet.label>
+  <Rimverse_DeckCarpet.description>Carpete baixo antichamas colado sobre o casco. Silencioso e quente, para alojamentos e salas de estar.</Rimverse_DeckCarpet.description>
+  <Rimverse_DeckSterileTile.label>piso estéril de convés</Rimverse_DeckSterileTile.label>
+  <Rimverse_DeckSterileTile.description>Placas de compósito vedadas, fáceis de desinfetar. Usadas em enfermarias, cozinhas e laboratórios.</Rimverse_DeckSterileTile.description>
+</LanguageData>

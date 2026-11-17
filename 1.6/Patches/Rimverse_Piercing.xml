@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Rimverse_Proj_Railgun"]</xpath>
+    <value>
+      <thingClass>Rimverse.Projectile_Piercing</thingClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Rimverse_Bullet_RailRifle" or defName="Rimverse_Bullet_HeavyRailRifle"]/thingClass</xpath>
+    <value>
+      <thingClass>Rimverse.Projectile_Piercing</thingClass>
+    </value>
+  </Operation>
+</Patch>

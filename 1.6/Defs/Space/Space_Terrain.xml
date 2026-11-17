@@ -26,6 +26,7 @@
     <edgeType>Hard</edgeType>
     <renderPrecedence>300</renderPrecedence>
     <dontRender>true</dontRender>
+    <spaceEdgeGraphicData IsNull="True" />
     <passability>Impassable</passability>
     <layerable>false</layerable>
     <pathCost>300</pathCost>
@@ -50,7 +51,7 @@
 
   <TerrainDef Name="Rimverse_HullFloorBase" ParentName="FloorBase" Abstract="True">
     <texturePath>Rimverse/Terrain/HullFloor</texturePath>
-    <color>(0.30, 0.32, 0.36)</color>
+    <color>(0.62, 0.64, 0.68)</color>
     <edgeType>Hard</edgeType>
     <renderPrecedence>398</renderPrecedence>
     <constructEffect>ConstructMetal</constructEffect>
@@ -60,6 +61,9 @@
     <designationCategory>Rimverse_Ship</designationCategory>
     <designatorDropdown>Rimverse_HullFloors</designatorDropdown>
     <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
       <li>Rimverse_Hull</li>
     </affordances>
     <statBases>
@@ -101,6 +105,97 @@
     <statBases>
       <WorkToBuild>700</WorkToBuild>
     </statBases>
+  </TerrainDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Rimverse_DeckFloors</defName>
+  </DesignatorDropdownGroupDef>
+
+  <TerrainDef Name="Rimverse_DeckFloorBase" ParentName="FloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>250</renderPrecedence>
+    <constructEffect>ConstructMetal</constructEffect>
+    <isPaintable>true</isPaintable>
+    <terrainAffordanceNeeded>Rimverse_Hull</terrainAffordanceNeeded>
+    <designationCategory>Rimverse_Ship</designationCategory>
+    <designatorDropdown>Rimverse_DeckFloors</designatorDropdown>
+    <researchPrerequisites>
+      <li>Rimverse_ShipBasics</li>
+    </researchPrerequisites>
+    <uiOrder>110</uiOrder>
+    <tags>
+      <li>Floor</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="Rimverse_DeckFloorBase">
+    <defName>Rimverse_DeckPlating</defName>
+    <label>tread deck plating</label>
+    <description>Non-slip tread plates bolted over the hull. Standard for corridors, cargo holds and hangars.</description>
+    <texturePath>Rimverse/Terrain/DeckPlating</texturePath>
+    <color>(0.55, 0.56, 0.58)</color>
+    <statBases>
+      <WorkToBuild>400</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.1</Cleanliness>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>3</Steel>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="Rimverse_DeckFloorBase">
+    <defName>Rimverse_DeckGrating</defName>
+    <label>engineering grating</label>
+    <description>Open steel grating over cable and pipe runs. Used in engine rooms and reactor spaces so crews can reach the systems below.</description>
+    <texturePath>Rimverse/Terrain/DeckGrating</texturePath>
+    <color>(0.60, 0.60, 0.62)</color>
+    <statBases>
+      <WorkToBuild>450</WorkToBuild>
+      <Beauty>-1</Beauty>
+      <Cleanliness>0</Cleanliness>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>4</Steel>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="Rimverse_DeckFloorBase">
+    <defName>Rimverse_DeckCarpet</defName>
+    <label>deck carpet</label>
+    <description>Low-pile fire-retardant carpet glued over the hull. Quiet and warm underfoot, for quarters and lounges.</description>
+    <texturePath>Rimverse/Terrain/DeckCarpet</texturePath>
+    <color>(0.35, 0.42, 0.55)</color>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <Beauty>2</Beauty>
+      <Cleanliness>0</Cleanliness>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <costList>
+      <Cloth>6</Cloth>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="Rimverse_DeckFloorBase">
+    <defName>Rimverse_DeckSterileTile</defName>
+    <label>sterile deck tile</label>
+    <description>Sealed composite tiles that are easy to disinfect. Used in medbays, galleys and laboratories.</description>
+    <texturePath>Rimverse/Terrain/DeckSterileTile</texturePath>
+    <color>(0.90, 0.92, 0.94)</color>
+    <statBases>
+      <WorkToBuild>900</WorkToBuild>
+      <Beauty>1</Beauty>
+      <Cleanliness>0.6</Cleanliness>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>3</Steel>
+      <Silver>4</Silver>
+    </costList>
   </TerrainDef>
 
 </Defs>

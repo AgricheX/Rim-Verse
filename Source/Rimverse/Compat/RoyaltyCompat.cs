@@ -39,12 +39,8 @@ namespace Rimverse
             StarSystemId here = loc.SystemId;
             float range = Props.rangeLy * parent.pawn.GetStatValue(StatDefOf.PsychicSensitivity);
             u.SetSystemScan(here, ScanLevel.Exact);
-            int count = 0;
-            foreach (StarEntry e in GalaxyQuery.StarsInRadius(u, here.galaxy, u.PositionOf(here), range))
-            {
-                if (u.GetSystemScan(e.id) < ScanLevel.Range) u.SetSystemScan(e.id, ScanLevel.Range);
-                count++;
-            }
+            int count = GalaxyQuery.StarsInRadius(u, here.galaxy, u.PositionOf(here), range).Count;
+            u.AddScanBubble(here.galaxy, u.PositionOf(here), range, ScanLevel.Range);
             Messages.Message("Rimverse_PsySensed".Translate(parent.pawn.LabelShort, count, range.ToString("0.#")), parent.pawn, MessageTypeDefOf.PositiveEvent, false);
         }
     }

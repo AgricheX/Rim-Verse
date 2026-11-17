@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BackstoryDef>
+    <defName>Rimverse_BS_BeltMinerKid</defName>
+    <title>belt miner's kid</title>
+    <titleShort>miner</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up in a pressurized hab bolted to an asteroid. [PAWN_pronoun] learned to read ore veins before [PAWN_pronoun] could read words.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Mining>4</Mining>
+      <Construction>2</Construction>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_StationChild</defName>
+    <title>station child</title>
+    <titleShort>station kid</titleShort>
+    <baseDesc>Born aboard an orbital station, [PAWN_nameDef] never saw a sky that was not painted on a bulkhead. [PAWN_pronoun] knows every air duct by heart.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Construction>2</Construction>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_ImperialCadetKid</defName>
+    <title>imperial cadet</title>
+    <titleShort>cadet</titleShort>
+    <baseDesc>[PAWN_nameDef] was enrolled in a sector academy at six. Drills, protocol and zero-g combat filled every waking hour.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Shooting>3</Shooting>
+      <Melee>2</Melee>
+      <Social>1</Social>
+    </skillGains>
+    <workDisables>Artistic</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_UrbworldUrchin</defName>
+    <title>urbworld urchin</title>
+    <titleShort>urchin</titleShort>
+    <baseDesc>The lower levels of an urbworld arcology were [PAWN_nameDef]'s playground. [PAWN_pronoun] learned to steal power, food and air.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Melee>2</Melee>
+      <Social>2</Social>
+      <Crafting>1</Crafting>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_GlitterHeir</defName>
+    <title>glitterworld heir</title>
+    <titleShort>heir</titleShort>
+    <baseDesc>[PAWN_nameDef] was raised by tutors and medical drones on a glitterworld estate. Every whim was answered by a machine.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Intellectual>4</Intellectual>
+      <Artistic>2</Artistic>
+      <Social>2</Social>
+    </skillGains>
+    <workDisables>ManualDumb</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_FreighterBrat</defName>
+    <title>freighter brat</title>
+    <titleShort>brat</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up between cargo pods on a long-haul freighter, sleeping in hammocks strung across the hold.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Crafting>2</Crafting>
+      <Construction>2</Construction>
+      <Shooting>1</Shooting>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_PirateWhelp</defName>
+    <title>pirate whelp</title>
+    <titleShort>whelp</titleShort>
+    <baseDesc>Born to a raider crew, [PAWN_nameDef] learned to load a rifle before [PAWN_pronoun] learned to share.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Shooting>3</Shooting>
+      <Melee>3</Melee>
+    </skillGains>
+    <workDisables>Caring</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_ToxicRefugee</defName>
+    <title>toxic world refugee</title>
+    <titleShort>refugee</titleShort>
+    <baseDesc>[PAWN_nameDef]'s homeworld choked on its own industry. [PAWN_pronoun] spent childhood in evacuation camps and filter masks.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Medicine>2</Medicine>
+      <Plants>2</Plants>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_GateWardKid</defName>
+    <title>gate keeper's ward</title>
+    <titleShort>ward</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up in the shadow of an ancient gate, running errands for the technicians who kept it humming.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Intellectual>3</Intellectual>
+      <Crafting>2</Crafting>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_VoidNovice</defName>
+    <title>void novice</title>
+    <titleShort>novice</titleShort>
+    <baseDesc>Given to a monastery drifting in deep space, [PAWN_nameDef] spent years in silent contemplation of the dark between stars.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Social>2</Social>
+      <Artistic>3</Artistic>
+    </skillGains>
+    <workDisables>Violent</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_HydroponicsKid</defName>
+    <title>hydroponics kid</title>
+    <titleShort>grower</titleShort>
+    <baseDesc>[PAWN_nameDef] tended the grow racks of a colony ship, coaxing food out of recycled water and lamp light.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Plants>4</Plants>
+      <Cooking>2</Cooking>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_CryoChild</defName>
+    <title>cryo-born</title>
+    <titleShort>cryo-born</titleShort>
+    <baseDesc>[PAWN_nameDef] was frozen as an infant on a sleeper ship and woke two centuries later in a world [PAWN_pronoun] did not recognize.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Intellectual>2</Intellectual>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_DockRat</defName>
+    <title>dock rat</title>
+    <titleShort>dock rat</titleShort>
+    <baseDesc>[PAWN_nameDef] haunted the docking rings of a trade hub, haggling with spacers for scraps and stories.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Social>3</Social>
+      <Crafting>1</Crafting>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_MegastructureKid</defName>
+    <title>ring dweller</title>
+    <titleShort>ring kid</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up on the inner face of an orbital ring, where the horizon curved upward into the sky.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Construction>3</Construction>
+      <Intellectual>1</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_FleetBorn</defName>
+    <title>fleet-born</title>
+    <titleShort>fleet-born</titleShort>
+    <baseDesc>Born on a migrant fleet that never landed, [PAWN_nameDef] knows a hundred ship captains and no planet.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Shooting>2</Shooting>
+      <Construction>2</Construction>
+      <Social>1</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_HighGravKid</defName>
+    <title>high-g child</title>
+    <titleShort>heavy kid</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up under crushing gravity. Every step built muscle that lighter worlds never demand.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Melee>3</Melee>
+      <Mining>2</Mining>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_MedbayOrphan</defName>
+    <title>medbay orphan</title>
+    <titleShort>orphan</titleShort>
+    <baseDesc>Left at a station medbay, [PAWN_nameDef] was raised by overworked doctors and learned triage by watching.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Medicine>4</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_SalvagerKid</defName>
+    <title>salvager's apprentice</title>
+    <titleShort>salvager</titleShort>
+    <baseDesc>[PAWN_nameDef] crawled through wrecked hulls for a salvage crew, small enough to reach what adults could not.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Crafting>3</Crafting>
+      <Construction>1</Construction>
+      <Mining>1</Mining>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_XenoPetKeeper</defName>
+    <title>xenofauna keeper</title>
+    <titleShort>keeper</titleShort>
+    <baseDesc>[PAWN_nameDef] cared for the strange creatures of a research station's menagerie.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Animals>4</Animals>
+      <Medicine>1</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_SignalChild</defName>
+    <title>signal listener</title>
+    <titleShort>listener</titleShort>
+    <baseDesc>[PAWN_nameDef] spent nights at a deep-space array, listening to static and dreaming of who might answer.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Intellectual>3</Intellectual>
+      <Artistic>2</Artistic>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_BeltMiner</defName>
+    <title>belt miner</title>
+    <titleShort>miner</titleShort>
+    <baseDesc>[PAWN_nameDef] worked the asteroid belts for years, cutting ore in vacuum with a plasma lance and a prayer.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Mining>7</Mining>
+      <Construction>3</Construction>
+    </skillGains>
+    <workDisables>Artistic</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_StationTech</defName>
+    <title>station technician</title>
+    <titleShort>tech</titleShort>
+    <baseDesc>[PAWN_nameDef] kept an orbital station alive: scrubbers, reactors, seals. When something hissed, [PAWN_pronoun] was the one called.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Construction>6</Construction>
+      <Crafting>4</Crafting>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_ImperialOfficer</defName>
+    <title>imperial officer</title>
+    <titleShort>officer</titleShort>
+    <baseDesc>[PAWN_nameDef] commanded a cruiser's gun deck in a sector fleet before politics ended [PAWN_possessive] career.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Shooting>6</Shooting>
+      <Social>5</Social>
+    </skillGains>
+    <workDisables>ManualDumb</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_UrbworldLaborer</defName>
+    <title>urbworld laborer</title>
+    <titleShort>laborer</titleShort>
+    <baseDesc>[PAWN_nameDef] spent years on an urbworld assembly line, twelve-hour shifts beneath recycled air.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Crafting>6</Crafting>
+      <Construction>3</Construction>
+    </skillGains>
+    <workDisables>Intellectual</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_GlitterSurgeon</defName>
+    <title>glitterworld surgeon</title>
+    <titleShort>surgeon</titleShort>
+    <baseDesc>[PAWN_nameDef] operated with nanite-assisted tools on a glitterworld. Primitive instruments horrify [PAWN_objective].</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Medicine>8</Medicine>
+      <Intellectual>4</Intellectual>
+    </skillGains>
+    <workDisables>ManualDumb</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_FreighterPilot</defName>
+    <title>freighter pilot</title>
+    <titleShort>pilot</titleShort>
+    <baseDesc>[PAWN_nameDef] flew cargo between systems, threading warp lanes and dodging customs patrols.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Shooting>3</Shooting>
+      <Intellectual>4</Intellectual>
+      <Social>2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_VoidPirate</defName>
+    <title>void pirate</title>
+    <titleShort>pirate</titleShort>
+    <baseDesc>[PAWN_nameDef] boarded ships for a living. [PAWN_pronoun] knows how to breach a hull and how to make a crew surrender.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Melee>6</Melee>
+      <Shooting>5</Shooting>
+    </skillGains>
+    <workDisables>Caring</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_ToxicSurvivor</defName>
+    <title>toxic world survivor</title>
+    <titleShort>survivor</titleShort>
+    <baseDesc>After [PAWN_possessive] world died, [PAWN_nameDef] scavenged in the ruins and learned to live where nothing should.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Plants>4</Plants>
+      <Medicine>3</Medicine>
+      <Mining>2</Mining>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_GateTechnician</defName>
+    <title>gate technician</title>
+    <titleShort>gate tech</titleShort>
+    <baseDesc>[PAWN_nameDef] calibrated the resonance coils of an ancient gate. [PAWN_pronoun] understands precursor tech better than anyone alive.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Intellectual>7</Intellectual>
+      <Crafting>4</Crafting>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_VoidMonk</defName>
+    <title>void monk</title>
+    <titleShort>monk</titleShort>
+    <baseDesc>[PAWN_nameDef] took vows in a drifting monastery. [PAWN_pronoun] speaks softly and is never afraid of the dark.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Social>5</Social>
+      <Artistic>4</Artistic>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <workDisables>Violent</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_Terraformer</defName>
+    <title>terraformer</title>
+    <titleShort>terraformer</titleShort>
+    <baseDesc>[PAWN_nameDef] seeded dead worlds with engineered microbes and mosses, a job measured in centuries.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Plants>6</Plants>
+      <Intellectual>4</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_CryoCaretaker</defName>
+    <title>cryo caretaker</title>
+    <titleShort>caretaker</titleShort>
+    <baseDesc>[PAWN_nameDef] watched over a sleeper ship's caskets, alone for decades among thousands of frozen dreamers.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Medicine>5</Medicine>
+      <Construction>3</Construction>
+    </skillGains>
+    <workDisables>Social</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_SpaceTrader</defName>
+    <title>orbital trader</title>
+    <titleShort>trader</titleShort>
+    <baseDesc>[PAWN_nameDef] ran a trading post on a docking ring and can sell recycled air to a gas giant.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Social>8</Social>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_MegaEngineer</defName>
+    <title>megastructure engineer</title>
+    <titleShort>engineer</titleShort>
+    <baseDesc>[PAWN_nameDef] helped raise a ring around a world. [PAWN_pronoun] thinks in kilometers and decades.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Construction>8</Construction>
+      <Intellectual>3</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_FleetMarine</defName>
+    <title>fleet marine</title>
+    <titleShort>marine</titleShort>
+    <baseDesc>[PAWN_nameDef] served as a boarding marine, fighting corridor by corridor in vacuum suits.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Shooting>6</Shooting>
+      <Melee>5</Melee>
+    </skillGains>
+    <workDisables>Artistic</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_RadiationWorker</defName>
+    <title>reactor tender</title>
+    <titleShort>tender</titleShort>
+    <baseDesc>[PAWN_nameDef] tended fusion reactors on a deep hauler, shrugging off doses that would sicken anyone else.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Construction>4</Construction>
+      <Crafting>4</Crafting>
+      <Medicine>1</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_Xenobiologist</defName>
+    <title>xenobiologist</title>
+    <titleShort>xenobiologist</titleShort>
+    <baseDesc>[PAWN_nameDef] catalogued alien life across a dozen worlds, from egg-laying grazers to crystalline drifters.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Animals>6</Animals>
+      <Intellectual>5</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_WreckSalvager</defName>
+    <title>wreck salvager</title>
+    <titleShort>salvager</titleShort>
+    <baseDesc>[PAWN_nameDef] stripped dead ships for parts. [PAWN_pronoun] can tell a valuable wreck from a death trap at a glance.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Crafting>5</Crafting>
+      <Construction>3</Construction>
+      <Mining>3</Mining>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_SectorBanker</defName>
+    <title>sector banker</title>
+    <titleShort>banker</titleShort>
+    <baseDesc>[PAWN_nameDef] managed accounts in three currencies for a sector bank until a market crash wiped [PAWN_objective] out.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Social>6</Social>
+      <Intellectual>5</Intellectual>
+    </skillGains>
+    <workDisables>ManualDumb</workDisables>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>Rimverse_BS_Navigator</defName>
+    <title>hyperlane navigator</title>
+    <titleShort>navigator</titleShort>
+    <baseDesc>[PAWN_nameDef] plotted courses through hyperlanes and bar routes, reading star charts the way others read faces.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Intellectual>7</Intellectual>
+      <Social>2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Outlander</li>
+      <li>Pirate</li>
+      <li>Rimverse_Spacer</li>
+    </spawnCategories>
+  </BackstoryDef>
+</Defs>

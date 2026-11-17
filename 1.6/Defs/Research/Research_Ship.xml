@@ -3,7 +3,7 @@
 
   <ResearchTabDef>
     <defName>Rimverse</defName>
-    <label>Rimverse</label>
+    <label>Rimverse: ship</label>
   </ResearchTabDef>
 
   <ResearchProjectDef>
@@ -17,8 +17,8 @@
       <li>Electricity</li>
       <li>Smithing</li>
     </prerequisites>
-    <researchViewX>0</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -27,12 +27,12 @@
     <description>Air generators and air tanks that keep a sealed ship breathable.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -41,12 +41,12 @@
     <description>Heat banks and better radiators to keep ship heat under control.</description>
     <baseCost>2500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -59,22 +59,22 @@
     <prerequisites>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>Rimverse_Armor</defName>
     <label>hull armor</label>
     <description>Armored hull walls built from plasteel.</description>
-    <baseCost>3500</baseCost>
+    <baseCost>800</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>Rimverse</tab>
     <prerequisites>
       <li>Rimverse_ModularStructure</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>2</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -87,22 +87,22 @@
     <prerequisites>
       <li>Rimverse_ModularStructure</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>3</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>Rimverse_BasicSuits</defName>
     <label>basic vacuum suits</label>
     <description>Emergency and work vacuum suits and sealed helmets for leaving the pressurized hull.</description>
-    <baseCost>600</baseCost>
+    <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -111,12 +111,12 @@
     <description>Reinforced mining suits and techniques for asteroids and airless moons.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SensorsTab</tab>
     <prerequisites>
       <li>Rimverse_BasicSuits</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -125,12 +125,12 @@
     <description>Long-range scanners that read nearby star systems in detail.</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SensorsTab</tab>
     <prerequisites>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -139,12 +139,12 @@
     <description>Advanced scanners with exact readings out to 50 light years.</description>
     <baseCost>7000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SensorsTab</tab>
     <prerequisites>
       <li>Rimverse_Sensors</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -153,12 +153,12 @@
     <description>The theory of folding space, and how to refine warp matter at a fabrication bench.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_ThermalControl</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -167,12 +167,12 @@
     <description>A compact warp drive able to jump light ships up to 6 light years.</description>
     <baseCost>6000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_WarpTheory</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -181,13 +181,13 @@
     <description>A heavy warp drive able to jump large ships up to 20 light years.</description>
     <baseCost>10000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_SmallWarp</li>
       <li>Rimverse_NavalCommand</li>
     </prerequisites>
-    <researchViewX>4</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -201,8 +201,8 @@
       <li>Rimverse_NavalCommand</li>
       <li>Rimverse_Armor</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>3</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
 </Defs>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_MultiHaul</defName>
+    <label>pick up and haul</label>
+    <description>Haulers pick up to six nearby items into their inventory in one trip and drop each one at its storage.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>mehni.pickupandhaul</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_PutHere</defName>
+    <label>put it there</label>
+    <description>Right-click an item with a colonist selected, then click a cell, and the item is carried to that exact spot.</description>
+    <category>Work</category>
+    <disableIfModActive>
+      <li>Mlie.PutItThere</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_InstantCaravan</defName>
+    <label>instant caravan when safe</label>
+    <description>When no enemy threatens the map, a button in the caravan window forms and sends the caravan at once.</description>
+    <category>Trade</category>
+    <disableIfModActive>
+      <li>Mlie.InstantCaravan</li>
+      <li>smashphil.dropoff</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_HaulOnTheWay</defName>
+    <label>haul on the way</label>
+    <description>Colonists carry nearby items toward storage on their way to more kinds of work: crafting, building, research, cleaning, farming, mining and repairs. Needs a restart.</description>
+    <category>Work</category>
+    <requiresRestart>true</requiresRestart>
+    <disableIfModActive>
+      <li>CodeOptimist.JobsOfOpportunity</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_MoodColors</defName>
+    <label>mood colors</label>
+    <description>The mood word turns red near a break, yellow when low and green when happy.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Mlie.ColoredMoodBar</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <TransferableSorterDef>
+    <defName>Rimverse_ValuePerMass</defName>
+    <label>value per kg</label>
+    <comparerClass>Rimverse.TransferableComparer_ValuePerMass</comparerClass>
+  </TransferableSorterDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_BuildFromInventory</defName>
+    <label>build from inventory</label>
+    <description>Right-click a blueprint or frame with a colonist who carries the needed materials, and they drop them right there for the builders.</description>
+    <category>Work</category>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_SuitUpOnBreach</defName>
+    <label>suit up on breach</label>
+    <description>When the hull is breached, colonists who are not drafted put on the nearest free vacuum suit and helmet at once.</description>
+    <category>Alerts</category>
+  </Rimverse.QolFeatureDef>
+
+  <JobDef>
+    <defName>Rimverse_DropForBuild</defName>
+    <driverClass>Rimverse.JobDriver_RimverseDropForBuild</driverClass>
+    <reportString>bringing materials to TargetA.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>Rimverse_MultiHaul</defName>
+    <driverClass>Rimverse.JobDriver_RimverseMultiHaul</driverClass>
+    <reportString>hauling several things.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_CallTrader</defName>
+    <label>call a trader</label>
+    <description>The comms console gets a button to call an orbital trader for 300 silver, once every 10 days. Not possible during an orbital siege.</description>
+    <category>Trade</category>
+    <disableIfModActive>
+      <li>arakos.callatrader.acat</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_GoodwillPreview</defName>
+    <label>goodwill preview</label>
+    <description>The trade screen shows your goodwill with the trader's faction, and in gift mode the goodwill you will have after the gift.</description>
+    <category>Trade</category>
+  </Rimverse.QolFeatureDef>
+
+</Defs>
