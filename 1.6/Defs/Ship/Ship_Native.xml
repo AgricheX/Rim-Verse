@@ -7,13 +7,13 @@
     <description>Hydroponics bays that plant and tend crops on their own.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Hydroponics</li>
       <li>Rimverse_LifeSupport</li>
     </prerequisites>
-    <researchViewX>0</researchViewX>
-    <researchViewY>10</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -22,13 +22,13 @@
     <description>Bays that also harvest and send crops to storage, and automatic medical pods.</description>
     <baseCost>4000</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_AdvancedHydroponics</li>
       <li>MicroelectronicsBasics</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>10</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -37,12 +37,12 @@
     <description>Sealed gardens that grow food in zero gravity and help make air.</description>
     <baseCost>6000</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_ShipAutomation</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>10</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -55,8 +55,8 @@
     <prerequisites>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>0</researchViewX>
-    <researchViewY>11</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -69,8 +69,8 @@
     <prerequisites>
       <li>Rimverse_ShipStorage</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>11</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ThingDef ParentName="BuildingBase">

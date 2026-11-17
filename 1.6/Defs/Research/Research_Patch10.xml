@@ -7,13 +7,13 @@
     <description>Cryptosleep caskets rigged for decades of drift: a cheap ship can cross to a star a few light-years away while the crew sleeps through the years.</description>
     <baseCost>2500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_LifeSupport</li>
       <li>Rimverse_Sensors</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -22,12 +22,12 @@
     <description>Charts of the dense, well-traveled lanes inside a galactic bar. Warp jumps between two bar stars cost half the matter, reach twice as far and take half the time.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_SmallWarp</li>
     </prerequisites>
-    <researchViewX>4</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -36,13 +36,13 @@
     <description>How to force a capital ship into the fixed hyperlanes of the rare galaxies that have them, and ride them without fuel.</description>
     <baseCost>6000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_HeavyWarp</li>
       <li>Rimverse_CapitalShips</li>
     </prerequisites>
-    <researchViewX>5</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -55,8 +55,8 @@
     <prerequisites>
       <li>Rimverse_Armor</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>2</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -65,12 +65,12 @@
     <description>Better processing of faint sensor returns. Your sensors read the size class of star systems at twice their normal reach.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SensorsTab</tab>
     <prerequisites>
       <li>Rimverse_AdvancedSensors</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -79,12 +79,12 @@
     <description>Cutting crews and sorting drones for beaten ships. Wrecks left after a space battle give half again as much material.</description>
     <baseCost>2500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SensorsTab</tab>
     <prerequisites>
       <li>Rimverse_Boarding</li>
     </prerequisites>
-    <researchViewX>4</researchViewX>
-    <researchViewY>8</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -97,8 +97,8 @@
     <prerequisites>
       <li>Rimverse_BasicSuits</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>9</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -112,8 +112,8 @@
       <li>Rimverse_ColonyAdministration</li>
       <li>Rimverse_LifeSupport</li>
     </prerequisites>
-    <researchViewX>4</researchViewX>
-    <researchViewY>11</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -122,12 +122,12 @@
     <description>Protocols that let an AI persona core run a colony: steadier stability, less attention from raiders, flawless paperwork.</description>
     <baseCost>5000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>Rimverse_ColonyAdministration</li>
     </prerequisites>
-    <researchViewX>5</researchViewX>
-    <researchViewY>11</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -136,12 +136,12 @@
     <description>Supply chains measured in millions of tons. Each megastructure stage costs a quarter less.</description>
     <baseCost>8000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>Rimverse_Megastructures</li>
     </prerequisites>
-    <researchViewX>14</researchViewX>
-    <researchViewY>8</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -150,12 +150,12 @@
     <description>Accounts with the banks of star civilizations, at their trade terminals. Deposits earn interest, and you can change between silver, orbital credits, stellar marks, sector crowns and the galactic standard.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>Rimverse_Stations</li>
     </prerequisites>
-    <researchViewX>15</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -164,12 +164,12 @@
     <description>Cargo transfer rules for docked traders. With a docking port or a trade terminal, you can sell goods from your holds and storage without an orbital trade beacon.</description>
     <baseCost>2000</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>Rimverse_InterstellarBanking</li>
     </prerequisites>
-    <researchViewX>16</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -178,12 +178,12 @@
     <description>Price feeds from star markets. The bank window shows what each civilization pays more or less for, so you know where to sell.</description>
     <baseCost>2500</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>Rimverse_InterstellarBanking</li>
     </prerequisites>
-    <researchViewX>16</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
 </Defs>

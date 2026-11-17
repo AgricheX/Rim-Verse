@@ -7,13 +7,13 @@
     <description>Compact guns made for corridors, and frangible rounds that break apart instead of punching through the hull.</description>
     <baseCost>1200</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>Gunsmithing</li>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>8</researchViewX>
-    <researchViewY>3</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -22,13 +22,13 @@
     <description>Recoilless laser pistols, carbines and rifles that work well in zero gravity.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_CombatTab</tab>
     <prerequisites>
       <li>Rimverse_ShipboardFirearms</li>
       <li>Rimverse_ShipLasers</li>
     </prerequisites>
-    <researchViewX>9</researchViewX>
-    <researchViewY>3</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -37,13 +37,13 @@
     <description>Hand-held plasma weapons: huge damage and a real danger to the hull.</description>
     <baseCost>4500</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_CombatTab</tab>
     <prerequisites>
       <li>Rimverse_LaserSmallArms</li>
       <li>Rimverse_ShipPlasma</li>
     </prerequisites>
-    <researchViewX>10</researchViewX>
-    <researchViewY>3</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -52,13 +52,13 @@
     <description>Needle pistols, dart throwers and rail rifles that go through armor and thin walls.</description>
     <baseCost>4500</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_CombatTab</tab>
     <prerequisites>
       <li>Rimverse_LaserSmallArms</li>
       <li>Rimverse_Railguns</li>
     </prerequisites>
-    <researchViewX>10</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -67,13 +67,13 @@
     <description>Hull charges, foam and net launchers, stun weapons and special grenades for fighting inside ships.</description>
     <baseCost>2500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_CombatTab</tab>
     <prerequisites>
       <li>Rimverse_ShipboardFirearms</li>
       <li>Rimverse_Boarding</li>
     </prerequisites>
-    <researchViewX>9</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ThingDef ParentName="BaseBullet">

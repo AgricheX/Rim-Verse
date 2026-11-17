@@ -236,6 +236,10 @@ namespace Rimverse
             }
         }
 
+        private static ResearchProjectDef firstContact;
+
+        public static ResearchProjectDef FirstContactResearch => firstContact ?? (firstContact = DefDatabase<ResearchProjectDef>.GetNamedSilentFail("Rimverse_FirstContact"));
+
         public Faction EnsureFaction(Civilization c)
         {
             if (c.faction != null && Find.FactionManager.AllFactionsListForReading.Contains(c.faction)) return c.faction;
@@ -277,6 +281,11 @@ namespace Rimverse
             c.rumored = true;
             c.AddIntel(Mathf.Max(0f, 20f - c.intel));
             EnsureFaction(c);
+            if (FirstContactResearch?.IsFinished == true)
+            {
+                c.AddIntel(20f);
+                ChangePlayerOpinion(c, 10f);
+            }
             if (letter)
             {
                 Find.LetterStack.ReceiveLetter("Rimverse_LetterFirstContactLabel".Translate(c.Name), "Rimverse_LetterFirstContact".Translate(c.Name, ("Rimverse_Stage_" + c.stage).Translate(), c.government?.LabelCap ?? "?", c.ideology?.LabelCap ?? "?", c.tech.ToStringHuman()), c.Hostile ? LetterDefOf.ThreatSmall : LetterDefOf.PositiveEvent);

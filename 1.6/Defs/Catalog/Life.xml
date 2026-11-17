@@ -5,14 +5,14 @@
     <defName>Rimverse_SpaceBotany</defName>
     <label>space botany</label>
     <description>Cultivars bred for tanks, hydroponics and alien soil.</description>
-    <baseCost>1200</baseCost>
+    <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_AdvancedHydroponics</li>
     </prerequisites>
-    <researchViewX>8</researchViewX>
-    <researchViewY>7</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -21,12 +21,12 @@
     <description>Proper meals, cultured protein and crew drinks for long voyages.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>Rimverse_ShipGalley</li>
     </prerequisites>
-    <researchViewX>9</researchViewX>
-    <researchViewY>7</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -35,12 +35,12 @@
     <description>Drugs for shifts, gravity and the void.</description>
     <baseCost>1600</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_SpaceBotany</li>
     </prerequisites>
-    <researchViewX>10</researchViewX>
-    <researchViewY>7</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -49,12 +49,12 @@
     <description>Medicine for vacuum wounds, radiation and alien plagues.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_LifeSupport</li>
     </prerequisites>
-    <researchViewX>8</researchViewX>
-    <researchViewY>8</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -63,12 +63,12 @@
     <description>Implants made for life in the void.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_SpaceMedicine</li>
     </prerequisites>
-    <researchViewX>9</researchViewX>
-    <researchViewY>8</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -81,8 +81,8 @@
     <prerequisites>
       <li>Rimverse_SpaceMining</li>
     </prerequisites>
-    <researchViewX>8</researchViewX>
-    <researchViewY>9</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -96,8 +96,8 @@
       <li>Rimverse_Metallurgy</li>
       <li>Rimverse_WarpTheory</li>
     </prerequisites>
-    <researchViewX>9</researchViewX>
-    <researchViewY>9</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ThingDef ParentName="ResourceBase">

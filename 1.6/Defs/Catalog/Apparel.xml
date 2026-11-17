@@ -7,13 +7,13 @@
     <description>Jumpsuits, uniforms, lab coats and the rest of the clothes worn aboard ship.</description>
     <baseCost>600</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>ComplexClothing</li>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>8</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -22,12 +22,12 @@
     <description>Explorer, boarding, engineer and stealth suits.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_BasicSuits</li>
     </prerequisites>
-    <researchViewX>9</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -36,13 +36,13 @@
     <description>Marine armor sealed against vacuum, magnetic armor and helmets that close over armor.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_CombatTab</tab>
     <prerequisites>
       <li>Rimverse_AdvancedSuits</li>
       <li>Rimverse_Armor</li>
     </prerequisites>
-    <researchViewX>10</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -51,12 +51,12 @@
     <description>Ultra-tech exoskeletons, command suits and living suits.</description>
     <baseCost>7000</baseCost>
     <techLevel>Ultra</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_CombatTab</tab>
     <prerequisites>
       <li>Rimverse_SealedArmor</li>
     </prerequisites>
-    <researchViewX>11</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -65,12 +65,12 @@
     <description>Magnetic boots, thruster belts, oxygen and repair packs, translators and other kit.</description>
     <baseCost>2000</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_BasicSuits</li>
     </prerequisites>
-    <researchViewX>9</researchViewX>
-    <researchViewY>6</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
 
   <ThingDef ParentName="ApparelMakeableBase">

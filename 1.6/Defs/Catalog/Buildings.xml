@@ -7,13 +7,13 @@
     <description>Shielded fission reactors for ships.</description>
     <baseCost>5000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_ShipBasics</li>
       <li>Rimverse_ExoticMaterials</li>
     </prerequisites>
-    <researchViewX>12</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -22,12 +22,12 @@
     <description>Fusion reactors and fusion drives.</description>
     <baseCost>8000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_FissionPower</li>
     </prerequisites>
-    <researchViewX>13</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -36,12 +36,12 @@
     <description>Reactors fed by exotic matter.</description>
     <baseCost>14000</baseCost>
     <techLevel>Ultra</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_FusionPower</li>
     </prerequisites>
-    <researchViewX>14</researchViewX>
-    <researchViewY>0</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -50,12 +50,12 @@
     <description>Electric thrusters and solar sails that need no fuel.</description>
     <baseCost>3500</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_TravelTab</tab>
     <prerequisites>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>12</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -64,12 +64,12 @@
     <description>Detectors that spot ships by heat and emissions.</description>
     <baseCost>3500</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SensorsTab</tab>
     <prerequisites>
       <li>Rimverse_Sensors</li>
     </prerequisites>
-    <researchViewX>12</researchViewX>
-    <researchViewY>2</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -78,12 +78,12 @@
     <description>Signature cloaks and decoys.</description>
     <baseCost>6000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SensorsTab</tab>
     <prerequisites>
       <li>Rimverse_SignatureDetection</li>
     </prerequisites>
-    <researchViewX>13</researchViewX>
-    <researchViewY>2</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -92,12 +92,12 @@
     <description>Launchers for scanning probes.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SensorsTab</tab>
     <prerequisites>
       <li>Rimverse_Sensors</li>
     </prerequisites>
-    <researchViewX>12</researchViewX>
-    <researchViewY>3</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -106,12 +106,12 @@
     <description>Turn ice into air, water and fuel.</description>
     <baseCost>1800</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_LifeSupport</li>
     </prerequisites>
-    <researchViewX>12</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -124,8 +124,8 @@
     <prerequisites>
       <li>Rimverse_ModularStructure</li>
     </prerequisites>
-    <researchViewX>12</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -134,13 +134,13 @@
     <description>Bays for cleaning, hauling, mining and repair drones.</description>
     <baseCost>3500</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SensorsTab</tab>
     <prerequisites>
       <li>Rimverse_ShipAutomation</li>
       <li>Rimverse_ShipOperations</li>
     </prerequisites>
-    <researchViewX>13</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -154,8 +154,8 @@
       <li>Rimverse_ShipOperations</li>
       <li>Rimverse_CapitalShips</li>
     </prerequisites>
-    <researchViewX>14</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -164,12 +164,12 @@
     <description>Internal turrets, bulkheads and security systems.</description>
     <baseCost>2000</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>12</researchViewX>
-    <researchViewY>6</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -182,8 +182,8 @@
     <prerequisites>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>12</researchViewX>
-    <researchViewY>9</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -196,8 +196,8 @@
     <prerequisites>
       <li>Rimverse_ShipBasics</li>
     </prerequisites>
-    <researchViewX>13</researchViewX>
-    <researchViewY>9</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -211,8 +211,8 @@
       <li>Rimverse_ModularStructure</li>
       <li>Rimverse_NavalCommand</li>
     </prerequisites>
-    <researchViewX>12</researchViewX>
-    <researchViewY>7</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -226,8 +226,8 @@
       <li>Rimverse_Stations</li>
       <li>Rimverse_ExoticPower</li>
     </prerequisites>
-    <researchViewX>13</researchViewX>
-    <researchViewY>8</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">

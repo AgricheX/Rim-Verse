@@ -588,15 +588,15 @@
     <defName>Rimverse_ArtificialGravity</defName>
     <label>artificial gravity</label>
     <description>Graviton plating that gives a ship a steady 1 g, ending zero-g sickness and bone loss.</description>
-    <baseCost>5000</baseCost>
+    <baseCost>8000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_LifeSupport</li>
       <li>Rimverse_ThermalControl</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>10</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -605,12 +605,12 @@
     <description>Rations and pastes that keep well aboard a ship, including tubes made for eating in zero gravity.</description>
     <baseCost>800</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>Rimverse</tab>
+    <tab>Rimverse_SocietyTab</tab>
     <prerequisites>
       <li>Rimverse_LifeSupport</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>11</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
 
   <ThingDef ParentName="MealBase">
