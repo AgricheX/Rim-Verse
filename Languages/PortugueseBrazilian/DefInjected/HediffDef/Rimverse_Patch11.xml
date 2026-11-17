@@ -18,6 +18,8 @@
   <Rimverse_FlowZenith.description>Mergulhado na Harmonia. Calmo em qualquer tempestade, e os outros se sentem seguros por perto.</Rimverse_FlowZenith.description>
   <Rimverse_HibernaGroggy.label>torpor do hiberna</Rimverse_HibernaGroggy.label>
   <Rimverse_HibernaGroggy.description>Membros duros depois de um sono longo de hiberna. Passa em um dia.</Rimverse_HibernaGroggy.description>
+  <Rimverse_PetCramped.label>apertado</Rimverse_PetCramped.label>
+  <Rimverse_PetCramped.description>Este animal vive num cômodo pequeno demais para o tamanho dele, numa nave ou base selada. Ele anda de um lado para o outro, come mais e se move rígido. Dê a ele um cômodo com pelo menos doze células por unidade de tamanho do corpo.</Rimverse_PetCramped.description>
   <Rimverse_ZeroGFloating.label>flutuando em gravidade zero</Rimverse_ZeroGFloating.label>
   <Rimverse_ZeroGFloating.description>Sem gravidade, cada passo é um empurrão na parede. Andar fica mais lento, a não ser com botas magnéticas.</Rimverse_ZeroGFloating.description>
 </LanguageData>

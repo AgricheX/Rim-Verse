@@ -167,6 +167,12 @@ Ticks de jogo: {3}</Rimverse_QolDateTip>
   <Rimverse_RoomsWrongReturnLabel>Saída errada</Rimverse_RoomsWrongReturnLabel>
   <Rimverse_RuinResearch>As ruínas precursoras avançaram a pesquisa rara {0}.</Rimverse_RuinResearch>
   <Rimverse_SectorSizeClass>Classe de tamanho do setor: {0}</Rimverse_SectorSizeClass>
+  <Rimverse_SensorVisorBody>{0} ({1}): classe de tamanho {2}</Rimverse_SensorVisorBody>
+  <Rimverse_SensorVisorHere>(você está aqui)</Rimverse_SensorVisorHere>
+  <Rimverse_SensorVisorNothing>O visor não encontra nada para medir.</Rimverse_SensorVisorNothing>
+  <Rimverse_SensorVisorScan>Medir classes de tamanho</Rimverse_SensorVisorScan>
+  <Rimverse_SensorVisorScanDesc>Lê a classe de tamanho do sistema estelar e de cada corpo nele.</Rimverse_SensorVisorScanDesc>
+  <Rimverse_SensorVisorSystem>Sistema {0}: classe de tamanho {1}</Rimverse_SensorVisorSystem>
   <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>
   <Rimverse_SuitUpOnBreach>Brecha no casco: {0} colonos estão vestindo trajes de vácuo.</Rimverse_SuitUpOnBreach>
   <Rimverse_SurfaceCut>Recorte do mapa: {0}, {1} num mundo de {2} km de circunferência</Rimverse_SurfaceCut>

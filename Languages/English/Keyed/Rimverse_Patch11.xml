@@ -167,6 +167,12 @@ Game ticks: {3}</Rimverse_QolDateTip>
   <Rimverse_RoomsWrongReturnLabel>Wrong exit</Rimverse_RoomsWrongReturnLabel>
   <Rimverse_RuinResearch>The precursor ruins advanced the rare research {0}.</Rimverse_RuinResearch>
   <Rimverse_SectorSizeClass>Sector size class: {0}</Rimverse_SectorSizeClass>
+  <Rimverse_SensorVisorBody>{0} ({1}): size class {2}</Rimverse_SensorVisorBody>
+  <Rimverse_SensorVisorHere>(you are here)</Rimverse_SensorVisorHere>
+  <Rimverse_SensorVisorNothing>The visor finds nothing to measure.</Rimverse_SensorVisorNothing>
+  <Rimverse_SensorVisorScan>Scan size classes</Rimverse_SensorVisorScan>
+  <Rimverse_SensorVisorScanDesc>Read the size class of the star system and every body in it.</Rimverse_SensorVisorScanDesc>
+  <Rimverse_SensorVisorSystem>System {0}: size class {1}</Rimverse_SensorVisorSystem>
   <Rimverse_Star_Pulsar>pulsar</Rimverse_Star_Pulsar>
   <Rimverse_SuitUpOnBreach>Hull breach: {0} colonists are putting on vacuum suits.</Rimverse_SuitUpOnBreach>
   <Rimverse_SurfaceCut>Map cut: {0}, {1} on a world {2} km around</Rimverse_SurfaceCut>

@@ -84,7 +84,7 @@
     <defName>Rimverse_Gene_Abyssal</defName>
     <label>abyssal</label>
     <labelShortAdj>abyssal</labelShortAdj>
-    <description>Descendants of an ocean world. Large lungs make them breathe better.</description>
+    <description>Descendants of an ocean world. Large lungs make them breathe better and they move 50% faster through water, but they tire in dry climates.</description>
     <iconPath>Rimverse/UI/Gene/Gene_Abyssal</iconPath>
     <iconColor>(0.55,0.75,0.85)</iconColor>
     <displayCategory>Rimverse_Lineages</displayCategory>
@@ -95,6 +95,12 @@
         <offset>0.1</offset>
       </li>
     </capMods>
+    <modExtensions>
+      <li Class="Rimverse.GeneSpaceExtension">
+        <waterSpeedFactor>1.5</waterSpeedFactor>
+        <dryClimatePenalty>true</dryClimatePenalty>
+      </li>
+    </modExtensions>
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
   </GeneDef>
@@ -103,7 +109,7 @@
     <defName>Rimverse_Gene_VoidBorn</defName>
     <label>void-born</label>
     <labelShortAdj>void-born</labelShortAdj>
-    <description>Descendants of people born on ships and stations. Used to cramped spaces and stale air, they rarely break under confinement.</description>
+    <description>Descendants of people born on ships and stations. Used to cramped spaces and stale air, they rarely break under confinement and are never sick in zero gravity, but open skies frighten them.</description>
     <iconPath>Rimverse/UI/Gene/Gene_VoidBorn</iconPath>
     <iconColor>(0.9,0.9,0.85)</iconColor>
     <displayCategory>Rimverse_Lineages</displayCategory>
@@ -117,6 +123,7 @@
       <li Class="Rimverse.GeneSpaceExtension">
         <cabinFeverFactor>0.5</cabinFeverFactor>
         <zeroGAdapted>true</zeroGAdapted>
+        <fearOfSky>true</fearOfSky>
       </li>
     </modExtensions>
   </GeneDef>

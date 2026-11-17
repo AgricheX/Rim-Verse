@@ -10,6 +10,9 @@ namespace Rimverse
         public float crushBonus;
         public bool zeroGAdapted;
         public bool noClumsy;
+        public bool fearOfSky;
+        public bool dryClimatePenalty;
+        public float waterSpeedFactor = 1f;
     }
 
     public static class GeneSpace

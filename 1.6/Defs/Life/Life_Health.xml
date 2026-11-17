@@ -452,6 +452,7 @@
         <apparel>Rimverse_LineageGarb_Abyssal</apparel>
         <skinColor>(0.58, 0.74, 0.74)</skinColor>
         <dryClimatePenalty>true</dryClimatePenalty>
+        <waterSpeedFactor>1.5</waterSpeedFactor>
       </li>
     </modExtensions>
     <everCurableByItem>false</everCurableByItem>

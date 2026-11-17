@@ -2238,6 +2238,9 @@
         <li>Rimverse_Gear</li>
       </tags>
     </apparel>
+    <comps>
+      <li Class="Rimverse.CompProperties_SensorVisor" />
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">

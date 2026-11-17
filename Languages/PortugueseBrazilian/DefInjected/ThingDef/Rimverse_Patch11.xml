@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <Rimverse_AlgaeTank.label>tanque de algas</Rimverse_AlgaeTank.label>
+  <Rimverse_AlgaeTank.description>Um tanque selado de água verde sob lâmpadas fracas. Só cultiva alga de tanque, planta e cuida dela sozinho e gasta pouca energia. Um colono ainda precisa colher.</Rimverse_AlgaeTank.description>
   <Rimverse_BeamBladeDouble.label>lâmina de feixe dupla</Rimverse_BeamBladeDouble.label>
   <Rimverse_BeamBladeDouble.description>Um cabo com uma lâmina de luz em cada ponta. Só um usuário do Fluxo de nível 4 ou mais consegue empunhá-la.</Rimverse_BeamBladeDouble.description>
   <Rimverse_BeamBladeDouble.tools.0.label>feixe</Rimverse_BeamBladeDouble.tools.0.label>

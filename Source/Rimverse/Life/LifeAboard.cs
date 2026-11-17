@@ -31,7 +31,7 @@ namespace Rimverse
                 if (p.Dead || p.health?.hediffSet == null) continue;
                 if (p.RaceProps.Animal)
                 {
-                    if (tracked) TickAnimal(p);
+                    if (tracked) TickAnimal(p, confined);
                     continue;
                 }
                 if (!p.RaceProps.Humanlike) continue;
@@ -88,7 +88,7 @@ namespace Rimverse
             else Remove(p, LifeDefOf.Rimverse_GravityCrush);
             Toggle(p, LifeDefOf.Rimverse_LowGravityClumsy, lin != null && lin.lowGravityClumsy && g < 0.8f && !GeneSpace.Any(p, e => e.noClumsy));
             Toggle(p, LifeDefOf.Rimverse_LowGravityStride, lin != null && lin.lowGravityStride && g < 0.6f);
-            Toggle(p, LifeDefOf.Rimverse_DryClimate, lin != null && lin.dryClimatePenalty && !confined && map.TileInfo != null && map.TileInfo.rainfall < 400f);
+            Toggle(p, LifeDefOf.Rimverse_DryClimate, (lin != null && lin.dryClimatePenalty || GeneSpace.Any(p, e => e.dryClimatePenalty)) && !confined && map.TileInfo != null && map.TileInfo.rainfall < 400f);
             if (confined)
             {
                 float rate = CabinFeverPerHour * (lin?.cabinFeverFactor ?? 1f) * GeneSpace.Factor(p, e => e.cabinFeverFactor) * CatalogTraits.CabinFeverFactor(p);
@@ -110,8 +110,20 @@ namespace Rimverse
 
         private static bool SpaceBorn(Pawn p) => p.def.defName.StartsWith("Rimverse_") || p.kindDef?.defName?.StartsWith("Rimverse_") == true || p.def.tradeTags != null && p.def.tradeTags.Contains("Rimverse_SpaceAnimal");
 
-        private static void TickAnimal(Pawn p)
+        private static HediffDef petCramped;
+
+        public static bool PetCramped(Pawn p)
         {
+            if (p.Faction != Faction.OfPlayer || !p.Spawned) return false;
+            Room room = p.GetRoom();
+            if (room == null || room.PsychologicallyOutdoors || room.TouchesMapEdge) return false;
+            return room.CellCount < Mathf.CeilToInt(p.BodySize * 12f);
+        }
+
+        private static void TickAnimal(Pawn p, bool confined)
+        {
+            if (petCramped == null) petCramped = DefDatabase<HediffDef>.GetNamedSilentFail("Rimverse_PetCramped");
+            if (petCramped != null) Toggle(p, petCramped, confined && PetCramped(p));
             if (animalFear == null) animalFear = DefDatabase<HediffDef>.GetNamedSilentFail("Rimverse_AnimalZeroGFear");
             if (animalFear == null || SpaceBorn(p)) return;
             Hediff h = p.health.hediffSet.GetFirstHediffOfDef(animalFear);
