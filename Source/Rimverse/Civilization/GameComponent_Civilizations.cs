@@ -122,7 +122,12 @@ namespace Rimverse
                 }
                 double d = Vec3d.Distance(CapitalPosition(c), pos);
                 float r = c.InfluenceRadiusLy;
-                if (!planetHere && d > r) continue;
+                if (!planetHere && d > r)
+                {
+                    double outpost = OutpostDistance(c, pos, id.galaxy);
+                    if (outpost > OutpostRadius(c)) continue;
+                    d = outpost * 2.0;
+                }
                 double score = (planetHere ? 1000.0 : 0.0) + (c.stage * 10 + c.sizeClass / 10.0) / (d + 1.0);
                 if (score > bestScore)
                 {
@@ -341,6 +346,27 @@ namespace Rimverse
                 if (IsNearPlayer(c)) gain += 0.15f;
                 c.AddIntel(gain * days);
             }
+        }
+
+        public const float OutpostRadiusShare = 0.3f;
+        public const float OutpostRadiusMin = 6f;
+
+        public static float OutpostRadius(Civilization c) => c.stage >= 10 ? Mathf.Max(OutpostRadiusMin, c.InfluenceRadiusLy * OutpostRadiusShare) : 0f;
+
+        public static double OutpostDistance(Civilization c, Vec3d pos, int galaxy)
+        {
+            double best = double.MaxValue;
+            GameComponent_Universe u = GameComponent_Universe.Instance;
+            if (u == null) return best;
+            foreach (CivPlanet p in c.planets)
+            {
+                if (p.systemKey.NullOrEmpty() || p.systemKey == c.capitalKey) continue;
+                StarSystemId sid = StarSystemId.FromKey(p.systemKey);
+                if (sid.galaxy != galaxy) continue;
+                double d = Vec3d.Distance(u.PositionOf(sid), pos);
+                if (d < best) best = d;
+            }
+            return best;
         }
 
         public bool IsNearPlayer(Civilization c) => DistanceToPlayer(c, out _) <= NearPlayerLy + c.InfluenceRadiusLy;

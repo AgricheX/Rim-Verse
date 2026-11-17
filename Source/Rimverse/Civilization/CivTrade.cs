@@ -133,6 +133,7 @@ namespace Rimverse
             }
             Civilization local = gc.OwnerOf(StarSystemId.FromKey(f.systemKey)) ?? owner;
             owner.AddStock(CivResource.Luxury, f.cargo * 0.03f);
+            ShipStaples(owner, local, f.cargo);
             if (local != owner)
             {
                 local.AddStock(CivResource.Luxury, f.cargo * 0.015f);
@@ -159,6 +160,23 @@ namespace Rimverse
             }
             f.cargo = 0f;
             FleetLogic.SendHome(gc, owner, f);
+        }
+
+        public const float StapleShare = 0.02f;
+
+        public static void ShipStaples(Civilization from, Civilization to, float cargo)
+        {
+            foreach (CivResource res in new[] { CivResource.Food, CivResource.Water })
+            {
+                float need = to.Population * 0.5f - to.Stock(res);
+                float spare = from.Stock(res) - from.Population * 0.5f;
+                if (to == from || need <= 0f || spare <= 0f) continue;
+                float amount = Mathf.Min(need, spare, cargo * StapleShare);
+                from.AddStock(res, -amount);
+                to.AddStock(res, amount);
+                from.treasury += amount * 30f;
+                to.treasury = Mathf.Max(0f, to.treasury - amount * 30f);
+            }
         }
 
         public static void Competition(GameComponent_Civilizations gc, Civilization c, UniverseRand r, float years)

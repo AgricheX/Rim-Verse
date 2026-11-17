@@ -76,6 +76,7 @@ namespace Rimverse
             float rate = 0.02f * years * (c.stability / 50f) * Mod(c, CivStat.Growth);
             bool famine = c.Stock(CivResource.Food) <= 0f;
             if (famine) rate = -0.03f * years;
+            else if (c.stage >= 9 && c.Stock(CivResource.Water) <= 0f) rate = Mathf.Min(rate, -0.01f * years);
             foreach (CivPlanet p in c.planets) p.population = Mathf.Clamp(p.population * (1f + rate), 0.01f, Mathf.Max(p.capacity, 0.01f));
             float cap = CivilizationGenerator.StagePopMin[Mathf.Clamp(c.stage + 1, 1, 14)] * 1.5f;
             c.frontierPopulation = Mathf.Clamp(c.frontierPopulation * (1f + rate), 0f, Mathf.Max(cap, c.frontierPopulation));
@@ -93,7 +94,22 @@ namespace Rimverse
             c.AddStock(CivResource.Components, prod * 0.1f * Mod(c, CivStat.Research));
             float luxury = c.origin != null && c.origin.defName == "Rimverse_Policy_OriginGlitterworld" ? 0.15f : 0.05f;
             c.AddStock(CivResource.Luxury, prod * luxury);
+            c.AddStock(CivResource.Water, WaterBalance(c, years));
             c.treasury += pop * years * 40f * Mod(c, CivStat.Trade) * (c.stability / 50f);
+        }
+
+        public static float WaterBalance(Civilization c, float years)
+        {
+            GameComponent_Universe u = GameComponent_Universe.Instance;
+            float total = 0f;
+            foreach (CivPlanet p in c.planets)
+            {
+                BodyData b = p.systemKey.NullOrEmpty() ? null : u?.GetSystem(StarSystemId.FromKey(p.systemKey))?.Body(p.body);
+                float water = b == null ? 0.5f : Mathf.Clamp01(b.water) + (b.type.ToString().Contains("Ice") ? 0.5f : 0f);
+                total += p.population * years * (0.6f + water - 1f);
+            }
+            total += c.frontierPopulation * years * 0.1f;
+            return total;
         }
 
         private static void UpdateMoods(Civilization c, float years)
@@ -124,6 +140,7 @@ namespace Rimverse
             }
             if (AtWar(c)) target -= 10f;
             if (c.Stock(CivResource.Food) <= 0f) target -= 20f;
+            if (c.stage >= 9 && c.Stock(CivResource.Water) <= 0f) target -= 10f;
             target -= c.warWeariness * 0.1f;
             c.stability = Mathf.Clamp(Mathf.MoveTowards(c.stability, Mathf.Clamp(target, 0f, 100f), 10f * years), 0f, 100f);
             if (c.stability > 40f) c.stableYears++;

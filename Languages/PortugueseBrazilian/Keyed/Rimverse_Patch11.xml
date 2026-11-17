@@ -106,6 +106,7 @@ Enquanto o cerco durar, nenhum mercador orbital chega até você, as rotas de co
   <Rimverse_MapFilterDanger>Perigo</Rimverse_MapFilterDanger>
   <Rimverse_MapFilterResources>Recursos</Rimverse_MapFilterResources>
   <Rimverse_MapFilterTrade>Rotas comerciais</Rimverse_MapFilterTrade>
+  <Rimverse_MarketShortage>Em falta neste mercado: {0}</Rimverse_MarketShortage>
   <Rimverse_MeterCargo>Carga</Rimverse_MeterCargo>
   <Rimverse_Mission_Siege>cerco orbital</Rimverse_Mission_Siege>
   <Rimverse_MsgEmbargoed>{0} tem um embargo contra você e não vai negociar.</Rimverse_MsgEmbargoed>

@@ -43,7 +43,8 @@ namespace Rimverse
         Fuel,
         WarpMatter,
         Components,
-        Luxury
+        Luxury,
+        Water
     }
 
     public enum LoreKind

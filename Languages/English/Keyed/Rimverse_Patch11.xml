@@ -106,6 +106,7 @@ While the siege lasts, no orbital trader can reach you, trade routes through the
   <Rimverse_MapFilterDanger>Danger</Rimverse_MapFilterDanger>
   <Rimverse_MapFilterResources>Resources</Rimverse_MapFilterResources>
   <Rimverse_MapFilterTrade>Trade routes</Rimverse_MapFilterTrade>
+  <Rimverse_MarketShortage>In short supply here: {0}</Rimverse_MarketShortage>
   <Rimverse_MeterCargo>Cargo</Rimverse_MeterCargo>
   <Rimverse_Mission_Siege>orbital siege</Rimverse_Mission_Siege>
   <Rimverse_MsgEmbargoed>{0} has an embargo against you and will not trade.</Rimverse_MsgEmbargoed>
