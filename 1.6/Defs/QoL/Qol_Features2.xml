@@ -135,6 +135,7 @@
     <category>Combat</category>
     <disableIfModActive>
       <li>RER.AccuracyOverlay</li>
+      <li>ceteam.combatextended</li>
       <li>Mlie.ExplosiveRadius</li>
     </disableIfModActive>
   </Rimverse.QolFeatureDef>
