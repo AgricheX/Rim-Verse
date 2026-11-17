@@ -306,6 +306,7 @@ namespace Rimverse
             if (let == null || delayTicks > 0 || Find.TickManager == null || Find.TickManager.Paused) return;
             if (let.def != LetterDefOf.ThreatBig && let.def != LetterDefOf.ThreatSmall) return;
             if (!QolFeatures.IsEnabled("Rimverse_Qol_AutoPause")) return;
+            if (CompatPatch13.NoForcedSlowdown && CompatPatch13.AnyPlayerShipTraveling()) return;
             Find.TickManager.Pause();
         }
     }
