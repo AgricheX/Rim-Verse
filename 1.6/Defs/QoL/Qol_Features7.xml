@@ -59,6 +59,19 @@
     <comparerClass>Rimverse.TransferableComparer_ValuePerMass</comparerClass>
   </TransferableSorterDef>
 
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_BuildFromInventory</defName>
+    <label>build from inventory</label>
+    <description>Right-click a blueprint or frame with a colonist who carries the needed materials, and they drop them right there for the builders.</description>
+    <category>Work</category>
+  </Rimverse.QolFeatureDef>
+
+  <JobDef>
+    <defName>Rimverse_DropForBuild</defName>
+    <driverClass>Rimverse.JobDriver_RimverseDropForBuild</driverClass>
+    <reportString>bringing materials to TargetA.</reportString>
+  </JobDef>
+
   <JobDef>
     <defName>Rimverse_MultiHaul</defName>
     <driverClass>Rimverse.JobDriver_RimverseMultiHaul</driverClass>
