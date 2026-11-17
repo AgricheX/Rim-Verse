@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rimverse_Dropdown_Air.label>ar e água</Rimverse_Dropdown_Air.label>
+  <Rimverse_Dropdown_Cargo.label>carga e armários</Rimverse_Dropdown_Cargo.label>
+  <Rimverse_Dropdown_Defense.label>escudos e camuflagem</Rimverse_Dropdown_Defense.label>
+  <Rimverse_Dropdown_Heat.label>calor</Rimverse_Dropdown_Heat.label>
+  <Rimverse_Dropdown_Hull.label>casco</Rimverse_Dropdown_Hull.label>
+  <Rimverse_Dropdown_Power.label>energia</Rimverse_Dropdown_Power.label>
+  <Rimverse_Dropdown_Sensors.label>sensores</Rimverse_Dropdown_Sensors.label>
+  <Rimverse_Dropdown_Thrusters.label>propulsores</Rimverse_Dropdown_Thrusters.label>
+  <Rimverse_Dropdown_Warp.label>dobra</Rimverse_Dropdown_Warp.label>
+  <Rimverse_Dropdown_Weapons.label>armas de nave</Rimverse_Dropdown_Weapons.label>
+</LanguageData>

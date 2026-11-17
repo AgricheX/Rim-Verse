@@ -326,6 +326,7 @@
       <li Class="CompProperties_Breakdownable"/>
       <li Class="Rimverse.CompProperties_RadiationLeak"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Power</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -379,6 +380,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Power</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -432,6 +434,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Power</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -471,6 +474,7 @@
         <transmitsPower>true</transmitsPower>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Power</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -512,6 +516,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Thrusters</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -562,6 +567,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Thrusters</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -595,6 +601,7 @@
       </li>
       <li Class="CompProperties_Flickable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Thrusters</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -693,6 +700,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Air</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -733,6 +741,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Air</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -809,6 +818,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Heat</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -856,6 +866,7 @@
         <fuelPerUse>10</fuelPerUse>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Heat</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -907,6 +918,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Sensors</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -947,6 +959,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Sensors</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -1020,6 +1033,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Defense</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -1368,6 +1382,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Thrusters</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -2083,6 +2098,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -2129,6 +2145,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -2175,6 +2192,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -2234,6 +2252,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -2294,6 +2313,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -2355,6 +2375,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -2414,6 +2435,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -2460,6 +2482,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -2518,6 +2541,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -2564,6 +2588,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -2623,6 +2648,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -2670,6 +2696,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Weapons</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">

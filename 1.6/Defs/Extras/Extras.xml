@@ -36,6 +36,7 @@
         <hullPoints>30</hullPoints>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Hull</designatorDropdown>
   </ThingDef>
 
   <ThoughtDef>

@@ -142,6 +142,7 @@
         <cargoTons>2</cargoTons>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Cargo</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -212,6 +213,7 @@
         <cargoTons>8</cargoTons>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Cargo</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -283,6 +285,7 @@
         <cargoTons>3</cargoTons>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Cargo</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -358,6 +361,7 @@
         <cargoTons>2</cargoTons><heatPerSecond>0.5</heatPerSecond>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Cargo</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -429,6 +433,7 @@
         <cargoTons>2</cargoTons>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Cargo</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -506,6 +511,7 @@
         <cargoTons>1</cargoTons>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Cargo</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -574,6 +580,7 @@
         <cargoTons>1</cargoTons>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Cargo</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -642,6 +649,7 @@
         <cargoTons>2</cargoTons>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Cargo</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -712,6 +720,7 @@
         <cargoTons>4</cargoTons>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Cargo</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -782,6 +791,7 @@
         <cargoTons>1</cargoTons>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Cargo</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">

@@ -233,6 +233,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Power</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -270,6 +271,7 @@
       </li>
       <li Class="CompProperties_Flickable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Power</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -307,6 +309,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Power</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -342,6 +345,7 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Thrusters</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -379,6 +383,7 @@
       </li>
       <li Class="CompProperties_Flickable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Thrusters</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -462,6 +467,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Air</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -494,6 +500,7 @@
         <lifeSupport>true</lifeSupport>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Air</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -525,6 +532,7 @@
         <heatRemovalPerSecond>3</heatRemovalPerSecond>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Heat</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -556,6 +564,7 @@
         <heatCapacity>200</heatCapacity>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Heat</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -593,6 +602,7 @@
       </li>
       <li Class="CompProperties_Flickable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Sensors</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -630,6 +640,7 @@
       </li>
       <li Class="CompProperties_Flickable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Sensors</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -668,6 +679,7 @@
       </li>
       <li Class="CompProperties_Flickable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Sensors</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -710,6 +722,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Warp</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -752,6 +765,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Warp</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -797,6 +811,7 @@
         <initialFuelPercent>0</initialFuelPercent>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Warp</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Rimverse_ShipModuleBase">
@@ -853,6 +868,7 @@
         <cargoTons>20</cargoTons>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Cargo</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Wall">
@@ -888,6 +904,7 @@
         <hullPoints>60</hullPoints>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Hull</designatorDropdown>
   </ThingDef>
 
   <ThingDef ParentName="Wall">
@@ -923,6 +940,7 @@
         <hullPoints>180</hullPoints>
       </li>
     </comps>
+    <designatorDropdown>Rimverse_Dropdown_Hull</designatorDropdown>
   </ThingDef>
 
 </Defs>
