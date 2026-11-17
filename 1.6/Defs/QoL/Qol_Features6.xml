@@ -61,6 +61,7 @@
     <category>Combat</category>
     <disableIfModActive>
       <li>PeteTimesSix.SimpleSidearms</li>
+      <li>memegoddess.dualwield</li>
     </disableIfModActive>
   </Rimverse.QolFeatureDef>
 

@@ -8,6 +8,7 @@
     <category>Interface</category>
     <disableIfModActive>
       <li>brrainz.followme</li>
+      <li>ferny.perspectiveshift</li>
     </disableIfModActive>
   </Rimverse.QolFeatureDef>
 

@@ -384,6 +384,7 @@ namespace Rimverse
                 RimverseLog.Message("Known mods active: " + on.Count + " (" + string.Join(", ", on.GroupBy(id => CompatRegistry.Known[id]).Select(g => g.Key + " " + g.Count())) + ")");
                 if (CompatRegistry.AnyActive(CompatGroup.Vehicles)) CompatActions.ForeignVehicles();
                 if (CompatRegistry.AnyActive(CompatGroup.Factions)) CompatActions.MarkForeignFactions();
+                CompatGroupTweaks.Apply();
             }
             catch (System.Exception e)
             {

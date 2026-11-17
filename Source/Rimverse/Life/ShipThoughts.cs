@@ -133,7 +133,7 @@ namespace Rimverse
             RimverseShip s = ShipThoughts.ShipOf(p);
             if (s == null) return false;
             int crew = Mathf.Max(1, s.crewCount);
-            return s.cells.Count / (float)crew < 16f;
+            return s.cells.Count / (float)crew < CompatGroupTweaks.CrowdedCellsPerCrew;
         }
     }
 
