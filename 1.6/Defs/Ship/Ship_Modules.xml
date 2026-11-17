@@ -687,8 +687,7 @@
     </statBases>
     <costList>
       <Plasteel>200</Plasteel>
-      <ComponentSpacer>3</ComponentSpacer>
-      <Uranium>40</Uranium>
+      <Rimverse_WarpCore>1</Rimverse_WarpCore>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_SmallWarp</li>
@@ -730,8 +729,7 @@
     </statBases>
     <costList>
       <Plasteel>500</Plasteel>
-      <ComponentSpacer>8</ComponentSpacer>
-      <Uranium>120</Uranium>
+      <Rimverse_WarpCore>3</Rimverse_WarpCore>
     </costList>
     <researchPrerequisites>
       <li>Rimverse_HeavyWarp</li>

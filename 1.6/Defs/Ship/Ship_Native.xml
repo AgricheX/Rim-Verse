@@ -923,8 +923,7 @@
     </statBases>
     <size>(1,4)</size>
     <costList>
-      <Steel>160</Steel>
-      <Plasteel>30</Plasteel>
+      <Steel>100</Steel>
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <fertility>3</fertility>
@@ -946,8 +945,9 @@
       <li Class="CompProperties_Flickable" />
       <li Class="Rimverse.CompProperties_ShipPart">
         <role>Garden</role>
-        <mass>3</mass>
-        <airPerHour>3</airPerHour>
+        <mass>6</mass>
+        <heatPerSecond>0.2</heatPerSecond>
+        <airPerHour>2</airPerHour>
       </li>
     </comps>
     <modExtensions>

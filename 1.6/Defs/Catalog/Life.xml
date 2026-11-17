@@ -2117,6 +2117,7 @@
     </statBases>
     <ingestible>
       <preferability>MealFine</preferability>
+      <tasteThought>AteFineMeal</tasteThought>
     </ingestible>
   </ThingDef>
 
@@ -2185,6 +2186,7 @@
     </statBases>
     <ingestible>
       <preferability>MealLavish</preferability>
+      <tasteThought>AteLavishMeal</tasteThought>
     </ingestible>
   </ThingDef>
 
