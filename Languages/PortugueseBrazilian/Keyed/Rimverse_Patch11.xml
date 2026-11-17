@@ -22,6 +22,9 @@
   <Rimverse_ContractSpyCaught>{0} pegou seus espiões. O contrato falhou.</Rimverse_ContractSpyCaught>
   <Rimverse_CosmicRegion>Região da teia: um agrupamento mais solto de aglomerados entre as paredes.</Rimverse_CosmicRegion>
   <Rimverse_CosmicWebCounts>{0} vazios, {1} paredes, {2} superaglomerados e {3} regiões neste chunk.</Rimverse_CosmicWebCounts>
+  <Rimverse_DesNoTurretFire>Sem tiro de torres</Rimverse_DesNoTurretFire>
+  <Rimverse_DesNoTurretFireClear>Limpar sem tiro de torres</Rimverse_DesNoTurretFireClear>
+  <Rimverse_DesNoTurretFireDesc>Marca células onde suas torres nunca atiram em nada.</Rimverse_DesNoTurretFireDesc>
   <Rimverse_DistrictSizeClass>Classe de tamanho do distrito: {0}</Rimverse_DistrictSizeClass>
   <Rimverse_EnemyClass_0>caça</Rimverse_EnemyClass_0>
   <Rimverse_EnemyClass_1>corveta</Rimverse_EnemyClass_1>
@@ -97,18 +100,32 @@ Dias desde o pouso: {2}
 Ticks de jogo: {3}</Rimverse_QolDateTip>
   <Rimverse_QolDaysToRot>Dias até estragar</Rimverse_QolDaysToRot>
   <Rimverse_QolDaysToRotDesc>Quantos dias este item dura na temperatura atual.</Rimverse_QolDaysToRotDesc>
+  <Rimverse_QolExportSettings>Exportar opções para um arquivo</Rimverse_QolExportSettings>
   <Rimverse_QolFollow>Seguir</Rimverse_QolFollow>
   <Rimverse_QolFollowDesc>Mantém a câmera neste colono até você desligar.</Rimverse_QolFollowDesc>
   <Rimverse_QolGaugeInspect>Temperatura do cômodo: {0}</Rimverse_QolGaugeInspect>
+  <Rimverse_QolImportSettings>Importar opções do arquivo</Rimverse_QolImportSettings>
   <Rimverse_QolLinkPlanters>Ligar canteiros</Rimverse_QolLinkPlanters>
   <Rimverse_QolLinkPlantersDesc>Copia esta planta para todos os canteiros ligados do mesmo tipo.</Rimverse_QolLinkPlantersDesc>
   <Rimverse_QolLinkPlantersDone>{0} canteiros agora cultivam a mesma planta.</Rimverse_QolLinkPlantersDone>
   <Rimverse_QolMovePatient>Levar {0} para {1} ({2})</Rimverse_QolMovePatient>
   <Rimverse_QolNeverRots>não estraga aqui</Rimverse_QolNeverRots>
+  <Rimverse_QolQuickSaved>Jogo salvo: {0}</Rimverse_QolQuickSaved>
   <Rimverse_QolQuickStockpile>Estoque da sala</Rimverse_QolQuickStockpile>
   <Rimverse_QolQuickStockpileDesc>Transforma todas as células livres desta sala em estoque.</Rimverse_QolQuickStockpileDesc>
   <Rimverse_QolQuickStockpileDone>Estoque criado com {0} células.</Rimverse_QolQuickStockpileDone>
   <Rimverse_QolQuickStockpileNoRoom>Este módulo não está dentro de uma sala fechada.</Rimverse_QolQuickStockpileNoRoom>
+  <Rimverse_QolRandomScenario>Cenário aleatório</Rimverse_QolRandomScenario>
+  <Rimverse_QolRemoteStock>O que está à venda</Rimverse_QolRemoteStock>
+  <Rimverse_QolRemoteStockDesc>Veja o que os comerciantes deste povoado vendem agora.</Rimverse_QolRemoteStockDesc>
+  <Rimverse_QolRemoteStockEmpty>Nada à venda agora.</Rimverse_QolRemoteStockEmpty>
+  <Rimverse_QolRemoteStockTitle>{0} ({1}), relação {2}</Rimverse_QolRemoteStockTitle>
+  <Rimverse_QolRename>Renomear</Rimverse_QolRename>
+  <Rimverse_QolRenameDesc>Dá a esta construção o nome que você quiser.</Rimverse_QolRenameDesc>
+  <Rimverse_QolRenameReset>Nome original</Rimverse_QolRenameReset>
+  <Rimverse_QolSettingsExported>Opções exportadas para {0}.</Rimverse_QolSettingsExported>
+  <Rimverse_QolSettingsImported>Opções importadas.</Rimverse_QolSettingsImported>
+  <Rimverse_QolSettingsNoFile>Nenhuma opção exportada encontrada em {0}.</Rimverse_QolSettingsNoFile>
   <Rimverse_QolTreatFirst>Tratar primeiro</Rimverse_QolTreatFirst>
   <Rimverse_QolTreatFirstDesc>Os médicos tratam este colono antes de todos.</Rimverse_QolTreatFirstDesc>
   <Rimverse_RaiderKind_BountyHunters>caçadores de recompensa</Rimverse_RaiderKind_BountyHunters>

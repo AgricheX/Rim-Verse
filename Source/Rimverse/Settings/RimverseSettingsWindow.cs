@@ -102,6 +102,11 @@ namespace Rimverse
             {
                 s.ResetToDefaults();
             }
+            if (QolFeatures.IsEnabled("Rimverse_Qol_ExportSettings"))
+            {
+                if (l.ButtonText("Rimverse_QolExportSettings".Translate())) QolWork6.ExportSettings();
+                if (l.ButtonText("Rimverse_QolImportSettings".Translate())) QolWork6.ImportSettings();
+            }
         }
 
         private static void DrawUniverse(Listing_Standard l, RimverseSettings s)

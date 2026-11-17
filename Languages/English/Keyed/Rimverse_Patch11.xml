@@ -22,6 +22,9 @@
   <Rimverse_ContractSpyCaught>{0} caught your spies. The contract failed.</Rimverse_ContractSpyCaught>
   <Rimverse_CosmicRegion>Region of the web: a looser grouping of clusters between walls.</Rimverse_CosmicRegion>
   <Rimverse_CosmicWebCounts>{0} voids, {1} walls, {2} superclusters and {3} regions in this chunk.</Rimverse_CosmicWebCounts>
+  <Rimverse_DesNoTurretFire>No turret fire</Rimverse_DesNoTurretFire>
+  <Rimverse_DesNoTurretFireClear>Clear no turret fire</Rimverse_DesNoTurretFireClear>
+  <Rimverse_DesNoTurretFireDesc>Mark cells where your turrets never shoot at anything.</Rimverse_DesNoTurretFireDesc>
   <Rimverse_DistrictSizeClass>District size class: {0}</Rimverse_DistrictSizeClass>
   <Rimverse_EnemyClass_0>fighter</Rimverse_EnemyClass_0>
   <Rimverse_EnemyClass_1>corvette</Rimverse_EnemyClass_1>
@@ -97,18 +100,32 @@ Days since landing: {2}
 Game ticks: {3}</Rimverse_QolDateTip>
   <Rimverse_QolDaysToRot>Days until rotten</Rimverse_QolDaysToRot>
   <Rimverse_QolDaysToRotDesc>How many days this item lasts at the current temperature.</Rimverse_QolDaysToRotDesc>
+  <Rimverse_QolExportSettings>Export settings to a file</Rimverse_QolExportSettings>
   <Rimverse_QolFollow>Follow</Rimverse_QolFollow>
   <Rimverse_QolFollowDesc>Keep the camera on this colonist until you turn it off.</Rimverse_QolFollowDesc>
   <Rimverse_QolGaugeInspect>Room temperature: {0}</Rimverse_QolGaugeInspect>
+  <Rimverse_QolImportSettings>Import settings from the file</Rimverse_QolImportSettings>
   <Rimverse_QolLinkPlanters>Link planters</Rimverse_QolLinkPlanters>
   <Rimverse_QolLinkPlantersDesc>Copy this plant to every connected planter of the same kind.</Rimverse_QolLinkPlantersDesc>
   <Rimverse_QolLinkPlantersDone>{0} planters now grow the same plant.</Rimverse_QolLinkPlantersDone>
   <Rimverse_QolMovePatient>Move {0} to {1} ({2})</Rimverse_QolMovePatient>
   <Rimverse_QolNeverRots>does not rot here</Rimverse_QolNeverRots>
+  <Rimverse_QolQuickSaved>Game saved: {0}</Rimverse_QolQuickSaved>
   <Rimverse_QolQuickStockpile>Room stockpile</Rimverse_QolQuickStockpile>
   <Rimverse_QolQuickStockpileDesc>Turn every free cell of this room into a stockpile.</Rimverse_QolQuickStockpileDesc>
   <Rimverse_QolQuickStockpileDone>Stockpile created with {0} cells.</Rimverse_QolQuickStockpileDone>
   <Rimverse_QolQuickStockpileNoRoom>This module is not inside a closed room.</Rimverse_QolQuickStockpileNoRoom>
+  <Rimverse_QolRandomScenario>Random scenario</Rimverse_QolRandomScenario>
+  <Rimverse_QolRemoteStock>What's for sale</Rimverse_QolRemoteStock>
+  <Rimverse_QolRemoteStockDesc>See what the traders of this settlement sell right now.</Rimverse_QolRemoteStockDesc>
+  <Rimverse_QolRemoteStockEmpty>Nothing for sale right now.</Rimverse_QolRemoteStockEmpty>
+  <Rimverse_QolRemoteStockTitle>{0} ({1}), goodwill {2}</Rimverse_QolRemoteStockTitle>
+  <Rimverse_QolRename>Rename</Rimverse_QolRename>
+  <Rimverse_QolRenameDesc>Give this building a name of your choice.</Rimverse_QolRenameDesc>
+  <Rimverse_QolRenameReset>Original name</Rimverse_QolRenameReset>
+  <Rimverse_QolSettingsExported>Settings exported to {0}.</Rimverse_QolSettingsExported>
+  <Rimverse_QolSettingsImported>Settings imported.</Rimverse_QolSettingsImported>
+  <Rimverse_QolSettingsNoFile>No exported settings found at {0}.</Rimverse_QolSettingsNoFile>
   <Rimverse_QolTreatFirst>Treat first</Rimverse_QolTreatFirst>
   <Rimverse_QolTreatFirstDesc>Doctors treat this colonist before anyone else.</Rimverse_QolTreatFirstDesc>
   <Rimverse_RaiderKind_BountyHunters>bounty hunters</Rimverse_RaiderKind_BountyHunters>

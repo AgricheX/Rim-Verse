@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_RemoteStock</defName>
+    <label>see what is for sale</label>
+    <description>A button on settlements on the world map lists what their traders sell before you travel there.</description>
+    <category>Trade</category>
+    <disableIfModActive>
+      <li>Mlie.WhatsForSale</li>
+      <li>Mlie.TradeHelper</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_RandomScenario</defName>
+    <label>random scenario</label>
+    <description>A button on the scenario list picks a random scenario.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Mlie.RandomScenario</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_FairFriendlyFire</defName>
+    <label>fairer friendly fire</label>
+    <description>Shots passing by allies of the shooter usually miss them, more often the better the shooter is. The intended target is not affected.</description>
+    <category>Combat</category>
+    <disableIfModActive>
+      <li>Mlie.FriendlyFire</li>
+      <li>Fluffy.FriendlyFire</li>
+      <li>ceteam.combatextended</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_TurretExclusion</defName>
+    <label>turret no-fire zone</label>
+    <description>An area in the Orders menu where your turrets never shoot, to keep them away from your own airlock or hangar.</description>
+    <category>Combat</category>
+    <disableIfModActive>
+      <li>Mlie.TurretExclusion</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_QuickSave</defName>
+    <label>quick save</label>
+    <description>A key (F6 by default) saves the game right away, named after the colony and the date.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Mlie.QuickSaveLoad</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_Sidearms</defName>
+    <label>sidearms</label>
+    <description>Colonists carrying a melee weapon in their inventory swap to it when an enemy is adjacent, and back to the gun when the fight is over.</description>
+    <category>Combat</category>
+    <disableIfModActive>
+      <li>PeteTimesSix.SimpleSidearms</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_Rename</defName>
+    <label>rename buildings</label>
+    <description>A button on your buildings gives them a name of your choice.</description>
+    <category>Interface</category>
+    <disableIfModActive>
+      <li>Mlie.RenameEverything</li>
+      <li>Mlie.Renamer</li>
+    </disableIfModActive>
+  </Rimverse.QolFeatureDef>
+
+  <Rimverse.QolFeatureDef>
+    <defName>Rimverse_Qol_ExportSettings</defName>
+    <label>export and import settings</label>
+    <description>Buttons in the general settings save these settings to a file and load them back, to carry them to another save or computer.</description>
+    <category>Interface</category>
+  </Rimverse.QolFeatureDef>
+
+  <KeyBindingDef>
+    <defName>Rimverse_QuickSave</defName>
+    <label>quick save</label>
+    <category>Rimverse_Keys</category>
+    <defaultKeyCodeA>F6</defaultKeyCodeA>
+  </KeyBindingDef>
+
+  <TransferableSorterDef>
+    <defName>Rimverse_BestSkill</defName>
+    <label>best skill</label>
+    <comparerClass>Rimverse.TransferableComparer_BestSkill</comparerClass>
+  </TransferableSorterDef>
+
+</Defs>

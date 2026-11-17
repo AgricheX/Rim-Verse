@@ -12,6 +12,8 @@
       <li>Rimverse.Designator_RimverseHaulArea</li>
       <li>Rimverse.Designator_RimverseCopyBuildings</li>
       <li>Rimverse.Designator_RimversePasteBuildings</li>
+      <li>Rimverse.Designator_RimverseNoTurretFire</li>
+      <li>Rimverse.Designator_RimverseNoTurretFireClear</li>
     </value>
   </Operation>
 </Patch>
