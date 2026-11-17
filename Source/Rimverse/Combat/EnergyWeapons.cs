@@ -121,15 +121,6 @@ namespace Rimverse
     [HarmonyPatch(typeof(Verb_Shoot), "TryCastShot")]
     public static class Patch_EnergyCellShot
     {
-        public static bool Prefix(Verb_Shoot __instance, ref bool __result)
-        {
-            if (!CompEnergyCell.Enabled) return true;
-            CompEnergyCell c = CompEnergyCell.Of(__instance);
-            if (c == null || c.CanFire) return true;
-            __result = false;
-            return false;
-        }
-
         public static void Postfix(Verb_Shoot __instance, bool __result)
         {
             if (!__result || !CompEnergyCell.Enabled) return;

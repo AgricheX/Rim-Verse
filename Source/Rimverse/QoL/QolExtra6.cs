@@ -139,21 +139,16 @@ namespace Rimverse
     [HarmonyPatch(typeof(Projectile), "CanHit")]
     public static class Patch_QolFriendlyFire
     {
-        public static bool Prefix(Projectile __instance, Thing thing, Thing ___launcher, LocalTargetInfo ___intendedTarget, ref bool __result)
+        public static void Postfix(Projectile __instance, Thing thing, Thing ___launcher, LocalTargetInfo ___intendedTarget, ref bool __result)
         {
-            if (!(thing is Pawn p) || ___launcher == null || p.Faction == null || p.Faction != ___launcher.Faction) return true;
-            if (___intendedTarget.Thing == thing || !QolFeatures.IsEnabled("Rimverse_Qol_FairFriendlyFire")) return true;
+            if (!__result || !(thing is Pawn p) || ___launcher == null || p.Faction == null || p.Faction != ___launcher.Faction) return;
+            if (___intendedTarget.Thing == thing || !QolFeatures.IsEnabled("Rimverse_Qol_FairFriendlyFire")) return;
             float chance = 0.7f;
             if (___launcher is Pawn shooter && shooter.skills != null)
             {
                 chance = Mathf.Clamp(0.5f + shooter.skills.GetSkill(SkillDefOf.Shooting).Level * 0.025f, 0.5f, 0.95f);
             }
-            if (Rand.ChanceSeeded(chance, Gen.HashCombineInt(__instance.thingIDNumber, thing.thingIDNumber)))
-            {
-                __result = false;
-                return false;
-            }
-            return true;
+            if (Rand.ChanceSeeded(chance, Gen.HashCombineInt(__instance.thingIDNumber, thing.thingIDNumber))) __result = false;
         }
     }
 
