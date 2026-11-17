@@ -338,6 +338,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Gravitated</apparel>
         <bodyTypeMale>Hulk</bodyTypeMale>
         <bodyTypeFemale>Hulk</bodyTypeFemale>
         <crushLimit>1.6</crushLimit>
@@ -365,6 +366,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Slender</apparel>
         <bodyTypeMale>Thin</bodyTypeMale>
         <bodyTypeFemale>Thin</bodyTypeFemale>
         <lowGravityStride>true</lowGravityStride>
@@ -392,6 +394,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Boreal</apparel>
         <skinColor>(0.96, 0.92, 0.90)</skinColor>
       </li>
     </modExtensions>
@@ -418,6 +421,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Solar</apparel>
         <skinColor>(0.36, 0.26, 0.20)</skinColor>
       </li>
     </modExtensions>
@@ -445,6 +449,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Abyssal</apparel>
         <skinColor>(0.58, 0.74, 0.74)</skinColor>
         <dryClimatePenalty>true</dryClimatePenalty>
       </li>
@@ -467,6 +472,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_VoidBorn</apparel>
         <skinColor>(0.86, 0.86, 0.92)</skinColor>
         <zeroGAdapted>true</zeroGAdapted>
         <cabinFeverFactor>0.5</cabinFeverFactor>
@@ -494,6 +500,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Rad</apparel>
         <skinColor>(0.70, 0.58, 0.48)</skinColor>
       </li>
     </modExtensions>
@@ -518,6 +525,7 @@
     </stages>
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
+        <apparel>Rimverse_LineageGarb_Horned</apparel>
       </li>
     </modExtensions>
     <everCurableByItem>false</everCurableByItem>

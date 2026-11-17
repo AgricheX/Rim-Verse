@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Rimverse_BreedingStall</defName>
+    <label>breeding stall</label>
+    <description>A padded stall for small farm animals aboard a ship. Animals with a body size of 0.6 or less in the same room, within 3 cells, lay eggs and grow milk and wool 30% faster. Big animals gain nothing from it, so small livestock yields more in little space.</description>
+    <techLevel>Industrial</techLevel>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Rimverse/Things/Building/Furniture/ZeroGSleepingBag</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <color>(0.62,0.5,0.36)</color>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.3</fillPercent>
+    <tickerType>Rare</tickerType>
+    <designationCategory>Furniture</designationCategory>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>12</Mass>
+      <Flammability>0.6</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <Cloth>20</Cloth>
+    </costList>
+    <researchPrerequisites>
+      <li>Rimverse_ShipFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="Rimverse.CompProperties_BreedingStall">
+        <radius>3</radius>
+        <maxBodySize>0.6</maxBodySize>
+        <bonus>0.3</bonus>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

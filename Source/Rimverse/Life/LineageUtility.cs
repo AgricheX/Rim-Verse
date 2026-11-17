@@ -78,9 +78,23 @@ namespace Rimverse
             if (BiotechCompat.TryXenotype(pawn, civ.lineage))
             {
                 ApplyLooks(pawn, def);
-                return;
             }
-            Apply(pawn, def);
+            else
+            {
+                Apply(pawn, def);
+            }
+            WearGarb(pawn, def);
+        }
+
+        public static void WearGarb(Pawn pawn, HediffDef def)
+        {
+            ThingDef garb = def?.GetModExtension<LineageExtension>()?.apparel;
+            if (garb == null || pawn.apparel == null || !pawn.DevelopmentalStage.Adult() || !Rand.Chance(0.5f)) return;
+            if (!ApparelUtility.HasPartsToWear(pawn, garb)) return;
+            ThingDef stuff = GenStuff.RandomStuffFor(garb);
+            Apparel a = (Apparel)ThingMaker.MakeThing(garb, stuff);
+            PawnGenerator.PostProcessGeneratedGear(a, pawn);
+            pawn.apparel.Wear(a, false);
         }
     }
 }

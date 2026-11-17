@@ -8,6 +8,8 @@
   <Rimverse_BeamBladeShort.description>Uma lâmina de feixe curta e rápida para combate próximo. Só um usuário do Fluxo de nível 4 ou mais consegue empunhá-la.</Rimverse_BeamBladeShort.description>
   <Rimverse_BeamBladeShort.tools.0.label>feixe</Rimverse_BeamBladeShort.tools.0.label>
   <Rimverse_BeamBladeShort.tools.1.label>ponta</Rimverse_BeamBladeShort.tools.1.label>
+  <Rimverse_BreedingStall.label>baia de criação</Rimverse_BreedingStall.label>
+  <Rimverse_BreedingStall.description>Uma baia acolchoada para animais de criação pequenos a bordo. Animais com tamanho de corpo 0,6 ou menor na mesma sala, a até 3 células, botam ovos e produzem leite e lã 30% mais rápido. Animais grandes não ganham nada, então criação pequena rende mais em pouco espaço.</Rimverse_BreedingStall.description>
   <Rimverse_ContractChip.label>chip de contrato</Rimverse_ContractChip.label>
   <Rimverse_ContractChip.description>Um chip de dados lacrado de um corretor de contratos. Leia pra receber um contrato aleatório: entrega, escolta, levantamento, caçada e mais, cada um com prazo e recompensa.</Rimverse_ContractChip.description>
   <Rimverse_ContractChip.comps.0.useLabel>Ler contrato</Rimverse_ContractChip.comps.0.useLabel>
@@ -38,6 +40,22 @@
   <Rimverse_FlowShrine.description>Um monólito antigo deixado por uma ordem perdida do Fluxo. Meditar ao lado dele dobra o que uma mente sensível aprende, e mentes adormecidas podem despertar.</Rimverse_FlowShrine.description>
   <Rimverse_FuneralTube.label>tubo funerário</Rimverse_FuneralTube.label>
   <Rimverse_FuneralTube.description>Um pequeno tubo de lançamento selado. A tripulação pode dar um funeral espacial a quem caiu, mandando o corpo pro vácuo ou pra uma estrela. Funciona sem nenhuma ideologia.</Rimverse_FuneralTube.description>
+  <Rimverse_LineageGarb_Abyssal.label>casaco abissal</Rimverse_LineageGarb_Abyssal.label>
+  <Rimverse_LineageGarb_Abyssal.description>Um casaco denso e escuro dos povoados do fundo do mar e de pressão alta.</Rimverse_LineageGarb_Abyssal.description>
+  <Rimverse_LineageGarb_Boreal.label>parca boreal</Rimverse_LineageGarb_Boreal.label>
+  <Rimverse_LineageGarb_Boreal.description>Uma parca grossa das colônias geladas.</Rimverse_LineageGarb_Boreal.description>
+  <Rimverse_LineageGarb_Gravitated.label>arnês de gravidade</Rimverse_LineageGarb_Gravitated.label>
+  <Rimverse_LineageGarb_Gravitated.description>Uma roupa de trabalho reforçada dos mundos de gravidade alta, feita para carregar peso.</Rimverse_LineageGarb_Gravitated.description>
+  <Rimverse_LineageGarb_Horned.label>manto dos chifrudos</Rimverse_LineageGarb_Horned.label>
+  <Rimverse_LineageGarb_Horned.description>Um manto cerimonial cortado para deixar espaço aos chifres, usado como sinal da linhagem.</Rimverse_LineageGarb_Horned.description>
+  <Rimverse_LineageGarb_Rad.label>avental antirradiação</Rimverse_LineageGarb_Rad.label>
+  <Rimverse_LineageGarb_Rad.description>Um avental blindado dos mundos irradiados.</Rimverse_LineageGarb_Rad.description>
+  <Rimverse_LineageGarb_Slender.label>faixa esguia</Rimverse_LineageGarb_Slender.label>
+  <Rimverse_LineageGarb_Slender.description>Uma roupa leve e justa dos habitats de gravidade baixa.</Rimverse_LineageGarb_Slender.description>
+  <Rimverse_LineageGarb_Solar.label>véu solar</Rimverse_LineageGarb_Solar.label>
+  <Rimverse_LineageGarb_Solar.description>Um manto claro dos mundos escaldantes que reflete calor e luz.</Rimverse_LineageGarb_Solar.description>
+  <Rimverse_LineageGarb_VoidBorn.label>traje dos nascidos no vazio</Rimverse_LineageGarb_VoidBorn.label>
+  <Rimverse_LineageGarb_VoidBorn.description>Um traje de costuras vedadas usado por quem nasceu em estações.</Rimverse_LineageGarb_VoidBorn.description>
   <Rimverse_ShipMorgue.label>necrotério de bordo</Rimverse_ShipMorgue.label>
   <Rimverse_ShipMorgue.description>Um armário frio que impede os corpos de apodrecer enquanto tem energia, pra tripulação levar os mortos de volta ao planeta natal.</Rimverse_ShipMorgue.description>
   <Rimverse_StellarData.label>registro de dados estelares</Rimverse_StellarData.label>

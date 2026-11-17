@@ -17,5 +17,6 @@ namespace Rimverse
         public bool lowGravityClumsy;
         public bool lowGravityStride;
         public bool dryClimatePenalty;
+        public ThingDef apparel;
     }
 }
