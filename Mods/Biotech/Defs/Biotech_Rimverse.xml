@@ -149,7 +149,7 @@
     <defName>Rimverse_Gene_Horned</defName>
     <label>horned</label>
     <labelShortAdj>horned</labelShortAdj>
-    <description>Descendants of hunters from a wild world. Fierce and strong in melee.</description>
+    <description>Descendants of hunters from a wild world. Fierce and strong in melee. Helmets take three times as long to put on, since they must be cut for the horns.</description>
     <iconPath>Rimverse/UI/Gene/Gene_Horned</iconPath>
     <iconColor>(0.8,0.6,0.55)</iconColor>
     <displayCategory>Rimverse_Lineages</displayCategory>
@@ -157,6 +157,11 @@
     <statFactors>
       <MeleeDamageFactor>1.15</MeleeDamageFactor>
     </statFactors>
+    <modExtensions>
+      <li Class="Rimverse.GeneSpaceExtension">
+        <helmetWorkFactor>3</helmetWorkFactor>
+      </li>
+    </modExtensions>
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
   </GeneDef>

@@ -18,6 +18,7 @@ namespace Rimverse
         public bool lowGravityStride;
         public bool dryClimatePenalty;
         public float waterSpeedFactor = 1f;
+        public float helmetWorkFactor = 1f;
         public ThingDef apparel;
     }
 }

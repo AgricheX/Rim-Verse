@@ -14,6 +14,7 @@ namespace Rimverse
         public bool lowGravityClumsy;
         public bool dryClimatePenalty;
         public float waterSpeedFactor = 1f;
+        public float helmetWorkFactor = 1f;
     }
 
     public static class GeneSpace

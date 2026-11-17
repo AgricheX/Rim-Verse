@@ -511,7 +511,7 @@
   <HediffDef>
     <defName>Rimverse_Lineage_Horned</defName>
     <label>horned lineage</label>
-    <description>Descendant of hunters on a wild world. Small horns and a fierce look. Hits harder in close combat.</description>
+    <description>Descendant of hunters on a wild world. Small horns and a fierce look. Hits harder in close combat. Helmets take three times as long to put on, since they must be cut for the horns.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <scenarioCanAdd>true</scenarioCanAdd>
     <isBad>false</isBad>
@@ -527,6 +527,7 @@
     <modExtensions>
       <li Class="Rimverse.LineageExtension">
         <apparel>Rimverse_LineageGarb_Horned</apparel>
+        <helmetWorkFactor>3</helmetWorkFactor>
       </li>
     </modExtensions>
     <everCurableByItem>false</everCurableByItem>
