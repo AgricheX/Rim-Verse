@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <Rimverse_AteExoticPreserve.stages.0.label>comeu conserva exótica</Rimverse_AteExoticPreserve.stages.0.label>
+  <Rimverse_AteExoticPreserve.stages.0.description>Um sabor de um mundo que eu provavelmente nunca vou ver. Deixou o dia melhor.</Rimverse_AteExoticPreserve.stages.0.description>
+  <Rimverse_NebulaNectarThought.stages.0.label>néctar de nebulosa</Rimverse_NebulaNectarThought.stages.0.label>
+  <Rimverse_NebulaNectarThought.stages.0.description>Quente, lento e colorido, como flutuar dentro de uma nebulosa.</Rimverse_NebulaNectarThought.stages.0.description>
+  <Rimverse_StardustHighThought.stages.0.label>pó estelar</Rimverse_StardustHighThought.stages.0.label>
+  <Rimverse_StardustHighThought.stages.0.description>Cada luz da nave é uma estrela, e cada estrela está cantando.</Rimverse_StardustHighThought.stages.0.description>
   <Rimverse_Thought_BadAir.stages.0.label>ar ruim</Rimverse_Thought_BadAir.stages.0.label>
   <Rimverse_Thought_BadAir.stages.0.description>O ar está fraco e velho. Cada respiro tem gosto de metal.</Rimverse_Thought_BadAir.stages.0.description>
   <Rimverse_Thought_BeautifulShip.stages.0.label>nave bonita</Rimverse_Thought_BeautifulShip.stages.0.label>

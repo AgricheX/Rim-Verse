@@ -621,12 +621,12 @@
     <comps>
       <li Class="Rimverse.CompProperties_ShipPart">
         <role>Sensor</role>
-        <mass>4</mass>
+        <mass>6</mass>
         <sensorSensitivity>1000</sensorSensitivity>
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>500</basePowerConsumption>
+        <basePowerConsumption>800</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
     </comps>
@@ -648,7 +648,7 @@
       <WorkToBuild>6000</WorkToBuild>
     </statBases>
     <costList>
-      <Plasteel>120</Plasteel>
+      <Plasteel>150</Plasteel>
       <ComponentSpacer>2</ComponentSpacer>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
@@ -664,7 +664,7 @@
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>1200</basePowerConsumption>
+        <basePowerConsumption>2000</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
     </comps>
@@ -686,7 +686,7 @@
       <WorkToBuild>9000</WorkToBuild>
     </statBases>
     <costList>
-      <Plasteel>150</Plasteel>
+      <Plasteel>200</Plasteel>
       <ComponentSpacer>3</ComponentSpacer>
       <Uranium>40</Uranium>
     </costList>
@@ -697,7 +697,7 @@
     <comps>
       <li Class="Rimverse.CompProperties_ShipPart">
         <role>WarpDrive</role>
-        <mass>20</mass>
+        <mass>15</mass>
         <warpRangeLy>6</warpRangeLy>
         <warpCooldownHours>12</warpCooldownHours>
         <warpMaxMass>600</warpMaxMass>
@@ -706,7 +706,7 @@
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>1500</basePowerConsumption>
+        <basePowerConsumption>2000</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
@@ -729,7 +729,7 @@
       <WorkToBuild>20000</WorkToBuild>
     </statBases>
     <costList>
-      <Plasteel>400</Plasteel>
+      <Plasteel>500</Plasteel>
       <ComponentSpacer>8</ComponentSpacer>
       <Uranium>120</Uranium>
     </costList>
@@ -740,7 +740,7 @@
     <comps>
       <li Class="Rimverse.CompProperties_ShipPart">
         <role>WarpDrive</role>
-        <mass>80</mass>
+        <mass>45</mass>
         <warpRangeLy>20</warpRangeLy>
         <warpCooldownHours>24</warpCooldownHours>
         <warpMaxMass>6000</warpMaxMass>
@@ -749,7 +749,7 @@
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>4000</basePowerConsumption>
+        <basePowerConsumption>6000</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>

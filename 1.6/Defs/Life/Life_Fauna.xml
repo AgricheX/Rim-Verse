@@ -1413,7 +1413,7 @@
     <label>plated crawler</label>
     <description>A low, plated crawler that rolls into a ball when threatened.</description>
     <statBases>
-      <MoveSpeed>2.6</MoveSpeed>
+      <MoveSpeed>2.5</MoveSpeed>
       <MarketValue>200</MarketValue>
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>

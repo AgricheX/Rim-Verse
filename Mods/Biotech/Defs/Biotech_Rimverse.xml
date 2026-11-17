@@ -34,7 +34,7 @@
     <displayCategory>Rimverse_Lineages</displayCategory>
     <displayOrderInCategory>10</displayOrderInCategory>
     <statFactors>
-      <IncomingDamageFactor>1.1</IncomingDamageFactor>
+      <IncomingDamageFactor>1.2</IncomingDamageFactor>
     </statFactors>
     <biostatCpx>1</biostatCpx>
     <biostatMet>1</biostatMet>
