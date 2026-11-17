@@ -21,7 +21,7 @@
     <label>shipboard automation</label>
     <description>Bays that also harvest and send crops to storage, and automatic medical pods.</description>
     <baseCost>4000</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_AdvancedHydroponics</li>
@@ -36,7 +36,7 @@
     <label>closed biosphere</label>
     <description>Sealed gardens that grow food in zero gravity and help make air.</description>
     <baseCost>6000</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <tab>Rimverse_LifeSupportTab</tab>
     <prerequisites>
       <li>Rimverse_ShipAutomation</li>

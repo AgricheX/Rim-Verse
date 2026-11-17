@@ -62,7 +62,7 @@
     <defName>Rimverse_Shuttles</defName>
     <label>shuttles</label>
     <description>Landing, cargo and assault shuttles and escape pods that fly between surface and orbit.</description>
-    <baseCost>3500</baseCost>
+    <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Rimverse_TravelTab</tab>
     <prerequisites>

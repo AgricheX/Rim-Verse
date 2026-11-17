@@ -33,7 +33,7 @@
     <defName>Rimverse_ShipMissiles</defName>
     <label>ship missiles</label>
     <description>Missile launchers and guided ship missiles built at a machining table.</description>
-    <baseCost>3500</baseCost>
+    <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Rimverse_CombatTab</tab>
     <prerequisites>

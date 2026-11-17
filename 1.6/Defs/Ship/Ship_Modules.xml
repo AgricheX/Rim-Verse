@@ -696,6 +696,7 @@
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <WorkToBuild>9000</WorkToBuild>
+      <MarketValue>4500</MarketValue>
     </statBases>
     <costList>
       <Plasteel>200</Plasteel>
