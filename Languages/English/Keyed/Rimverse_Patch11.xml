@@ -74,6 +74,13 @@ Alignment: {5} (Rupture -100 to Harmony +100)</Rimverse_FlowTip>
   <Rimverse_LetterLegitimacyLabel>Government falls</Rimverse_LetterLegitimacyLabel>
   <Rimverse_LetterNemesis>The {0} is back. {1} commands it again, after escaping you {2} time(s).</Rimverse_LetterNemesis>
   <Rimverse_LetterNemesisLabel>An old enemy returns</Rimverse_LetterNemesisLabel>
+  <Rimverse_LetterSiege>The fleet of {0} did not leave after its attack. It has taken orbit and is besieging this system for about {1} days.
+
+While the siege lasts, no orbital trader can reach you, trade routes through the system are cut, and the fleet may strike again any day. Park a fleet of your own here, stronger than theirs, to break the siege, or make peace.</Rimverse_LetterSiege>
+  <Rimverse_LetterSiegeBroken>Your fleet broke the siege. The fleet of {0} withdrew with heavy losses.</Rimverse_LetterSiegeBroken>
+  <Rimverse_LetterSiegeEndLabel>Siege over</Rimverse_LetterSiegeEndLabel>
+  <Rimverse_LetterSiegeLabel>Orbital siege</Rimverse_LetterSiegeLabel>
+  <Rimverse_LetterSiegeLifted>The fleet of {0} lifted the siege and is going home.</Rimverse_LetterSiegeLifted>
   <Rimverse_LetterTechRevolution>{0} went through a technological revolution and reached the {1} age. Its new government: {2}.</Rimverse_LetterTechRevolution>
   <Rimverse_LetterTechRevolutionLabel>Technological revolution</Rimverse_LetterTechRevolutionLabel>
   <Rimverse_LetterTradeWar>{0} sees {1} as a competitor and declared a trade embargo for 20 days.</Rimverse_LetterTradeWar>

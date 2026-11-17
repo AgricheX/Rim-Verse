@@ -10,7 +10,8 @@ namespace Rimverse
         Colonize,
         Explore,
         Trade,
-        Raid
+        Raid,
+        Siege
     }
 
     public class Fleet : IExposable
@@ -27,6 +28,7 @@ namespace Rimverse
         public int targetCiv = -2;
         public bool returning;
         public float cargo;
+        public int siegeUntil = -1;
 
         public bool Moving => arriveTick > 0 && !destKey.NullOrEmpty();
 
@@ -46,6 +48,7 @@ namespace Rimverse
             Scribe_Values.Look(ref targetCiv, "targetCiv", -2);
             Scribe_Values.Look(ref returning, "returning");
             Scribe_Values.Look(ref cargo, "cargo");
+            Scribe_Values.Look(ref siegeUntil, "siegeUntil", -1);
         }
     }
 }

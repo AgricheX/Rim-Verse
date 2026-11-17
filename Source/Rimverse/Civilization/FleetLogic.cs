@@ -20,6 +20,7 @@ namespace Rimverse
                     arrived.Add(f);
                 }
             }
+            OrbitalSiege.Tick(gc, now);
             if (arrived == null) return;
             foreach (Fleet f in arrived) Arrive(gc, f);
             gc.fleets.RemoveAll(f => f.power < 0.5f);
@@ -66,6 +67,7 @@ namespace Rimverse
             if (f.mission == FleetMission.Raid && f.TargetsPlayer)
             {
                 RaidPlayer(gc, owner, f);
+                if (OrbitalSiege.TryBegin(gc, owner, f)) return;
                 SendHome(gc, owner, f);
                 return;
             }

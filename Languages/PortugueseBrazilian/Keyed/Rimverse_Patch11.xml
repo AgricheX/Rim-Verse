@@ -74,6 +74,13 @@ Alinhamento: {5} (Ruptura -100 a Harmonia +100)</Rimverse_FlowTip>
   <Rimverse_LetterLegitimacyLabel>Governo cai</Rimverse_LetterLegitimacyLabel>
   <Rimverse_LetterNemesis>A {0} voltou. {1} comanda de novo, depois de escapar de você {2} vez(es).</Rimverse_LetterNemesis>
   <Rimverse_LetterNemesisLabel>Um velho inimigo volta</Rimverse_LetterNemesisLabel>
+  <Rimverse_LetterSiege>A frota de {0} não foi embora depois do ataque. Ela tomou a órbita e está cercando este sistema por cerca de {1} dias.
+
+Enquanto o cerco durar, nenhum mercador orbital chega até você, as rotas de comércio do sistema ficam cortadas e a frota pode atacar de novo a qualquer dia. Deixe aqui uma frota sua mais forte que a deles para quebrar o cerco, ou faça as pazes.</Rimverse_LetterSiege>
+  <Rimverse_LetterSiegeBroken>Sua frota quebrou o cerco. A frota de {0} recuou com muitas perdas.</Rimverse_LetterSiegeBroken>
+  <Rimverse_LetterSiegeEndLabel>Fim do cerco</Rimverse_LetterSiegeEndLabel>
+  <Rimverse_LetterSiegeLabel>Cerco orbital</Rimverse_LetterSiegeLabel>
+  <Rimverse_LetterSiegeLifted>A frota de {0} levantou o cerco e está voltando para casa.</Rimverse_LetterSiegeLifted>
   <Rimverse_LetterTechRevolution>{0} passou por uma revolução tecnológica e chegou à era {1}. Governo novo: {2}.</Rimverse_LetterTechRevolution>
   <Rimverse_LetterTechRevolutionLabel>Revolução tecnológica</Rimverse_LetterTechRevolutionLabel>
   <Rimverse_LetterTradeWar>{0} vê {1} como concorrente e declarou embargo comercial por 20 dias.</Rimverse_LetterTradeWar>
